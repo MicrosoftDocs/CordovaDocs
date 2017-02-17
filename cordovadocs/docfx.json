@@ -3,14 +3,13 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
+          "ljzhongDocset1117161127/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -22,15 +21,29 @@
         ],
         "exclude": [
           "**/obj/**",
+          "ljzhongDocset1117161127/**",
           "**/includes/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "ROBOTS": "INDEX,FOLLOW",
+            "author": "",
+            "ms.author": "",
+            "manager": "rsalva",
+            "ms.date": "11/16/2016",
+            "ms.topic": "article",
+            "audience": "developer",
+            "ms.reviewer": "",
+            "ms.prod": "visual-studio-dev15",
+            "ms.technology": "cordova",
+            "ms.tgt_pltfrm": ""
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "cordovadocs"
+    "dest": "ljzhongDocset1117161127"
   }
 }
