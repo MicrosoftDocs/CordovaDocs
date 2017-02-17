@@ -1,1 +1,1 @@
-# Welcome to cordovadocs!
+# Welcome to cordovadocs
