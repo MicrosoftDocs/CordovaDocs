@@ -1,14 +1,17 @@
 # [Index](index.md)
 
 # Get Started
-## [What our Tools do for you](first-steps/vs-taco-2017-intro.md)
-## [Install the Tools](first-steps/vs-taco-2017-install.md)
-## [Set up your iOS builds](first-steps/vs-taco-2017-ios-guide.md)
+## [Learn about mobile development with JavaScript](first-steps/vs-taco-2017-intro.md)
+## [Install the tools](first-steps/vs-taco-2017-install.md)
 ## [Build your first app](first-steps/vs-taco-2017-first-app.md)
-## [Migrate from VS2015](first-steps/vs-taco-2017-migration.md)
+## [Develop in the browser](first-steps/vs-taco-2017-cordova-simulate)
+## [Using toolsets to configure your toolchain](first-steps/vs-taco-2017-toolsets)
+## [Build for iOS](first-steps/vs-taco-2017-ios-guide.md)
+## [Develop using TypeScript](first-steps/vs-taco-tutorial-typescript.md)
+## [Migrate from Visual Studio 2015](first-steps/vs-taco-2017-migration.md)
 
 # Favorite UI Frameworks
-## [Ionic 2](ui-frameworks/tutorial-ionic2.md)
+## [Ionic 2](ui-frameworks/vs-taco-tutorial-ionic2.md)
 ## [Ionic](ui-frameworks/tutorial-ionic.md)
 ## [Onsen UI](ui-frameworks/tutorial-onsen.md)
 
