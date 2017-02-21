@@ -1,14 +1,14 @@
 # [Index](index.md)
 
 # Get Started
-## [Learn about mobile development with JavaScript](first-steps/vs-taco-2017-intro.md)
-## [Install the tools](first-steps/vs-taco-2017-install.md)
-## [Build your first app](first-steps/vs-taco-2017-first-app.md)
-## [Develop in the browser](first-steps/vs-taco-2017-cordova-simulate)
-## [Using toolsets to configure your toolchain](first-steps/vs-taco-2017-toolsets)
-## [Build for iOS](first-steps/vs-taco-2017-ios-guide.md)
-## [Develop using TypeScript](first-steps/vs-taco-tutorial-typescript.md)
-## [Migrate from Visual Studio 2015](first-steps/vs-taco-2017-migration.md)
+## [Learn about mobile development with JavaScript](first-steps/intro.md)
+## [Install the tools](first-steps/installation.md)
+## [Build your first app](first-steps/build-your-first-app.md)
+## [Develop in the browser](first-steps/simulate-in-browser.md)
+## [Using toolsets to configure your toolchain](first-steps/toolsets.md)
+## [Build for iOS](first-steps/ios-guide.md)
+## [Develop using TypeScript](first-steps/develop-with-typescript.md)
+## [Migrate from Visual Studio 2015](first-steps/migrate-from-vs2015.md)
 
 # Favorite UI Frameworks
 ## [Ionic 2](ui-frameworks/vs-taco-tutorial-ionic2.md)

@@ -12,7 +12,7 @@ layout: HubPage
                     <a href="#taco1">taco1</a>
                     <ul id="taco1" class="cardsZ">
                         <li>
-                            <a href="~/first-steps/vs-taco-2017-intro">
+                            <a href="./first-steps/intro">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -26,7 +26,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="~/first-steps/vs-taco-2017-install">
+                            <a href="./first-steps/installation">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -40,7 +40,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="~/first-steps/vs-taco-2017-ios-guide">
+                            <a href="./first-steps/ios-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -54,7 +54,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="~/">
+                            <a href="./first-steps/build-your-first-app">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
