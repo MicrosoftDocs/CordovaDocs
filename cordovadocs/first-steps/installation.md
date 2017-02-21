@@ -22,15 +22,15 @@ This guide covers the required steps to install Visual Studio Tools for Apache C
 
 ## System Requirements
 
-Start by ensuring your development system meets the [minimum system requirements for Visual Studio](https://www.visualstudio.com/productinfo/visual-studio-15-system-requirements-vs). Apache Cordova app development adds the following system requirements:
+Start by ensuring your development system meets the [minimum system requirements for Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Apache Cordova app development adds the following system requirements:
 
-+ To test and debug Cordova apps using [Cordova Simulate](vs-taco-2017-cordova-simulate.md) requires installation of the [Google Chrome Browser](https://www.google.com/chrome/).
++ To test and debug Cordova apps using [Cordova Simulate](simulate-in-browser.md) requires installation of the [Google Chrome Browser](https://www.google.com/chrome/).
 + To test and debug Android apps using the higher-performance emulator (Android Emulator 2.0), you must disable Hyper-V, and install Intel's Hardware Accelerated Execution Manager (HAXM). HAXM is installed automatically when you install an Intel-based Android emulator through the Android SDK Manager.
 + To test and debug iOS apps through Visual Studio requires access to a Macintosh computer with Xcode, Apache Cordova and the Visual Studio remotebuild module installed.
 + Universal Windows app development for all target platforms requires that Visual Studio is installed on Windows 10. Older versions of Windows are not compatible.
 + Universal Windows apps can be built from the command line when using Server 2012 R2 or Server 2016. UWP development—including designing, editing, and debugging—is not available on Windows Server.
 
-Next, download [Visual Studio 2017](https://aka.ms/vs/15/release/vs_enterprise.exe).
+Next, download [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017-rc/).
 
 ## <a id="install"></a>Install Cordova Tools With An Initial Visual Studio Installation
 
@@ -65,7 +65,7 @@ Visual Studio tracks updates to its installed workloads and offers a single inte
 
 ## Install Tools for iOS Development
 
-Visual Studio Tools for Apache Cordova can interact with a remote iOS development environment running on an Apple Mac; enabling developers to build, test and debug Cordova applications on the remote system. See [Visual Studio Tools for Apache Cordova: iOS Guide](vs-taco-2017-ios-guide.md).
+Visual Studio Tools for Apache Cordova can interact with a remote iOS development environment running on an Apple Mac; enabling developers to build, test and debug Cordova applications on the remote system. See [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md).
 
 ## <a id="third-party-tools"></a>Third-Party Tools Added During Installation
 
@@ -101,7 +101,7 @@ For testing Cordova applications on Android, Visual Studio Installer can optiona
 
 ### iOS Tools
 
-The software components needed to support iOS development are installed through a separate process executed on a Apple Mac. See [Visual Studio Tools for Apache Cordova: iOS Guide](vs-taco-2017-ios-guide.md) for installation details.
+The software components needed to support iOS development are installed through a separate process executed on a Apple Mac. See [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for installation details.
 
 ## <a name="troubleshooting"></a>Installation Troubleshooting
 
@@ -113,4 +113,4 @@ The installer attempts to isolate the software components it uses from other cop
 
 ## Next Steps
 
-Once you've completed the installation, go straight to our [beginner's guide](vs-taco-2017-first-app.md) to get started with the tools. If have an existing Cordova project you're working on, view the [migratation guide](vs-taco-2017-migration.md).
+Once you've completed the installation, go straight to our [beginner's guide](build-your-first-app.md) to get started with the tools. If have an existing Cordova project from Visual Studio 2015, view the [migratation guide](migrate-from-vs2015.md).

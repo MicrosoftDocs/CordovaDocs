@@ -24,7 +24,7 @@ In this guide, we'll show how to build, test and debug a Cordova application usi
 
 The application displays current weather conditions based on the current device location plus enables users to search for weather conditions using a US postal (zip) code. You can find the application's source code [here](https://github.com/Microsoft/cordova-samples/tree/master/weather-app).
 
-> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](vs-taco-2017-install.md).
+> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](installation.md).
 
 ## <a id="create-project"></a>Create An Apache Cordova Project
 
@@ -96,7 +96,7 @@ The default Cordova project includes a simple application user interface and log
 	
 	![Visual Studio Run Option](media/vs-taco-2017-first-app/figure-06.png)
   
-	Visual Studio will launch [Cordova Simulate](vs-taco-2017-cordova-simulate.md), a browser-based Cordova application simulator. Cordova Simulate displays the Cordova application's content in a browser window sized for the target mobile device. Here you can interact with the application, using your mouse to simulate finger taps and touches. What you see in the figure is the default Cordova app, included with every Cordova project. It doesn't expose any application functionality you can interact with - it simply lets you know the app initialized correctly.
+	Visual Studio will launch [Cordova Simulate](simulate-in-browser.md), a browser-based Cordova application simulator. Cordova Simulate displays the Cordova application's content in a browser window sized for the target mobile device. Here you can interact with the application, using your mouse to simulate finger taps and touches. What you see in the figure is the default Cordova app, included with every Cordova project. It doesn't expose any application functionality you can interact with - it simply lets you know the app initialized correctly.
 
 	![Cordova Simulate Window](media/vs-taco-2017-first-app/figure-07.png)
 
@@ -134,7 +134,7 @@ To edit the project's `config.xml`, double-click on the file in the Visual Studi
 
 The editor exposes the following options:
 
-+ **Toolset** - Used to configure the target Cordova platform and tools version for the application; you can learn more about this feature [here](vs-taco-2017-toolsets.md).
++ **Toolset** - Used to configure the target Cordova platform and tools version for the application; you can learn more about this feature [here](toolsets.md).
 + **Common** - Used to define Cordova application settings that apply to all target platforms (such as display name, start page, application version, and more).
 + **Plugins** - Used to add and remove Cordova plugins to/from the project. 
 + **Windows** - Used to define settings for the Windows Store version of the application.
@@ -760,7 +760,7 @@ Search online. They're everywhere! Here's a couple of them: [AngularJS](https://
 
 **Get a Mac, and Then Run Your App in an iOS Simulator, or an iOS Device**
 
-See [Visual Studio Tools for Apache Cordova: iOS Guide](vs-taco-2017-ios-guide.md).
+See [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md).
 
 **Tack on an Azure backend - it's free to try**
 
@@ -768,4 +768,4 @@ See [Connect a cloud service](../develop-apps/add-connected-services.md).
 
 **Take a Look at TypeScript - It's Fully Supported in Visual Studio**
 
-See [Use TypeScript](../getting-started/tutorial-typescript.md).
+See [Use TypeScript](develop-with-typescript.md).

@@ -30,7 +30,8 @@
 # Build & Deploy
 ## [How Cordova builds your app](build-deploy/deploy-and-run-app.md)
 ## [Automate build tasks with Gulp](build-deploy/tutorial-gulp-readme.md)
-## [Get continuous integration](build-deploy/ci-guide.md)
+## [Getting started with continuous integration](build-deploy/get-started-with-ci.md)
+## [Advanced guide to continue integration](build-deploy/ci-guide.md)
 ### [VSTS, TFS 2015](build-deploy/tfs2015.md)
 ### [Jenkins](build-deploy/jenkins.md)
 

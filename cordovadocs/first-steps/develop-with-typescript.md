@@ -35,7 +35,7 @@ At this point, you have a complete Apache Cordova project configured for coding 
 
 > **Note:** Even though this is a TypeScript project, you can still use JavaScript files in the application. Visual Studio doesn't care; it will compile TypeScript files to JavaScript during the build process, but leave the JavaScript files as-is.
 
-In the next section, you'll learn about the differences between a typical Cordova JavaScript application and the project you just created. For a refresher on the anatomy of a Cordova application project, see [Getting Started With Visual Studio Tools For Apache Cordova](first-app-vs-tools-apache-cordova.md).
+In the next section, you'll learn about the differences between a typical Cordova JavaScript application and the project you just created. For a refresher on the anatomy of a Cordova application project, see [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md).
 
 ##<a id="explore"></a>Exploring The Cordova TypeScript Project
 
