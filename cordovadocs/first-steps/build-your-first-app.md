@@ -522,11 +522,11 @@ The Visual Studio [Configuration Editor](#settings) Plugin tab provides an inter
 
 ![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-27.png)
 
-Use the **Custom** page to add plugins that are not one of the Cordova [core plugins](../develop-apps/use-cordova-plugins.md). Usually these are plugins created by you or a third-party. [This document](../develop-apps/manage-plugins.md#Custom) explains how to add a custom plugin to your project.
+Use the **Custom** page to add plugins that are not one of the Cordova [core plugins](../take-further/core-plugins.md). Usually these are plugins created by you or a third-party. [This document](../develop-apps/using-plugins.md#Custom) explains how to add a custom plugin to your project.
 
 ![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-28.png)
 
-If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../develop-apps/manage-plugins.md#AddOther).
+If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../develop-apps/using-plugins.md#AddOther).
 
 Let's add a plug-in that gives us access to the device's geolocation capabilities; this this in place, we'll adjust the app so it retrieves weather conditions for the device's current location when the application launches.
 
@@ -744,7 +744,7 @@ Get straight to building by hooking your app up to Azure. Azure offers a Mobile 
 
 Search for available Cordova plugins on [npm](http://npmjs.org). The naming convention for these plugins is `cordova-plugin-plugin_name` or `phonegap-plugin-plugin_name`.
 
-> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../develop-apps/manage-plugins.md#Custom).
+> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../develop-apps/using-plugins.md#Custom).
 
 **Try Using Bower to Add a Package to Your Project**
 
@@ -764,7 +764,7 @@ See [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md).
 
 **Tack on an Azure backend - it's free to try**
 
-See [Connect a cloud service](../develop-apps/add-connected-services.md).
+Learn how to [Azure data storage, offline sync, and push notifications](../take-further/add-azure-mobile-app.md).
 
 **Take a Look at TypeScript - It's Fully Supported in Visual Studio**
 

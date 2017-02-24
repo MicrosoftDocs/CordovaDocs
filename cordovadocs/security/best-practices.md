@@ -30,7 +30,7 @@ As outlined above, Cordova 5 and the Crosswalk WebView can significantly improve
     cordova plugin add cordova-plugin-crosswalk-webview --save
     ```
 
-There are, however, some nuances to using the Crosswalk webveiw given it does slow down build times and **requires GPU acceleration** in emulators. See **[improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md)** for setup details and information on the useful **Shared Mode**.
+There are, however, some nuances to using the Crosswalk webveiw given it does slow down build times and **requires GPU acceleration** in emulators. See **[improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md)** for setup details and information on the useful **Shared Mode**.
 
 Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 has caused crashes in certain emulators. Crosswalk 15 appears to be a solid choice. If you run into unexpected crashes or odd behaviors, simply the following config.xml to force the plugin to use version 15 (Right-Click &gt; View Code in VS):
 
@@ -75,7 +75,7 @@ The default CSP policy in Visual Studio and Cordova templates is a solid startin
                media-src *">
 ```
 
-See the **[Cordova whitelist and Content Security Policy guide](./cordova-security-whitlists.md)** for additional details on configuring a CSP policy to meet your needs.
+See the **[Cordova whitelist and Content Security Policy guide](./whitelists.md)** for additional details on configuring a CSP policy to meet your needs.
 
 ##Manage your whitelists
 When using Cordova 5+, you will need to install a whitelist plugin to enable access to external network resources on Android. iOS and Windows 10 also supports the features in the whitelist plugin but as of 6.0.0 they are provided by the iOS platform itself. Regardless, the new whitelist plugin that is pre-installed in new Cordova projects either created from the CLI or Visual Studio actually introduce three separate elements designed to enable more discrete control that was possible in the past.
@@ -98,7 +98,7 @@ This is a relatively safe starting point. To modify this list you can edit confi
 
 In general it is best to trim access down to only those URIs you actually need to use in your app and you will want to exercise great care when broadening access for your app to only include trusted sources.
 
-Note that there are some nuances on how these whitelist work and both Windows Phone 8.0 and Windows / Windows Phone 8.1 do not support all of these elements. See the **[Cordova whitelist and Content Security Policy guide](./cordova-security-whitlists.md)** for additional details.
+Note that there are some nuances on how these whitelist work and both Windows Phone 8.0 and Windows / Windows Phone 8.1 do not support all of these elements. See the **[Cordova whitelist and Content Security Policy guide](./whitelists.md)** for additional details.
 
 ##When in doubt, InAppBrowser
 If you must include content from an external source that you do not have complete and total control over, **use the InAppBrowser plugin** and host the content there. This plugin places content in a separate webview without access to Cordova interfaces and therefore significantly reduces the risk to your app and its data. It's easy to setup and replaces **window.open** with a secure implementation.
@@ -160,8 +160,8 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
 See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
 
 ##Additional Security Topics
-- [Encrypt your local app data](./cordova-security-data.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./cordova-security-auth.md)
-- [Detect potential security threats](./cordova-security-detect.md)
-- [Quickly remediate security issues](./cordova-security-fix.md)
+- [Encrypt your local app data](./data-encryption.md)
+- [Learn about securely transmitting data](./transmit-data-securely.md)
+- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./authentication.md)
+- [Detect potential security threats](./detect-security-threats.md)
+- [Quickly remediate security issues](./fix-security-issues.md)

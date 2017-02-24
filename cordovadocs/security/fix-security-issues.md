@@ -26,8 +26,8 @@ As a result, Intune's internal app store allows you to reduce the amount of time
 See **[deploy and configure apps with Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646965.aspx)** for more details.
 
 ##Additional Security Topics
-- [Learn about Cordova platform and app security features](./cordova-security-platform.md)
-- [Encrypt your local app data](./cordova-security-data.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./cordova-security-auth.md)
-- [Detect potential security threats](./cordova-security-detect.md)
+- [Learn about Cordova platform and app security features](./best-practices.md)
+- [Encrypt your local app data](./data-encryption.md)
+- [Learn about securely transmitting data](./transmit-data-securely.md)
+- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./authentication.md)
+- [Detect potential security threats](./detect-security-threats.md)

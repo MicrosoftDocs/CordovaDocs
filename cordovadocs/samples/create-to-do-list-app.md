@@ -754,7 +754,7 @@ The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes 
 
 1. Add the Cordova Geolocation plugin to the app by double-clicking config.xml in **Solution Explorer**, choosing the **Plugins** tab, and then choosing **Geolocation**.
 
-    For more information, see [Manage Plugins for Apps Built with Visual Studio Tools for Apache Cordova](./develop-apps/manage-plugins.md).
+    For more information, see [Manage Plugins for Apps Built with Visual Studio Tools for Apache Cordova](./develop-apps/using-plugins.md).
 
 2. Choose **Add** to add the plugin.
 

@@ -22,7 +22,7 @@ Historically [crypto.subtle.encrypt and decrypt](https://developer.mozilla.org/e
 ### Crosswalk
 [Crosswalk](https://crosswalk-project.org/) is an open source project that allows you to use an updated version of the Chromium webview on Android devices. The [Crosswalk WebView Engine plugin](https://www.npmjs.com/package/cordova-plugin-crosswalk-webview) brings Android 4.0+ up to a recent version of Chromium including Web Crypto support. Adding it is the first step in enabling Web Crypto in your Cordova projects and the plugin is available in the config.xml designer's plugin tab.
 
-See the article on **[improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md)** for additional details on setup including some important information on **emulator config**. 
+See the article on **[improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md)** for additional details on setup including some important information on **emulator config**. 
 
 Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 has caused crashes in certain emulators. Crosswalk 15 appears to be a solid choice. If you run into unexpected crashes or odd behaviors, add this to config.xml (Right-Click &gt; View Code in VS):
 
@@ -205,8 +205,8 @@ This includes all features contained within the **Windows.Security** and **Windo
  See **[Windows API documentation](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx)** for additional details and specifics.
 
 ##Additional Security Topics
-- [Learn about Cordova platform and app security features](./cordova-security-platform.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./cordova-security-auth.md)
-- [Detect potential security threats](./cordova-security-detect.md)
-- [Quickly remediate security issues](./cordova-security-fix.md)
+- [Learn about Cordova platform and app security features](./best-practices.md)
+- [Learn about securely transmitting data](./transmit-data-securely.md)
+- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./authentication.md)
+- [Detect potential security threats](./detect-security-threats.md)
+- [Quickly remediate security issues](./fix-security-issues.md)

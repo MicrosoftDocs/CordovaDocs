@@ -32,7 +32,7 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Select a plugin, and then choose the **Add** button.
 
-    ![Adding a plugin](media/manage-plugins/IC795804.png)
+    ![Adding a plugin](media/using-plugins/IC795804.png)
 
     When you add the plugin, Visual Studio adds an element to your **config.xml** file.
 
@@ -46,7 +46,7 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Specify **Plugin ID**, **Local** or **Git** as the source, and then provide the location by entering the npm package name (the id), browsing to a local folder, or specifying a Git repository (ex. [https://github.com/cordova-sms/cordova-sms-plugin](https://github.com/cordova-sms/cordova-sms-plugin)).
 
-    ![Cordova_Plugin_Custom](media/manage-plugins/IC795805.png)
+    ![Cordova_Plugin_Custom](media/using-plugins/IC795805.png)
 
      Visual Studio adds a plugin folder for that custom plugin. The important plugin files include: **plugin.xml**, the plugin’s **src** folder and **www** folder.
 
@@ -58,7 +58,7 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Choose a plugin, and then choose the **Remove** button.
 
-    ![Removing a plugin](media/manage-plugins/remove-plugins.png)
+    ![Removing a plugin](media/using-plugins/remove-plugins.png)
 
     If you experience any errors when you add remove a plugin, see these [tips and workarounds](./tips-and-workarounds/tips-and-workarounds-general-readme.md).
 

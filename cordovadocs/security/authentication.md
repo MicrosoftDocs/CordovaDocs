@@ -26,7 +26,7 @@ You can add the Azure Mobile Apps plugin your app as follows:
     cordova plugin add cordova-plugin-ms-azure-mobile-apps --save
     ```
 
-Note that you can also get basic information about the user logged in by making a REST call to the **/.auth/me** service endpoint and passing the appropriate auth token. See the **[Azure Mobile Apps authentication documentation](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/)** and the article on **[securely transmitting data](./cordova-security-xmit.md)** for additional details on token passing.
+Note that you can also get basic information about the user logged in by making a REST call to the **/.auth/me** service endpoint and passing the appropriate auth token. See the **[Azure Mobile Apps authentication documentation](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/)** and the article on **[securely transmitting data](./transmit-data-securely.md)** for additional details on token passing.
 
 ###Try the Azure connected services sample app
 
@@ -79,7 +79,7 @@ See the **[Active Directory Quick Start for Cordova](https://azure.microsoft.com
 
 While the quick start uses Azure AD, the plugin also works with **ADFS v3** and up by simply changing the authority and redirect URIs to the appropriate ones for your ADFS installation.
 
-The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./cordova-security-xmit.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
+The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./transmit-data-securely.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
 
 <!--
 ###ADAL and Azure Mobile Apps or Azure App Service
@@ -105,8 +105,8 @@ Cordova also can take advantage of pure JavaScript based solutions to authentica
 If neither of the above options meet your needs, there are a number of 3rd party solutions that may be of use. First note that many Single Sign-On (SSO) solutions including [Auth0](https://auth0.com/) actually explictly support PhoneGap/Cordova in their JavaScript client libraries or related Cordova plugins. If you already have a SSO provider, be sure to check with them to see what best practices they provide for Cordova apps.
 
 ##Additional Security Topics
-- [Learn about Cordova platform and app security features](./cordova-security-platform.md)
-- [Encrypt your local app data](./cordova-security-data.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Detect potential security threats](./cordova-security-detect.md)
-- [Quickly remediate security issues](./cordova-security-fix.md)
+- [Learn about Cordova platform and app security features](./best-practices.md)
+- [Encrypt your local app data](./data-encryption.md)
+- [Learn about securely transmitting data](./transmit-data-securely.md)
+- [Detect potential security threats](./detect-security-threats.md)
+- [Quickly remediate security issues](./fix-security-issues.md)

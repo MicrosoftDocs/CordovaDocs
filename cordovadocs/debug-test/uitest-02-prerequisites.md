@@ -82,7 +82,7 @@ To learn how to write and run UI tests for Apache Cordova apps, we need an app t
 
 ![Sample Weather App for Android](media/prereqs/01-weather-app.png)
 
-> **Note**: if you're using Visual Studio in a virtual machine and cannot run the Visual Studio Emulator for Android, Appium will also work with the Google Android Emulator or any other Android Emulator. See [https://taco.visualstudio.com/docs/run-app-apache/](https://taco.visualstudio.com/docs/run-app-apache/) for information on other emulators. As we'll see, Appium always connects to the first device that's returned from the *abd devices* command; where there is anything specific you might need to adjust, though, we'll point that out.
+> **Note**: if you're using Visual Studio in a virtual machine and cannot run the Visual Studio Emulator for Android, Appium will also work with the Google Android Emulator or any other Android Emulator. See how to [run your app on Android](../run-your-app/run-app-android.md) for information on other emulators. As we'll see, Appium always connects to the first device that's returned from the *abd devices* command; where there is anything specific you might need to adjust, though, we'll point that out.
 
 
 ##Verify WebDriver operation

@@ -7,7 +7,7 @@
 # Detect potential security threats 
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions and even the most carefully crafted app can have unexpected security gaps. Preventing security issues really comes down to following guidence to reduce risk and using tools that help you identify problems before your app has even shipped. 
 
-For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki) along with taking advantage of [Cordova platform security features](./cordova-security-platform.md), properly [authorizing your users](./cordova-security-auth.md), and taking steps to secure [data you store locally or send to or from services](./cordova-security-data.md). However, here are some additional things you can do to further reduce risk.
+For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki) along with taking advantage of [Cordova platform security features](./best-practices.md), properly [authorizing your users](./authentication.md), and taking steps to secure [data you store locally or send to or from services](./data-encryption.md). However, here are some additional things you can do to further reduce risk.
 
 ##Find issues with linting & code analysis tools
 Static and dynamic code analysis tools can also help you identify problems and before you release your app. Linting/hinting tools like [JSHint](http://jshint.com/) for JavaScript, [FxCop](https://msdn.microsoft.com/en-us/library/bb429476.aspx) for C#, [OCLint](http://oclint.org/) for Objective-C (iOS), or the [Android SDK's lint](http://developer.android.com/tools/debugging/improving-w-lint.html) tool can help get you going. 
@@ -57,15 +57,15 @@ Even the most careful implementation can still have vulnerabilities so another a
 
 **[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)** is an extremely useful service that can help detect anomalous activity against user accounts. When combined with an authentication solution that supports Azure AD like Azure Mobile Apps or the ADAL Cordova plugin and passing the authentication token to any service calls you make for verification on the server side, you will be able to gain deep insights into potential brute force or compromised logins attacks.
 
-See [Azure Active Directory Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) along with the articles on [authenticating users](./cordova-security-auth.md) and [securing data at rest and over the wire](./cordova-security-data.md) for additional information.
+See [Azure Active Directory Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) along with the articles on [authenticating users](./authentication.md) and [securing data at rest and over the wire](./data-encryption.md) for additional information.
 
 For Azure based services, databases, and VMs, you can use **[Azure Security Center](https://azure.microsoft.com/en-us/services/security-center/)** which builds on top of Azure's world class certifications and enables some powerful security features for your Virtual Machines and SQL databases including full support for auditing SQL servers, threat detection, transparent data encryption, and monitoring and notification about recommended updates.
 
 **[Microsoft Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/)** is an on-premisems.product that provides an intelligent and adapting mechanism for [detecting potential threats across services and servers in a datacenter](https://technet.microsoft.com/en-us/library/dn707706.aspx). This is particularly useful in the mobile context when your app needs to access services housed within a corporate datacenter rather than Azure. 
 
 ##Additional Security Topics
-- [Learn about Cordova platform and app security features](./cordova-security-platform.md)
-- [Encrypt your local app data](./cordova-security-data.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./cordova-security-auth.md)
-- [Quickly remediate security issues](./cordova-security-fix.md)
+- [Learn about Cordova platform and app security features](./best-practices.md)
+- [Encrypt your local app data](./data-encryption.md)
+- [Learn about securely transmitting data](./transmit-data-securely.md)
+- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./authentication.md)
+- [Quickly remediate security issues](./fix-security-issues.md)
