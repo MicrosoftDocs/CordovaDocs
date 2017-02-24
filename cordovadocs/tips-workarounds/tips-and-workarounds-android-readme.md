@@ -21,7 +21,7 @@ This document covers tips, tricks, and known workarounds for problems with the C
 
 Try these steps if you have trouble building and deploying to Android emulators or devices. In some cases, you may see an error about a failure to install the APK on the device or a failure to run the Android Debug Bridge (ADB.exe).
 
->**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../develop-apps/run-app-apache.md).
+>**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../run-your-app/run-app-android.md).
 
 1. Before taking any other steps, try running your app against other platforms or emulators to make sure the issue is Android-specific.
 

@@ -4,26 +4,22 @@
 ## [Learn about mobile development with JavaScript](first-steps/intro.md)
 ## [Install the tools](first-steps/installation.md)
 ## [Build your first app](first-steps/build-your-first-app.md)
+## [Create device-specific UIs using Ionic 2](first-steps/vs-taco-tutorial-ionic2.md)
 ## [Develop in the browser](first-steps/simulate-in-browser.md)
 ## [Using toolsets to configure your toolchain](first-steps/toolsets.md)
 ## [Build for iOS](first-steps/ios-guide.md)
 ## [Develop using TypeScript](first-steps/develop-with-typescript.md)
 ## [Migrate from Visual Studio 2015](first-steps/migrate-from-vs2015.md)
 
-# Favorite UI Frameworks
-## [Ionic 2](ui-frameworks/vs-taco-tutorial-ionic2.md)
-## [Ionic](ui-frameworks/tutorial-ionic.md)
-## [Onsen UI](ui-frameworks/tutorial-onsen.md)
-
 # Take Your App Further
 ## [Add notifications, authentication & data connections](take-further/add-azure-mobile-app.md)
 ## [Add a Cordova plugin](take-further/manage-plugins.md)
-### [Core plugins](take-further/use-cordova-plugins.md)
+### [Learn about core plugins](take-further/use-cordova-plugins.md)
 ## [Tailor by OS](take-further/configure-app.md)
 
 # Run on Different Platforms
-## [Iterate fast in browser](run-your-app/vs-taco-2017-cordova-simulate.md)
-## [Build on Android](run-your-app/run-app-apache.md)
+## [Use a browser for rapid testing](run-your-app/simulate-in-browser.md)
+## [Build on Android](run-your-app/run-app-android.md)
 ## [Build on iOS](run-your-app/run-app-ios.md)
 ## [Build on Windows](run-your-app/run-app-windows.md)
 

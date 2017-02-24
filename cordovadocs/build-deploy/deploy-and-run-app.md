@@ -27,7 +27,7 @@ The Cordova Command Line Interface (CLI) does most of the heavy lifting for Visu
 
 ## Android
 
-The CLI supports both building and running Android apps on Windows. To run the app on the Android emulator, Visual Studio runs the CLI command cordova emulate android. This command deploys the app to an already running emulator, or, if none are available, it starts up the last emulator that was created. To run the app on a connected Android device, Visual Studio runs the CLI command cordova run android. To configure your Android device or emulator, see [Run Your Apache Cordova App on Android](./develop-apps/run-app-apache.md).
+The CLI supports both building and running Android apps on Windows. To run the app on the Android emulator, Visual Studio runs the CLI command cordova emulate android. This command deploys the app to an already running emulator, or, if none are available, it starts up the last emulator that was created. To run the app on a connected Android device, Visual Studio runs the CLI command cordova run android. To configure your Android device or emulator, see [Run Your Apache Cordova App on Android](./run-your-app/run-app-android.md).
 
 ## iOS
 
