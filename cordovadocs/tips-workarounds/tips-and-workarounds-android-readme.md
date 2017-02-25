@@ -28,7 +28,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
     For example, we suggest you test on Windows:
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../general/tips-and-workarounds-general-readme.md) for more general help.
+    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../tips-workarounds/tips-and-workarounds-general-readme.md) for more general help.
 
 2. If you are running on an Android device, make sure that **Developer Mode** is enabled on the device. Try the instructions [here](http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) to enable developer mode.
 
@@ -134,4 +134,4 @@ More specifically, following the instructions from [this article](http://www.tom
 If this does not resolve the issue, you can upgrade to a 64-bit version of the JDK [from here](http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-windows-x64.exe) and update the JAVA_HOME environment variable to the new install location.
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
+* [Read more tips & tricks](tips-and-workarounds-general-readme.md)

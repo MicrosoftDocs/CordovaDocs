@@ -32,7 +32,7 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Select a plugin, and then choose the **Add** button.
 
-    ![Adding a plugin](media/using-plugins/IC795804.png)
+    ![Adding a plugin](media/core-plugins/IC795804.png)
 
     When you add the plugin, Visual Studio adds an element to your **config.xml** file.
 
@@ -46,7 +46,7 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Specify **Plugin ID**, **Local** or **Git** as the source, and then provide the location by entering the npm package name (the id), browsing to a local folder, or specifying a Git repository (ex. [https://github.com/cordova-sms/cordova-sms-plugin](https://github.com/cordova-sms/cordova-sms-plugin)).
 
-    ![Cordova_Plugin_Custom](media/using-plugins/IC795805.png)
+    ![Cordova_Plugin_Custom](media/core-plugins/IC795805.png)
 
      Visual Studio adds a plugin folder for that custom plugin. The important plugin files include: **plugin.xml**, the plugin’s **src** folder and **www** folder.
 
@@ -58,9 +58,9 @@ You can add a core Cordova plugin by using Visual Studio. When you build your so
 
 3. Choose a plugin, and then choose the **Remove** button.
 
-    ![Removing a plugin](media/using-plugins/remove-plugins.png)
+    ![Removing a plugin](media/core-plugins/remove-plugins.png)
 
-    If you experience any errors when you add remove a plugin, see these [tips and workarounds](./tips-and-workarounds/tips-and-workarounds-general-readme.md).
+    If you experience any errors when you add remove a plugin, see these [tips and workarounds](../tips-and-workarounds/tips-and-workarounds-general-readme.md).
 
 ## <a id="Updating"></a>Update a plugin to use the latest version
 
@@ -90,7 +90,7 @@ Occasionally you might need to install a specific version of a Cordova plugin th
 
 4. Replace ```org-apache-cordova-pluginname``` with the correct ID, and replace ```0.1.1``` with the correct version. The plugin will be installed the next time that you build the app.
 
-You can add plugins using a Git URI or the local filesystem by using the **Custom** tab of the **Plugins** section in the config.xml designer. Using a Git URI can cause you to get a “dev” version of a plugin. See [these instructions](./tips-and-workarounds/tips-and-workarounds-general-readme.md) if you want to use a specific version of a GitHub sourced plugin.
+You can add plugins using a Git URI or the local filesystem by using the **Custom** tab of the **Plugins** section in the config.xml designer. Using a Git URI can cause you to get a “dev” version of a plugin. See [these instructions](../tips-and-workarounds/tips-and-workarounds-general-readme.md) if you want to use a specific version of a GitHub sourced plugin.
 
 ## <a id="Configuring"></a>Configure plugin parameters
 
@@ -121,7 +121,7 @@ If you need to extend your app using a custom plugin, check the plugin registry 
 
 **Concepts**
 
-[Install Visual Studio Tools for Apache Cordova](./get-started/install-vs-tools-apache-cordova.md)
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
 
 **Other Resources**
 
