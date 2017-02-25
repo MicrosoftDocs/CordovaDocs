@@ -64,7 +64,7 @@ Here are some of the more common issues that you might see on Windows.
 
     ![unhandled exception](media/tips-and-workarounds-windows-readme/unhandled-exception.png)
 
-    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://taco.visualstudio.com/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
+    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](~/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
 
 * WWAHost runtime error?
 

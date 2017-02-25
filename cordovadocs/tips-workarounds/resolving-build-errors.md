@@ -63,7 +63,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     If the issue is only on the Android platform, see [Android](#android). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../getting-started/ios-guide.md). If the issue is only on Windows, see [Windows](#windows).
 
 6. If you see a message that you are unable to start debugging, see [this workaround](#debugging).
-7. Try [clearing the cache](https://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova/#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
+7. Try [clearing the cache](~/en-us/docs/configure-vs-tools-apache-cordova/#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
 
 <a name="android"></a>
 ##Troubleshooting Android build and deployment issues
@@ -88,7 +88,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
     For additional ADB commands, see [this article](http://www.androidcentral.com/android-201-10-basic-terminal-commands-you-should-know).
 
-5. Make sure that you have the [required SDK components installed](https://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty).
+5. Make sure that you have the [required SDK components installed](~/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty).
 6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](http://go.microsoft.com/fwlink/?LinkID=396873), try again.
 
 <a name="windows"></a>
@@ -122,7 +122,7 @@ Check the Output, Error List, and JavaScript Console windows to see if you ran i
 
     ![unhandled exception](media/resolving-build-errors/unhandled-exception.png)
 
-    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://taco.visualstudio.com/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
+    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](~/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
 
 * WWAHost runtime error?
 

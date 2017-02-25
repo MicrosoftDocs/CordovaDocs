@@ -46,7 +46,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
     For additional ADB commands, see [this article](http://www.androidcentral.com/android-201-10-basic-terminal-commands-you-should-know).
 
-5. Make sure that you have the [required SDK components installed](https://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty).
+5. Make sure that you have the [required SDK components installed](~/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty).
 
     Run the SDK Manager as an Administrator if you are having trouble installing components.
 

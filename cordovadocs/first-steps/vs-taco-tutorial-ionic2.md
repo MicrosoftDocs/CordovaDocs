@@ -26,13 +26,13 @@
 To manage, code, run and debug Ionic 2 applications using Visual Studio, you must install the following:
 
 +	[Visual Studio 2017](http://go.microsoft.com/fwlink/?LinkID=533794)
-+	[Visual Studio Tools For Apache Cordova](http://taco.visualstudio.com/en-us/docs/install-vs-tools-apache-cordova/)
++	[Visual Studio Tools For Apache Cordova](~/en-us/docs/install-vs-tools-apache-cordova/)
 +	Visual Studio Ionic 2 Templates (described below)
 +	Ionic Template dependencies (described below)
 
 ## <a name="getTemplates"></a> Installing the Ionic 2 templates
 
-1. If you haven't already, [install Visual Studio 2017](http://taco.visualstudio.com/en-us/docs/vs-taco-2017-install/) and TACO.
+1. If you haven't already, [install Visual Studio 2017](~/en-us/docs/vs-taco-2017-install/) and TACO.
 
     Under the covers, Ionic apps are Apache Cordova apps, you'll need a functional Cordova development environment before you can develop apps using Ionic. 
 

@@ -81,8 +81,8 @@ Apache Cordova uses the contents of the `res` folder to store non-web applicatio
 
 The project includes several configuration files:
 
-+ `bower.json` - Configuration file for the [Bower Package Manager](http://bower.io). Developers use Bower to install packages and libraries in a web application; [learn more about it here](https://taco.visualstudio.com/en-us/docs/tutorial-using-bower).
-+ `build.json` - Configuration file for the Android and iOS build process. **Do not delete this file**, as the Cordova SDK uses it to build signed mobile app packages; [learn more about it here](https://taco.visualstudio.com/en-us/docs/tutorial-package-publish-readme). 
++ `bower.json` - Configuration file for the [Bower Package Manager](http://bower.io). Developers use Bower to install packages and libraries in a web application; [learn more about it here](~/en-us/docs/tutorial-using-bower).
++ `build.json` - Configuration file for the Android and iOS build process. **Do not delete this file**, as the Cordova SDK uses it to build signed mobile app packages; [learn more about it here](~/en-us/docs/tutorial-package-publish-readme). 
 + `config.xml` - Cordova project configuration file, it contains settings that define options for the Cordova native mobile application including application name, plugin configuration, security settings, and more. **Do not delete this file**, the Cordova SDK will not be able to build and deploy applications without it. Visual Studio Tools for Apache Cordova includes a special editor for this file, abstracting away the file's XML into a simple interface to the file's settings. 
 + `package.json` - Configuration file for the Node Package Manager (npm). This file isn't used by Cordova projects today, but will eventually become more important when it replaces the `config.xml` as a Cordova project's primary configuration file in a future version of Apache Cordova.
 

@@ -124,9 +124,9 @@ Follow the steps in [Test push notifications in your Android app](https://azure.
 
 To test push notifications in your iOS app:
 
-1. If you haven't already, go through the steps in the [iOS Setup Guide](http://taco.visualstudio.com/en-us/docs/ios-guide/) to install and run the remotebuild agent.
+1. If you haven't already, go through the steps in the [iOS Setup Guide](~/en-us/docs/ios-guide/) to install and run the remotebuild agent.
 
-    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](http://taco.visualstudio.com/en-us/docs/build_ios_cloud/).
+    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](~/en-us/docs/build_ios_cloud/).
 
 2. Follow the steps in [Test push notifications in your iOS app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-ios)
 
@@ -172,7 +172,7 @@ Select a device target and press F5 to run your app with authentication.
 
 * Other build or deployment errors in your Cordova app?
 
-    [See Cordova troubleshooting tips](http://taco.visualstudio.com/en-us/docs/tips-and-workarounds-general-readme/#resolve-build-and-deployment-errors-when-you-build-for-the-first-time)
+    [See Cordova troubleshooting tips](~/en-us/docs/tips-and-workarounds-general-readme/#resolve-build-and-deployment-errors-when-you-build-for-the-first-time)
 
 
 ##Links

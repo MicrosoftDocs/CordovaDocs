@@ -72,7 +72,7 @@ To learn how to write and run UI tests for Apache Cordova apps, we need an app t
 
 2.	Open weather-app/WeatherApp.sln in Visual Studio.
 
-3.	To run the app you’ll need a free API key from [http://openweathermap.org/](http://openweathermap.org/). Specific instructions for this can be found on [Getting Started with Visual Studio Tools for Apache Cordova](http://taco.visualstudio.com/docs/get-started-first-mobile-app/), which is the walkthrough for building the app.
+3.	To run the app you’ll need a free API key from [http://openweathermap.org/](http://openweathermap.org/). Specific instructions for this can be found on [Getting Started with Visual Studio Tools for Apache Cordova](~/docs/get-started-first-mobile-app/), which is the walkthrough for building the app.
 
 4. Open weather.js and paste your API key as the value for the *OpenWeatherAppKey* variable.
 
