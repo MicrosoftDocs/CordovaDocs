@@ -65,7 +65,7 @@ To use Gulp with your Cordova projects, follow these steps:
 
 3.	**Add a `gulpfile.js` to your project:** Add [this Gulp file](http://go.microsoft.com/fwlink/?LinkID=691922) to the root of your project.
 
-	![gulpfile.js in project](media/va-taco-ci/quick-1.png)
+	![gulpfile.js in project](media/get-started-with-ci/quick-1.png)
 
 4.	**Try it locally:** Test out your build by opening a command prompt (or terminal window on Macintosh), navigating to the Cordova project's root folder (the folder with the project's `www` folder), and executing the following commands:
 
@@ -102,17 +102,10 @@ That's it!
 For additional information on how to configure specific build systems, see the following tutorials:
 
 +	**[Build Apache Cordova Apps](http://go.microsoft.com/fwlink/?LinkID=691186)**
-+	**[Use the Visual Studio Tools for Apache Cordova with Team Foundation Services 2013](./vs-taco-tfs2013.md)**
-+	**[Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](./vs-taco-jenkins.md)**
++	**[Use the Visual Studio Tools for Apache Cordova with Team Foundation Services 2015](tfs2015.md)**
++	**[Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](jenkins.md)**
 
 The following articles provide additional details and troubleshooting information:
 
-+	**[Build a Cordova project by using Gulp](../tutorial-gulp/vs-taco-tutorial-gulp.md)**
-+	**[Comprehensive Guide to Continuous Integration with Cordova Apps](./vs-taco-ci-cordova.md)**
-
-## Additional Information
-
-+	[Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
-+	[Follow us on Twitter](https://twitter.com/VSCordovaTools)
-+	[Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
-+	[Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
++	**[Build a Cordova project by using Gulp](using-gulp-build-tasks.md)**
++	**[Comprehensive Guide to Continuous Integration with Cordova Apps](ci-guide.md)**

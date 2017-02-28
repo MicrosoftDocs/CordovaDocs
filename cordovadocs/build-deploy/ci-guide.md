@@ -25,7 +25,7 @@ For additional information on specific build systems, you may find the Visual St
 
 +	[Build Apache Cordova apps with Visual Studio Team Services](http://go.microsoft.com/fwlink/?LinkID=691186)
 +	[Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](./jenkins.md)
-+	[Build a Cordova project by using Gulp](./vs-taco-tutorial-gulp.md)
++	[Build a Cordova project by using Gulp](./using-gulp-build-tasks.md)
 
 ## <a name="whattoadd"></a> What to Add to Source Control
 
@@ -116,7 +116,7 @@ Installing Visual Studio 2017 with the Tools for Apache Cordova (TACO) option wi
         	+	Note that only the "SDK Platform" is required for a given API level so you may uncheck other options. Android system images in particular are large and are not needed.
             +	Be sure to also install the **platform tools**            
 
-    2.	macOS ony: [iOS Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533776). You do not need to install the deployment tools mentioned.
+    2.	macOS only: [iOS Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533776). You do not need to install the deployment tools mentioned.
 
     3.	Windows only: See the [Windows Platfrom Guide](http://go.microsoft.com/fwlink/?LinkID=533777).        
 
@@ -146,7 +146,7 @@ You may also need to configure proxy settings for Java. This can be [accomplishe
 JAVA_OPTS="-Dhttps.proxyHost=<host> -Dhttps.proxyPort=<port> -Dhttp.proxyHost=<host> -Dhttp.proxyPort=<port> -DproxySet=true"
 ```
 
-Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a more recent version of Node.  See [tips and workarounds](../tips-and-workaroundsgeneral-tips.md#cordovaproxy) for additional details.
+Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a more recent version of Node.  See [tips and workarounds](../tips-workarounds/general-tips.md#cordovaproxy) for additional details.
 
 ## <a name="osxgotcha"></a> iOS/OSX Gotchas: Troubleshooting Tips for Building on a Mac
 
@@ -191,7 +191,7 @@ There are a few relatively common issues when building a Cordova app on macOS re
    To resolve this problem you have two options:
    
    1.  Don't check in the contents of the Cordova project's `platforms` folder into source control. The folder and associated platform files will be added automatically at build time by the Cordova CLI anyway.	
-   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute attributes on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/ios/osx-set-execute/tips-and-workarounds-ios-osx-set-execute-readme.md) available in the tips and workarounds section.
+   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute attributes on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](https://github.com/Microsoft/cordova-docs/tree/master/articles/tips-and-workarounds/ios/osx-set-execute) available for you to use.
 
 ## <a name="basic"></a> Behind the Scenes: Basic Workflow
 
@@ -229,7 +229,7 @@ Unlike Visual Studio, it's important to note that the base Cordova CLI does not 
 
 ## <a name="challenges"></a> Behind the Scenes: Resolving Common Cordova Challenges
 
-When building Cordova projects in a server environment, there are a number of challenges you may encounter. If you are looking for a quick solution you should consider using the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension or the [Gulp](./vs-taco-tutorial-gulp.md) tutorial as they are specifically designed to help resolve these problems regardless of build system.  If you're interested in understanding what is going on behind the scenes, consider the following:
+When building Cordova projects in a server environment, there are a number of challenges you may encounter. If you are looking for a quick solution you should consider using the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension or the [Gulp](./using-gulp-build-tasks.md) tutorial as they are specifically designed to help resolve these problems regardless of build system.  If you're interested in understanding what is going on behind the scenes, consider the following:
 
 1.	**Building with Multiple Versions of the Cordova CLI.** While in an ideal world everyone would use the edge version of the Cordova CLI and associated platforms, the reality is that for any build server you will need to support multiple versions of the Cordova CLI. This means that the common practice of installing Cordova globally will not work; each build would use its own Cordova CLI and NodeJS installations.
 
@@ -339,7 +339,7 @@ To avoid re-installing the Cordova CLI every time, you can take advantage of Vis
 
 4.	Use `./cordova.sh` (macOS) or `cordova.cmd` (Windows) to run additional Cordova commands as needed.
 
-	A variation of this method is used by Visual Studio TACO, the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension, and the taco-team-build Node module referenced in the [Gulp](./vs-taco-tutorial-gulp.md) and [Jenkins](./jenkins.md) tutorials.
+	A variation of this method is used by Visual Studio TACO, the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension, and the taco-team-build Node module referenced in the [Gulp](./using-gulp-build-tasks.md) and [Jenkins](./jenkins.md) tutorials.
 
 ### <a name="platforms"></a> Adding Platforms
 
@@ -418,9 +418,4 @@ xcrun -v -sdk iphoneos PackageApplication "${WORKSPACE}/platforms/ios/build/devi
 ```
 
 ## More Information
-* [Learn about other Team Build / CI options](./tutorial-team-build-readme.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
-* [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
-* [Follow us on Twitter](https://twitter.com/VSCordovaTools)
-* [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
-* [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
+* [Learn about other Team Build / CI options](./get-started-with-ci.md)

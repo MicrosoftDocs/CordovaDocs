@@ -54,13 +54,13 @@ Try these steps.
 Try these steps if you have trouble deploying to emulators or devices.
 
 1. Running on a device? Make sure that your device is enabled for development. Instructions to do this are different for each platform.
-    * For Android, see [Android](..android-tips.md). For iOS, see [iOS guide](../../getting-started/ios-guide.md). (iOS devices need a provisioning profile.) For Windows Phone, see [this article](../../develop-apps/run-app-windows-phone.md). For Windows 10, Visual Studio will prompt you to enable the device.
+    * For Android, see [Android](android-tips.md). For iOS, see [iOS guide](../first-steps/ios-guide.md). (iOS devices need a provisioning profile.) For Windows, see [this article](../run-your-app/run-app-windows.md).
 2. If you are running on a device and the app is already installed, uninstall the app and try again.
 4. Delete the project's platforms/*platform* folder (such as platforms/android) and the plugins folder from the project and try again (navigating to the root of your project folder in a command window and typing the command  `cordova platforms remove android` also removes the platform).
 
     ![The platforms and plugins folders](media/general-tips/platforms-folder.png)
 
-    If the issue only occurs with a particular plugin, you may have an incompatibility with the plugin or between your Cordova version and the plugin version. See other sections in this article and see [Change the CLI version](../develop-apps/change-cli-version.md).
+    If the issue only occurs with a particular plugin, you may have an incompatibility with the plugin or between your Cordova version and the plugin version.
 
 3. If you haven't done it already, [check your update notifications and run the dependency checker](#firsttime).
 4. If you are not using a new blank project already, create an empty project using the Blank App template (you can find it under **JavaScript**, **Apache Cordova Apps** when creating a new project) and see if you get the same error when you build.
@@ -71,7 +71,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If the issue is only on the Android platform, see [Android](..android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../../getting-started/ios-guide.md). If the issue is only on Windows, see [Windows](..windows-tips.md).
+    If the issue is only on the Android platform, see [Android](android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](windows-tips.md).
 
 6. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
 7. Try [clearing the cache](../tips-workarounds/configuration-tips.md#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
@@ -302,7 +302,7 @@ One of the advantages associated with Apache Cordova is its active plugin commun
 
 4. See if there is an update to the plugin and install it by removing the plugin using the **Installed** tab of the config.xml designer and re-add the plugin.
 
-5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](..ios-tips.md#symlink) for specific symptoms and a workaround.
+5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](ios-tips.md#symlink) for specific symptoms and a workaround.
 
 6. See if the plugin causing problems has transitioned to npm as a part of the Cordova [repository transition](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) and therefore has a new ID. You could have multiple copies of the same plugin installed (ex: both org.apache.cordova.camera and cordova-plugin-camera) or an outdated version of the plugin with bugs. Check the **Installed** tab of the config.xml designer for duplicates and consult [this article for information](#plugin-npm) on why the plugin ID may have changed and how to get an updated version of the plugin.
 
@@ -341,56 +341,3 @@ If your project is located inside a deeply nested directory in your file system,
 	```
 
 	...replacing "c:\npm\cache" with your desired folder.
-
-<a name="cordova-platform-ver"></a>
-
-## Using a Different Version of a Cordova Platform
-Typically when you want get a fix or feature for Cordova itself, you'll simply use the **Platforms** tab of the config.xml designer to update the Cordova version for your project. However, under [certain circumstances](../android/security-05-26-2015/tips-and-workarounds-android-security-05-26-2015-readme.md) you might want to update a "platform" independent of the entire Cordova release. See [this article](../../tutorial-cordova-5/tutorial-cordova-5-readme.md) for a discussion of what a "platform" means in the Cordova context, and how it is versioned.
-
-Updating a platform version for your project is easy with Cordova 4.3.0 and up. First you need to update config.xml.
-
-1. In Visual Studio, right-click on config.xml and select **View Code**.
-2. When using Cordova 4.3.0 or 4.3.1, add the following under the root &lt;widget&gt; element in config.xml:
-
-    ```
-    <engine name="android" version="3.7.2" />
-    ```
-
-    ...or if you opted to update to Cordova 5.0.0+:
-
-    ```
-	<engine name="android" spec="4.0.2" />
-    ```
-
-    ...replacing "android" with the platform you want to update in all lower case.
-
-Next, for projects where you have **already executed a build for the platform on your system**, you’ll also need to remove the old version of the Cordova platform.
-
-For iOS, all you need to do is execute a "clean" for your project and the new platform will take effect on next build.
-
-For Android, Windows, and Windows Phone, follow these steps:
-
-1.	Open a command prompt and go to your Cordova project root (not the solution root).
-
-2.	Type the following commands:
-
-	```
-	npm install -g cordova
-	cordova platform remove <platform>
-	cordova platform add <platform>
-	```
-
-	...replacing &lt;platform&gt; with the platform you are trying to update in all lower case (Ex: android).
-
-    The next time you build you will now be on the updated version of the platform.
-
-You can also use a platform from Git using the following syntax:
-
-```
-<engine name="ios" spec="https://github.com/apache/cordova-ios.git" />
-```
-
-Be aware that platform versions in Git are typically developer releases so you will likely encounter bugs.
-
-## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)

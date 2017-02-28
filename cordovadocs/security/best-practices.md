@@ -16,7 +16,7 @@ While always a good recommendation, staying up to date with Cordova versions is 
 2. **Content Security Policy (CSP) Support**: Android with Crosswalk, iOS, and Windows 10 all support adding a Content Security Policy to your app and this represents an important security tool to take advantage of for any app. A strict policy can eliminate security attack vectors at the underlying webview/browser level. 
 3. **Windows 10 Support w/CSP and "Local Mode":** Windows 10 features a more nuanced view of security than Windows/Phone 8.1 did with significant improvements in compatibility between Android and iOS by default. In addition to CSP support, Windows 10 supports something called "local mode" that adds OS level security measures and allows additional native Windows 10 features to be used from within your Cordova app. 
 
-You should **absolutely not use Cordova versions < 4.3.1** as your app will be rejected from Google Play due to a [specific security issue](../tips-and-workarounds/android/security-05-26-2015.md).
+You should **absolutely not use Cordova versions < 4.3.1** as your app will be rejected from Google Play due to a specific security issue.
 
 Read on for some additional guidance and recommendations and see the **[Apache Cordova Security Guide](https://cordova.apache.org/docs/en/6.0.0/guide/appdev/security/index.html)** on Apache's site for additional tips.
 

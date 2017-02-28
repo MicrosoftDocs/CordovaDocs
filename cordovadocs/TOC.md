@@ -1,5 +1,3 @@
-# [Index](index.md)
-
 # Get Started
 ## [Learn about mobile development with JavaScript](first-steps/intro.md)
 ## [Install the tools](first-steps/installation.md)
@@ -20,7 +18,7 @@
 ## [Improve Android browser consistency](take-further/using-crosswalk.md)
 
 # Run on Different Platforms
-## [Building Cordova apps](build-deploy/deploy-and-run-app.md)
+## [Building Cordova apps](run-your-app/deploy-and-run-app.md)
 ## [Use a browser for rapid testing](run-your-app/simulate-in-browser.md)
 ## [Build on Android](run-your-app/run-app-android.md)
 ## [Build on iOS](run-your-app/run-app-ios.md)

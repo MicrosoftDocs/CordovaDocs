@@ -58,7 +58,7 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 
 	4. Check the **Install** checkbox, and then click **Install without restart**.
 
-	![NodeJS Plugin](media/vs-taco-build-jenkins/jenkins-01.png)
+	![NodeJS Plugin](media/jenkins/jenkins-01.png)
 
 4. Configure the NodeJS Plugin
 
@@ -72,7 +72,7 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 
 	4. Click **Save**.
 
-	![NodeJS Plugin](media/vs-taco-build-jenkins/jenkins-02.png)
+	![NodeJS Plugin](media/jenkins/jenkins-02.png)
 
 ### Additional Setup for iOS Builds
 
@@ -90,7 +90,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 	4. Check the **Install** checkbox, and then click **Install without restart**.
 
-	![EnvInject Plugin](media/vs-taco-build-jenkins/jenkins-03.png)
+	![EnvInject Plugin](media/jenkins/jenkins-03.png)
 
 	We will use the EnvInject plugin in our Jenkins project build config for macOS later in this tutorial.
 
@@ -106,7 +106,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 		3. Ensure that the user you want to run your builds is allowed access.
 
-	![Enable SSH](media/vs-taco-build-jenkins/jenkins-04.png)
+	![Enable SSH](media/jenkins/jenkins-04.png)
 
 5. Configure an macOS Slave Agent
 
@@ -124,7 +124,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 	8. Click the **Save** button when done.
 
-	![Slave Agent Config](media/vs-taco-build-jenkins/jenkins-05.png)
+	![Slave Agent Config](media/jenkins/jenkins-05.png)
 
 	Jenkins will now use SSH to start up the slave agent on macOS as needed.
 
@@ -138,11 +138,11 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 	3. Click the **Configure** Icon for one of your Windows nodes like **master**
 
-	![Slave Agent Config](media/vs-taco-build-jenkins/jenkins-06.png)
+	![Slave Agent Config](media/jenkins/jenkins-06.png)
 
 	4. Enter a label of `cordova` and `windows` and click **Save**.
 
-	![Slave Agent Label Config](media/vs-taco-build-jenkins/jenkins-07.png)
+	![Slave Agent Label Config](media/jenkins/jenkins-07.png)
 
 ## Environment Variables
 
@@ -217,7 +217,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 
 3. Enter a **Name** for your project, select **Freestyle project**, and click **OK**.
 
-	![Freestyle project](media/vs-taco-build-jenkins/jenkins-08.png)
+	![Freestyle project](media/jenkins/jenkins-08.png)
 
 3. (Optional) Check **Restrict where this project can be run** and enter a label expression of `cordova && windows`. This will prevent the build from attempting to run on Windows machines without Cordova or its dependencies installed.
 
@@ -225,7 +225,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 
 5. Under **Build Environment**, check **Provide Node & npm bin/ folder to PATH** and select the Windows location.
 
-	![Build environment](media/vs-taco-build-jenkins/jenkins-09.png)
+	![Build environment](media/jenkins/jenkins-09.png)
 
 6. Now under **Build** we need to add a **Execute Windows batch command** build step with the following contents:
 
@@ -241,7 +241,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 
 7. Finally, under **Post-build Actions**, add an **Archive Artifacts** action with a **Files to archive** pattern of `*/bin/**/*`:
 
-	![Build script](media/vs-taco-build-jenkins/jenkins-10.png)
+	![Build script](media/jenkins/jenkins-10.png)
 
 8. Click **Save** and then **Build Now** to verify everything is working.
 
@@ -261,7 +261,7 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 3. Enter a name for your project, select **Copy existing item**, enter the **Name** of your Windows build and click **OK**.
 
-	![Build script](media/vs-taco-build-jenkins/jenkins-11.png)
+	![Build script](media/jenkins/jenkins-11.png)
 
 4. Check **Restrict where this project can be run** and enter a label expression of `cordova && ios`. This will prevent the build from attempting to run on any Linux slaves you may have configured or macOS machines without the necessary Cordova dependencies installed.
 
@@ -275,7 +275,7 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 	4. Update the **Installation** for **Provide Node & npm bin/ folder to PATH** and to the **macOS install location**.
 
-	![Build script](media/vs-taco-build-jenkins/jenkins-12.png)
+	![Build script](media/jenkins/jenkins-12.png)
 
 6.  Delete the existing **Execute Windows batch command** build step.
 
@@ -292,17 +292,12 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 	This will install any dependencies in the project's `package.json` including Gulp itself, unlock the keychain using the password you set in the `KEYCHAIN_PWD` environment variable, and then execute the Gulp build.
 
-	![Build script](media/vs-taco-build-jenkins/jenkins-13.png)
+	![Build script](media/jenkins/jenkins-13.png)
 
 8. Click **Save**, and then **Build Now** to verify everything is working.
 
-	> **Trouble Shooting Tip:** See ["Troubleshooting Tips for Building on macOS" in the general CI tutorial](./general.md#osxgotcha) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
+	> **Troubleshooting Tip:** See ["Troubleshooting Tips for Building on a Mac" in the general CI tutorial](ci-guide.md#osxgotcha) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
 
 ## More Information
 
-+	[Learn about other CI options](./tutorial-team-build-readme.md)
-+	[Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
-+	[Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
-+	[Follow us on Twitter](https://twitter.com/VSCordovaTools)
-+	[Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
-+	[Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
++	[Learn about other CI options](get-started-with-ci.md)

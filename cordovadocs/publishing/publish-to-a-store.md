@@ -344,9 +344,9 @@ Complete the following steps to package and deploy Windows applications:
 
 +	[Modify App Settings](#windows-1)
 +	[Package the App](#windows-2)
-+	[Submit Your App to the App Store](publish-windows)
++	[Submit Your App to the App Store](#publish-windows)
 
-### <a id="windows-#"></a> Modify App Settings
+### <a id="windows-1"></a> Modify App Settings
 
 As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file. 
 

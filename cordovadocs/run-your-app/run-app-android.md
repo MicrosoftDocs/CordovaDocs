@@ -19,15 +19,15 @@
 You've created an Apache Cordova application project using Visual Studio and Visual Studio Tools for Apache Cordova (TACO), and now you're ready to test it. Fortunately, you have several options for running your Cordova apps on Android using Visual Studio:
 
 + Android device - [jump to details](#android-device)
-+ [Cordova Simulate](../first-steps/simulate-in-browser) (simulate in browser) - [jump to external article](../first-steps/simulate-in-browser)
++ [Cordova Simulate](../first-steps/simulate-in-browser.md) (simulate in browser) - [jump to external article](../first-steps/simulate-in-browser.md)
 + Google [Android Emulator](https://developer.android.com/studio/run/emulator.html) - [jump to details](#google-android-emulator)
 + [Genymotion Emulator](https://www.genymotion.com/) - [jump to details](#genymotion-emulator)
 
 In this article, you'll learn how to use these options to run your Android apps in Visual Studio. 
 
-Throughout the steps outlined below, if you have trouble deploying to Android devices or emulators, be sure to check out [*Resolve Android build and deployment errors*](../tips-and-workaroundsandroid-tips.md).
+Throughout the steps outlined below, if you have trouble deploying to Android devices or emulators, be sure to check out [*Resolve Android build and deployment errors*](../tips-workarounds/android-tips.md).
 
-To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your App](publish-to-a-store.md).
+To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your App](../publishing/publish-to-a-store.md).
 
 ## <a id="android-device"></a> Run on an Android Device
 
@@ -194,5 +194,5 @@ To run your app on the Genymotion emulator, complete the following steps:
 ## See Also
 
 [Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
-[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-and-test/debug-using-visual-studio.md)  
-[Package Your App Built with Visual Studio Tools for Apache Cordova](../debug-and-test/package-app-built-with-visual-studio.md)  
+[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/debug-using-visual-studio.md)  
+[Package Your App Built with Visual Studio Tools for Apache Cordova](../publishing/publish-to-a-store.md)  

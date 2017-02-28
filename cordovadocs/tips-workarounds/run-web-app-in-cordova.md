@@ -22,7 +22,7 @@ When you have an existing server-based web app, and you want it running in a Cor
   
 +	**Move your front end code (or your View) from your web server to a Cordova app.**
 
-    This can be a good option especially if your web site does *not* implement server-side technologies such as ASP.NET, PHP, and Ruby, server technologies that won't run in a Cordova app. For this option, your front end code must be repackaged in a Cordova-friendly fashion (plain HTML5, CSS, and JavaScript, with JSON for communication with your back-end server) so that it can run in the Cordova client. The actual steps involved are pretty specific to each Web site, so we will not be looking at this option in this article. For more detailed info on these options, see [What's Next?](#next). For a more general tutorial, see the [Beginner's Guide](get-started-first-mobile-app.md).
+    This can be a good option especially if your web site does *not* implement server-side technologies such as ASP.NET, PHP, and Ruby, server technologies that won't run in a Cordova app. For this option, your front end code must be repackaged in a Cordova-friendly fashion (plain HTML5, CSS, and JavaScript, with JSON for communication with your back-end server) so that it can run in the Cordova client. The actual steps involved are pretty specific to each Web site, so we will not be looking at this option in this article. For more detailed info on these options, see [What's Next?](#next). For a more general tutorial, see the [Beginner's Guide](../first-steps/build-your-first-app.md).
 
 +	**Use a hosted web app.**
 

@@ -11,7 +11,7 @@
  
 For this section you’ll need to have the Visual Studio Tools for Apache Cordova installed. If necessary, restart Visual Studio’s installer, press **Modify**, check the box for **Cross-Platform Mobile Development > HTML/JavaScript (Apache Cordova)**, and press **Update**.
 
-Now create a new project and pull in the unit and unit test code from the [Basic Testing topic](unit-test-03-basic-testing.md):
+Now create a new project and pull in the unit and unit test code from the [Basic Testing topic](basic-tests-with-jasmine.md):
 
 1.	Create a new app project through **File > New Project**, selecting **JavaScript > Apache Cordova Apps > Blank App**.
 2.	Create a folder named ```test``` in the project (right click > Add > New folder) and import ```normalize_tests.js``` file (right click on test > Add > Existing Item).

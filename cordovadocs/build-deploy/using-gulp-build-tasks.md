@@ -286,7 +286,7 @@ var gulp = require("gulp"),
     cordova = require("cordova");
 ```
 
-If you're creating an automated build script, you can find a more complete list of considerations by reviewing [Get started with Continuous Integration](./vs-taco-ci.md).
+If you're creating an automated build script, you can find a more complete list of considerations by reviewing [Get started with Continuous Integration](get-started-with-ci.md).
 
 ### <a name="ts"></a> Build a TypeScript Project
 

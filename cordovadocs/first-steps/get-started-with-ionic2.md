@@ -17,7 +17,7 @@
 
 # Getting started with Ionic 2 apps in Visual Studio 2017 
 
-[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using [Apache Cordova](http://cordova.io). The Ionic Framework gives Cordova applications a native look and feel, and automatically adjusts that look across platforms. You can use Visual Studio 2017 and Visual Studio Tools for Apache Cordova (TACO) to easily create and debug cross-platform Ionic apps. The [Getting Started With Visual Studio Tools For Apache Cordova](first-app-vs-tools-apache-cordova.md) guide showed how to create a simple Weather app using jQuery and jQuery Mobile. In this article, you'll learn how to configure a Visual Studio 2017 development environment for Ionic 2, and create the Ionic 2 version of the Weather App shown below:  
+[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using [Apache Cordova](http://cordova.io). The Ionic Framework gives Cordova applications a native look and feel, and automatically adjusts that look across platforms. You can use Visual Studio 2017 and Visual Studio Tools for Apache Cordova (TACO) to easily create and debug cross-platform Ionic apps. The [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md) guide showed how to create a simple Weather app using jQuery and jQuery Mobile. In this article, you'll learn how to configure a Visual Studio 2017 development environment for Ionic 2, and create the Ionic 2 version of the Weather App shown below:  
 
 ![Finished Weather application](media/vs-taco-tutorial-ionic2/figure-01.png)
 
@@ -36,7 +36,7 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
     Under the covers, Ionic apps are Apache Cordova apps, you'll need a functional Cordova development environment before you can develop apps using Ionic. 
 
-	Verify that you can create and run the default **Cordova Blank App**. In Visual Studio, open the **File** menu, select **New**, then **Project**. In the new project dialog, expand the **JavaScript** templates section, select **Mobile Apps**, then pick the **Blank App (Apache Cordova)** template. Give the new project a **Name** and **Location** then click the **OK** button. Press **F5** to build and run the new project using the new **Simulate in Browser** option. The Chrome browser should open and render the app's content. If you have any issues running the application, see these [troubleshooting steps](../tips-and-workaroundsgeneral-tips.md).
+	Verify that you can create and run the default **Cordova Blank App**. In Visual Studio, open the **File** menu, select **New**, then **Project**. In the new project dialog, expand the **JavaScript** templates section, select **Mobile Apps**, then pick the **Blank App (Apache Cordova)** template. Give the new project a **Name** and **Location** then click the **OK** button. Press **F5** to build and run the new project using the new **Simulate in Browser** option. The Chrome browser should open and render the app's content. If you have any issues running the application, see these [troubleshooting steps](../tips-workarounds/general-tips.md).
 
 2.	Install the Ionic template in Visual Studio by selecting the **Tools** menu, then **Extensions and Updates...**. In the Extensions and Updates dialog box, select **Online**. In the search box located in the upper-right corner of the dialog, type **Ionic 2**. Select the **Ionic 2 Templates** option in the list. Click the **Download** button to start the installation.
 	
@@ -84,7 +84,7 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
     
 	![Task Runner](media/vs-taco-tutorial-ionic2/figure-08.png)
 
-4.	At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](./vs-taco-2017-ios-guide.md) for additional information.
+4.	At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for additional information.
 	
 	![Ionic application running on Android](media/vs-taco-tutorial-ionic2/figure-09.png)
 
@@ -459,7 +459,7 @@ In this section, we'll add code the Weather Provider to connect with the externa
 	+ `formatWeatherData` - The results the application gets from the Weather API differ depending on whether the application asks for current conditions or the forecast. We're not asking for forecast data (yet) but, but will later. This function builds a weather data object from the results and has special code that builds the appropriate object based on whether it's current conditions or a forecast.  
 	+ `showAlert` - Displays an error dialog if anything breaks.
 
-Run the application in browser, an emulator, simulator or on a physical device connected to the computer. If you run the app in the browser, using the Cordova Simulate capabilities of Visual Studio 2017, you can tweak the simulated device's coordinates using the Geolocation panel; refer to the [Cordova Simulate](./vs-taco-cordova-simulate.md) for details. When the application loads, you'll be prompted to authorize the application's access to the device's current location as shown below:  
+Run the application in browser, an emulator, simulator or on a physical device connected to the computer. If you run the app in the browser, using the Cordova Simulate capabilities of Visual Studio 2017, you can tweak the simulated device's coordinates using the Geolocation panel; refer to the [Cordova Simulate](simulate-in-browser.md) for details. When the application loads, you'll be prompted to authorize the application's access to the device's current location as shown below:  
 
 ![Android Geolocation Authorization](media/vs-taco-tutorial-ionic2/figure-13.png)
 

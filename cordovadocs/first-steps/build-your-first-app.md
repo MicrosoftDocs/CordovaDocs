@@ -116,7 +116,7 @@ The default Cordova project includes a simple application user interface and log
 	
 	![Available Target Platforms](media/vs-taco-2017-first-app/figure-11.png)
 
-	> **Note:** Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](vs-taco-2017-ios-guide.md) for guidance on how to configure your development environment for iOS.   
+	> **Note:** Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for guidance on how to configure your development environment for iOS.   
 	
 	Next, click the drop-down arrow on the deployment target in the Standard toolbar to see a list of available targets. Choose a deployment target from the list and Visual Studio will build the app and deploy it to the selected device, emulator or simulator.
 
@@ -522,11 +522,11 @@ The Visual Studio [Configuration Editor](#settings) Plugin tab provides an inter
 
 ![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-27.png)
 
-Use the **Custom** page to add plugins that are not one of the Cordova [core plugins](../take-further/core-plugins.md). Usually these are plugins created by you or a third-party. [This document](../develop-apps/using-plugins.md#Custom) explains how to add a custom plugin to your project.
+Use the **Custom** page to add plugins that are not one of the Cordova [core plugins](../take-further/core-plugins.md). Usually these are plugins created by you or a third-party. [This document](../take-further/using-plugins.md#Custom) explains how to add a custom plugin to your project.
 
 ![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-28.png)
 
-If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../develop-apps/using-plugins.md#AddOther).
+If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../take-further/using-plugins.md#AddOther).
 
 Let's add a plug-in that gives us access to the device's geolocation capabilities; this this in place, we'll adjust the app so it retrieves weather conditions for the device's current location when the application launches.
 
@@ -734,7 +734,7 @@ Just like any browser, your Cordova app supports HTTP requests and Ajax calls. H
 
 Additionally, the server or servers that you request data from may have additional security that restricts your app from being able to pull resources into your app:
 
-* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](../tips-and-workaroundsgeneral-tips.md#connection).
+* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](../tips-workarounds/general-tips.md#connection).
 
 **Easy Backend Set Up with Microsoft Azure**
 
@@ -744,7 +744,7 @@ Get straight to building by hooking your app up to Azure. Azure offers a Mobile 
 
 Search for available Cordova plugins on [npm](http://npmjs.org). The naming convention for these plugins is `cordova-plugin-plugin_name` or `phonegap-plugin-plugin_name`.
 
-> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../develop-apps/using-plugins.md#Custom).
+> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../take-further/using-plugins.md#Custom).
 
 **Try Using Bower to Add a Package to Your Project**
 

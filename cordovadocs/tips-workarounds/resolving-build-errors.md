@@ -43,7 +43,7 @@ Try these steps.
 Try these steps if you have trouble deploying to emulators or devices.
 
 1. Running on a device? Make sure that your device is enabled for development. Instructions to do this are different for each platform.
-    * For Android, see [Android](#android). For iOS, see [iOS guide](../getting-started/ios-guide.md). (iOS devices need a provisioning profile.) For Windows Phone, see [this article](../develop-apps/run-app-windows-phone.md). For Windows 10, Visual Studio will prompt you to enable the device.
+    * For Android, see [Android](#android). For iOS, see [iOS guide](../first-steps/ios-guide.md). (iOS devices need a provisioning profile.) For Windows, see [this article](../run-your-app/run-app-windows.md). For Windows 10, Visual Studio will prompt you to enable the device.
 2. If you are running on a device and the app is already installed, uninstall the app and try again.
 4. Delete the project's platforms/*platform* folder (such as platforms/android) and the plugins folder from the project and try again (commands like `cordova platforms remove android` also remove the platform).
 
@@ -60,7 +60,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If the issue is only on the Android platform, see [Android](#android). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../getting-started/ios-guide.md). If the issue is only on Windows, see [Windows](#windows).
+    If the issue is only on the Android platform, see [Android](#android). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](#windows).
 
 6. If you see a message that you are unable to start debugging, see [this workaround](#debugging).
 7. Try [clearing the cache](./configuration-tips.md#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.

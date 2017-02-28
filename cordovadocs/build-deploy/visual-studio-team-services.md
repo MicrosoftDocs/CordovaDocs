@@ -38,4 +38,4 @@ See **[Build Apache Cordova apps](http://go.microsoft.com/fwlink/?LinkID=691186)
 
 ## More Information
 
-+	[Learn about other CI options](./ci-guide.md)
++	[Learn about other CI options](ci-guide.md)

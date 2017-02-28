@@ -17,25 +17,25 @@
 
 When you create app using Visual Studio Tools for Apache Cordova, you have many options for emulating and deploying your app on iOS:
 
-*   [Apache Ripple simulator](run-app-ripple-simulator.md), which provides basic validation of layout and CSS. (This does not require installation of the remote agent for iOS.)
+*   [Simulate in a browser](simulate-in-browser.md), which provides basic validation of layout and CSS. (This does not require installation of the remote agent for iOS.)
 
-*   [iOS Simulator](#iOSSimulator), which requires installation and configuration of the [remote agent](../getting-started/ios-guide.md) when running from Visual Studio.
+*   [iOS Simulator](#iOSSimulator), which requires installation and configuration of the [remote agent](../first-steps/ios-guide.md) when running from Visual Studio.
 
-*   iOS Simulator using a service such as [MacInCloud](../tips-and-workarounds/host-a-mac-in-the-cloud.md), which allows you to install the remote agent without a physical Mac device.
+*   iOS Simulator using a service such as [MacInCloud](../tips-workarounds/host-a-mac-in-the-cloud.md), which allows you to install the remote agent without a physical Mac device.
 
-*   [iOS device](#iOSDevice)</span>, which also requires installation and configuration of the [remote agent](../getting-started/ios-guide.md) when running from Visual Studio.
+*   [iOS device](#iOSDevice)</span>, which also requires installation and configuration of the [remote agent](../first-steps/ios-guide.md) when running from Visual Studio.
 
-If you run into errors building for iOS, see these [tips and workarounds](../tips-and-workarounds/tips-and-workarounds-readme.md) and these [known issues](../known-issues/known-issues-ios.md).
+If you run into errors building for iOS, see these [tips and workarounds](../tips-workarounds/ios-tips.md).
 
-If you have configured your Mac as described in the article [iOS Setup Guide](../getting-started/ios-guide.md), you can build and run your app on the iOS Simulator. The iOS Simulator runs on your Mac.
+If you have configured your Mac as described in the article [iOS Setup Guide](../first-steps/ios-guide.md), you can build and run your app on the iOS Simulator. The iOS Simulator runs on your Mac.
 
 >**Note**: We recommend that you use the iOS Simulator if you have a personal Mac or if you’re running Windows from a Mac using virtualization technology such as Parallels .
 
 ### To run your app on the iOS Simulator <a name="iOSSimulator"></a>
 
-1.   Make sure that you have [installed required software](../getting-started/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
+1.   Make sure that you have [installed required software](../first-steps/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
 
-2.   Make sure that you have [specified iOS processing](../getting-started/ios-guide.md#getInfo), the host name or IP address, port, and security PIN in Visual Studio.
+2.   Make sure that you have [specified iOS processing](../first-steps/ios-guide.md#getInfo), the host name or IP address, port, and security PIN in Visual Studio.
 
 3.  With your app open in Visual Studio, choose **iOS** from the **Solution Platforms** list. If you don’t see this list, choose **Solution Platforms** from the **Add/Remove Buttons** list to display it.
 
@@ -51,11 +51,11 @@ If you have configured your Mac as described in the article [iOS Setup Guide](..
 
 **Tip** If you are running a version of the iOS Simulator with a Retina display on a lower-resolution Mac with a non-Retina display, you may need to scale the emulator to 50% so the app will fit on the screen (choose **Window**, **Scale**).
 
-If you have configured the **remote build** agent on your Mac as described in the article [iOS Setup Guide](../getting-started/ios-guide.md), you can build and run your app on an iOS device that is connected to your Mac or PC.
+If you have configured the **remote build** agent on your Mac as described in the article [iOS Setup Guide](../first-steps/ios-guide.md), you can build and run your app on an iOS device that is connected to your Mac or PC.
 
 ### Troubleshooting? Let's fix it
 
-See the troubleshooting tips in the [iOS Guide](../getting-started/ios-guide.md)
+See the troubleshooting tips in the [iOS Guide](../first-steps/ios-guide.md)
 
 ### To run your app on an iOS device <a name="iOSDevice"></a>
 
@@ -63,11 +63,11 @@ See the troubleshooting tips in the [iOS Guide](../getting-started/ios-guide.md)
 
 	iTunes is not required if you are running your app on a device that is connected to your Mac.
 
-2. Make sure that you have [installed required software](../getting-started/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
+2. Make sure that you have [installed required software](../first-steps/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
 
-3.  Make sure that the iOS device has been provisioned with the same provisioning profile as the Mac. For more information about provisioning, see [Create a provisioning profile](../getting-started/ios-guide.md#create-a-provisioning-profile).
+3.  Make sure that the iOS device has been provisioned with the same provisioning profile as the Mac. For more information about provisioning, see [Create a provisioning profile](../first-steps/ios-guide.md#create-a-provisioning-profile).
 
-4.  Make sure that you have [specified iOS processing](../getting-started/ios-guide.md#getInfo), the host name or IP address, port, secure mode, and security PIN in Visual Studio.
+4.  Make sure that you have [specified iOS processing](../first-steps/ios-guide.md#getInfo), the host name or IP address, port, secure mode, and security PIN in Visual Studio.
 
 5.  With your app open in Visual Studio, choose **iOS** from the **Solution Platforms** list.
 

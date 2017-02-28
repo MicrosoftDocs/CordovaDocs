@@ -656,10 +656,6 @@ brew update && brew upgrade libimobiledevice --HEAD && brew upgrade ios-webkit-d
 
 Try these things:
 
-* Review [iOS and OSX Tips and Workarounds](../tips-and-workaroundsios-tips.md).
-
-* Review [Known issues: iOS](../known-issues/known-issues-ios.md).
-
-* Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova) or start a discussion at the bottom of this topic.
+* Review [iOS and OSX Tips and Workarounds](../tips-workarounds/ios-tips.md).
 
 [Go back up](#errors)

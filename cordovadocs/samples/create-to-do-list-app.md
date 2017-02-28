@@ -18,7 +18,7 @@
 In this tutorial, you’ll learn how to create a task list sample app using AngularJS (AngularJSToDo). This app allows users to create new todo list items, check them off, and remove them. The app also stores tasks using HTML5 Web Storage on the device. (The complete sample uses Microsoft Azure Mobile Services to store data, and also uses Bing Maps to provide valid addresses.) This sample uses JavaScript code, but you can also write your Cordova app in TypeScript.
 
 >**Note**:
-For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](create-first-app-using-vs-tools-apache-cordova.md).
+For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md).
 
 The complete todo list sample app can be downloaded here:
 
@@ -26,7 +26,7 @@ The complete todo list sample app can be downloaded here:
 
 ## Pre-requisites
 
-Before you can create a new project, make sure that you’ve met all system requirements and installed the Visual Studio Tools for Apache Cordova (and optional component in Visual Studio). For more information, see [Install Visual Studio Tools for Apache Cordova](install-vs-tools-apache-cordova.md).
+Before you can create a new project, make sure that you’ve met all system requirements and installed the Visual Studio Tools for Apache Cordova (and optional component in Visual Studio). For more information, see [Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md).
 
 ## Get the complete sample and run it
 
@@ -50,7 +50,7 @@ To run the complete sample:
 
     ![Selecting the Ripple emulator](media/create-to-do-list-app/IC793846.png)
 
-    >**Note**: iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../run-your-app/run-app-android.md) and the [iOS Setup Guide](ios-guide.md) for more info.
+    >**Note**: iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../run-your-app/run-app-android.md) and the [iOS Setup Guide](../first-steps/ios-guide.md) for more info.
 
     If you are not running on a VM and your machine supports Hyper-V, we recommend targeting Android and selecting the VS Emulator (it's faster than the Google Android Emulator). GenyMotion also provides a good emulator but set up and configuration takes time.
 
@@ -60,7 +60,7 @@ To run the complete sample:
 
 ### Troubleshooting? Let's fix it
 
-If you see any unexpected errors when trying to run the app, see these [troubleshooting tips](../tips-and-workaroundsgeneral-tips.md) before continuing.
+If you see any unexpected errors when trying to run the app, see these [troubleshooting tips](../tips-workarounds/general-tips.md) before continuing.
 
 ## <a id="Create"></a>Create the AngularJS ToDoList app from scratch with a new project
 
@@ -204,7 +204,7 @@ You can take a look at the empty todo list in one of the emulators to verify tha
 
 ### Troubleshooting? Let's fix it
 
-If you see any unexpected errors, try running the complete sample first. If that doesn't resolve the issues, see these [troubleshooting tips](../tips-and-workaroundsgeneral-tips.md) before continuing.
+If you see any unexpected errors, try running the complete sample first. If that doesn't resolve the issues, see these [troubleshooting tips](../tips-workarounds/general-tips.md) before continuing.
 
 ## <a id="AddAngularJS"></a>Add the AngularJS framework to your project
 
@@ -754,7 +754,7 @@ The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes 
 
 1. Add the Cordova Geolocation plugin to the app by double-clicking config.xml in **Solution Explorer**, choosing the **Plugins** tab, and then choosing **Geolocation**.
 
-    For more information, see [Manage Plugins for Apps Built with Visual Studio Tools for Apache Cordova](./develop-apps/using-plugins.md).
+    For more information, see [Manage Plugins for Apps Built with Visual Studio Tools for Apache Cordova](../take-further/using-plugins.md).
 
 2. Choose **Add** to add the plugin.
 

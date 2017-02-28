@@ -21,7 +21,7 @@ This article matches the steps of the Cordova [Video tutorial](http://go.microso
 
 ### Fix build and deployment errors
 
-See these [troubleshooting tips](../tips-and-workaroundsgeneral-tips.md).
+See these [troubleshooting tips](../tips-workarounds/general-tips.md).
 
 ### Use the diagnostic tools
 
@@ -109,7 +109,8 @@ $scope.addToDo = function () {
     Another critical tool to help debug Cordova apps is the JavaScript Console. You can also use the JavaScript Console window to read errors and messages sent from your running app, and also to evaluate lines of JavaScript code that run within the current script context.
 10. Look at the output in the JavaScript Console window to view messages.
 
-	>**Note**: For a list of commands such as `console.log`, see [JavaScript Console commands](https://msdn.microsoft.com/library/hh696634.aspx)
+	> [!NOTE]
+    > For a list of commands such as `console.log`, see [JavaScript Console commands](https://msdn.microsoft.com/library/hh696634.aspx)
 
 11.  To evaluate JavaScript, type JavaScript code in the input box. For example, type "document." and you will see IntelliSense information for the document object for the current HTML page displayed in Ripple (Chrome).
 
@@ -119,7 +120,8 @@ $scope.addToDo = function () {
 
 12.  Press Enter to see the value of the document object in the console window.
 
-	>**Tip**: Set breakpoints in your code to get your app into the desired state, and then use the JavaScript Console to check variables and evaluate code.
+	> [!TIP]
+    > Set breakpoints in your code to get your app into the desired state, and then use the JavaScript Console to check variables and evaluate code.
 
 
 ## Debugging features by platform
@@ -178,7 +180,8 @@ Visual Studio debugger and diagnostic capabilities and their platform-specific d
 	</tbody>
 </table>
 
->**Note**: If you are using Windows 7, you can develop apps for Android and iOS, but not for Windows or Windows Phone. To run the app on Windows Server 2012 R2, you must enable the **Desktop Experience** option.
+> [!NOTE]
+> If you are using Windows 7, you can develop apps for Android and iOS, but not for Windows or Windows Phone. To run the app on Windows Server 2012 R2, you must enable the **Desktop Experience** option.
 
 In this section:
 
@@ -190,7 +193,6 @@ In this section:
 
 * [Debug Windows and Windows Phone](#DbgWindows)
 
->**Tip**: For a video and accompanying tutorial that shows you how to debug using the Visual Studio debugger, DOM Explorer, and the JavaScript Console, see [Video Walkthrough: Debug using Visual Studio Diagnostic Tools for Cordova](../video/debug-using-vs-diagnostic-tools.md)
 
 You can attach the Visual Studio debugger to an app that’s running in the Apache Ripple emulator.
 
@@ -238,11 +240,10 @@ The following cross-platform [JavaScript Console commands](https://msdn.microsof
 
 The supported set of console commands, and their behavior, is provided by the host browser, not by Visual Studio. For additional commands that may be supported by Ripple, see the browser documentation for Chrome.
 
->**Tip**: The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
+> [!TIP]
+> The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
 
 The DOM Explorer enables debugging of HTML and CSS. Features available in the **Styles**, **Computed**, and **Layout** tabs of the [Quickstart: Debug HTML and CSS](https://msdn.microsoft.com/library/hh441474.aspx) are supported on Ripple.
-
->**Note**: For detailed information about debugging support, see [Known Issues](../known-issues/known-issues-debugger.md).
 
 You can attach the Visual Studio debugger to the Android emulator or to an Android device to debug your app on Android 4.4.
 
@@ -280,7 +281,8 @@ If the debugger is not attaching to Ripple when you press F5, you can attach the
 
 3.   [Download the jsHybugger plugin](https://www.jshybugger.com/download?release=Plugin) and extract its contents.
 
-    >**Note**: For more information about this plugin, see the [jsHybugger website](https://www.jshybugger.com/). You can use the plugin without a license, but debugging sessions are limited to two minutes. For unlimited debugging, you must [purchase a jshybugger license](https://www.jshybugger.com/#!/buy). The following instructions assume that you’ve purchased a license and downloaded the license file as jshybugger_license.xml.
+    > [!NOTE]
+    > For more information about this plugin, see the [jsHybugger website](https://www.jshybugger.com/). You can use the plugin without a license, but debugging sessions are limited to two minutes. For unlimited debugging, you must [purchase a jshybugger license](https://www.jshybugger.com/#!/buy). The following instructions assume that you’ve purchased a license and downloaded the license file as jshybugger_license.xml.
 
 1.  Place the unzipped jshybugger-plugin-**x.x.x** folder in your project’s **plugins** folder.
 
@@ -325,15 +327,15 @@ The following cross-platform [JavaScript Console commands](https://msdn.microsof
 
 The supported set of console commands, and their behavior, is provided by the host browser, not by Visual Studio. For additional commands that may be supported by Android, see the browser documentation for Chrome for Android.
 
->**Tip**: The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
+> ![TIP]
+> The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
 
 Features available in the **Styles**, **Computed**, and **Layout** tabs of the [Quickstart: Debug HTML and CSS](https://msdn.microsoft.com/library/hh441474.aspx) are supported on Android.
 
->**Caution**: Other debugging and diagnostic tools available for Windows aren’t currently available for Android. We’ll continue to improve Android debugging support in subsequent releases. For detailed information about debugging support, see [Known Issues](../known-issues/known-issues-debugger.md).
-
 You can attach the Visual Studio debugger to the iOS Simulator or to an iOS device. iOS 6, 7, and 8 are supported.
 
->**Note**: Currently, attaching the debugger to iOS apps that use the InAppBrowser plugin is not supported. The Azure Mobile Services plugin uses the InAppBrowser plugin and is affected by this limitation.
+> [!NOTE]
+> Currently, attaching the debugger to iOS apps that use the InAppBrowser plugin is not supported. The Azure Mobile Services plugin uses the InAppBrowser plugin and is affected by this limitation.
 
 ### <a name="DbgIOS"></a>To debug on iOS
 
@@ -379,11 +381,13 @@ The following cross-platform [JavaScript Console commands](https://msdn.microsof
 
 The supported set of console commands, and their behavior, is provided by the host browser, not by Visual Studio. For additional commands that may be supported by iOS, see the browser documentation for iOS Safari.
 
->**Tip**: The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
+> [!TIP]
+> The JavaScript Console in Visual Studio provides IntelliSense information to make easy to identify these commands and other objects on your page.
 
 Features available in the **Styles**, **Computed**, and **Layout** tabs of the [Quickstart: Debug HTML and CSS](https://msdn.microsoft.com/library/hh441474.aspx)  are supported on iOS.
 
->**Caution**: We’ll continue to improve debugging support in subsequent releases. For detailed information about debugging support, see [Known Issues](http://go.microsoft.com/fwlink/?linkid=398782).
+> [!WARNING]
+> We’ll continue to improve debugging support in subsequent releases. For detailed information about debugging support, see [Known Issues](http://go.microsoft.com/fwlink/?linkid=398782).
 
 ### <a name="DbgWindows"></a>To debug in Windows and Windows Phone
 For Windows 8, Windows 8.1, and Windows Phone 8.1 apps, you can use the same Visual Studio debugging tools that you would use for any Windows Store app built using HTML and JavaScript. For more information, see [Debug Store apps in Visual Studio](https://msdn.microsoft.com/library/hh441472.aspx) in the Windows Dev Center.
@@ -392,11 +396,7 @@ For Windows Phone 8 apps, you cannot attach the Visual Studio debugger. Instead,
 
 As an alternative to using weinre for Windows Phone 8 debugging, you can instead add the Console plugin to your app, build your app, and then open the generated native Windows Phone 8 project in Visual Studio. The native project can be found under the platforms\wp8 folder. With the native project open, you can use the Output window to view console output. For more information about accessing the native projects, see [Access a Native Cordova Project](../tips-workarounds/access-native-cordova-project.md).
 
->**Caution**: Changes you make to the native project will be overwritten when you rebuild the Cordova app.
+> [!WARNING]
+> Changes you make to the native project will be overwritten when you rebuild the Cordova app.
 
 ![Download the tools](media/debug-using-visual-studio/debug-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
-
-#### See Also
-[Get Started with Visual Studio Tools for Apache Cordova](../getting-started/get-started-vs-tools-apache-cordova.md)
-
-[Known Issues](../known-issues/known-issues-debugger.md)
