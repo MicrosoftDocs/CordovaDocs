@@ -21,7 +21,7 @@ When you create app using Visual Studio Tools for Apache Cordova, you have many 
 
 *   [iOS Simulator](#iOSSimulator), which requires installation and configuration of the [remote agent](../getting-started/ios-guide.md) when running from Visual Studio.
 
-*   iOS Simulator using a service such as [MacInCloud](../getting-started/build_ios_cloud.md), which allows you to install the remote agent without a physical Mac device.
+*   iOS Simulator using a service such as [MacInCloud](../tips-and-workarounds/host-a-mac-in-the-cloud.md), which allows you to install the remote agent without a physical Mac device.
 
 *   [iOS device](#iOSDevice)</span>, which also requires installation and configuration of the [remote agent](../getting-started/ios-guide.md) when running from Visual Studio.
 

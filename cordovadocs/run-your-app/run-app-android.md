@@ -25,9 +25,9 @@ You've created an Apache Cordova application project using Visual Studio and Vis
 
 In this article, you'll learn how to use these options to run your Android apps in Visual Studio. 
 
-Throughout the steps outlined below, if you have trouble deploying to Android devices or emulators, be sure to check out [*Resolve Android build and deployment errors*](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md).
+Throughout the steps outlined below, if you have trouble deploying to Android devices or emulators, be sure to check out [*Resolve Android build and deployment errors*](../tips-and-workaroundsandroid-tips.md).
 
-To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your App](vs-taco-package-publish.md).
+To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your App](publish-to-a-store.md).
 
 ## <a id="android-device"></a> Run on an Android Device
 

@@ -21,7 +21,7 @@ This article matches the steps of the Cordova [Video tutorial](http://go.microso
 
 ### Fix build and deployment errors
 
-See these [troubleshooting tips](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md).
+See these [troubleshooting tips](../tips-and-workaroundsgeneral-tips.md).
 
 ### Use the diagnostic tools
 

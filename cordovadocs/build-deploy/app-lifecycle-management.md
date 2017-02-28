@@ -364,7 +364,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes, with third-party frameworks</p>
             </td>
             <td>
-                <p>See <a href="../test/unit-test-01-primer.md">Author and run tests</a>.</p>
+                <p>See <a href="../test/unit-test-primer.md">Author and run tests</a>.</p>
             </td>
         </tr>
         <tr>
@@ -462,7 +462,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Partial</p>
             </td>
             <td>
-                <p>See <a href="./vs-taco-package-publish.md">Package your Cordova app</a>. Also note that extensions are available
+                <p>See <a href="./publish-to-a-store.md">Package your Cordova app</a>. Also note that extensions are available
                     that can automate this process for some app stores. See <a href="https://marketplace.visualstudio.com/VSTS">Extensions for Visual Studio Team Services</a>,
                     especially the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play">extension for Google Play</a>.</p>
             </td>

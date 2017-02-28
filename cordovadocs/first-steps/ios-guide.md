@@ -656,7 +656,7 @@ brew update && brew upgrade libimobiledevice --HEAD && brew upgrade ios-webkit-d
 
 Try these things:
 
-* Review [iOS and OSX Tips and Workarounds](../tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md).
+* Review [iOS and OSX Tips and Workarounds](../tips-and-workaroundsios-tips.md).
 
 * Review [Known issues: iOS](../known-issues/known-issues-ios.md).
 

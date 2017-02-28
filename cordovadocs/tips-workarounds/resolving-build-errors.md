@@ -49,7 +49,7 @@ Try these steps if you have trouble deploying to emulators or devices.
 
     ![The platforms and plugins folders](media/resolving-build-errors/platforms-folder.png)
 
-    If the issue only occurs with a particular plugin, you may have an incompatibility with the plugin or the plugin version. See these [tips](general/tips-and-workarounds-general-readme.md).
+    If the issue only occurs with a particular plugin, you may have an incompatibility with the plugin or the plugin version. See these [tips](general-tips.md).
 
 3. If you haven't done it already, [check your update notifications and run the dependency checker](#firsttime).
 4. If you are not using a new blank project already, create an empty project using the Blank App template (you can find it under **JavaScript**, **Apache Cordova Apps** when creating a new project) and see if you get the same error when you build.
@@ -63,7 +63,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     If the issue is only on the Android platform, see [Android](#android). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../getting-started/ios-guide.md). If the issue is only on Windows, see [Windows](#windows).
 
 6. If you see a message that you are unable to start debugging, see [this workaround](#debugging).
-7. Try [clearing the cache](~/en-us/docs/configure-vs-tools-apache-cordova/#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
+7. Try [clearing the cache](./configuration-tips.md#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
 
 <a name="android"></a>
 ##Troubleshooting Android build and deployment issues
@@ -88,7 +88,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
     For additional ADB commands, see [this article](http://www.androidcentral.com/android-201-10-basic-terminal-commands-you-should-know).
 
-5. Make sure that you have the [required SDK components installed](~/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty).
+5. Make sure that you have the [required SDK components installed](./configuration-tips.md#ThirdParty).
 6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](http://go.microsoft.com/fwlink/?LinkID=396873), try again.
 
 <a name="windows"></a>
@@ -121,8 +121,6 @@ Check the Output, Error List, and JavaScript Console windows to see if you ran i
     If you see the following unhandled exception when targeting Win/WinPhone 10,  make sure you set **Windows 10.0** as the target in the Windows tab of the configuration designer.
 
     ![unhandled exception](media/resolving-build-errors/unhandled-exception.png)
-
-    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](~/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
 
 * WWAHost runtime error?
 

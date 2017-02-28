@@ -109,8 +109,8 @@ Having trouble with the installation? Search for results based on error messages
 
 During installation, and later, as Visual Studio interacts with a Cordova project, multiple software components are downloaded and installed in your development environment. See [Third-Party Tools Added During Installation](#third-party-tools) for details. If component downloads fail, check your internet connectivity and your connection proxy settings to ensure Visual Studio can access the online resources it needs.  
 
-The installer attempts to isolate the software components it uses from other copies you may have installed on your system, but there could be conflicts based on how your system is configured. Check your system's `PATH` environment variable to ensure that other components aren't loading before the ones installed by Visual Studio. For comprehensive guide to configuring Visual Studio Tools for Apache Cordova and all of the third-party dependencies, see [Configure the Visual Studio Tools for Apache Cordova](../getting-started/configure-vs-tools-apache-cordova.md).
+The installer attempts to isolate the software components it uses from other copies you may have installed on your system, but there could be conflicts based on how your system is configured. Check your system's `PATH` environment variable to ensure that other components aren't loading before the ones installed by Visual Studio. For comprehensive guide to configuring Visual Studio Tools for Apache Cordova and all of the third-party dependencies, see [Configure the Visual Studio Tools for Apache Cordova](../tips-workarounds/configuration-tips.md).
 
 ## Next Steps
 
-Once you've completed the installation, go straight to our [beginner's guide](build-your-first-app.md) to get started with the tools. If have an existing Cordova project from Visual Studio 2015, view the [migratation guide](migrate-from-vs2015.md).
+Once you've completed the installation, go straight to our [beginner's guide](build-your-first-app.md) to get started with the tools. If have an existing Cordova project from Visual Studio 2015, view the [migratation guide](migrate-from-visual-studio-2015.md).

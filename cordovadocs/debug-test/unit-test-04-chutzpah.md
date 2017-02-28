@@ -47,6 +47,6 @@ Now select **Test > Windows > Test Explorer** and you’ll see the available tes
  
 ![Test results in Visual Studio](media/chutzpah/03-results1.png)
 
-This verifies that you have the mechanics of using Chutzpah working within Visual Studio. You can now do much more extensive unit testing as described in the next topic, [Improve the unit test: an introduction to test-driven development](unit-test-05-tdd.md).
+This verifies that you have the mechanics of using Chutzpah working within Visual Studio. You can now do much more extensive unit testing as described in the next topic, [Improve the unit test: an introduction to test-driven development](test-driven-development.md).
 
 >**Is the app itself running?** Although Visual Studio builds the Cordova app project prior to running unit tests through Chutzpah, the app isn’t actually part of running the tests. Chutzpah invisibly loads JavaScript files from their locations in the project folder into PhantomJS and executes them there. Any app package that’s being built isn’t involved in the process.

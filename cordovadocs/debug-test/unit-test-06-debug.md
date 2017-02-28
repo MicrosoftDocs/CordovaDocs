@@ -7,7 +7,7 @@
 #Debugging unit tests
 One of the most significant benefits to unit testing inside Visual Studio is the ability to debug your code during a test, and to debug the tests themselves. Unit tests are code, after all, and that code is prone to its own bugs.
 
-The unexpected test failure in the previous topic, [Improving the unit tests: an introduction to test-driven development](unit-test-05-tdd.md) is not the result of buggy unit code, but actually a buggy unit test. Let’s use the debugger to find out why.
+The unexpected test failure in the previous topic, [Improving the unit tests: an introduction to test-driven development](test-driven-development.md) is not the result of buggy unit code, but actually a buggy unit test. Let’s use the debugger to find out why.
 
 First, note that when you have any of your JavaScript files open in the Visual Studio editor, you can set breakpoints on any line of code, such as the beginning of the truncation test:
 

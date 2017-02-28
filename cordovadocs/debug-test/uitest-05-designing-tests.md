@@ -240,7 +240,7 @@ Again, you can choose either framework as you prefer. The tests we’ll write wi
 
 ## Designing UI test cases: checking for state and state changes
 
-Now that we understand the mechanics of writing a single UI test, we’re ready to think through how, exactly, to fully test WeatherApp’s UI. Before jumping into writing test code, however, let’s take a step back (like we did with [test-driven development](unit-test-05-tdd.md) and think about *what* we need to specifically test.
+Now that we understand the mechanics of writing a single UI test, we’re ready to think through how, exactly, to fully test WeatherApp’s UI. Before jumping into writing test code, however, let’s take a step back (like we did with [test-driven development](test-driven-development.md) and think about *what* we need to specifically test.
 
 For this it’s helpful to do a side-by-side comparison with unit testing:
 

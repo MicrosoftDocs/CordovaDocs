@@ -12,7 +12,7 @@ The WeatherApp sample contains a simple UI with an input field for a ZIP code an
 
 Even with a simple UI on a single page, there are many things to test in the UI: giving it good and bad input, checking error messages under a variety of conditions (like no connectivity), and checking for appropriate output (for example, notice that the sunrise and sunset times shown above are the same, which shouldn’t ever be the case).
  
-In this section, though, we’ll focus on the foundational mechanics of writing and running simple *UI sequences* with Appium. The reason for this is simple: a UI sequence is the heart of a test, but it helps to understand how those sequences work independent of formal test structures. That is, the difference between a UI sequence and a test is that a test wraps a UI sequence in the appropriate code for your test framework and includes assertions. We’ll add that part in [Designing and writing UI tests](uitest-05-designing-tests.md).
+In this section, though, we’ll focus on the foundational mechanics of writing and running simple *UI sequences* with Appium. The reason for this is simple: a UI sequence is the heart of a test, but it helps to understand how those sequences work independent of formal test structures. That is, the difference between a UI sequence and a test is that a test wraps a UI sequence in the appropriate code for your test framework and includes assertions. We’ll add that part in [Designing and writing UI tests](designing-ui-tests.md).
 
 
 ## Working with the WebDriver API
@@ -97,7 +97,7 @@ At this point we’re not checking any of the output. We’ll come back to that 
 
 When you get proficient at writing UI tests, this particular method of chaining operations and test assertions is very efficient. However, it’s very likely that you’ll need to debug tests along the way, by setting breakpoints in Visual Studio (or Visual Studio Code, which is excellent for debugging node.js scripts) and/or getting access to intermediate values for console output. Furthermore, you may need to do some intermediate computations for your test assertions or compare values in multiple elements. In both cases, the implicit chaining structure is more difficult to work with, so it’s helpful to have a more explicit procedural structure as the next two options provide.
 
-More on debugging can be found in the [Debugging UI tests](uitest-06-debugging.md) section.
+More on debugging can be found in the [Debugging UI tests](debugging-ui-tests.md) section.
 
 ## Chaining with .then callbacks (test03.js)
 

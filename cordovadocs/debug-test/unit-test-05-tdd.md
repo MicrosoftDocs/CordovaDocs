@@ -334,4 +334,4 @@ Why is that? Click on that test in the list and the bottom pane of Test Explorer
 
 This says that the actual value is ```undefined```. Hmmm. How did that happen? We know that ```data.Name``` was good from prior test runs, thus ```.substring(0, 255)``` should be valid. What’s going on?
 
-If you find yourself asking these questions, the right answer is to step through that unit test in the debugger, as described in [Debugging unit tests](unit-test-06-debug.md). 
+If you find yourself asking these questions, the right answer is to step through that unit test in the debugger, as described in [Debugging unit tests](debugging-unit-tests.md). 
