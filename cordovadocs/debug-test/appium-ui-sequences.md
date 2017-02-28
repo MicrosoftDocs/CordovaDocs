@@ -91,7 +91,8 @@ You should see the app start, a pause, then “95959” is entered into the ZIP 
 
 [![Link to video that demonstrates Appium launching the app in an emulator](media/running/02-running-appium-thumbnail.png)](https://aka.ms/yzqheq)
 
-> **Note**: the five second delay at the end of the test is there so we can visually see the after-test state of the app. When running automated UI tests, there is no need for this pause because we’ll be looking at test reports rather than watching the tests in real time.
+> [!NOTE]
+> The five second delay at the end of the test is there so we can visually see the after-test state of the app. When running automated UI tests, there is no need for this pause because we’ll be looking at test reports rather than watching the tests in real time.
 
 At this point we’re not checking any of the output. We’ll come back to that later, but if you want to see an example for a web app, see “Usage > Q promises + chaining” on [https://github.com/admc/wd]( https://github.com/admc/wd).
 
@@ -142,7 +143,8 @@ Because both this approach and the implicit chaining approach use *wd.promiseCha
 
 Yiewd, https://github.com/jlipps/yiewd, is a wrapper for **wd** that takes advantage of the *yield* keyword to write asynchronous test code without all the ceremony of chaining. (The yiewd page on GitHub says that the name is a combination of yield + wd, but it’s perhaps it also comes from a developer with a small child in the house that couldn’t quite say “yield” correctly!)
 
-> **Note**: the *yield* keyword requires a current version of Node.js, like 4.4.3. Older versions that lack this *yield* support and will throw syntax errors on that keyword.
+> [!NOTE]
+> The *yield* keyword requires a current version of Node.js, like 4.4.3. Older versions that lack this *yield* support and will throw syntax errors on that keyword.
 
 Start by adding **yiewd** to your project with npm:
 

@@ -70,7 +70,8 @@ Try these steps if you have trouble deploying to emulators or devices.
 
 Try these steps if you have trouble building and deploying to Android emulators or devices. In some cases, you may see an error about a failure to install the APK on the device or a failure to run the Android Debug Bridge (ADB.exe).
 
->**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../run-your-app/run-app-android.md).
+> [!NOTE]
+> For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../run-your-app/run-app-android.md).
 
 1. If you are running on a device, make sure that **Developer Mode** is enabled on the device. Try the instructions [here](http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) to enable developer mode.
 

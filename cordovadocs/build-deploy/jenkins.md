@@ -68,7 +68,8 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 
 	3. Under **NodeJS**, add an installation locations for Windows and macOS. Set these based on your server's configuration. By default, Windows will install Node in `C:\Program Files (x86)\nodejs` while macOS installs it under `/usr/local` (technically `/usr/local/bin`). 
 	 
-	> **Note**: You can ignore the warning that appears about `\usr\local` not existing on Windows. 
+	> [!NOTE]
+	> You can ignore the warning that appears about `\usr\local` not existing on Windows. 
 
 	4. Click **Save**.
 

@@ -29,7 +29,8 @@ Ah, now we see the problem! Our unit test dereferences ```norm.Name``` instead o
 
 Stopping the debugger, changing the two instances of ```norm.Name``` to ```norm.name```, saving ```normalize_tests.js```, and rerunning the test, we find that it now passes.
 
->**Note**: although the **Run All** command for tests automatically saves changed files, rerunning a selected test does not. If you forget to save a file before running a selected test, you could be quite confused as to why it’s still failing!
+> [!NOTE]
+> although the **Run All** command for tests automatically saves changed files, rerunning a selected test does not. If you forget to save a file before running a selected test, you could be quite confused as to why it’s still failing!
 
 ##<a name="variances"></a>Runtime variances
 

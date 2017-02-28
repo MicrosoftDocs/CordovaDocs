@@ -8,7 +8,8 @@
 
 Unit testing executes code in a runtime that’s separate from the runtime in which the app will eventually run on a mobile platform. Unit testing thus happens without deploying the code to an emulator or device that’s running the platform operating system.
 
-> **Note:** It is certainly possible, of course, to include your unit test code with a build of the app that’s deployed to a mobile platform, and to execute the tests on that platform directly. This is a good test to run at some point, in fact, but not as part of a build or continuous integration process.
+> [!NOTE]
+> It is certainly possible, of course, to include your unit test code with a build of the app that’s deployed to a mobile platform, and to execute the tests on that platform directly. This is a good test to run at some point, in fact, but not as part of a build or continuous integration process.
 
 As a result, platform APIs are not available during unit testing, and any calls made to them—such as those that happen within a Cordova plugin—will fail. The same is also true of other external dependencies that the unit testing runtime doesn’t have access to, such as external databases and web services, and even the ability to authenticate with those resources.
 
@@ -54,7 +55,8 @@ Still, when executing ```consolidateUserRecord``` in a unit testing runtime, we 
 - The production database isn’t available.
 - External web requests will fail.
 
-> **Note: **we don’t in fact want to make external web requests from a unit test in the first place because ultimately we want to run unit tests as part of a continuous integration build. Unit tests should run quickly and not depend on connectivity, nor should we break the build because of a network timeout. Again, these are matters for integration testing.
+> [!NOTE]
+> We don’t in fact want to make external web requests from a unit test in the first place because ultimately we want to run unit tests as part of a continuous integration build. Unit tests should run quickly and not depend on connectivity, nor should we break the build because of a network timeout. Again, these are matters for integration testing.
 
 How, then, can we run this code at all? The answer is simple: we fake it, which means creating stubs—or mocks, as they’re commonly called—that intercept calls to external dependencies to mimic the data they return.
 

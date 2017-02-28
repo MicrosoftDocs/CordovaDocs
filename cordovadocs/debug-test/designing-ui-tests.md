@@ -10,7 +10,8 @@ In the previous section we learned the fundamentals of running a UI sequence wit
 
 We’ll do this in two stages. First, we’ll install the tools we need and create a single UI test for the WeatherApp sample to assert that entering a ZIP code and tapping the Find Weather button results in either the display of weather data or the display of an error message. This helps us work through the core mechanics of a test. After that, we’ll talk more deeply about *designing* UI test cases, thinking especially about what, exactly, needs to be tested through the UI that cannot be tested or is better tested on some other level like unit testing or integration testing.
 
-> **Note**: one advantage of using Apache Cordova for mobile apps is that the UI on each platform is generated from the same HTML and CSS, and thus tests that reference those elements can be run on multiple platforms. With native UI, on the other hand, how you reference elements is unique to each platform and thus requires you to write separate tests.
+> [!NOTE]
+> One advantage of using Apache Cordova for mobile apps is that the UI on each platform is generated from the same HTML and CSS, and thus tests that reference those elements can be run on multiple platforms. With native UI, on the other hand, how you reference elements is unique to each platform and thus requires you to write separate tests.
 
 ## Test framework and test runner
 
@@ -36,7 +37,8 @@ Another option here is to use [Protractor]( http://angular.github.io/protractor/
 
 Also note that we aren’t able to use a test runner like Chutzpah that’s integrated with Visual Studio’s Test Explorer because by bringing libraries like **yiewd** and **Chai** we create a dependency on Node.js. That said, you can still run tests using Visual Studio’s Task Runner, and you can use Visual Studio or Visual Studio Code to debug your tests as covered in “Debugging UI tests.”
 
-> **Protractor notes**: With Protractor, you launch it with a separate Karma-like configuration file that specifies the Appium capabilities along with the names of the test files, so you don’t need the capabilities and the *appDriver.init* call in those test files themselves. The [WebDriver API that’s built into Protractor]( http://angular.github.io/protractor/#/api) is also a little different from **wd**—for example, the *elementById* API we’ve been using becomes *element.findElement(By.id(‘<id>’))* in Protractor.
+> [!NOTE]
+> With Protractor, you launch it with a separate Karma-like configuration file that specifies the Appium capabilities along with the names of the test files, so you don’t need the capabilities and the *appDriver.init* call in those test files themselves. The [WebDriver API that’s built into Protractor]( http://angular.github.io/protractor/#/api) is also a little different from **wd**—for example, the *elementById* API we’ve been using becomes *element.findElement(By.id(‘<id>’))* in Protractor.
 > If you’re using Angular or Ionic, Protractor also provides an API with helper methods for automating a page using locator strategies, along with the ability to drive UI with injected JavaScript. Both are helpful, for example, when you have an element in a template without an ID and need to target that element based on some other heuristic. 
 
 ## Create a first test
@@ -282,7 +284,8 @@ Put simply, in unit testing we call a unit of code with some *input data* and re
 
 UI testing, in other words, should focus on matters that are *specifically* UI concerns, such as the *visibility* of information, the visual or interactive *status* of certain controls, responsiveness to user actions like panning, and so on. UI tests *don’t* need to concern themselves with the *validity* of displayed information, because such matters should be covered by unit tests or integration tests.
 
-> **Note**: as with unit tests, each UI test should be specific such that if it fails, you immediately know the exact cause. For UI, however, a “single” test for a state change might involve checking the state of many different elements that *as a group* make up that one test especially when those controls always change state together. In such contexts it doesn’t make sense to check each control individually.
+> [!NOTE]
+> As with unit tests, each UI test should be specific such that if it fails, you immediately know the exact cause. For UI, however, a “single” test for a state change might involve checking the state of many different elements that *as a group* make up that one test especially when those controls always change state together. In such contexts it doesn’t make sense to check each control individually.
  
 To use a trivial example of the quintessential calculator app, unit testing should cover whether the functions that perform mathematical operations actually produce the correct results for a variety of inputs, including edge cases. Because of this, UI tests don’t need to test that same range of input values. What they *do* need to test are the *bindings* between UI elements and those operations. This is especially important with actions that don’t have backing operational functions, like clear, memory set/retrieve, changing number bases, and anything else that affects the UI display only.
 
@@ -586,6 +589,8 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 
 	![Test results in Test Explorer](media/designing/05-node-tools-test-results.png) 
 
-> **Note**: The Node.js tools at present will reload the test file for each test it runs. In the example of [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js), this means that all the setup code to initialize Appium and launch the app will be run for each test, and the app will shut down after each one as well. This is of little consequence if you need to relaunch the app for certain tests to begin with, but can make running other groups of tests slower.
+> [!NOTE]
+> The Node.js tools at present will reload the test file for each test it runs. In the example of [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js), this means that all the setup code to initialize Appium and launch the app will be run for each test, and the app will shut down after each one as well. This is of little consequence if you need to relaunch the app for certain tests to begin with, but can make running other groups of tests slower.
 
-> **Note**: When you reopen the project, the Node.js tools will rescan files for tests, including files contained in *node_modules*. If you’ve installed other packages locally, as we’ve done in this example, the scan will take some time and show many additional tests in Test Explorer. To isolate your UI tests, locate and select them in the list, the right-click and select **Group By > Project**. This will put them into a list of their own with perhaps just a couple of other tests. To run them specifically, then, select them, right-click, and select **Run Selected Tests**.
+> [!NOTE]
+> When you reopen the project, the Node.js tools will rescan files for tests, including files contained in *node_modules*. If you’ve installed other packages locally, as we’ve done in this example, the scan will take some time and show many additional tests in Test Explorer. To isolate your UI tests, locate and select them in the list, the right-click and select **Group By > Project**. This will put them into a list of their own with perhaps just a couple of other tests. To run them specifically, then, select them, right-click, and select **Run Selected Tests**.

@@ -233,7 +233,8 @@ Ex:
 
 There are two primary methods to install a plugin from npm when using Cordova 4.3.1 or below: using a recent version of the Cordova CLI or the "npm" command.
 
-> **Note**: Versions of plugins present in npm were tested on Cordova 5.0.0 or later and therefore may or may not work on earlier versions of Cordova.
+> [!NOTE]
+> Versions of plugins present in npm were tested on Cordova 5.0.0 or later and therefore may or may not work on earlier versions of Cordova.
 
 #### Using Cordova CLI 5.0.0+
 
@@ -251,7 +252,8 @@ The simplest method to install a plugin from npm is to take advantage of Visual 
 
 	...replacing "path-to-project" with the path to the Cordova project inside your Visual Studio solution (not the solution root) and "cordova-plugin-camera" with the plugin you wish to install. You might also replace "cordova@5.1.1" with the version of Cordova you are using in your project as long as it is 5.0.0 or later.
 
-    > **Note**: With this method you might not see these plugins listed in the **Installed** tab of the config.xml designer but they will be present in the project and included in build or source control operations.
+    > [!NOTE]
+    > With this method you might not see these plugins listed in the **Installed** tab of the config.xml designer but they will be present in the project and included in build or source control operations.
 
 #### Using the npm Command
 

@@ -43,7 +43,8 @@ On the Azure portal, create an Azure Mobile App backend. Follow steps in this vi
 
 For documentation that shows similar steps, see the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/). You can skip the section on downloading the client app.
 
->**Note**: You can follow steps described in the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) to download the Azure sample, but if you use the getting started sample instead of the Azure connected services sample, you must take extra steps to add required plugins, to add offline sync and push notification code, and to update the Cordova version in your app.
+> [!NOTE]
+> You can follow steps described in the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) to download the Azure sample, but if you use the getting started sample instead of the Azure connected services sample, you must take extra steps to add required plugins, to add offline sync and push notification code, and to update the Cordova version in your app.
 
 ##Task 2: Update your Cordova app and your Mobile App backend code
 
@@ -102,7 +103,8 @@ If you want to send push notifications to iOS devices, you must configure APNS a
 
 To follow the same steps in the tutorial, see [Register the app for push notifications on your Apple Developer portal](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-ios).
 
->**Note**: The PhoneGap push plugin requires XCode 7.
+> [!NOTE]
+> The PhoneGap push plugin requires XCode 7.
 
 ##Task 6: (Optional) Configure Windows Notification Service (WNS)
 

@@ -20,7 +20,8 @@ This document covers tips, tricks, and known workarounds for problems with the C
 
 Try these steps if you have trouble building and deploying to Android emulators or devices. In some cases, you may see an error about a failure to install the APK on the device or a failure to run the Android Debug Bridge (ADB.exe).
 
->**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../run-your-app/run-app-android.md).
+> [!NOTE]
+> For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../run-your-app/run-app-android.md).
 
 1. Before taking any other steps, try running your app against other platforms or emulators to make sure the issue is Android-specific.
 
@@ -82,7 +83,8 @@ To fix the issue:
 
     If VT-x is disabled, enable it, reboot, and retry HAXM. For help to identify whether VT-x is enabled on your machine, use the [processor identification utility](http://www.intel.com/content/www/us/en/support/processors/processor-utilities-and-programs/intel-processor-identification-utility.html).
 
-    >**Note**: The processor utility may mistakenly report that VT-x is not supported after switching between Hyper-V and HAXM.
+    > [!NOTE]
+    > The processor utility may mistakenly report that VT-x is not supported after switching between Hyper-V and HAXM.
 
 4. Check whether you have some antivirus software (like Avast) or other software using hardware-assisted virtualization and disable or uninstall the software. Reboot and retry HAXM.
 

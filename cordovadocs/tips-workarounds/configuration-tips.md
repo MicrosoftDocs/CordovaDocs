@@ -66,8 +66,8 @@ Git command line tools 1.9.5 are installed by default. Unexpected failures may o
 
      * Add %ANT_HOME%\bin to the system path.
 
-    >**Note:**
-If you need to set this environment variable manually, see [Override system environment variables](#env-var).
+    > [!NOTE]
+    > If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 * [32-bit Oracle Java 7](http://go.microsoft.com/fwlink/?LinkID=396871)
 
     * Set the JAVA_HOME environment variable to C:/Program Files/Java/jdk1.7.0_55
@@ -76,8 +76,8 @@ If you need to set this environment variable manually, see [Override system envi
 
     * To avoid out of memory issues, set a *JAVA_OPTIONS environment variable with at least -Xmx512M in it.
 
-    >**Note:**
-If you need to set this environment variable manually, see [Override system environment variables](#env-var).
+    > [!NOTE]
+    > If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 * [Android SDK](http://go.microsoft.com/fwlink/?LinkID=396873) with the following SDK packages:
 
    * Android SDK Tools (latest version) * Android SDK Platform-tools (latest version)
@@ -175,7 +175,8 @@ When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first ti
 
         remotebuild certificates generate
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > [!NOTE]
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
 
 4. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
 
@@ -189,7 +190,8 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
         remotebuild certificates reset --hostname=my.hostname.com
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > [!NOTE]
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
 
 3. When prompted, type “Y” and then type Enter.
 
@@ -276,7 +278,8 @@ For more information about app provisioning and certificate signing identities, 
 
 If you see unexpected errors when trying to build the Blank App template after installing Visual Studio Tools for Apache Cordova, you can try clearing your cache and reinstalling the Cordova CLI pre-processor, vs-tac, on your PC. Typically, this is only necessary if you try to build a Cordova app and see the error Cannot find module *[modulename]*.
 
->**Note**: If you do not see the module error, go through steps in [Resolving build errors](../tips-workarounds/resolving-build-errors.md) before re-installing vs-tac.
+> [!NOTE]
+> If you do not see the module error, go through steps in [Resolving build errors](../tips-workarounds/resolving-build-errors.md) before re-installing vs-tac.
 
 ### To try the quick fix
 

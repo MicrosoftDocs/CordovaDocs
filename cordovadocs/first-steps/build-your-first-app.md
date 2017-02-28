@@ -24,7 +24,8 @@ In this guide, we'll show how to build, test and debug a Cordova application usi
 
 The application displays current weather conditions based on the current device location plus enables users to search for weather conditions using a US postal (zip) code. You can find the application's source code [here](https://github.com/Microsoft/cordova-samples/tree/master/weather-app).
 
-> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](installation.md).
+> [!NOTE]
+> Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](installation.md).
 
 ## <a id="create-project"></a>Create An Apache Cordova Project
 
@@ -33,7 +34,8 @@ The application displays current weather conditions based on the current device 
 	
 	![Visual Studio: New JavaScript Project](media/vs-taco-2017-first-app/figure-02.png)
 
-	> **Note:** If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
+	> [!NOTE]
+	> If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
     
 	> ![Visual Studio: New TypeScript Project](media/vs-taco-2017-first-app/figure-03.png)
 
@@ -92,7 +94,8 @@ The default Cordova project includes a simple application user interface and log
 
 1.	On the Visual Studio Standard toolbar, click the **Simulate In Browser - Nexus 7 (Tablet)** button.
 	
-	> **Note:** Cordova Simulate requires the Google Chrome browser; make sure you have the browser installed before running the application.
+	> [!NOTE]
+	> Cordova Simulate requires the Google Chrome browser; make sure you have the browser installed before running the application.
 	
 	![Visual Studio Run Option](media/vs-taco-2017-first-app/figure-06.png)
   
@@ -116,7 +119,8 @@ The default Cordova project includes a simple application user interface and log
 	
 	![Available Target Platforms](media/vs-taco-2017-first-app/figure-11.png)
 
-	> **Note:** Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for guidance on how to configure your development environment for iOS.   
+	> [!NOTE]
+	> Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for guidance on how to configure your development environment for iOS.   
 	
 	Next, click the drop-down arrow on the deployment target in the Standard toolbar to see a list of available targets. Choose a deployment target from the list and Visual Studio will build the app and deploy it to the selected device, emulator or simulator.
 
@@ -143,7 +147,8 @@ The editor exposes the following options:
 
 If you want, give the app a more appropriate **Display Name**, modify the **application version**, and adjust other aspects of the app's behavior using the editor.
 
-> **Note:** To edit the `config.xml` file directly, without using the special editor Visual Studio provides, you can right-click on the file in Solution Explorer and select **View code** or highlight the file in Solution Explorer then press the **F7** key.
+> [!NOTE]
+> To edit the `config.xml` file directly, without using the special editor Visual Studio provides, you can right-click on the file in Solution Explorer and select **View code** or highlight the file in Solution Explorer then press the **F7** key.
 
 ## <a id="build-something"></a>Creating The Sample Application
 
@@ -155,7 +160,8 @@ The application uses the [**jQuery**](https://jquery.com/) and [**jQuery Mobile*
 
 Let's add the JQuery and JQuery Mobile NuGet packages to the project. 
 
-> **Note:** Before starting the following steps, point your browser of choice to [the jQuery Mobile download site](http://jquerymobile.com/download/) to note which version of the jQuery library is compatible with the current shipping release of jQuery Mobile. At the time of this writing, jQuery Mobile version 1.4.5 is compatible with jQuery version 1.8 through 1.11. In the steps that follow, be sure you install compatible versions of both frameworks. The NuGet Package Manager should deploy compatible versions of dependent libraries, but it's best to make sure first.
+> [!NOTE]
+> Before starting the following steps, point your browser of choice to [the jQuery Mobile download site](http://jquerymobile.com/download/) to note which version of the jQuery library is compatible with the current shipping release of jQuery Mobile. At the time of this writing, jQuery Mobile version 1.4.5 is compatible with jQuery version 1.8 through 1.11. In the steps that follow, be sure you install compatible versions of both frameworks. The NuGet Package Manager should deploy compatible versions of dependent libraries, but it's best to make sure first.
 
 1.	In Visual Studio, open **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery.Mobile** NuGet package to your solution.     
 
@@ -205,7 +211,8 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 The Cordova project's `index.html` is the default page for the application; the Cordova native application loads the page as the app's main screen when a Cordova application launches. To create the application's UI, we'll add content to this file.
 
-> **Note:** You can change the default page by populating the **Start Page** property in the project's `config.xml` file using the [Configuration Editor](#settings).   
+> [!NOTE]
+> You can change the default page by populating the **Start Page** property in the project's `config.xml` file using the [Configuration Editor](#settings).   
 
 1.	Open the project's `www\css\index.css` file and replace its content with the following:
 
@@ -362,7 +369,8 @@ The `onDeviceReady` function is used to kick off any application processes that 
 
 The app we're creating uses the free [OpenWeatherMap](http://openweathermap.org/) service to retrieve weather conditions for a location. Before you can use the service, you must setup an account and request an API key for their Current Conditions API. Point your browser to [OpenWeatherMap](https://home.openweathermap.org/) and setup an account. Once you have a valid login, go to the service's [API page](http://openweathermap.org/api) and subscribe to the **Current Weather data** service, and then generate an API key.
 
-> **Note:** Make note of the API key as you'll need it later in the app's JavaScript code. 
+> [!NOTE]
+> Make note of the API key as you'll need it later in the app's JavaScript code. 
 
 ### Add Code To Get Current Weather Conditions
 
@@ -456,7 +464,8 @@ Now we'll add the function that responds to the **Find Weather** button's `click
     'unsafe-inline'; media-src *">           
     ```
 
-    > **Note:** Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted web page context. You can read more about at [content-security-policy.com](http://content-security-policy.com/).
+    > [!NOTE]
+    > Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted web page context. You can read more about at [content-security-policy.com](http://content-security-policy.com/).
 
 5.	The [Cordova Whitelist plugin](https://cordova.apache.org/docs/en/latest/guide/appdev/whitelist/) is added automatically to every Cordova project. It adds an extra layer of security to the Cordova native application by enabling developers to define, at the native application layer, which endpoint domains the application can access. By default, the whitelist is setup so the application can access **any endpoint** through the inclusion of `*` in the Domain Access field in the project's `config.xml` as shown in the following figure:
 
@@ -476,7 +485,8 @@ Now that the app has the code it needs to retrieve weather conditions, let's run
 
 	![Android Target Options](media/vs-taco-2017-first-app/figure-21.png)
 
-    > **Note:** Depending on your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe) and retry launching the emulator:
+    > [!NOTE]
+    > Depending on your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe) and retry launching the emulator:
 
     > ![Android Emulator Error](media/vs-taco-2017-first-app/figure-22.png)
 
@@ -486,7 +496,8 @@ Now that the app has the code it needs to retrieve weather conditions, let's run
 
     The app we've built is completely cross platform, it should run anywhere. If you have a little extra time, run this app in a Windows Phone emulator.
 
-    > **Note:** You should test your app on as many physical devices (running on as many Operating System versions) as you can. Emulators and Simulators often behave different than a real device on certain circumstances and respond at different speeds. For example, an app may work in the simulator without a problem, but it may fail on a real device, or it can run faster on the device compared with an emulator. More information [here](https://cordova.apache.org/docs/en/latest/guide/next/index.html).
+    > [!NOTE]
+    > You should test your app on as many physical devices (running on as many Operating System versions) as you can. Emulators and Simulators often behave different than a real device on certain circumstances and respond at different speeds. For example, an app may work in the simulator without a problem, but it may fail on a real device, or it can run faster on the device compared with an emulator. More information [here](https://cordova.apache.org/docs/en/latest/guide/next/index.html).
 
 ## <a id="find-fix"></a>Find and Fix problems
 

@@ -32,7 +32,8 @@ function normalizeData(jsonIn) {
 
 Understand that this code is strictly part of the app’s functionality: it has nothing whatsoever to do with our choice of test framework or test runner. It’s also intentionally faulty so that we can learn about writing tests as we challenge the assumptions it makes about the JSON input.
 
->**Note:** although it’s tempting to give an example unit that just involves simple math or a string operation, that sort of code usually comes from a library that should already be thoroughly tested. You need write unit tests for only your own code, not library code.
+> [!NOTE]
+> although it’s tempting to give an example unit that just involves simple math or a string operation, that sort of code usually comes from a library that should already be thoroughly tested. You need write unit tests for only your own code, not library code.
 
 ##The unit test
 Next, each **unit test** is a piece of code that validates the unit by:
@@ -124,7 +125,8 @@ At this point we have all the mechanics in place to run Jasmine unit tests with 
 
 The Visual Studio that contains the code for this section can be found on [karma-jasmine-gulp-VS](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-jasmine-gulp-VS).
 
->**Note**: If you'd prefer instead to use a test runner like Chutzpah that integrates with the Visual Studio Test Explorer, feel free to skip this section and continue with [Use Chutzpah in Visual Studio](visual-studio-unit-testing-with-chutzpah.md).
+> [!NOTE]
+> If you'd prefer instead to use a test runner like Chutzpah that integrates with the Visual Studio Test Explorer, feel free to skip this section and continue with [Use Chutzpah in Visual Studio](visual-studio-unit-testing-with-chutzpah.md).
 
 ###Step 1: Project set up
 

@@ -45,7 +45,8 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 
 	![Android Device: Settings](media/vs-taco-run-android/figure-02.png)
 
-	> **Note**: You may have to execute some convoluted process to enable developer options, for this particlular device, for example, developers have to open **Settings**, select **About phone**, then **tap Build number** repeatedly until the OS enables developer mode.
+	> [!NOTE]
+	> You may have to execute some convoluted process to enable developer options, for this particlular device, for example, developers have to open **Settings**, select **About phone**, then **tap Build number** repeatedly until the OS enables developer mode.
 
 	Open **Developer options** and scroll down until you find **Debugging** options as shown in the figure. Enable **USB debugging** as shown in the figure and any other settings you think might help the debugging process. 
 
@@ -63,7 +64,8 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 	"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
 	```	
     
-	> **Note**: we added quotes around the executable filepath because there are spaces in the path.
+	> [!NOTE]
+	> We added quotes around the executable filepath because there are spaces in the path.
 	  
 	ADB will report any connected devices as shown in the following example:
 
@@ -122,7 +124,8 @@ The Intel emulators require a system running an Intel processor that supports In
 
 The Intel emulators are incompatible with Microsoft's Hyper-V technology, so to use them, you'll need to disable Hyper-V. You can disable Hyper-V through the Windows Control Panel or using the Windows command-line using the instructions in the following sections.
 
-> **Note**: Disabling Hyper-V will prevent you from using the Windows Phone emulator. However, you can still deploy to a Windows Phone device while Hyper-V is disabled.
+> [!NOTE]
+> Disabling Hyper-V will prevent you from using the Windows Phone emulator. However, you can still deploy to a Windows Phone device while Hyper-V is disabled.
 
 ### To disable Hyper-V in Control Panel
 
@@ -144,7 +147,8 @@ The Intel emulators are incompatible with Microsoft's Hyper-V technology, so to 
     bcdedit /set hypervisorlaunchtype off
     ```
 
-    >**WARNING**: The `bcdedit` commands can prevent your system from booting if not executed correctly; be careful when using these commands.
+    > [!WARNING]
+	> The `bcdedit` commands can prevent your system from booting if not executed correctly; be careful when using these commands.
     
 2. Reboot your PC. If you want to re-enable Hyper-V later, use the following command, and then reboot your PC:
 
@@ -179,7 +183,8 @@ To run your app on the Genymotion emulator, complete the following steps:
 	"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
 	```	
     
-	> **Note**: we added quotes around the executable filepath because there are spaces in the path.
+	> [!NOTE]
+	> We added quotes around the executable filepath because there are spaces in the path.
 	  
 	ADB will report all connected devices, and the Genymotion emulator should be listed.
 

@@ -50,7 +50,8 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
 	![Installing the Ionic templates](media/vs-taco-tutorial-ionic2/figure-03.png)
    
-> **Note:** The Ionic templates may not appear in Visual Studio until it's restarted. Close, then re-open Visual Studio before continuing.
+> [!NOTE]
+> The Ionic templates may not appear in Visual Studio until it's restarted. Close, then re-open Visual Studio before continuing.
 
 ## Creating an Ionic Project in Visual Studio
 
@@ -70,13 +71,15 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
 3.	Ionic is a heavy framework, it requires a lot of tools and libraries to operate. Once Visual Studio creates the new project, it kicks off a process to download and install the required components using the Node Package Manager (npm). Wait a few minutes as Ionic's npm packages are installed.
 
-    > **Note** This process will take several minutes depending on your system and internet connection speeds.
+    > [!NOTE]
+    > This process will take several minutes depending on your system and internet connection speeds.
 
     To check progress, open **Solution Explorer** and look for the **Dependencies** node. You should see **Restoring...**, if you don't, expand the Dependencies node in Solution Manager then right-click on the npm folder and select **Restore Packages**.
 
 	![Solution Explorer Dependencies node](media/vs-taco-tutorial-ionic2/figure-06.png)
 
-    > **Note:** After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project should be OK at this point.
+    > [!NOTE]
+    > After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project should be OK at this point.
      
     > ![Solution Explorer Dependencies Error](media/vs-taco-tutorial-ionic2/figure-07.png)
 
@@ -94,7 +97,8 @@ Now, lets do something with this app you created. You'll take the blank applicat
 
 The app uses the free [OpenWeatherMap](http://openweathermap.org/) service to retrieve weather conditions for a location. Before you can use the service, you must setup an account and request an API key for their Current Conditions API. Point your browser to [OpenWeatherMap](https://home.openweathermap.org/) and setup an account. Once you have a valid login, go to the service's [API page](http://openweathermap.org/api) and subscribe to the **Current Weather data** service, and then generate an API key.
 
-> **Note:** Make note of the API key as you'll need it later in the app's TypeScript code. 
+> [!NOTE]
+> Make note of the API key as you'll need it later in the app's TypeScript code. 
 
 ### Configuring the Application Project
 
@@ -469,13 +473,15 @@ When you allow access (don't tap **deny**, as you won't be able to do much with 
 
 It's not the complete app UI, but at least you can see the weather results. In the next section, we'll add the Zip Code Search box so you can get weather data for a specific location.
 
-> **Note:** If you get a blank screen when the app starts, make sure you've added the Cordova Geolocation plugin to the project. 
+> [!NOTE]
+> If you get a blank screen when the app starts, make sure you've added the Cordova Geolocation plugin to the project. 
 
 ### Adding Zip Code Search
 
 It's useful to have weather data for the current location, but what if you're traveling somewhere and want to know what the weather will be like when you get there? In this section, you'll add a search box users can employ to get weather data for a specific US Zip Code. 
 
-> **Note:** Using Zip Code as search criteria won't work outside of the US; if you would like to use **City Name** instead, you can make minor tweaks to the weather API call to change how the API searches. Take a look at the [API docs](https://openweathermap.org/current) for more information.
+> [!NOTE]
+> Using Zip Code as search criteria won't work outside of the US; if you would like to use **City Name** instead, you can make minor tweaks to the weather API call to change how the API searches. Take a look at the [API docs](https://openweathermap.org/current) for more information.
 
 1.	Open the project's `src\pages\home\home.html` file. Inside the beginning of the `<ion-content>` section, right before the `<ion-list>` tag, add the following markup:
 

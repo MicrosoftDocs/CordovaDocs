@@ -18,7 +18,8 @@ As we’ll see, what you’re really checking for in a UI test is that a specifi
 
 Before that, however, we need to set up a suitable UI testing environment. For apps written with JavaScript and Apache Cordova, a good choice is to use the UI testing tool called Appium. After checking a few prerequisites, then, we’ll walk through setting up Appium and learn how to run UI sequences. We’ll then see how to wrap those UI sequences within tests cases that assert the desired UI state change. We’ll then finish with how to debug UI tests, along with a brief look at using device farms for testing.
 
-> **Note**: For the samples used in this tutorial, refer to the [ui-testing folder of the Cordova samples repository](https://github.com/Microsoft/cordova-samples/tree/master/ui-testing). Once you've created a local copy, run *npm install* to install everything referenced in package.json.
+> [!NOTE]
+> For the samples used in this tutorial, refer to the [ui-testing folder of the Cordova samples repository](https://github.com/Microsoft/cordova-samples/tree/master/ui-testing). Once you've created a local copy, run *npm install* to install everything referenced in package.json.
 
 ## Appium and Node.js
 
@@ -28,7 +29,8 @@ The big drawback with these platform-specific tools is that they are, of course,
 
 Fortunately, others before you have faced this same situation and have come up with various cross-platform testing solutions. The one we’ll focus on here is called Appium, which is especially well-suited for Cordova apps because it allows you to write tests in any number of languages, including JavaScript (specifically Node.js JavaScript, just as we’ve already used with unit tests).
 
-> **Note**: At the time of writing, Appium supports testing only iOS and Android apps.
+> [!NOTE]
+> At the time of writing, Appium supports testing only iOS and Android apps.
 
 To understand Appium it’s necessary to understand just a little about the standard WebDriver interface. WebDriver, to put it succinctly, is the HTTP API that modern browsers implement to allow external agents to programmatically drive, and thus also test, a web application. And because WebDriver is an HTTP API, it means you can write test code in any language that can generate the appropriate HTTP requests. (It also means the API is asynchronous, as we’ll see later on.)
 

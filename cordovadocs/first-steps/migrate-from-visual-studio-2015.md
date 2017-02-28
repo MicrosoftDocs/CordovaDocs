@@ -18,7 +18,8 @@
 
 The Cordova project structure in Visual Studio 2017 mirrors the project structure of Apache Cordova apps that you create using the Cordova command-line interface (CLI). This allows you to use any third-party tools or CLIs in Visual Studio that are compatible with Cordova, such as Gulp and the Ionic CLI.
 
-> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova installation](installation.md).
+> [!NOTE]
+> Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova installation](installation.md).
 
 If you have a Cordova project created with an earlier version of Visual Studio (such as a project created in Visual Studio 2015), when you open the project for the first time in Visual Studio 2017, Visual Studio will automatically migrate the project for you; it will happen so fast you'll hardly notice it. Unfortunately, after the migration, you will **not be able to open the migrated project** in older versions of Visual Studio. For that reason, be sure to **backup your Cordova application project** before opening the project in Visual Studio 2017.
 

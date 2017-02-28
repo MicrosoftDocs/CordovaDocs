@@ -55,7 +55,8 @@ Make sure you have Parallels running. With remotebuild installed, start the agen
 
     remotebuild
 
->**Note**: By default, your iOS builds will show up in ~/.taco_home/remote-builds/taco-remote/builds.
+> [!NOTE]
+> By default, your iOS builds will show up in ~/.taco_home/remote-builds/taco-remote/builds.
 
 When you run remotebuild for the first time, the agent asks for permission to install some additional third party packages using the Homebrew package manager.
 
@@ -89,7 +90,8 @@ With Visual Studio open in Parallels, choose **Tools**, then **Options**. Open *
 
 ![Configure Visual Studio](media/build-ios-parallels/configure-vs.png)
 
-> **Note:** If you don’t see Tools for Apache Cordova in the Options dialog box, then you may need to install the tools. In Programs and Features, find Visual Studio 2015 and select **Change**, then **Modify**, then make sure that cross-platform tools for HTML/JavaScript (Apache Cordova) is selected. (If the tools are already installed, try selecting **Show all settings** if it is present at the bottom of the Options dialog box.)
+> [!NOTE]
+> If you don’t see Tools for Apache Cordova in the Options dialog box, then you may need to install the tools. In Programs and Features, find Visual Studio 2015 and select **Change**, then **Modify**, then make sure that cross-platform tools for HTML/JavaScript (Apache Cordova) is selected. (If the tools are already installed, try selecting **Show all settings** if it is present at the bottom of the Options dialog box.)
 
 If time expires on your security PIN (10 minutes by default), you may need to regenerate your certificates again.
 

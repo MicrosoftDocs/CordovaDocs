@@ -88,7 +88,8 @@ If you’ve built the WeatherApp sample for Android as described in Prerequisite
        app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk" 
     };
 
-> **Note**: the *config* object is just a helpful way to manage different configurations that you might use in your testing. You could create a .js file with an object containing all your target configurations, for example, and then use that same file in many different app projects.
+> [!NOTE]
+> The *config* object is just a helpful way to manage different configurations that you might use in your testing. You could create a .js file with an object containing all your target configurations, for example, and then use that same file in many different app projects.
  
 The final step is to send this configuration to the Appium server through the *init *method:
 

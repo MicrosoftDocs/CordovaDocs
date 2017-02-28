@@ -29,7 +29,8 @@ If you run into errors building for iOS, see these [tips and workarounds](../tip
 
 If you have configured your Mac as described in the article [iOS Setup Guide](../first-steps/ios-guide.md), you can build and run your app on the iOS Simulator. The iOS Simulator runs on your Mac.
 
->**Note**: We recommend that you use the iOS Simulator if you have a personal Mac or if you’re running Windows from a Mac using virtualization technology such as Parallels .
+> [!NOTE]
+> We recommend that you use the iOS Simulator if you have a personal Mac or if you’re running Windows from a Mac using virtualization technology such as Parallels .
 
 ### To run your app on the iOS Simulator <a name="iOSSimulator"></a>
 
@@ -49,7 +50,8 @@ If you have configured your Mac as described in the article [iOS Setup Guide](..
 
     ![iOS Simulator running on a Mac](media/run-app-ios/run-ios-simulator.png)
 
-**Tip** If you are running a version of the iOS Simulator with a Retina display on a lower-resolution Mac with a non-Retina display, you may need to scale the emulator to 50% so the app will fit on the screen (choose **Window**, **Scale**).
+> [!TIP]
+> If you are running a version of the iOS Simulator with a Retina display on a lower-resolution Mac with a non-Retina display, you may need to scale the emulator to 50% so the app will fit on the screen (choose **Window**, **Scale**).
 
 If you have configured the **remote build** agent on your Mac as described in the article [iOS Setup Guide](../first-steps/ios-guide.md), you can build and run your app on an iOS device that is connected to your Mac or PC.
 

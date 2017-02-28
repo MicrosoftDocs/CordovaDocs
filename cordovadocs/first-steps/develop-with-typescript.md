@@ -33,7 +33,8 @@ Visual Studio provides a Cordova application template using TypeScript; if you'd
 
 At this point, you have a complete Apache Cordova project configured for coding in TypeScript. Everything you know about building, testing and debugging Cordova application projects remains the same. The only difference is that there are a few additional files added to the project, and you'll code the application's logic in TypeScript instead of JavaScript.
 
-> **Note:** Even though this is a TypeScript project, you can still use JavaScript files in the application. Visual Studio doesn't care; it will compile TypeScript files to JavaScript during the build process, but leave the JavaScript files as-is.
+> [!NOTE]
+> Even though this is a TypeScript project, you can still use JavaScript files in the application. Visual Studio doesn't care; it will compile TypeScript files to JavaScript during the build process, but leave the JavaScript files as-is.
 
 In the next section, you'll learn about the differences between a typical Cordova JavaScript application and the project you just created. For a refresher on the anatomy of a Cordova application project, see [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md).
 
@@ -54,7 +55,8 @@ The default TypeScript template in TACO uses the popular [RequireJS](http://requ
 
 The `script` tag loads RequireJS and uses the tag's `data-main` attribute to tell RequireJS which JavaScript file to load at start up. In this case, it's loading `scripts/startup.js`. The project doesn't have a `scripts/startup.js` file right now, so don't go looking for it; it will magically appear when you build the application (we'll explain in a minute).
 
-> **Note:** If you want to use another module manager, simply remove the script tag and replace it with one that loads your module manager of choice.
+> [!NOTE]
+> If you want to use another module manager, simply remove the script tag and replace it with one that loads your module manager of choice.
 
 The project's `www\lib` folder stores the RequireJS JavaScript library used by the application and is added automatically by Visual Studio.
 

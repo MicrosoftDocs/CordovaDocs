@@ -91,7 +91,8 @@ As an optional component selected during the Visual Studio Tools for Apache Cord
 + Android Build Tools
 + Android API 23
 
->**Note:** Only the Android command-line tools are installed, if you want to use Google Android Studio to code, test, and debug native applications for Android, you will have to install Android Studio separately.
+> [!NOTE]
+> Only the Android command-line tools are installed, if you want to use Google Android Studio to code, test, and debug native applications for Android, you will have to install Android Studio separately.
  
 For testing Cordova applications on Android, Visual Studio Installer can optionally install the following components:
 

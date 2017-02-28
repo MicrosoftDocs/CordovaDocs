@@ -30,7 +30,8 @@ The toolset used for a particular Cordova application project is controlled thro
 
 In this example, the latest version of Apache Cordova is selected, and the pane lists the associated tool versions deployed into the development environment and used to build, test, and deploy Cordova applications. The **Toolset Name** dropdown list will show each installed toolset available to Visual Studio. 
 
-> **Note:** If you're looking for a particular Cordova version and it does not appear in the list, you must launch the Visual Studio Installer to install the required toolset.
+> [!NOTE]
+> If you're looking for a particular Cordova version and it does not appear in the list, you must launch the Visual Studio Installer to install the required toolset.
  
 A project's toolset is stored in a custom property in the project's `config.xml` file. If you're editing the file manually rather than using the configuration editor, you'll find the setting in the following property: 
 

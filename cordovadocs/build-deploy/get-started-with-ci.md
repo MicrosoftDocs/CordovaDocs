@@ -44,14 +44,16 @@ To use Gulp with your Cordova projects, follow these steps:
 
     +	Visual Studio itself is **only** required if you are building for **Windows or Windows Phone**.
     +	Install [Node.js](http://nodejs.org) and you'll also need to install the [Git command line tools](https://git-scm.com/) on Windows. 
-	    > **Note**: The default option for the Git installation does not add Git to the system `PATH` environment variable. To fix this, select the option to run the tools from the command prompt, this will add the Git installation folder to the system `PATH`.
+	    > [!NOTE]
+	    > The default option for the Git installation does not add Git to the system `PATH` environment variable. To fix this, select the option to run the tools from the command prompt, this will add the Git installation folder to the system `PATH`.
     +	**Android** requires the [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and the [Android SDK](http://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed. Add environment variables for `ANDROID_HOME` pointing to your Android SDK installation folder, and `JAVA_HOME` to your Java install.
     +	**iOS** requires Xcode (from the Mac app store) and [Node.js](http://nodejs.org)
     +	See the [General CI tutorial](./vs-taco-ci-cordova.md#depends) or [Install Dependencies Manually](https://msdn.microsoft.com/en-us/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
 
 2.	**Add or Update the `package.json` in your Cordova project:** Add the following development dependencies to your Cordova project's `package.json` file.
 
-	> **Note**: You can use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a `package.json` file in the root of your project.
+	> [!NOTE]
+	> You can use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a `package.json` file in the root of your project.
 
 	```JavaScript    
     {

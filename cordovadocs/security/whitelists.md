@@ -38,7 +38,8 @@ If we wanted to add the ability for the root WebView to navigate to www.microsof
 <allow-navigation href="http://www.microsoft.com" />
 ```
 
-> **Note**: If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the **[InAppBrowser plugin](http://go.microsoft.com/fwlink/?LinkID=617694)** without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
+> [!NOTE]
+> If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the **[InAppBrowser plugin](http://go.microsoft.com/fwlink/?LinkID=617694)** without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
 
 There is still some variation in behavior by platform for these whitelist features based on the concerns and capabilities of the underlying native technology.
 
@@ -147,7 +148,8 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
 	Start with the most locked down security policy you can, and back away as needed. That way you'll ensure you're using the most secure practices you can from the start.
 
-    > **Note:** To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md#crosswalk) for information adding Crosswalk to your project.    
+    > [!NOTE]
+    > To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md#crosswalk) for information adding Crosswalk to your project.    
 
 ##Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)

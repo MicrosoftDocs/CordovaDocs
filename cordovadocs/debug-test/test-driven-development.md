@@ -181,7 +181,8 @@ As expected, all the tests fail because there's no code in ```normalizeData``` t
 
 Notice also how Test Explorer shows the names you assigned to each individual test. This output shows exactly why you want to keep each test specific according to its description, because as failed tests appear in this list you can quickly and easily identify the exact inputs that are causing the unit code to fail.
 
->**Note**: With the runtime we're using here, an empty function returns ```undefined``` by default. Other runtimes might instead return ```null``` by default in which case a number of our tests will initially pass. However, as we add code to ```normalizeData``` those tests would eventually fail until we had the correct implementation for those specific cases.
+> [!NOTE]
+> With the runtime we're using here, an empty function returns ```undefined``` by default. Other runtimes might instead return ```null``` by default in which case a number of our tests will initially pass. However, as we add code to ```normalizeData``` those tests would eventually fail until we had the correct implementation for those specific cases.
 
 ##Adding code to the unit to handle test cases
 

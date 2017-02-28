@@ -17,8 +17,8 @@
 
 In this tutorial, you’ll learn how to create a task list sample app using AngularJS (AngularJSToDo). This app allows users to create new todo list items, check them off, and remove them. The app also stores tasks using HTML5 Web Storage on the device. (The complete sample uses Microsoft Azure Mobile Services to store data, and also uses Bing Maps to provide valid addresses.) This sample uses JavaScript code, but you can also write your Cordova app in TypeScript.
 
->**Note**:
-For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md).
+> [!NOTE]
+> For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md).
 
 The complete todo list sample app can be downloaded here:
 
@@ -50,7 +50,8 @@ To run the complete sample:
 
     ![Selecting the Ripple emulator](media/create-to-do-list-app/IC793846.png)
 
-    >**Note**: iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../run-your-app/run-app-android.md) and the [iOS Setup Guide](../first-steps/ios-guide.md) for more info.
+    > [!NOTE]
+    > iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../run-your-app/run-app-android.md) and the [iOS Setup Guide](../first-steps/ios-guide.md) for more info.
 
     If you are not running on a VM and your machine supports Hyper-V, we recommend targeting Android and selecting the VS Emulator (it's faster than the Google Android Emulator). GenyMotion also provides a good emulator but set up and configuration takes time.
 
@@ -102,7 +103,8 @@ In the preceding code, the AngularJS attribute, **ng-repeat**, allows you to def
 element as a template to display todo list items. Later, when you attach actual data and run the app, ng-repeat will add the child
 element (templateContainer) and its child elements to the DOM for each stored todo list item.
 
->**Note**: Because Cordova is not dependent on any particular JavaScript framework, we are not trying to provide in-depth information about [AngularJS programming](https://docs.angularjs.org/tutorial) in these steps. Instead, we are showing a good example of one way to create a cross-platform app using Visual Studio Tools for Apache Cordova.
+> [!NOTE]
+> Because Cordova is not dependent on any particular JavaScript framework, we are not trying to provide in-depth information about [AngularJS programming](https://docs.angularjs.org/tutorial) in these steps. Instead, we are showing a good example of one way to create a cross-platform app using Visual Studio Tools for Apache Cordova.
 
 Now, we will add the complete markup for index.html.
 
@@ -218,7 +220,8 @@ Now that you’ve verified your setup, you can create the AngularJSToDo app. The
 
 3. In the Visual Studio Solution Explorer, add a new folder under the scripts folder of the project and name it frameworks.
 
-    >**Note**: You cannot add this folder while the app is running. Press Shift + F5 to stop the debugger.
+    > [!NOTE]
+    > You cannot add this folder while the app is running. Press Shift + F5 to stop the debugger.
 
 4. Open the shortcut menu for the frameworks folder, and then choose **Add**, **Existing Item**. Add the two AngularJS files from steps 1 and 2 to the project.
 
@@ -247,7 +250,8 @@ Now that you’ve verified your setup, you can create the AngularJSToDo app. The
   	<script src="scripts/index.js"></script>
     ```
 
-    >**Note**: cordova.js needs to load before the AngularJS framework files.
+    > [!NOTE]
+    > cordova.js needs to load before the AngularJS framework files.
 
 2. Add script references for your AngularJS modules at the end of the element, after the AngularJS references. Those additional references should look like this.
 
@@ -748,7 +752,8 @@ Now, you can add new todo list items by typing text and pressing Enter (Ripple) 
 
 The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes a Bing Maps service to associate your current address with each todo list item.
 
->**Tip**: If you are more interested in setting up Azure Mobile Apps, you can skip these steps and go to the next section.
+> [!TIP]
+> If you are more interested in setting up Azure Mobile Apps, you can skip these steps and go to the next section.
 
 ### To add Bing Maps support to the app:
 

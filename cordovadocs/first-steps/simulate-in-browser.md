@@ -20,7 +20,8 @@ To make it easier for developers to quickly test a Cordova application's web con
 
 Cordova Simulate doesn't replace testing your app on physical devices, it merely simplifies iterative testing of your app's UI and JavaScript-based logic.
 
-> **Note:** Cordova Simulate requires the **Google Chrome** browser to render the Cordova web app; make sure you have a recent build of the browser installed before launching Cordova Simulate. It also requires **Internet Explorer 11**; Cordova Simulate uses it to render its UI within Visual Studio. This means you'll have to be running Windows 8.1 and above, or Windows 7 SP1 (Internet Explorer 11 is not available on Windows 8).
+> [!NOTE]
+> Cordova Simulate requires the **Google Chrome** browser to render the Cordova web app; make sure you have a recent build of the browser installed before launching Cordova Simulate. It also requires **Internet Explorer 11**; Cordova Simulate uses it to render its UI within Visual Studio. This means you'll have to be running Windows 8.1 and above, or Windows 7 SP1 (Internet Explorer 11 is not available on Windows 8).
 
 ## For the Impatient Developer
 
@@ -108,7 +109,8 @@ The Accelerometer plugin control enables developers to adjust the orientation of
 
 ![Cordova Simulate: Accelerometer pane](media/vs-taco-2017-cordova-simulate/figure-06.png)
 
-> **Note:** The values: *alpha*, *beta*, and *gamma* represent the rotation of the device. They are not supported by the Cordova Device Motion plugin API, but are used to calculate acceleration values.
+> [!NOTE]
+> The values: *alpha*, *beta*, and *gamma* represent the rotation of the device. They are not supported by the Cordova Device Motion plugin API, but are used to calculate acceleration values.
 
 To change the device orientation, position your mouse over the device image in the pane, hold down the primary mouse button, then move the mouse around to adjust the device's orientation. The image of the device will update to reflect its current orientation.
 
@@ -116,7 +118,8 @@ To change the device orientation, position your mouse over the device image in t
 
 The simulator includes recorded data representing a simple shake gesture; press the **Play** button to trigger the gesture on the simulated device. 
 
-> **Note:** The **Recorded Data** field is a drop-down list, but only contains a single value, **Shake**, at this time.
+> [!NOTE]
+> The **Recorded Data** field is a drop-down list, but only contains a single value, **Shake**, at this time.
 
 ### <a id="battery"></a>Battery Status
 
@@ -174,7 +177,8 @@ The Cordova native container and the [**Cordova Network Information plugin**](ht
 + `online`
 + `offline`
 
-> ** Note:** The `offline` and `online` events are emitted by the Network Information plugin.
+> [!NOTE]
+> The `offline` and `online` events are emitted by the Network Information plugin.
 
 An application defines event listeners that respond to these events. Instead of hacking scenarios that causes these events to fire, the plugin control enables developers to fire these events at will. Simply pick an event from the **Select the event to fire** drop-down then click the **Fire Event** button to trigger the event. 
 
@@ -249,7 +253,8 @@ The Network Connection plugin control enables developers to set the network conn
 
 ![Cordova Simulate: Network pane](media/vs-taco-2017-cordova-simulate/figure-19.png)
 
-> **Note:** This setting doesn't do anything to affect the network performance of the Cordova Simulate browser, it merely changes what the Cordova Network Information plugin reports as the current connection type.  
+> [!NOTE]
+> This setting doesn't do anything to affect the network performance of the Cordova Simulate browser, it merely changes what the Cordova Network Information plugin reports as the current connection type.  
 
 ### <a id="non-supported-plugins"></a>Dealing With Non-supported Plugins
 
@@ -257,7 +262,8 @@ As you've seen, Cordova Simulate executes the Cordova web application for a spec
 
 Using the [**cordova-plugin-buildinfo**](https://www.npmjs.com/package/cordova-plugin-buildinfo) plugin as an example, let's see how this works. 
 
-> **Note:** In order to use this feature, you're going to need some detailed knowledge of the plugin's inner workings. Since most Cordova plugins ship with source code, this shouldn't be much of a problem, but don't be surprised when you find yourself digging through someone else's code.
+> [!NOTE]
+> In order to use this feature, you're going to need some detailed knowledge of the plugin's inner workings. Since most Cordova plugins ship with source code, this shouldn't be much of a problem, but don't be surprised when you find yourself digging through someone else's code.
 
 1.	We'll start by adding the cordova-plugin-buildinfo plugin to your Cordova application project. To do this, double-click on the project's `config.xml` file to open the configuration editor.
 2.	Select the **Plugins** tab, then **Custom**.

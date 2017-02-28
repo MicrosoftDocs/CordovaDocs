@@ -49,7 +49,8 @@ In this example we'll start a Gulp task in Visual Studio whenever a project is b
     npm install --global gulp-cli
     ```
 
-	> **Note**: the Visual Studio Tools for Apache Cordova (TACO) automatically install Node.js and npm on your machine. 
+	> [!NOTE]
+	> The Visual Studio Tools for Apache Cordova (TACO) automatically install Node.js and npm on your machine. 
 
 	This installs the Gulp command-line interface (CLI) which is used by the `gulp` command you'll learn about soon.
 
@@ -143,7 +144,8 @@ When you're done, the project's `package.json` file will look similar to the fol
 
 Notice that npm automatically added development dependencies for `gulp-concat` and `gulp-uglify` for you.
 
-> **Note**: You could ignore the command-line entirely and manually update the project's `package.json` with these development dependencies, then use capabilities of Visual Studio to automatically install the plugins for you. To do this, make the appropriate changes to the `package.json` file, then in Visual Studio's Solution Explorer, right-click on the Cordova project's **Dependencies** folder, and then select **Restore Packages**. This instructs Visual Studio to execute `npm install` on the project folder, using the settings in the `package.json` file to define what's installed.
+> [!NOTE]
+> You could ignore the command-line entirely and manually update the project's `package.json` with these development dependencies, then use capabilities of Visual Studio to automatically install the plugins for you. To do this, make the appropriate changes to the `package.json` file, then in Visual Studio's Solution Explorer, right-click on the Cordova project's **Dependencies** folder, and then select **Restore Packages**. This instructs Visual Studio to execute `npm install` on the project folder, using the settings in the `package.json` file to define what's installed.
 
 > The problem with this manual approach is that you have to manage setting the correct version settings for each Node module that you add. npm takes care of this for you automatically, appending the `"^2.6.1"` you see for the `gulp-concat` plugin. To do this manually, you'll have to go to the [npm repository](http://npmjs.org) and search for the plugins, grab the latest version details and add it to the `package.json` file. As you can hopefully see, doing this through the command-line, especially if you're using multiple NodeJS modules, is much easier. 
 
@@ -155,7 +157,8 @@ npm packages are stored in a project's `node_modules folder in your project that
 
 With Gulp and the necessary plugins installed, we will define a Gulp task to run `gulp-uglify` on the `.js` files in the project's `www\scripts` folder and output them to the project's `min\scripts` folder.
 
-> **Note**: You'll modify your project's HTML markup to load any JavaScript-based functionality from the unified `min\combined.js` file rather than the individual JavaScript source files. In reality, a more complete example would have you writing your JavaScript source files in a folder outside of the Cordova project's `www` folder structure, then use the Gulp task shown to minify and concatenate the source files into `www\scripts\combined.js`.  Demonstrating that would have added additional complexity to this example, so we simply used the existing Cordova project structure and build the example around it.
+> [!NOTE]
+> You'll modify your project's HTML markup to load any JavaScript-based functionality from the unified `min\combined.js` file rather than the individual JavaScript source files. In reality, a more complete example would have you writing your JavaScript source files in a folder outside of the Cordova project's `www` folder structure, then use the Gulp task shown to minify and concatenate the source files into `www\scripts\combined.js`.  Demonstrating that would have added additional complexity to this example, so we simply used the existing Cordova project structure and build the example around it.
 
 1.	Create a new JavaScript file in the project's root folder called `gulpfile.js`. Next, add a Gulp task to the file by adding the following code to the new file: 
     
@@ -169,7 +172,8 @@ With Gulp and the necessary plugins installed, we will define a Gulp task to run
 
 	In Gulp, each task is defined as a call to `gulp.task` passing in the name of the task and a JavaScript function that executes the task steps. In this example, we're creating a task called `combine-and-uglify` which, when invoked, will execute the anonymous function shown in the example. 
 
-	> **Note**: Do not use spaces in the task name. Each task name is passed to Gulp as a command-line argument where spaces aren't allows in parameters. You could use spaces, but then you'd have to put quotes around the task name on the command-line every time.
+	> [!NOTE]
+	> Do not use spaces in the task name. Each task name is passed to Gulp as a command-line argument where spaces aren't allows in parameters. You could use spaces, but then you'd have to put quotes around the task name on the command-line every time.
 
 2.	For this task we want to get the list of all JavaScript (`.js`) files in the project's `www\scripts\` folder, combining (concatenating) them into a single file, then processing the resulting file using the uglify task which minifies (uglifies) the source code. The resulting ugly file is saved in the project's `min\scripts\` folder. 
 	
@@ -208,7 +212,8 @@ Now lets take a look at how to execute Gulp tasks through Visual Studio.
 
 	![Selecting a Gulp task to run](media/vs-taco-build-gulp/gulp-05.png)
 
-	> **Note:** the `mi`n and `scripts` folders will be created if they didn't exist, but Solution Explorer might initially interpret these as build artifacts not show them as part of the project. In this case, click the **Show All Files** button in Solution Explorer (shown below), then right-click the `min` folder and select **Include In Project**.
+	> [!NOTE]
+	> The `mi`n and `scripts` folders will be created if they didn't exist, but Solution Explorer might initially interpret these as build artifacts not show them as part of the project. In this case, click the **Show All Files** button in Solution Explorer (shown below), then right-click the `min` folder and select **Include In Project**.
 
 	> ![Show all files in Solution Explorer](media/vs-taco-build-gulp/gulp-06.png)
 
@@ -258,7 +263,8 @@ gulp.task("default", function (callback) {
 
 The Gulp `default` task, the Gulp function that executes when the `gulp` command is executed without any command-line arguments, executes `cordova.build` and passes in the appropriate arguments required by the API.  
 
-> **Note**: The `--gradleArg=--no-daemon` argument is important for build automation scenarios because by default, Cordova starts up a daemon process that can cause your build to appear to hang.
+> [!NOTE]
+> The `--gradleArg=--no-daemon` argument is important for build automation scenarios because by default, Cordova starts up a daemon process that can cause your build to appear to hang.
 
 `cordova-lib` functions are **asynchronous** which is why the Gulp **callback** function is passed as an argument to the `cordova.buld` call.
 
@@ -273,7 +279,8 @@ To see this example in action, first ensure that you've installed Gulp as descri
 }
 ```
 
-> **Note**: Replace the `6.#.#` with the appropriate Cordova version you want to use. 
+> [!NOTE]
+> Replace the `6.#.#` with the appropriate Cordova version you want to use. 
  
 Next, execute `npm install` from the command-line to install the specified dependencies, or right-click **Dependencies** in Visual Studio's Solution Explorer and select **Restore Packages**, as also described in [The Basics](#basics).
 
@@ -365,10 +372,9 @@ The build server must, of course, have all the dependencies installed, such as S
 
 However you arrange your build tasks, though, it's a simple matter to configure to server to use Gulp. 
 
-> **Note**: When building iOS, you may need to unlock the login keychain before building when using a non-intractive build agent (which is common for Jenkins, for example.)  You'll need to extend your script as follows if you run into this problem:
-
+> [!NOTE]
+> When building iOS, you may need to unlock the login keychain before building when using a non-intractive build agent (which is common for Jenkins, for example.)  You'll need to extend your script as follows if you run into this problem:
 > ```
 > security unlock-keychain -p $KEYCHAIN_PWD $HOME/Library/Keychains/login.keychain 
 > ```
-
 > `KEYCHAIN_PWD` is an environment variable with the login keychain password for the user running the build. In almost all cases this is the same as the actual password used to login to the machine so be sure to take advantage of any secure environment variable capabilities your CI system may have. 

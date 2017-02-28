@@ -35,7 +35,8 @@ Somewhere under the covers, of course, the app will have some kind of addition f
 	}
 ```
 
->**Note:** you wouldn't likely have such a trivial addition function in a real app, of course, because the + operator has been thoroughly tested by the authors of the runtime and wouldn’t need to be unit-tested further. Later on we’ll use a more realistic example; for now, this function suffices to explain the fundamentals.
+> [!NOTE]
+> you wouldn't likely have such a trivial addition function in a real app, of course, because the + operator has been thoroughly tested by the authors of the runtime and wouldn’t need to be unit-tested further. Later on we’ll use a more realistic example; for now, this function suffices to explain the fundamentals.
 
 A unit test, then, is a *separate* piece of code that makes a direct call to this function, passing values like 2 and 3 as parameters and checking that the return value is 5. A typical unit test might look like this, where it has a name and a description of what’s being tested, which is essential for reporting:
 

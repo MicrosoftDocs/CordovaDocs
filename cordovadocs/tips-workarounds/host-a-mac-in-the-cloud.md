@@ -19,7 +19,8 @@
 Visual Studio Tools for Apache Cordova allow you to build cross-platform, multi-device hybrid apps using [Apache Cordova](http://cordova.apache.org). You can use the remotebuild agent with a Mac on your network to build, debug, run, and simulate an iOS version of your app. Many developers start their hybrid app development by testing on Android. Later in the development process, when the focus is mainly on verifying and polishing the UI for a set of core devices, they begin testing on iOS. The need to provide each developer on a team with a Mac for this final step is not cost effective. As an alternative to buying Macs, you can use a cloud hosting provider to build and debug your app in the iOS Simulator from a Windows machine, to debug native problems using Xcode, and to submit your app to iTunes using the Apple Application Loader. Cloud hosting providers charge a range of rates, some of which can be very cost effective (particularly if the majority of your development is done on a different platform). In this tutorial, we will describe how to configure Tools for Apache Cordova for use with one provider—[MacInCloud](http://www.macincloud.com).
 
 
->**Note**: The steps shown here can be followed with other Mac hosting providers or with Macs in your own cloud facing datacenter. We recommend that you evaluate providers based on your organization’s needs.  
+> [!NOTE]
+> The steps shown here can be followed with other Mac hosting providers or with Macs in your own cloud facing datacenter. We recommend that you evaluate providers based on your organization’s needs.  
 
 ## Install remotebuild
 
@@ -37,7 +38,8 @@ If it is not installed, contact MacInCloud support and ask them to install it on
 
 With one exception, you can use the same process to configure Visual Studio for use with MacInCloud as you do with your own Mac. The host name for MacInCloud is not available externally, so you can either override the host name used by the agent or use an IP address instead.
 
->**Note**: remotebuild is not intended to be used as a traditional cloud-based service and you should make sure that you are in compliance with any Apple licensing terms that apply to your organization.  
+> [!NOTE]
+>`remotebuild` is not intended to be used as a traditional cloud-based service and you should make sure that you are in compliance with any Apple licensing terms that apply to your organization.  
 
 ### Option 1: To override the host name and configure Visual Studio
 
@@ -86,7 +88,8 @@ With one exception, you can use the same process to configure Visual Studio for 
    remotebuild certificates generate
    ````
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/installation.md#update) the remotebuild agent.
+    > [!NOTE]
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/installation.md#update) the remotebuild agent.
 
     Press “Y” and press Enter is prompted. You will now see the following information.
 

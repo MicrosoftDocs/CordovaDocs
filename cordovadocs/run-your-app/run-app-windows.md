@@ -40,7 +40,8 @@ Follow these instructions to run your app on your computer or on the Windows Sim
 
     If you don’t see this list, choose **Solution Platforms** from the **Add/Remove Buttons** list to display it.
 
-    >**Tip** To test plaform behavior, target **Windows-64* or **Windows-x86** rather than **Windows-Any CPU**.
+    > [!TIP]
+    > To test plaform behavior, target **Windows-64* or **Windows-x86** rather than **Windows-Any CPU**.
 
 3.  In the deployment target list, choose **Local Machine** or **Simulator**.
 

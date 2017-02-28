@@ -90,7 +90,8 @@ Now that you have a functional web application, lets publish it to the Microsoft
 
     ![Select a Publish Target](media/run-web-app-in-cordova/figure-07.png)
 	    
-	> **Note**: Visual Studio will generate a unique value for the **Web App Name** field, you'll want to change this value to something more easily remembered, or at least something relevant to the application. This value must be unique across all web apps hosted by the Microsoft Azure App Service, so you will have to think carefully of the name you pick. Add your company name or your name to the app name to help ensure uniqueness. 
+	> [!NOTE]
+	> Visual Studio will generate a unique value for the **Web App Name** field, you'll want to change this value to something more easily remembered, or at least something relevant to the application. This value must be unique across all web apps hosted by the Microsoft Azure App Service, so you will have to think carefully of the name you pick. Add your company name or your name to the app name to help ensure uniqueness. 
     
 5.	In the **Publish** dialog that appears, you will need to change the **Site URL** from an `http://` to an `https://` connection. This is required for iOS support for the application; which you won't be using test right now, but may be useful later. 
 
@@ -152,7 +153,8 @@ In this section, you'll update the Cordova application so it pulls its content f
 
     This entry instructs the Cordova project's Whitelist plugin to allow the application's WebView to navigate to the hosted site.
 
-    > **Note**: Make sure you replace the `YOUR-HOSTED-WEB-APP-URL` in the entry with the web application endpoint you copied earlier when you published the web application.
+    > [!NOTE]
+    > Make sure you replace the `YOUR-HOSTED-WEB-APP-URL` in the entry with the web application endpoint you copied earlier when you published the web application.
 
 3.	In Solution Explorer, double-click on the Cordova project's `www\scripts\index.js` file to open it for editing, remove all the code in the file, and replace it with the following:
 
@@ -191,7 +193,8 @@ In this section, you'll update the Cordova application so it pulls its content f
     app.initialize();
     ```
 
-	> **Note**: Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint. 
+	> [!NOTE]
+	> Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint. 
 	    
 	This code sets an event listener for the Cordova [`deviceReady`](https://cordova.apache.org/docs/en/latest/cordova/events/events.html) event. This event fires when the Cordova container finishes initializing and all of the installed plugins are available.  On the event, the code sets the URL of the native WebView window (using `window.location.replace`) to point to our remote web application. This causes the application to pull content from that site and render it in the Cordova application's main page (the WebView). 
 
@@ -214,7 +217,8 @@ In this section, you'll update the Cordova application so it pulls its content f
     <script type="text/javascript" src="scripts/index.js"></script>
     ```
 
-	> **Note**: Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint.
+	> [!NOTE]
+	> Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint.
 	
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
@@ -226,7 +230,8 @@ In this section, you'll update the Cordova application so it pulls its content f
 
     By adding the remote web app URL to the CSP (`https://cordovahostedweb-starter.azurewebsites.net` in this example), you specify that it is a trusted domain, and content from this site will be allowed in your hosted app.
 
-	> **Note**: Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint.
+	> [!NOTE]
+	> Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint.
 
 6.	[Optional] If you want to fix up the styling in the client page that appears before the hosted app loads, copy the completed project's `www\css\index.css` file to the Cordova project's `www\css\index.css` file, replacing the existing file.
 	
@@ -430,7 +435,8 @@ The starter ASP.NET project (CordovHostedWeb) already has the Camera plugin code
 
     This adds the code that's executed by the button's `click` event listener. When a user presses the button, the event listener calls `takePicture` which interacts with the mobile device's Camera application through the Cordova Camera plugin.
 
-    >**Note**: the project's `app.ts` file will compile into `app.js` during the build process.
+    > [!NOTE]
+    > the project's `app.ts` file will compile into `app.js` during the build process.
 
 5.	Build the web application: In Solution Manager, right-click on the `CordovaHostedWeb` project and select **Build**.
 
