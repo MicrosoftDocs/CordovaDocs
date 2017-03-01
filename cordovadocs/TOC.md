@@ -77,4 +77,3 @@
 
 # Samples
 ## [Samples and Examples](samples/cordova-samples.md)
-## [Build a To-Do List App](samples/create-to-do-list-app.md)

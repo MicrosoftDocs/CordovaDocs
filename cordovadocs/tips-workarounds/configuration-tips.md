@@ -15,7 +15,7 @@
    ms.author="normesta"/>
 
 # Configure the Visual Studio Tools for Apache Cordova
-You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](install-vs-tools-apache-cordova.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
+You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
 
 * If you choose not to install one or more dependencies with Visual Studio Tools for Apache Cordova, you may need to [install the dependencies manually](#ThirdParty).
 
@@ -47,7 +47,7 @@ You can install the dependencies in any order, except for Java. You must install
 
 * [Joyent Node.js](http://nodejs.org)
 
-    We recommend installing the x86 version of Node.js. Before installing this software, read about [safely installing Node.js](../develop-apps/change-node-version.md).
+    We recommend installing the x86 version of Node.js.
 
 * [Google Chrome](https://www.google.com/intl/en/chrome/browser/index.html)
 
@@ -167,7 +167,7 @@ Visual Studio uses these environment variables when building and running your ap
 
 ##<a name="IosPin"></a>Generate a new security PIN
 
-When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first time, the generated PIN is valid for a limited amount of time (10 minutes by default). If you don’t connect to the agent before the time expires, or if you want to connect a second client to the agent, you will need to generate a new PIN.
+When you [start the agent](../first-steps/ios-guide.md#running-remotebuild) the first time, the generated PIN is valid for a limited amount of time (10 minutes by default). If you don’t connect to the agent before the time expires, or if you want to connect a second client to the agent, you will need to generate a new PIN.
 ### To generate a new security PIN
 1. Stop the agent (or open a second Terminal app window on your Mac and use that to enter the command).
 
@@ -191,7 +191,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
         remotebuild certificates reset --hostname=my.hostname.com
 
     > [!NOTE]
-    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md).
 
 3. When prompted, type “Y” and then type Enter.
 

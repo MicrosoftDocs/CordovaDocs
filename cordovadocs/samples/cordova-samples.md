@@ -25,15 +25,6 @@ To open a non-VS Cordova project inside VS, go to 'File > New Project > Add proj
 Or, skip the hassle and VS-ify your project from this handy npm package created by TACO engineer Ricardo Minguez Pablos, [Open Cordova Project in Existing Folder](https://www.npmjs.com/package/ocpief). Just install it via npm, and in ```ocpief``` into the command prompt at the root of your Cordova folder. 
 
 ## Samples We Made
-
-### Angular JS To-Do List
-
-![ToDoList in Angular](media/cordova-samples/angulartodo.png)
-
-The [Angular JS To-Do List sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) is your standard todo list app--so you can add tasks, check them off, and remove them. It features data persistence (both through local storage and through the Azure Mobile Apps plugin) and optionally consumes the Bing Maps service.
-
-We have also written [a guide to walk you through building the sample](./create-to-do-list-app.md). Feel free to download the [sample off Github](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) and play around. 
-
 ### Cordova Plugins Sampler
 
 ![Cordova Plugins Sampler](media/cordova-samples/plugin-sample.png)

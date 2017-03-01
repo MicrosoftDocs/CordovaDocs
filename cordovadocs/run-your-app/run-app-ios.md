@@ -34,9 +34,9 @@ If you have configured your Mac as described in the article [iOS Setup Guide](..
 
 ### To run your app on the iOS Simulator <a name="iOSSimulator"></a>
 
-1.   Make sure that you have [installed required software](../first-steps/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
+1.   Make sure that you have [installed required software](../first-steps/ios-guide.md#mac-install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
 
-2.   Make sure that you have [specified iOS processing](../first-steps/ios-guide.md#getInfo), the host name or IP address, port, and security PIN in Visual Studio.
+2.   Make sure that you have [configured Visual Studio for iOS development](../first-steps/ios-guide.md#visual-studio-configuration), the host name or IP address, port, and security PIN in Visual Studio.
 
 3.  With your app open in Visual Studio, choose **iOS** from the **Solution Platforms** list. If you don’t see this list, choose **Solution Platforms** from the **Add/Remove Buttons** list to display it.
 
@@ -65,11 +65,11 @@ See the troubleshooting tips in the [iOS Guide](../first-steps/ios-guide.md)
 
 	iTunes is not required if you are running your app on a device that is connected to your Mac.
 
-2. Make sure that you have [installed required software](../first-steps/ios-guide.md#install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
+2. Make sure that you have [installed required software](../first-steps/ios-guide.md#mac-install), including the remote agent, on a Mac that meets all system requirements, and that you have started the remote agent.
 
-3.  Make sure that the iOS device has been provisioned with the same provisioning profile as the Mac. For more information about provisioning, see [Create a provisioning profile](../first-steps/ios-guide.md#create-a-provisioning-profile).
+3.  Make sure that the iOS device has been provisioned with the same provisioning profile as the Mac. For more information about provisioning, see [Create a provisioning profile](../first-steps/ios-guide.md#run-on-device).
 
-4.  Make sure that you have [specified iOS processing](../first-steps/ios-guide.md#getInfo), the host name or IP address, port, secure mode, and security PIN in Visual Studio.
+4.  Make sure that you have [configured Visual Studio for iOS development](../first-steps/ios-guide.md#visual-studio-configuration), the host name or IP address, port, secure mode, and security PIN in Visual Studio.
 
 5.  With your app open in Visual Studio, choose **iOS** from the **Solution Platforms** list.
 

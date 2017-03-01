@@ -128,7 +128,7 @@ To test push notifications in your iOS app:
 
 1. If you haven't already, go through the steps in the [iOS Setup Guide](../first-steps/ios-guide.md) to install and run the remotebuild agent.
 
-    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](../tips-workarounds/host-a-mac-in-the-cloud).
+    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](../tips-workarounds/host-a-mac-in-the-cloud.md).
 
 2. Follow the steps in [Test push notifications in your iOS app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-ios)
 

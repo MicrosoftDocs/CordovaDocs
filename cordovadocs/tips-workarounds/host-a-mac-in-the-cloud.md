@@ -89,7 +89,7 @@ With one exception, you can use the same process to configure Visual Studio for 
    ````
 
     > [!NOTE]
-    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/installation.md#update) the remotebuild agent.
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update the remotebuild agent](../first-steps/ios-guide.md).
 
     Press “Y” and press Enter is prompted. You will now see the following information.
 
