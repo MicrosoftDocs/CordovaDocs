@@ -368,7 +368,7 @@ You'll need to run this task first to start the watching, so either execute `gul
 
 A continuous integration environment means having a dedicated build server that handles requests from everyone in your team, and perhaps also runs builds automatically whenever code is committed to your repository.
 
-The build server must, of course, have all the dependencies installed, such as SDKs, for your target platforms. See the “Installing Dependencies” section of the [Continuous Integration for Apache Cordova Apps](./vs-taco-ci-cordova.md) for details.
+The build server must, of course, have all the dependencies installed, such as SDKs, for your target platforms. See the “Installing Dependencies” section of the [Continuous Integration for Apache Cordova Apps](ci-guide.md) for details.
 
 However you arrange your build tasks, though, it's a simple matter to configure to server to use Gulp. 
 

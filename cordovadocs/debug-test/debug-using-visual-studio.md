@@ -339,7 +339,7 @@ You can attach the Visual Studio debugger to the iOS Simulator or to an iOS devi
 
 ### <a name="DbgIOS"></a>To debug on iOS
 
-1.  Make sure you have [installed the remote agent](../ios-guide.md) on your Mac, started the agent, and configured Visual Studio to connect to the agent.
+1.  Make sure you have [installed the remote agent](../first-steps/ios-guide.md) on your Mac, started the agent, and configured Visual Studio to connect to the agent.
 
 2.  If you are debugging on an actual device, go to your device and choose **Settings**, **Safari**, **Advanced**, and then enable Web Inspector.
 

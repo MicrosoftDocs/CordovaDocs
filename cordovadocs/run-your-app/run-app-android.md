@@ -76,7 +76,7 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 
 	If ADB doesn't see any devices, then you must resolve the issue before continuing. Double-check to make sure Windows Device Manager sees the device, try a different cable, try a different USB port, ect.
 
-4.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the execution target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
+4.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
 	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
 
@@ -92,7 +92,7 @@ When you installed TACO, you had an option to install the Google Android Emulato
 
 ![Visual Studio Installation](media/vs-taco-run-android/figure-06.png)
 
-If you did not enable the highlighted options, close Visual Studio, launch the **Visual Studio Installer** and modify the installation to include these options. You can tell whether the emulators are installed or not by opening Visual Studio's Standard toolbar execution target list, if you see **Install Android build tools...** in the list, instead of some Android emulators, then you need to complete the installation. 
+If you did not enable the highlighted options, close Visual Studio, launch the **Visual Studio Installer** and modify the installation to include these options. You can tell whether the emulators are installed or not by opening Visual Studio's debug target list, if you see **Install Android build tools...** in the list, instead of some Android emulators, then you need to complete the installation. 
 
 ![Visual Studio: Install Android Emulators](media/vs-taco-run-android/figure-07.png)
 
@@ -114,15 +114,15 @@ You can configure Visual Studio's behavior here. In Visual Studio, select **Tool
 
 ![Visual Studio Options](media/vs-taco-run-android/figure-11.png)
 
-To run your Apache Cordova application on an Android Emulator: in the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the execution target to one of the **Google Emulator** options as shown in the following figure. Click the **Google Emulator** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
+To run your Apache Cordova application on an Android Emulator: in the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to one of the **Google Emulator** options as shown in the following figure. Click the **Google Emulator** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
 ![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-12.png)
 
-### <a id="intel-configuration"></a> Configuring Your System to Use the Intel Emulators
+### <a id="HAXM"></a> Configuring Your System to Use HAXM
 
-The Intel emulators require a system running an Intel processor that supports Intel's VT-x technology; to learn if your processor is supported, check out [*Determine If Your Processor Supports Intel Virtualization Technology*](http://www.intel.com/content/www/us/en/support/processors/000005486.html).  
+By default, the Google Android emulator uses [Intel's HAXM virtualization technology](https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager) to improve the performance of the emulators. HAXM requires you to use an Intel processor that supports Intel's VT-x technology; to learn if your processor is supported, check out [*Determine If Your Processor Supports Intel Virtualization Technology*](http://www.intel.com/content/www/us/en/support/processors/000005486.html). When running on an Android emulator, Visual Studio attempts to first use a HAXM enabled emulator. If HAXM is not installed, or cannot be used on your computer, then a slower ARM-based emulator image is used.
 
-The Intel emulators are incompatible with Microsoft's Hyper-V technology, so to use them, you'll need to disable Hyper-V. You can disable Hyper-V through the Windows Control Panel or using the Windows command-line using the instructions in the following sections.
+If you find that the Google Android Emulator is performing slowly, try disabling Hyper-V. HAXM is incompatible with Microsoft's Hyper-V technology, so to use them, you'll need to disable Hyper-V. You can disable Hyper-V through the Windows Control Panel or using the Windows command-line using the instructions in the following sections.
 
 > [!NOTE]
 > Disabling Hyper-V will prevent you from using the Windows Phone emulator. However, you can still deploy to a Windows Phone device while Hyper-V is disabled.
@@ -156,8 +156,6 @@ The Intel emulators are incompatible with Microsoft's Hyper-V technology, so to 
     bcdedit /set hypervisorlaunchtype auto
     ```
 
-    If you’re using the Genymotion emulator, you can skip this procedure. For more information, see [Genymotion emulator](#genymotion-emulator).
-
 ## <a id="genymotion-emulator"></a> Run on the Genymotion Emulator
 
 The [Genymotion emulator](http://www.genymotion.com/) is a commercial offering and a popular alternative to the Google Android emulator. Follow Genymotion's instructions to install the emulator. Here are a few tips for getting started with the emulator:
@@ -165,7 +163,7 @@ The [Genymotion emulator](http://www.genymotion.com/) is a commercial offering a
 +	If you have trouble starting the emulator from a remote connection, try starting it locally, and then reconnect remotely if needed. The emulator requires OpenGL for rendering, and this may result in a conflict when starting the emulator.
 +	You need a video card and video card drivers that support OpenGL. You may receive messages that indicate this. (If you connect to your PC remotely, you may also see this message. Try again after connecting locally).
 +	You may receive a message to check your VirtualBox network configuration when you try to start the emulator. Follow the link and instructions to modify or remove the **Host-only Network Adapter** from VirtualBox. (VirtualBox is included with the installation of the emulator).
-+	For high-performance emulation using Genymotion, disable Hyper-V before starting the emulator, as described earlier in [Configurig Your System to Use the Intel Emulators](#intel-configuration). Android developer tools see Genymotion as a physical device. When you use Visual Studio to run the app, you instruct Visual Studio to deploy to an Android device.
++	For high-performance emulation using Genymotion, disable Hyper-V before starting the emulator, as described earlier in [Configurig Your System to Use the Intel Emulators](#HAXM). Android developer tools see Genymotion as a physical device. When you use Visual Studio to run the app, you instruct Visual Studio to deploy to an Android device.
 
 To run your app on the Genymotion emulator, complete the following steps:
 
@@ -188,7 +186,7 @@ To run your app on the Genymotion emulator, complete the following steps:
 	  
 	ADB will report all connected devices, and the Genymotion emulator should be listed.
 
-3.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the execution target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
+3.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
 	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
 

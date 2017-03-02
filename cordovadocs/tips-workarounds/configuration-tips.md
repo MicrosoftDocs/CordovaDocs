@@ -176,9 +176,9 @@ When you [start the agent](../first-steps/ios-guide.md#running-remotebuild) the 
         remotebuild certificates generate
 
     > [!NOTE]
-    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md).
 
-4. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
+4. Follow instructions to [start the agent](../first-steps/ios-guide.md) on your Mac and configure the agent in Visual Studio.
 
 ##<a name="IosCert"></a>Generate a new server certificate
 For security purposes, the server certificates that pair Visual Studio with the remote agent are tied to your Mac’s IP or host name. If these values have changed, you will need to generate a new server certificate, and then reconfigure Visual Studio with the new values.
@@ -201,7 +201,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
     –hostname is optional. If omitted, the agent will attempt to determine the hostname automatically.
 
-5. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
+5. Follow instructions to [start the agent](../first-steps/ios-guide.md) on your Mac and configure the agent in Visual Studio.
 
 ##<a name="IosConfig"></a>Configure the iOS remote agent
 

@@ -23,7 +23,7 @@
 
 [Gulp](http://go.microsoft.com/fwlink/?LinkID=533803) is an increasingly popular JavaScript based task runner with a large number of [useful plugins](http://go.microsoft.com/fwlink/?LinkID=533790) designed to automate common “tasks” for everything from compilation, to packaging, deployment, or simply copying files around. Both Gulp and Cordova CLI are Node.js based which makes the two highly complementary technologies. For these reasons, this tutorial will focus on the use Gulp rather than MSBuild as the primary build language for Cordova apps when using Jenkins.
 
-> **Troubleshooting Tip**: Be aware that we recommend against adding the Cordova project's `platforms` folder or the following JSON files in the `plugins` folder into source control: `android.json`, `ios.json`, `remote_ios.json`, `windows.json`, and `wp8.json`. See "What to Add to Source Control" in the [general CI guide](./general.md#whattoadd) for additional details.
+> **Troubleshooting Tip**: Be aware that we recommend against adding the Cordova project's `platforms` folder or the following JSON files in the `plugins` folder into source control: `android.json`, `ios.json`, `remote_ios.json`, `windows.json`, and `wp8.json`. See "What to Add to Source Control" in the [general CI guide](ci-guide.md#whattoadd) for additional details.
 
 ## Initial Setup
 
@@ -31,9 +31,9 @@ Since the build process we will describe here is not directly dependent on MSBui
 
 1.  Install Visual Studio 2017 and select the Tools for Apache Cordova option and let it install the prerequisites for you
 
-2.  Manually install only the prerequisites needed for the specific platforms you intend to build. For example, you do not need to install Visual Studio at all if you only intend to target Android. See "Installing Dependencies" in the [Building Cordova Apps in a Team / Continuous Integration Environment](./general.md#depends) tutorial for details.
+2.  Manually install only the prerequisites needed for the specific platforms you intend to build. For example, you do not need to install Visual Studio at all if you only intend to target Android. See "Installing Dependencies" in the [Building Cordova Apps in a Team / Continuous Integration Environment](ci-guide.md#depends) tutorial for details.
 
-> **Troubleshooting Tip**: See ["Internet Access & Proxy Setup" in the general CI tutorial](./general.md#proxy) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
+> **Troubleshooting Tip**: See ["Internet Access & Proxy Setup" in the general CI tutorial](ci-guide.md#proxy) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
 For macOS, the prerequisites will need to be installed manually, but mirror [the requirements for the Visual Studio remote build agent](http://go.microsoft.com/fwlink/?LinkID=533745). However, unlike with TFS 2013, you do not need to install the remote build agent itself if your macOS system will only be used for team / CI builds.
 
