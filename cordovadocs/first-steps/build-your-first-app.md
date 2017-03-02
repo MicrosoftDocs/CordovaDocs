@@ -171,7 +171,7 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
     ![NuGet Package Installer Confirmation](media/vs-taco-2017-first-app/figure-15.png) 
 
-2.	NuGet adds files to the Visual Studio project's `Scripts` folder, but they really belong in the Cordova project's `www\scripts folder`. Drag all of the **.js** files from the `Scripts` folder to the `www/scripts` folder as shown in the figure.
+2.	NuGet adds files to the Visual Studio project's `Scripts` folder, but they really belong in the Cordova project's `www\scripts` folder. Drag all of the **.js** files from the `Scripts` folder to the `www/scripts` folder as shown in the figure.
 
     ![Dragging .js Files to the Target Folder](media/vs-taco-2017-first-app/figure-16.png)  
 
@@ -334,7 +334,7 @@ Next we'll add code that reacts to the user tapping the **Find Weather** button.
 
 This is a good time to take a quick look at the project's `index.js` file. This file loads when the user runs the app because the `index.html` page contains this reference to it:
 
-```javascript       
+```html       
 <script src="scripts/index.js"></script>
 ```
 

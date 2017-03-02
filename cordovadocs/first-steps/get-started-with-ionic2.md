@@ -39,14 +39,10 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 	Verify that you can create and run the default **Cordova Blank App**. In Visual Studio, open the **File** menu, select **New**, then **Project**. In the new project dialog, expand the **JavaScript** templates section, select **Mobile Apps**, then pick the **Blank App (Apache Cordova)** template. Give the new project a **Name** and **Location** then click the **OK** button. Press **F5** to build and run the new project using the new **Simulate in Browser** option. The Chrome browser should open and render the app's content. If you have any issues running the application, see these [troubleshooting steps](../tips-workarounds/general-tips.md).
 
 2.	Install the Ionic template in Visual Studio by selecting the **Tools** menu, then **Extensions and Updates...**. In the Extensions and Updates dialog box, select **Online**. In the search box located in the upper-right corner of the dialog, type **Ionic 2**. Select the **Ionic 2 Templates** option in the list. Click the **Download** button to start the installation.
-	
-	**REPLACE THIS FIGURE**
 
 	![Getting the Ionic templates](media/vs-taco-tutorial-ionic2/figure-02.png)
 
 	The template files will download, then Visual Studio will automatically launch the installation process. When prompted, click the **Install** button to begin the installation.
-
-	**REPLACE THIS FIGURE**
 
 	![Installing the Ionic templates](media/vs-taco-tutorial-ionic2/figure-03.png)
    
@@ -77,11 +73,6 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
     To check progress, open **Solution Explorer** and look for the **Dependencies** node. You should see **Restoring...**, if you don't, expand the Dependencies node in Solution Manager then right-click on the npm folder and select **Restore Packages**.
 
 	![Solution Explorer Dependencies node](media/vs-taco-tutorial-ionic2/figure-06.png)
-
-    > [!NOTE]
-    > After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project should be OK at this point.
-     
-    > ![Solution Explorer Dependencies Error](media/vs-taco-tutorial-ionic2/figure-07.png)
 
 	You can monitor the package installation process through Visual Studio's Output window. Open the **View** menu, then select **Output** or use the keyboard shortcut **Ctrl-W** + **O**:
     
@@ -891,113 +882,17 @@ A few errors are fairly common in the starter templates when debugging in Visual
 
 [I installed the Ionic templates, but they don't appear as an option in Visual Studio](#no-templates)
 
-[Did you receive an error message that says: 'Promise is not defined'?](#node)
-
-[Did you receive an error message indicating that some node modules won't restore?](#node_modules)
-
-[Did you receive a WWAHost runtime error?](#wwahost)
-
-[Did you receive an error message asking you to install a new app?](#partialpages)
-
-[Did you receive an 'Unhandled exception' running on Windows?](#unhandled)
-
 [Did you receive an error messaging indicating that the `appxrecipe` file is missing?](#appxrecipe)
 
-[Did you receive an error message saying that the Content Security Policy is missing?](#scp)
+[Did you receive an error message saying that the Content Security Policy is missing?](#csp)
 
 [Did you receive a certificate error on Windows?](#certificate)
-
-[Visual Studio Emulator for Android won't run?](#vsAndroidEmu)
-
-[Having trouble hitting breakpoints in your .ts files?](#breakpoints)
-
-[Other issues?](#other)
 
 ---
 
 ### <a id="no-templates"></a>I installed the Ionic templates, but they don't appear as an option in Visual Studio
 
 Did you close, then restart Visual Studio? After the installation, the templates aren't available until Visual Studio restarts. 
-
-### <a id="node"></a> Did you receive an error message indicating that some node modules won't restore?
-
-The installed version of Node.js may not support Promises. To fix this, you must install the latest Visual Studio 2015 update (Update 3 or later) and Microsoft ASP.NET and Web Tools. Check for any notifications or warning icons in the upper-right corner of the Visual Studio IDE and install these components, if instructed.
-
-![Update your credentials](media/vs-taco-tutorial-ionic2/figure-20.png)
- 
-If you are unable to install the Web Tools:
-
-1.	[Download the latest version of the Web Tools here](https://visualstudiogallery.msdn.microsoft.com/c94a02e9-f2e9-4bad-a952-a63a967e3935).
-
-2.	Run the following command from the folder containing the download:
-
-    ```
-    DotNetCore.1.0.0-VS2015Tools.Preview2.exe SKIP_VSU_CHECK=1
-    ```
-
-3.	Create a new Ionic 2 project from the templates that you downloaded previously.
-
-### <a id="node_modules"></a> Did you receive an error message indicating that some node modules won't restore?
-
-If you can't restore some of the Node.js modules, such as ionic-angular, make sure that you have installed the Update 3 or later of Visual Studio and Microsoft ASP.NET and Web Tools (for more instructions, see the [previous issue](#node)).
-
-If that doesn't resolve the issue, open a command line and go to the project folder, then run this command:
-
-```
-npm install
-```
-
-and then this command:
-
-```
-npm rebuild node-sass
-```
-
-Then create a new Ionic 2 project from the templates you downloaded previously.
-
-### <a id="wwahost"></a> Did you receive a WWAHost runtime error?
-
-When debugging on a Windows 8.1 dev machine, you may get a WWAHost runtime error when navigating between pages in Ionic apps. You can work around this by:
-
-+ Closing DOM Explorer before navigating pages, or
-
-+ Upgrading to Windows 10 on your dev machine (the platform issue is fixed in Windows 10).
-
-### <a id="partialpages"></a> Did you receive an error message asking you to install a new app?
-
-When you are using the AngularJS routing module (Ionic templates use this module) on Windows, you may need to include a call to `aHrefSanitizationWhitelist`. This will correct errors that occur when loading partial pages.
-
-If you see the dialog box shown here, you have likely run into this issue.
-
-![partial pages don't load](media/vs-taco-tutorial-ionic2/figure-21.png)
-
-Typically, you include the code fix in app.js or wherever you are calling your module configuration code (inside `angular.module.config`):
-
-```
-$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|ghttps?|ms-appx|ms-appx-web|x-wmapp0):/);
-
-$compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|ms-appx|ms-appx-web|x-wmapp0):|data:image\//);
-```
-
-If you use the preceding code, then add a reference to $compileProvider in the following line of code.
-
-```
-.config(function ($stateProvider, $urlRouterProvider) {
-```
-
-so that it looks like this:
-
-```
-.config(function ($compileProvider, $stateProvider, $urlRouterProvider) {
-```
-
-### <a id="unhandled"></a> Did you receive an 'Unhandled exception' running on Windows?
-
-If you see the following unhandled exception when targeting Win/WinPhone 8.1, follow the [earlier steps](#configWindows) to call platformOverrides.js to fix this issue.
-
-![unhandled exception](media/vs-taco-tutorial-ionic2/figure-22.png)
-
-If you see the same error when targeting Windows 10, make sure you set **Windows 10.0** as the target in the Windows tab of the configuration designer.
 
 ### <a id="appxrecipe"></a> Did you receive an error messaging indicating that the `appxrecipe` file is missing?
 
@@ -1018,15 +913,3 @@ Make sure your user credentials in Visual Studio are up to date. Check for any n
 ![Update your credentials](media/vs-taco-tutorial-ionic2/figure-20.png)
 
 You may need to re-enter your credentials. If the notifications indicate that you need to update Cordova tooling, please click on the notifications and follow the provided instructions.
-
-### <a id="vsAndroidEmu"></a> Visual Studio Emulator for Android won't run?
-
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
-
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting] (https://msdn.microsoft.com/en-us/library/mt228282).
-
-### <a name="breakpoints"></a> Having trouble hitting breakpoints in your .ts files?
-
-There is a known issue debugging Ionic 2 in VSCode. Otherwise, this indicates a problem with your sourcemaps. When running your app, look for your .ts files under **Script Documents** in Solution Explorer. They should look similar to the illustration below. You can right-click on the .ts file and choose Properties to view the current path used by the sourceMaps.
-
-![SourceMaps](media/vs-taco-tutorial-ionic2/figure-23.png)
