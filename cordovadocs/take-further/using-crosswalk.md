@@ -24,7 +24,7 @@ To use the Crosswalk WebView plugin from Visual Studio, follow these steps:
 
 2. Select **Crosswalk WebView Engine** and click **Add**.
 
-    ![Add Crosswalk Plugin](media/using-crosswalk/using-crosswalk.png)
+    ![Add Crosswalk Plugin](media/using-crosswalk/cordova-crosswalk.png)
 
 If you are using VS Code or the command line, you can add the plugin to your project as follows:
 
