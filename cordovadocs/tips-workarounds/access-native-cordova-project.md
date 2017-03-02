@@ -137,7 +137,3 @@ The Cordova <span class="code">serve</span> command lets you test the layout and
 ![Download the tools](media/access-native-cordova-project/access-native-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
 
 </div></div><div>
-
-## See Also
-
-[Get Started with Visual Studio Tools for Apache Cordova](../first-steps/intro.md)

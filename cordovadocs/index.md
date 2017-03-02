@@ -1,103 +1,35 @@
----
-layout: HubPage
----
-<div id="main" class="v2">
-<div class="container">
-    <h1>Tools for Apache Cordova</h1>
-    <ul class="pivots">
-        <li>
-            <a href="#taco">taco</a>
-            <ul id="taco">
-                <li>
-                    <a href="#taco1">taco1</a>
-                    <ul id="taco1" class="cardsZ">
-                        <li>
-                            <a href="./first-steps/intro">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>What the Tools Do for You</h3>
-                                            <p>How the Tools help you build a cross-platform, mobile application using JavaScript, HTML, and CSS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./first-steps/installation">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>Setup and Installation</h3>
-                                            <p>How to install Tools for Apache Cordova with the right environment to create, manage and test application projects on the platforms of your choosing.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./first-steps/ios-guide">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>iOS Setup Guide</h3>
-                                            <p>Pair a Mac to your local machine to build iOS apps using Tools for Apache Cordova.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./first-steps/build-your-first-app">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>First App Guide</h3>
-                                            <p>A quick tour of the Tools and start writing your first Android/Windows app.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="~/ui-frameworks/tutorial-ionic2">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>Easy UI with Ionic 2</h3>
-                                            <p>The most popular library for Cordova developers, with assets that tailor to the OS you're using.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="~/samples/cordova-samples">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardText">
-                                            <h3>Samples & Examples</h3>
-                                            <p>Apps we made or just love, show casing today's best-of-breed frameworks and techniques.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
+<properties
+   pageTitle="Visual Studio Tools for Apache Cordova | Cordova"
+   description="Visual Studio Tools for Apache Cordova"
+   services="na"
+   documentationCenter=""
+   authors="johnwargo, jomatthi"
+   tags=""/>
+<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
+   ms.service="na"
+   ms.devlang="javascript"
+   ms.topic="article"
+   ms.tgt_pltfrm="mobile-multiple"
+   ms.workload="na"
+   ms.date="10/31/2016"
+   ms.author="johnwargo"/>
+
+## Overview
+Microsoft's Visual Studio Tools for Apache Cordova is a Microsoft Visual Studio workload that simplifies development of mobile apps on Android, iOS, and Windows using [Apache Cordova](http://cordova.io/). Apache Cordova enables cross-platform mobile development using standard web technologies (HTML, CSS, and JavaScript). The Tools for Apache Cordova may be installed along with your initial Visual Studio installation, or added to it later by simply re-running the installer. The workload installs a complete Apache Cordova development environment within Visual Studio, plus adds Cordova project templates and Cordova-specific capabilities to the IDE. It includes the following capabilities:
+
++ Simplified installation of a complete Apache Cordova development environment.
++ Create and manage Apache Cordova application projects for Android, iOS, and Windows in Visual Studio.
++ Code Cordova application in HTML, CSS and JavaScript.
++ Add or remove Cordova plugins to/from their Cordova application projects.
++ IntelliSense for Cordova APIs.
++ Test Cordova applications in the browser, emulators, simulators and physical devices.
++ Debug Cordova web application content using the Visual Studio debugger.
++ Support multiple versions of Apache Cordova.
+
+The most unique capability is the tool's ability to deliver live debugging of Android, iOS, and Windows Cordova applications, all from within the IDE. Use the Visual Studio debugger to attach to iOS, Android, and Windows apps, hit breakpoints, and inspect code using the console and DOM Explorer. Support for iOS development is provided through `remotebuild`, a package that runs on a remote Apple Mac OS development system.
+
+The Visual Studio installer identifies and installs the right versions of the required SDKs, tools, and libraries that you need to build [Apache Cordova](http://cordova.io/) applications using Visual Studio.
+
+## Get the tools
+
+Visual Studio Tools for Apache Cordova is installed using the standard Visual Studio installer which you can download from the [Microsoft Download Center](https://aka.ms/vs/15/release/vs_enterprise.exe). Refer to [Install Visual Studio Tools for Apache Cordova](installation.md) for complete installation instructions. Start writing your first Cordova app using [Create Your First App Using Visual Studio Tools for Apache Cordova](build-your-first-app.md).

@@ -47,6 +47,6 @@ To make the web browser development as fast as possible, the CLI is used to gene
 
 **Concepts**
 
-[Get Started with Visual Studio Tools for Apache Cordova](../first-steps/intro.md)  
+[Get Started with Visual Studio Tools for Apache Cordova](../index.md)  
 [Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
 [Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md)  

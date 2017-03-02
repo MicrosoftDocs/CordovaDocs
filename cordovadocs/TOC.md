@@ -1,5 +1,5 @@
 # Get Started
-## [Learn about mobile development with JavaScript](first-steps/intro.md)
+## [Learn about mobile development with JavaScript](index.md)
 ## [Install the tools](first-steps/installation.md)
 ## [Build your first app](first-steps/build-your-first-app.md)
 ## [Create device-specific UIs using Ionic 2](first-steps/get-started-with-ionic2.md)
