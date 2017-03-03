@@ -66,7 +66,7 @@ It’s very important here to remember that every interaction with the app throu
 
 To complete the test, we need to wrap the UI sequence with the appropriate Mocha/Jasmine framework constructs: a call to *describe* to create the container for the test, followed by an *it* call with the UI sequence and assertions. You can find all this in **[test05.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test05.js)**, which is shown below—with lengthy comments omitted because we’ll talk about those details after the code:
 
-```
+```javascript
 	var yiewd = require("yiewd");
 	
 	// [Note 1]

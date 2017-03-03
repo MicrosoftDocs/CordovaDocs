@@ -300,7 +300,7 @@ In order for the web app to leverage the Cordova container's native capabilities
 
 5.	In the CordovaHostedWeb (ASP.NET) project, right-click the `Views\Cordova` folder and choose **Add** -> **Existing item**, use Windows Explorer to go to the `Views\Cordova` folder, and then add the file called `Index.cshtml` to the project. This page contains the following code:
 
-    ```cshtml
+    ```html
     @{
         ViewBag.Title = "index";
         var platform = ViewBag.Platform;
