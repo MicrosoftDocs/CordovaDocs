@@ -16,7 +16,8 @@ The best starting point whenever you are tackling a problem related to security 
 
 Historically [crypto.subtle.encrypt and decrypt](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) had [varying levels of support](http://caniuse.com/#search=web%20crypto) in browsers with one in particular being the biggest problem for Cordova: Android. To resolve this problem we'll need to take advantage of something called "Crosswalk."
 
-> Note: If you would **prefer not to use Crosswalk** or find the Crypto API **too cumbersome**, there are some alternatives like Intel's excellent [com-intel-security-cordova-plugin](https://software.intel.com/en-us/app-security-api/api) Cordova plugin that are worth considering.
+> [!NOTE]
+> If you would **prefer not to use Crosswalk** or find the Crypto API **too cumbersome**, there are some alternatives like Intel's excellent [com-intel-security-cordova-plugin](https://software.intel.com/en-us/app-security-api/api) Cordova plugin that are worth considering.
 
 
 ### Crosswalk
@@ -26,7 +27,7 @@ See the article on **[improving Android browser consistency and features with th
 
 Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 has caused crashes in certain emulators. Crosswalk 15 appears to be a solid choice. If you run into unexpected crashes or odd behaviors, add this to config.xml (Right-Click &gt; View Code in VS):
 
-```
+```xml
 <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library:15+" />
 ```
 
@@ -135,14 +136,6 @@ Other versions:
 </td>
 <td align="left">Android, iOS, Windows/Windows Phone 8.1, Windows 10</td>
 </tr>
-<!--
-<tr>
-<td align="left">Encrypted Database</td>
-<td align="left">[In Development]<br /><strong><a href="https://github.com/litehelpers/cordova-sqlcipher-adapter">cordova-sqlcipher-adapter</a></strong></td>
-<td align="left"<p>cordova-sqlcipher-adapter is a **release candidate** version of an enhanced adapter on top of the cordova-sqlite-storage plugin that uses SQLCipher to encrypt all data stored in a local database. You will need to install this version of the plugin using the <strong>Git URI</strong>: https://github.com/litehelpers/cordova-sqlcipher-adapter.git</p></td>
-<td align="left">Android, iOS</td>
-</tr>
--->
 </tbody></table>
 
 ### Adding the plugins
@@ -151,14 +144,14 @@ Other versions:
 
     For earlier versions of Tools for Apache Cordova, right click on config.xml, select View Code, and then add one of the following depending on whether or not a Git URI needs to be used. The plugin will be added on next build.
 
-    ```
+    ```xml
     <plugin name="cordova-sqlite-storage" spec="~1.4.0" />
     <plugin name="io.litehelpers.cordova.sqlcipher" src="https://github.com/litehelpers/Cordova-sqlcipher-adapter.git" version="0.1.4-rc" />
     ```
 
     ...or for Cordova < 5.1.1...
 
-    ```
+    ```xml
     <vs:plugin name="cordova-sqlite-storage" version="1.4.0" />
     <vs:plugin name="io.litehelpers.cordova.sqlcipher" src="https://github.com/litehelpers/Cordova-sqlcipher-adapter.git" version="0.1.4-rc" />
     ```

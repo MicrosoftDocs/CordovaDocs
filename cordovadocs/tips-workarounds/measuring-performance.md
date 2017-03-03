@@ -41,16 +41,16 @@ The methods described below have strengths that are exposed for specific use cas
   </th>
 </tr>
  <tr>
-   <td><strong>Developer Tools – CPU Profiler</strong></td><td>You are identifying which JavaScript code is taking the most time to run.</td>
+   <td><strong>Developer Tools ï¿½ CPU Profiler</strong></td><td>You are identifying which JavaScript code is taking the most time to run.</td>
  </tr>
  <tr>
-   <td><strong>Developer Tools – Timeline (UI) Profiler</strong></td><td>You are identifying whether JavaScript or rendering performance may be a bottleneck in your app. </td>
+   <td><strong>Developer Tools ï¿½ Timeline (UI) Profiler</strong></td><td>You are identifying whether JavaScript or rendering performance may be a bottleneck in your app. </td>
  </tr>
  <tr>
    <td><strong>JavaScript timing APIs</strong></td><td>You are measuring the duration of specific scenarios with clear start and end points.</td>
  </tr>
  <tr>
-   <td><strong>Visually timing</strong></td><td>You are measuring scenarios that are hard to time with code, such as startup time or navigation, or “time to glass” loading/update scenarios that require precise timing.</td>
+   <td><strong>Visually timing</strong></td><td>You are measuring scenarios that are hard to time with code, such as startup time or navigation, or ï¿½time to glassï¿½ loading/update scenarios that require precise timing.</td>
  </tr>
 </table>
 
@@ -108,27 +108,27 @@ For more on Chrome's Web Inspector tools, visit [https://developer.chrome.com/de
 
 ### Profiling Windows Phone from Visual Studio
 
-You can use Visual Studio developer tools to profile your Windows Phone app.  Start by opening your Windows Phone project in Visual Studio and setting the target, mode, and architecture.  We recommend you choose a device rather than one of the available emulators since an emulator’s graphics and IO characteristics are different from a real device. We recommend that you always use a physical device for performance testing.
+You can use Visual Studio developer tools to profile your Windows Phone app.  Start by opening your Windows Phone project in Visual Studio and setting the target, mode, and architecture.  We recommend you choose a device rather than one of the available emulators since an emulatorï¿½s graphics and IO characteristics are different from a real device. We recommend that you always use a physical device for performance testing.
 
 ![vs menu](media/measure-performance/vs-menu.png)
 
-To access Visual Studio’s profiling tools you can then go to **Debug** -> **Start Diagnostic Tools Without Debugging**.  This will bring up the Diagnostics Hub where you can pick the tools that you want to run. We found the CPU Usage and HTML UI Responsiveness tools very useful for diagnosing rendering issues in our tests.
+To access Visual Studioï¿½s profiling tools you can then go to **Debug** -> **Start Diagnostic Tools Without Debugging**.  This will bring up the Diagnostics Hub where you can pick the tools that you want to run. We found the CPU Usage and HTML UI Responsiveness tools very useful for diagnosing rendering issues in our tests.
 
 The following image shows the Diagnostic Hub in Visual Studio.
 
 ![diagnostic hub](media/measure-performance/diagnostic-hub.png)
 
-Once you check the tools you want to use, click **Start** and it will start your diagnostic session and run the profilers you’ve selected.  Once you stop your session, you will get a report with the summary of your profiling session.
+Once you check the tools you want to use, click **Start** and it will start your diagnostic session and run the profilers youï¿½ve selected.  Once you stop your session, you will get a report with the summary of your profiling session.
 
 The following image shows a sample report that was created from the diagnostic tool for CPU usage and HTML UI responsiveness.
 
 ![diagnostic tool in VS for CPU usage and HTML UI responsiveness](media/measure-performance/diagnostics-vs.png)
 
-For more on Visual Studio’s developer tools, visit  [http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx](http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx).
+For more on Visual Studioï¿½s developer tools, visit  [http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx](http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx).
 
 ### A Word of caution
 
-Using the developer tools is a great way to figure out where your app is slow. However, the numbers you see aren't infallible. The act of profiling slows down execution because the runtime has to save all the profiling information. There’s no way to avoid this, but we expect in most scenarios you won’t be concerned with the overhead that profiling adds to execution time.
+Using the developer tools is a great way to figure out where your app is slow. However, the numbers you see aren't infallible. The act of profiling slows down execution because the runtime has to save all the profiling information. Thereï¿½s no way to avoid this, but we expect in most scenarios you wonï¿½t be concerned with the overhead that profiling adds to execution time.
 
 ## <a id="measuring2"></a>Measuring performance via JavaScript
 
@@ -138,7 +138,7 @@ In case you missed it, since IE 10 and Chrome 20, you'll find support for ```DOM
 
 For example, to measure the execution of a function, you could time it like this:
 
-```
+```javascript
 var start = performance.now();
 someCodeToTime();
 var end = performance.now();

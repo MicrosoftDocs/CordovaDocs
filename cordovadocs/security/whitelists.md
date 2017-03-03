@@ -11,7 +11,7 @@ One of the more confusing changes about [Apache Cordova 5](http://go.microsoft.c
 ## Cordova Whitelists
 The new [Cordova Whitelist plugin (cordova-plugin-whitelist)](http://go.microsoft.com/fwlink/?LinkID=617668) is the recommended base security plugin to use for managing network security access. Historically there was one **access** element in config.xml used to control all access to network resources. For example, adding the following to config.xml resulted in the app not only being able to make XHR calls, access images, or reference remote scripts but also allowed Cordova to navigate to any URI.
 
-```
+```xml
 <access origin="*" />
 ```
 
@@ -22,7 +22,7 @@ As a result, the new whitelist plugin actually introduces three separate element
 
 The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
 
-```
+```xml
 <access origin="*" />
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
@@ -34,7 +34,7 @@ The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (vi
 
 If we wanted to add the ability for the root WebView to navigate to www.microsoft.com, we can add this XML element:
 
-```
+```xml
 <allow-navigation href="http://www.microsoft.com" />
 ```
 
@@ -59,7 +59,7 @@ CSP support is a native browser capability that allows you to control exactly wh
 
 A CSP is applied at a page level through a few different mechanisms, but for Cordova apps you typically use a meta tag. Here is the CSP policy on index.html in the default Cordova CLI project template:
 
-```
+```xml
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 ```
 
@@ -115,7 +115,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
 	2. Add the following XML elements under the &lt;widget&gt; element:
 
-		```
+		```xml
 		<allow-intent href="http://*/*" />
 		<allow-intent href="https://*/*" />
 		<allow-intent href="tel:*" />
@@ -128,7 +128,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
 	3. Optionally, if your app is using hosted content, or you'd prefer not to restrict where the WebView can navigate during development, you can also add the following elements:
 
-		```
+		```xml
 		<allow-navigation href="http://*/*" />
 		<allow-navigation href="https://*/*" />
 		<allow-navigation href="data:*" />
@@ -138,7 +138,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
 3. Due to the significant security benefits associated with using a CSP, we strongly recommend taking the Cordova CLI template's CSP metatag and add it to the header of any page the app will navigate to in your app. Note that **you can use add a CSP meta tag to hosted content too.**
 
-	```
+	```html
     <head>
        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
        <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -149,7 +149,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 	Start with the most locked down security policy you can, and back away as needed. That way you'll ensure you're using the most secure practices you can from the start.
 
     > [!NOTE]
-    > To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.    
+    > **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.    
 
 ##Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)

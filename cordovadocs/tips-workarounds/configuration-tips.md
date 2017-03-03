@@ -37,8 +37,8 @@ You can download Visual Studio from the [Microsoft Download Center](http://go.mi
 
 * If you see unexpected errors when trying to build the Blank App template, see [Re-install the Cordova CLI pre-processor](#vstac).
 
-    >**Caution:**
-  If you are migrating a project from an earlier version of Visual Studio, see this [migration information](https://github.com/Microsoft/cordova-docs/blob/master/known-issues/known-issues-vs2015.md#known-issues—visual-studio-2015) (github).
+    > [!WARNING]
+    > If you are migrating a project from an earlier version of Visual Studio, see this [migration information](https://github.com/Microsoft/cordova-docs/blob/master/known-issues/known-issues-vs2015.md#known-issues—visual-studio-2015) (github).
 
 ##<a name="ThirdParty"></a>Install dependencies manually
 If you choose not to install one or more dependencies with the extension, you can install them later manually.
@@ -55,8 +55,8 @@ You can install the dependencies in any order, except for Java. You must install
 
     When you install Git command line tools, select the option that adds Git to your command prompt path.
 
-    >**Caution:**
-Git command line tools 1.9.5 are installed by default. Unexpected failures may occur if you install a version prior to 1.9.0.
+    > [!WARNING]
+    > Git command line tools 1.9.5 are installed by default. Unexpected failures may occur if you install a version prior to 1.9.0.
 
 * [Apache Ant](http://go.microsoft.com/fwlink/?LinkID=396869)
 
@@ -112,7 +112,8 @@ Git command line tools 1.9.5 are installed by default. Unexpected failures may o
 
            If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 
-          >**Tip:** If you install the Android SDK to its default location on Windows, it gets installed to C:\Program Files (x86)\Android\android-sdk.
+          > [!TIP]
+          > If you install the Android SDK to its default location on Windows, it gets installed to C:\Program Files (x86)\Android\android-sdk.
 
 * If you want to use the Google Android Emulator to emulate a 5.1.x device:
 
@@ -255,8 +256,8 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
 
        remotebuild test <same-options-as-first-agent>
 
-    >**Important:**
-This command will fail if the agent is not running in a second window, or if the two instances are not using the same configuration options.
+    > [!CRITICAL]
+    > This command will fail if the agent is not running in a second window, or if the two instances are not using the same configuration options.
 
     This command initiates a test build. The output from the command should show the build number and other information about the build, such as its progress.
 
@@ -318,8 +319,8 @@ The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.
 ##Configure tools to work with a proxy
 If you are using Visual Studio behind a proxy, such as a corporate firewall, you may need to configure proxy settings for the npm package manager and for git before you can use Visual Studio Tools for Apache Cordova.
 
->**Important:**
-Using npm proxy settings with recent versions of Node.js can cause Cordova to fail to acquire plugins at the command line or in the configuration designer or when adding platforms required for build. If you encounter unexpected issues (particularly a “TypeError: Request path contains unescaped characters” error), try downgrading Node.js to 0.10.29.
+> [!CRITICAL]
+> Using npm proxy settings with recent versions of Node.js can cause Cordova to fail to acquire plugins at the command line or in the configuration designer or when adding platforms required for build. If you encounter unexpected issues (particularly a “TypeError: Request path contains unescaped characters” error), try downgrading Node.js to 0.10.29.
 
 ### To configure proxy settings for npm package manager
 

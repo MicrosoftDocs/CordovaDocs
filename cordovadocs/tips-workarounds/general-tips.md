@@ -136,22 +136,6 @@ The simplest workaround is to **downgrade Node.js to 0.10.29**. This will be res
 <a name="plugin-xml"></a>
 
 ##Using Plugins Not Listed in the Config Designer
-Occasionally you might have to install a specific version of a Cordova plugin that's not listed in the config.xml designer. If this plugin is available in plugins.cordova.io when using any version of Cordova or npm when using Cordova 5.0.0+, you can add the following element to config.xml, and the plugin will be installed when you next build the project:
-
-1. If any of plugins you intend to install were already added to your project (particularly with an older ID), remove them using the **Installed** tab of the **Plugins** section of the config.xml designer in Visual Studio.
-
-2. Next, right click on config.xml in the Solution Explorer and select **View Code**
-
-3. Add the following element to config.xml under the root widget element:
-
-	```
-  	  <vs:plugin name="org.apache.cordova.camera" version="0.3.6" />
-	```
-
-	...substituting org.apache.cordova.camera for the correct ID and 0.3.6 with the version of the plugin you want to install.
-
-4. The next time you build the plugin will be installed for you.
-
 You can add plugins by using a Git URI or the local filesystem by using the **Custom** tab of the **Plugins** section in the config.xml designer. Using a Git URI can cause you to get a "dev" version of a plugin. See [these instructions](#plugin-github) for how you can use a specific version of a GitHub sourced plugin.
 
 <a name="plugin-github"></a>

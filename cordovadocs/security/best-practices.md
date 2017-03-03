@@ -68,7 +68,7 @@ Note that none of these rules apply to images or other static content.
 
 The default CSP policy in Visual Studio and Cordova templates is a solid starting point. It allows eval(), but keeps the inline script and same origin restrictions in place.
 
-```
+```html
 <meta http-equiv="Content-Security-Policy" 
       content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
                style-src 'self' 'unsafe-inline'; 
@@ -84,7 +84,7 @@ The **access** element from previous versions of Cordova returns but only contro
 
 The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
 
-```
+```xml
 <access origin="*" />
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
@@ -123,7 +123,7 @@ One often missed feature that the Windows platform for Cordova has is the abilit
 
 Enabling it is simple. Edit config.xml either in your favorite text editor like VS Code or by right-clicking and selecting View Source in Visual Studio and add the following elements:
 
-```
+```xml
 <preference name="windows-target-version" value="10.0" />
 <preference name="WindowsDefaultUriPrefix" value="ms-appx://" />
 ```
@@ -141,13 +141,13 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
 
     For earlier versions of Tools for Apache Cordova, right click on config.xml, select View Code, and then add one of the following. The plugin will be added on next build.
 
-    ```
+    ```xml
     <plugin name="cordova-plugin-ms-intune-mam" spec="~1.0.0" />
     ```
     
     ...or for Cordova < 5.1.1...
 
-    ```
+    ```xml
     <vs:plugin name="cordova-plugin-ms-intune-mam" version="1.0.0" />
     ```
 

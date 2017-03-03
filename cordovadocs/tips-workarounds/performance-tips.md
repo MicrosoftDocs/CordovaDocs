@@ -56,7 +56,7 @@ When manipulating the DOM, the secret to getting things done faster is to do les
 
 Here’s an example that simplifies the markup for a clickable item in a list. While this is a rather simple example, you can imagine places in your code where you can remove or combine unnecessary elements to simplify the DOM.
 
-```
+```html
 <ul>
 	<!-- Two elements -->
 	<li><a href="nextPage.html">Next Page</a></li>
@@ -69,7 +69,7 @@ Here’s an example that simplifies the markup for a clickable item in a list. W
 
 Certain operations invalidate the layout of the page and require a recalculation. Layout thrashing occurs when you’re reading and updating properties that require a layout before you can read the next property. You might encounter this if you’re looping through a list of nodes and changing how they’re displayed. If you depend on getting values from the DOM, get all those values before you begin to update the DOM. Here is a bad example followed by a corrected good example that demonstrates changing a list of items to absolute positioning.
 
-```
+```javascript
 // BAD
 // Absolutely position elements, thrashing the DOM
 // by repeatedly reading offsetLeft then changing the value of left
@@ -118,7 +118,7 @@ With animations, it is critical to make sure that they fall into the fluid inter
 
 One of the tricks to getting high performance animations is to get the animation to happen on the GPU. Rather than animating the position by changing top and left via keyframes, you should use the transform property to translate the element instead. This keeps the browser from having to invalidate and recalculate the layout, and instead, allows it to use the GPU to just move the layer holding the element you are animating. Here’s some CSS that shows bad and good ways to define the keyframes.
 
-```
+```css
 /* Bad */
 @keyframes backAndForth {
     0% { left:   0;   }
@@ -138,7 +138,7 @@ One of the tricks to getting high performance animations is to get the animation
 
 Although today, CSS will promise the fastest, smoothest animations, there are cases where you’ll need to use JavaScript. If you need your animation to be interactive, like moving an object to a user-defined position or dynamically pausing or changing, you may need to consider JavaScript to run the animation. Use ```requestAnimationFrame``` to do the work of scheduling the callbacks for the smoothest and fastest animations.
 
-```
+```javascript
 var move = function () {
   someFunctionToMoveTheElement();
   if (isAtDestination() == false) {
@@ -159,7 +159,7 @@ Additionally, garbage collection in JavaScript isn’t very predictable and can 
 
 Here is an example that, if you run it, every second adds 100 buttons to the page and then clears them a half second later. If you watch the memory usage for this, you’ll see it gradually go up over time until the garbage collector kicks in and removes everything. Part of the reason for the increase is that our clear method just sets the HTML to an empty string and it takes a while for the garbage collector to notice our event listeners are hanging around.
 
-```
+```javascript
 var container = document.body;
 // Remove the buttons by just setting the HTML to nothing
 function clear() {
@@ -189,7 +189,7 @@ setInterval(function () {
 ```
 A more memory efficient way to clean up the buttons would be like this:
 
-```
+```javascript
 function clear() {
   var children = container.childNodes;
   for (var i = 0; i < els.length; i++) {
@@ -204,7 +204,7 @@ The takeaway here is either to be proactive, and clean up as you go, or to be pa
 
 It is super common to see code that follows this pattern:
 
-```
+```javascript
 for(elem in elements) {
   elem.addEventListener("click", function () {
     /* do some work */
@@ -220,7 +220,7 @@ Adding an anonymous function as the event listener for every element ends up all
 If you’re waiting around for the garbage collector to clean up all your unused memory, it’s important to make sure that your app isn’t accidently hanging on to elements you expect to get cleaned up. The effect of this is compounded in a single page applications.
 For example, assume that your single page app has containers for every page that are created, populated and removed as you navigate through it. You might have a line like this, where you create a local variable to hold a reference to your container:
 
-```
+```javascript
 var homeContainer = document.getElementById("homeContainer");
 ```
 
