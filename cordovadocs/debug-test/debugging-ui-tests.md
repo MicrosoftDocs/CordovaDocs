@@ -24,6 +24,7 @@ For debugging purposes, change line 10 in [**test07.js**](https://github.com/Mic
 
 3.	This creates and opens launch.json with several default configurations. Here’s we’ll create a new configuration specifically for debugging. Just add the code below within the *configurations* array:
 
+```json
 	{
 	    "name": "Debug Mocha UI Tests",
 	    "type": "node",
@@ -46,6 +47,7 @@ For debugging purposes, change line 10 in [**test07.js**](https://github.com/Mic
 	    "sourceMaps": false,
 	    "outDir": null
 	}
+```
 
 4.	Modify the path in “program” to the absolute path to the Mocha executable on your machine. What’s shown here for a typical location when installed with *npm install --g mocha*. On OS X, the path will likely be "/Users/myname/myfolder/node_modules/mocha/bin/_mocha". If you install Mocha instead as a dev dependency, you could use “${workspaceroot}\\node_modules\\mocha\\bin\\_mocha” (using /on OS X).
 
@@ -63,7 +65,8 @@ For debugging purposes, change line 10 in [**test07.js**](https://github.com/Mic
 
 9.	When you hit breakpoints, you can examine any variables that have been set up to that time, and toggle additional breakpoints as needed. To continue running to the next breakpoint, press F5 or the green arrow again.
 
-Note: if you get a message saying that Node.js can’t continue running, try removing the breakpoint on the current line and clicking the green arrow again.
+	> [!NOTE]
+	> If you get a message saying that Node.js can’t continue running, try removing the breakpoint on the current line and clicking the green arrow again.
 
 10.	When running in Visual Studio Code, Mocha’s test reports appear in its console window.
 

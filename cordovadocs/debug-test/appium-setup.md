@@ -70,6 +70,7 @@ The capabilities that we’re particularly concerned with here are as follows:
  
 If you’ve built the WeatherApp sample for Android as described in Prerequisites, you should have an .apk file in hand already. Because that sample targets Android API level 19, we need to configure Appium for the same. The below, which you can find in **[test01.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test01.js)**, does exactly this. You’ll need to change the app path for your system, of course:
 
+```javascript
     var wd = require("wd");
     var appDriver = wd.remote({
         hostname: '127.0.0.1',
@@ -87,6 +88,7 @@ If you’ve built the WeatherApp sample for Android as described in Prerequisite
        deviceName: 'any value; Appium uses the first device from *adb devices*',
        app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk" 
     };
+```
 
 > [!NOTE]
 > The *config* object is just a helpful way to manage different configurations that you might use in your testing. You could create a .js file with an object containing all your target configurations, for example, and then use that same file in many different app projects.
@@ -116,7 +118,7 @@ In any case, switch over to the Appium server window and you’ll see a whole lo
     [Appium]   app: 'D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk'
     [BaseDriver] Session created with session id: 6871e78b-f4ad-4cda-a74e-2d33817c67a5
     
-You’ll then see the server locating and selecting a device using adb.exe (you actually see adb output quite a bit). In the output below, the IP address and port combination is the default for the Visual Studio Emulator for Android (a different emulator would likely have a different address and port):
+You’ll then see the server locating and selecting a device using adb.exe (you actually see adb output quite a bit):
 
     [ADB] Checking whether adb is present
     [ADB] Using adb.exe from d:\android\sdk\platform-tools\adb.exe

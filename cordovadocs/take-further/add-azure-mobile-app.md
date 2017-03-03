@@ -170,9 +170,9 @@ Select a device target and press F5 to run your app with authentication.
 
     The PhoneGap push plugin has been validated on Windows 10 only. To target Windows 10, you must set Windows 10 as the target in config.xml.
 
-* Visual Studio Emulator for Android doesn't show push notifications?
+* Push notifications don't appear in the Google Android emulator.
 
-    Push notifications are not supported on the VS Emulator for Android. Try to test on an Android device. The Google Android Emulator does support push notifications, but requires [special configuration steps](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-xamarin-android-get-started-push/#test).
+    The Google Android Emulator does support push notifications, but requires [special configuration steps](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-xamarin-android-get-started-push/#test).
 
 * Other build or deployment errors in your Cordova app?
 

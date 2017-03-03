@@ -51,6 +51,7 @@ In this test we don’t need to assert visibility of any children of *weather-da
 
 To check the visibility of *weather-data* and *error-msg*, we need only add a little bit to the UI sequence we had before (the *expect().to.equal* methods are from Chai as we’ll see momentarily):
 
+```JavaScript
 	var elemData = yield this.elementById('weather-data');
 	var elemErr = yield this.elementById('error-msg');
 	
@@ -59,11 +60,13 @@ To check the visibility of *weather-data* and *error-msg*, we need only add a li
 	
 	var eitherVisible = (visData && !visErr) || (!visData && visErr);
 	expect(eitherVisible).toBe(true)
+```
 
 It’s very important here to remember that every interaction with the app through the **wd** API happens asynchronously, hence the many uses of *yield*. In this test code, too, the “element” variables are **wd** objects with async methods, not HTML elements with properties, so to check visibility we call the async *isDisplayed* API rather than looking at an HTML property. (This can be tricky to discover; again, refer to the **wd** sources like [element-commands.js](https://github.com/admc/wd/blob/master/lib/element-commands.js) for documentation on the APIs.)
 
 To complete the test, we need to wrap the UI sequence with the appropriate Mocha/Jasmine framework constructs: a call to *describe* to create the container for the test, followed by an *it* call with the UI sequence and assertions. You can find all this in **[test05.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test05.js)**, which is shown below—with lengthy comments omitted because we’ll talk about those details after the code:
 
+```
 	var yiewd = require("yiewd");
 	
 	// [Note 1]
@@ -154,6 +157,7 @@ To complete the test, we need to wrap the UI sequence with the appropriate Mocha
 	        
 	  });
 	});
+```
 
 Here are the points of interest in this code, as indicated by the notes:
 
@@ -371,6 +375,7 @@ This is where “hooks” in the test frameworks come into play, which are speci
 
 In our test code with WeatherApp, the *before* hook is a perfect place to all *appDriver.init* to launch the app. Note that in this code we are using the yiewd form of *function**, *appDriver.run*, and *yield*:
 
+```JavaScript
 	before(function (done) {
 	  appDriver.run(function *() {
 	    var session = yield this.init(config.android19Hybrid);
@@ -386,9 +391,11 @@ In our test code with WeatherApp, the *before* hook is a perfect place to all *a
 	    done();
 	  });
 	});
+```
 
 To refactor code that you want to use from multiple tests, be sure to use *function** in the declaration and *yield* in the body as before. For example, in WeatherApp we have two tests (startup and entering a valid ZIP code) that need to check mutually-exclusive visibility of the *weather-data* and *error-msg* elements. We can thus pull this code out separately as follows:
 
+```JavaScript
 	function* checkDataErrVisibility(appSession) {
 	    var elemData = yield appSession.elementById('weather-data');
 	    var elemErr = yield appSession.elementById('error-msg');
@@ -401,9 +408,11 @@ To refactor code that you want to use from multiple tests, be sure to use *funct
 	    var eitherVisible = (visData && !visErr) || (!visData && visErr);
 	    return eitherVisible; 
 	}
+```
 
 Because this is declared using *function**, we have to use *yield* when calling it. For example, with this and the *before* hook in place, the startup test for element visibility is simple:
 
+```JavaScript
 	it ('displays either weather data or an error message on startup', function (done) {
 	  appDriver.run(function* () {
 	    var eitherVisible = yield checkDataErrVisibility(this);
@@ -411,6 +420,7 @@ Because this is declared using *function**, we have to use *yield* when calling 
 	    done();
 	  });
 	});
+```
 
 These same couple of lines also are in the ZIP code test, of course, which you can find in **[test06.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test06.js)** and run as follows:
 
@@ -418,14 +428,9 @@ These same couple of lines also are in the ZIP code test, of course, which you c
 
 At this point, it’s instructive to change the conditions of the test by disabling the device’s network (either in the emulator or a real device). This will cause error messages to appear, and the tests should still pass.
 
-In the Visual Studio Emulator for Android, you can simulate a slow network by setting it to 2G with poor signal strength:
- 
-![Network settings in the Visual Studio Emulator for Android](media/designing/01-emulator-slow-network.png)
-
-In this case, the 3-second delays we built into the tests will elapse before the network responds, which will mean the error message is visible. The tests will still pass.
-
 Now let’s write the remaining tests that we listed in the previous section, namely those that check for behaviors related to the text entry and Get Weather controls. This code is in **[test07.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js)**:
 
+```JavaScript
 	it ('displays either weather data or an error message on startup', function (done) {
 	  appDriver.run(function* () {
 	    var eitherVisible = yield checkDataErrVisibility(this);
@@ -481,6 +486,7 @@ Now let’s write the remaining tests that we listed in the previous section, na
 	    done();
 	  }); 
 	});
+```
 
 We expect that the first three of these tests will fail because the app as yet doesn’t prevent non-numerical input nor does it check for longer entry strings. The fourth test will pass, though, because the button is always enabled. Here’s the mocha output (stack traces omitted):
 
@@ -521,10 +527,13 @@ We expect that the first three of these tests will fail because the app as yet d
 
 With these results we can take the test-driven development approach and write code in the app to pass one or more additional tests. To limit the ZIP code entry to at most five digits, we add *type=”number”* and *maxlength=”5”* attributes to the *zip-code-input* element in index.html:
 
+```html
 	<input id="zip-code-input" name="zip-code" type="number" maxlength="5" placeholder="eg. 98001" required />
+```
 
 However, this doesn’t appear entirely reliable on all platforms. So we can also implement that behavior in a *keypress* handler (index.js):
 
+```JavaScript
 	//Accept only digits (and special characters)
 	$('#zip-code-input').keypress(function (e) {
 	    var charCode = (e.which) ? e.which : e.keyCode
@@ -540,18 +549,23 @@ However, this doesn’t appear entirely reliable on all platforms. So we can als
 	
 	    return true;
 	});
+```
 
 To enable/disable the Get Weather button, we need to initially disable the button in HTML:
 
+```html
 	<button id="get-weather-btn" data-role="button" data-icon="search" disabled >Find Weather</button>
+```
 
 And then check the length of the ZIP code value in its *change* event:
 
+```JavaScript
 	//Whenever a key is released, check for enabling/disabling the button
 	$('#zip-code-input').keyup(function (e) {
 	    var text = $('#zip-code-input')[0].value;
 	    $('#get-weather-btn').prop('disabled', !(text.length == 5));
 	});
+```
 
 Running *mocha test07.js* again shows that we now pass those tests.
 
@@ -567,6 +581,7 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 
 3.	To run Mocha tests, it’s necessary to have Mocha installed locally (see [Test Explorer in the Node.js tools documentation](https://github.com/Microsoft/nodejstools/wiki/Test-Explorer)). This is easily accomplished by adding Mocha and the other packages we need to the *devdependencies* section of package.json as below, then running *npm install* in the project folder.
 
+```json
 	"devDependencies": {
 	  "wd": "^0.4.0",
 	  "mocha": "^2.5.3",    
@@ -574,6 +589,7 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 	  "expect.js": "^0.3.1",
 	  "yiewd": "^0.6.0"
 	}
+```
 
 4.	Select **Project > Add Existing Item…** and navigate to your test file, such as [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js) that we used in the previous section.
 

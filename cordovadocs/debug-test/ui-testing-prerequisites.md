@@ -9,7 +9,7 @@
 This tutorial has a few requirements that you need to fulfill before continuing:
 
 - Verify your Android SDK and environment variables
-- Run the test app in the Visual Studio for Android emulator
+- Run the test app in the Google Android Emulator
 - Update Node.js
 - Create a bit of initial test code and execute in Node.js.
 
@@ -79,13 +79,9 @@ To learn how to write and run UI tests for Apache Cordova apps, we need an app t
 
 5. Build the app to check that your Visual Studio environment is current. A successful build will produce an app package under *bin\Android\Debug\android-debug.apk*. Note that you might need to update the Tools for Apache Cordova by going to **Tools > Extensions and Updates…** and checking the **Updates** node.
 
-6. Select the Visual Studio Emulator for Android as a debug target in Visual Studio and launch the app. It should appear as below. When you're finished, stop the app in Visual Studio but leave the emulator running, as we’ll be using it throughout the course of our UI testing.
+6. Select the Google Android Emulator as a debug target in Visual Studio and launch the app. It should appear as below. When you're finished, stop the app in Visual Studio but leave the emulator running, as we’ll be using it throughout the course of our UI testing.
 
 ![Sample Weather App for Android](media/prereqs/01-weather-app.png)
-
-> [!NOTE]
-> If you're using Visual Studio in a virtual machine and cannot run the Visual Studio Emulator for Android, Appium will also work with the Google Android Emulator or any other Android Emulator. See how to [run your app on Android](../run-your-app/run-app-android.md) for information on other emulators. As we'll see, Appium always connects to the first device that's returned from the *abd devices* command; where there is anything specific you might need to adjust, though, we'll point that out.
-
 
 ##Verify WebDriver operation
 
