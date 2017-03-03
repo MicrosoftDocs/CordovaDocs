@@ -44,7 +44,7 @@ A Cordova application project in Visual Studio mimics the project folder structu
   
 ![TypeScript Project Solution Explorer](media/vs-taco-tutorial-typescript/figure-02.png)
 
-TypeScript supports modules, so when you start to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app's code using modules. There's a variety of module managers available for web applications, the choice of which is a source of much emotional discussion within the developer community. We're not going to address that topic here; for detailed information on modules and module loaders, see the [modules page](http://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook. 
+TypeScript supports modules, so when you start to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app's code using modules. There are many module managers available for web applications, the choice of which is a source of much emotional discussion within the developer community. We're not going to address that topic here; for detailed information on modules and module loaders, see the [modules page](http://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook. 
 
 The default TypeScript template in TACO uses the popular [RequireJS](http://requirejs.org/) module manager. So, when you look at the TypeScript project's `index.html` file, you'll see the same file you'll find in the standard Cordova project, with the addition of the following lines:
 
@@ -157,11 +157,9 @@ The starter samples extend the [Greeter tutorial](http://www.typescriptlang.org/
   * [AMD and RequireJS sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-amd)
   * [CommonJs and Browserify sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-commonjs)
 
-##<a name="learnMore"></a>Learn More About Using TypeScript with Cordova
+##<a name="learnMore"></a>Learn More About Using TypeScript
 
 Here are a few links to help you learn more about working with TypeScript:
 
 * [The TypeScript language website](http://www.typescriptlang.org)
 * [Configuring TypeScript compilation using tsconfig.json](https://github.com/microsoft/typescript/wiki/tsconfig.json)
-
-To learn more about using TypeScript with Cordova, see our [sample TODO app, using WinJS](https://github.com/Microsoft/cordova-samples/tree/master/todo-winjs).

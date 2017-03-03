@@ -190,10 +190,6 @@ To run your app on the Genymotion emulator, complete the following steps:
 
 	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
 
-***
-
-![Download the tools](media/vs-taco-run-android/tools.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
-
 ## See Also
 
 [Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  

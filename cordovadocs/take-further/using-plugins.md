@@ -72,42 +72,9 @@ The [Cordova plugins registry](http://plugins.cordova.io) provides information a
 
 ## <a id="Older"></a>Update a plugin to use an older version
 
-[Remove the plugin](#removing), and then add the appropriate version of the plugin by directly editing **Config.xml** file of your project. See the next section for guidance on how to add it.
+[Remove the plugin](#removing), and then add the appropriate version of the plugin by directly editing **Config.xml** file of your project.
 
 The [Cordova plugins registry](http://plugins.cordova.io) provides information about different plugin versions.
-
-## <a id="AddOther"></a>Add a plugin that is not present in the configuration designer
-
-Occasionally you might need to install a specific version of a Cordova plugin that is not listed in the configuration designer. If this plugin is available in plugins.cordova.io when using any version of Cordova, or in npm when using Cordova 5.0.0+, you can add the following element to config.xml and the plugin will be installed on when you next build your project:
-
-1. If any of plugins you intend to install were already added to your project (particularly with an older ID), [Remove them](#remove).
-
-2. In **Solution Explorer**, open the shortcut menu for config.xml and choose **View Code**.
-
-3. Add the following element to config.xml under the root widget element:
-
-        <vs:plugin name="org-apache-cordova-pluginname" version="0.1.1" />
-
-4. Replace ```org-apache-cordova-pluginname``` with the correct ID, and replace ```0.1.1``` with the correct version. The plugin will be installed the next time that you build the app.
-
-You can add plugins using a Git URI or the local filesystem by using the **Custom** tab of the **Plugins** section in the config.xml designer. Using a Git URI can cause you to get a “dev” version of a plugin. See [these instructions](../tips-workarounds/general-tips.md) if you want to use a specific version of a GitHub sourced plugin.
-
-## <a id="Configuring"></a>Configure plugin parameters
-
-Specify parameters by adding some additional XML elements in the **Config.xml** file of your project. For example, to configure the Facebook plugin, you can edit the following parameters in **config.xml**.
-
-    <vs:plugin name="com-phonegap-plugins-facebookconnect" version="0.8.1">
-          <param name="APP_ID" value="12345678" />
-          <param name="APP_NAME" value="My Facebook App" />
-    </vs:plugin>
-
-This has the same result as running the following command from the command line (if you were not using Visual Studio):
-
-    cordova plugin add https://github/com/Wizcorp/phonegap-facebook-plugin.git
-       --variable APP_ID="12345678" –variable APP_NAME="My Facebook App"
-
->**Important:**
-Cordova 4.3.1 and previous versions have a set of known issues that can prevent plugins with parameters from working properly. We recommend using Cordova 5.1.1 or later when using plugins that require parameters.
 
 ## <a id="Custom"></a>Extend a custom plugin
 
@@ -115,16 +82,6 @@ At times, the custom plugins in the Cordova registry might not meet all your app
 
 If you need to extend your app using a custom plugin, check the plugin registry first and use code that others have already written. If an existing plugin is close to what you need, download it, make improvements, and then submit those changes to the original author. This is a great way of giving back to the Cordova community and making it easier for others to solve similar problems. Install the custom plugin using the configuration designer. When the plugin.xml file is next to the www folder in the project folder tree, the required JavaScript files from the plugin’s www folder will be loaded automatically at runtime. You do not need to reference these files from an HTML file. You can also set breakpoints within these code files if needed. The build process also compiles any platform-specific files in the src folder.
 
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
-
 ## See Also
-
-**Concepts**
-
-[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
-
-**Other Resources**
-
 [Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)  
-[Cordova plugins registry](http://plugins.cordova.io)  
-[FAQ](http://go.microsoft.com/fwlink/p/?linkid=398476)  
+[Cordova plugins registry](http://plugins.cordova.io) 

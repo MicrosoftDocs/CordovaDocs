@@ -134,6 +134,4 @@ The Cordova <span class="code">serve</span> command lets you test the layout and
 > [!CAUTION]
 > You need to rebuild the app to update its content.
 
-![Download the tools](media/access-native-cordova-project/access-native-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
-
 </div></div><div>

@@ -84,5 +84,3 @@ See the troubleshooting tips in the [iOS Guide](../first-steps/ios-guide.md)
     If the remote agent and is set up correctly and your iOS device is connected, the app will run on your device.
 
     If you are running the app on your PC (**Local Device**), iTunes will start and the iOS app will automatically be added to (or replaced in) your library. You can [install or update the app](http://support.apple.com/kb/PH12315) on a connected device as you would any other iOS app.
-
-![Download the tools](media/run-app-ios/run-ios-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)

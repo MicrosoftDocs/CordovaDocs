@@ -84,6 +84,3 @@ The following table provides specific information for each platform.
         </tr>
     </tbody>
 </table>
-
-
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)

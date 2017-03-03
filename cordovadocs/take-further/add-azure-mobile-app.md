@@ -53,10 +53,12 @@ The Azure connected services sample uses an Azure Easy table to store todolist i
 To use the sample, update your Cordova app in Visual Studio:
 
 * Include your Azure Mobile App connected service URL where directed in index.js.
+
     ```javascript
     client = new WindowsAzure.MobileServiceClient('http://yourmobileapp.azurewebsites.net-fail');
     ```
 * Include the same URL in the CSP `<meta>` element in index.html.
+
     ```html
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://yourmobileapp.azurewebsites.net; style-src 'self'; media-src *">
     ```

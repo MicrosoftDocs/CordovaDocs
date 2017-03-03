@@ -398,5 +398,3 @@ As an alternative to using weinre for Windows Phone 8 debugging, you can instead
 
 > [!WARNING]
 > Changes you make to the native project will be overwritten when you rebuild the Cordova app.
-
-![Download the tools](media/debug-using-visual-studio/debug-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
