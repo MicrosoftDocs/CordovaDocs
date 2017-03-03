@@ -41,7 +41,7 @@ Usually you won't need to do any additional configuration when using the Crosswa
 ### Shared Mode
 By default the Crosswalk WebView plugin embeds the webview into your app.  However, one option to consider when using the Crosswalk WebView is what is called [Shared Mode](https://crosswalk-project.org/documentation/shared_mode.html). Shared Mode instead downloads a copy of the Crosswalk WebView on initial startup if it is not already on the device. This method reduces the size of the resulting app by around 20-40MB and Crosswalk is then updated independent of your app. This also significantly speeds up build times which is very useful during development. There are some down-sides with this approach as outlined in the [Crosswalk documentation](https://crosswalk-project.org/documentation/shared_mode.html), but you can switch to Shared Mode by adding the following to config.xml (Right-Click > View Code in VS):
 
-```
+```xml
 <preference name="xwalkMode" value="shared" />
 ```
 
@@ -59,7 +59,7 @@ Usually you won't need specify the actual version of the Crosswalk WebView that 
 
 Crosswalk version 15 is known to work well and you can force this version to be used with a simple preference. Simply add the following to config.xml (Right-Click > View Code in VS):
 
-```
+```xml
 <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library:15+" />
 ```
 

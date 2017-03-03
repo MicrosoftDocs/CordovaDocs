@@ -537,7 +537,7 @@ Use the **Custom** page to add plugins that are not one of the Cordova [core plu
 
 ![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-28.png)
 
-If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../take-further/using-plugins.md#AddOther).
+If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly.
 
 Let's add a plug-in that gives us access to the device's geolocation capabilities; this this in place, we'll adjust the app so it retrieves weather conditions for the device's current location when the application launches.
 

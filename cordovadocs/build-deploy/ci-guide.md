@@ -62,7 +62,7 @@ cordova plugin save
 
 When you execute these commands, the Cordova CLI adds entries to the `config.xml` for platforms and plugins (depending on which commands you execute). Platforms are added as `engine` elements and plugins are added as `plugin` elements as shown at the end of the following sample `config.xml`:  
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
     <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TACO Weather App</name>
@@ -247,7 +247,7 @@ Installing and using the correct version of the Cordova CLI at the project level
 
 2.	Add the following JSON to the file where `6.0.0` is the version of the Cordova CLI you intend to use:
 
-	```
+	```json
     {
     	"devDependencies": {
     		"cordova": "6.0.0"
