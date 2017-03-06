@@ -1,16 +1,17 @@
-<properties pageTitle="Package Your Cordova App for Publishing to an App Store"
-  description="Tutorial: How to create an Android, iOS, and Windows package for deployment to an app store."
-  services=""
-  documentationCenter=""
-  authors="normesta, johnwargo" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="01/31/2017"
-     ms.author="johnwargo"/>
+---
+title: "Package Your Cordova App for Publishing to an App Store"
+description: "Tutorial: How to create an Android, iOS, and Windows package for deployment to an app store."
+author: "normesta, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "01/31/2017"
+ms.author: "johnwargo"
+---
 
 # Package Your Cordova App for Publishing to an App Store
 
@@ -33,32 +34,32 @@ For Android applications, preparing your environment for publishing, and publish
 
 ### <a id="android-1"></a> 1. Android: Modify Application Settings
 
-As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file. 
+As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file.
 
 1.	In the Visual Studio Solution Explorer, double-click the `config.xml` file to open the custom configuration editor shown in the following figure:
 
-	![Cordova Project Configuration](media/publish-to-a-store/figure-01.png)	 
+	![Cordova Project Configuration](media/publish-to-a-store/figure-01.png)
 
-	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are: 
+	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are:
 
 	+ **Display Name**: the application's public name; this is the how the app will appear in the app store and on the target mobile device's home screen and application listing. Populate this field with a brief word or phrase that describes your app, keeping in mind that app tiles on a device's home screen don't leave much room for text. The value you enter here is added to the `config.xml` in the `<name>` element.
-	
+
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
-	    
+
 		```xml
 		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:
-	
+
 	```xml
 	<access origin="api.openweathermap.org" />
-	```  
+	```
 	The purpose of most other settings clear from the title, but you can find more information about them here: [The config.xml File](http://cordova.apache.org/docs/en/latest/config_ref/index.html).
 
 2.	Switch to the editor's **Android** tab to set Android-specific settings for the application. These settings control the conditions under which the application runs on an android device.
 
-	![Cordova Project Configuration: Android](media/publish-to-a-store/figure-02.png) 
+	![Cordova Project Configuration: Android](media/publish-to-a-store/figure-02.png)
 
 	Each input field on the form corresponds to a specific entry in the project's `config.xml` file:
 
@@ -70,7 +71,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	+ **Lanch Mode**: `AndroidLaunchMode` - a string value that sets the Activity `android:launchMode` attribute in the application. This changes what happens when the app is launched from app icon or intent and is already running. Valid values are **standard**, **singleTop**, **singleTask**, and **singleInstance**.
 	+ **Show Title**: `ShowTitle` - a Boolean value that controls whether the application displays the app title at the top of the application's main screen.
 	+ **In-App Browser Storage**: `InAppBrowserStorageEnabled` - Controls whether pages opened within an InAppBrowser window can access the same localStorage and WebSQL storage as pages opened with the default browser.
- 
+
 	You can read about each configuration option in the Cordova [`config.xml` reference](http://cordova.apache.org/docs/en/latest/config_ref/index.html#preference) guide.
 
 ### <a id="android-2"></a> 2. Android: Generate a Private Certificate
@@ -79,19 +80,19 @@ When running Android applications using the Android SDK (which Visual Studio use
 
 > [!NOTE]
 > Certificates are stored in a **keystore**, if you already have a keystore on your system you'd like to use to store your certificate, you'll need the keystore location and credentials before you continue. Refer to the [Java documentation](https://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) for additional information about keystores.
- 
+
 To create a signing certificate, complete the following steps:
 
-1.	Open a Windows Command Prompt. 
-	
+1.	Open a Windows Command Prompt.
+
 	> [!NOTE]
 	> If your existing keystore is in a protected folder (like `c:\` for example), or you'll be generating a keystore in a protected folder, you'll need to open the command prompt in Administrator mode for these steps to complete successfully.
 
-2.	If your system is configured with the Java SDK `bin` folder on the system `PATH`, then skip to the next step. You can confirm this by typing `javac` in the command window and pressing enter. If you receive an error message, the JDK is **not** on the path. If you see the Java Compiler help page, then you're in good shape and can skip this step. 
-	
+2.	If your system is configured with the Java SDK `bin` folder on the system `PATH`, then skip to the next step. You can confirm this by typing `javac` in the command window and pressing enter. If you receive an error message, the JDK is **not** on the path. If you see the Java Compiler help page, then you're in good shape and can skip this step.
+
 	In the Command Prompt, change directories to the Java SDK's `bin` folder. If your development system has the `%JAVA_HOME%` environment variable set, then it should be `%JAVA_HOME%\bin`. You can also switch to the SDK folder using the complete path (such as: `C:\Program Files\Java\jdk1.8.0_111\bin`).
 
-3.	In the Command Prompt, execute the following command:  
+3.	In the Command Prompt, execute the following command:
 
     ```
     keytool -genkeypair -v -keystore FILE-PATH\MY-KEYSTORE-NAME.keystore -alias MY-ALIAS -keyalg RSA -keysize 2048 -validity 10000
@@ -136,15 +137,15 @@ To create a signing certificate, complete the following steps:
 
 ### <a id="android-3"></a> 3. Android: Modify the Android App Build Configuration
 
-Now that you have a keystore and a signing certificate, you must configure your project to use them. 
+Now that you have a keystore and a signing certificate, you must configure your project to use them.
 
 1.	In **Solution Explorer**, expand the project folder, and double-click on the project's `build.json` file. The `build.json` file opens in the code editor:
 
     ![Android: Build assets](media/publish-to-a-store/figure-03.png)
-   
+
 	> [!NOTE]
-	> If the `build.json` file is missing from your project, its likely that your project was created with an earlier version of Apache Cordova; you should create that file manually (and populate it with content shown in step 2). 
-		
+	> If the `build.json` file is missing from your project, its likely that your project was created with an earlier version of Apache Cordova; you should create that file manually (and populate it with content shown in step 2).
+
 2.	Populate the `build.json` file with the keystore and key details:
 
 	```JavaScript
@@ -181,7 +182,7 @@ The final step involves creating a **Release** build of the Cordova Application.
     > **Do not select** one of the **Simulate in Browser** options, they don't generate a native application binary. Choose only an **Android emulator** or **Device**.
 
 4.	In the **Build** menu, select **Build Solution**. This creates a release build of the application, a file with an `.apk` file extension. This is the file that you'll upload to the store when you deploy the application.
-  
+
 5.	When the build completes, look for the `.apk` file; you'll find it in the project's `bin/Android/Release/` folder. When uploading the app to the app store, be sure to select the file that **does not** include the word `unaligned` in the file name.
 
     ![apk File Location](media/publish-to-a-store/figure-07.png)
@@ -202,12 +203,12 @@ For iOS applications, preparing your environment for publishing, and publishing 
 Apple uses **Distribution Certificates** to identify a developer, development team, or organization. You'll need a distribution certificate to deploy applications through the Apple App Store. If your team already has one and you want to use it, refer to [*How to share an iOS distribution certificate*](http://www.ironpaper.com/webintel/articles/how-to-share-an-ios-distribution-certificate/). Then, skip straight to the [Modify Application Settings](#ios-2) section of this document.
 
 > [!NOTE]
-> Building iOS applications, requesting distribution certificates, and deploying applications to the app store all require the use of Apple's Xcode development environment running on a computer system running [macOS](http://www.apple.com/macos/). You'll also need an active [Apple iOS developer program account](https://developer.apple.com/ios/). Be sure you have the appropriate iOS development environment setup before continuing. 
+> Building iOS applications, requesting distribution certificates, and deploying applications to the app store all require the use of Apple's Xcode development environment running on a computer system running [macOS](http://www.apple.com/macos/). You'll also need an active [Apple iOS developer program account](https://developer.apple.com/ios/). Be sure you have the appropriate iOS development environment setup before continuing.
 
-To create a distribution certificate, complete the following steps:  
+To create a distribution certificate, complete the following steps:
 
-1.	Switch to your Macintosh system and open the Xcode IDE. 
- 
+1.	Switch to your Macintosh system and open the Xcode IDE.
+
 2.	In the system's menu, select **Xcode** -> **Preferences**.
 
 	If you haven't done so already, add your developer account Apple ID to the system's configuration. See [Adding an Apple ID to Your Accounts](https://developer.apple.com/library/ios/recipes/xcode_help-accounts_preferences/articles/add_appleid.html) for instructions.
@@ -216,43 +217,43 @@ To create a distribution certificate, complete the following steps:
 
 4.	In the account details window, under **Signing identities**, look for the item labeled **iOS Distribution**. If there is a **Create** button to the right the iOS Distribution entry, click the button to create and download the signing identity. If the Create button isn't shown, that means this step has already been completed.
 
-    ![Signing Identities](media/publish-to-a-store/figure-08.png) 
+    ![Signing Identities](media/publish-to-a-store/figure-08.png)
 
     Looking for more information about signing identities? See [Creating Signing Identities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html#//apple_ref/doc/uid/TP40012582-CH31-SW6) (Optional reading).
 
-	Xcode will submit a request to generate the distribution profile and hide the button you clicked to indicate that the distribution profile exists. 
+	Xcode will submit a request to generate the distribution profile and hide the button you clicked to indicate that the distribution profile exists.
 
 5.	Click the **Done** button to close the account details window.
 
 ### <a id="ios-2"></a> 2. iOS: Modify Application Settings
 
-As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file. 
+As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file.
 
 1.	In the Visual Studio Solution Explorer, double-click the `config.xml` file to open the custom configuration editor shown in the following figure:
 
-	![Cordova Project Configuration](media/publish-to-a-store/figure-01.png)	 
+	![Cordova Project Configuration](media/publish-to-a-store/figure-01.png)
 
-	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are: 
+	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are:
 
 	+ **Display Name**: the application's public name; this is the how the app will appear in the app store and on the target mobile device's home screen and application listing. Populate this field with a brief word or phrase that describes your app, keeping in mind that app tiles on a device's home screen don't leave much room for text. The value you enter here is added to the `config.xml` in the `<name>` element.
-	
+
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
-	    
+
 		```xml
 		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:
-	
+
 		```xml
 		<access origin="api.openweathermap.org" />
-		```  
-	
+		```
+
 	The purpose of most other settings clear from the title, but you can find more information about them here: [The config.xml File](http://cordova.apache.org/docs/en/latest/config_ref/index.html).
 
 2.	Switch to the **iOS** tab to set application settings specific to the iOS platform. Populate the fields on the form using the appropriate values for your application:
 
-	+ **Target Device**: Used to specify the type of device the application targets; valid options are: **handset**, **tablet**, and **universal**. 
+	+ **Target Device**: Used to specify the type of device the application targets; valid options are: **handset**, **tablet**, and **universal**.
 
 	+ **Target iOS Version**: Sets the `MinimumOSVersion` in the generated `.ipa` file. For more information on this setting, refer to [*Configuring a Project for SDK-Based Development]*(https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/cross_development/Configuring/configuring.html).
 
@@ -261,9 +262,9 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	+ **Suppress Incremental Rendering**: When set to `true`, screen rendering is delayed until all content has been received.
 
     ![Cordova Project Configuration: iOS](media/publish-to-a-store/figure-09.png)
-    
+
 3.	Even though Xcode manages provisioning and signing, you won't be opening Xcode to configure it for your project, this is all handled behind the scenes by Visual Studio TACO. Instead, you'll configure your **iOS Developer credentials** using the Cordova project's `build.json` file. During the build process, the Cordova CLI (invoked by Visual Studio TACO) copies settings for the iOS build from the `build.json` file to the Xcode project's configuration. Next, the `remotebuild` process (described in detail in the TACO [iOS Setup Guide](https://taco.visualstudio.com/en-us/docs/vs-taco-2017-ios-guide/)) executes the Xcode command-line tools to build and sign the app using the settings you provided.
-	
+
 	To configure the iOS build process, you only need one piece of information, the Team ID for your Apple Developer program account. Open your browser of choice and navigate to [https://developer.apple.com/account](https://developer.apple.com/account). After you've authenticated to the site, open the **Membership** page shown in the following figure. Note the Team ID from the page (it will be a series of letters and numbers, **not** `MyTeamID` as shown in the figure).
 
 	![Package Name in Visual Studio](media/publish-to-a-store/figure-10.png)
@@ -282,8 +283,8 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	  }
 	}
 	```
-	
-	Leave `codeSignIdentity` and `packageType` alone as those values are already set as needed. The data you'll be adding must coencide with the Android project settings that are probably already in the file. The resulting JSON object should look something like the following: 
+
+	Leave `codeSignIdentity` and `packageType` alone as those values are already set as needed. The data you'll be adding must coencide with the Android project settings that are probably already in the file. The resulting JSON object should look something like the following:
 
 	```json
 	{
@@ -299,7 +300,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	  "ios": {
 	    "debug": {
 	      "developmentTeam": "MyTeamID"
-	    },	
+	    },
 	    "release": {
 	      "developmentTeam": "MyTeamID",
 	      "codeSignIdentity": "iPhone Developer",
@@ -354,52 +355,52 @@ Complete the following steps to package and deploy Windows applications:
 
 ### <a id="windows-1"></a> Modify App Settings
 
-As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file. 
+As you prepare to publish your shiny new Cordova application, start in the application's configuration and make sure your settings for the application are correct. A Cordova app's settings are maintained in the project's `config.xml` file.
 
 1.	In the Visual Studio Solution Explorer, double-click the `config.xml` file to open the custom configuration editor shown in the following figure:
 
-	![cordova Project Configuration](media/publish-to-a-store/figure-01.png)	 
+	![cordova Project Configuration](media/publish-to-a-store/figure-01.png)
 
-	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are: 
+	The editor's **Common** tab contains general settings for your app; populate the fields in the form with the appropriate values for your application. The critical settings for any Cordova application are:
 
 	+ **Display Name**: the application's public name; this is the how the app will appear in the app store and on the target mobile device's home screen and application listing. Populate this field with a brief word or phrase that describes your app, keeping in mind that app tiles on a device's home screen don't leave much room for text. The value you enter here is added to the `config.xml` in the `<name>` element.
-	
+
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
-	    
+
 		```xml
 		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:
-	
+
 		```xml
 		<access origin="api.openweathermap.org" />
-		```  
-	
+		```
+
 	The purpose of most other settings clear from the title, but you can find more information about them here: [The config.xml File](http://cordova.apache.org/docs/en/latest/config_ref/index.html).
 
 2.	Windows-specific settings appear in the **Windows** tab of the configuration designer.
 
-	![configuration Settings: Windows](media/publish-to-a-store/figure-15.png)	
+	![configuration Settings: Windows](media/publish-to-a-store/figure-15.png)
 
 	You might have noticed that the this page shares three of the same field names as the **Common** page (**Display Name**, **Package Name**, and **Version**). In the **Create App Package Wizard** (which you'll use later) you might have to choose a different display name or package name because of Windows-specific naming requirements, the name has already been reserved by someone else, or if you want to associate your app with a name that you've previously reserved. Visual Studio will update the **Windows** page's **Display Name** and **Package Name** fields once you've completed the packaging process. That way your other platform targets are not forced to use those names.
 
 	The **Version** field is here because Windows uses a 4 digit version number rather than Cordova's standard 3 digit one. You can either modify this field directly or let Visual Studio set this field based on the version number that you choose in the packaging wizard.
-	
+
 	The **Windows Target Version** field only supports one option today, so you can ignore it.
 
 ### <a id="windows-2"></a> Package The Application
 
-1.	In Visual Studio's Standard Toolbar, select the appropriate **Windows** target based on the target device processor: **Windows-ARM** for ARM devices, and **Windows-x64** or **Windows-x86** for Intel type processors. 
+1.	In Visual Studio's Standard Toolbar, select the appropriate **Windows** target based on the target device processor: **Windows-ARM** for ARM devices, and **Windows-x64** or **Windows-x86** for Intel type processors.
 
     ![Windows ARM](media/publish-to-a-store/figure-16.png)
 
 2.	Choose **Project** -> **Store** -> **Create App Packages** to start the packaging wizard. For step-by-step guidance on the packaging process, see [Create an app package](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt627715.aspx#create_package).
 
     ![Windows: Create App Packages](media/publish-to-a-store/figure-17.png)
-    
+
 3.	The packaged application will be deployed to the target folder you selected in the **Output location** in packaging wizard. By default, it will use the `AppPackages` folder in the root of your project.
-	
+
 4.	[Install your Windows app onto a device or publish it to the store](#publish-windows).
 
 ### <a id="publish-windows"></a>Install your Windows app onto a device or publish it to the store

@@ -1,20 +1,20 @@
-<properties pageTitle="Understand Cordova platform security"
-  description="Cordova platform and app security"
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Understand Cordova platform security"
+description: "Cordova platform and app security"
+author: "clantz"
+---
 
 #Cordova platform security features
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate. A forced lockdown approach can block critical scenarios and thus tends to have undesired results.
 
-For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible. This document will outline some of the security features that exist in Cordova and some general best practices for improving the overall security of your app beyond what you may typically think about for web apps. 
+For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible. This document will outline some of the security features that exist in Cordova and some general best practices for improving the overall security of your app beyond what you may typically think about for web apps.
 
 ## Update Cordova
 While always a good recommendation, staying up to date with Cordova versions is a best practice as security fixes are included on a regular basis. You should do everything you can to use **Cordova 5.1.1 or higher** as this version provide some critical capabilities that can improve the overall security of your app. Specifically:
 
-1. **The Crosswalk Webview** - The Android platform in Cordova 5 and up (cordova-android 4.0.0+) introduced the ability to use alternate WebView implmentations including the [Crosswalk Webview](https://crosswalk-project.org/). Crosswalk is a patched and feature rich version of Chromium with access to important security features not available versions of Android as recent as [4.3](http://caniuse.com/#search=content%20security%20policy%201.0) and [4.4](http://caniuse.com/#search=web%20cryptography). 
-2. **Content Security Policy (CSP) Support**: Android with Crosswalk, iOS, and Windows 10 all support adding a Content Security Policy to your app and this represents an important security tool to take advantage of for any app. A strict policy can eliminate security attack vectors at the underlying webview/browser level. 
-3. **Windows 10 Support w/CSP and "Local Mode":** Windows 10 features a more nuanced view of security than Windows/Phone 8.1 did with significant improvements in compatibility between Android and iOS by default. In addition to CSP support, Windows 10 supports something called "local mode" that adds OS level security measures and allows additional native Windows 10 features to be used from within your Cordova app. 
+1. **The Crosswalk Webview** - The Android platform in Cordova 5 and up (cordova-android 4.0.0+) introduced the ability to use alternate WebView implmentations including the [Crosswalk Webview](https://crosswalk-project.org/). Crosswalk is a patched and feature rich version of Chromium with access to important security features not available versions of Android as recent as [4.3](http://caniuse.com/#search=content%20security%20policy%201.0) and [4.4](http://caniuse.com/#search=web%20cryptography).
+2. **Content Security Policy (CSP) Support**: Android with Crosswalk, iOS, and Windows 10 all support adding a Content Security Policy to your app and this represents an important security tool to take advantage of for any app. A strict policy can eliminate security attack vectors at the underlying webview/browser level.
+3. **Windows 10 Support w/CSP and "Local Mode":** Windows 10 features a more nuanced view of security than Windows/Phone 8.1 did with significant improvements in compatibility between Android and iOS by default. In addition to CSP support, Windows 10 supports something called "local mode" that adds OS level security measures and allows additional native Windows 10 features to be used from within your Cordova app.
 
 You should **absolutely not use Cordova versions < 4.3.1** as your app will be rejected from Google Play due to a specific security issue.
 
@@ -53,7 +53,7 @@ By default, simply adding a CSP declaration to an HTML page locks it down very t
                  </script>"
     document.getElementById("output-div").innerHTML = textInput;
     ```
-    
+
 2. Allowing **JavaScript and CSS content from different origins** poses the next largest risk. Disabling inline script reduces the chances of attack, but even with inline script disabled you can still add a script tag with a href to an external source. The same innerHTML mistake can then lead to a similar vulnerability. While this is obviously true for JavaScript, CSS also poses a risk because directives like expression() and url('javascript:...'). You can loosen this restriction by listing only very specific domains that you trust but exercise caution when doing so. Tweaking the previous example slightly we get:
 
     ```javascript
@@ -64,14 +64,14 @@ By default, simply adding a CSP declaration to an HTML page locks it down very t
 
 3. **eval()** along with related features like "new Function" also pose a risk but these are reduced if the inline and same origin restrictions are left in place. Further, eval is used by a number of JavaScript frameworks for optimization purposes so while this is the default it can become quite problematic if left in place. If your app and all associated frameworks do not make use of eval, you should disable it. Otherwise avoid using eval in your own code unless you really know exactly what you are doing.
 
-Note that none of these rules apply to images or other static content. 
+Note that none of these rules apply to images or other static content.
 
 The default CSP policy in Visual Studio and Cordova templates is a solid starting point. It allows eval(), but keeps the inline script and same origin restrictions in place.
 
 ```html
-<meta http-equiv="Content-Security-Policy" 
-      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
-               style-src 'self' 'unsafe-inline'; 
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
+               style-src 'self' 'unsafe-inline';
                media-src *">
 ```
 
@@ -94,7 +94,7 @@ The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (vi
 <allow-intent href="geo:*" />
 ```
 
-This is a relatively safe starting point. To modify this list you can edit config.xml either in your favorite text editor like VS Code or by right-clicking and selecting View Source in Visual Studio. 
+This is a relatively safe starting point. To modify this list you can edit config.xml either in your favorite text editor like VS Code or by right-clicking and selecting View Source in Visual Studio.
 
 In general it is best to trim access down to only those URIs you actually need to use in your app and you will want to exercise great care when broadening access for your app to only include trusted sources.
 
@@ -128,23 +128,23 @@ Enabling it is simple. Edit config.xml either in your favorite text editor like 
 <preference name="WindowsDefaultUriPrefix" value="ms-appx://" />
 ```
 
-The WindowsDefaultUriPrefix preference flips Cordova into "local mode" instead of the default "remote mode." 
+The WindowsDefaultUriPrefix preference flips Cordova into "local mode" instead of the default "remote mode."
 
 See the **[Cordova Windows 10 platform documentation](http://cordova.apache.org/docs/en/latest/guide/platforms/win8/win10-support.html)** for additional details on the difference along with the additional capabilities that are enabled when submitting to the public Windows Store.
 
 ##Consider Intune MAM features
 [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) is a [mobile application management](https://en.wikipedia.org/wiki/Mobile_application_management) (MAM) and [mobile device management](https://en.wikipedia.org/wiki/Mobile_device_management) (MDM) platform that supports Android, iOS, and Windows devices. Intune's MAM capabilities can be used without managing devices which means it can be used in combination with existing MDM solutions like Airwatch and Mobile Iron. Currently it is targeted at Active Directory authorized apps and thus is most applicable to enterprise focused scenarios. It provides the ability to enforce policies at the **app level** including encryption of all local data, disabling cut-copy-paste, and more. A Cordova plugin for Android and iOS that is a part of Intune's App SDK enables more nuanced control that is typically availalbe from other MAM solutions. As a result it fundamentally improves the security of Cordova as an overall platform.
 
-Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy. 
+Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy.
 
-1. In Visual Studio, when using Tools for Apache Cordova **Update 9 and up**, double click config.xml to go into config.xml designer, click on the **Plugins** tab, then **Custom**, select **ID** as the method to retrieve the plugin, and enter **cordova-plugin-ms-intune-mam**. 
+1. In Visual Studio, when using Tools for Apache Cordova **Update 9 and up**, double click config.xml to go into config.xml designer, click on the **Plugins** tab, then **Custom**, select **ID** as the method to retrieve the plugin, and enter **cordova-plugin-ms-intune-mam**.
 
     For earlier versions of Tools for Apache Cordova, right click on config.xml, select View Code, and then add one of the following. The plugin will be added on next build.
 
     ```xml
     <plugin name="cordova-plugin-ms-intune-mam" spec="~1.0.0" />
     ```
-    
+
     ...or for Cordova < 5.1.1...
 
     ```xml

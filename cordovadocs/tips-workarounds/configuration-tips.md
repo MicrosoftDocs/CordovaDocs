@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Configure the Visual Studio Tools for Apache Cordova | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="normesta"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="normesta"/>
+---
+title: "Configure the Visual Studio Tools for Apache Cordova | Cordova"
+description: "description"
+services: "na"
+author: "normesta"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "normesta"
+---
 
 # Configure the Visual Studio Tools for Apache Cordova
 You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
@@ -158,7 +158,7 @@ Visual Studio uses these environment variables when building and running your ap
 
 2. Make your changes:
 
-    * To override a value, select its check box, and then revise the value.  
+    * To override a value, select its check box, and then revise the value.
       If the path information is invalid or missing, Visual Studio displays a warning next to that variable.
 
     * To reset an environment variable to its default value, clear its check box or choose **Reset to Default**.
@@ -198,7 +198,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 4. From the Terminal app on your Mac, type:
 
-        remotebuild certificates generate --hostname=my.hostname.com  
+        remotebuild certificates generate --hostname=my.hostname.com
 
     –hostname is optional. If omitted, the agent will attempt to determine the hostname automatically.
 

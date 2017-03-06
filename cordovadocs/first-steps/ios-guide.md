@@ -1,25 +1,25 @@
-<properties
-   pageTitle="Visual Studio Tools for Apache Cordova: iOS Guide | Cordova"
-   description="Visual Studio Tools for Apache Cordova: iOS guide"
-   services="na"
-   documentationCenter=""
-   authors="normesta, johnwargo"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="11/10/2016"
-   ms.author="johnwargo"/>
+---
+title: "Visual Studio Tools for Apache Cordova: iOS Guide | Cordova"
+description: "Visual Studio Tools for Apache Cordova: iOS guide"
+services: "na"
+author: "normesta, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "11/10/2016"
+ms.author: "johnwargo"
+---
 
 # Visual Studio Tools for Apache Cordova: iOS Guide
 
 Visual Studio Tools for Apache Cordova (TACO) enables Visual Studio developers to easily build, test and debug Apache Cordova applications on Android, iOS and Windows devices. Visual Studio's ability to work with iOS devices and applications relies upon some special tools running on a Mac computer system. In this guide, you'll learn how to install and manage those tools plus run Cordova apps on iOS devices and device simulators.
 
 > [!NOTE]
-> Due to restrictions in the Apple iOS development process, Visual Studio Tools for Apache Cordova must have live, network access to an Apple Mac computer running a current version of Apple's Xcode IDE and associated command-line tools. 
+> Due to restrictions in the Apple iOS development process, Visual Studio Tools for Apache Cordova must have live, network access to an Apple Mac computer running a current version of Apple's Xcode IDE and associated command-line tools.
 
 ## <a id="overview"></a> Overview
 
@@ -27,13 +27,13 @@ Visual Studio Tools for Apache Cordova is workload for Visual Studio that delive
 
 ![Visual Studio Tools For Apache Cordova Architecture](media/vs-taco-2017-ios-guide/figure-01.png)
 
-When you add a Mac system to the environment and install some additional tools, Visual Studio gains the ability to execute Cordova applications on iOS simulators running on the Mac as well as physical iOS devices connected to Mac or Windows systems via a USB cable. 
+When you add a Mac system to the environment and install some additional tools, Visual Studio gains the ability to execute Cordova applications on iOS simulators running on the Mac as well as physical iOS devices connected to Mac or Windows systems via a USB cable.
 
 In the figure, the remotebuild node module manages all of the interactions between Visual Studio and the software and devices running on or connected to the Mac computer system. On the Mac, the ideviceinstaller application is used to deploy Cordova applications on iOS device. You can even use iTunes running on Windows and the capabilities exposed through the Mac to execute Cordova applications on iOS devices connected to the Windows system.
 
-Visual Studio enables live debugging of the Cordova web app (HTML, CSS and JavaScript code) on all of the target platforms. The ios-webkit-debug-proxy application connects to iOS devices and simulators and exposes a chrome-like interface that Visual Studio and the Chrome DevTools use to manage debug sessions on iOS. 
+Visual Studio enables live debugging of the Cordova web app (HTML, CSS and JavaScript code) on all of the target platforms. The ios-webkit-debug-proxy application connects to iOS devices and simulators and exposes a chrome-like interface that Visual Studio and the Chrome DevTools use to manage debug sessions on iOS.
 
-This guide illustrates how to install, configure, and use the capabilities exposed to Visual Studio by the remotebuild process running on a Mac computer system. 
+This guide illustrates how to install, configure, and use the capabilities exposed to Visual Studio by the remotebuild process running on a Mac computer system.
 
 ## <a id="mac-install"></a> Mac OS Installation
 
@@ -47,26 +47,26 @@ We'll start by installing some required components on the Mac; later you'll conf
 
     ```
      xcode-select -–install
-    ```   
+    ```
 
-4.	Install the latest Long Term Support (LTS) version of **Node.js** from [nodejs.org](http://nodejs.org/). 
-	
+4.	Install the latest Long Term Support (LTS) version of **Node.js** from [nodejs.org](http://nodejs.org/).
+
 	> [!NOTE]
-	> Microsoft recommends that you match the node version on the Mac to the node version in the Visual Studio Tools for Apache Cordova **Toolset** you're using in your Cordova application project. This may not be practical if you're regularly building Cordova applications using different toolsets, so try the LTS version first, and if you have node-related issues, investigate aligning node versions across the the Windows and Mac systems as part of the troubleshooting process.   
+	> Microsoft recommends that you match the node version on the Mac to the node version in the Visual Studio Tools for Apache Cordova **Toolset** you're using in your Cordova application project. This may not be practical if you're regularly building Cordova applications using different toolsets, so try the LTS version first, and if you have node-related issues, investigate aligning node versions across the the Windows and Mac systems as part of the troubleshooting process.
 
 5.	Open a new terminal window and execute the following command:
 
     ```
-	npm install -g remotebuild	
+	npm install -g remotebuild
     ```
 
     This installs the TACO *remote agent*, a secure build server that runs on the Mac and processes commands from Visual Studio. You'll connect to it from your Windows computer so that you can build, run, and debug iOS apps from within Visual Studio.
-	
-	> [!NOTE]
-	> Many developers are used to seeing instructions for installing node modules that include executing the `npm` under control of the `sudo` command (e.g. `sudo npm install -g some_module`). That's not needed, and actually creates a huge security risk on your Mac. You should be able to install the 
-	> module with the command listed; if you can't, and see an `EACCESS` error in the terminal's output when the installation fails, see [*Fixing npm Permissions*](https://docs.npmjs.com/getting-started/fixing-npm-permissions) for instructions on how to fix the issue, then try again. 
 
-At this point, you're probably asking yourself why you haven't installed Apache Cordova. That's because you don't need to; Cordova and its dependencies are automatically acquired and installed as needed during the build process. 
+	> [!NOTE]
+	> Many developers are used to seeing instructions for installing node modules that include executing the `npm` under control of the `sudo` command (e.g. `sudo npm install -g some_module`). That's not needed, and actually creates a huge security risk on your Mac. You should be able to install the
+	> module with the command listed; if you can't, and see an `EACCESS` error in the terminal's output when the installation fails, see [*Fixing npm Permissions*](https://docs.npmjs.com/getting-started/fixing-npm-permissions) for instructions on how to fix the issue, then try again.
+
+At this point, you're probably asking yourself why you haven't installed Apache Cordova. That's because you don't need to; Cordova and its dependencies are automatically acquired and installed as needed during the build process.
 
 ## <a id="running-remotebuild"></a>Running the remotebuild Server on a Mac
 
@@ -76,7 +76,7 @@ The TACO remote agent can execute in two modes: secure mode or non-secure mode. 
 
 ### <a id="secure-mode"></a> Option 1: Start the remotebuild Server in Secure Mode
 
-By default, remotebuild executes in a mode where all traffic between Visual Studio and remotebuild is encrypted using a SSL certificate generated by remotebuild. With secure mode, build payloads are encrypted during transmission; this protects your intellectual property from being intercepted and prevents outsiders from using the open port of your remote agent to run malicious code. You should use secure mode when you're connecting to a Mac across a public network or your remote Mac is running in a cloud environment. 
+By default, remotebuild executes in a mode where all traffic between Visual Studio and remotebuild is encrypted using a SSL certificate generated by remotebuild. With secure mode, build payloads are encrypted during transmission; this protects your intellectual property from being intercepted and prevents outsiders from using the open port of your remote agent to run malicious code. You should use secure mode when you're connecting to a Mac across a public network or your remote Mac is running in a cloud environment.
 
 To start the remotebuild in secure mode, open a terminal window and execute the following command:
 
@@ -88,7 +88,7 @@ When you run remotebuild for the first time, the module steps you through a setu
 
 Let's take a look at the process.
 
-When the server loads the first time, it prompts you to allow Microsoft to collect usage information in order to help improve the quality of Microsoft's products: 
+When the server loads the first time, it prompts you to allow Microsoft to collect usage information in order to help improve the quality of Microsoft's products:
 
 ![Initial remotebuild configuration - step 1](media/vs-taco-2017-ios-guide/figure-02.png)
 
@@ -109,7 +109,7 @@ Finally, the server process will launch and display the host name, port, and sec
 
 ![Initial remotebuild configuration - complete](media/vs-taco-2017-ios-guide/figure-04.png)
 
-After you complete the initial setup, subsequent launches of remotebuild will launch the server process and display a simple status message. At this point the server is ready to accept requests from Visual Studio. 
+After you complete the initial setup, subsequent launches of remotebuild will launch the server process and display a simple status message. At this point the server is ready to accept requests from Visual Studio.
 
 ![remotebuild server process](media/vs-taco-2017-ios-guide/figure-05.png)
 
@@ -117,8 +117,8 @@ After you complete the initial setup, subsequent launches of remotebuild will la
 
 If you're not concerned about security or you'll only be using a local network connection to the Mac running remotebuild, you can launch the server in non-secure mode. This is the easiest, and yet riskiest way to start the server; in this mode, Visual Studio uses simple HTTP connections to transfer build payloads to the server.
 
-Start the server in non-secure mode only if you are comfortable with the trade-offs between risk and convenience. For example, if your Mac is publicly accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. If your Mac is accessible only by you, it's easier and less error prone to run your remote agent in non-secure mode.  
- 
+Start the server in non-secure mode only if you are comfortable with the trade-offs between risk and convenience. For example, if your Mac is publicly accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. If your Mac is accessible only by you, it's easier and less error prone to run your remote agent in non-secure mode.
+
 > [!NOTE]
 > Non-secure mode is most useful when troubleshooting connection issues between Visual Studio and the Mac running remotebuild. Developers start in non-secure mode, then switch to secure mode after confirming non-secure mode works.
 
@@ -128,7 +128,7 @@ To start remotebuild in **non-secure mode**, open a terminal window and execute 
  remotebuild --secure false
 ```
 
-When the server loads the first time, it prompts you to allow Microsoft to collect usage information in order to help improve the quality of Microsoft's products: 
+When the server loads the first time, it prompts you to allow Microsoft to collect usage information in order to help improve the quality of Microsoft's products:
 
 ![Initial remotebuild configuration - step 1](media/vs-taco-2017-ios-guide/figure-06.png)
 
@@ -149,7 +149,7 @@ Finally, the server process will launch and display the server listening port. Y
 
 ![Initial remotebuild configuration - complete](media/vs-taco-2017-ios-guide/figure-08.png)
 
-After you complete the initial setup, subsequent launches of `remotebuild --secure false` will launch the server process and display a simple status message. At this point the server is ready to accept requests from Visual Studio. 
+After you complete the initial setup, subsequent launches of `remotebuild --secure false` will launch the server process and display a simple status message. At this point the server is ready to accept requests from Visual Studio.
 
 ![remotebuild server process](media/vs-taco-2017-ios-guide/figure-09.png)
 
@@ -166,10 +166,10 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 1.	On your Windows computer, open Visual Studio. Open the **Tools** menu, then select **Options**.
 
 2.	In the **Options** dialog box, open **Tools for Apache Cordova**, and then choose **iOS Configuration**.
-   
+
 	![Visual Studio Tools for Apache Cordova Options](media/vs-taco-2017-ios-guide/figure-10.png)
 
-3.	Populate the **iOS device support folder** field with the following path: 
+3.	Populate the **iOS device support folder** field with the following path:
 
 	```
 	\\<IP_ADDRESS>\Applications\Xcode.app\Contents\Developer\Platforms\iPhoneOS.platform\DeviceSupport
@@ -188,29 +188,29 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 1.	On your Windows computer, open Visual Studio. Open the **Tools** menu, then select **Options**.
 
 2.	In the **Options** dialog box, open **Tools for Apache Cordova**, and then choose **iOS Configuration**.
-   
+
 	![Visual Studio Tools for Apache Cordova Options](media/vs-taco-2017-ios-guide/figure-10.png)
 
-3.	Set **Enable remote iOS processing** to true to enable Visual Studio's connection to the remote server process. 
+3.	Set **Enable remote iOS processing** to true to enable Visual Studio's connection to the remote server process.
 
 4.	Populate the **Host** and **Port** fields with the appropriate values for your configuration.
 
 5.	If the server was started in secure mode, set the value in the **Secure mode** field to **True**. Next, populate the **Security PIN** field with the PIN displayed by the server on first launch.
-    
+
 	![Settings for secure mode](media/vs-taco-2017-ios-guide/figure-11.png)
 
 	> [!NOTE]
-	> Remember, the security PIN is only valid for 10 minutes. If you do not complete this configuration within the alloted time, you'll have to [generate a new PIN](#securitypin) on the server, and try again.  
+	> Remember, the security PIN is only valid for 10 minutes. If you do not complete this configuration within the alloted time, you'll have to [generate a new PIN](#securitypin) on the server, and try again.
 
     If the server is not running in secure mode, set the value in the **Secure mode** field to **False**, and leave the **Security PIN** field blank.
-    	
+
 	![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-12.png)
 
 6.	Click the **OK** button to close the Options dialog.
 
 	At this point, Visual Studio connects to the remote agent to validate the configuration; if you don't receive any errors, you've successfully connected to the server.
 
-	If Visual Studio cannot connect to the `remotebuld` server using the settings you provided, you'll see an error similar to the following: 
+	If Visual Studio cannot connect to the `remotebuld` server using the settings you provided, you'll see an error similar to the following:
 
 	![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-13.png)
 
@@ -229,11 +229,11 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 ## <a id="run-on-simulator"></a>Run Your App On An iOS Simulator
 
 1.	In Visual Studio, on the **Standard toolbar**, select the **iOS** platform.
-    
-	![Platform selector](media/vs-taco-2017-ios-guide/figure-14.png) 
+
+	![Platform selector](media/vs-taco-2017-ios-guide/figure-14.png)
 
 2.	Next, select one of the **iOS simulators** from the target list.
-    
+
 	![Target selector](media/vs-taco-2017-ios-guide/figure-15.png)
 
 3.	Click the **Run** button or press the **F5** key to start the app.
@@ -281,7 +281,7 @@ You'll need an Apple [**Provisioning Profile**](https://developer.apple.com/libr
 1.	In Visual Studio, open the Cordova app project.
 
 2.	On the Standard toolbar, choose the **iOS** platform.
-    
+
 	![Platform selector](media/vs-taco-2017-ios-guide/figure-14.png)
 
 3.	Next, select **Remote Device** from the target list.
@@ -293,7 +293,7 @@ You'll need an Apple [**Provisioning Profile**](https://developer.apple.com/libr
 	![Target selector](media/vs-taco-2017-ios-guide/figure-19.png)
 
      At this point, Visual Studio prepares your app, then sends instructions to the remotebuild server running on the Mac to create a local Cordova project, populate the app with the content from the Visual Studio project, builds the app, then deploys the app in the connected device. As the process progresses, the server will update the console with status messages.
- 
+
 	![Remotebuild server output](media/vs-taco-2017-ios-guide/figure-17.png)
 
 In Visual Studio, the DOM explorer and other debugging tool windows open, enabling a live debugging session with the running application.
@@ -320,7 +320,7 @@ In Visual Studio, the DOM explorer and other debugging tool windows open, enabli
 
 You can attach an iOS device to your Windows computer, then set breakpoints in your app and debug it. As long as you can connect to your Mac, you don't have be anywhere near it. This makes it easier to build and debug iOS apps on a Windows computer and share a Mac with other developers on your team.
 
-To do this, you'll need a provisioning profile that you create by using an Apple Developer Account. 
+To do this, you'll need a provisioning profile that you create by using an Apple Developer Account.
 
 > [!NOTE]
 > To deploy to a device from Windows you will first need to tell Visual Studio where it can find the **iOS device support folder**. We have verified that using a local copy of the files will technically work but we recommend using a file share to ensure you’re always on the latest bits. As a result, we'll go through how to set this up using the file share method.
@@ -333,8 +333,8 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 
 #### On Your Windows Computer
 
-1.	In the Windows **File Explorer** application, connect to the Mac. To do this, type the **IP address** or **hostname** for the Mac into the address bar in File Explorer. 
-   
+1.	In the Windows **File Explorer** application, connect to the Mac. To do this, type the **IP address** or **hostname** for the Mac into the address bar in File Explorer.
+
 	![log-into-mac-from-windows](media/vs-taco-2017-ios-guide/figure-20.png)
 
     The first time you attempt to open files on your mac, you'll be prompted for a username and password. Enter the username and password of the account that you turned on Windows File Sharing for. This establishes a file sharing connection between your Windows computer and your Mac.
@@ -348,10 +348,10 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 5.	In Visual Studio, open the **Tools** menu, then select **Options**.
 
 6.	In the **Options** dialog, open **Tools for Apache Cordova**, and then choose **iOS Configuration**.
-   
+
 	![iOS configuration dialog](media/vs-taco-2017-ios-guide/figure-10.png)
 
-7.	Populate the **iOS device support folder** field with the following path: 
+7.	Populate the **iOS device support folder** field with the following path:
 
 	```
 	\\<IP_ADDRESS>\Applications\Xcode.app\Contents\Developer\Platforms\iPhoneOS.platform\DeviceSupport
@@ -369,10 +369,10 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 
 10.	On the Standard toolbar, choose the **iOS** platform.
 
-    ![Platform selector](media/vs-taco-2017-ios-guide/figure-14.png)	
+    ![Platform selector](media/vs-taco-2017-ios-guide/figure-14.png)
 
 11.	Choose **Local Device**.
-    
+
 	![Target selector](media/vs-taco-2017-ios-guide/figure-21.png)
 
 12.	Click the **Run** button or press the **F5** key to start the app.
@@ -380,7 +380,7 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 	![Target selector](media/vs-taco-2017-ios-guide/figure-22.png)
 
      At this point, Visual Studio prepares your app, then sends instructions to the remotebuild server running on the Mac to create a local Cordova project, populate the app with the content from the Visual Studio project, builds the app, then deploys the app in the connected device. As the process progresses, the server will update the console with status messages.
- 
+
 	![Remotebuild server output](media/vs-taco-2017-ios-guide/figure-17.png)
 
 ## <a id="errors"></a> Troubleshooting: Let's fix it
@@ -431,7 +431,7 @@ followed by a series of messages like the following:
 Reply from 10.83.51.174: time<1ms
 ```
 
-This indicates that the Windows system is able to successfully connect to the Mac. 
+This indicates that the Windows system is able to successfully connect to the Mac.
 
 If, however, you see something like the following:
 
@@ -516,7 +516,7 @@ To generate a new PIN:
 1.	First, stop the remote agent. On your Mac, open the Terminal app, and type **CTRL**+**C** to stop the server process.
 
 2.	In the Terminal app, type the following command:
-	
+
 	```
 	remotebuild certificates generate
 	```
@@ -527,13 +527,13 @@ To generate a new PIN:
 
 	```
 	remotebuild certificates reset
-	``` 
+	```
 
-	and then execute 
+	and then execute
 
 	```
 	remotebuild certificates generate
-	``` 
+	```
 
 	to generate another PIN.
 
@@ -559,7 +559,7 @@ If you've resolved this problem another way, please share it in a comment.
 
 ### <a id="install-xcode"></a>Did you receive an error that tells you that a tool requires Xcode?
 
-Make sure that [Xcode](https://developer.apple.com/xcode/download/) is installed on your Mac. Then, open Xcode and accept the license agreement. This is important; if you don't accept the license agreement, you'll keep getting build errors.  
+Make sure that [Xcode](https://developer.apple.com/xcode/download/) is installed on your Mac. Then, open Xcode and accept the license agreement. This is important; if you don't accept the license agreement, you'll keep getting build errors.
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
@@ -593,7 +593,7 @@ Most likely, Xcode hasn't yet registered your device or requested your developme
 
 ### <a id="cli"></a>Did you receive any other type of build error?
 
-Under the covers, Visual Studio Tools for Apache Cordova uses the Cordova SDK to manage interactions with mobile device SDKs and other tools. Therefore, when you see build errors that aren't covered elsewhere in this guide, chances are that the errors are coming from external tools used by Visual Studio. When this happens, general purpose Cordova best practices, tips and tricks apply. Refer to the [Apache Cordova documentation](http://cordova.apache.org/docs/en/latest/) or existing [Apache Cordova](http://stackoverflow.com/questions/tagged/cordova) or [Visual Studio Tolls for Apache Cordova](http://stackoverflow.com/questions/tagged/visual-studio-cordova) questions on Stack Overflow for help from other people who have solved similar issues.  
+Under the covers, Visual Studio Tools for Apache Cordova uses the Cordova SDK to manage interactions with mobile device SDKs and other tools. Therefore, when you see build errors that aren't covered elsewhere in this guide, chances are that the errors are coming from external tools used by Visual Studio. When this happens, general purpose Cordova best practices, tips and tricks apply. Refer to the [Apache Cordova documentation](http://cordova.apache.org/docs/en/latest/) or existing [Apache Cordova](http://stackoverflow.com/questions/tagged/cordova) or [Visual Studio Tolls for Apache Cordova](http://stackoverflow.com/questions/tagged/visual-studio-cordova) questions on Stack Overflow for help from other people who have solved similar issues.
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
@@ -615,7 +615,7 @@ This is a known issue with Apache Cordova 6.3.1 and for the Visual Studio tools 
 
 + Add a `developmentTeam` property to the `ios` build settings in your project's `build.json` file (an example is shown below).
 + Set the `build.json` file's `codeSignIdentity` property to the static value `iPhone Developer`.
-+ Setup a `before_compile` hook in your project to copy the `developmentTeam` property into the project's `platforms/ios/cordova/build.xcconfig` file.  
++ Setup a `before_compile` hook in your project to copy the `developmentTeam` property into the project's `platforms/ios/cordova/build.xcconfig` file.
 
 The project's `build.json` file should look something like the following:
 

@@ -1,8 +1,8 @@
-<properties pageTitle="Appium setup"
-  description="Appium setup"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Appium setup"
+description: "Appium setup"
+author: "Kraig Brockschmidt"
+---
 
 #Appium setup
 
@@ -21,7 +21,7 @@ The [Appium page on npmjs.org]( https://www.npmjs.com/package/appium) recommends
     npm install -g appium-doctor
     appium-doctor --android  #Works on any Android-capable dev machine
     appium-doctor --ios      #Works only on a Mac, of course
-    
+
 Output for Android looks like the following; if anything is missing, you’ll see appropriate errors:
 
     info AppiumDoctor ### Diagnostic starting ###
@@ -34,7 +34,7 @@ Output for Android looks like the following; if anything is missing, you’ll se
     info AppiumDoctor
     info AppiumDoctor Everything looks good, bye!
     info AppiumDoctor
-    
+
 ##Starting the Appium server
 
 Once Appium is installed, open a new command prompt and start the server as below (with Appium installed globally as in the previous section, you can be in any folder):
@@ -63,11 +63,11 @@ The capabilities that we’re particularly concerned with here are as follows:
 - **automationName**: “Appium” (the default) for native apps on iOS and Android API levels 17 and higher; “Selendroid” is used for native apps on Android API levels 16 and below. The documentation also states that this should be used also for hybrid apps, although “Appium” works fine with Cordova apps.
 - **platformName**: “Android” or “iOS”
 - **platformVersion**: the mobile OS version. Use a quoted string such as “7.1” or “4.4” for version numbers; on Android you can also use an integer API level value, such as 19.
-- **app**: the local path or remote URL to the app package, either an .ipa (iOS), .apk (Android), or a .zip file with either. 
+- **app**: the local path or remote URL to the app package, either an .ipa (iOS), .apk (Android), or a .zip file with either.
 - **browserName**: when app is set, which must be “” (blank).
-- **deviceName**: Specifies the device to which to deploy the app. For iOS, it must be one of the devices listed by *instrumented –s devices*. For Android, although you must specify some non-blank value for this capability, Appium always uses the first device shown by the *adb devices* command. 
+- **deviceName**: Specifies the device to which to deploy the app. For iOS, it must be one of the devices listed by *instrumented –s devices*. For Android, although you must specify some non-blank value for this capability, Appium always uses the first device shown by the *adb devices* command.
 - **autoWebview**: if true, moves Appium directly into a WebView context, which is of course what we want for a Cordova app. (Note again that Appium presently supports only Android and iOS. A Cordova app running on Windows runs as a native JavaScript app without a WebView, so at what time Appium supports Windows apps you would not use this flag on that platform.)
- 
+
 If you’ve built the WeatherApp sample for Android as described in Prerequisites, you should have an .apk file in hand already. Because that sample targets Android API level 19, we need to configure Appium for the same. The below, which you can find in **[test01.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test01.js)**, does exactly this. You’ll need to change the app path for your system, of course:
 
 ```javascript
@@ -76,23 +76,23 @@ If you’ve built the WeatherApp sample for Android as described in Prerequisite
         hostname: '127.0.0.1',
         port: 4723,
     })
-    
+
     var config = {};
-    
-    config.android19Hybrid = { 
+
+    config.android19Hybrid = {
        automationName: 'Appium',
        browserName: '',
-       platformName: 'Android', 
+       platformName: 'Android',
        platformVersion: 19,// API level integer, or a version string like '4.4.2'
        autoWebview: true,
        deviceName: 'any value; Appium uses the first device from *adb devices*',
-       app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk" 
+       app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk"
     };
 ```
 
 > [!NOTE]
 > The *config* object is just a helpful way to manage different configurations that you might use in your testing. You could create a .js file with an object containing all your target configurations, for example, and then use that same file in many different app projects.
- 
+
 The final step is to send this configuration to the Appium server through the *init *method:
 
     appDriver.init(config.android19Hybrid);
@@ -117,7 +117,7 @@ In any case, switch over to the Appium server window and you’ll see a whole lo
     [Appium]   deviceName: 'any value; Appium uses the first device from *adb devices*'
     [Appium]   app: 'D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk'
     [BaseDriver] Session created with session id: 6871e78b-f4ad-4cda-a74e-2d33817c67a5
-    
+
 You’ll then see the server locating and selecting a device using adb.exe (you actually see adb output quite a bit):
 
     [ADB] Checking whether adb is present

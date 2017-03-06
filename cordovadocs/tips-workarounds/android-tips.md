@@ -1,16 +1,17 @@
-<properties pageTitle="Android tips and workarounds"
-  description="This is an article on bower tutorial"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="08/21/2016"
-     ms.author="mikejo"/>
+---
+title: "Android tips and workarounds"
+description: "Tips and workarounds for Cordova on Android"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "08/21/2016"
+ms.author: "mikejo"
+---
 
 #Android tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Android platform.
@@ -105,8 +106,8 @@ To fix the issue:
 When building for Android, you may encounter a set of errors in the **Errors List** like the following:
 
 ```
-Error		Could not create the Java Virtual Machine.			
-Error		A fatal exception has occurred. Program will exit.									
+Error		Could not create the Java Virtual Machine.
+Error		A fatal exception has occurred. Program will exit.
 Error		C:\cordova\BlankCordovaApp2\BlankCordovaApp2\platforms\android\cordova\build.bat: Command failed with exit code 1
 ```
 

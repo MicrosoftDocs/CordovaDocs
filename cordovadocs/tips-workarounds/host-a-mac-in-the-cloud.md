@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Build and simulate a Cordova iOS app in the cloud | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Chuxel"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="clantz"/>
+---
+title: "Build and simulate a Cordova iOS app in the cloud | Cordova"
+description: ""
+services: "na"
+author: "Chuxel"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "clantz"
+---
 
 # Build and simulate a Cordova iOS app in the cloud
 
@@ -20,11 +20,11 @@ Visual Studio Tools for Apache Cordova allow you to build cross-platform, multi-
 
 
 > [!NOTE]
-> The steps shown here can be followed with other Mac hosting providers or with Macs in your own cloud facing datacenter. We recommend that you evaluate providers based on your organization’s needs.  
+> The steps shown here can be followed with other Mac hosting providers or with Macs in your own cloud facing datacenter. We recommend that you evaluate providers based on your organization’s needs.
 
 ## Install remotebuild
 
-To get started with MacInCloud, first set up either an account or a trial version. Make sure you enable the remote build port feature during checkout. Once you have provided your login information, connect to your Mac using Remote Desktop, and then you can set up [remotebuild](http://go.microsoft.com/fwlink/?LinkId=618169). 
+To get started with MacInCloud, first set up either an account or a trial version. Make sure you enable the remote build port feature during checkout. Once you have provided your login information, connect to your Mac using Remote Desktop, and then you can set up [remotebuild](http://go.microsoft.com/fwlink/?LinkId=618169).
 
 ![Opening remote desktop](media/host-a-mac-in-the-cloud/remotebuild_start.png)
 
@@ -39,7 +39,7 @@ If it is not installed, contact MacInCloud support and ask them to install it on
 With one exception, you can use the same process to configure Visual Studio for use with MacInCloud as you do with your own Mac. The host name for MacInCloud is not available externally, so you can either override the host name used by the agent or use an IP address instead.
 
 > [!NOTE]
->`remotebuild` is not intended to be used as a traditional cloud-based service and you should make sure that you are in compliance with any Apple licensing terms that apply to your organization.  
+>`remotebuild` is not intended to be used as a traditional cloud-based service and you should make sure that you are in compliance with any Apple licensing terms that apply to your organization.
 
 ### Option 1: To override the host name and configure Visual Studio
 
@@ -77,9 +77,9 @@ With one exception, you can use the same process to configure Visual Studio for 
 
    ```
    remotebuild certificates reset --hostname=your_hostname
-   remotebuild certificates generate   
+   remotebuild certificates generate
    ```
- 
+
    Or
 
    ```

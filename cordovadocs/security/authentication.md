@@ -1,8 +1,8 @@
-<properties pageTitle="Authenticating users with Azure Mobile Apps or ADAL"
-  description="Authenticating users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova."
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Authenticating users with Azure Mobile Apps or ADAL"
+description: "Authenticating users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova."
+author: "clantz"
+---
 
 # Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible.
@@ -18,7 +18,7 @@ A core first step in accessing all of these great services, however, is authoriz
 
 You can add the Azure Mobile Apps plugin your app as follows:
 
-1. Visual Studio Tools for Apache Cordova **Update 8 and up,** simply click "Add" on the **Azure Mobile Apps** plugin in the **config.xml designer.**  
+1. Visual Studio Tools for Apache Cordova **Update 8 and up,** simply click "Add" on the **Azure Mobile Apps** plugin in the **config.xml designer.**
 
 2. When using the command line or Visual Studio Code, you can add the plugin using the Cordova CLI as follows:
 

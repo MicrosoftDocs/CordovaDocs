@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Run Your Apache Cordova App on Android"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Mikejo5000, johnwargo"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="01/27/2017"
-   ms.author="johnwargo"/>
+---
+title: "Run Your Apache Cordova App on Android"
+description: "description"
+services: "na"
+author: "Mikejo5000, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "01/27/2017"
+ms.author: "johnwargo"
+---
 
 # Run Your Apache Cordova App on Android
 
@@ -23,7 +23,7 @@ You've created an Apache Cordova application project using Visual Studio and Vis
 + Google [Android Emulator](https://developer.android.com/studio/run/emulator.html) - [jump to details](#google-android-emulator)
 + [Genymotion Emulator](https://www.genymotion.com/) - [jump to details](#genymotion-emulator)
 
-In this article, you'll learn how to use these options to run your Android apps in Visual Studio. 
+In this article, you'll learn how to use these options to run your Android apps in Visual Studio.
 
 Throughout the steps outlined below, if you have trouble deploying to Android devices or emulators, be sure to check out [*Resolve Android build and deployment errors*](../tips-workarounds/android-tips.md).
 
@@ -48,12 +48,12 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 	> [!NOTE]
 	> You may have to execute some convoluted process to enable developer options, for this particlular device, for example, developers have to open **Settings**, select **About phone**, then **tap Build number** repeatedly until the OS enables developer mode.
 
-	Open **Developer options** and scroll down until you find **Debugging** options as shown in the figure. Enable **USB debugging** as shown in the figure and any other settings you think might help the debugging process. 
+	Open **Developer options** and scroll down until you find **Debugging** options as shown in the figure. Enable **USB debugging** as shown in the figure and any other settings you think might help the debugging process.
 
 	![Android Device: Developer Options](media/vs-taco-run-android/figure-03.png)
 
 3.	Make sure that the **Android Debug Bridge** ([ADB](https://developer.android.com/studio/command-line/adb.html)) sees the device. To do this, open a Command Prompt and execute the following command:
-   
+
     ```
     path-to-android-sdk\platform-tools\adb.exe devices
     ```
@@ -62,11 +62,11 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 
 	```
 	"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
-	```	
-    
+	```
+
 	> [!NOTE]
 	> We added quotes around the executable filepath because there are spaces in the path.
-	  
+
 	ADB will report any connected devices as shown in the following example:
 
 	```
@@ -80,19 +80,19 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 
 	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
 
-	Visual Studio will build the Android version of the Cordova application (using the Cordova CLI and Android SDK), then deploy the app to the connected device and launch it. Next, Visual Studio opens the DOM Explorer to enable you to interact with the application as it runs.  
+	Visual Studio will build the Android version of the Cordova application (using the Cordova CLI and Android SDK), then deploy the app to the connected device and launch it. Next, Visual Studio opens the DOM Explorer to enable you to interact with the application as it runs.
 
 	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-05.png)
 
 ## <a id="google-android-emulator"></a> Run on the Google Android Emulator
 
-The Google Android Emulators deliver a software-only solution for testing your Android applications. These emulators deliver most of the functionality available in a physical device except that sensors and other hardware components may not work or will work in a simulated manner. In this section, you'll learn how to use Google's Android emulators to run your Apache Cordova application. 
+The Google Android Emulators deliver a software-only solution for testing your Android applications. These emulators deliver most of the functionality available in a physical device except that sensors and other hardware components may not work or will work in a simulated manner. In this section, you'll learn how to use Google's Android emulators to run your Apache Cordova application.
 
 When you installed TACO, you had an option to install the Google Android Emulators as shown in the following figure:
 
 ![Visual Studio Installation](media/vs-taco-run-android/figure-06.png)
 
-If you did not enable the highlighted options, close Visual Studio, launch the **Visual Studio Installer** and modify the installation to include these options. You can tell whether the emulators are installed or not by opening Visual Studio's debug target list, if you see **Install Android build tools...** in the list, instead of some Android emulators, then you need to complete the installation. 
+If you did not enable the highlighted options, close Visual Studio, launch the **Visual Studio Installer** and modify the installation to include these options. You can tell whether the emulators are installed or not by opening Visual Studio's debug target list, if you see **Install Android build tools...** in the list, instead of some Android emulators, then you need to complete the installation.
 
 ![Visual Studio: Install Android Emulators](media/vs-taco-run-android/figure-07.png)
 
@@ -135,7 +135,7 @@ If you find that the Google Android Emulator is performing slowly, try disabling
 
     ![Disabling Hyper-V](media/vs-taco-run-android/figure-13.png)
 
-3. Reboot your PC. 
+3. Reboot your PC.
 
    Alternatively, you can configure Windows to start with Hyper-V automatically enabled or disabled using the command line.
 
@@ -149,7 +149,7 @@ If you find that the Google Android Emulator is performing slowly, try disabling
 
     > [!WARNING]
 	> The `bcdedit` commands can prevent your system from booting if not executed correctly; be careful when using these commands.
-    
+
 2. Reboot your PC. If you want to re-enable Hyper-V later, use the following command, and then reboot your PC:
 
     ```
@@ -170,7 +170,7 @@ To run your app on the Genymotion emulator, complete the following steps:
 1.	Start the Genymotion emulator.
 
 2.	The emulator looks like a physical device to the Android SDK (and therefore Visual Studio). Make sure that the **Android Debug Bridge** ([ADB](https://developer.android.com/studio/command-line/adb.html)) sees the Genymotion emulator as a device. To do this, open a Command Prompt and execute the following command:
-   
+
     ```
     path-to-android-sdk\platform-tools\adb.exe devices
     ```
@@ -179,11 +179,11 @@ To run your app on the Genymotion emulator, complete the following steps:
 
 	```
 	"C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
-	```	
-    
+	```
+
 	> [!NOTE]
 	> We added quotes around the executable filepath because there are spaces in the path.
-	  
+
 	ADB will report all connected devices, and the Genymotion emulator should be listed.
 
 3.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
@@ -192,6 +192,6 @@ To run your app on the Genymotion emulator, complete the following steps:
 
 ## See Also
 
-[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
-[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/debug-using-visual-studio.md)  
-[Package Your App Built with Visual Studio Tools for Apache Cordova](../publishing/publish-to-a-store.md)  
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
+[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/debug-using-visual-studio.md)
+[Package Your App Built with Visual Studio Tools for Apache Cordova](../publishing/publish-to-a-store.md)

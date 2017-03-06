@@ -1,19 +1,17 @@
-<properties 
-	pageTitle="Get Started with Continuous Integration (CI)"
-  	description="Get Started with Continuous Integration (CI)"
-  	services=""
-  	documentationCenter=""
-  	authors="clantz, johnwargo" />
-<tags 
-	ms.technology="cordova" 
-	ms.prod="visual-studio-dev15" 
-	ms.service="na" 
-	ms.devlang="javascript" 
-	ms.topic="article" 
-	ms.tgt_pltfrm="mobile-multiple" 
-	ms.workload="na" 
-	ms.date="02/10/2017" 
-	ms.author="johnwargo"/>
+---
+title: "Get Started with Continuous Integration (CI)"
+description: "Get Started with Continuous Integration (CI)"
+author: "clantz, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "02/10/2017"
+ms.author: "johnwargo"
+---
 
 # Get Started with Continuous Integration (CI)
 
@@ -22,7 +20,7 @@ Visual Studio developers have a number of options for how you can integrate Cord
 ## Visual Studio Team Services
 
 Development organizations using Visual Studio Team Services (VSTS) can add Cordova tasks to the build process using the **Cordova Build** cross-platform agent for VSTS. This new agent enables you to use VSTS build projects targeting Android, iOS, or Windows applications created using Tools for Apache Cordova or *any* Cordova compliant CLI like **Ionic** and **Adobe PhoneGap**.
- 
+
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" /></td>
 <td><strong><a href="http://go.microsoft.com/fwlink/?LinkID=691188">Cordova Build</a></strong><br />
@@ -43,7 +41,7 @@ To use Gulp with your Cordova projects, follow these steps:
 1.	**Install dependencies:** Install Visual Studio 2017 and the Tools for Apache Cordova on your build server or simply install the prerequisites for the platforms you are targeting separately:
 
     +	Visual Studio itself is **only** required if you are building for **Windows or Windows Phone**.
-    +	Install [Node.js](http://nodejs.org) and you'll also need to install the [Git command line tools](https://git-scm.com/) on Windows. 
+    +	Install [Node.js](http://nodejs.org) and you'll also need to install the [Git command line tools](https://git-scm.com/) on Windows.
 	    > [!NOTE]
 	    > The default option for the Git installation does not add Git to the system `PATH` environment variable. To fix this, select the option to run the tools from the command prompt, this will add the Git installation folder to the system `PATH`.
     +	**Android** requires the [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and the [Android SDK](http://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed. Add environment variables for `ANDROID_HOME` pointing to your Android SDK installation folder, and `JAVA_HOME` to your Java install.
@@ -55,7 +53,7 @@ To use Gulp with your Cordova projects, follow these steps:
 	> [!NOTE]
 	> You can use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a `package.json` file in the root of your project.
 
-	```JavaScript    
+	```JavaScript
     {
       "devDependencies": {
         "gulp": "^3.9.1",

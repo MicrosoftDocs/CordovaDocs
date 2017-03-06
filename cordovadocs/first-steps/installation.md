@@ -1,22 +1,22 @@
-<properties
-   pageTitle="Installing Visual Studio Tools for Apache Cordova | Cordova"
-   description="Installing Visual Studio Tools for Apache Cordova"
-   services="na"
-   documentationCenter=""
-   authors="normesta, johnwargo"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="10/28/2016"
-   ms.author="johnwargo"/>
+---
+title: "Installing Visual Studio Tools for Apache Cordova | Cordova"
+description: "Installing Visual Studio Tools for Apache Cordova"
+services: "na"
+author: "normesta, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "10/28/2016"
+ms.author: "johnwargo"
+---
 
 # Installing Visual Studio Tools for Apache Cordova
 
-Visual Studio Tools for Apache Cordova is a workload for Visual Studio that enables developers to create, manage and test application projects for [Apache Cordova](https://cordova.apache.org/) on Android, iOS, and Windows. The Tools allow developers to deploy, test and debug Cordova applications on devices, emulators, simulators and the chrome browser -- all within Visual Studio. 
+Visual Studio Tools for Apache Cordova is a workload for Visual Studio that enables developers to create, manage and test application projects for [Apache Cordova](https://cordova.apache.org/) on Android, iOS, and Windows. The Tools allow developers to deploy, test and debug Cordova applications on devices, emulators, simulators and the chrome browser -- all within Visual Studio.
 
 This guide covers the required steps to install Visual Studio Tools for Apache Cordova. Since the workload interacts with several mobile app development SDKs, and each relies upon a specific set of tools, the installation will download and install a variety of software components and consume a lot of disk space. Additionally, in order for Visual Studio to work with applications for iOS, you'll need access to a fully functional iOS development environment (which means Xcode running on a Macintosh computer).
 
@@ -37,15 +37,15 @@ Next, download [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studi
 1.	To install the Visual Studio Tools for Apache Cordova along with a clean Visual Studio installation, download and launch the Visual Studio installer. The installer will display the list of installable components shown in the following figure.
 
 	![Visual Studio Tools for Apache Cordova Installation Start](media/vs-taco-2017-install/vs-install-01.png)
-	 
-2.	Scroll through the list of available workloads and locate a group labeled **Mobile & Gaming**. Check the checkbox next to **Mobile development with JavaScript** as shown in the following figure. This will enable installation of the core required components for the Cordova tools. 
-    
+
+2.	Scroll through the list of available workloads and locate a group labeled **Mobile & Gaming**. Check the checkbox next to **Mobile development with JavaScript** as shown in the following figure. This will enable installation of the core required components for the Cordova tools.
+
 	![Selecting Cordova Tools Installation](media/vs-taco-2017-install/vs-install-02.png)
 
 3.	Depending on your specific development needs, you may need to install additional, optional components. For example, to support Android application development you'll need to add support for the **Android SDK**. To test Android apps on emulators, you’ll need to add support for the **Google Android Emulator**, as shown in the following figure. If your existing Cordova development environment already includes these tools, you can skip installing them again here and modify the Visual Studio Tools for Apache Cordova configuration to point to the existing installation later.
-	
+
 	![Customizing Cordova Tools Installation](media/vs-taco-2017-install/vs-install-03.png)
-	
+
 ## Add Tools for Apache Cordova To An Existing Visual Studio Installation
 
 To add Visual Studio Tools for Apache Cordova to an existing Visual Studio installation, you must run the Visual Studio Installer. You can launch the installer manually, or, from within Visual Studio, open the **File** menu, select **New** then **Project** then select **Open Visual Studio Installer** at the bottom of the list of installed templates as shown in the following figure:
@@ -54,7 +54,7 @@ To add Visual Studio Tools for Apache Cordova to an existing Visual Studio insta
 
 Refer to [the previous section](#install) for detailed instructions on how to complete the Tools for Apache Cordova installation.
 
-## Installing Updates 
+## Installing Updates
 
 Visual Studio tracks updates to its installed workloads and offers a single interface to view and install updates.
 
@@ -93,7 +93,7 @@ As an optional component selected during the Visual Studio Tools for Apache Cord
 
 > [!NOTE]
 > Only the Android command-line tools are installed, if you want to use Google Android Studio to code, test, and debug native applications for Android, you will have to install Android Studio separately.
- 
+
 For testing Cordova applications on Android, Visual Studio Installer can optionally install the following components:
 
 + Intel x86 Atom System Image
@@ -106,9 +106,9 @@ The software components needed to support iOS development are installed through 
 
 ## <a name="troubleshooting"></a>Installation Troubleshooting
 
-Having trouble with the installation? Search for results based on error messages you received during installation or post questions based on your issue on [Stack Overflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova). 
+Having trouble with the installation? Search for results based on error messages you received during installation or post questions based on your issue on [Stack Overflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
-During installation, and later, as Visual Studio interacts with a Cordova project, multiple software components are downloaded and installed in your development environment. See [Third-Party Tools Added During Installation](#third-party-tools) for details. If component downloads fail, check your internet connectivity and your connection proxy settings to ensure Visual Studio can access the online resources it needs.  
+During installation, and later, as Visual Studio interacts with a Cordova project, multiple software components are downloaded and installed in your development environment. See [Third-Party Tools Added During Installation](#third-party-tools) for details. If component downloads fail, check your internet connectivity and your connection proxy settings to ensure Visual Studio can access the online resources it needs.
 
 The installer attempts to isolate the software components it uses from other copies you may have installed on your system, but there could be conflicts based on how your system is configured. Check your system's `PATH` environment variable to ensure that other components aren't loading before the ones installed by Visual Studio. For comprehensive guide to configuring Visual Studio Tools for Apache Cordova and all of the third-party dependencies, see [Configure the Visual Studio Tools for Apache Cordova](../tips-workarounds/configuration-tips.md).
 

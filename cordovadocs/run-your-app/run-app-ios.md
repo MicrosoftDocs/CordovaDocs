@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Run your Apache Cordova app on iOS | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Mikejo5000"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="05/05/2016"
-   ms.author="mikejo"/>
+---
+title: "Run your Apache Cordova app on iOS | Cordova"
+description: "description"
+services: "na"
+author: "Mikejo5000"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "05/05/2016"
+ms.author: "mikejo"
+---
 # Run your Apache Cordova app on iOS
 
 When you create app using Visual Studio Tools for Apache Cordova, you have many options for emulating and deploying your app on iOS:

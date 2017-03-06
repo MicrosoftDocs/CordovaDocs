@@ -1,20 +1,18 @@
-<properties
-   pageTitle="Application Lifecycle Management (ALM) with Apache Cordova Apps"
-   description="Application Lifecycle Management (ALM) with Apache Cordova Apps"
-   services="na"
-   documentationCenter=""
-   authors="kraigb, johnwargo"
-   tags=""/>
-<tags 
-	ms.technology="cordova" 
-	ms.prod="visual-studio-dev15"
-   	ms.service="na"
-   	ms.devlang="javascript"
-   	ms.topic="article"
-   	ms.tgt_pltfrm="mobile-multiple"
-   	ms.workload="na"
-   	ms.date="02/12/2017"
-   	ms.author="johnwargo"/>
+---
+title: "Application Lifecycle Management (ALM) with Apache Cordova Apps"
+description: "Application Lifecycle Management (ALM) with Apache Cordova Apps"
+services: "na"
+author: "kraigb, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "02/12/2017"
+ms.author: "johnwargo"
+---
 
 # Application Lifecycle Management (ALM) with Apache Cordova Apps
 
@@ -52,7 +50,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
         <tr>
             <td rowspan="5">
                 <p>
-                    <strong><a href="https://msdn.microsoft.com/library/dd286619.aspx">Agile tools</a>                      
+                    <strong><a href="https://msdn.microsoft.com/library/dd286619.aspx">Agile tools</a>
                     </strong><br /> (using Visual Studio Team Services, including Team Explorer Everywhere)</p>
             </td>
             <td>

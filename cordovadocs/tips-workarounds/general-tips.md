@@ -1,19 +1,20 @@
-<properties pageTitle="General Cordova tips and workarounds"
-  description="This is an article on bower tutorial"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="05/15/2016"
-     ms.author="kirupac"/>
+---
+title: "General Cordova tips and workarounds"
+description: "General Cordova tips and workarounds"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "05/15/2016"
+ms.author: "kirupac"
+---
 
 #General Cordova tips and workarounds
-This document covers tips, tricks, and known workarounds for general issues with Cordova or Tools for Apache Cordova. 
+This document covers tips, tricks, and known workarounds for general issues with Cordova or Tools for Apache Cordova.
 
 <a name="connection"></a>
 ##App not connecting to the internet or failing to retrieve data or resources

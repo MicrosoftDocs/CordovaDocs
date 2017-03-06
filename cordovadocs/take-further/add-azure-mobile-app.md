@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Add Azure App Service Mobile App | Cordova"
-   description="Access Data in your Apache Cordova app"
-   services="na"
-   documentationCenter=""
-   authors="mikejo5000"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="08/21/2016"
-   ms.author="mikejo5000"/>
+---
+title: "Add Azure App Service Mobile App | Cordova"
+description: "Access Data in your Apache Cordova app"
+services: "na"
+author: "mikejo5000"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "08/21/2016"
+ms.author: "mikejo5000"
+---
 
 #Add Azure data storage, offline sync, and push notifications
 

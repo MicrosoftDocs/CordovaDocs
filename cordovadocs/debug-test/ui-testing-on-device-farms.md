@@ -1,8 +1,8 @@
-<properties pageTitle="Testing on device farms"
-  description="Testing on device farms"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Testing on device farms"
+description: "Testing on device farms"
+author: "Kraig Brockschmidt"
+---
 
 # Testing on device farms
 

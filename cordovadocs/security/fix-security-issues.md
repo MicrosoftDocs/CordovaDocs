@@ -1,12 +1,12 @@
-<properties pageTitle=" Quickly remediate security issues using CodePush and Intune"
-  description="Quickly fix and remediate security policy and compliance violations using CodePush and Intune MDM."
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: " Quickly remediate security issues using CodePush and Intune"
+description: "Quickly fix and remediate security policy and compliance violations using CodePush and Intune MDM."
+author: "clantz"
+---
 
 # Quickly remediate security issues using CodePush and Intune
-Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions and even the most carefully crafted app can have unexpected security gaps. When you do identify a threat or security issue in an app that has been released, fixing it quickly can be critical particularly if you need to adhere to strict compliance rules in a regulated industry. 
- 
+Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions and even the most carefully crafted app can have unexpected security gaps. When you do identify a threat or security issue in an app that has been released, fixing it quickly can be critical particularly if you need to adhere to strict compliance rules in a regulated industry.
+
 ##CodePush
 One of the more frustrating aspects of mobile apps particularly for those that come from a web based background is that there are delays associated with getting app updates in the hands of customers. These can be driven by either app store submission delays which can be up to 10 days for iOS or simply the fact that not every user actually updates their apps when prompted.
 
@@ -21,7 +21,7 @@ Internal facing mobile apps are becoming increasingly common and some organizati
 
 Fortunately, Mobile Device Management (MDM) suites like **[Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)** typically provide an internal app store that enable internal users to quickly gain access to both internal and externally developed apps. These features also include bring-your-own-device (BYOD) scenarios where mobile users may not want their devices controlled as strictly as corporate owned ones. Intune can also reduce the scope of your risk by restricting access to apps based Active Directory user groups. This can be useful for "super user apps", development or test versions of apps, or when you simply want to only offer an app to a subset of employees.
 
-As a result, Intune's internal app store allows you to reduce the amount of time it takes to make an app update available to your internal users from days to minutes and can reduce the scope of your risk. Intune's mobile app store / company portal capabilities include support for Android, iOS, Windows, and Samsung KNOX based devices.  
+As a result, Intune's internal app store allows you to reduce the amount of time it takes to make an app update available to your internal users from days to minutes and can reduce the scope of your risk. Intune's mobile app store / company portal capabilities include support for Android, iOS, Windows, and Samsung KNOX based devices.
 
 See **[deploy and configure apps with Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646965.aspx)** for more details.
 

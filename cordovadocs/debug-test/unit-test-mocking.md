@@ -1,8 +1,8 @@
-<properties pageTitle="Using mocks"
-  description="Using mocks"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Using mocks"
+description: "Using mocks"
+author: "Kraig Brockschmidt"
+---
 
 #Using mocks for platform APIs, plugins, and other external dependencies
 
@@ -39,7 +39,7 @@ function consolidateUserRecord(userID) {
         email: normE.alias + "@contoso.com",
         title: normE.title,
         workPhone: normE.phone,
-        homePhone: normP.phone        
+        homePhone: normP.phone
     }
 
     var timestamp = dateTimePlugin.now();                   // Calls a platform API
@@ -61,13 +61,13 @@ Still, when executing ```consolidateUserRecord``` in a unit testing runtime, we 
 How, then, can we run this code at all? The answer is simple: we fake it, which means creating stubs—or mocks, as they’re commonly called—that intercept calls to external dependencies to mimic the data they return.
 
 It won’t take long for you to realize that mocks must isolate and intercept all platform calls and calls to external dependencies.
- 
+
 There are several ways this can happen:
 
 1.	A Cordova plugin might provide for mocks directly, because the plugin after all is entirely aware of any platform APIs it using. This is especially helpful with plugins that use third party external dependencies like databases as opposed to standard platform APIs.
 2.	Some JavaScript libraries may already have mocking built in, or there exists a compatible framework for that purpose. For example, mockjax intercepts jQuery ```$.getJSON``` calls to return test data instead of hitting a real service. (For an example, see [http://www.telerik.com/blogs/using-qunit-to-unit-test-phonegap-cordova-applications](http://www.telerik.com/blogs/using-qunit-to-unit-test-phonegap-cordova-applications).)
 3.	The [Cordova Mocks extension for Chrome](https://chrome.google.com/webstore/detail/cordova-mocks/iigcccneenmnplhhfhaeahiofeeeifpn) injects mock data for nine of the most common Cordova plugins when using Chrome as the unit testing runtime. The extension, in other words, provides mocking at the runtime level.
-4.	Use plugins through a wrapping layer that provides for mocking intercepts. [ngCordova](http://ngcordova.com/) is an example of this, adding more than 70 AngularJS extensions on top of the Cordova API. This has the advantage over #3 above of being runtime-independent. 
+4.	Use plugins through a wrapping layer that provides for mocking intercepts. [ngCordova](http://ngcordova.com/) is an example of this, adding more than 70 AngularJS extensions on top of the Cordova API. This has the advantage over #3 above of being runtime-independent.
 
 To return now to our example of ```consolidateUserRecord```, here’s how we’d address the expected failures during unit testing:
 

@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Visual Studio Tools for Apache Cordova | Cordova"
-   description="Visual Studio Tools for Apache Cordova"
-   services="na"
-   documentationCenter=""
-   authors="johnwargo, jomatthi"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="10/31/2016"
-   ms.author="johnwargo"/>
+---
+title: "Visual Studio Tools for Apache Cordova | Cordova"
+description: "Visual Studio Tools for Apache Cordova"
+services: "na"
+author: "johnwargo, jomatthi"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "10/31/2016"
+ms.author: "johnwargo"
+---
 
 ## Overview
 Microsoft's Visual Studio Tools for Apache Cordova is a Microsoft Visual Studio workload that simplifies development of mobile apps on Android, iOS, and Windows using [Apache Cordova](http://cordova.io/). Apache Cordova enables cross-platform mobile development using standard web technologies (HTML, CSS, and JavaScript). The Tools for Apache Cordova may be installed along with your initial Visual Studio installation, or added to it later by simply re-running the installer. The workload installs a complete Apache Cordova development environment within Visual Studio, plus adds Cordova project templates and Cordova-specific capabilities to the IDE. It includes the following capabilities:

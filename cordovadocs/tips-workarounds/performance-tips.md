@@ -1,16 +1,17 @@
-<properties pageTitle="Cordova performance tips"
-  description="This is an article on bower tutorial"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="09/10/2015"
-     ms.author="kirupac"/>
+---
+title: "Cordova performance tips"
+description: "Cordova performance tips"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "kirupac"
+---
 
 # Cordova performance tips
 

@@ -1,13 +1,13 @@
-<properties pageTitle="Improving tests/test-driven development"
-  description="Improving tests/test-driven development"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Improving tests/test-driven development"
+description: "Improving tests/test-driven development"
+author: "Kraig Brockschmidt"
+---
 
 #Improving the unit tests: an introduction to test-driven development
 
 > The full sample for this topic is [chutzpah-jasmine-vs](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/chutzpah-jasmine-VS) in the cordova-samples repository on GitHub.
- 
+
 The previous topics in this section verified the mechanics of identifying and running a single test. It should be obvious, however, that the ```normalizeData``` function and the one test we’ve written are woefully inadequate:
 
 - ```normalizeData``` will fail if we give it bad JSON (such that ```JSON.parse``` fails) or any number of variations that don’t contain both ```Name``` and ```PersonalIdentifier``` properties (such that dereferencing either property fails).
@@ -17,8 +17,8 @@ The previous topics in this section verified the mechanics of identifying and ru
 Clearly we have more work to do. In fact, let’s go back to having no tests and only the definition of an otherwise empty ```normalizeData``` function:
 
 ```javascript
-/** @description Converts JSON data that may contain Name and PersonalIdentifier 
- *    properties to an object with the properties name (string) and id (positive 
+/** @description Converts JSON data that may contain Name and PersonalIdentifier
+ *    properties to an object with the properties name (string) and id (positive
  *    integer up to 9999999999.
  * @param {string} jsonIn The JSON data to normalize.
  * @return {object} An object with name (string) and id (integer) properties,
@@ -38,9 +38,9 @@ More experienced developers who understand, on the other hand, that their job is
 
 As a result, experienced developers find that it can be much more efficient and productive to *start* by thinking through test cases/input variations by themselves, including boundary and edge cases, because as you identify each set of inputs it’s quite easy to additional variations. Once all those input cases clearly identified, it’s then very easy to turn a list of inputs into unit tests. Once that work is done, you can shift your focus entirely to writing the code without having to wonder (or worry!) whether you’re really handling all the possible inputs.
 
-With the unit tests in hand, in fact, you can run them against an empty implementation of a function like ```normalizeData```. Many if not all of the unit tests will fail, of course, but that means that the list of failed tests becomes your to-do list for coding. If you’ve written each test with a single set of inputs, the list of failed tests maps *exactly *to the list of input cases that the function doesn’t yet handle properly. As you write the code, then, you are simply making improvements to to pass each test one by one. And when the function passes all the tests, you can be completely confident that it can handle all the possibilities it should. 
+With the unit tests in hand, in fact, you can run them against an empty implementation of a function like ```normalizeData```. Many if not all of the unit tests will fail, of course, but that means that the list of failed tests becomes your to-do list for coding. If you’ve written each test with a single set of inputs, the list of failed tests maps *exactly *to the list of input cases that the function doesn’t yet handle properly. As you write the code, then, you are simply making improvements to to pass each test one by one. And when the function passes all the tests, you can be completely confident that it can handle all the possibilities it should.
 
-This is precisely the process that’s called *test-driven development*: write the tests first against an initially empty function, and then write the code to pass the test. Although it seems counter-intuitive to write tests first, test-driven development is an effective way of defining, through tests, the exact behavior that’s expected of the code. 
+This is precisely the process that’s called *test-driven development*: write the tests first against an initially empty function, and then write the code to pass the test. Although it seems counter-intuitive to write tests first, test-driven development is an effective way of defining, through tests, the exact behavior that’s expected of the code.
 
 The big advantage of test-driven development is that it cleanly separates the task of coming up with input cases from the task of writing the code to handle those cases. Ultimately, if you’re going to do a really good job testing your code, you’ll have to separate these tasks one way or another. Test-driven development acknowledges this up front. It makes it easier to generate a comprehensive set of tests early on, which means you write more robust code earlier in the process and thus reduce the overall cost of development.
 
@@ -176,8 +176,8 @@ By the way, one of the unit tests show above is buggy. Do you see which one? We�
 Having written out all the tests, we can now run them against a still-empty ```normalizeData``` function and see the results in Test Explorer:
 
 ![First test results with an empty function](media/tdd/01-testblock1.png)
- 
-As expected, all the tests fail because there's no code in ```normalizeData``` that could possibly pass a test. Our job now is to add code to pass at least one test at a time, until we get to the point where *all* tests pass. Then we can call the implementation good. 
+
+As expected, all the tests fail because there's no code in ```normalizeData``` that could possibly pass a test. Our job now is to add code to pass at least one test at a time, until we get to the point where *all* tests pass. Then we can call the implementation good.
 
 Notice also how Test Explorer shows the names you assigned to each individual test. This output shows exactly why you want to keep each test specific according to its description, because as failed tests appear in this list you can quickly and easily identify the exact inputs that are causing the unit code to fail.
 
@@ -201,7 +201,7 @@ function normalizeData(jsonIn) {
 If we re-run all the tests, we’ll now find that five passs:
 
 ![Test results with golden path implementation](media/tdd/02-testblock2b.png)
- 
+
 Clearly the implementation is pretty poor, so let’s dispense with it and do some real coding work.
 
 First, we’ll check for bad input (```null``` or anything that causes ```JSON.parse``` to throw an exception), which should let us pass those cases while still passing the previously-passing tests that use good data:
@@ -211,7 +211,7 @@ function normalizeData(jsonIn) {
     if (jsonIn == null) {
         return null;
     }
-    
+
     var data = null;
 
     // Return null for any invalid JSON
@@ -226,7 +226,7 @@ function normalizeData(jsonIn) {
     var id = 0 + data.PersonalIdentifier  // Make sure this is an integer
 
     return {
-        name: name, 
+        name: name,
         id: id
     };
 }
@@ -240,7 +240,7 @@ Near the top of failed list now are five tests that for defaults when the JSON i
 function normalizeData(jsonIn) {
         return null;
     }
-    
+
     var data = null;
 
     // Return null for any invalid JSON
@@ -250,7 +250,7 @@ function normalizeData(jsonIn) {
     catch (err) {
         return null;
     }
-    
+
     // Assign defaults
     var name = "default";
     var id = 0;
@@ -267,7 +267,7 @@ function normalizeData(jsonIn) {
         default:
             // rejects integer or any other data type
             return null;
-    }    
+    }
 
     switch (typeof data.PersonalIdentifier) {
         case 'undefined':
@@ -289,12 +289,12 @@ function normalizeData(jsonIn) {
 
         default:
             return null;
-    }    
-  
+    }
+
 
     return {
         name: name,
-        id: id 
+        id: id
     };
 }
 ```
@@ -302,7 +302,7 @@ function normalizeData(jsonIn) {
 Indeed, after this change we have only a few failing tests:
 
 ![Only a few failures remain after handling missing properties](media/tdd/04-testblock4b.png)
- 
+
 This demonstrates that as you implement the unit code, you’ll probably find some tests passing that you didn’t specific address in your latest code edits. When this happens, it’s a good idea to think through how you would have written code to handle those cases, and check if the code you wrote is handling those code paths in that way. For example, the change we made above passed all the tests that reject object and array properties because those types fall through to the default cases in the ```switch``` statements. Upon examination, we can see that we’d default in that way for any data type that we don’t accept (not just objects and arrays), so the code is valid for those tests.
 
 Handling negative and large ```PersonalIdentifier``` values is easy enough with added checks in the number case for that property:
@@ -319,14 +319,14 @@ Handling negative and large ```PersonalIdentifier``` values is easy enough with 
 
 and truncating long strings is just a small change to the string case for Name:
 
-```javascript 
+```javascript
         case 'string':
             name = data.Name.substring(0, 255);
             break;
 ```
 
 But wait a minute, the test for truncating a long Name is still failing:
- 
+
 ![Test for truncating a long name fails after attempting to handle that case](media/tdd/05-testblock5b.png)
 
 Why is that? Click on that test in the list and the bottom pane of Test Explorer shows the reason:
@@ -335,4 +335,4 @@ Why is that? Click on that test in the list and the bottom pane of Test Explorer
 
 This says that the actual value is ```undefined```. Hmmm. How did that happen? We know that ```data.Name``` was good from prior test runs, thus ```.substring(0, 255)``` should be valid. What’s going on?
 
-If you find yourself asking these questions, the right answer is to step through that unit test in the debugger, as described in [Debugging unit tests](debugging-unit-tests.md). 
+If you find yourself asking these questions, the right answer is to step through that unit test in the debugger, as described in [Debugging unit tests](debugging-unit-tests.md).

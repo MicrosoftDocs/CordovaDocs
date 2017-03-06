@@ -1,19 +1,17 @@
-<properties 
-	pageTitle="Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
-  	description="Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
-  	services=""
-  	documentationCenter=""
-  	authors="clantz, johnwargo" />
-  <taags 
-	ms.technology="cordova" 
-	ms.prod="visual-studio-dev15"
-    ms.service="na"
-    ms.devlang="javascript"
-    ms.topic="article"
-    ms.tgt_pltfrm="mobile-multiple"
-    ms.workload="na"
-    ms.date="02/12/2017"
-    ms.author="johnwargo"/>
+---
+title: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
+description: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
+author: "clantz, johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "02/12/2017"
+ms.author: "johnwargo"
+---
 
 # Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)
 
@@ -67,10 +65,10 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 
 	2. Click on **Manage Jenkins** > **Configure System**.
 
-	3. Under **NodeJS**, add an installation locations for Windows and macOS. Set these based on your server's configuration. By default, Windows will install Node in `C:\Program Files (x86)\nodejs` while macOS installs it under `/usr/local` (technically `/usr/local/bin`). 
-	 
+	3. Under **NodeJS**, add an installation locations for Windows and macOS. Set these based on your server's configuration. By default, Windows will install Node in `C:\Program Files (x86)\nodejs` while macOS installs it under `/usr/local` (technically `/usr/local/bin`).
+
 	> [!NOTE]
-	> You can ignore the warning that appears about `\usr\local` not existing on Windows. 
+	> You can ignore the warning that appears about `\usr\local` not existing on Windows.
 
 	4. Click **Save**.
 
@@ -78,7 +76,7 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 
 ### Additional Setup for iOS Builds
 
-For iOS, we will be taking advantage of an [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and a [slave agent](http://go.microsoft.com/fwlink/?LinkID=613696) on macOS. Here's a basic walkthrough for configuring these:  
+For iOS, we will be taking advantage of an [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and a [slave agent](http://go.microsoft.com/fwlink/?LinkID=613696) on macOS. Here's a basic walkthrough for configuring these:
 
 1. Go to the **Jenkins Dashboard** again (click on **Jenkins** in the upper left hand corner),
 

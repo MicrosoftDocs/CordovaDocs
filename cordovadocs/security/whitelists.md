@@ -1,8 +1,8 @@
-<properties pageTitle="Cordova whitelist and Content Security Policy guide"
-  description="Cordova whitelist and Content Security Policy guide"
-  services=""
-  documentationCenter=""
-  authors="Chuxel" />
+---
+title: "Cordova whitelist and Content Security Policy guide"
+description: "Cordova whitelist and Content Security Policy guide"
+author: "Chuxel"
+---
 
 # Cordova whitelist and Content Security Policy guide
 
@@ -44,7 +44,7 @@ If we wanted to add the ability for the root WebView to navigate to www.microsof
 There is still some variation in behavior by platform for these whitelist features based on the concerns and capabilities of the underlying native technology.
 
 1. **Android** supports the use of access, allow-navigation, and allow-intent. Intents are an Android specific concept.
-2. **iOS** supports the use of access and allow-navigation. As of 6.0.0 (Cordova iOS 4.0.0) it is built into the iOS platform so a plugin is not required. 
+2. **iOS** supports the use of access and allow-navigation. As of 6.0.0 (Cordova iOS 4.0.0) it is built into the iOS platform so a plugin is not required.
 3. **Windows 10** via the Windows platform supports the allow-navigation element exactly like iOS and Android. The access element is also supported but behaves a bit differently in that navigation is allowed to these URIs but Cordova and plugin APIs are disabled thereby reducing risk. In Windows 10, XHR, CSS, and image access rules are intended to be controlled by a Content Security Policy (CSP) via connect-src rather than specific whitelists. We'll cover more details on how to use CSPs later in this document.
 4. **Windows 8.0, 8.1, and Windows Phone 8.1** via the Windows platform does not support navigating to external URIs outside of the InAppBrowser plugin due to fundamental platform limitations. XHR calls are always allowed to any domain.
 5. The **Windows Phone 8 (WP8)** platform still uses the old definition of the access element and does not support allow-navigation or allow-intent.
@@ -149,7 +149,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 	Start with the most locked down security policy you can, and back away as needed. That way you'll ensure you're using the most secure practices you can from the start.
 
     > [!NOTE]
-    > **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.    
+    > **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.
 
 ##Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)

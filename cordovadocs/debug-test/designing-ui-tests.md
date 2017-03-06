@@ -1,8 +1,8 @@
-<properties pageTitle="Designing and writing UI tests"
-  description="Designing and writing UI tests"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Designing and writing UI tests"
+description: "Designing and writing UI tests"
+author: "Kraig Brockschmidt"
+---
 
 # Designing and writing UI tests
 
@@ -39,12 +39,12 @@ Also note that we aren’t able to use a test runner like Chutzpah that’s inte
 
 > [!NOTE]
 > With Protractor, you launch it with a separate Karma-like configuration file that specifies the Appium capabilities along with the names of the test files, so you don’t need the capabilities and the *appDriver.init* call in those test files themselves. The [WebDriver API that’s built into Protractor]( http://angular.github.io/protractor/#/api) is also a little different from **wd**—for example, the *elementById* API we’ve been using becomes *element.findElement(By.id(‘<id>’))* in Protractor.
-> If you’re using Angular or Ionic, Protractor also provides an API with helper methods for automating a page using locator strategies, along with the ability to drive UI with injected JavaScript. Both are helpful, for example, when you have an element in a template without an ID and need to target that element based on some other heuristic. 
+> If you’re using Angular or Ionic, Protractor also provides an API with helper methods for automating a page using locator strategies, along with the ability to drive UI with injected JavaScript. Both are helpful, for example, when you have an element in a template without an ID and need to target that element based on some other heuristic.
 
 ## Create a first test
 
-Let’s expand test04.js from the previous section by adding the Jasmine adornments and assert that pressing the Find Weather button with a suitable ZIP code shows either weather data or an error message. To be specific, after tapping Find Weather, either the *weather-data* element is visible (below left), or the *error-msg* element is visible (below right). 
-     
+Let’s expand test04.js from the previous section by adding the Jasmine adornments and assert that pressing the Find Weather button with a suitable ZIP code shows either weather data or an error message. To be specific, after tapping Find Weather, either the *weather-data* element is visible (below left), or the *error-msg* element is visible (below right).
+
 ![Two states of the Weather App UI, with weather data (left) and an error message (right)](media/running/01-weather-app.png)
 
 In this test we don’t need to assert visibility of any children of *weather-data* because none of those have distinct visibility apart from the parent (*weather-data* is a *ul* and all the children are *li* elements). Neither do we need to assert values of any of the display elements for two reasons: (a) the values are highly variable, and (b) the reasonableness of those values are better tested through assertions on the data we get from the backend service, rather than testing them in the UI. This is a case for an integration test that we’ll talk about more under “Design your UI test cases” below.
@@ -54,10 +54,10 @@ To check the visibility of *weather-data* and *error-msg*, we need only add a li
 ```JavaScript
 	var elemData = yield this.elementById('weather-data');
 	var elemErr = yield this.elementById('error-msg');
-	
+
 	var visData = yield elemData.isDisplayed();
 	var visErr = yield elemErr.isDisplayed();
-	
+
 	var eitherVisible = (visData && !visErr) || (!visData && visErr);
 	expect(eitherVisible).toBe(true)
 ```
@@ -68,49 +68,49 @@ To complete the test, we need to wrap the UI sequence with the appropriate Mocha
 
 ```javascript
 	var yiewd = require("yiewd");
-	
+
 	// [Note 1]
 	var chai = require("chai");
 	var expect = chai.expect;
-	
+
 	// [Note 2]
 	var debugging = false;
-	 
+
 	var timeouts = {
 	  appium: debugging ? 60 : 10,              // Timeout before Appium stops the app
-	  framework: 1000 * (debugging ? 600 : 30), // Timeout for completing each test  
+	  framework: 1000 * (debugging ? 600 : 30), // Timeout for completing each test
 	};
-	
+
 	// [Note 3]
 	// Object to store the names of the frameworks once
 	var frameworks = {
 	  "mocha" : "mocha",
-	  "jasmine" : "jasmine"  
+	  "jasmine" : "jasmine"
 	};
-	
+
 	// Set this variable according to the framework you're using
 	var framework = frameworks.mocha;
 	//var framework = frameworks.jasmine;
-	
+
 	// [Note 4]
 	var config = {};
-	
-	config.android19Hybrid = { 
+
+	config.android19Hybrid = {
 	  automationName: 'Appium',
 	  browserName: '',
 	  platformName: 'Android',
 	  platformVersion: 19,    // API level integer, or a version string like '4.4.2'
 	  autoWebview: true,
-	  deviceName: 'any value; Appium uses the first device from *adb devices*',  
+	  deviceName: 'any value; Appium uses the first device from *adb devices*',
 	  app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk",
-	  newCommandTimeout: timeouts.appium, 
-	}; 
-	
+	  newCommandTimeout: timeouts.appium,
+	};
+
 	var appDriver  = yiewd.remote({
 	    hostname: 'localhost',
 	    port: 4723,
 	  });
-	
+
 	// [Note 5]
 	describe ("Find weather page", function () {
 	  // [Note 2 again]
@@ -119,42 +119,42 @@ To complete the test, we need to wrap the UI sequence with the appropriate Mocha
 	    case frameworks.mocha:
 	      this.timeout(timeouts.framework)
 	      break;
-	      
+
 	    case frameworks.jasmine:
 	      jasmine.DEFAULT_TIMEOUT_INTERVAL = timeouts.framework;
 	      break;
 	  }
-	
+
 	  // [Notes 6, 7]
 	  it ('displays either weather data or an error message', function (done) {
 	    appDriver.run(function* () {
-	      // 'this' is appDriver     
-	      var session = yield this.init(config.android19Hybrid); 
+	      // 'this' is appDriver
+	      var session = yield this.init(config.android19Hybrid);
 	      yield this.sleep(3000);
-	            
+
 	      var txtZip = yield this.elementById('zip-code-input');
 	      yield txtZip.clear();
 	      yield txtZip.sendKeys("95959");
-	            
+
 	      var btnGetWeather = yield this.elementById('get-weather-btn');
 	      yield btnGetWeather.click();
-	      
+
 	      // [Note 8]
 	      yield this.sleep(3000);
-	            
+
 	      var elemData = yield this.elementById('weather-data');
 	      var elemErr = yield this.elementById('error-msg');
-	
+
 	      var visData = yield elemData.isDisplayed();
 	      var visErr = yield elemErr.isDisplayed();
-	      var eitherVisible = (visData && !visErr) || (!visData && visErr); 
-	
+	      var eitherVisible = (visData && !visErr) || (!visData && visErr);
+
 	      expect(eitherVisible).to.equal(true);
-	      
-	      // Tell the framework that we're done with the async series 
-	      done(); 
+
+	      // Tell the framework that we're done with the async series
+	      done();
 	    });
-	        
+
 	  });
 	});
 ```
@@ -190,7 +190,7 @@ If the test passes, you’ll see only a little output (and notice that it took 2
 
 	Started
 	.
-	
+
 	1 spec, 0 failures
 	Finished in 21.087 seconds
 
@@ -204,13 +204,13 @@ Here’s the output in that case:
 
 	Started
 	F
-	
+
 	Failures:
 	1) Find weather page displays either weather data or an error message
 	  Message:
 	    Expected true to be false.
 	    [stack trace omitted]
-	
+
 	1 spec, 1 failure
 	Finished in 15.012 seconds
 
@@ -222,24 +222,24 @@ A passing report is a little more verbose than Jasmine (and took a little over 1
 
 	Find weather page
 	  √ displays either weather data or an error message (15124ms)
-	
+
 	1 passing (15s)
 
 A failing report (if we again change the assertion), looks like this:
 
 	Find weather page
 	  1) displays either weather data or an error message
-	
+
 	0 passing (13s)
 	1 failing
-	
+
 	1) Find weather page displays either weather data or an error message:
 	    Uncaught AssertionError: expected true to equal false
 	    + expected - actual
-	
+
 	    -true
 	    +false
-	
+
 	    at [stack trace omitted]
 
 Again, you can choose either framework as you prefer. The tests we’ll write will work with either one.
@@ -284,20 +284,20 @@ For this it’s helpful to do a side-by-side comparison with unit testing:
 </tbody>
 </table>
 
-Put simply, in unit testing we call a unit of code with some *input data* and receive back a *value* of some kind (which could be an object with multiple properties), and then we make an assertion about that value. In UI testing, we execute *user actions* that affect a *state change* in the UI, and then we make an assertion about that *state*, which includes assertions about layout. Just as unit testing catches regressions—unexpected changes—in the *functionality* of code, UI testing catches regressions in *how things look and how they behave*. 
+Put simply, in unit testing we call a unit of code with some *input data* and receive back a *value* of some kind (which could be an object with multiple properties), and then we make an assertion about that value. In UI testing, we execute *user actions* that affect a *state change* in the UI, and then we make an assertion about that *state*, which includes assertions about layout. Just as unit testing catches regressions—unexpected changes—in the *functionality* of code, UI testing catches regressions in *how things look and how they behave*.
 
 UI testing, in other words, should focus on matters that are *specifically* UI concerns, such as the *visibility* of information, the visual or interactive *status* of certain controls, responsiveness to user actions like panning, and so on. UI tests *don’t* need to concern themselves with the *validity* of displayed information, because such matters should be covered by unit tests or integration tests.
 
 > [!NOTE]
 > As with unit tests, each UI test should be specific such that if it fails, you immediately know the exact cause. For UI, however, a “single” test for a state change might involve checking the state of many different elements that *as a group* make up that one test especially when those controls always change state together. In such contexts it doesn’t make sense to check each control individually.
- 
+
 To use a trivial example of the quintessential calculator app, unit testing should cover whether the functions that perform mathematical operations actually produce the correct results for a variety of inputs, including edge cases. Because of this, UI tests don’t need to test that same range of input values. What they *do* need to test are the *bindings* between UI elements and those operations. This is especially important with actions that don’t have backing operational functions, like clear, memory set/retrieve, changing number bases, and anything else that affects the UI display only.
 
 With this in mind, then, UI tests for the digit buttons would make sure that the “1” button results in a “1” on the display, that a series of “1” “+” “5” “=” displays 6, that the clear button results in a “0”, and so on. (You’d probably also include tests that check for an overload indicator on the display.) This way, if a developer error breaks a button binding at some later time, the UI tests will catch this regression quickly. Leave it to the unit tests to catch regressions in the mathematical operations themselves.
 
 There’s another example in WeatherApp. You might have noticed in previous screenshots that the app shows the same timestamp for both sunrise and sunset. This is clearly a defect (since corrected in the code on GitHub), and it’s tempting to think of it as a UI problem. The truth, though, is that it’s an issue with either the *quality* of data from the service or the *handling logic* for the data in the app, and not a problem with the UI *state change* in the app when it displays data. From a UI point of view, that is, the app correctly displays the appropriate elements and correctly routes values from the data service and app logic code.
 
-A UI test, in other words, is **not** the place to assert whether the data itself actually makes sense. We might want the app, of course, to filter out bad values, in which case we’d insert a filtering function in the processing logic that routes the response data to the UI, and we’d write unit tests for that function. A simple unit test, in fact, would have easily caught the code bug.  
+A UI test, in other words, is **not** the place to assert whether the data itself actually makes sense. We might want the app, of course, to filter out bad values, in which case we’d insert a filtering function in the processing logic that routes the response data to the UI, and we’d write unit tests for that function. A simple unit test, in fact, would have easily caught the code bug.
 
 We might also write integration tests to monitor the quality of data from the services we depend upon, so that we can notify the service owners if we see problems (and encourage them to have good unit tests for the service!). Such code-level integration tests are generally easier and cheaper to write than the equivalent UI tests.
 
@@ -311,13 +311,13 @@ Note that having a UI design, and thinking through the interactions with it, is 
 
 With WeatherApp, we already have the core UI in place, so we’re not quite starting from scratch. Nevertheless, if we think through all the UI behaviors we want, and then write and run those tests, we’ll certainly find places to improve the code.
 Here, then, are other UI behaviors we can test:
- 
+
 - When the app starts, before Find Weather is pressed at all, there should be either an appropriate error message (for no connectivity or failed geolocation), or there should be some weather data in place (if geolocation works). This is essentially the same test as we already did with a ZIP code, but we want to run it without entering a ZIP code value directly.
 - If geolocation takes a while, an appropriate message should appear. This is really covered by the previous test if the device is set to use a slow network.
 - The app should disallow non-numerical input, and accept only five digits. Otherwise there’s a potential risk for injection-type attacks, which could cause a service to block access by our app entirely, which would be very bad for customers.
 - The app should disable the Find Weather button when non-valid input exists in the ZIP code field. That is, we shouldn’t rely on the weather service to give us errors for bad input data, because that requires making an API to the service which wastes data bandwidth and battery power.
 - An appropriate error message should appear if we lose connectivity while waiting for the weather service to respond, or if there’s a timeout.
- 
+
 In short, this list anticipates potential ways that customers might abuse the app, and potential conditions—namely connectivity—that we need to handle gracefully. We’ll add test code for these in the next section.
 
 Here are also some additional areas to think about that aren’t covered in this documentation or don’t apply to WeatherApp, but might be important in your own projects:
@@ -379,8 +379,8 @@ In our test code with WeatherApp, the *before* hook is a perfect place to all *a
 	before(function (done) {
 	  appDriver.run(function *() {
 	    var session = yield this.init(config.android19Hybrid);
-	    yield this.sleep(3000);    
-	    done();      
+	    yield this.sleep(3000);
+	    done();
 	  });
 	});
 	Similarly, here’s an *after* implementation that shuts the app down after all the tests have finished:
@@ -399,14 +399,14 @@ To refactor code that you want to use from multiple tests, be sure to use *funct
 	function* checkDataErrVisibility(appSession) {
 	    var elemData = yield appSession.elementById('weather-data');
 	    var elemErr = yield appSession.elementById('error-msg');
-	        
+
 	    // Do an XOR on element visibility. isDisplayed is an API from wd, see
 	    // https://github.com/admc/wd/blob/master/lib/element-commands.js. Remember
 	    // that even this API is async, so use yield to retrieve the values.
 	    var visData = yield elemData.isDisplayed();
 	    var visErr = yield elemErr.isDisplayed();
 	    var eitherVisible = (visData && !visErr) || (!visData && visErr);
-	    return eitherVisible; 
+	    return eitherVisible;
 	}
 ```
 
@@ -436,62 +436,62 @@ Now let’s write the remaining tests that we listed in the previous section, na
 	    var eitherVisible = yield checkDataErrVisibility(this);
 	    expect(eitherVisible).to.equal(true);
 	    done();
-	  });    
+	  });
 	});
-	
+
 	it ('disallows non-numerical characters in ZIP code field', function (done) {
-	  appDriver.run(function* () { 
+	  appDriver.run(function* () {
 	    var txtZip = yield this.elementById('zip-code-input');
 	    yield txtZip.clear();
 	    yield txtZip.sendKeys("abced98");
 	    var zipText = yield txtZip.text();
 	    expect(zipText).to.equal("98");
 	    done();
-	  });        
+	  });
 	});
-	
+
 	it ('disallows more than five characters in ZIP code field', function (done) {
-	  appDriver.run(function* () { 
+	  appDriver.run(function* () {
 	    var txtZip = yield this.elementById('zip-code-input');
 	    yield txtZip.clear();
 	    yield txtZip.sendKeys("987654321");
 	    var zipText = yield txtZip.text();
 	    expect(zipText).to.equal("98765");
 	    done();
-	  });        
+	  });
 	});
-	
+
 	it ('disables the Get Weather button if the ZIP code field contains fewer than five digits', function (done) {
-	  appDriver.run(function* () { 
+	  appDriver.run(function* () {
 	    var txtZip = yield this.elementById('zip-code-input');
 	    yield txtZip.clear();
 	    yield txtZip.sendKeys("987");
-	    
+
 	    var enabled = yield isGetWeatherEnabled(this);
 	    expect(enabled).to.equal(false);
-	    
+
 	    done();
-	  }); 
+	  });
 	});
-	
+
 	it ('enables the Get Weather button if the ZIP code field contains five digits', function (done) {
-	  appDriver.run(function* () { 
+	  appDriver.run(function* () {
 	    var txtZip = yield this.elementById('zip-code-input');
 	    yield txtZip.clear();
 	    yield txtZip.sendKeys("98765");
-	    
+
 	    var enabled = yield isGetWeatherEnabled(this);
 	    expect(enabled).to.equal(true);
-	    
+
 	    done();
-	  }); 
+	  });
 	});
 ```
 
 We expect that the first three of these tests will fail because the app as yet doesn’t prevent non-numerical input nor does it check for longer entry strings. The fourth test will pass, though, because the button is always enabled. Here’s the mocha output (stack traces omitted):
 
 	D:\tests\Appium>mocha test07.js
-	
+
 	  Find weather page
 	    √ displays either weather data or an error message on startup (967ms)
 	    1) disallows non-numerical characters in ZIP code field
@@ -499,29 +499,29 @@ We expect that the first three of these tests will fail because the app as yet d
 	    3) disables the Get Weather button if the ZIP code field contains fewer than five digits
 	    √ enables the Get Weather button if the ZIP code field contains five digits (1771ms)
 	    √ displays either weather data or an error message on Get Weather press with valid ZIp code (5348ms)
-	
-	
+
+
 	  3 passing (43s)
 	  3 failing
-	
+
 	  1) Find weather page disallows non-numerical characters in ZIP code field:
-	
+
 	      Uncaught AssertionError: expected '' to equal '98'
 	      + expected - actual
 	      +98
-	
+
 	  2) Find weather page disallows more than five characters in ZIP code field:
-	
+
 	      Uncaught AssertionError: expected '' to equal '98765'
 	      + expected - actual
-	
+
 	      +98765
-	
+
 	  3) Find weather page disables the Get Weather button if the ZIP code field contains fewer than five digits:
-	
+
 	      Uncaught AssertionError: expected true to equal false
 	      + expected - actual
-	
+
 	      -true
 	      +false
 
@@ -538,15 +538,15 @@ However, this doesn’t appear entirely reliable on all platforms. So we can als
 	$('#zip-code-input').keypress(function (e) {
 	    var charCode = (e.which) ? e.which : e.keyCode
 	    var isDigit = (charCode >= 48 && charCode <= 57);
-	
+
 	    if (charCode > 31 && !isDigit)
 	        return false;
-	                        
+
 	    if (isDigit) {
 	        var text = $('#zip-code-input')[0].value;
 	        return (text.length < 5);
 	    }
-	
+
 	    return true;
 	});
 ```
@@ -575,7 +575,7 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 
 1.	Install any edition of Visual Studio 2015 (Community, Professional, or Enterprise) along with the [Node.js tools]( https://www.visualstudio.com/en-us/features/node-js-vs.aspx). You can install the latter using **Tools > Extensions and Updates**, then click **Online** on the left, search for Node.js, and install the tools (you’ll be prompted to restart Visual Studio in the process):
 
-	![Installing the Node.js Tools for Visual Studio](media/designing/02-node-tools-install.png) 
+	![Installing the Node.js Tools for Visual Studio](media/designing/02-node-tools-install.png)
 
 2.	Create a stub host project using **File > New Project**, search on “Node.js,” and select “Blank Node.js Console Application (JavaScript).” You won’t actually be running this application itself. We’re simply using it as a shell in which to run tests using Mocha and see the results in Test Explorer. The real app is, of course, identified by the app package we specify in the Appium configuration and has a separate project of its own.
 
@@ -584,7 +584,7 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 ```json
 	"devDependencies": {
 	  "wd": "^0.4.0",
-	  "mocha": "^2.5.3",    
+	  "mocha": "^2.5.3",
 	  "chai": "^3.5.0",
 	  "expect.js": "^0.3.1",
 	  "yiewd": "^0.6.0"
@@ -595,15 +595,15 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 
 5.	Click the test file in Solution Explorer and set the **Test Framework** in the **Properties** pane to Mocha:
 
-	![Setting the test framework option in Visual Studio](media/designing/03-node-tools-framework.png) 
+	![Setting the test framework option in Visual Studio](media/designing/03-node-tools-framework.png)
 
 6.	Open the Test Explorer window using **Test > Windows > Test Explorer**, and you should see all the tests that Visual Studio finds in the test file. If you don’t see the tests automatically, select **Build > Build Solution**.
 
-	![The list of discovered tests shown in Test Explorer](media/designing/04-node-tools-test-list.png) 
+	![The list of discovered tests shown in Test Explorer](media/designing/04-node-tools-test-list.png)
 
 7.	Assuming that the Appium server is running in a command windows, click **Run All** in Test Explorer to run the tests, or select and run an individual test. The results then appear in Test Explorer directly:
 
-	![Test results in Test Explorer](media/designing/05-node-tools-test-results.png) 
+	![Test results in Test Explorer](media/designing/05-node-tools-test-results.png)
 
 > [!NOTE]
 > The Node.js tools at present will reload the test file for each test it runs. In the example of [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js), this means that all the setup code to initialize Appium and launch the app will be run for each test, and the app will shut down after each one as well. This is of little consequence if you need to relaunch the app for certain tests to begin with, but can make running other groups of tests slower.
