@@ -1,16 +1,17 @@
-<properties pageTitle="iOS and OSX Tips and Workarounds | Cordova"
-  description="description"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="09/10/2015"
-     ms.author="kirupac"/>
+---
+title: "iOS and OSX Tips and Workarounds | Cordova"
+description: "description"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "kirupac"
+---
 
 #iOS and OSX Tips and Workarounds
 

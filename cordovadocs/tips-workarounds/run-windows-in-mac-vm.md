@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Build a Cordova app for iOS by using Parallels | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Chuxel"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/11/2015"
-   ms.author="clantz"/>
+---
+title: "Build a Cordova app for iOS by using Parallels | Cordova"
+description: "description"
+services: "na"
+author: "Chuxel"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/11/2015"
+ms.author: "clantz"
+---
 
 #Build a Cordova app for iOS by using Parallels
 

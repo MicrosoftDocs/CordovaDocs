@@ -1,9 +1,9 @@
-<properties pageTitle="Improving Android browser consistency and features with the Crosswalk WebView"
-  description="Improving Android browser consistency and features with the Crosswalk WebView"
-  services=""
-  documentationCenter=""
-  authors="clantz" />
-  
+---
+title: "Improving Android browser consistency and features with the Crosswalk WebView"
+description: "Improving Android browser consistency and features with the Crosswalk WebView"
+author: "clantz"
+---
+
 # Improving Android browser consistency and features with the Crosswalk WebView
 An exciting new development in the Cordova Android platform in Cordova 5 and up is the support for what are called "pluggable WebViews." What this feature allows you to do is swap out the built in Android WebView with a completely different WebView implementation. This is a significant improvement because the Android browser and thus the WebView is locked at a specific version without the ability to update unless you update the version of the OS on the device. This has changed in the Android OS as of 5.0, but unlike iOS or Windows where devices can opt to upgrade and developers need only concern themselves with a few major versions of the browser, older Android devices are locked at a particular sub-revision of Android (and thus the browser) with no ability to upgrade the device in many cases. The end result has been a vast array of small differences between Android devices.
 
@@ -55,7 +55,7 @@ An enhancement the Crosswalk plugin has is something called "multi-apk mode" whe
 ```
 
 ### Crosswalk WebView Version Preference
-Usually you won't need specify the actual version of the Crosswalk WebView that the Cordova plugin uses. However, if you run into a problem where the Visual Studio **debugger is not attaching** after adding the Crosswalk plugin or are seeing unexpected crashes or issues, you may be encountering an issue with a recent version of Crosswalk.  
+Usually you won't need specify the actual version of the Crosswalk WebView that the Cordova plugin uses. However, if you run into a problem where the Visual Studio **debugger is not attaching** after adding the Crosswalk plugin or are seeing unexpected crashes or issues, you may be encountering an issue with a recent version of Crosswalk.
 
 Crosswalk version 15 is known to work well and you can force this version to be used with a simple preference. Simply add the following to config.xml (Right-Click > View Code in VS):
 
@@ -73,7 +73,7 @@ _JAVA_OPTIONS=-Xmx512M
 ```
 
 ## Step 3 - Set up Emulators
-The Crosswalk WebView supports WebGL like Chrome and while this is a very exciting capability, it can drive some additional steps in emulator setup. 
+The Crosswalk WebView supports WebGL like Chrome and while this is a very exciting capability, it can drive some additional steps in emulator setup.
 
 First, be sure you have up-to-date graphics drivers installed on your system.
 

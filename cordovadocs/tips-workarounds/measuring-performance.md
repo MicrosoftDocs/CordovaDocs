@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Measure the performance of a Cordova app"
-   description="Measure the performance of a Cordova app"
-   services="na"
-   documentationCenter=""
-   authors="AdamTReineke"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="10/08/2015"
-   ms.author="adamre"/>
+---
+title: "Measure the performance of a Cordova app"
+description: "Measure the performance of a Cordova app"
+services: "na"
+author: "AdamTReineke"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "10/08/2015"
+ms.author: "adamre"
+---
 
 # Measure the performance of a Cordova app
 

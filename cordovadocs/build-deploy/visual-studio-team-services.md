@@ -1,27 +1,25 @@
-<properties 
-	pageTitle="Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
-  	description="Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
-  	services=""
-  	documentationCenter=""
-  	authors="clantz, johnwargo" />
-  <tags 
-	ms.technology="cordova" 
-	ms.prod="visual-studio-dev15"
-    ms.service="na"
-    ms.devlang="javascript"
-    ms.topic="article"
-    ms.tgt_pltfrm="mobile-multiple"
-    ms.workload="na"
-    ms.date="02/13/2017"
-    ms.author="johnwargo"/>
+---
+title: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
+description: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
+author: "johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "02/13/2017"
+ms.author: "johnwargo"
+---
 
 # Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services
 
-Visual Studio Tools for Apache Cordova (TACO) is designed to work with a number of different team build systems. Since the Cordova projects TACO creates are standard Apache Cordova projects built using the [Cordova Command Line interface (CLI)](http://go.microsoft.com/fwlink/?LinkID=533773), any project created using TACO will work with any Cordova compatible solution. 
+Visual Studio Tools for Apache Cordova (TACO) is designed to work with a number of different team build systems. Since the Cordova projects TACO creates are standard Apache Cordova projects built using the [Cordova Command Line interface (CLI)](http://go.microsoft.com/fwlink/?LinkID=533773), any project created using TACO will work with any Cordova compatible solution.
 
-The [Microsoft Visual Studio Team Services (VSTS) Agent](https://github.com/Microsoft/vsts-agent/blob/master/README.md) enables continuous integration (CI) on any platform. This specific agent provides a build and release agent for Linux and macOS. 
+The [Microsoft Visual Studio Team Services (VSTS) Agent](https://github.com/Microsoft/vsts-agent/blob/master/README.md) enables continuous integration (CI) on any platform. This specific agent provides a build and release agent for Linux and macOS.
 
-Visual Studio Team Services can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managing certificates for iOS. Simply install the **[Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188)** agent and add a Cordova Build task to your build definition. 
+Visual Studio Team Services can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managing certificates for iOS. Simply install the **[Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188)** agent and add a Cordova Build task to your build definition.
 
 <p>
 <table style="width: 100%; border-style: none;"><tr>

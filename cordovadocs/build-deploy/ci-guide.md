@@ -1,23 +1,21 @@
-<properties
-	pageTitle="Continuous Integration for Apache Cordova Apps"
-  	description="Continuous Integration for Apache Cordova Apps"
-  	services=""
-  	documentationCenter=""
-  	authors="clantz, johnwargo" />
-<tags 
-	ms.technology="cordova" 
-	ms.prod="visual-studio-dev15"
-	ms.service="na"
-	ms.devlang="javascript"
-	ms.topic="article"
-	ms.tgt_pltfrm="mobile-multiple"
-	ms.workload="na"
-	ms.date="02/11/2017"
-	ms.author="johnwargo"/>
+---
+title: "Continuous Integration for Apache Cordova Apps"
+description: "Continuous Integration for Apache Cordova Apps"
+author: "johnwargo"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "02/11/2017"
+ms.author: "johnwargo"
+---
 
 # Continuous Integration for Apache Cordova Apps
 
-Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO). 
+Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO).
 
 This article covers the general approach for tackling a number challenges that exist when building Cordova apps and cover what the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188) and [taco-team-build node module](http://go.microsoft.com/fwlink/?LinkID=533736) do behind the scenes to help you.
 
@@ -46,7 +44,7 @@ You can save information about all installed platforms at once using the followi
 
 ```
 cordova platform save
-```  
+```
 
 The same is true for plugins, the following command adds the Cordova Device plugin to the project and saves the plugin information to the project's `config.xml` file:
 
@@ -60,7 +58,7 @@ While the following command saves information about each installed plugin to the
 cordova plugin save
 ```
 
-When you execute these commands, the Cordova CLI adds entries to the `config.xml` for platforms and plugins (depending on which commands you execute). Platforms are added as `engine` elements and plugins are added as `plugin` elements as shown at the end of the following sample `config.xml`:  
+When you execute these commands, the Cordova CLI adds entries to the `config.xml` for platforms and plugins (depending on which commands you execute). Platforms are added as `engine` elements and plugins are added as `plugin` elements as shown at the end of the following sample `config.xml`:
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
@@ -95,7 +93,7 @@ When you execute these commands, the Cordova CLI adds entries to the `config.xml
     </widget>
 ```
 
-Later on, when a developer or your build process checks out the code, the Cordova `prepare` command (executed automatically as part of a Cordova app build) automatically adds the platforms and projects back to the project and you're ready to go. 
+Later on, when a developer or your build process checks out the code, the Cordova `prepare` command (executed automatically as part of a Cordova app build) automatically adds the platforms and projects back to the project and you're ready to go.
 
 ## <a name="depends"></a> Installing Dependencies
 
@@ -103,22 +101,22 @@ Cordova builds require that a number of dependencies be properly installed and c
 
 Installing Visual Studio 2017 with the Tools for Apache Cordova (TACO) option will automatically install these dependencies but you will still need to configure some of the environment variables by hand for Android. See [Build Apache Cordova apps](http://go.microsoft.com/fwlink/?LinkID=691186) for a summary of these variables. Otherwise you can manually install only those dependencies that are needed for building the platforms you are interested in.
 
-1.	Install Node.js and make sure it is available to the system user you intend to have run your builds. The VSTS [Cordova Build extension](http://go.microsoft.com/fwlink/?LinkID=691188) and automatically ensures the correct version of Node.js is used for a given version of Cordova. Otherwise make sure you install the latest supported version of NodeJS for your target Cordova CLI version. Recent CLI releases are usually compatible with the latest long term support (LTS) version available at [https://nodejs.org](https://nodejs.org). 
+1.	Install Node.js and make sure it is available to the system user you intend to have run your builds. The VSTS [Cordova Build extension](http://go.microsoft.com/fwlink/?LinkID=691188) and automatically ensures the correct version of Node.js is used for a given version of Cordova. Otherwise make sure you install the latest supported version of NodeJS for your target Cordova CLI version. Recent CLI releases are usually compatible with the latest long term support (LTS) version available at [https://nodejs.org](https://nodejs.org).
 
 2.	Install the platform specific dependencies on the server and make them available to the same user. See the following guides for details:
 
     1.	[Android Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533774). A few notes:
 
         +	You do not need to install Android Studio. Instead you may download and install one of the ["SDK Tools Only" packages](http://go.microsoft.com/fwlink/?LinkID=533747). Click the **Download Options** link on the page to quickly get to the download.
-        
+
 		+	When building, you may encounter an error telling you that you need to install specific SDK versions or tools depending on the version of Cordova you are using. Note that these messages are talking about the *tools and SDK* versions *not* the device target versions.
         	+	You can install additional SDKs using [the Android SDK Manager](http://go.microsoft.com/fwlink/?LinkID=533775).
         	+	Note that only the "SDK Platform" is required for a given API level so you may uncheck other options. Android system images in particular are large and are not needed.
-            +	Be sure to also install the **platform tools**            
+            +	Be sure to also install the **platform tools**
 
     2.	macOS only: [iOS Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533776). You do not need to install the deployment tools mentioned.
 
-    3.	Windows only: See the [Windows Platfrom Guide](http://go.microsoft.com/fwlink/?LinkID=533777).        
+    3.	Windows only: See the [Windows Platfrom Guide](http://go.microsoft.com/fwlink/?LinkID=533777).
 
 ## <a name="proxy"></a> Internet Access & Proxy Setup
 
@@ -175,9 +173,9 @@ There are a few relatively common issues when building a Cordova app on macOS re
 	```
 
 	This is commonly seen with the **Ionic framework** due to the hook in `hooks/after_prepare` step.
-        
-3.  **You checked in the `platforms` folder from Windows and are seeing permission errors:** 
- 
+
+3.  **You checked in the `platforms` folder from Windows and are seeing permission errors:**
+
 	You should not run into this situation if you are using the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension, but if you are seeing errors that are originating from files in your project's `platforms` folder, the root cause may be that you checked in shell scripts under the `platforms/android/cordova` or `platforms/ios/cordova` folders from Windows. This is because the NTFS file system has no concept of the **execute** permission required to run these from macOS. The `platforms` folder is not intended to be checked in and by default are excluded from Cordova projects in Visual Studio as a result.
 
     For example, this error is saying the "version" script is not executable:
@@ -189,8 +187,8 @@ There are a few relatively common issues when building a Cordova app on macOS re
    ```
 
    To resolve this problem you have two options:
-   
-   1.  Don't check in the contents of the Cordova project's `platforms` folder into source control. The folder and associated platform files will be added automatically at build time by the Cordova CLI anyway.	
+
+   1.  Don't check in the contents of the Cordova project's `platforms` folder into source control. The folder and associated platform files will be added automatically at build time by the Cordova CLI anyway.
    2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute attributes on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](https://github.com/Microsoft/cordova-docs/tree/master/articles/tips-and-workarounds/ios/osx-set-execute) available for you to use.
 
 ## <a name="basic"></a> Behind the Scenes: Basic Workflow
@@ -201,7 +199,7 @@ The basic flow for building a Cordova app is simple on the surface:
 
 1.  Check the project source code out from source control.
 
-2.  If you saved the Cordova project's platform and plugin information to the project's `config.xml` file using the commands discussed earlier, the platforms and plugins will be added automatically during the build process. If you didn't, you'll need to add the platforms and plugins to the project manually using the `cordova platform add` and `cordova plugin add` CLI commands. 
+2.  If you saved the Cordova project's platform and plugin information to the project's `config.xml` file using the commands discussed earlier, the platforms and plugins will be added automatically during the build process. If you didn't, you'll need to add the platforms and plugins to the project manually using the `cordova platform add` and `cordova plugin add` CLI commands.
 
 3.  Build the project using the `cordova build` CLI command:
 
@@ -233,7 +231,7 @@ When building Cordova projects in a server environment, there are a number of ch
 
 1.	**Building with Multiple Versions of the Cordova CLI.** While in an ideal world everyone would use the edge version of the Cordova CLI and associated platforms, the reality is that for any build server you will need to support multiple versions of the Cordova CLI. This means that the common practice of installing Cordova globally will not work; each build would use its own Cordova CLI and NodeJS installations.
 
-2.	**Generating an iOS App Store Package.** A common issue that can arise is keychain permission errors during app signing that result in strange "User interaction not allowed" errors. 
+2.	**Generating an iOS App Store Package.** A common issue that can arise is keychain permission errors during app signing that result in strange "User interaction not allowed" errors.
 
 ### <a name="multicli"></a> Building with Multiple Versions of the Cordova CLI
 
@@ -354,7 +352,7 @@ However, there are a couple of common problems when executing this command that 
 1.	**Platform Download Messages Result in Build Failures.** Where things can get a bit tricky is that Node.js emits warnings to `stdout`.  The issue is that the Cordova CLI `cordova platform add` command can result in warnings being reported when the CLI is downloading a version of a given Cordova platform for the first time. This is not an error, but some build systems will assume anything sent to `stderr` means a build failure occurred.
 
     Many CI systems provide a "continue on error" option that you can select to get around this particular problem or you can pipe `stderr` to `stdout` if you'd prefer as shown in the following example:
-    
+
 	```
 	cordova platform add ios 2>&1
 	```
@@ -375,7 +373,7 @@ However, there are a couple of common problems when executing this command that 
     if [ ! -d "platforms/android" ]; then cordova platform add android; fi;
     ```
 
-### <a name="ipa"></a> Generating an iOS App Store Package 
+### <a name="ipa"></a> Generating an iOS App Store Package
 
 #### Solving iOS Keychain Permission Errors
 

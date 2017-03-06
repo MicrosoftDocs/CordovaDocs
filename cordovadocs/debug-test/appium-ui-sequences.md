@@ -1,8 +1,8 @@
-<properties pageTitle="Running UI sequences"
-  description="Running UI sequences"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Running UI sequences"
+description: "Running UI sequences"
+author: "kraigb"
+---
 
 # Running UI sequences
 
@@ -11,7 +11,7 @@ The WeatherApp sample contains a simple UI with an input field for a ZIP code an
 ![Two states of the Weather App UI, with weather data (left) and an error message (right)](media/running/01-weather-app.png)
 
 Even with a simple UI on a single page, there are many things to test in the UI: giving it good and bad input, checking error messages under a variety of conditions (like no connectivity), and checking for appropriate output (for example, notice that the sunrise and sunset times shown above are the same, which shouldn’t ever be the case).
- 
+
 In this section, though, we’ll focus on the foundational mechanics of writing and running simple *UI sequences* with Appium. The reason for this is simple: a UI sequence is the heart of a test, but it helps to understand how those sequences work independent of formal test structures. That is, the difference between a UI sequence and a test is that a test wraps a UI sequence in the appropriate code for your test framework and includes assertions. We’ll add that part in [Designing and writing UI tests](designing-ui-tests.md).
 
 
@@ -57,7 +57,7 @@ Now remember that Appium is a server that responds to HTTP requests. This means 
 - Chaining methods together (which uses built-in promises that are entirely hidden, referred to as “Q promises + chaining” on the **wd** page).
 - Chaining methods together with explicit *.then* promise structures.
 - Using the **yiewd** wrapper for **wd** along with the *yield* keyword.
- 
+
 As we’ll see, the first method is the most compact but has a few limitations. The second is more flexible but more verbose. The third introduces another dependency, but has the advantage of combining the best of the other two. It’ll really come down to your personal choice.
 
 When running all these tests, take a moment to observe that they do run fairly quickly, especially when using an attached device or an emulator that is already up and running. This is a great characteristic to have, because it means you can frequently run UI tests along with builds to catch regressions early, and also means that you’ll make efficient use of paid device or emulator test clouds such as Sauce Labs.
@@ -68,7 +68,7 @@ With this option, tests are written by stringing together a whole series of meth
 
 ```javascript
 	var appDriver = wd.promiseChainRemote({
-		hostname: 'localhost', 
+		hostname: 'localhost',
 		port: 4723,
 	});
 ```
@@ -82,9 +82,9 @@ You then make the same call to *init* with your configuration unchanged, and the
 	    .clear()                             // Clear its contents
 	    .sendKeys("95959")                   // Enter a value
 	    .elementById('get-weather-btn')      // Locate the Find Weather button
-	    .click()                             // Tap it 
+	    .click()                             // Tap it
 	    .sleep(5000)                         // Wait 5 seconds
-	    .quit();                             // Stop the app instead of waiting for a timeout  
+	    .quit();                             // Stop the app instead of waiting for a timeout
 ```
 
 Run test02.js in node:
@@ -132,18 +132,18 @@ To expand the promise chain you can use *.then* chaining on the promises involve
 	        // Tap the button
 	        return btnGetWeather.click();
 	    }).then(function () {
-	        // Wait five seconds 
+	        // Wait five seconds
 	        return appDriver.sleep(5000);
 	    }).fin(function () {  //.fin means "finally" for the end of the chain
 	        appDriver.quit()
 	    }).done();
 ```
 
-This code is functionally equivalent to what’s in test02.js, and again calls *wd.promiseChainRemote* to retrieve *appDriver*. In the chain, each *.then* takes a callback function as an argument, and that function receives an argument appropriate to the return value of the previous callback in the chain, such as an element from *elementById*. To make all this work, ensure that each callback includes *return* on the next call in the sequence. 
+This code is functionally equivalent to what’s in test02.js, and again calls *wd.promiseChainRemote* to retrieve *appDriver*. In the chain, each *.then* takes a callback function as an argument, and that function receives an argument appropriate to the return value of the previous callback in the chain, such as an element from *elementById*. To make all this work, ensure that each callback includes *return* on the next call in the sequence.
 
 This expanded structure is obviously more verbose than implicit chaining, but because you have explicit callbacks for each step you can include any other code you need therein. You can also see that test03.js saves the entry field element in an intermediate variable, *txtZip*, so it can be used in any later callback.
 
-Because both this approach and the implicit chaining approach use *wd.promiseChainRemote*, you can mix-and-match them as you see fit. That is, for tests that don’t need any intermediate work, you can use implicit chaining, and then expand the chain in specific cases. But as we’ll see next, using **yiewd** gives you the advantages of both together. 
+Because both this approach and the implicit chaining approach use *wd.promiseChainRemote*, you can mix-and-match them as you see fit. That is, for tests that don’t need any intermediate work, you can use implicit chaining, and then expand the chain in specific cases. But as we’ll see next, using **yiewd** gives you the advantages of both together.
 
 ## Using yiewd and yield (test04.js)
 
@@ -174,16 +174,16 @@ The resulting test code is then very clean, as seen in **[test04.js](https://git
 	    // 'this' is appDriver
 	    var session = yield this.init(config.android19Hybrid);
 	    yield this.sleep(3000);
-	    
+
 	    var txtZip = yield this.elementById('zip-code-input');
 	    yield txtZip.clear();
 	    yield txtZip.sendKeys("95959");
-	    
+
 	    var btnGetWeather = yield this.elementById('get-weather-btn');
 	    yield btnGetWeather.click();
-	    
+
 	    yield this.sleep(5000);
-	
+
 	    // OK to omit yield on the last call
 	    this.quit();
 	});

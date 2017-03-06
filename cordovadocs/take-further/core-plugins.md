@@ -1,24 +1,24 @@
-<properties
-   pageTitle="Visual Studio Core Plugins | Cordova"
-   description="Visual Studio Plugins"
-   services="na"
-   documentationCenter=""
-   authors="normesta"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="08/04/2016"
-   ms.author="normesta"/>
+---
+title: "Visual Studio Core Plugins | Cordova"
+description: "Visual Studio Plugins"
+services: "na"
+author: "normesta"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "08/04/2016"
+ms.author: "normesta"
+---
 
 # <a id="top"></a>Visual Studio Core Plugins
 
 ## Bonus: Try them all!
 
-The [Cordova Plugins Sampler](https://github.com/ryanjsalva/cordova-simulate-tests) is authored by Cordova expert and longtime Visual Studio engineer Ryan Salva ([@ryansalva](https://twitter.com/ryanjsalva)). Sample this supreme sampling of plugin samples and learn how to use plugins from Battery to Camera to Contacts and more. 
+The [Cordova Plugins Sampler](https://github.com/ryanjsalva/cordova-simulate-tests) is authored by Cordova expert and longtime Visual Studio engineer Ryan Salva ([@ryansalva](https://twitter.com/ryanjsalva)). Sample this supreme sampling of plugin samples and learn how to use plugins from Battery to Camera to Contacts and more.
 
 Feel free to download the [sample off Ryan's Github](https://github.com/ryanjsalva/cordova-simulate-tests) and play around. To open this project inside VS, go to 'File > New Project > Add project from existing code', and follow the import wizard.
 
@@ -62,7 +62,7 @@ Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-geolocati
 <button class="plugin-button-guide" onclick="window.location='https://github.com/normesta/cordova-plugin-inappbrowser/blob/master/README.md#sample-show-help-pages-with-an-inappbrowser';">Quick Guide</button>
 <br />
 
-Show helpful articles, videos, and web resources inside of your app. Users view documents without leaving your app.    
+Show helpful articles, videos, and web resources inside of your app. Users view documents without leaving your app.
 
 Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-inappbrowser/blob/master/README.md#sample-show-help-pages-with-an-inappbrowser) to show an article, a video, and a search page. You'll even handle errors, and inject a custom script and style.
 

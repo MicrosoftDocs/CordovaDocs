@@ -1,8 +1,8 @@
-<properties pageTitle="Primer on unit testing and continuous integration"
-  description="Primer on unit testing and continuous integration"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Primer on unit testing and continuous integration"
+description: "Primer on unit testing and continuous integration"
+author: "kraigb"
+---
 
 #A primer on unit testing and continuous integration
 Great apps—like great artists, actors, and athletes—are great performers. To validate and continually improve their performances, human beings undergo extensive training, practice, rehearsals, and after-the-fact reviews. In software development we achieve the same ends through many levels of rigorous testing across the entire application lifecycle.
@@ -13,7 +13,7 @@ Chances are you’ve heard about unit testing, but you might not be clear on wha
 
 Most forms of testing, such as functional testing, UI/acceptance testing, performance profiling, integration testing, security testing, usability testing, and so forth, all work with an app that’s been built and deployed to emulators or test devices. Testing then happens through the app’s user interface, which can be done manually or through scripts and other automation tools. Such testing, which has no knowledge of the app’s code, is referred to as “black box” testing.
 
-Unit testing, on the other hand, works directly against the app’s code, not its user interface. Unit tests validate the behaviors of *units* of code, namely your classes, methods, properties, and functions; as such, unit tests are fully aware about how the code under test works, and is an example of "white box" testing. Each unit test is itself a piece of code and although you typically write them in the same language as the app code, this is not technically required. 
+Unit testing, on the other hand, works directly against the app’s code, not its user interface. Unit tests validate the behaviors of *units* of code, namely your classes, methods, properties, and functions; as such, unit tests are fully aware about how the code under test works, and is an example of "white box" testing. Each unit test is itself a piece of code and although you typically write them in the same language as the app code, this is not technically required.
 
 Unit testing also occurs earliest in the application lifecycle: you can write tests alongside the app code, or even before any code is written (the approach of *test-driven development*). Unit testing is also unique in that it happens on development and/or build machines outside the context of mobile platforms, emulators, and app packages. Instead, a *test runner* feeds the code being tested along with the unit test code into a standalone runtime. For apps written using Apache Cordova, this means working with an independent JavaScript runtime.
 
@@ -42,7 +42,7 @@ A unit test, then, is a *separate* piece of code that makes a direct call to thi
 
 ```javascript
 	[Test name="doAdditionOperation test 1"
-    description="Adding 2 + 3 expecting 5"]
+description: "Adding 2 + 3 expecting 5"]
     {
 	    var expected = 5;
         var actual = doAdditionOperation(2, 3);

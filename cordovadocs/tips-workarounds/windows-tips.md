@@ -1,19 +1,20 @@
-<properties pageTitle="Windows tips and workarounds"
-  description="This is an article on bower tutorial"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="05/15/2016"
-     ms.author="kirupac"/>
+---
+title: "Windows tips and workarounds"
+description: "This is an article on bower tutorial"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "05/15/2016"
+ms.author: "kirupac"
+---
 
 #Windows tips and workarounds
-This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform. 
+This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform.
 
 <a name="windows"></a>
 ##Resolve Windows build and deployment errors

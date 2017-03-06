@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Access a native Cordova project | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="normesta"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="normesta"/>
+---
+title: "Access a native Cordova project"
+description: ""
+services: "na"
+author: "normesta"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "normesta"
+---
 # Access a native Cordova project
 
 When you create an app by using Visual Studio Tools for Apache Cordova, Visual Studio calls the Apache Cordova Command Line Interface (CLI) to build your app for the specified device or emulator. The resulting packages can be accessed from the bin folder in the Visual Studio project directory.
@@ -65,7 +65,7 @@ In some cases you may need to get access to the generated Xcode project to troub
     The final entries of the build output should look similar to this:
 	```
 	1>  ** BUILD SUCCEEDED **
-	1>  
+	1>
 	1>  Command finished with error code
 	    0:/Users/<username>/remote-builds/builds
 	    /8382/cordovaApp

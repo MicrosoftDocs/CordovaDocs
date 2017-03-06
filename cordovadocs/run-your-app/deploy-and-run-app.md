@@ -1,18 +1,19 @@
-<properties
-   pageTitle="Cordova build process in Visual Studio | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Mikejo5000"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="mikejo"/>
+---
+title: "Cordova build process in Visual Studio | Cordova"
+description: "description"
+services: "na"
+author: "Mikejo5000"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "mikejo"
+---
+
 # Cordova build process in Visual Studio
 
 The Cordova Command Line Interface (CLI) does most of the heavy lifting for Visual Studio when you build and run a Cordova app. To make the process of installing and managing Cordova native code plugins easy, the CLI uses plugman, another command line tool. The CLI requires a specific folder structure, shown here. Most of this folder structure is mirrored by Visual Studio.
@@ -45,6 +46,6 @@ To make the web browser development as fast as possible, the CLI is used to gene
 
 **Concepts**
 
-[Get Started with Visual Studio Tools for Apache Cordova](../index.md)  
-[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
-[Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md)  
+[Get Started with Visual Studio Tools for Apache Cordova](../index.md)
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
+[Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/build-your-first-app.md)

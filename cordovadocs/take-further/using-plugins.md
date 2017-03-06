@@ -1,18 +1,19 @@
-<properties
-   pageTitle="Manage plugins for apps built with Visual Studio Tools for Apache Cordova | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="normesta"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="normesta"/>
+---
+title: "Manage plugins for apps built with Visual Studio Tools for Apache Cordova | Cordova"
+description: "description"
+services: "na"
+author: "normesta"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "normesta"
+---
+
 # Manage plugins for apps built with Visual Studio Tools for Apache Cordova
 
 Apache Cordova uses plugins to provide access to native device capabilities that aren’t available to simple web apps, such as access to the file system. A plugin is a cross-platform Cordova library that accesses native code and device capabilities through a JavaScript interface. When required, the plugin also updates the platform manifest to enable device capabilities. Not all plugins are supported or needed on all device platforms.
@@ -83,5 +84,5 @@ At times, the custom plugins in the Cordova registry might not meet all your app
 If you need to extend your app using a custom plugin, check the plugin registry first and use code that others have already written. If an existing plugin is close to what you need, download it, make improvements, and then submit those changes to the original author. This is a great way of giving back to the Cordova community and making it easier for others to solve similar problems. Install the custom plugin using the configuration designer. When the plugin.xml file is next to the www folder in the project folder tree, the required JavaScript files from the plugin’s www folder will be loaded automatically at runtime. You do not need to reference these files from an HTML file. You can also set breakpoints within these code files if needed. The build process also compiles any platform-specific files in the src folder.
 
 ## See Also
-[Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)  
-[Cordova plugins registry](http://plugins.cordova.io) 
+[Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)
+[Cordova plugins registry](http://plugins.cordova.io)

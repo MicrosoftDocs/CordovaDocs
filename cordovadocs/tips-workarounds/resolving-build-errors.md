@@ -1,16 +1,17 @@
-<properties pageTitle="Android tips and workarounds"
-  description="This is an article on bower tutorial"
-  services=""
-  documentationCenter=""
-  authors="kirupa" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="09/10/2015"
-     ms.author="kirupac"/>
+---
+title: "Android tips and workarounds"
+description: "This is an article on bower tutorial"
+author: "kirupa"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "09/10/2015"
+ms.author: "kirupac"
+---
 
 #Resolve build and deployment errors
 

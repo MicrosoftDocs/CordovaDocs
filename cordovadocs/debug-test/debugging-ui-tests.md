@@ -1,8 +1,8 @@
-<properties pageTitle="Debugging UI tests"
-  description="Debugging UI tests"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Debugging UI tests"
+description: "Debugging UI tests"
+author: "kraigb"
+---
 
 # Debugging UI tests
 
@@ -20,7 +20,7 @@ For debugging purposes, change line 10 in [**test07.js**](https://github.com/Mic
 
 2.	Click the Debug icon (lower left in the image below), then click the gear icon (upper right), and select Node.js as the debugging environment when prompted.
 
-	![Debug icon in Visual Studio Code](media/debugging/01-debug-vs-code.png) 
+	![Debug icon in Visual Studio Code](media/debugging/01-debug-vs-code.png)
 
 3.	This creates and opens launch.json with several default configurations. Here’s we’ll create a new configuration specifically for debugging. Just add the code below within the *configurations* array:
 
@@ -51,15 +51,15 @@ For debugging purposes, change line 10 in [**test07.js**](https://github.com/Mic
 
 4.	Modify the path in “program” to the absolute path to the Mocha executable on your machine. What’s shown here for a typical location when installed with *npm install --g mocha*. On OS X, the path will likely be "/Users/myname/myfolder/node_modules/mocha/bin/_mocha". If you install Mocha instead as a dev dependency, you could use “${workspaceroot}\\node_modules\\mocha\\bin\\_mocha” (using /on OS X).
 
-5.	In both cases, be sure to point to **_mocha** (with the underscore) and not just *mocha*. This is essential because _mocha is the process that will actually load and run the test07.js file, and to which we want to attach the debugger. If you try to use *mocha* without the underscore, you’ll attach to its wrapper process and none of the breakpoints will be hit. 
+5.	In both cases, be sure to point to **_mocha** (with the underscore) and not just *mocha*. This is essential because _mocha is the process that will actually load and run the test07.js file, and to which we want to attach the debugger. If you try to use *mocha* without the underscore, you’ll attach to its wrapper process and none of the breakpoints will be hit.
 
 6.	Set breakpoints on the code you want to debug as shown by the red dots on the left in the image blow. Note that because of all the async calls to **wd** using **yiewd**, you won’t be able to simply step through each call as if they were synchronous. You’ll need to set breakpoints on each line that you want to examine.
 
-	![Setting breakpoints Visual Studio Code](media/debugging/02-debug-vs-code-breakpoint.png) 
+	![Setting breakpoints Visual Studio Code](media/debugging/02-debug-vs-code-breakpoint.png)
 
 7.	Check that line 10 of test07.js sets the *debugging* variable to true.
 
-8.	In Visual Studio Code, select your new configuration from the dropdown, then click the green arrow (or press F5) to start debugging. 
+8.	In Visual Studio Code, select your new configuration from the dropdown, then click the green arrow (or press F5) to start debugging.
 
 	![Specifying a debug configuration in Visual Studio Code](media/debugging/03-debug-vs-code-mocha.png)
 

@@ -1,8 +1,8 @@
-<properties pageTitle="Basic unit testing with Jasmine and Karma"
-  description="Basic unit testing with Jasmine and Karma"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Basic unit testing with Jasmine and Karma"
+description: "Basic unit testing with Jasmine and Karma"
+author: "kraigb"
+---
 
 #Basic unit testing in action with Jasmine and Karma
 
@@ -14,8 +14,8 @@ Following on the [Primer](unit-test-primer.md) and [Unit testing environments](u
 First, the unit is a simple function to convert a piece of JSON with one set of properties into an object with different properties. Save this code to ```js/normalize.js```:
 
 ```javascript
-/** @description Converts JSON data that may contain Name and PersonalIdentifier 
- *    properties to an object with the properties name (string) and id (positive 
+/** @description Converts JSON data that may contain Name and PersonalIdentifier
+ *    properties to an object with the properties name (string) and id (positive
  *    integer up to 9999999999.
  * @param {string} jsonIn The JSON data to normalize.
  * @return {object} An object with name (string) and id (integer) properties,
@@ -46,13 +46,13 @@ A unit test must follow the conventions of the test framework you’re using. In
 ```javascript
 // First argument to 'describe' (which is defined by Jasmine) is the testing module that will
 // appear in test reports. The second argument is a callback containing the individual tests.
- 
+
 describe("normalizeData", function () {
     // The 'it' function of Jasmine defined an individual test. The first argument is
     // a description of the test that's appended to the module name. Because a module name
     // is typically a noun, like the name of the function being tested, the description for
-    // an individual test is typically written in an action-data format. 
-    
+    // an individual test is typically written in an action-data format.
+
     it("accepts golden path data", function () {
         // Invoke the unit being tested as necessary
         var json = '{"Name": "Maria", "PersonalIdentifier": 2111858}';
@@ -72,7 +72,7 @@ Although it will seem tedious to keep every test isolated—which means you migh
 ##The test runner
 With the unit and unit test in hand, we now need a test runner that knows how to execute Jasmine tests and report results. For this first exercise, we’ll run tests on the command line using Karma, which you’ll need to install along with Jasmine as follows:
 
-1.	Make sure you have Node.js installed. This will already be the case if you’ve installed the Visual Studio Tools for Apache Cordova, otherwise visit [https://nodejs.org](https://nodejs.org).  
+1.	Make sure you have Node.js installed. This will already be the case if you’ve installed the Visual Studio Tools for Apache Cordova, otherwise visit [https://nodejs.org](https://nodejs.org).
 2.	Open a command prompt and navigate to the folder you created for this exercise.
 3.	Run the following commands:
 
@@ -104,7 +104,7 @@ With the unit and unit test in hand, we now need a test runner that knows how to
 	1.	For the framework, press Tab until you see ```Jasmine```
 	2.	For the files, enter ```js/**/*.js``` and ```test/**/*.js``` (matching the folders where we put our unit and unit test code, with ```**``` meaning “include all subfolders”)
 	3.	For the browser, select whichever you have installed. Note that browser names in the configuration file are case-sensitive, for example ```Chrome```, ```IE```, or ```Firefox```, whereas in their related npm package names they're lower case.
-	4.	Accept the defaults for everything else. 
+	4.	Accept the defaults for everything else.
 
 Again, see [karma-jasmine-cli](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-jasmine-cli) for the full sample code including a configuration file.
 
@@ -121,7 +121,7 @@ You’ll see the browser—a suitable JavaScript runtime—launch to run the tes
 
 ##Command-line test runners in Visual Studio
 
-At this point we have all the mechanics in place to run Jasmine unit tests with the Karma test runner from the command line. The ```karma``` command above can be easily run from within a longer build process defined with task runners like Grunt and gulp, including a build process for a Cordova app. See [Automate tasks for your Cordova project using gulp](../build-deploy/using-gulp-build-tasks.md) for details. Here, we'll just walk through how to integrate a Karma test run with Visual Studio using gulp. 
+At this point we have all the mechanics in place to run Jasmine unit tests with the Karma test runner from the command line. The ```karma``` command above can be easily run from within a longer build process defined with task runners like Grunt and gulp, including a build process for a Cordova app. See [Automate tasks for your Cordova project using gulp](../build-deploy/using-gulp-build-tasks.md) for details. Here, we'll just walk through how to integrate a Karma test run with Visual Studio using gulp.
 
 The Visual Studio that contains the code for this section can be found on [karma-jasmine-gulp-VS](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-jasmine-gulp-VS).
 
@@ -177,7 +177,7 @@ files: [
 
 ###Step 4: Create gulpfile.js
 
-Gulp is a popular JavaScript-based task runner with a large number of plugins to control many common tasks, including unit testing. For details on task automation with gulp, see [Automate tasks for your Cordova project using gulp](../build-deploy/using-gulp-build-tasks.md). For our purposes here, what we need to run unit tests through Visual Studio's task runner is a gulpfile.js that contains the definitions of the testing tasks. 
+Gulp is a popular JavaScript-based task runner with a large number of plugins to control many common tasks, including unit testing. For details on task automation with gulp, see [Automate tasks for your Cordova project using gulp](../build-deploy/using-gulp-build-tasks.md). For our purposes here, what we need to run unit tests through Visual Studio's task runner is a gulpfile.js that contains the definitions of the testing tasks.
 
 In Visual Studio's Solution Explorer, right click on the app project, select **Add > New JavaScript file...**, name the file gulpfile.js, and click **Add**.
 
@@ -194,7 +194,7 @@ gulp.task('test', function (done) {
     singleRun: true
   }, done).start();
 });
-```    
+```
 
 ###Step 5: Run tests in Task Runner Explorer
 
@@ -207,4 +207,3 @@ Right click on the **test** task and select **Run** to launch Karma and run the 
 ![Output for a Karma test in Task Runner Explorer](media/basics/02-running-tests-with-output.png)
 
 All that's happening here is that Visual Studio is launching gulp from the command line and showing the output. You can also directly run ```gulp``` from the command line in the project folder.
-

@@ -1,8 +1,8 @@
-<properties pageTitle="UI Testing Prerequisites"
-  description="UI Testing Prerequisites"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "UI Testing Prerequisites"
+description: "UI Testing Prerequisites"
+author: "kraigb"
+---
 
 # Prerequisites
 
@@ -101,7 +101,7 @@ Next, let’s create an initial test file to verify that **wd** is available. Cr
 
     // Some debug output to show default configurations
     console.log("appDriver.configUrl.host: " + appDriver.configUrl.host);
-    
+
     for (var property in appDriver.defaultCapabilities) {
         console.log("appDriver.defaultCapabilities." + property + ": " +
             appDriver.defaultCapabilities[property]);
@@ -118,5 +118,5 @@ Even though we haven’t set up and started the Appium server yet, the **wd** li
     appDriver.defaultCapabilities.version:
     appDriver.defaultCapabilities.javascriptEnabled: true
     appDriver.defaultCapabilities.platform: ANY
-    
+
 These capabilities contain a variety of values that describe a specific testing environment. As you can imagine, using a Firefox browser on an unspecified platform probably won’t cut it for Cordova apps. We’ll see how to do this shortly, but first we need to get the Appium server going as described in the next section.

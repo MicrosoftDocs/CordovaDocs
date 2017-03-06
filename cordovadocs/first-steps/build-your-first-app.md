@@ -1,18 +1,18 @@
-<properties
-   pageTitle="Getting Started with Visual Studio Tools for Apache Cordova | Cordova"
-   description="Getting Started with Visual Studio Tools for Apache Cordova"
-   services="na"
-   documentationCenter=""
-   authors="normesta, johnwargo"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev15"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="04/13/2016"
-   ms.author="johnwargo"/>
+---
+title: "Getting Started with Visual Studio Tools for Apache Cordova | Cordova"
+description: "Getting Started with Visual Studio Tools for Apache Cordova"
+services: "na"
+author: "normesta"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev15"
+ms.service: "na"
+ms.devlang: "javascript"
+ms.topic: "article"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.workload: "na"
+ms.date: "04/13/2016"
+ms.author: "johnwargo"
+---
 
 # Getting Started With Visual Studio Tools For Apache Cordova
 
@@ -31,15 +31,15 @@ The application displays current weather conditions based on the current device 
 
 1.	Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
 2.	In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears there, select **Blank App (Apache Cordova)** as shown in the figure:
-	
+
 	![Visual Studio: New JavaScript Project](media/vs-taco-2017-first-app/figure-02.png)
 
 	> [!NOTE]
 	> If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
-    
+
 	> ![Visual Studio: New TypeScript Project](media/vs-taco-2017-first-app/figure-03.png)
 
-3.	Name the project **WeatherApp**, specify a target folder, and then click the **OK** button to create the project. 
+3.	Name the project **WeatherApp**, specify a target folder, and then click the **OK** button to create the project.
 
 	During the project creation process, Visual Studio creates a **Solution** for the project then uses the Cordova command line interface (CLI) and other tools to create the Cordova application project folder structure, add platforms to the project (Android, iOS, and Windows), and populates the project's web application with default content from the template.
 
@@ -57,7 +57,7 @@ The following figure shows the project folder structure and files for the newly 
 
 The project's `www` folder contains the web application content files for the Cordova application, so most of your development will occur inside this folder.  Here you'll find the web application content that is packaged into a native mobile application by the Cordova SDK. The HTML, JavaScript, and CSS files in this folder will render in the Cordova app the same way they will in a mobile browser, so be sure to optimize the content for the smaller and more limited smartphones and tablets. The folder's `index.html` file is the main entry point for the web application, it's loaded by default when the Cordova application launches. The folder contains several subfolders that follow a typical web application folder structure:
 
-+ `css` - Stores the web application's Cascading Style Sheet (CSS) files. The `index.css` shown in the folder is the standard .css file included with the default Cordova application template. 
++ `css` - Stores the web application's Cascading Style Sheet (CSS) files. The `index.css` shown in the folder is the standard .css file included with the default Cordova application template.
 + `images` - Stores any image files used by the web application. The `cordova.png` file shown in the folder is the Cordova logo that displays in the center of the application screen in the default Cordova application template.
 + `scripts` - Stores JavaScript files used by the web application. The project's `index.js` file contains the bootstrap code that initializes the Cordova application; it registers callback functions for the Cordova `deviceReady`, `onPause` and `onResume` events. The `platformOverrides.js` file works in conjunction with similar files located in the `merges` folder to enable developers to deliver different code per target platform. See [merges Folder](#merges) for additional information.
 
@@ -71,76 +71,76 @@ For example, any content in the `merges\android` folder is copied to the Android
 
 To help deliver a consistent web application experience in Cordova apps, the default project created by Visual Studio Tools for Apache Cordova includes `platformOverrides.js` files for Android (in `merges\android\scripts\platformOverrides.js`) and Windows (in `merges\windows\scripts\platformOverrides.js`) along with a platform-specific JavaScript library. On Android, it adds a polyfill for `bind()` on older Android devices, and on Windows it adds Microsoft's safeHTML polyfill library. The `merges/ios` folder doesn't include a `platformOverrides.js` file, so there's no platform-specific override, iOS applications get the generic version of the file located in `www/scripts/platformOverriders.js`.
 
-![Visual Studio Cordova Project Structure](media/vs-taco-2017-first-app/figure-05.png) 
+![Visual Studio Cordova Project Structure](media/vs-taco-2017-first-app/figure-05.png)
 
 For additional information on how merges works, see [Using merges to Customize Each Platform](https://cordova.apache.org/docs/en/latest/guide/cli/#using-merges-to-customize-each-platform) in the Cordova documentation.
 
 ### <a id="res"></a>res Folder
 
 Apache Cordova uses the contents of the `res` folder to store non-web application resources used by a native mobile application such as [application icons](https://cordova.apache.org/docs/en/latest/config_ref/images.html), [splash screen](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html) images, signing certificates, etc.
- 
+
 ### Configuration Files
 
 The project includes several configuration files:
 
 + `bower.json` - Configuration file for the [Bower Package Manager](http://bower.io). Developers use Bower to install packages and libraries in a web application; [learn more about it here](./using-bower.md).
 + `build.json` - Configuration file for the Android and iOS build process. **Do not delete this file**, as the Cordova SDK uses it to build signed mobile app packages; [learn more about it here](../publishing/publish-to-a-store.md).
-+ `config.xml` - Cordova project configuration file, it contains settings that define options for the Cordova native mobile application including application name, plugin configuration, security settings, and more. **Do not delete this file**, the Cordova SDK will not be able to build and deploy applications without it. Visual Studio Tools for Apache Cordova includes a special editor for this file, abstracting away the file's XML into a simple interface to the file's settings. 
++ `config.xml` - Cordova project configuration file, it contains settings that define options for the Cordova native mobile application including application name, plugin configuration, security settings, and more. **Do not delete this file**, the Cordova SDK will not be able to build and deploy applications without it. Visual Studio Tools for Apache Cordova includes a special editor for this file, abstracting away the file's XML into a simple interface to the file's settings.
 + `package.json` - Configuration file for the Node Package Manager (npm). This file isn't used by Cordova projects today, but will eventually become more important when it replaces the `config.xml` as a Cordova project's primary configuration file in a future version of Apache Cordova.
 
 ## <a id="run"></a>Run The App Using Cordova Simulate
 
-The default Cordova project includes a simple application user interface and logic, enabling you to immediately run a simple sample application to validate that everything is working. In this section, we'll launch the application in order to highlight some of the capabilities of Visual Studio Tools for Apache Cordova; later, we'll add our own web content to complete the project. 
+The default Cordova project includes a simple application user interface and logic, enabling you to immediately run a simple sample application to validate that everything is working. In this section, we'll launch the application in order to highlight some of the capabilities of Visual Studio Tools for Apache Cordova; later, we'll add our own web content to complete the project.
 
 1.	On the Visual Studio Standard toolbar, click the **Simulate In Browser - Nexus 7 (Tablet)** button.
-	
+
 	> [!NOTE]
 	> Cordova Simulate requires the Google Chrome browser; make sure you have the browser installed before running the application.
-	
+
 	![Visual Studio Run Option](media/vs-taco-2017-first-app/figure-06.png)
-  
+
 	Visual Studio will launch [Cordova Simulate](simulate-in-browser.md), a browser-based Cordova application simulator. Cordova Simulate displays the Cordova application's content in a browser window sized for the target mobile device. Here you can interact with the application, using your mouse to simulate finger taps and touches. What you see in the figure is the default Cordova app, included with every Cordova project. It doesn't expose any application functionality you can interact with - it simply lets you know the app initialized correctly.
 
 	![Cordova Simulate Window](media/vs-taco-2017-first-app/figure-07.png)
 
-2.	Visual Studio exposes a set of panels you can use to manipulate options within the simulator. Switch back to Visual Studio and you'll see that it opened the **DOM Explorer** for you. Use the DOM explorer like you would other web development tools, navigating through the DOM hierarchy looking for specific elements, changing attributes, and poking and prodding at the app as it runs. 
+2.	Visual Studio exposes a set of panels you can use to manipulate options within the simulator. Switch back to Visual Studio and you'll see that it opened the **DOM Explorer** for you. Use the DOM explorer like you would other web development tools, navigating through the DOM hierarchy looking for specific elements, changing attributes, and poking and prodding at the app as it runs.
 
 	![Cordova Simulate Options](media/vs-taco-2017-first-app/figure-08.png)
 
 	Use the Plugin Controls window to simulate settings in the Cordova plugins added to the project. By default Visual Studio shows settings for the Geolocation and Device plugins, plus provides an interface you can use to fire certain events as the application runs. As you add additional Cordova plugins to your project, additional panes will appear in the Plugin Controls page for you to use.
 
-	![Cordova Simulate Options](media/vs-taco-2017-first-app/figure-09.png) 
+	![Cordova Simulate Options](media/vs-taco-2017-first-app/figure-09.png)
 
 3. Stop the Cordova Simulate debug session by clicking the **Stop** button in the Standard Toolbar.
 
 	![Visual Studio Stop Debugging button](media/vs-taco-2017-first-app/figure-10.png)
-    
-4.	You can also run your app on emulators and simulators for Android, iOS, and Windows devices.  First, choose a target mobile device platform from the platform list on the Standard toolbar. 
-	
+
+4.	You can also run your app on emulators and simulators for Android, iOS, and Windows devices.  First, choose a target mobile device platform from the platform list on the Standard toolbar.
+
 	![Available Target Platforms](media/vs-taco-2017-first-app/figure-11.png)
 
 	> [!NOTE]
-	> Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for guidance on how to configure your development environment for iOS.   
-	
+	> Deploying to iOS simulators or devices requires access to a Apple Mac configured with Xcode and the Visual Studio remotebuild module. Refer to [Visual Studio Tools for Apache Cordova: iOS Guide](ios-guide.md) for guidance on how to configure your development environment for iOS.
+
 	Next, click the drop-down arrow on the deployment target in the Standard toolbar to see a list of available targets. Choose a deployment target from the list and Visual Studio will build the app and deploy it to the selected device, emulator or simulator.
 
 	![Available Deployment Targets](media/vs-taco-2017-first-app/figure-12.png)
-   
-	If a particular emulator or simulator family is missing from the list of available options, click the **Install** item in the list to add them to your system's configuration. Visual Studio Tools for Apache Cordova doesn't install all available targets by default, but provides this simple mechanism for adding targets to an existing system. 
+
+	If a particular emulator or simulator family is missing from the list of available options, click the **Install** item in the list to add them to your system's configuration. Visual Studio Tools for Apache Cordova doesn't install all available targets by default, but provides this simple mechanism for adding targets to an existing system.
 
 ## <a id="settings"></a>Configure The Cordova Native Application
 
-The configuration settings for the Cordova native application are maintained in the project's `config.xml` file. Rather than force you to manually edit the file's XML content, Visual Studio Tools for Apache Cordova includes a custom editor that abstracts away the complexities of XML and enables you to set the file's properties using standard Windows input fields. 
+The configuration settings for the Cordova native application are maintained in the project's `config.xml` file. Rather than force you to manually edit the file's XML content, Visual Studio Tools for Apache Cordova includes a custom editor that abstracts away the complexities of XML and enables you to set the file's properties using standard Windows input fields.
 
 To edit the project's `config.xml`, double-click on the file in the Visual Studio Solution Explorer; Visual Studio will open the custom editor for the file shown in the following figure:
 
-![Visual Studio Cordova config.xml Editor](media/vs-taco-2017-first-app/figure-13.png) 
+![Visual Studio Cordova config.xml Editor](media/vs-taco-2017-first-app/figure-13.png)
 
 The editor exposes the following options:
 
 + **Toolset** - Used to configure the target Cordova platform and tools version for the application; you can learn more about this feature [here](toolsets.md).
 + **Common** - Used to define Cordova application settings that apply to all target platforms (such as display name, start page, application version, and more).
-+ **Plugins** - Used to add and remove Cordova plugins to/from the project. 
++ **Plugins** - Used to add and remove Cordova plugins to/from the project.
 + **Windows** - Used to define settings for the Windows Store version of the application.
 + **Android** - Used to define settings for the Android version of the application (such as minimum and maximum API versions and other properties for the application).
 + **iOS** - Used to define settings for the iOS version of the application (such as target device and target OS version, and other properties for the application).
@@ -152,32 +152,32 @@ If you want, give the app a more appropriate **Display Name**, modify the **appl
 
 ## <a id="build-something"></a>Creating The Sample Application
 
-Now that you have a functional Cordova application project, lets remove the boilerplate web application content included in the default Cordova application project and replace it with the weather app code. 
+Now that you have a functional Cordova application project, lets remove the boilerplate web application content included in the default Cordova application project and replace it with the weather app code.
 
 ### Add jQuery Packages to the Project
 
 The application uses the [**jQuery**](https://jquery.com/) and [**jQuery Mobile**](https://jquerymobile.com/) libraries to help craft the app's UI and simplify the code. jQuery is a JavaScript library that makes certain tasks easier such as changing the properties of a control or handling its events. jQuery Mobile is a touch-optimized HTML5 UI framework, built on jQuery, designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices. Together, they give us a quick way to style the application without having to do custom CSS work.
 
-Let's add the JQuery and JQuery Mobile NuGet packages to the project. 
+Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 > [!NOTE]
 > Before starting the following steps, point your browser of choice to [the jQuery Mobile download site](http://jquerymobile.com/download/) to note which version of the jQuery library is compatible with the current shipping release of jQuery Mobile. At the time of this writing, jQuery Mobile version 1.4.5 is compatible with jQuery version 1.8 through 1.11. In the steps that follow, be sure you install compatible versions of both frameworks. The NuGet Package Manager should deploy compatible versions of dependent libraries, but it's best to make sure first.
 
-1.	In Visual Studio, open **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery.Mobile** NuGet package to your solution.     
+1.	In Visual Studio, open **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery.Mobile** NuGet package to your solution.
 
 	![NuGet Package Installer](media/vs-taco-2017-first-app/figure-14.png)
 
 	When you click the **Install** button, the NuGet Package Manager will display a confirmation dialog highlighting the components being installed. Notice that it's installing jQuery version 1.8 rather than the latest version for compatibility reasons.
 
-    ![NuGet Package Installer Confirmation](media/vs-taco-2017-first-app/figure-15.png) 
+    ![NuGet Package Installer Confirmation](media/vs-taco-2017-first-app/figure-15.png)
 
 2.	NuGet adds files to the Visual Studio project's `Scripts` folder, but they really belong in the Cordova project's `www\scripts` folder. Drag all of the **.js** files from the `Scripts` folder to the `www/scripts` folder as shown in the figure.
 
-    ![Dragging .js Files to the Target Folder](media/vs-taco-2017-first-app/figure-16.png)  
+    ![Dragging .js Files to the Target Folder](media/vs-taco-2017-first-app/figure-16.png)
 
 3.	NuGet also installs the frameworks' CSS files to the Visual Studio project's `Content` folder, but they really belong in the Cordova project's `www\css` folder. Drag the **images** folder plus all of the **.css** files from the project's `Content` folder to the `www\css` folder as shown in the figure.
 
-    ![Dragging CSS Files to the Target Folder](media/vs-taco-2017-first-app/figure-17.png)    
+    ![Dragging CSS Files to the Target Folder](media/vs-taco-2017-first-app/figure-17.png)
 
 4.	Add this script reference to the `<body>` tag of your project's [index.html](#tour-project) file. Place the content at the bottom of the body section, where the other JavaScript references are located:
 
@@ -212,7 +212,7 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 The Cordova project's `index.html` is the default page for the application; the Cordova native application loads the page as the app's main screen when a Cordova application launches. To create the application's UI, we'll add content to this file.
 
 > [!NOTE]
-> You can change the default page by populating the **Start Page** property in the project's `config.xml` file using the [Configuration Editor](#settings).   
+> You can change the default page by populating the **Start Page** property in the project's `config.xml` file using the [Configuration Editor](#settings).
 
 1.	Open the project's `www\css\index.css` file and replace its content with the following:
 
@@ -249,7 +249,7 @@ The Cordova project's `index.html` is the default page for the application; the 
     #error-msg {
         text-align: center;
         margin-top:  50%;
-        font-weight: bold;    
+        font-weight: bold;
     }
     ```
 2.	Open the project's `www\index.html` file, and remove the following markup:
@@ -261,7 +261,7 @@ The Cordova project's `index.html` is the default page for the application; the 
         	<p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
         </div>
-    </div>    
+    </div>
     ```
 	The markup is just part of the default Cordova web application template that we won't be using.
 
@@ -303,8 +303,8 @@ The Cordova project's `index.html` is the default page for the application; the 
 
     </div>
     ```
- 
-	This code creates the application's main UI. It adds an input form to the page with a single search input field and button. It also adds a jQuery Mobile ListView to render the weather forecast for the selected location. 
+
+	This code creates the application's main UI. It adds an input form to the page with a single search input field and button. It also adds a jQuery Mobile ListView to render the weather forecast for the selected location.
 
 ### Add The Find Weather Button Click Listener
 
@@ -312,7 +312,7 @@ Next we'll add code that reacts to the user tapping the **Find Weather** button.
 
 1.	Open the project's `www\scripts\index.js` file, and remove the following code from the file's `onDeviceReady` function.
 
-    ```javascript    
+    ```javascript
     var parentElement = document.getElementById('deviceready');
     var listeningElement = parentElement.querySelector('.listening');
     var receivedElement = parentElement.querySelector('.received');
@@ -321,26 +321,26 @@ Next we'll add code that reacts to the user tapping the **Find Weather** button.
     ```
 
 	This code updates the main page to indicate that the Cordova container finished initializing; we've already replaced the HTML markup that this code refers to, so it's no longer needed.
- 
+
 2.	Next, add the following line of code to `www\scripts\index.js` file's `onDeviceReady` function.
 
     ```javascript
     $('#get-weather-btn').click(getWeatherWithZipCode);
     ```
 
-    This code adds a click listener to the **Find Weather** button, executing the `getWeatherWithZipCode` function every time the button is tapped. The `getWeatherWithZipCode` function doesn't exist yet, but we'll add it soon. 
+    This code adds a click listener to the **Find Weather** button, executing the `getWeatherWithZipCode` function every time the button is tapped. The `getWeatherWithZipCode` function doesn't exist yet, but we'll add it soon.
 
 #### A Quick Look At index.js
 
 This is a good time to take a quick look at the project's `index.js` file. This file loads when the user runs the app because the `index.html` page contains this reference to it:
 
-```html       
+```html
 <script src="scripts/index.js"></script>
 ```
 
 You'll notice a few things about the `index.js` file. First, all the code in that file is enclosed within an *anonymous self-invoking function* (or *Immediately Invoked Function Expression*, or [*IIFE*](https://developer.mozilla.org/docs/Glossary/IIFE)). This is a fancy way of saying that this function executes automatically when the file loads.
 
-```javascript      
+```javascript
 (function () {
     "use strict";
 
@@ -354,23 +354,23 @@ You'll notice a few things about the `index.js` file. First, all the code in tha
 
 The function adds an event handler for the Cordova `deviceready` event; the event fires after the Cordova native application container finishes initializing.
 
-Cordova plugins extend the capabilities available to a Cordova application. In general, they expose native application functionality to the web application running in the Cordova container. Cordova publishes plugins for standard native capabilities like **Camera**, **Device Motion** (accelerometer), **Device Orientation** (compass), and so on. Third-party developers also produce Cordova plugins you can use in your Cordova apps. These plugins expose APIs through a JavaScript interface in the application, and Cordova applications cannot make calls to any Cordova plugin APIs until after the native container has initialized.   
+Cordova plugins extend the capabilities available to a Cordova application. In general, they expose native application functionality to the web application running in the Cordova container. Cordova publishes plugins for standard native capabilities like **Camera**, **Device Motion** (accelerometer), **Device Orientation** (compass), and so on. Third-party developers also produce Cordova plugins you can use in your Cordova apps. These plugins expose APIs through a JavaScript interface in the application, and Cordova applications cannot make calls to any Cordova plugin APIs until after the native container has initialized.
 
-```javascript      
+```javascript
 function onDeviceReady() {
     // Cordova initialized, the app can call any Cordova APIs now
 
 };
 ```
 
-The `onDeviceReady` function is used to kick off any application processes that leverage any Cordova APIs, or at least set a flag that indicates to the application that it can use the Cordova APIs. As you'll see later, we'll use this function to populate the current weather conditions for the device's current location on application startup. 
+The `onDeviceReady` function is used to kick off any application processes that leverage any Cordova APIs, or at least set a flag that indicates to the application that it can use the Cordova APIs. As you'll see later, we'll use this function to populate the current weather conditions for the device's current location on application startup.
 
 ### Get an OpenWeatherMap API Key
 
 The app we're creating uses the free [OpenWeatherMap](http://openweathermap.org/) service to retrieve weather conditions for a location. Before you can use the service, you must setup an account and request an API key for their Current Conditions API. Point your browser to [OpenWeatherMap](https://home.openweathermap.org/) and setup an account. Once you have a valid login, go to the service's [API page](http://openweathermap.org/api) and subscribe to the **Current Weather data** service, and then generate an API key.
 
 > [!NOTE]
-> Make note of the API key as you'll need it later in the app's JavaScript code. 
+> Make note of the API key as you'll need it later in the app's JavaScript code.
 
 ### Add Code To Get Current Weather Conditions
 
@@ -381,8 +381,8 @@ Now we'll add the function that responds to the **Find Weather** button's `click
     ![Create weather.js file](media/vs-taco-2017-first-app/figure-18.png)
 
 2.	Visual Studio will open the newly created `weather.js` file for editing. Paste the following code into the file:
-		
-	 ```javascript       
+
+	 ```javascript
     var OpenWeatherAppKey = "Your_Key_Here";
 
     function getWeatherWithZipCode() {
@@ -431,16 +431,16 @@ Now we'll add the function that responds to the **Find Weather** button's `click
     The `getWeatherWithZipCode` function retrieves the zip code from the input field, and calls the OpenWeatherMap service to get the weather for the specified location. The `showWeatherData` function updates the page with the current weather conditions retrieved from the service.
 
 	If you ran the code now, nothing interesting would happen. We still have to tell the application to use the code in the `weather.js` file.
-    
+
 3.	Open the project's `www\index.html` page, and add the following `script` tag to the `<body>` of the page (at the bottom of the body section, where the other JavaScript references are located).
 
-	```html   
+	```html
     <script src="scripts/weather.js"></script>
 	```
 
     When you're done, the list of scripts loaded by the `index.html` should look like the following:
 
-	```html   
+	```html
     <script src="scripts/jquery-1.8.0.min.js"></script>
     <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
@@ -461,7 +461,7 @@ Now we'll add the function that responds to the **Find Weather** button's `click
     ```html
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:
     http://api.openweathermap.org https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
-    'unsafe-inline'; media-src *">           
+    'unsafe-inline'; media-src *">
     ```
 
     > [!NOTE]
@@ -473,9 +473,9 @@ Now we'll add the function that responds to the **Find Weather** button's `click
 
 	This approach is fine during development, but before you put an application into production, you should restrict access to only the domains that you know the app needs to access.
 
-	To fix this, open the Cordova Configuration Editor then access the **Common** tab. Click the **Add new URI** button then populate the input field with **http://api.openweathermap.org**. Next, click the **Remove** button next to the `*` entry. The end result should look like the following:	
+	To fix this, open the Cordova Configuration Editor then access the **Common** tab. Click the **Add new URI** button then populate the input field with **http://api.openweathermap.org**. Next, click the **Remove** button next to the `*` entry. The end result should look like the following:
 
-    ![Cordova Configuration Editor: Restricted Domain Access](media/vs-taco-2017-first-app/figure-20.png)	
+    ![Cordova Configuration Editor: Restricted Domain Access](media/vs-taco-2017-first-app/figure-20.png)
 
 ## Run The App In An Android Emulator
 
@@ -505,7 +505,7 @@ A big benefit of Visual Studio is its powerful debugger. If you're already famil
 
 ### Set Breakpoints and Conditional Breakpoints
 
-You can set a breakpoint on any line of executable code (including the JavaScript code) within the application, view the state of the Cordova application, monitor variable values, review call stacks, and more. In the following figure, you can see that a breakpoint has been set on the line of code that calls the weather service to retrieve data. Visual Studio highlights the entire scope of the selected line; when running the app from within the IDE (on an emulator, simulator or physical device) Visual Studio will stop execution when it reaches that line and open the debugger to enable you to interact with the code. 
+You can set a breakpoint on any line of executable code (including the JavaScript code) within the application, view the state of the Cordova application, monitor variable values, review call stacks, and more. In the following figure, you can see that a breakpoint has been set on the line of code that calls the weather service to retrieve data. Visual Studio highlights the entire scope of the selected line; when running the app from within the IDE (on an emulator, simulator or physical device) Visual Studio will stop execution when it reaches that line and open the debugger to enable you to interact with the code.
 
 ![Execution Break](media/vs-taco-2017-first-app/figure-24.png)
 
@@ -515,7 +515,7 @@ The JavaScript console displays messages generated by the application's JavaScri
 
 ![Visual Studio JavaScript Console](media/vs-taco-2017-first-app/figure-25.png)
 
-You can use the `console.log` method to log messages and then view those messages in the console. You can also use the console to execute any JavaScript function while the application is running. [Learn more about the JavaScript Console](https://developers.google.com/web/tools/chrome-devtools/console/). As an example, to generate the output highlighted output in the figure, the following code was added to the beginning of the `getWeatherWithZipCode` function: 
+You can use the `console.log` method to log messages and then view those messages in the console. You can also use the console to execute any JavaScript function while the application is running. [Learn more about the JavaScript Console](https://developers.google.com/web/tools/chrome-devtools/console/). As an example, to generate the output highlighted output in the figure, the following code was added to the beginning of the `getWeatherWithZipCode` function:
 
 ```console.log('entering getWeatherWithZipCode');```
 
@@ -527,7 +527,7 @@ Use the DOM Explorer to find and fix layout issues in your pages. Examine the st
 
 ## <a id="capability"></a>Access Device Capabilities Through Plugins
 
-Most likely you'll want your app to do more than just show web pages on a mobile device. You might want your app to store files, receive push notifications, or capture images by using the device's camera. This is where **Cordova plugins** becomes handy. Apache Cordova uses plugins to deliver access to native device capabilities that aren’t typically available to web applications. 
+Most likely you'll want your app to do more than just show web pages on a mobile device. You might want your app to store files, receive push notifications, or capture images by using the device's camera. This is where **Cordova plugins** becomes handy. Apache Cordova uses plugins to deliver access to native device capabilities that aren’t typically available to web applications.
 
 The Visual Studio [Configuration Editor](#settings) Plugin tab provides an interface that enables you to add and remove plugins from a Cordova application project. The **Core** tab lists the core Cordova plugins, plugins published and maintained by the Cordova development team. The green checkboxes shown in the figure indicate installed plugins. The **Installed** tab lists only the plugins that are installed in the application.
 
@@ -555,26 +555,26 @@ Let's add a plug-in that gives us access to the device's geolocation capabilitie
 
 3.	In the project's `www\scripts\weather.js` file add the following code right after the `getWeatherWithZipCode` function
 
-	```javascript       
+	```javascript
 	function getWeatherWithGeoLocation() {
 	 	//Call the Cordova Geolocation API
 	    navigator.geolocation.getCurrentPosition(onGetLocationSuccess, onGetLocationError,
-	    	{ enableHighAccuracy: true });    
+	    	{ enableHighAccuracy: true });
 		$('#error-msg').show();
 	    $('#error-msg').text('Determining your current location ...');
 	    $('#get-weather-btn').prop('disabled', true);
 	}
-	
+
 	function onGetLocationSuccess(position) {
 		//Retrieve the location information from the position object
 		var latitude = position.coords.latitude;
 	    var longitude = position.coords.longitude;
-	
+
 	    var queryString = 'http://api.openweathermap.org/data/2.5/weather?lat='
 	        + latitude + '&lon=' + longitude + '&appid=' + OpenWeatherAppKey + '&units=imperial';
-	
+
 	    $('#get-weather-btn').prop('disabled', false);
-	
+
 	    $.getJSON(queryString, function (results) {
 	        showWeatherData(results);
 	    }).fail(function (jqXHR) {
@@ -582,11 +582,11 @@ Let's add a plug-in that gives us access to the device's geolocation capabilitie
 	        $('#error-msg').text("Error retrieving data. " + jqXHR.statusText);
 	    });
 	}
-	
+
 	function onGetLocationError(error) {
 	    $('#error-msg').text('Error getting location');
 	    $('#get-weather-btn').prop('disabled', false);
-	}  
+	}
 
 	```
 
@@ -604,16 +604,16 @@ Let's add a plug-in that gives us access to the device's geolocation capabilitie
 		// Handle the Cordova pause and resume events
 		document.addEventListener( 'pause', onPause.bind( this ), false );
 		document.addEventListener('resume', onResume.bind(this), false);
-		$('#get-weather-btn').click(getWeatherWithZipCode);                       
-	
+		$('#get-weather-btn').click(getWeatherWithZipCode);
+
 		//Populate the page with the current location's weather conditions
 		getWeatherWithGeoLocation();
 	};
      ```
 
 5.	Run the app using Cordova Simulate or one of the Android emulators. When the app starts, the page will display *Determining your current location ...* as it queries the Cordova Geolocation API for the current location. After a short pause, weather conditions for the current location displays on the page.
-   
-	To adjust the simulated device location in Cordova Simulate, switch to the Visual Studio **Plugin Controls** window (it opens automatically when you launch Cordova Simulate) and enter latitude and longitude values for the location then reload the app in the Cordova Simulate browser. Cordova Simulate automatically refreshes web content when you change it in Visual Studio, but since the app checks the current location on application start up, you'll need to restart the Cordova Simulate session in Visual Studio to see the location change within the app. 
+
+	To adjust the simulated device location in Cordova Simulate, switch to the Visual Studio **Plugin Controls** window (it opens automatically when you launch Cordova Simulate) and enter latitude and longitude values for the location then reload the app in the Cordova Simulate browser. Cordova Simulate automatically refreshes web content when you change it in Visual Studio, but since the app checks the current location on application start up, you'll need to restart the Cordova Simulate session in Visual Studio to see the location change within the app.
 
 	![Cordova Simulate Geolocation Controls](media/vs-taco-2017-first-app/figure-31.png)
 
@@ -634,7 +634,7 @@ The code that you used to get the device's location works pretty well across all
 3.	In **Solution Explorer**, expand the `merges` folder, then the `android` folder.
 
 4.	Right-click on the `scripts` folder, and then choose **paste**. You'll now have a copy of `weather.js` in `merges\android\scripts` folder.
-    
+
 	![Platform-Specific Javascript File](media/vs-taco-2017-first-app/figure-33.png)
 
 5.	In the `weather.js` file (located in the `merges\android\scripts` folder), add the following code to the `showWeatherData` function.
@@ -648,7 +648,7 @@ The code that you used to get the device's location works pretty well across all
     ![Platform-Specific Javascript File](media/vs-taco-2017-first-app/figure-34.png)
 
     Making a copy of a file this large to change one line of code is an extreme example, but you can begin to imagine the possibilities, and you can always refactor your code in ways that leverage the `merges` folder more efficiently.
-    
+
 ### Tailor The Appearance of Your App
 
 In some cases, you'll want to tweak the layout of your pages so that they appear correctly for one type of device or another.
@@ -700,7 +700,7 @@ In some cases, you'll want to tweak the layout of your pages so that they appear
     #error-msg {
         text-align: center;
         margin-top:  50%;
-        font-weight: bold;    
+        font-weight: bold;
     }
 
     .ui-bar-inherit.ui-header.header {
@@ -727,7 +727,7 @@ In some cases, you'll want to tweak the layout of your pages so that they appear
 6.	Run your app in Cordova Simulate.
 
     The app header has a blue background because the `index.css` file in `merges\android\css` folder replaced the `index.css` file in the `www\css` folder for the Android version of your app.
-    
+
 	![Platform-Specific Appearance](media/vs-taco-2017-first-app/figure-36.png)
 
 ## <a id="next-steps"></a>Next steps
@@ -736,11 +736,11 @@ Congratulations on building your first cross-platform mobile app using Apache Co
 
 **Connecting to Existing Data**
 
-Want to pull in data from sites like [StackExchange](https://api.stackexchange.com/) or [Github](https://developer.github.com/v3/)? How about your own database? 
+Want to pull in data from sites like [StackExchange](https://api.stackexchange.com/) or [Github](https://developer.github.com/v3/)? How about your own database?
 
 Just like any browser, your Cordova app supports HTTP requests and Ajax calls. However, Cordova adds additional security to filter which scripts, CSS files, map files and data files can be pulled into your app:
 
-* The [Cordova Whitelist Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/) (which is automatically added into every project) controls which domains the native application can access. 
+* The [Cordova Whitelist Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/) (which is automatically added into every project) controls which domains the native application can access.
 * A Content Security Policy meta tag in an `index.html` (`<meta http-equiv="Content-Security-Policy" ... />`) controls which network requests (images, XHRs, etc) are authorized after your app has loaded.
 
 Additionally, the server or servers that you request data from may have additional security that restricts your app from being able to pull resources into your app:
@@ -749,7 +749,7 @@ Additionally, the server or servers that you request data from may have addition
 
 **Easy Backend Set Up with Microsoft Azure**
 
-Get straight to building by hooking your app up to Azure. Azure offers a Mobile App service that utilizes Easy Tables to get your app connected to a SQL database with only a couple lines of JavaScript. [This helpful guide](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) takes you through the process of creating a mobile app backend, and ends with the option of creating a quickstart Cordova app, or adding connections to an existing app. 
+Get straight to building by hooking your app up to Azure. Azure offers a Mobile App service that utilizes Easy Tables to get your app connected to a SQL database with only a couple lines of JavaScript. [This helpful guide](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) takes you through the process of creating a mobile app backend, and ends with the option of creating a quickstart Cordova app, or adding connections to an existing app.
 
 **Explore Available Cordova plugins**
 
