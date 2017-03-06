@@ -2,7 +2,7 @@
 title: "Visual Studio Tools for Apache Cordova | Cordova"
 description: "Visual Studio Tools for Apache Cordova"
 services: "na"
-author: "jomatthi"
+author: "jmatthiesen"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"
