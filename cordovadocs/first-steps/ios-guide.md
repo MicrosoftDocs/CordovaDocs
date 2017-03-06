@@ -10,7 +10,7 @@ ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
-ms.date: "11/10/2016"
+ms.date: "11/11/2016"
 ms.author: "johnwargo"
 ---
 
