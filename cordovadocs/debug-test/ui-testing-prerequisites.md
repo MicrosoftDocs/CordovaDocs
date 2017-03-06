@@ -1,7 +1,7 @@
 ---
 title: "UI Testing Prerequisites"
 description: "UI Testing Prerequisites"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 # Prerequisites

@@ -2,7 +2,7 @@
 title: "Run Your Apache Cordova App on Android"
 description: "description"
 services: "na"
-author: "Mikejo5000, johnwargo"
+author: "mikejo5000"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

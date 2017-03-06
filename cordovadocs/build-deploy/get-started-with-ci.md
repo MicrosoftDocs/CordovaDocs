@@ -1,7 +1,7 @@
 ---
 title: "Get Started with Continuous Integration (CI)"
 description: "Get Started with Continuous Integration (CI)"
-author: "clantz, johnwargo"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

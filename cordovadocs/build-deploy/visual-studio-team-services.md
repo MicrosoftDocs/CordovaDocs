@@ -1,7 +1,7 @@
 ---
 title: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
 description: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
-author: "clantz, johnwargo"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

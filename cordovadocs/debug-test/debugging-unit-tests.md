@@ -1,7 +1,7 @@
 ---
 title: "Debugging unit tests"
 description: "Debugging unit tests"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Debugging unit tests

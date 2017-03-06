@@ -2,7 +2,7 @@
 title: "Visual Studio Tools for Apache Cordova: iOS Guide | Cordova"
 description: "Visual Studio Tools for Apache Cordova: iOS guide"
 services: "na"
-author: "normesta, johnwargo"
+author: "normesta"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

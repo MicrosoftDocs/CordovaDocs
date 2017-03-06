@@ -1,7 +1,7 @@
 ---
 title: "Appium setup"
 description: "Appium setup"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Appium setup

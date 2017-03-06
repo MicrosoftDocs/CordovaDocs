@@ -1,7 +1,7 @@
 ---
 title: "Using mocks"
 description: "Using mocks"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Using mocks for platform APIs, plugins, and other external dependencies

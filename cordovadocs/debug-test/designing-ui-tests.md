@@ -1,7 +1,7 @@
 ---
 title: "Designing and writing UI tests"
 description: "Designing and writing UI tests"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 # Designing and writing UI tests

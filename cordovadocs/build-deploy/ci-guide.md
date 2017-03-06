@@ -1,7 +1,7 @@
 ---
 title: "Continuous Integration for Apache Cordova Apps"
 description: "Continuous Integration for Apache Cordova Apps"
-author: "clantz, johnwargo"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

@@ -1,7 +1,7 @@
 ---
 title: "Using the Chutzpah test runner"
 description: "Using the Chutzpah test runner"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Using the Chutzpah test runner with a Cordova App project

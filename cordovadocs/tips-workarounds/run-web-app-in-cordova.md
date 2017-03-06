@@ -2,7 +2,7 @@
 title: "Run Your Hosted Web App in an Apache Cordova App"
 description: "description"
 services: "na"
-author: "Mikejo5000, johnwargo"
+author: "mikejo5000"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

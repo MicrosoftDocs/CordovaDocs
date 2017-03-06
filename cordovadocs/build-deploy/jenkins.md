@@ -1,7 +1,7 @@
 ---
 title: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
 description: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
-author: "clantz, johnwargo"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

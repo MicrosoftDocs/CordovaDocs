@@ -1,7 +1,7 @@
 ---
 title: "Improving tests/test-driven development"
 description: "Improving tests/test-driven development"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Improving the unit tests: an introduction to test-driven development

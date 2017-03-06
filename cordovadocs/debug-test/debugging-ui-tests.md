@@ -1,7 +1,7 @@
 ---
 title: "Debugging UI tests"
 description: "Debugging UI tests"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 # Debugging UI tests

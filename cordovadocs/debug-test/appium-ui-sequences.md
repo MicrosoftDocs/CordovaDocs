@@ -1,7 +1,7 @@
 ---
 title: "Running UI sequences"
 description: "Running UI sequences"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 # Running UI sequences

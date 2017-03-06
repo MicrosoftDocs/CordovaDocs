@@ -1,7 +1,7 @@
 ---
 title: "UI Testing for Apache Cordova Apps with Appium"
 description: "UI Testing for Apache Cordova Apps with Appium"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #UI Testing for Apache Cordova Apps with Appium

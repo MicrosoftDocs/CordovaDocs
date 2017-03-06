@@ -2,7 +2,7 @@
 title: "Application Lifecycle Management (ALM) with Apache Cordova Apps"
 description: "Application Lifecycle Management (ALM) with Apache Cordova Apps"
 services: "na"
-author: "kraigb, johnwargo"
+author: "kraigb"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

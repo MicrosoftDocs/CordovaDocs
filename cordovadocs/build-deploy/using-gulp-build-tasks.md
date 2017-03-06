@@ -1,7 +1,7 @@
 ---
 title: "Automate Cordova Project Tasks Using Gulp"
 description: "Automate Cordova Project Tasks Using Gulp"
-author: "clantz, johnwargo"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

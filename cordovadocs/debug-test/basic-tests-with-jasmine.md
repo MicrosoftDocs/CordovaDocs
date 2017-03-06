@@ -1,7 +1,7 @@
 ---
 title: "Basic unit testing with Jasmine and Karma"
 description: "Basic unit testing with Jasmine and Karma"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Basic unit testing in action with Jasmine and Karma

@@ -1,7 +1,7 @@
 ---
 title: "Testing on device farms"
 description: "Testing on device farms"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 # Testing on device farms

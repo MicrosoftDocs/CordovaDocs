@@ -1,7 +1,7 @@
 ---
 title: "Unit testing environments for JavaScript"
 description: "Unit testing environments for JavaScript"
-author: "Kraig Brockschmidt"
+author: "kraigb"
 ---
 
 #Unit testing environments for JavaScript and Apache Cordova
