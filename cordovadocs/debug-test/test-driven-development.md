@@ -1,6 +1,6 @@
 ---
 title: "Improving tests/test-driven development"
-description: "Improving tests/test-driven development"
+description: "Improving unit tests: an introduction to test-driven development"
 author: "kraigb"
 ---
 

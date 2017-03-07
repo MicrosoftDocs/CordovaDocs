@@ -1,6 +1,6 @@
 ---
 title: "Using the Chutzpah test runner"
-description: "Using the Chutzpah test runner"
+description: "Using the Chutzpah test runner for Visual Studio."
 author: "kraigb"
 ---
 

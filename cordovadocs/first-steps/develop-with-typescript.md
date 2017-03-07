@@ -1,6 +1,6 @@
 ---
-title: "Using TypeScript in a Cordova Project | Cordova"
-description: "Using TypeScript in a Cordova Project"
+title: "Using TypeScript in a Cordova Project"
+description: "Using TypeScript in an Apache Cordova project"
 services: "na"
 author: "jmatthiesen"
 ms.technology: "cordova"

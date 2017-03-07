@@ -1,7 +1,7 @@
 ---
 title: "Add packages to your Cordova project with the Bower Package Manager"
-description: "This is an article on bower tutorial"
-author: "jmatthiesen"
+description: "Using the Bower package manager to build Apache Cordova apps."
+author: "jomatthi"
 ---
 
 # Add packages to your Cordova project with the Bower Package Manager

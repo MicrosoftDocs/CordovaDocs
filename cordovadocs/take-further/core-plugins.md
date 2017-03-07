@@ -1,10 +1,10 @@
 ---
-title: "Visual Studio Core Plugins | Cordova"
-description: "Visual Studio Plugins"
+title: "Visual Studio Core Plugins"
+description: "Using plugins to build Apache Cordova apps in Visual Studio."
 services: "na"
 author: "normesta"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

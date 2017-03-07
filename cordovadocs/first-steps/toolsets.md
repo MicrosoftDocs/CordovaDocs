@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Tools for Apache Cordova: Toolsets | Cordova"
+title: "Visual Studio Tools for Apache Cordova: Toolsets"
 description: "Using Toolsets in Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "johnwargo"

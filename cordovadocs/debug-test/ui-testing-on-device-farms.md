@@ -1,6 +1,6 @@
 ---
 title: "Testing on device farms"
-description: "Testing on device farms"
+description: "Testing Apache Cordova mobile applications on multiple devices, using device farms."
 author: "kraigb"
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: "Configure the Visual Studio Tools for Apache Cordova | Cordova"
-description: "description"
+title: "Configure the Visual Studio Tools for Apache Cordova"
+description: "Configure the Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "normesta"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

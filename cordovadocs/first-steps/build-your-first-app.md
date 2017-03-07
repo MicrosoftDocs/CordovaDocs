@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Visual Studio Tools for Apache Cordova | Cordova"
+title: "Getting Started with Visual Studio Tools for Apache Cordova"
 description: "Getting Started with Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "normesta"

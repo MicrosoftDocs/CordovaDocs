@@ -1,10 +1,10 @@
 ---
-title: "Add Analytics to your Cordova app | Cordova"
+title: "Add Analytics to your Cordova app"
 description: "Add Analytics to your Cordova app"
 services: "na"
 author: "sureshja"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

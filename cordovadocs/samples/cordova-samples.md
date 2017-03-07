@@ -1,9 +1,9 @@
 ---
 title: "Samples & Examples"
-description: "Samples we made and examples we like"
+description: "Apache Cordova Samples we made and examples we like"
 author: "ljzhong"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

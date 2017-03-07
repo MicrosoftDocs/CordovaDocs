@@ -1,6 +1,6 @@
 ---
 title: "Using mocks"
-description: "Using mocks"
+description: "Using mocks in JavaScript unit tests."
 author: "kraigb"
 ---
 

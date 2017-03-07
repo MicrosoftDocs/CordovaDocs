@@ -1,5 +1,5 @@
 ---
-title: "Run Your App Using Cordova Simulate | Cordova"
+title: "Run Your App Using Cordova Simulate"
 description: "Using Cordova Simulate in Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "johnwargo"

@@ -1,10 +1,10 @@
 ---
-title: "Debug your app built with Visual Studio Tools for Apache Cordova | Cordova"
-description: "description"
+title: "Debug your app built with Visual Studio Tools for Apache Cordova"
+description: "Debugging your app built with Visual Studio Tools for Apache Cordova (TACO)."
 services: "na"
 author: "Chuxel"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

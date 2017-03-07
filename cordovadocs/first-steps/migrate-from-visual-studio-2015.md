@@ -1,6 +1,6 @@
 ---
-title: "Migrate a Cordova project to Visual Studio 2017 | Cordova"
-description: "Migrate a Cordova project to Visual Studio 2017"
+title: "Migrate a Cordova project to Visual Studio 2017"
+description: "Migrate a Cordova project from Visual Studio 2015 to Visual Studio 2017."
 services: "na"
 author: "johnwargo"
 ms.technology: "cordova"

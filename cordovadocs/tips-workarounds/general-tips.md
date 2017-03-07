@@ -1,9 +1,9 @@
 ---
 title: "General Cordova tips and workarounds"
-description: "General Cordova tips and workarounds"
+description: "Tips and workarounds for building Cordova apps using Visual Studio Tools for Apache Cordova."
 author: "kirupa"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

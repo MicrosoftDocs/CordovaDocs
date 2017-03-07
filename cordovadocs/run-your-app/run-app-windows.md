@@ -1,10 +1,10 @@
 ---
-title: "Run your Apache Cordova app on Windows | Cordova"
-description: "description"
+title: "Run your Apache Cordova app on Windows"
+description: "Building Apache Cordova apps for Windows devices."
 services: "na"
 author: "Mikejo5000"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

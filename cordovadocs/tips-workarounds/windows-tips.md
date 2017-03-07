@@ -1,9 +1,9 @@
 ---
 title: "Windows tips and workarounds"
-description: "This is an article on bower tutorial"
+description: "Tips and workarounds for building Windows apps using Visual Studio Tools for Apache Cordova."
 author: "kirupa"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

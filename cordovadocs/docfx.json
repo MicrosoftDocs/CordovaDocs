@@ -8,7 +8,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "ljzhongDocset1117161127/**",
           "**/includes/**"
         ]
       }
@@ -21,7 +20,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "ljzhongDocset1117161127/**",
           "**/includes/**"
         ]
       }

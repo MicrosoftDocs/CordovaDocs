@@ -1,6 +1,6 @@
 ---
 title: "Debugging unit tests"
-description: "Debugging unit tests"
+description: "Debugging JavaScript unit tests built using Jasmine and Karma."
 author: "kraigb"
 ---
 

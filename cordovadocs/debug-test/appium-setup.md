@@ -1,6 +1,6 @@
 ---
 title: "Appium setup"
-description: "Appium setup"
+description: "Setting up an Appium server to enable UI testing for Apache Cordova applications."
 author: "kraigb"
 ---
 

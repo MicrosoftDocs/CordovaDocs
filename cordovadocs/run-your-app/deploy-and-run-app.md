@@ -1,10 +1,10 @@
 ---
-title: "Cordova build process in Visual Studio | Cordova"
-description: "description"
+title: "Cordova build process in Visual Studio"
+description: "The Apache Cordova build process in Visual Studio."
 services: "na"
 author: "Mikejo5000"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

@@ -1,9 +1,9 @@
 ---
-title: "iOS and OSX Tips and Workarounds | Cordova"
-description: "description"
+title: "iOS and OSX Tips and Workarounds"
+description: "Tips and workarounds for building iOS apps using Visual Studio Tools for Apache Cordova."
 author: "kirupa"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"

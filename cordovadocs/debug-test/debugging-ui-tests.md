@@ -1,6 +1,6 @@
 ---
 title: "Debugging UI tests"
-description: "Debugging UI tests"
+description: "Debugging UI tests, written using Appium."
 author: "kraigb"
 ---
 

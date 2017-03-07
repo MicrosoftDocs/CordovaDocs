@@ -1,6 +1,6 @@
 ---
 title: "Designing and writing UI tests"
-description: "Designing and writing UI tests"
+description: "Designing and writing UI tests using JavaScript and Appium."
 author: "kraigb"
 ---
 
