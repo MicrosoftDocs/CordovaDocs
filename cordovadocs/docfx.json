@@ -8,6 +8,7 @@
         ],
         "exclude": [
           "**/obj/**",
+          "cordovadocs/**",
           "**/includes/**"
         ]
       }
@@ -20,6 +21,7 @@
         ],
         "exclude": [
           "**/obj/**",
+          "cordovadocs/**",
           "**/includes/**"
         ]
       }
@@ -43,6 +45,6 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "ljzhongDocset1117161127"
+    "dest": "cordovadocs"
   }
 }
