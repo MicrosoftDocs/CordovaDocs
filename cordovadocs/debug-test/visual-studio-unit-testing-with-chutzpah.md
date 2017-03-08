@@ -2,6 +2,7 @@
 title: "Using the Chutzpah test runner"
 description: "Using the Chutzpah test runner for Visual Studio."
 author: "kraigb"
+ms.author: "kraigb"
 ---
 
 #Using the Chutzpah test runner with a Cordova App project

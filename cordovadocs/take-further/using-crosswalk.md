@@ -1,7 +1,8 @@
 ---
 title: "Improving Android browser consistency and features with the Crosswalk WebView"
 description: "Improving Android browser consistency and features with the Crosswalk WebView"
-author: "clantz"
+author: "Chuxel"
+ms.author: "clantz"
 ---
 
 # Improving Android browser consistency and features with the Crosswalk WebView

@@ -2,7 +2,7 @@
 title: "Installing Visual Studio Tools for Apache Cordova"
 description: "Installing Visual Studio 2017 Tools for Apache Cordova"
 services: "na"
-author: "normesta"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.service: "na"

@@ -11,7 +11,7 @@ ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "08/21/2016"
-ms.author: "mikejo5000"
+ms.author: "mikejo"
 ---
 
 #Add Azure data storage, offline sync, and push notifications

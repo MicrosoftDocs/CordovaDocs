@@ -2,6 +2,7 @@
 title: "Primer on unit testing and continuous integration"
 description: "Primer on unit testing and continuous integration"
 author: "kraigb"
+ms.author: "kraigb"
 ---
 
 #A primer on unit testing and continuous integration

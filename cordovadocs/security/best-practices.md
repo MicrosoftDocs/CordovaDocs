@@ -1,7 +1,8 @@
 ---
 title: "Understand Cordova platform security"
 description: "Cordova platform and app security"
-author: "clantz"
+author: "Chuxel"
+ms.author: "clantz"
 ---
 
 #Cordova platform security features
