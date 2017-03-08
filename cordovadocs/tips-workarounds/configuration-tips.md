@@ -277,7 +277,7 @@ For more information about app provisioning and certificate signing identities, 
 
 * Delete the platforms/*platform* folder for the platform you are targeting (like the platforms/android folder) and then rebuild your project. If you have no errors this time, you don't need to clear the cache.
 
-### To clear the cache
+### <a id="clear-cache"></a>To clear the cache
 
 1. Choose **Tools**, **Options**, **Tools for Apache Cordova**, and then choose **Cordova Tools**.
 
@@ -288,9 +288,6 @@ For more information about app provisioning and certificate signing identities, 
 4. Choose **Build**, **Clean Solution**.
 
 5. Delete the platforms/*platform* folder, like platforms/android.
-
-    >**Tip:**
-If you have no errors, you do not need to re-install vs-tac. If you still have the same error, then re-install vs-tac.
 
 ### To re-install vs-tac
 

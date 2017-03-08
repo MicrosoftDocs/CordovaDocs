@@ -75,7 +75,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     If the issue is only on the Android platform, see [Android](android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](windows-tips.md).
 
 6. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
-7. Try [clearing the cache](../tips-workarounds/configuration-tips.md#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
+7. Try [clearing the cache](../tips-workarounds/configuration-tips.md#clear-cache) from **Tools**, **Options**, **Tools for Apache Cordova**.
 
 <a name="debugging"></a>
 ##Unable to start debugging
