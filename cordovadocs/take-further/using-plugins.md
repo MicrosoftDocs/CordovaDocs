@@ -1,5 +1,5 @@
 ---
-title: "Manage plugins for apps built with Visual Studio Tools for Apache Cordova"
+title: "Manage plugins for apps built with Apache Cordova"
 description: "Manage plugins for apps built with Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "normesta"
