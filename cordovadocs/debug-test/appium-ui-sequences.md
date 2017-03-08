@@ -2,6 +2,7 @@
 title: "Running UI sequences"
 description: "Testting Apache Cordova applications using Appium UI sequences."
 author: "kraigb"
+ms.author: "kraigb"
 ---
 
 # Running UI sequences

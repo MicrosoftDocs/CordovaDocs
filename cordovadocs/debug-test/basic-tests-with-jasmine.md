@@ -2,6 +2,7 @@
 title: "Basic unit testing with Jasmine and Karma"
 description: "Basic JavaScript unit testing with Jasmine and Karma"
 author: "kraigb"
+ms.author: "kraigb"
 ---
 
 #Basic unit testing in action with Jasmine and Karma
