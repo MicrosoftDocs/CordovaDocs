@@ -490,7 +490,7 @@ When running the application in the browser using Cordova Simulate, the redirect
 
 ### The App Fails to Open the Redirect Page or the Hosted Web App
 
-If there is an error connecting to any of the hosted pages, try to open the Web site in a browser. If the site is unavailable, follow instructions in the [Appendix](#appendix) to publish the Web site to your own URL.
+If there is an error connecting to any of the hosted pages, try to open the Web site in a browser.
 
 ### <a name="errorVerifying"></a> The App Hangs With a "Verifying Connectivity" Message
 

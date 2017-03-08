@@ -69,7 +69,7 @@ Try these steps if you have trouble deploying to emulators or devices.
 5. Try to run your app against a different platform or emulator and see if that is successful.
 
     Here are a few suggested platforms for testing:
-    * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
+    * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
     If the issue is only on the Android platform, see [Android](android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](windows-tips.md).

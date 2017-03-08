@@ -72,7 +72,6 @@
 ## [Accessing native projects](tips-workarounds/access-native-cordova-project.md)
 ## [Improving Performance](tips-workarounds/performance-tips.md)
 ## [Measuring Performance](tips-workarounds/measuring-performance.md)
-## [Resolving Build Errors](tips-workarounds/resolving-build-errors.md)
 ## [Run your hosted web app in Cordova](tips-workarounds/run-web-app-in-cordova.md)
 
 # Samples

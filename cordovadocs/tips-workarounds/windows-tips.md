@@ -24,7 +24,7 @@ Try these steps if you have trouble building and deploying to Windows or Windows
 1. Before taking any other steps, try running your app against other platforms or emulators to make sure the issue is Windows-specific.
 
     For example, we suggest you test on Android:
-    * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
+    * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
 
     If you see the same error on other platforms, the issue is likely not Windows-specific, see [Resolve build and deployment errors](general-tips.md) for more general help.
 

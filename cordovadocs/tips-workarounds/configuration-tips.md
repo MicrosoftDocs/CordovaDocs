@@ -35,8 +35,6 @@ You can download Visual Studio from the [Microsoft Download Center](http://go.mi
 
     * [Verify the remote agent configuration](#IosVerify)
 
-* If you see unexpected errors when trying to build the Blank App template, see [Re-install the Cordova CLI pre-processor](#vstac).
-
     > [!WARNING]
     > If you are migrating a project from an earlier version of Visual Studio, see this [migration information](https://github.com/Microsoft/cordova-docs/blob/master/known-issues/known-issues-vs2015.md#known-issues—visual-studio-2015) (github).
 
@@ -274,13 +272,6 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
         remotebuild test --device
 
 For more information about app provisioning and certificate signing identities, see [Package Your App Built with Visual Studio Tools for Apache Cordova](../publishing/publish-to-a-store.md).
-
-##<a name="vstac"></a>Reinstall the Cordova CLI pre-processor (vs-tac)
-
-If you see unexpected errors when trying to build the Blank App template after installing Visual Studio Tools for Apache Cordova, you can try clearing your cache and reinstalling the Cordova CLI pre-processor, vs-tac, on your PC. Typically, this is only necessary if you try to build a Cordova app and see the error Cannot find module *[modulename]*.
-
-> [!NOTE]
-> If you do not see the module error, go through steps in [Resolving build errors](../tips-workarounds/resolving-build-errors.md) before re-installing vs-tac.
 
 ### To try the quick fix
 

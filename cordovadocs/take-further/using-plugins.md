@@ -20,9 +20,6 @@ Apache Cordova uses plugins to provide access to native device capabilities that
 
 You enable plugins by using the Cordova config.xml file. Visual Studio provides ways to update this file using the configuration designer.
 
-> [!NOTE]
->To see the core plugins available in the configuration designer, see [List of available plugins](#List). For more information on plugins, see the [Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632).
-
 ## <a id="Adding"></a>Add a core plugin
 
 You can add a core Cordova plugin by using Visual Studio. When you build your solution, the plugin is installed from the Cordova registry.
