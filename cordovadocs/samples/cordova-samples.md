@@ -15,7 +15,7 @@ ms.author: "lizhong"
 
 # Favorite Samples & Examples
 
-## <a id="how-to-open-a-cordova-project-in-vs"></a>How to open a Cordova project in VS
+## <a name="how-to-open-a-cordova-project-in-vs"></a>How to open a Cordova project in VS
 
 The [Examples We Like](#examples-we-like/) section featurs projects that were not necessarily created in Visual Studio--we just think they're cool. However, because they weren't developed inside VS, you can't just double-click into the project.
 
@@ -34,7 +34,7 @@ The [Cordova Plugins Sampler](https://github.com/ryanjsalva/cordova-simulate-tes
 
 Feel free to download the [sample off Ryan's Github](https://github.com/ryanjsalva/cordova-simulate-tests) and play around. Open this project by following the instructions [here](#how-to-open-a-cordova-project-in-vs/).
 
-## <a id="examples-we-like"></a>Examples We Like
+## <a name="examples-we-like"></a>Examples We Like
 
 ### Star Track by Phonegap
 
