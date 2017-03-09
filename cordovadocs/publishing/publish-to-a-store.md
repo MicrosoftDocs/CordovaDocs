@@ -4,7 +4,6 @@ description: "Tutorial: How to create an Android, iOS, and Windows package for d
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

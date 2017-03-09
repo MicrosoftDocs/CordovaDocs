@@ -4,7 +4,6 @@ description: "Tips and workarounds for building Windows apps using Visual Studio
 author: "kirupa"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

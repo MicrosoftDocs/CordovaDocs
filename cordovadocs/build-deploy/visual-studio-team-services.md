@@ -4,7 +4,6 @@ description: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
