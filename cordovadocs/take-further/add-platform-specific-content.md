@@ -1,11 +1,10 @@
 ---
-title: "Configure your app built with Visual Studio Tools for Apache Cordova"
-description: "description"
+title: "Add platform-specific content to your Cordova project"
+description: "Adding platform specific content (such as images, icons) to an Apache Cordova app."
 services: "na"
 author: "normesta"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

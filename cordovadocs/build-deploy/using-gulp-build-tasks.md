@@ -4,7 +4,6 @@ description: "Automate Cordova Project Tasks Using Gulp. The process of building
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

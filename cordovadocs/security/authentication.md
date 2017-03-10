@@ -1,7 +1,8 @@
 ---
 title: "Authenticating users with Azure Mobile Apps or ADAL"
 description: "Authenticating users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova."
-author: "clantz"
+author: "Chuxel"
+ms.author: "clantz"
 ---
 
 # Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova

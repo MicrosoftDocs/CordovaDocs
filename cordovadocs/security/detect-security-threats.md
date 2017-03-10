@@ -1,7 +1,8 @@
 ---
 title: "Detect security issues using Intune, Active Directory, and Azure"
 description: "Detect security policy and compliance violations using Intune MAM/MDM, Active Directory, and Azure."
-author: "clantz"
+author: "Chuxel"
+ms.author: "clantz"
 ---
 
 # Detect potential security threats

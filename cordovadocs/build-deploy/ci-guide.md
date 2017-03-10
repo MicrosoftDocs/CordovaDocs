@@ -4,7 +4,6 @@ description: "Visual Studio developers have a number of options for how you can 
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

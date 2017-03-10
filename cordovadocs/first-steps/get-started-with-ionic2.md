@@ -1,10 +1,9 @@
 ---
 title: "Getting started with Ionic 2 apps in Visual Studio 2017"
 description: "Getting started with Ionic 2 apps in Visual Studio 2017"
-author: "mikejo5000"
+author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"

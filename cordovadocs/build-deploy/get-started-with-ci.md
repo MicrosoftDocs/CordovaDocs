@@ -4,7 +4,6 @@ description: "Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or C
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
-ms.service: "na"
 ms.devlang: "javascript"
 ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
@@ -22,7 +21,7 @@ Visual Studio developers have a number of options for how you can integrate Cord
 Development organizations using Visual Studio Team Services (VSTS) can add Cordova tasks to the build process using the **Cordova Build** cross-platform agent for VSTS. This new agent enables you to use VSTS build projects targeting Android, iOS, or Windows applications created using Tools for Apache Cordova or *any* Cordova compliant CLI like **Ionic** and **Adobe PhoneGap**.
 
 <table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" /></td>
+<td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="Apache Cordova logo" /></td>
 <td><strong><a href="http://go.microsoft.com/fwlink/?LinkID=691188">Cordova Build</a></strong><br />
 <a href="https://marketplace.visualstudio.com/search?term=publisher%3A%22Visual%20Studio%20Client%20Tools%22&target=VSTS">Visual Studio Client Tools</a><br />
 <i>Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps.</i><br />

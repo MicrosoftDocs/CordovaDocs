@@ -1,7 +1,8 @@
 ---
 title: "Securing Cordova app data using encryption and Intune"
 description: "Secure Cordova local app data using encryption and the Intune MAM App SDK."
-author: "clantz"
+author: "Chuxel"
+ms.author: "clantz"
 ---
 
 # Encrypt your local app data
