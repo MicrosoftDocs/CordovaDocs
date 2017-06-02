@@ -2,7 +2,7 @@
 title: "Manage plugins for apps built with Apache Cordova"
 description: "Manage plugins for apps built with Visual Studio Tools for Apache Cordova"
 services: "na"
-author: "jomatthi"
+author: "jmatthiesen"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -10,7 +10,7 @@ ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "09/10/2015"
-ms.author: "jomatthi"
+ms.author: "jmatthiesen"
 ---
 
 # Manage plugins for apps built with Visual Studio Tools for Apache Cordova

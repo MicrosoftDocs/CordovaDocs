@@ -2,7 +2,7 @@
 title: "Visual Studio Core Plugins"
 description: "Using plugins to build Apache Cordova apps in Visual Studio."
 services: "na"
-author: "jomatthi"
+author: "jmatthiesen"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -10,7 +10,7 @@ ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "08/04/2016"
-ms.author: "jomatthi"
+ms.author: "jmatthiesen"
 ---
 
 # <a id="top"></a>Visual Studio Core Plugins
