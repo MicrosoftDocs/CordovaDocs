@@ -2,7 +2,7 @@
 title: "Access a native Cordova project"
 description: "Working with the native mobile project created by Visual Studio Tools for Apache Cordova."
 services: "na"
-author: "normesta"
+author: "jmatthiesen"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -10,7 +10,7 @@ ms.topic: "article"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "09/10/2015"
-ms.author: "normesta"
+ms.author: "jmatthiesen"
 ---
 # Access a native Cordova project
 

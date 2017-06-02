@@ -2,7 +2,7 @@
 title: "Getting Started with Visual Studio Tools for Apache Cordova"
 description: "Getting Started with Visual Studio Tools for Apache Cordova"
 services: "na"
-author: "normesta"
+author: "jmatthiesen"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
