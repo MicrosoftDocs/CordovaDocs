@@ -168,22 +168,23 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>No</p>
             </td>
         </tr>
-        <td rowspan="5">
-            <p>
-                <strong>Code</strong>
-            </p>
-        </td>
-        <td>
-            <p><a href="https://msdn.microsoft.com/library/ms181237.aspx">Use Team Foundation Version Control</a></p>
-        </td>
-        <td>
-            <p>Yes</p>
-        </td>
-        <td>
-            <p>
-
-            </p>
-        </td>
+        <tr>
+            <td rowspan="5">
+                <p>
+                    <strong>Code</strong>
+                </p>
+            </td>
+            <td>
+                <p><a href="https://msdn.microsoft.com/library/ms181237.aspx">Use Team Foundation Version Control</a></p>
+            </td>
+            <td>
+                <p>Yes</p>
+            </td>
+            <td>
+                <p>
+                    &nbsp;
+                </p>
+            </td>
         </tr>
         <tr>
             <td>
@@ -194,7 +195,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>
-
+                    &nbsp;
                 </p>
             </td>
         </tr>
@@ -245,7 +246,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>Android, Windows, WP8, can be built on a Windows build server while a Mac can be used as a build server for
-                    iOS. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>
+                    iOS. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a></p>
             </td>
         </tr>
         <tr>
@@ -290,6 +291,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>
+                    &nbsp;
                 </p>
             </td>
         </tr>
@@ -301,7 +303,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>For VSTS, select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.
+                <p>For VSTS, select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
             </td>
         </tr>
         <tr>
@@ -317,7 +319,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -328,7 +332,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -339,7 +345,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Windows devices and Android emulators only</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -350,7 +358,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>No</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
