@@ -45,7 +45,7 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 	![Android Device: Settings](media/vs-taco-run-android/figure-02.png)
 
 	> [!NOTE]
-	> You may have to execute some convoluted process to enable developer options, for this particlular device, for example, developers have to open **Settings**, select **About phone**, then **tap Build number** repeatedly until the OS enables developer mode.
+	> You may have to execute some complicated process to enable developer options; for this particlular device, for example, developers have to open **Settings**, select **About phone**, then **tap Build number** repeatedly until the OS enables developer mode.
 
 	Open **Developer options** and scroll down until you find **Debugging** options as shown in the figure. Enable **USB debugging** as shown in the figure and any other settings you think might help the debugging process.
 
