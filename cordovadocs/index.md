@@ -1,4 +1,4 @@
- ---
+---
 title: "Visual Studio Tools for Apache Cordova"
 description: "Visual Studio Tools for Apache Cordova"
 services: "na"
