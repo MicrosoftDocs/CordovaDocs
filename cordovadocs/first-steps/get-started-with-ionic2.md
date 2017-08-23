@@ -190,7 +190,7 @@ In this section, we'll add code the Weather Provider to connect with the externa
 
   	  //Do we have a location?
 	  if (loc.long) {
-	    //then use the 'grographical coordinates' version of the API
+	    //then use the 'geographical coordinates' version of the API
 	    uri += '?lat=' + loc.lat + '&lon=' + loc.long;
 	  } else {
 	    //Otherwise, use the zip code
