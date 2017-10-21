@@ -297,7 +297,7 @@ In order for the web app to leverage the Cordova container's native capabilities
 
     The code redirects the site to the Cordova-specific `Index.cshtml` when the client app passes a querystring that includes the `setPlatformCookie` function call along with the platform ID. You already specified this URL in the client app's redirect script (`www\scripts\index.js`).
 
-5.	In the CordovaHostedWeb (ASP.NET) project, right-click the `Views\Cordova` folder and choose **Add** -> **Existing item**, use Windows Explorer to go to the `Views\Cordova` folder, and then add the file called `Index.cshtml` to the project. This page contains the following code:
+5a.	In the CordovaHostedWeb (ASP.NET) project, right-click the `Views\Cordova` folder and choose **Add** -> **Existing item**, use Windows Explorer to go to the `Views\Cordova` folder, and then add the file called `Index.cshtml` to the project. This page contains the following code:
 
     ```html
     @{
@@ -308,7 +308,7 @@ In order for the web app to leverage the Cordova container's native capabilities
     <h2>index</h2>
 
     @section Metas{
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb-redirect.azurewebsites.net/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://YOUR-HOSTED-WEB-APP-URL/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     }
 
     @if (platform == "android" || platform == "ios" || platform == "windows")
@@ -335,7 +335,13 @@ In order for the web app to leverage the Cordova container's native capabilities
     This page also loads a platform-specific version of cordova.js, which enables the use of Cordova plugins for device access. When you finish these steps, your app will be able to access device features (through Cordova plugins) on Android, iOS, and Windows. You will use the Cordova Camera plugin later in this tutorial.
 
     Finally, this page also loads the `app.js` script. You will use this file later to add the server-side Camera plugin code. This code calls native code that runs on the device.
+    
+5b.	In the CordovaHostedWeb (ASP.NET) project, edit the Shared/_Layout.cshtml file & include before the "</head>" tag:
 
+    ```html
+    @RenderSection("Metas", required: false)
+    ```
+    
 6.	Build the web application: In Solution Manager, right-click on the `CordovaHostedWeb` project and select **Build**.
 
 7.	Publish the web application: In Solution Manager, right-click on the `CordovaHostedWeb` project and select **Publish**. In the dialog that appears, click the **Publish** button.
