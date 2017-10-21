@@ -135,6 +135,9 @@ Now that you have the web application project opened, published, and you've veri
     ![Visual Studio Simulate in Browser](media/run-web-app-in-cordova/figure-14.png)
 
     At this point, all you're seeing is the default Cordova application template; a simple page displaying the Cordova logo and an indicator that the Cordova client application is ready. Soon, we'll add code to pull application content from the web application running on a server.
+    
+    NOTE: If you get the error **"Unable to get launched browser process for your app."** when trying to run your cordova app, then right click on your "CordovaHostedApp" project, click "Properties", click "configuration manager" and make sure both "Build" & "Deploy" are both checked for the andoid platform.
+
 
 6.	Press **Shift** + **F5**, or click Visual Studio's **Stop Debugging** button (![Stop Debugging button](media/run-web-app-in-cordova/red-square.png)) to stop debugging.
 
