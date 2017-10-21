@@ -227,7 +227,7 @@ In this section, you'll update the Cordova application so it pulls its content f
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://YOUR-HOSTED-WEB-APP-URL https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     ```
 
-    By adding the remote web app URL to the CSP (`https://cordovahostedweb-starter.azurewebsites.net` in this example), you specify that it is a trusted domain, and content from this site will be allowed in your hosted app.
+    By adding the remote web app URL to the CSP (`https://YOUR-HOSTED-WEB-APP-URL` in this example), you specify that it is a trusted domain, and content from this site will be allowed in your hosted app.
 
 	> [!NOTE]
 	> Make sure you replace `YOUR-HOSTED-WEB-APP-URL` in the code with your web application endpoint.
