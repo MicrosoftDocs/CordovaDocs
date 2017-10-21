@@ -258,7 +258,7 @@ In order for the web app to leverage the Cordova container's native capabilities
 
     Now, when the Cordova app loads the remote web content, the app executes the `setPlatformCookie` function to tell the web server that a Cordova app is requesting the content. The URL also passes in the the platform identifier (`cordova.platformId`), you'll use this later for redirection.
 
-2.	In the CordovaHostedWeb (ASP.NET) project, right-click the Controllers folder and choose **Add** -> **Existing item**, use Windows Explorer go to the `Controllers` folder, and then add the existing file called `cordovaController.cs` to the project. This file contains the following code:
+2.	In the CordovaHostedWeb (ASP.NET) project, right-click the Controllers folder and choose **Add** -> **Existing item**, use Windows Explorer go to the `Controllers` folder, and then add the existing file called `CordovaController.cs` to the project. This file contains the following code:
 
     ```cs
     using System;
