@@ -6,9 +6,26 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "2015",
+        "src": "cordovadocs2015"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "2017",
+        "src": "cordovadocs"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
-          "cordovadocs/**",
+          "cordovadocs",
+          "cordovadocs2015",
           "**/includes/**"
         ]
       }
@@ -19,11 +36,16 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "exclude": [
-          "**/obj/**",
-          "cordovadocs/**",
-          "**/includes/**"
-        ]
+        "group": "2015",
+        "src": "cordovadocs2015"
+      }
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "2017",
+        "src": "cordovadocs"
       }
     ],
     "overwrite": [],
@@ -44,6 +66,16 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "cordovadocs"
+    "dest": "cordovadocs",
+    "groups": {
+      "2015": {
+        "dest": "2015-dest",
+        "moniker_range": "taco-2015"
+      },
+      "group2": {
+        "dest": "2017-dest",
+        "moniker_range": "taco-2017"
+      }
+    }
   }
 }
