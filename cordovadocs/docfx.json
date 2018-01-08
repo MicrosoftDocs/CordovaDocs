@@ -70,11 +70,11 @@
     "groups": {
       "2015": {
         "dest": "2015-dest",
-        "moniker_range": "taco-2015"
+        "moniker_range": "ToolsForCordova-2015"
       },
       "group2": {
         "dest": "2017-dest",
-        "moniker_range": "taco-2017"
+        "moniker_range": "ToolsForCordova-2017"
       }
     }
   }
