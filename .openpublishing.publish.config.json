@@ -16,7 +16,7 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "moniker_ranges": ["taco-2015","taco-2017"]
+      "moniker_ranges": ["ToolsForCordova-2015","ToolsForCordova-2017"]
     }
   ],
   "notification_subscribers": [],
