@@ -7,7 +7,7 @@
           "**/*.yml"
         ],
         "group": "2015",
-        "src": "cordovadocs2015"
+        "src": "2015"
       },
       {
         "files": [
@@ -15,19 +15,7 @@
           "**/*.yml"
         ],
         "group": "2017",
-        "src": "cordovadocs"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "cordovadocs",
-          "cordovadocs2015",
-          "**/includes/**"
-        ]
+        "src": "2017"
       }
     ],
     "resource": [
@@ -37,24 +25,24 @@
           "**/*.jpg"
         ],
         "group": "2015",
-        "src": "cordovadocs2015"
-      }
+        "src": "2015"
+      },
       {
         "files": [
           "**/*.png",
           "**/*.jpg"
         ],
         "group": "2017",
-        "src": "cordovadocs"
+        "src": "2017"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "titleSuffix": "Cordova", 
+            "uhfHeaderId": "MSDocsHeader-DotNet", 
             "author": "",
             "ms.author": "",
-            "manager": "rsalva",
             "ms.date": "02/28/2017",
             "ms.topic": "article",
             "audience": "developer",
@@ -69,12 +57,12 @@
     "dest": "cordovadocs",
     "groups": {
       "2015": {
-        "dest": "2015-dest",
-        "moniker_range": "ToolsForCordova-2015"
+        "dest": "2015",
+        "moniker_range": "ToolsForCordova-2017"
       },
       "group2": {
-        "dest": "2017-dest",
-        "moniker_range": "ToolsForCordova-2017"
+        "dest": "2017",
+        "moniker_range": ">= ToolsForCordova-2017"
       }
     }
   }

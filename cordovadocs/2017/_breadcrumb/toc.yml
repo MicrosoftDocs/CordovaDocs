@@ -1,0 +1,20 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Visual Studio
+    tocHref: /visualstudio/
+    topicHref: /visualstudio
+    items:
+    - name: Documentation
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/welcome-to-visual-studio
+      items:
+      - name: Cross Platform
+        tocHref: /visualstudio/cross-platform/
+        topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
+        items:
+        - name: Tools for Apache Cordova
+          tocHref: /visualstudio/cross-platform/tools-for-cordova/ 
+          topicHref: /visualstudio/cross-platform/tools-for-cordova
+      

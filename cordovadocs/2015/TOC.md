@@ -1,3 +1,30 @@
+# Get started
+## [Install the tools](getting-started/install-vs-tools-apache-cordova.md)
+## Beginner's guide
+## Create a hosted web app
+## Get started with Ionic
+## Get started with Ionic 2
+## Get started with Onsen
+## iOS setup guide
+## Migrate project to VS 2015
+## Use Typescript
+# Add JavaScript packages
+# Access device capabilities
+# App Security
+# Add mobile services
+# Add Analytics
+# Tailor to a platform
+# Build & Deploy
+# Author & run unit tests
+# Author & run UI tests
+# Automate builds & tests
+# Optimize performance
+# Package & publish
+# Change your Cordova version
+# Tutorials & Samples
+# Tips & workarounds
+# Release notes & bugs
+
 <!-- # Get Started 2015
 ## [Learn about mobile development with JavaScript](index.md)
 ## [Install the tools](first-steps/installation.md)
