@@ -1,6 +1,3 @@
----
-ms.assetid: 1D6F10F4-1DF9-4E26-96EB-97A940DF88B0
----
 # Get Started
 ## [Learn about mobile development with JavaScript](index.md)
 ## [Install the tools](first-steps/installation.md)
