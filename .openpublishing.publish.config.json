@@ -8,6 +8,10 @@
       "build_output_subfolder": "cordovadocs",
       "locale": "en-us",
       "version": 0,
+      "monikers":[
+        "ToolsForCordova-2015",
+        "ToolsForCordova-2017"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
