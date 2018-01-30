@@ -1,7 +1,7 @@
 # Get started
 ## [Install the tools](getting-started/install-vs-tools-apache-cordova.md)
-## Beginner's guide
-## Create a hosted web app
+## [Beginner's guide](getting-started/get-started-first-mobile-app.md)
+## [Create a hosted web app](getting-started/create-a-hosted-app.md)
 ## Get started with Ionic
 ## Get started with Ionic 2
 ## Get started with Onsen
@@ -15,6 +15,12 @@
 # Add Analytics
 # Tailor to a platform
 # Build & Deploy
+## Overview: How Cordova builds
+## Run your app on Apache Ripple
+## Run your ANdroid app
+## Run your iOS app
+## Run your iOS app in the cloud](getting-started/build_ios_cloud.md)
+## Run your iOS appon a Mac using Parallels](getting-started/build_ios_parallels.md)
 # Author & run unit tests
 # Author & run UI tests
 # Automate builds & tests
@@ -23,7 +29,24 @@
 # Change your Cordova version
 # Tutorials & Samples
 # Tips & workarounds
+## [General](tips-and-workarounds/general/tips-and-workarounds-general-readme.md)
+## Tools configuration
+## Android
+## iOS and OS X
+## Windows
+## Performance
+## Symlink and iOS plugins
+## Errors from files in Platforms folder
+## Access a native Cordova project
 # Release notes & bugs
+## [Update 10](release-notes/release-update-10.md)
+## [Update 9](release-notes/release-update-9.md)
+## Update 8
+## Update 7
+## Update 6
+## Update 5
+## Update 4
+## Update 3
 
 <!-- # Get Started 2015
 ## [Learn about mobile development with JavaScript](index.md)
