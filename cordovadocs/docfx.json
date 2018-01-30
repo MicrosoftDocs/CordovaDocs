@@ -63,7 +63,7 @@
       },
       "2017": {
         "dest": "2017",
-        "moniker_range": ">= ToolsForCordova-2017"
+        "moniker_range": "ToolsForCordova-2017"
       }
     }
   }
