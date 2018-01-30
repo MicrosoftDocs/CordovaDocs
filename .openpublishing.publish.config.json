@@ -8,7 +8,7 @@
       "build_output_subfolder": "cordovadocs",
       "locale": "en-us",
       "version": 0,
-      "moniker_ranges":[
+      "monikers":[
         "ToolsForCordova-2015",
         "ToolsForCordova-2017"
       ],
