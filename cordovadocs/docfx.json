@@ -39,6 +39,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+            "uhfHeaderId": "MSDocsHeader-VisualStudio",
             "titleSuffix": "Cordova", 
             "author": "",
             "ms.author": "",
