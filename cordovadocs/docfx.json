@@ -61,7 +61,7 @@
         "dest": "2015",
         "moniker_range": "ToolsForCordova-2015"
       },
-      "group2": {
+      "2017": {
         "dest": "2017",
         "moniker_range": ">= ToolsForCordova-2017"
       }
