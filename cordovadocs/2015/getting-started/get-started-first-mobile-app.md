@@ -1,5 +1,5 @@
 ---
-title="Get started with Visual Studio Tools for Apache Cordova"
+title: "Get started with Visual Studio Tools for Apache Cordova"
 author: "johnwargo"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"

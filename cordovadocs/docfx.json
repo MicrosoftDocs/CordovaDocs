@@ -3,6 +3,12 @@
     "content": [
       {
         "files": [
+          "_breadcrumb/toc.yml"
+        ],
+        "exclude": []
+      },
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
@@ -40,6 +46,8 @@
     "externalReference": [],
     "globalMetadata": {
             "uhfHeaderId": "MSDocsHeader-VisualStudio",
+            "breadcrumb_path": "_breadcrumb/toc.yml",
+            "searchScope": ["Cordova"],
             "titleSuffix": "Cordova", 
             "author": "",
             "ms.author": "",
