@@ -13,7 +13,8 @@
           "**/*.yml"
         ],
         "group": "2015",
-        "src": "2015"
+        "src": "2015",
+        "dest": "2015"
       },
       {
         "files": [
@@ -21,7 +22,8 @@
           "**/*.yml"
         ],
         "group": "2017",
-        "src": "2017"
+        "src": "2017",
+        "dest": "2017"
       }
     ],
     "resource": [
@@ -67,11 +69,11 @@
     "groups": {
       "2015": {
         "dest": "2015",
-        "moniker_range": "ToolsForCordova-2015"
+        "moniker_range": ">= ToolsForCordova-2015 < ToolsForCordova-2017"
       },
       "2017": {
         "dest": "2017",
-        "moniker_range": "ToolsForCordova-2017"
+        "moniker_range": ">= ToolsForCordova-2017"
       }
     }
   }
