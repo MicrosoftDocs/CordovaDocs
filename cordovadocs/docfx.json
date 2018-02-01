@@ -68,7 +68,7 @@
         "moniker_range": "toolsforcordova-2015"
       },
       "2017": {
-        "dest": "",
+        "dest": "2017",
         "moniker_range": "toolsforcordova-2017"
       }
     }
