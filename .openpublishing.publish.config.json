@@ -10,7 +10,8 @@
       "version": 0,
       "monikers": [],           
       "moniker_ranges": [
-        ">= ToolsForCordova-2015 < ToolsForCordova-2017"
+        "toolsforcordova-2015",
+        "toolsforcordova-2017"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
