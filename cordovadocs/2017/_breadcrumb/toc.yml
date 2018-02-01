@@ -7,11 +7,11 @@
     topicHref: /visualstudio
     items:
     - name: Documentation
-      tocHref: /visualstudio/
-      topicHref: /visualstudio/welcome-to-visual-studio
+      tocHref: /visualstudio/ide/
+      topicHref: /visualstudio/ide
       items:
       - name: Cross Platform
-        tocHref: /visualstudio/cross-platform/
+        tocHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio/
         topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
         items:
         - name: Tools for Apache Cordova
