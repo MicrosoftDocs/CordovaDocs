@@ -25,7 +25,7 @@
         ],
         "group": "2017",
         "src": "2017",
-        "dest": "2017"
+        "dest": ""
       }
     ],
     "resource": [
@@ -45,14 +45,14 @@
         ],
         "group": "2017",
         "src": "2017",
-        "dest":"2017"
+        "dest":""
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
             "uhfHeaderId": "MSDocsHeader-VisualStudio",
-           
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "searchScope": ["Cordova"],
             "titleSuffix": "Cordova", 
             "author": "",
@@ -76,7 +76,7 @@
         "moniker_range": "toolsforcordova-2015"
       },
       "2017": {
-        "dest": "2017",
+        "dest": "",
         "moniker_range": "toolsforcordova-2017"
       }
     }
