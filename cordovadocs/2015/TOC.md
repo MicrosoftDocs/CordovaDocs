@@ -1,4 +1,4 @@
-# Get started
+# [Get started](index.md)
 ## [Install the tools](getting-started/install-vs-tools-apache-cordova.md)
 ## [Beginner's guide](getting-started/get-started-first-mobile-app.md)
 ## [Create a hosted web app](getting-started/create-a-hosted-app.md)
