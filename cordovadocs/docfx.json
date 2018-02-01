@@ -40,7 +40,7 @@
     "externalReference": [],
     "globalMetadata": {
             "uhfHeaderId": "MSDocsHeader-VisualStudio",
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "breadcrumb_path": "/visualstudio/cross-platform/tools-for-cordova/_breadcrumb/toc.json",
             "searchScope": ["Cordova"],
             "titleSuffix": "Cordova", 
             "author": "",
