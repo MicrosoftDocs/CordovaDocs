@@ -3,6 +3,8 @@
     "content": [
       {
         "files": [
+          "*.md",
+          "*.yml",
           "_breadcrumb/toc.yml"
         ],
         "exclude": []
@@ -33,7 +35,8 @@
           "**/*.jpg"
         ],
         "group": "2015",
-        "src": "2015"
+        "src": "2015",
+        "dest": "2015"
       },
       {
         "files": [
@@ -41,14 +44,15 @@
           "**/*.jpg"
         ],
         "group": "2017",
-        "src": "2017"
+        "src": "2017",
+        "dest":"2017"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
             "uhfHeaderId": "MSDocsHeader-VisualStudio",
-            "breadcrumb_path": "_breadcrumb/toc.yml",
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "searchScope": ["Cordova"],
             "titleSuffix": "Cordova", 
             "author": "",
