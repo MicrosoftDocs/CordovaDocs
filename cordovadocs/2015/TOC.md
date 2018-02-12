@@ -12,9 +12,11 @@
 ## [Use Typescript](first-steps/develop-with-typescript.md)
 # Add JavaScript packages
 ## [Add packages by using Bower](adding-javascript-packages/tutorial-using-bower.md)
-## [Add packages by using NuGet](adding-javascript-packages/tutorial-using-nuget.md)
+## [Add packages by using NuGet](adding-javascript-packages/tutorial-nuget.md)
 ## [Use third-party command line tools](adding-javascript-packages/interoperability.md)
 # Access device capabilities
+## [Manage plugins](access-device-capabilities/manage-plugins.md)
+## [VS Core plugins](access-device-capabilities/use-cordova-plugins.md)
 # App Security
 # Add mobile services
 # Add Analytics
