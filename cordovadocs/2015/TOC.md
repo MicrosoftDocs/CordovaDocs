@@ -11,6 +11,9 @@
 ## [Migrate project to VS 2015](first-steps/migrate-to-vs2015.md)
 ## [Use Typescript](first-steps/develop-with-typescript.md)
 # Add JavaScript packages
+## [Add packages by using Bower](adding-javascript-packages/tutorial-using-bower.md)
+## [Add packages by using NuGet](adding-javascript-packages/tutorial-using-nuget.md)
+## [Use third-party command line tools](adding-javascript-packages/interoperability.md)
 # Access device capabilities
 # App Security
 # Add mobile services
