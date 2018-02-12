@@ -1,7 +1,7 @@
 ---
 title: "Use TypeScript in a Cordova project"
 author: "jmatthiesen"
-ms.prod: "visual-studio-dev15"
+ms.prod: "visual-studio-dev14"
 ms.author: "jmatthiesen"
 ---
 

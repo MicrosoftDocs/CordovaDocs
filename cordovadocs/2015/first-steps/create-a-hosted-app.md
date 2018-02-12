@@ -1,7 +1,7 @@
 ---
 title: "Create a Hosted App | Cordova"
 author: "jmatthiesen"
-ms.prod: "visual-studio-dev15"
+ms.prod: "visual-studio-dev14"
 ms.date: "06/23/2016"
 ms.author: "jmatthiesen"
 ---

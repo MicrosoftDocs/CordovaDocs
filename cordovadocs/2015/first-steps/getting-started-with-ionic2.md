@@ -1,7 +1,7 @@
---
+---
 title: "Getting started with Ionic 2 apps in Visual Studio"
 author: "jmatthiesen"
-ms.prod: "visual-studio-dev15"
+ms.prod: "visual-studio-dev14"
 ms.date: "01/16/2017"
 ms.author: "jmatthiesen"
 ---

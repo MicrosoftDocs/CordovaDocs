@@ -1,7 +1,7 @@
---
+---
 title: "Create a Hosted App | CordovaGetting started with Ionic apps in Visual Studio"
 author: "jmatthiesen"
-ms.prod: "visual-studio-dev15"
+ms.prod: "visual-studio-dev14"
 ms.date: "06/15/2016"
 ms.author: "jmatthiesen"
 ---
