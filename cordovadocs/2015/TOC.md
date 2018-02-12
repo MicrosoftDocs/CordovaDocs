@@ -6,6 +6,8 @@
 ## [Get started with Ionic 2](first-steps/getting-started-with-ionic2.md)
 ## [Get started with Onsen](first-steps/getting-started-with-onsen2.md)
 ## [iOS setup guide](first-steps/ios-guide.md)
+## [Run your iOS app in the cloud](tips-and-workarounds/host-a-mac-in-the-cloud.md)
+## [Run your iOS app on a Mac using Parallels](tips-and-workarounds/run-windows-in-mac-vm.md)
 ## [Migrate project to VS 2015](first-steps/migrate-to-vs2015.md)
 ## [Use Typescript](first-steps/develop-with-typescript.md)
 # Add JavaScript packages
@@ -29,10 +31,6 @@
 # Tutorials & Samples
 # Tips & workarounds
 ## [General](tips-and-workarounds/general/tips-and-workarounds-general-readme.md)
-## iOS
-### [Run your iOS app in the cloud](tips-and-workarounds/host-a-mac-in-the-cloud.md)
-### [Run your iOS appon a Mac using Parallels](tips-and-workarounds/run-windows-in-mac-vm.md)
-
 ## Tools configuration
 ## Android
 ## iOS and OS X
