@@ -67,7 +67,7 @@
 ## [Android](tips-workarounds/android-tips.md)
 ## [iOS](tips-workarounds/ios-tips.md)
 ### [Hosting a Mac in the cloud](tips-workarounds/host-a-mac-in-the-cloud.md)
-### [Use Parallelts to run Windows on a Mac](tips-workarounds/run-windows-in-mac-vm.md)
+### [Use Parallels to run Windows on a Mac](tips-workarounds/run-windows-in-mac-vm.md)
 ## [Windows](tips-workarounds/windows-tips.md)
 ## [Accessing native projects](tips-workarounds/access-native-cordova-project.md)
 ## [Improving Performance](tips-workarounds/performance-tips.md)
