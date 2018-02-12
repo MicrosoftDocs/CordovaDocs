@@ -18,6 +18,13 @@
 ## [Manage plugins](access-device-capabilities/manage-plugins.md)
 ## [VS Core plugins](access-device-capabilities/use-cordova-plugins.md)
 # App Security
+## [Understand Cordova platform security](security/cordova-security-platform.md)
+## [Authenticate users](security/cordova-security-auth.md)
+## [Encrypt local data](security/cordova-security-data.md)
+## [Transmit data securely](security/cordova-security-xmit.md)
+## [Detect security threats](security/cordova-security-detect.md)
+## [Quickly fix security issues](security/cordova-security-fix.md)
+## [Use network whitelists and the CSP](security/cordova-security-whitelists.md)
 # Add mobile services
 # Add Analytics
 # Tailor to a platform
