@@ -65,6 +65,9 @@
 ## [CI with TFS 2013](build-deploy/tfs2013.md)
 ## [CI with Jenkins](build-deploy/jenkins.md)
 # Optimize performance
+## [Evaluate performance](tips-and-workarounds/cost-cordova.md)
+## [Optimize performance](tips-and-workarounds/better-web-performance.md)
+## [Measure performance](tips-and-workarounds/measuring-performance.md)
 # Package & publish
 # Change your Cordova version
 # Tutorials & Samples
