@@ -205,8 +205,8 @@ This includes all features contained within the **Windows.Security** and **Windo
  See **[Windows API documentation](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx)** for additional details and specifics.
 
 ##Additional Security Topics
-- [Learn about Cordova platform and app security features](./cordova-security-platform.md)
-- [Learn about securely transmitting data](./cordova-security-xmit.md)
-- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./cordova-security-auth.md)
-- [Detect potential security threats](./cordova-security-detect.md)
-- [Quickly remediate security issues](./cordova-security-fix.md)
+- [Learn about Cordova platform and app security features](best-practices.md)
+- [Learn about securely transmitting data](transmit-data-securely.md)
+- [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](authentication.md)
+- [Detect potential security threats](detect-security-threats.md)
+- [Quickly remediate security issues](fix-security-issues.md)
