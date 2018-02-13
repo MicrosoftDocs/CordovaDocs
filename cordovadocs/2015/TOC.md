@@ -27,8 +27,10 @@
 ## [Use network whitelists and the CSP](security/whitelists.md)
 # Add mobile services
 ## [Authenticate users](security/authentication.md)
-## [Access data and send notifications](take-further/)
+## [Access data and send notifications](take-further/add-azure-mobile-app.md)
 # Add Analytics
+## [Add engagement analytics](https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-cordova-get-started/)
+## [Add crash analytics](take-further/add-analytics.md)
 # Tailor to a platform
 # Build & Deploy
 ## [Overview: How Cordova builds](build-deploy/deploy-and-run-app.md)
