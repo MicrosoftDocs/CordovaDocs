@@ -13,7 +13,7 @@ The WeatherApp sample contains a simple UI with an input field for a ZIP code an
 
 Even with a simple UI on a single page, there are many things to test in the UI: giving it good and bad input, checking error messages under a variety of conditions (like no connectivity), and checking for appropriate output (for example, notice that the sunrise and sunset times shown above are the same, which shouldn’t ever be the case).
  
-In this section, though, we’ll focus on the foundational mechanics of writing and running simple *UI sequences* with Appium. The reason for this is simple: a UI sequence is the heart of a test, but it helps to understand how those sequences work independent of formal test structures. That is, the difference between a UI sequence and a test is that a test wraps a UI sequence in the appropriate code for your test framework and includes assertions. We’ll add that part in [Designing and writing UI tests](designing-ui-test.md).
+In this section, though, we’ll focus on the foundational mechanics of writing and running simple *UI sequences* with Appium. The reason for this is simple: a UI sequence is the heart of a test, but it helps to understand how those sequences work independent of formal test structures. That is, the difference between a UI sequence and a test is that a test wraps a UI sequence in the appropriate code for your test framework and includes assertions. We’ll add that part in [Designing and writing UI tests](designing-ui-tests.md).
 
 
 ## Working with the WebDriver API

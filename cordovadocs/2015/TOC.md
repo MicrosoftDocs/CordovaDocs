@@ -57,6 +57,13 @@
 ## [Debug UI tests](debug-test/debugging-ui-tests.md)
 ## [Use test clouds](debug-test/ui-testing-on-device-farms.md)
 # Automate builds & tests
+## [Automating tasks with Gulp](build-deploy/using-gulp-build-tasks.md)
+## [Application Lifecycle Management](build-deploy/app-lifecycle-managment.md)
+## [Getting started with CI](build-deploy/get-started-with-ci.md)
+## [Comprehensive guide to CI](build-deploy/ci-guide.md)
+## [CI with VSTS or TFS 2015](build-deploy/2015.md)
+## [CI with TFS 2013]()
+## [CI with Jenkins]()
 # Optimize performance
 # Package & publish
 # Change your Cordova version
