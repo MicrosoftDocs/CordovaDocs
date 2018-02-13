@@ -49,6 +49,13 @@
 ## [Debug UI tests](debug-test/debugging-unit-tests.md)
 ## [Use mocks](debug-test/unit-test-mocking.md)
 # Author & run UI tests
+## [UI testing with Appium](debug-test/ui-testing-with-appium.md)
+## [Prequisites](debug-test/ui-testing-prerequisites.md)
+## [Appium setup](debug-test/appium-setup.md)
+## [Run UI sequences](debug-test/appium-ui-sequences.md)
+## [Design and write UI tests](debug-test/designing-ui-tests.md)
+## [Debug UI tests](debug-test/debugging-ui-tests.md)
+## [Use test clouds](debug-test/ui-testing-on-device-farms.md)
 # Automate builds & tests
 # Optimize performance
 # Package & publish
