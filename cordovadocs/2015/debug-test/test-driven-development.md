@@ -1,8 +1,9 @@
-<properties pageTitle="Improving tests/test-driven development"
-  description="Improving tests/test-driven development"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Improving tests/test-driven development"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 #Improving the unit tests: an introduction to test-driven development
 

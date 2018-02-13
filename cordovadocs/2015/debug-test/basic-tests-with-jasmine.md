@@ -1,8 +1,9 @@
-<properties pageTitle="Basic unit testing with Jasmine and Karma"
-  description="Basic unit testing with Jasmine and Karma"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Basic unit testing with Jasmine and Karma"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 #Basic unit testing in action with Jasmine and Karma
 

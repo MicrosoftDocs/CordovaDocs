@@ -1,8 +1,9 @@
-<properties pageTitle="Using mocks"
-  description="Using mocks"
-  services=""
-  documentationCenter=""
-  authors="Kraig Brockschmidt" />
+---
+title: "Using mocks"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 #Using mocks for platform APIs, plugins, and other external dependencies
 
