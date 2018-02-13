@@ -32,6 +32,8 @@
 ## [Add engagement analytics](https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-cordova-get-started/)
 ## [Add crash analytics](take-further/add-analytics.md)
 # Tailor to a platform
+## [Add platform-specific content](take-further/configure-app.md)
+## [Improve Android consistency](take-further/using-crosswalk.md)
 # Build & Deploy
 ## [Overview: How Cordova builds](build-deploy/deploy-and-run-app.md)
 ## [Run your app on Apache Ripple](build-deploy/run-app-ripple-simulator.md)
@@ -39,6 +41,13 @@
 ## [Run your iOS app](build-deploy/run-app-ios.md)
 ## [Debug Your app](build-deploy/debug-using-visual-studio.md)
 # Author & run unit tests
+## [Primer on unit testing and CI](debug-test/unit-test-primer.md)
+## [Unit testing environments](debug-test/unit-testing-environments.md)
+## [Basic unit testing](debug-test/basic-tests-with-jasmine.md)
+## [Using Chutzpah in Visual Studio](debug-test/visual-studio-unit-testing-with-chutzpah.md)
+## [Improve tests / test-driven development](debug-test/test-driven-development.md)
+## [Debug UI tests](debug-test/debugging-unit-tests.md)
+## [Use mocks](debug-test/unit-test-mocking.md)
 # Author & run UI tests
 # Automate builds & tests
 # Optimize performance
