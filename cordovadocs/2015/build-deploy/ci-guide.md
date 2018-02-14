@@ -14,7 +14,7 @@ For abridged informaiton on specific build systems, you may find the **[Visual S
 *  [Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](http://go.microsoft.com/fwlink/?LinkID=691186)
 *  [Use the Visual Studio Tools for Apache Cordova with Team Foundation Services 2013](./tfs2013.md)
 *  [Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](./jenkins.md)
-*  [Build a Cordova project by using Gulp](../tutorial-gulp/tutorial-gulp-readme.md)
+*  [Build a Cordova project by using Gulp](./using-gulp-build-tasks.md)
 
 Read these articles to get up and running quickly!
 
@@ -41,7 +41,7 @@ On the surface, this seems like all files in a given Cordova project should be a
 	- *.suo
 	- *.jsproj.user
 
-**Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in. Simply remove these files from source control to resolve the issue. Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-and-workarounds/tips-and-workarounds-readme.md) for additional tips on addressing common build issues.
+**Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in. Simply remove these files from source control to resolve the issue. Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-and-workarounds/general-tips.md) for additional tips on addressing common build issues.
 
 <a name="depends"></a>
 ##Installing Dependencies
@@ -146,7 +146,7 @@ You should not run into this situation if you are using the [Visual Studio Team 
    To resolve this problem you have two options:
    
    1.  Don't check in the contents of the "platforms" folder into source control. This is by far the path of least resistance. The Gulp build script can add them at the time you build.	
-   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/ios/osx-set-execute/tips-and-workarounds-ios-osx-set-execute-readme.md) available in the tips and workarounds section.
+   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/osx-set-execute/tips-and-workarounds-ios-osx-set-execute-readme.md) available in the tips and workarounds section.
 
 4. **Signing suddenly stopped working for iOS on Feb 14th, 2016.** Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
@@ -183,7 +183,7 @@ Unlike Visual Studio, it's important to note that the base Cordova CLI does not 
 
 <a name="challenges"></a>
 ##Behind the Scenes: Resolving Common Cordova Challenges
-When building Cordova projects in a server environment, there are a number of challenges you may encounter. If you are looking for a quick solution you should consider the **[Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188)** or the [Gulp](../tutorial-gulp/tutorial-gulp-readme.md) tutorial as they are specifically designed to help resolve these problems regardless of build system.  If you're interested in understanding what is going on behind the scenes, read on.
+When building Cordova projects in a server environment, there are a number of challenges you may encounter. If you are looking for a quick solution you should consider the **[Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188)** or the [Gulp](./using-gulp-build-tasks.md) tutorial as they are specifically designed to help resolve these problems regardless of build system.  If you're interested in understanding what is going on behind the scenes, read on.
 
 The challenges are as follows:
 
@@ -301,7 +301,7 @@ To avoid re-installing each time, you can take advantage of Visual Studio's **ta
 
 4.  Use "./cordova.sh" (OSX) or "cordova.cmd" (Windows) to run additional Cordova commands
 
-A variation of this method is used by **Visual Studio, the TACO CLI, the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188), and the taco-team-build Node module** referenced in the [Gulp](../tutorial-gulp/tutorial-gulp-readme.md) and [Jenkins](./jenkins.md) tutorials.
+A variation of this method is used by **Visual Studio, the TACO CLI, the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188), and the taco-team-build Node module** referenced in the [Gulp](./using-gulp-build-tasks.md) and [Jenkins](./jenkins.md) tutorials.
 
 <a name="platforms"></a>
 ###Adding Platforms
@@ -380,8 +380,8 @@ xcrun -v -sdk iphoneos PackageApplication "${WORKSPACE}/platforms/ios/build/devi
 ```
 
 ## More Information
-* [Learn about other Team Build / CI options](./tutorial-team-build-readme.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
+* [Learn about other Team Build / CI options](./ci-guide.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../samples/cordova-samples.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

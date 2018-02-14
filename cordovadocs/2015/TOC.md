@@ -78,7 +78,7 @@
 # Tutorials & Samples
 ## [Samples master list](samples/cordova-samples.md)
 ## [Create the TodoList sample app](samples/create-to-do-list-app.md)
-## [Convert a Cordova project to PhoneGap](samples/convert_cordova_phonegap.md)
+## [Convert a Cordova project to PhoneGap](samples/convert-cordova-phonegap.md)
 # Tips & workarounds
 ## [General](tips-and-workarounds/general-tips.md)
 ## [Tools configuration](tips-and-workarounds/configuration-tips.md)
@@ -92,7 +92,7 @@
 # Release notes & bugs
 ## [Update 10](release-notes/release-update-10.md)
 ## [Update 9](release-notes/release-update-9.md)
-## [Update 8](release-notes/release-updates-8.md)
+## [Update 8](release-notes/release-update-8.md)
 ## [Update 7](http://microsoft.github.io/vstacoblog/2016/03/01/announcing-update-7.html)
 ## [Update 6](http://microsoft.github.io/vstacoblog/2016/02/04/announcing-update-6.html)
 ## [Update 5](release-notes/release-update-5.md)
