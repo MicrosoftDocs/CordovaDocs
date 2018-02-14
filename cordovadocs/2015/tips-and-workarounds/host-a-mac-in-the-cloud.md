@@ -94,7 +94,7 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 8. Configure remote agent settings, mirroring the settings shown in the Terminal App.
 
-    >**Important**: The Security PIN expires after 10 minutes by default. To generate a new PIN, see our [documentation](configure-vs-tools-apache-cordova.md#IosPin).
+    >**Important**: The Security PIN expires after 10 minutes by default. To generate a new PIN, see our [documentation](configuration-tips.md#IosPin).
 
     ![Cordova_MacInCloud_Remote_Agent_VS_Config](media/host-a-mac-in-the-cloud/IC816237.png)
 

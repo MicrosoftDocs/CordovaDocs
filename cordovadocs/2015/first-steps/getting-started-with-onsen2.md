@@ -161,6 +161,6 @@ If you have previously run the VS Emulator for Android successfully but now the 
 
 ### Other issues?
 
-If you have errors running the Blank App template (rather than just the Onsen UI starter apps), see these [troubleshooting steps](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md).
+If you have errors running the Blank App template (rather than just the Onsen UI starter apps), see these [troubleshooting steps](../tips-and-workarounds/general-tips.md).
 
 If that doesn't resolve issues, post questions on [Onsen UI Community](https://community.onsen.io/).

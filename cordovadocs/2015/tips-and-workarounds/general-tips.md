@@ -1,11 +1,9 @@
 ---
 title: "General Cordova tips and workarounds"
-author: "kirupa"
-ms.technology: "cordova"
-ms.prod: "visual-studio-dev15"
-ms.devlang: "javascript"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
 ms.date: "05/15/2016"
-ms.author: "kirupac"
+ms.author: "jmatthiesen"
 ---
 
 #General Cordova tips and workarounds

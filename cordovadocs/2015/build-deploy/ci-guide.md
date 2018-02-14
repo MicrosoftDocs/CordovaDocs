@@ -103,7 +103,7 @@ You may also need to configure proxy settings for Java. This can be [accomplishe
 JAVA_OPTS="-Dhttps.proxyHost=<host> -Dhttps.proxyPort=<port> -Dhttp.proxyHost=<host> -Dhttp.proxyPort=<port> -DproxySet=true"
 ```
 
-Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a recent version of Node just (like Node 4 if your Cordova version allows it) or downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#cordovaproxy) for additional details.
+Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a recent version of Node just (like Node 4 if your Cordova version allows it) or downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). See [tips and workarounds](../tips-and-workarounds/general-tips.md#cordovaproxy) for additional details.
 
 <a name="osxgotcha"></a>
 ## iOS/OSX Gotchas: Troubleshooting Tips for Building on a Mac
