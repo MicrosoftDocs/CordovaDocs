@@ -185,7 +185,7 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 * [Device-specific OEM driver](http://developer.android.com/tools/extras/oem-usb.html), or
 
-* For Google Nexus devices, [Google USB driver](http://developer.android.com/sdk/win-usb.html#top) You must also make sure that your device is in developer mode. For instructions, see “Enabling On-device Developer Options” and “Setting up a Device for Development” in the [Using Hardware Devices](http://developer.android.com/tools/device.html) page on the Android website. To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your App](./package-and-publish/package-app-built-with-visual-studio.md#android).
+* For Google Nexus devices, [Google USB driver](http://developer.android.com/sdk/win-usb.html#top) You must also make sure that your device is in developer mode. For instructions, see “Enabling On-device Developer Options” and “Setting up a Device for Development” in the [Using Hardware Devices](http://developer.android.com/tools/device.html) page on the Android website. To deploy a Release or Distribution configuration of your app, you must sign your app first. For more information, see [Package your app](../publishing/publish-to-a-store.md#package-the-android-version-of-your-app).
 
 ### To run your app on an Android device
 
@@ -217,7 +217,7 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 6. When prompted, choose **Allow USB Debugging**.
 
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
 
 ## See Also
 

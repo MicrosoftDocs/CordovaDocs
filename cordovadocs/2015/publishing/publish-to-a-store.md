@@ -218,7 +218,7 @@ If you don't have a distribution certificate yet, continue on with this section 
 
 1. Start Xcode.
 
-    If you haven't installed Xcode, see the [First, install a few things onto your Mac](./getting-started/ios-guide.md#use-developer-account) section of the [iOS setup guide]().
+    If you haven't installed Xcode, see the [First, install a few things onto your Mac](../first-steps/ios-guide.md) section of the [iOS setup guide]().
 
 2. In Xcode, add your Apple ID (If you haven't done so already).
 

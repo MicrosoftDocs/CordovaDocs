@@ -49,7 +49,7 @@ Follow these instructions to run your app on a Windows Phone device that is conn
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Windows Phone, see [Resolve Windows build and deployment errors](../tips-and-workarounds/windows/tips-and-workarounds-windows-readme.md).
+If you have trouble deploying to Windows Phone, see [Resolve Windows build and deployment errors](../tips-and-workarounds/windows-tips.md).
 
 ### To run your app on a device
 
