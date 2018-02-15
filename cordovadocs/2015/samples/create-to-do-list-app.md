@@ -43,7 +43,7 @@ To run the complete sample:
 
     ![Selecting the Ripple emulator](media/create-to-do-list-app/IC793846.png)
 
-    >**Note**: iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../develop-apps/run-app-apache.md) and the [iOS Setup Guide](ios-guide.md) for more info.
+    >**Note**: iOS and some target devices and emulators have different system or configuration requirements. See topics like [Run your app on Android](../build-deploy/run-app-android-emulator.md) and the [iOS Setup Guide](../build-deploy/run-app-ios.md) for more info.
 
     If you are not running on a VM and your machine supports Hyper-V, we recommend targeting Android and selecting the VS Emulator (it's faster than the Google Android Emulator). GenyMotion also provides a good emulator but set up and configuration takes time.
 
@@ -164,7 +164,7 @@ Now, we will add the complete markup for index.html.
 
 * In the css folder, open index.css, and add CSS style information for HTML elements and templates. It is a long section of code, so [get the current CSS code](https://github.com/Microsoft/cordova-samples/blob/master/todo-angularjs/AngularJSTodoApp/www/css/index.css) from the complete sample and paste it into index.css.
 
-You can take a look at the empty todo list in one of the emulators to verify that everything looks correct. In this step, you’ll run the AngularJSToDo list app on either Windows or on the Apache Ripple simulator, which have minimal setup requirements (although Ripple requires Chrome). If you prefer to test your app on another target, see the following topics: [Run your app on Android](../develop-apps/run-app-apache.md), [iOS Setup Guide](setup-guide.md), and [Run your app on Windows Phone](../develop-apps/run-app-windows-phone.md).
+You can take a look at the empty todo list in one of the emulators to verify that everything looks correct. In this step, you’ll run the AngularJSToDo list app on either Windows or on the Apache Ripple simulator, which have minimal setup requirements (although Ripple requires Chrome). If you prefer to test your app on another target, see the following topics: [Run your app on Android](../build-deploy/run-app-ripple-simulator.md), [iOS Setup Guide](../first-steps/ios-guide.md), and [Run your app on Windows Phone](../build-deploy/run-app-windows-phone.md).
 
 ### To build and run the app
 

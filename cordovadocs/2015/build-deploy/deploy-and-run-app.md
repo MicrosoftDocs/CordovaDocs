@@ -28,7 +28,7 @@ Because Windows cannot build an iOS app directly, Visual Studio uses a remote ag
 
 ## Windows and Windows Phone
 
-When building for Windows/Windows Phone 8.1 and 10, Cordova generates a Windows Runtime app (APPX). When building for Windows Phone 8, it generates a Silverlight (XAP) WebView app. These apps are launched in the same way as a native Windows 8 or Windows Phone 8 project in Visual Studio. For more information, see [Run Your Apache Cordova App on Windows](./develop-apps/run-app-windows.md) and [Run Your Apache Cordova App on Windows Phone](./develop-apps/run-app-windows-phone.md).
+When building for Windows/Windows Phone 8.1 and 10, Cordova generates a Windows Runtime app (APPX). When building for Windows Phone 8, it generates a Silverlight (XAP) WebView app. These apps are launched in the same way as a native Windows 8 or Windows Phone 8 project in Visual Studio. For more information, see [Run Your Apache Cordova App on Windows](run-app-windows.md) and [Run Your Apache Cordova App on Windows Phone](run-app-windows-phone.md).
 
 ## Ripple Emulator
 
@@ -40,6 +40,6 @@ To make the Ripple build process to be as fast as possible, the CLI is used to g
 
 **Concepts**
 
-[Get Started with Visual Studio Tools for Apache Cordova](./get-started/get-started-vs-tools-apache-cordova.md)  
-[Install Visual Studio Tools for Apache Cordova](./get-started/install-vs-tools-apache-cordova.md)  
-[Create Your First App Using Visual Studio Tools for Apache Cordova](./get-started/create-first-app-using-vs-tools-apache-cordova.md)  
+[Get Started with Visual Studio Tools for Apache Cordova](../index.md)  
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
+[Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/get-started-first-mobile-app.md)  

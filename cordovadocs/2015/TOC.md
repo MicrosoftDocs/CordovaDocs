@@ -87,7 +87,7 @@
 ## [Windows](tips-and-workarounds/windows-tips.md)
 ## [Performance](tips-and-workarounds/performance-tips.md)
 ## [Symlink and iOS plugins](tips-and-workarounds/tips-and-workarounds-ios-ios-plugin-symlink-fix-readme.md)
-## [Errors from files in Platforms folder](tips-and-workarounds/tips-and-workarounds-ios-osx-set-execute-readme.md)
+## [Errors from files in Platforms folder](tips-and-workarounds/ios-osx-set-execute-readme.md)
 ## [Access a native Cordova project](tips-and-workarounds/access-native-cordova-project.md)
 # Release notes & bugs
 ## [Update 10](release-notes/release-update-10.md)

@@ -183,8 +183,6 @@ In this section:
 
 * [Debug Windows and Windows Phone](#DbgWindows)
 
->**Tip**: For a video and accompanying tutorial that shows you how to debug using the Visual Studio debugger, DOM Explorer, and the JavaScript Console, see [Video Walkthrough: Debug using Visual Studio Diagnostic Tools for Cordova](../video/debug-using-vs-diagnostic-tools.md)
-
 You can attach the Visual Studio debugger to an app that’s running in the Apache Ripple emulator.
 
 ### <a name="DbgRipple"></a>To debug in Ripple

@@ -146,7 +146,7 @@ You should not run into this situation if you are using the [Visual Studio Team 
    To resolve this problem you have two options:
    
    1.  Don't check in the contents of the "platforms" folder into source control. This is by far the path of least resistance. The Gulp build script can add them at the time you build.	
-   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/osx-set-execute/tips-and-workarounds-ios-osx-set-execute-readme.md) available in the tips and workarounds section.
+   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/ios-osx-set-execute-readme.md) available in the tips and workarounds section.
 
 4. **Signing suddenly stopped working for iOS on Feb 14th, 2016.** Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 

@@ -91,7 +91,7 @@ For additional detail on configuring specific build systems, see the following d
 
 The following articles also provide some additional details and troubleshooting information:
 
-*  **[Build a Cordova project by using Gulp](../tutorial-gulp/tutorial-gulp-readme.md)**
+*  **[Build a Cordova project by using Gulp](../build-deploy/using-gulp-build-tasks.md)**
 *  **[Comprehensive Guide to Continuous Integration with Cordova Apps](ci-guide.md)**
 
 ## More Information

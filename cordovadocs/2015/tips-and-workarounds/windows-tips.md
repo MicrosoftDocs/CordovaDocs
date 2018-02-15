@@ -24,7 +24,7 @@ Try these steps if you have trouble building and deploying to Windows or Windows
 2. Open the configuration designer (config.xml), Windows tab, and make sure you select the OS that your are currently trying to target (Windows 8.1 or Windows 10).
 
 3. Running on a device? Make sure that your device is enabled for development. Instructions to do this are different for each platform.
-        * For Windows Phone, see [this article](../../develop-apps/run-app-windows-phone.md). For Windows 10, Visual Studio will prompt you to enable the device.
+        * For Windows Phone, see [this article](../build-deploy/run-app-windows-phone.md). For Windows 10, Visual Studio will prompt you to enable the device.
 
 4. If you are running on a device and the app is already installed, uninstall the app and try again.
 

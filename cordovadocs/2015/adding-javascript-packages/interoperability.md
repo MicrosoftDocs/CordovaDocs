@@ -14,7 +14,7 @@ Apache Cordova projects that you create using many third party tools are compati
 
 To follow the steps in this tutorial, you must:
 
-1. [Install Visual Studio 2015](./first-steps/installation.md) with Visual Studio Tools for Apache Cordova.
+1. [Install Visual Studio 2015](../first-steps/installation.md) with Visual Studio Tools for Apache Cordova.
 
 2. [Install the Ionic CLI](http://ionicframework.com/docs/cli/install.html)
 

@@ -221,6 +221,6 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 ## See Also
 
-[Install Visual Studio Tools for Apache Cordova](./getting-started/install-vs-tools-apache-cordova.md)  
-[Debug Your App Built with Visual Studio Tools for Apache Cordova](./debug-and-test/debug-using-visual-studio.md)  
-[Package Your App Built with Visual Studio Tools for Apache Cordova](./debug-and-test/package-app-built-with-visual-studio.md)  
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
+[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/visual-studio-unit-testing-with-chutzpah.md)  
+[Package Your App](../publishing/publish-to-a-store.md)  
