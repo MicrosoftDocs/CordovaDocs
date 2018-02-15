@@ -202,7 +202,7 @@ var gulp = require("gulp"),
     cordova = require("cordova");
 ```
 
-If you're creating an automated build script, you can find a more complete list of considerations by reviewing [Get started with Continuous Integration](./tutorial-team-build/tutorial-team-build-readme.md).
+If you're creating an automated build script, you can find a more complete list of considerations by reviewing [Get started with Continuous Integration](ci-guide.md).
 
 
 <a name="tacoteambuild"></a>
@@ -386,7 +386,7 @@ You'll need to run this task first to start the watching, so either use ```gulp 
 
 A continuous integration environment means having a dedicated build server that handles requests from everyone in your team, and perhaps also runs builds automatically whenever code is committed to your repository.
 
-The build server must, of course, have all the dependencies installed, such as SDKs, for your target platforms. See the “Installing Dependencies” section of the [Comperhensive CI tutorial](./tutorial-team-build/general.md) for details.
+The build server must, of course, have all the dependencies installed, such as SDKs, for your target platforms. See the “Installing Dependencies” section of the [Comperhensive CI tutorial](ci-guide.md#installing-dependencies) for details.
 
 However you arrange your build tasks, though, it's a simple matter to configure to server to use gulp. 
 
@@ -399,7 +399,7 @@ npm install
 ./node_modules/.bin/gulp
 ```
 
-Then set the **CORDOVA_CACHE** environment variable to the location on your build server where it should cache multiple versions of Cordova and Cordova platforms. See the [Jenkins tutorial](./tutorial-team-build/jenkins.md) for a specific example. 
+Then set the **CORDOVA_CACHE** environment variable to the location on your build server where it should cache multiple versions of Cordova and Cordova platforms. See the [Jenkins tutorial](./jenkins.md) for a specific example. 
 
 Note that when building iOS, you may need to unlock the login keychain before building when using a non-intractive build agent (which is common for Jenkins, for example.)  You'll need to extend your script as follows if you run into this problem:
 

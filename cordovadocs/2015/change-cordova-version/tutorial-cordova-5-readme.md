@@ -1,8 +1,9 @@
-<properties pageTitle="Major Changes in Apache Cordova 5 & 6"
-  description="Adapting to changes in Apache Cordova 5.x and 6.x"
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Major Changes in Apache Cordova 5 & 6"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 # Adapting to changes caused by Apache Cordova 5.x and 6.x
 The Tools for Apache Cordova RTM have been tested with both Cordova 4.3.1 and Cordova 5.1.1 with subsequent updates being tested against more recent versions of Cordova including 6.0.0. 
@@ -80,7 +81,7 @@ cordova plugin add cordova-plugin-camera@^1.2.0
 ### Security Model Changes for Android and iOS
 One of the more confusing changes about Cordova 5 is that the updated version of the Android platform (also called Cordova Android 4.x) and iOS now follow a different, but more powerful security model designed to provide developers with the tools needed to prevent cross-site scripting attacks among other issues. A critical aspect of this security model is that **absolutely no network access of any kind is allowed without the installation of a Cordova plugin**.
 
-There are a whole host of new security features available and we **strongly recommend you read the [whitelist and CSP guide](../security/cordova-security-whitlist.md)** for a introduction on them. This article will focus on getting you up and running with the basics.
+There are a whole host of new security features available and we **strongly recommend you read the [whitelist and CSP guide](../security/whitelists.md)** for a introduction on them. This article will focus on getting you up and running with the basics.
 
 #### The New Whitelist Plugin
 The new [Cordova Whitelist plugin (cordova-plugin-whitelist)](http://go.microsoft.com/fwlink/?LinkID=617668) is the recommended base security plugin to use for managing network security access. Historically there was one **access** element in config.xml used to control all access to network resources.
@@ -96,7 +97,7 @@ Projects created using the Tools for Apache Cordova or Cordova CLI itself contai
 3. Disallows inline script (Meaning no &lt;script&gt; tags or "on" attributes on HTML elements) on recent versions of Android, iOS, or Windows via a W3C Content Security Policy (CSP) in index.html.
 4. Allows the "tel:", "sms:", "mailto:", and "geo:" intents.
 
-You'll want to start your project with roughly these same defaults and alter as needed. See below for how to add these defaults to your project and the [whitelist and CSP guide](../security/cordova-security-whitlist.md) for details on why these defaults are in place and how to change them.
+You'll want to start your project with roughly these same defaults and alter as needed. See below for how to add these defaults to your project and the [whitelist and CSP guide](../security/whitelists.md) for details on why these defaults are in place and how to change them.
 
 ####Configuring Security Settings from a VS Project
 When you upgrade a project to Cordova 5.0.0+, you will want to take the following steps if you want to mirror the base security policy listed above. You can then customize them as needed to meet your needs.
@@ -142,7 +143,7 @@ When you upgrade a project to Cordova 5.0.0+, you will want to take the followin
 
 		> Note: You don't have to add this tag to pages that are dynamically loaded by a JavaScript framework like AngluarJS or WinJS. Many times you just need to add it to index.html.
 
-	2. Customize the CSP policy to meet your needs. See [whitelist and CSP guide](../security/cordova-security-whitlist.md) for details.
+	2. Customize the CSP policy to meet your needs. See [whitelist and CSP guide](../security/whitelists.md) for details.
 
 	3. You may wish to use the Crosswalk WebView plugin when targeting earlier versions of Android as CSP support was not introduced until Android 4.4. See [the section on Crosswalk later in this article](#crosswalk) for additional tips on using Crosswalk.
 
@@ -271,7 +272,7 @@ cordova build android -- --ant
 
 There are three major ways that switching to Gradle can affect your project:
 
-1. The way you specify signing information is different. See the [Packaging & Publishing tutorial for details](../tutorial-package-publish/tutorial-package-publish-readme.md).
+1. The way you specify signing information is different. See the [Packaging & Publishing tutorial for details]().
 1. Some 3rd party plugins may now require Gradle and thus typically only work on Cordova 5.0.0 and up. In particular, plugins that modify Android build artifacts in a non-standard way can run into issues.
 1. Other 3rd party plugins might not have updated to support Gradle yet, and still require Ant to be used. Generally these plugins are designed for Cordova versions < 5.0.0.
 
@@ -281,7 +282,7 @@ A good example of a plugin that requires Gradle is the [Crosswalk plugin](http:/
 ####Migrating an Existing Project to Use Gradle
 Simply updating to Cordova 5.0.0+ will automatically cause Gradle to be used from that point forward. Because of the differences mentioned above you should take the following steps to adapt your project:
 
-1. If you've already added release signing information into ant.properties in your project, you'll need to place this information in a new file in your project. See the [Packaging & Publishing tutorial for details](./package-and-publish/tutorial-package-publish) for details.
+1. If you've already added release signing information into ant.properties in your project, you'll need to place this information in a new file in your project. See the [Packaging & Publishing tutorial for details](../publishing/publish-to-a-store.md) for details.
 
 2. If you encounter an unexpected build error specifically for Android, see if the error references Cordova plugin source code. If so, update it by removing the plugin using the **Installed** tab of the config.xml designer and re-adding the plugin. If you cannot determine which plugin is causing the issue, you can opt to proactively upgrade all of them.
 

@@ -7,7 +7,7 @@ ms.author: "jmatthiesen"
 
 #Basic unit testing in action with Jasmine and Karma
 
-Following on the [Primer](rename-me!.md) and [Unit testing environments](unit-testing-environments.md), Let’s now follow a piece of code and an associated unit test through the process. For this exercise, create a folder with two subfolders, ```js``` and ```test```, where we’ll save the files involved.
+Following on the [Primer](unit-test-primer.md) and [Unit testing environments](unit-testing-environments.md), Let’s now follow a piece of code and an associated unit test through the process. For this exercise, create a folder with two subfolders, ```js``` and ```test```, where we’ll save the files involved.
 
 > The sample code for this topic is [karma-jasmine-cli](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-jasmine-cli) and [karma-jasmine-gulp-VS](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-jasmine-gulp-VS) in the cordova-samples repository on GitHub. There is also a simple variant using QUnit, [karma-qunit-cli](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/karma-qunit-cli).
 

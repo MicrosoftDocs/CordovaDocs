@@ -16,7 +16,7 @@ In this guide, we'll show how to build, test and debug a Cordova application usi
 
 The application displays current weather conditions based on the current device location plus enables users to search for weather conditions using a US postal (zip) code. You can find the application's source code [here](https://github.com/Microsoft/cordova-samples/tree/master/weather-app).
 
-> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](install-vs-tools-apache-cordova.md).
+> **Note:** Before we begin, make sure you have completed the [Visual Studio Tools for Apache Cordova Installation](installation.md).
 
 ## <a id="get-started"></a>First, create a project
 
@@ -516,9 +516,9 @@ You can find some of the more commonly used plugins in the **Core** page of the 
 
 ![Configuration Designer](media/vs-taco-2015-first-app/core-plugins.png)
 
-Use the **Custom** page to add plugins that are not one of the [core plugins](../develop-apps/use-cordova-plugins.md). These could be standard Cordova plugins available on npm (Cordova 5.x or greater), or plugins that you or a colleague create for some specific purpose and then save to your local drive or to a GitHub repository.  [This document](../develop-apps/manage-plugins.md#Custom) explains how to add a custom plugin.
+Use the **Custom** page to add plugins that are not one of the [core plugins](../develop-apps/use-cordova-plugins.md). These could be standard Cordova plugins available on npm (Cordova 5.x or greater), or plugins that you or a colleague create for some specific purpose and then save to your local drive or to a GitHub repository.  [This document](../access-device-capabilities/manage-plugins.md) explains how to add a custom plugin.
 
-If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../develop-apps/manage-plugins.md#AddOther).
+If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../access-device-capabilities/manage-plugins.md).
 
 Let's add a plugin that gives us access to the device's geolocation system. That way, we can get the weather of a user's current location.
 
@@ -726,7 +726,7 @@ Just like any browser, your Cordova app supports HTTP requests and Ajax calls. H
 
 Additionally, your server--or servers that you pull from--may have additional security that restricts your app from being able to pull resources into your app.
 
-* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](~/en-us/docs/tips-and-workarounds-general-readme/#connection).
+* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](../tips-and-workarounds/general-tips.md).
 
 **Easy backend set up with Azure**
 
@@ -736,7 +736,7 @@ Get straight to building by hooking your app up to Azure. Azure offers a Mobile 
 
 search for available Cordova plugins on npm (Cordova 5.x or greater). The naming convention for these plugins is cordova-plugin-pluginname or phonegap-plugin-pluginname.
 
-> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../develop-apps/manage-plugins.md#Custom).
+> **Tip:** If find a plugin that doesn't appear in the **Plugins** tab of configuration designer, you can still use it. [Learn more](../access-device-capabilities/manage-plugins.md).
 
 **Try using Bower to add a package to your project**
 
@@ -756,7 +756,7 @@ See [Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apache 
 
 **Tack on an Azure backend - it's free to try**
 
-see [Connect a cloud service](../develop-apps/add-connected-services.md).
+see [Connect a cloud service](../take-further/add-azure-mobile-app.md).
 
 **Take a look at TypeScript - it's fully supported in your project**
 

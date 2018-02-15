@@ -66,7 +66,7 @@ module BlankCordovaApp {
 }
 
 ```
-This is the same source as the [JavaScript Blank App template](create-first-app-using-vs-tools-apache-cordova.md#Create), implemented in TypeScript. This code sets up Cordova event handlers for the application.
+This is the same source as the [JavaScript Blank App template](get-started-first-mobile-app.md), implemented in TypeScript. This code sets up Cordova event handlers for the application.
 
 When you build this project, the TypeScript source will be compiled into a JavaScript file named appBundle.js located in the www/scripts/ folder (this is configured in the tsconfig.json file mentioned earlier). By doing this, you reduce the size of your final packaged application, because the TypeScript files in the /scripts folder will not be included in the application package.
 

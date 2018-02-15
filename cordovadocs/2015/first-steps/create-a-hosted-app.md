@@ -70,7 +70,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     * If you are running Windows 10, you can plan to test on the Windows Phone 10 emulator or your Windows 10 device. If your device has a webcam, you can use it later in the tutorial!
 
-    * If you are running Windows 7 or later, plan to run on the [Ripple Simulator](../develop-apps/run-app-ripple-simulator.md). (install Chrome now if you don't have it). Later in the tutorial, you will need to configure a full-featured emulator, such as the Google Android Emulator or GenyMotion, or you can run against an actual device if you have one available. (Ripple does not support the Camera plugin.)
+    * If you are running Windows 7 or later, plan to run on the [Ripple Simulator](../build-deploy/run-app-ripple-simulator.md). (install Chrome now if you don't have it). Later in the tutorial, you will need to configure a full-featured emulator, such as the Google Android Emulator or GenyMotion, or you can run against an actual device if you have one available. (Ripple does not support the Camera plugin.)
 
     > **Note**: You can run the app on iOS, but setup requires additional steps and either a Mac or cloud-based Mac service and we will not be showing those steps in the tutorial. For more info, see the [iOS Guide](ios-guide.md).
 

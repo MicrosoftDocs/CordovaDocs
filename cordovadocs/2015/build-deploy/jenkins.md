@@ -21,7 +21,7 @@ Since the build process we will describe here is not directly dependent on MSBui
 
 2.  Manually install only the pre-requisites needed for the specific platforms you intend to build. For example, you do not need to install Visual Studio at all if you only intend to target Android. See "Installing Dependencies" in the [Building Cordova Apps in a Team / Continuous Integration Environment](ci-guide.md#installing-dependencies) tutorial for details.
 
->**Troubleshooting Tip**: See ["Internet Access & Proxy Setup" in the general CI tutorial](ci-guide.md#internet-access-&-proxy-setup) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
+>**Troubleshooting Tip**: See ["Internet Access & Proxy Setup" in the general CI tutorial](ci-guide.md) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
 For OSX, the pre-requisites will need to be installed manually, but mirror [the requirements for the Visual Studio remote build agent](http://go.microsoft.com/fwlink/?LinkID=533745). However, unlike with TFS 2013, you do not need to install the remote build agent itself if your OSX machine will only be used for team / CI builds.
 
@@ -275,7 +275,7 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 
 8. Click "Save" and then "Build Now" to verify everything is working!
 
-	**Trouble Shooting Tip:** See ["Troubleshooting Tips for Building on OSX" in the general CI tutorial](ci-guide.md#ios/osx-gotchas:-troubleshooting-tips-for-building-on-a-mac) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
+	**Trouble Shooting Tip:** See ["Troubleshooting Tips for Building on OSX" in the general CI tutorial](ci-guide.md) for tips on resolving common build errors that can occur when building Cordova projects on that operating system.
 
 ## More Information
 * [Learn about other CI options](get-started-with-ci.md)

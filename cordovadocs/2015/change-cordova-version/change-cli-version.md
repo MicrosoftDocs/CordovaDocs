@@ -136,9 +136,9 @@ If you haven't installed the update, and you plan to change your project's CLI v
 
 6. Update your plugins by removing them and then adding them back to your project.
 
-    * If you chose to use the most recent version of the CLI, see [Update a plugin to use the most recent version](./develop-apps/manage-plugins.md#Updating).
+    * If you chose to use the most recent version of the CLI, see [Update a plugin to use the most recent version](../access-device-capabilities/manage-plugins.md).
 
-    * If you chose to use an older version of the CLI version, see [Update a plugin to use an older version](./develop-apps/manage-plugins.md#Older).
+    * If you chose to use an older version of the CLI version, see [Update a plugin to use an older version](../access-device-capabilities/manage-plugins.md).
 
 7. Open a Terminal (on a Mac) or open a Command Prompt (on a Windows computer).
 

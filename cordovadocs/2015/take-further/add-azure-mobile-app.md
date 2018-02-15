@@ -164,7 +164,7 @@ Select a device target and press F5 to run your app with authentication.
 
 * Other build or deployment errors in your Cordova app?
 
-    [See Cordova troubleshooting tips](http://taco.visualstudio.com/en-us/docs/tips-and-workarounds-general-readme/#resolve-build-and-deployment-errors-when-you-build-for-the-first-time)
+    [See Cordova troubleshooting tips](../tips-and-workarounds/general-tips.md)
 
 
 ##Links
