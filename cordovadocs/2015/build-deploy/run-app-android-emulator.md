@@ -32,7 +32,7 @@ Here’s how to run your app on the [Visual Studio Emulator for Android](https:/
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
 
 ## Google Android Emulator <a name="google"></a>
 
@@ -76,11 +76,11 @@ Before you run your app on the Google Android emulator in Visual Studio, use the
 
     Visual Studio deploys the app to the Android emulator that is currently running. If no emulator is running, Visual Studio starts the last emulator that was created using the AVD Manager, and then deploys the app.
 
-  If you want to debug your app against Android versions 4.1.2-4.3, see the information about the jsHybugger plugin in the article [Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-and-test/debug-using-visual.md).
+  If you want to debug your app against Android versions 4.1.2-4.3, see the information about the jsHybugger plugin in the article [Debug Your App Built with Visual Studio Tools for Apache Cordova](../build-deploy/debug-using-visual-studio.md).
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
 
 ### Configure a high-performance Google x86 emulator <a name="HAXM"></a>
 
@@ -177,7 +177,7 @@ The [Genymotion emulator](http://www.genymotion.com/) is a popular alternative t
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
 
 ## Android devices
 

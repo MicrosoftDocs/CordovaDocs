@@ -339,7 +339,7 @@ If your project is located inside a deeply nested directory in your file system,
 <a name="cordova-platform-ver"></a>
 
 ## Using a Different Version of a Cordova Platform
-Typically when you want get a fix or feature for Cordova itself, you'll simply use the **Platforms** tab of the config.xml designer to update the Cordova version for your project. However, under [certain circumstances](../android/security-05-26-2015/tips-and-workarounds-android-security-05-26-2015-readme.md) you might want to update a "platform" independent of the entire Cordova release. See [this article](../../tutorial-cordova-5/tutorial-cordova-5-readme.md) for a discussion of what a "platform" means in the Cordova context, and how it is versioned.
+Typically when you want get a fix or feature for Cordova itself, you'll simply use the **Platforms** tab of the config.xml designer to update the Cordova version for your project. However, under [certain circumstances](../tips-and-workarounds/android/security-05-26-2015/android-security-05-26-2015-readme.md) you might want to update a "platform" independent of the entire Cordova release. See [this article](../change-cordova-version/tutorial-cordova-5-readme.md) for a discussion of what a "platform" means in the Cordova context, and how it is versioned.
 
 Updating a platform version for your project is easy with Cordova 4.3.0 and up. First you need to update config.xml.
 
@@ -387,4 +387,4 @@ You can also use a platform from Git using the following syntax:
 Be aware that platform versions in Git are typically developer releases so you will likely encounter bugs.
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../index.md)

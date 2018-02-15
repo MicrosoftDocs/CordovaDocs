@@ -53,7 +53,7 @@ To run the complete sample:
 
 ### Troubleshooting? Let's fix it
 
-If you see any unexpected errors when trying to run the app, see these [troubleshooting tips](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md) before continuing.
+If you see any unexpected errors when trying to run the app, see these [troubleshooting tips](../tips-and-workarounds/general-tips.md) before continuing.
 
 ## <a id="Create"></a>Create the AngularJS ToDoList app from scratch with a new project
 
@@ -197,7 +197,7 @@ You can take a look at the empty todo list in one of the emulators to verify tha
 
 ### Troubleshooting? Let's fix it
 
-If you see any unexpected errors, try running the complete sample first. If that doesn't resolve the issues, see these [troubleshooting tips](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md) before continuing.
+If you see any unexpected errors, try running the complete sample first. If that doesn't resolve the issues, see these [troubleshooting tips](../tips-and-workarounds/general-tips.md) before continuing.
 
 ## <a id="AddAngularJS"></a>Add the AngularJS framework to your project
 

@@ -61,7 +61,7 @@ You can install the Ionic starter templates in Visual Studio and use them to sta
 
     ![Run the app](media/vs-taco-2015-tutorial-ionic/ionic-f5.png)
 
-    You can configure a Google Android emulator in [AVD Manager](../develop-apps/run-app-apache.md).
+    You can configure a Google Android emulator in [AVD Manager](../build-deploy/run-app-android-emulator.md).
 
     You can also run on Ripple simulator instead, but you will need to use the workaround described [later in this article](#keyboard).
 

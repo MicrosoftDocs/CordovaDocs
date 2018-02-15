@@ -47,7 +47,7 @@ Ripple avoids cross-domain limitations in the browser by using a proxy. Two prox
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
 
 ### To change the proxy
 
@@ -71,6 +71,6 @@ You can change the target device on the fly while your app is running in Chrome.
 
 #### See Also
 
-[Install Visual Studio Tools for Apache Cordova](../getting-started/install-vs-tools-apache-cordova.md)
-[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-and-test/debug-using-visual-studio.md)
-[Package Your App Built with Visual Studio Tools for Apache Cordova](../package-and-publish/package-app-built-with-visual-studio.md)
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
+[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/visual-studio-unit-testing-with-chutzpah.md)
+[Publish your app](../publishing/publish-to-a-store.md)

@@ -91,11 +91,11 @@ For additional detail on configuring specific build systems, see the following d
 
 The following articles also provide some additional details and troubleshooting information:
 
-*  **[Build a Cordova project by using Gulp](../build-deploy/using-gulp-build-tasks.md)**
+*  **[Build a Cordova project by using Gulp](using-gulp-build-tasks.md)**
 *  **[Comprehensive Guide to Continuous Integration with Cordova Apps](ci-guide.md)**
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../index.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

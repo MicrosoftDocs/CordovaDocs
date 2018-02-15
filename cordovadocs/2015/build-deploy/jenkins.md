@@ -279,7 +279,7 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 
 ## More Information
 * [Learn about other CI options](./tutorial-team-build-readme.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../index.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

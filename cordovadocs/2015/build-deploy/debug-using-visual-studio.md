@@ -388,6 +388,6 @@ As an alternative to using weinre for Windows Phone 8 debugging, you can instead
 ![Download the tools](media/debug-using-visual-studio/debug-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
 
 #### See Also
-[Get Started with Visual Studio Tools for Apache Cordova](../getting-started/get-started-vs-tools-apache-cordova.md)
+[Get Started with Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
 
 [Known Issues](../known-issues/known-issues-debugger.md)

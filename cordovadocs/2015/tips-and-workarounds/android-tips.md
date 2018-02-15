@@ -15,14 +15,14 @@ This document covers tips, tricks, and known workarounds for problems with the C
 
 Try these steps if you have trouble building and deploying to Android emulators or devices. In some cases, you may see an error about a failure to install the APK on the device or a failure to run the Android Debug Bridge (ADB.exe).
 
->**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../develop-apps/run-app-apache.md).
+>**Note**: For instructions to run for the first time on specific emulators or an Android device, see [Run your app on Android](../build-deploy/run-app-android-emulator.md).
 
 1. Before taking any other steps, try running your app against other platforms or emulators to make sure the issue is Android-specific.
 
     For example, we suggest you test on Windows:
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../general/tips-and-workarounds-general-readme.md) for more general help.
+    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../tips-and-workarounds/general-tips.md) for more general help.
 
 2. If you are running on an Android device, make sure that **Developer Mode** is enabled on the device. Try the instructions [here](http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) to enable developer mode.
 
@@ -128,4 +128,4 @@ More specifically, following the instructions from [this article](http://www.tom
 If this does not resolve the issue, you can upgrade to a 64-bit version of the JDK [from here](http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-windows-x64.exe) and update the JAVA_HOME environment variable to the new install location.
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../index.md)

@@ -19,7 +19,7 @@ Try these steps if you have trouble building and deploying to Windows or Windows
     For example, we suggest you test on Android:
     * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
 
-    If you see the same error on other platforms, the issue is likely not Windows-specific, see [Resolve build and deployment errors](../general/tips-and-workarounds-general-readme.md) for more general help.
+    If you see the same error on other platforms, the issue is likely not Windows-specific, see [Resolve build and deployment errors](../tips-and-workarounds/general-tips.md) for more general help.
 
 2. Open the configuration designer (config.xml), Windows tab, and make sure you select the OS that your are currently trying to target (Windows 8.1 or Windows 10).
 
@@ -69,4 +69,4 @@ Here are some of the more common issues that you might see on Windows.
     * Upgrading to Windows 10 on your dev machine (the platform issue is fixed in Windows 10).
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../index.md)
