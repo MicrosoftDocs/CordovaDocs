@@ -88,7 +88,7 @@ You can clear the checkbox of any component that you don't want to install in th
 
 ![Multi-Hybrid Device Apps installer](media/vs-taco-2015-install/IC816239.png)
 
-If you prefer to install them manually, see [install the dependencies manually](../tips-and-workarounds/configuration-tips.md#thirdparty).
+If you prefer to install them manually, see [install the dependencies manually](../tips-and-workarounds/configuration-tips.md).
 
 ## Update Visual Studio Tools for Apache Cordova
 
@@ -106,5 +106,3 @@ See [Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apache 
 ### Did something go wrong with your installation? <a name="AdditionalTasks">
 
 Perhaps you're running Visual Studio behind a proxy or you have multiple versions of a third-party components installed on your computer, and you need to take a closer look at the environment variables to see what path is being used for these components.
-
-For a more comprehensive guide to configuring Visual Studio Tools for Apache Cordova and all of the third-party dependencies, see [Configure the Visual Studio Tools for Apache Cordova](configure-vs-tools-apache-cordova.md).

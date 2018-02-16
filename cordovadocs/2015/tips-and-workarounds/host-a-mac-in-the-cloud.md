@@ -78,7 +78,7 @@ With one exception, you can use the same process to configure Visual Studio for 
    remotebuild certificates generate
    ````
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/ios-guide.md#remoteagent) the remotebuild agent.
+    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/ios-guide.md) the remotebuild agent.
 
     Press “Y” and press Enter is prompted. You will now see the following information.
 

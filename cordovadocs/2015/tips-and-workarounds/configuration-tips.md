@@ -304,7 +304,7 @@ The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.
 
 5. Delete the platforms/*platform* folder, like platforms/android, and then rebuild your project.
 
-    If this does not resolve the issue, see the [Known Issues](./known-issues/known-issues-general.md).
+    If this does not resolve the issue, see the [Known Issues](../known-issues/known-issues-general.md).
 
 ##Configure tools to work with a proxy
 If you are using Visual Studio behind a proxy, such as a corporate firewall, you may need to configure proxy settings for the npm package manager and for git before you can use Visual Studio Tools for Apache Cordova.

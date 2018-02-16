@@ -20,7 +20,7 @@ If you use Cordova 5.3.3 or below with Node.js 5.0.0, you will see a build that 
 
 Cordova 5.3.3 and below does not support Node.js 5.0.0 or above. Either use Node.js 4.1.2 with Cordova 5.3.3 or Node.js 0.12.x with Cordova < 5.3.3. A planned update to Cordova (version > 5.3.3) will support Node.js 5.0.0+.
 
-See [Safely update Node.js](./develop-apps/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](../change-cordova-version/change-cli-version.md)
+See [Safely update Node.js](../change-cordova-version/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](../change-cordova-version/change-cli-version.md)
 
 ##**Build hangs or does not execute when building for iOS with Cordova < 5.3.3 and Node.js 4.0.0+**
 
