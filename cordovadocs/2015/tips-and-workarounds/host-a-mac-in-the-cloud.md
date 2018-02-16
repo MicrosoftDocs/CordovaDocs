@@ -19,7 +19,7 @@ To get started with MacInCloud, first set up either an account or a trial versio
 
 ![Opening remote desktop](media/host-a-mac-in-the-cloud/remotebuild_start.png)
 
-If you chose a MacInCloud plan with a dedicated server, you may have sudo (Administrator) access. With sudo access, just follow the same instructions used to [install the remote agent](ios-guide.md) on an on-premise Mac. If you are using a managed server plan, you will not have sudo access. However, it is worth noting that remotebuild is probably already installed on the machine that you have access to. You can validate this by attempting to start up the agent. In the Terminal App, type:
+If you chose a MacInCloud plan with a dedicated server, you may have sudo (Administrator) access. With sudo access, just follow the same instructions used to [install the remote agent](../first-steps/ios-guide.md) on an on-premise Mac. If you are using a managed server plan, you will not have sudo access. However, it is worth noting that remotebuild is probably already installed on the machine that you have access to. You can validate this by attempting to start up the agent. In the Terminal App, type:
 
      remotebuild
 
@@ -78,7 +78,7 @@ With one exception, you can use the same process to configure Visual Studio for 
    remotebuild certificates generate
    ````
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](install-vs-tools-apache-cordova.md#update) the remotebuild agent.
+    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you [update](../first-steps/ios-guide.md#remoteagent) the remotebuild agent.
 
     Press “Y” and press Enter is prompted. You will now see the following information.
 

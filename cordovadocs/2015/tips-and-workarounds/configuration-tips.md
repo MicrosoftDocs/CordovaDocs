@@ -7,7 +7,7 @@ ms.author: "jmatthiesen"
 ---
 
 # Configure the Visual Studio Tools for Apache Cordova
-You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](install-vs-tools-apache-cordova.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
+You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
 
 * If you choose not to install one or more dependencies with Visual Studio Tools for Apache Cordova, you may need to [install the dependencies manually](#ThirdParty).
 
@@ -17,7 +17,7 @@ You can download Visual Studio from the [Microsoft Download Center](http://go.mi
 
 * To install, start, and configure the remotebuild agent (previously called vs-mda-remote) for building iOS apps, see the following:
 
-    * [Install the remote agent and get it running](ios-guide.md) (external topic)
+    * [Install the remote agent and get it running](../first-steps/ios-guide.md#remoteagent) (external topic)
 
     * [Generate a new security PIN](#IosPin)
 
@@ -159,7 +159,7 @@ Visual Studio uses these environment variables when building and running your ap
 
 ##<a name="IosPin"></a>Generate a new security PIN
 
-When you [start the agent](ios-guide.md#remoteAgent) the first time, the generated PIN is valid for a limited amount of time (10 minutes by default). If you don’t connect to the agent before the time expires, or if you want to connect a second client to the agent, you will need to generate a new PIN.
+When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first time, the generated PIN is valid for a limited amount of time (10 minutes by default). If you don’t connect to the agent before the time expires, or if you want to connect a second client to the agent, you will need to generate a new PIN.
 ### To generate a new security PIN
 1. Stop the agent (or open a second Terminal app window on your Mac and use that to enter the command).
 
@@ -167,9 +167,9 @@ When you [start the agent](ios-guide.md#remoteAgent) the first time, the generat
 
         remotebuild certificates generate
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#install).
 
-4. Follow instructions to [start the agent](ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
+4. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
 
 ##<a name="IosCert"></a>Generate a new server certificate
 For security purposes, the server certificates that pair Visual Studio with the remote agent are tied to your Mac’s IP or host name. If these values have changed, you will need to generate a new server certificate, and then reconfigure Visual Studio with the new values.
@@ -191,7 +191,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
     –hostname is optional. If omitted, the agent will attempt to determine the hostname automatically.
 
-5. Follow instructions to [start the agent](ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
+5. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
 
 ##<a name="IosConfig"></a>Configure the iOS remote agent
 
@@ -235,7 +235,7 @@ The server.log file might assist in troubleshooting build issues.
 The configuration file must be in JSON format. The startup options and their values must not include dashes. To see a documented configuration file, look at the remotebuild/examples/exampleConfig.json folder in the remote agent installation directory, although you must remove the comments in the file that you use for your configuration. An example of a path you might use when running this command is _/Users/<username\>/myConfig.json_. The default path where the agent looks for a configuration file is ~/.taco_home/RemoteBuild.config.\
 
 ##<a name="IosVerify"></a>Verify the iOS remote agent configuration
-Once you have [installed the agent](ios-guide.md), you can verify the remote agent configuration.
+Once you have [installed the agent](../first-steps/ios-guide.md), you can verify the remote agent configuration.
 
 ### To verify the remote agent configuration
 
@@ -262,7 +262,7 @@ This command will fail if the agent is not running in a second window, or if the
 
         remotebuild test --device
 
-For more information about app provisioning and certificate signing identities, see [Package Your App Built with Visual Studio Tools for Apache Cordova](./package-and-publish/package-app-built-with-visual-studio.md).
+For more information about app provisioning and certificate signing identities, see [Package your Cordova app so that you can publish it](../publishing/publish-to-a-store.md).
 
 ##<a name="vstac"></a>Reinstall the Cordova CLI pre-processor (vs-tac)
 

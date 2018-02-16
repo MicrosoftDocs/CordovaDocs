@@ -115,7 +115,7 @@ TypeScript source codes are located in **scripts** folder, with the extension of
 
 ## What's Next?
 
-You can use Visual Studio's build and [debug tools](../debug-and-test/debug-using-visual-studio.md), use the configuration manager to easily [add device plugins](../access-device-capabilities/manage-plugins.md) to your app to get up and running quick. To learn more about Onsen UI, see the [Onsen UI framework docs](https://onsen.io/v2/docs/js.html).
+You can use Visual Studio's build and [debug tools](../build-deploy/debug-using-visual-studio.md), use the configuration manager to easily [add device plugins](../access-device-capabilities/manage-plugins.md) to your app to get up and running quick. To learn more about Onsen UI, see the [Onsen UI framework docs](https://onsen.io/v2/docs/js.html).
 
 ![Onsen UI Plugins](media/vs-taco-2015-tutorial-onsen/image03.png)
 

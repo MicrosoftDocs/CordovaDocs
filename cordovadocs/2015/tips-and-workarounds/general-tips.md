@@ -65,7 +65,7 @@ Try these steps if you have trouble deploying to emulators or devices.
     * Try running against Android and select **Ripple - Nexus (Galaxy)** (Chrome required)
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If the issue is only on the Android platform, see [Android](./android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](../windows/tips-and-workarounds-windows-readme.md).
+    If the issue is only on the Android platform, see [Android](./android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](./ios-readme.md). If the issue is only on Windows, see [Windows](./windows-tips.md).
 
 6. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
 

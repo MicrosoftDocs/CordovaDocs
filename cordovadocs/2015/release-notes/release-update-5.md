@@ -1,16 +1,10 @@
-<properties pageTitle="Release Notes for Update 5"
-  description="Release notes for Update 5 of Visual Studio 2015 Tools for Apache Cordova"
-  services=""
-  documentationCenter=""
-  authors="rido-min" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="12/14/2015"
-     ms.author="rmpablos"/>
+---
+title: "Release Notes for Update 5"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.date: "12/14/2014"
+ms.author: "jmatthiesen"
+---
 
 #**Update 5 - Visual Studio Tools for Apache Cordova**
 Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14.060106.1. [Read more on our developer blog.](http://microsoft.github.io/vstacoblog/2016/01/13/annoucing-update-5.html)
@@ -96,7 +90,7 @@ Previously, the installed plugins view adds a new instance of the same plugin in
 
 There are known issues with Cordova and the latest versions of Node.JS. For example, using Cordova 5.3.3 or below with Node.js 5.0.0 causes a build fail. 
 
-To learn more about what versions of Cordova are compatible with Node.JS, find [more information here.](../known-issues/known-issues-general#strongbuild-not-executing-when-using-cordova-with-nodejs-500-and-cordova-533-and-belowstrong)
+To learn more about what versions of Cordova are compatible with Node.JS, find [more information here.](../known-issues/known-issues-general.md)
 
 ### Mismatched plugins warning
 

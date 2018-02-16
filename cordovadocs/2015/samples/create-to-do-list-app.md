@@ -11,7 +11,7 @@ ms.author: "jmatthiesen"
 In this tutorial, you’ll learn how to create a task list sample app using AngularJS (AngularJSToDo). This app allows users to create new todo list items, check them off, and remove them. The app also stores tasks using HTML5 Web Storage on the device. (The complete sample uses Microsoft Azure Mobile Services to store data, and also uses Bing Maps to provide valid addresses.) This sample uses JavaScript code, but you can also write your Cordova app in TypeScript.
 
 >**Note**:
-For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](create-first-app-using-vs-tools-apache-cordova.md).
+For an overview of tasks required to build a Cordova app, see [Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/get-started-first-mobile-app.md).
 
 The complete todo list sample app can be downloaded here:
 
