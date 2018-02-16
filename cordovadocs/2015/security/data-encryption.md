@@ -1,8 +1,9 @@
-<properties pageTitle="Securing Cordova app data using encryption and Intune"
-  description="Secure Cordova local app data using encryption and the Intune MAM App SDK."
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Securing Cordova app data using encryption and Intune"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 # Encrypt your local app data
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate. 
@@ -22,7 +23,7 @@ Historically [crypto.subtle.encrypt and decrypt](https://developer.mozilla.org/e
 ### Crosswalk
 [Crosswalk](https://crosswalk-project.org/) is an open source project that allows you to use an updated version of the Chromium webview on Android devices. The [Crosswalk WebView Engine plugin](https://www.npmjs.com/package/cordova-plugin-crosswalk-webview) brings Android 4.0+ up to a recent version of Chromium including Web Crypto support. Adding it is the first step in enabling Web Crypto in your Cordova projects and the plugin is available in the config.xml designer's plugin tab.
 
-See the article on **[improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md)** for additional details on setup including some important information on **emulator config**. 
+See the article on **[improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md)** for additional details on setup including some important information on **emulator config**. 
 
 Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 has caused crashes in certain emulators. Crosswalk 15 appears to be a solid choice. If you run into unexpected crashes or odd behaviors, add this to config.xml (Right-Click &gt; View Code in VS):
 

@@ -75,7 +75,7 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
     
 	![Task Runner](media/vs-taco-2015-tutorial-ionic2/figure-08.png)
 
-4.	At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](vs-taco-2017-ios-guide.md) for additional information.
+4.	At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](../first-steps/ios-guide.md) for additional information.
 	
 	![Ionic application running on Android](media/vs-taco-2015-tutorial-ionic2/figure-09.png)   
 

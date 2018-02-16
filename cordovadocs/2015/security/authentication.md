@@ -1,8 +1,10 @@
-<properties pageTitle="Authenticating users with Azure Mobile Apps or ADAL"
-  description="Authenticating users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova."
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Authenticating users with Azure Mobile Apps or ADAL"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.date: ""
+ms.author: "jmatthiesen"
+---
 
 # Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible.

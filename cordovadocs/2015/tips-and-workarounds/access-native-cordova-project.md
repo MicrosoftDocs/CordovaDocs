@@ -129,4 +129,4 @@ The Cordova <span class="code">serve</span> command lets you test the layout and
 
 ## See Also
 
-[Get Started with Visual Studio Tools for Apache Cordova](../firststeps/installation.md)
+[Get Started with Visual Studio Tools for Apache Cordova](../first-steps/installation.md)

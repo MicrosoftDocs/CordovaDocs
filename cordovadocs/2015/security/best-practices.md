@@ -1,8 +1,10 @@
-<properties pageTitle="Understand Cordova platform security"
-  description="Cordova platform and app security"
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Understand Cordova platform security"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
+
 
 #Cordova platform security features
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate. A forced lockdown approach can block critical scenarios and thus tends to have undesired results.
@@ -30,7 +32,7 @@ As outlined above, Cordova 5 and the Crosswalk WebView can significantly improve
     cordova plugin add cordova-plugin-crosswalk-webview --save
     ```
 
-There are, however, some nuances to using the Crosswalk webveiw given it does slow down build times and **requires GPU acceleration** in emulators. See **[improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md)** for setup details and information on the useful **Shared Mode**.
+There are, however, some nuances to using the Crosswalk webveiw given it does slow down build times and **requires GPU acceleration** in emulators. See **[improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md)** for setup details and information on the useful **Shared Mode**.
 
 Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 has caused crashes in certain emulators. Crosswalk 15 appears to be a solid choice. If you run into unexpected crashes or odd behaviors, simply the following config.xml to force the plugin to use version 15 (Right-Click &gt; View Code in VS):
 

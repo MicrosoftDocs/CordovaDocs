@@ -23,13 +23,13 @@ The application displays current weather conditions based on the current device 
 1.	Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
 2.	In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears, select **Blank App (Apache Cordova)** as shown in the figure:
 
-    ![Project template locations](media/vs-taco-2015-first-app/blank-project-template.png)
+    ![Project template locations](media/get-started-first-mobile-app/blank-project-template.png)
 
     > **Note:** If you like coding in TypeScript, there's a template for that under **TypeScript**->**Apache Cordova Apps**.
 
     After you create the project, your solution should resemble the following:
 
-    ![Solution Explorer](media/vs-taco-2015-first-app/solution-explorer.png)
+    ![Solution Explorer](media/get-started-first-mobile-app/solution-explorer.png)
 
 ## <a id="tour-project"></a>Quick tour of the project
 
@@ -39,7 +39,7 @@ There's a lot of files in your project. Don't worry too much about understanding
 
 You'll find these files in the root of your project.
 
-![root files](media/vs-taco-2015-first-app/root-files.png)
+![root files](media/get-started-first-mobile-app/root-files.png)
 
 This table gives you the basic idea of how you might use each one.
 <style>
@@ -83,7 +83,7 @@ This table gives you the basic idea of how you might use each one.
 
 The project's `www` folder contains the web application content files for the Cordova application, so most of your development will occur inside this folder.  Here you'll find the web application content that is packaged into a native mobile application by the Cordova SDK. The HTML, JavaScript, and CSS files in this folder will render in the Cordova app the same way they will in a mobile browser, so be sure to optimize the content for the smaller and more limited smartphones and tablets. 
 
-![www folder](media/vs-taco-2015-first-app/www.png)
+![www folder](media/get-started-first-mobile-app/www.png)
 
 The folder's `index.html` file is the main entry point for the web application, it's loaded by default when the Cordova application launches. The folder contains several subfolders that follow a typical web application folder structure:
 
@@ -97,13 +97,13 @@ Cordova developers do most of their work in these folders, creating and updating
 
 Apache Cordova uses the `merges` folder to provide developers with the ability to deliver different content based on the target mobile platform. As you can see from the figure, there's a subfolder for each target mobile platform (Android, iOS and Windows). Any content in these folders will be copied to the native application project during the Cordova pre-build process (prepare), adding to or replacing content in the web application folder as needed.
 
-![merges folder](media/vs-taco-2015-first-app/merges.png)
+![merges folder](media/get-started-first-mobile-app/merges.png)
 
 For example, any content in the `merges\android` folder is copied to the Android project's web application folder after the base web application is copied. Content in the `merges\ios` folder is copied into the iOS project's web application folder. Finally, content in the `merges\windows` folder is copied to the Windows project's web application folder after the base web application is copied.
 
 To help deliver a consistent web application experience in Cordova apps, the default project created by Visual Studio Tools for Apache Cordova includes `platformOverrides.js` files for Android (in `merges\android\scripts\platformOverrides.js`) and Windows (in `merges\windows\scripts\platformOverrides.js`) along with a platform-specific JavaScript library. On Android, it adds a polyfill for `bind()` on older Android devices, and on Windows it adds Microsoft's safeHTML polyfill library. The `merges\ios` folder doesn't include a `platformOverrides.js` file, so there's no platform-specific override, iOS applications get the generic version of the file located in `www\scripts\platformOverriders.js`.
 
-![root files](media/vs-taco-2015-first-app/platform-overrides.png) 
+![root files](media/get-started-first-mobile-app/platform-overrides.png) 
 
 For additional information on how merges works, see [Using merges to Customize Each Platform](https://cordova.apache.org/docs/en/latest/guide/cli/#using-merges-to-customize-each-platform) in the Cordova documentation.
 
@@ -113,37 +113,37 @@ Use this same approach to merge CSS files, images and any other files in your ap
 
 Apache Cordova uses the contents of the `res` folder to store non-web application resources used by a native mobile application such as [application icons](https://cordova.apache.org/docs/en/latest/config_ref/images.html), [splash screen](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html) images, signing certificates, etc.
 
-![res folder](media/vs-taco-2015-first-app/res-folder.png)
+![res folder](media/get-started-first-mobile-app/res-folder.png)
 
 ## <a id="run"></a>Run your app
 
 1. On the Standard toolbar, choose the **Ripple – Nexus (Galaxy)** button.
 
-    ![Ripple Emulator](media/vs-taco-2015-first-app/ripple-start.png)
+    ![Ripple Emulator](media/get-started-first-mobile-app/ripple-start.png)
 
     Visual Studio will build the application, then open a browser window running the application in the Apache Ripple simulator. New projects use the default Cordova template, so, since we've not added any code to the application, it will simply display the Cordova logo and a notification that the device is ready.
 
     > **NOTE:** There will already be some errors on the JavaScript console, such as failure to load favicon.ico, ripple.js and ajax-loader.gif. But these are not neccessary to continue developing in Ripple.
 
-    ![Ripple Emulator](media/vs-taco-2015-first-app/blank-app.png)
+    ![Ripple Emulator](media/get-started-first-mobile-app/blank-app.png)
 
-    [Apache Ripple](/articles/develop-apps/run-app-ripple-simulator.md) is a free mobile simulator. If you haven’t used it before, try a few things while you have it open. For example, change the device orientation or the platform and see how your app appears. Apache Ripple is probably the easiest way to see the effect of your changes as you develop.
+    [Apache Ripple](../build-deploy/run-app-ripple-simulator.md) is a free mobile simulator. If you haven’t used it before, try a few things while you have it open. For example, change the device orientation or the platform and see how your app appears. Apache Ripple is probably the easiest way to see the effect of your changes as you develop.
 
-    ![Change Device Orientation](media/vs-taco-2015-first-app/change-device-orientation.png)
+    ![Change Device Orientation](media/get-started-first-mobile-app/change-device-orientation.png)
 
 2. Stop the app; use the square Stop button in the Standard Toolbar.
 
-    ![Stop Debugging button](media/vs-taco-2015-first-app/stop-debugger.png)
+    ![Stop Debugging button](media/get-started-first-mobile-app/stop-debugger.png)
 
     You can also run your app in Android, iOS, and Windows device emulators. An emulator gives you a bit more of a realistic device experience.
 
     To see them all, choose any platform from the platform list on the Standard toolbar.
 
-    ![Platform](media/vs-taco-2015-first-app/platform-selector.png)
+    ![Platform](media/get-started-first-mobile-app/platform-selector.png)
 
     Then, choose an emulator.
 
-    ![Emulators](media/vs-taco-2015-first-app/emulators.png)
+    ![Emulators](media/get-started-first-mobile-app/emulators.png)
 
     Run your app in any of these emulators if you want, but don't use any of the iOS emulators yet because you'll need a Macintosh system to use them, and setting up the connection between Visual Studio and the Mac is beyond the scope of this guide.
 
@@ -157,7 +157,7 @@ You can modify it by using a designer, so you don't need to edit the XML directl
 
 To open the designer, double click the `config.xml` file in your project.
 
-![Configuration Designer](media/vs-taco-2015-first-app/settings.png)
+![Configuration Designer](media/get-started-first-mobile-app/settings.png)
 
 ## <a id="build-something"></a>Start Small: Build a basic app
 
@@ -173,25 +173,25 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
  
 1. Choose **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery** NuGet package to your solution.
 
-    ![JQuery Package](media/vs-taco-2015-first-app/nuget-jquery.png)
+    ![JQuery Package](media/get-started-first-mobile-app/nuget-jquery.png)
 
     >**Note**: Because versions constantly change, the next few images will use `x.x.x` in place of version numbers.
 
 2. Add the **jQuery.Mobile** NuGet package to your solution.
 
-    ![JQuery Package](media/vs-taco-2015-first-app/nuget-jquery-mobile.png)
+    ![JQuery Package](media/get-started-first-mobile-app/nuget-jquery-mobile.png)
 
      NuGet adds files to the **Scripts** folder of your project, but that's not really where we need them so we'll have to fix that.
 
 3. Drag the newly installed script files from the project's `Scripts` folder to the `www\scripts` folder.
 
-    ![Drag Files](media/vs-taco-2015-first-app/drag-files-to-scripts.png)
+    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-scripts.png)
 
     Now they're in the correct location. But we still have a little work to do here. Nuget also adds CSS files to the `Content` folder so we'll have to fix that too.
 
 4. Drag all of the `.css` files and the `images` folder from the project's `Content` folder to `www\css` folder.
 
-    ![Drag Files](media/vs-taco-2015-first-app/drag-files-to-css.png)    
+    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-css.png)    
 
 3. Add this script reference to the `<body>` tag of your [index.html](#tour-project) file (at the bottom of the body section, where the other JavaScript references are located):
 
@@ -362,13 +362,13 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 1. In **Solution Explorer**, locate the `www\scripts` folder.
 
-    ![Scripts Folder](media/vs-taco-2015-first-app/scripts.png)
+    ![Scripts Folder](media/get-started-first-mobile-app/scripts.png)
 
 2. Right-click the `scripts` folder, and then choose **Add** -> **New JavaScript file**.
 
 3. Name the file `weather.js`, and then choose the **Add** button.
 
-	![Scripts Folder](media/vs-taco-2015-first-app/add-weather-js-file.png)
+	![Scripts Folder](media/get-started-first-mobile-app/add-weather-js-file.png)
 
 4. Open the `www\scripts\weather.js` file and add the following function. Replace `Your_Key_Here` with the key that you got from [OpenWeatherMap](https://home.openweathermap.org/).
 
@@ -468,17 +468,17 @@ Let's run the app, but this time let's use an emulator.
 
 1. In the list of Android emulators, choose the one of the **VS Emulator 5** to run your app.
 
-    ![Android Emulator](media/vs-taco-2015-first-app/android-emulator.png)
+    ![Android Emulator](media/get-started-first-mobile-app/android-emulator.png)
 
     > **Note:** According to your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe):
 
-    > ![Android Emulator Error](media/vs-taco-2015-first-app/android-emulator-error.png)
+    > ![Android Emulator Error](media/get-started-first-mobile-app/android-emulator-error.png)
 
 2. In the Android emulator, type a valid United States zip code into the edit box (for example: 33101), and then press the **Get Weather** button.
 
     Weather data for that region appears in the controls.
 
-    ![Weather App](media/vs-taco-2015-first-app/weather-app-overview.png)
+    ![Weather App](media/get-started-first-mobile-app/weather-app-overview.png)
 
     What's great here is that this app is completely cross platform. If you have a little extra time, run this app in a Windows Phone emulator.
 
@@ -492,7 +492,7 @@ A big benefit of Visual Studio is its powerful debugger. If you're already famil
 
 You can set a breakpoint on any line of executable code (including the JavaScript code). Look at the state of the Apache Cordova application, monitor variable values, and review call stacks.
 
- ![Execution Break](media/vs-taco-2015-first-app/breakpoint-2.png)
+ ![Execution Break](media/get-started-first-mobile-app/breakpoint-2.png)
 
 ### Use the JavaScript Console
 
@@ -506,7 +506,7 @@ Use the DOM Explorer to find and fix layout issues in your pages. Examine the st
 
 To open the DOM Explorer, choose **Debug** -> **Windows** -> **DOM Explorer** while the app is running. [Learn more about the DOM Explorer](https://msdn.microsoft.com/library/dn255008.aspx).
 
- ![Edit page title](media/vs-taco-2015-first-app/DOM.png)
+ ![Edit page title](media/get-started-first-mobile-app/DOM.png)
 
 ## <a id="capability"></a>Access a device capability
 
@@ -514,9 +514,9 @@ Most likely you'll want your app to do more than just show web pages on a mobile
 
 You can find some of the more commonly used plugins in the **Core** page of the app's [configuration designer](#settings).
 
-![Configuration Designer](media/vs-taco-2015-first-app/core-plugins.png)
+![Configuration Designer](media/get-started-first-mobile-app/core-plugins.png)
 
-Use the **Custom** page to add plugins that are not one of the [core plugins](../develop-apps/use-cordova-plugins.md). These could be standard Cordova plugins available on npm (Cordova 5.x or greater), or plugins that you or a colleague create for some specific purpose and then save to your local drive or to a GitHub repository.  [This document](../access-device-capabilities/manage-plugins.md) explains how to add a custom plugin.
+Use the **Custom** page to add plugins that are not one of the [core plugins](../access-device-capabilities/use-cordova-plugins.md). These could be standard Cordova plugins available on npm (Cordova 5.x or greater), or plugins that you or a colleague create for some specific purpose and then save to your local drive or to a GitHub repository.  [This document](../access-device-capabilities/manage-plugins.md) explains how to add a custom plugin.
 
 If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly. You can find guidance about how to do that  [here](../access-device-capabilities/manage-plugins.md).
 
@@ -526,11 +526,11 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 
 2. Choose the **Geolocation** plugin, and then choose the **Add** button.
 
-    ![Geolocation plugin](media/vs-taco-2015-first-app/add-geolocation.png)
+    ![Geolocation plugin](media/get-started-first-mobile-app/add-geolocation.png)
 
     This adds the plugin to your project but you still have to know how to consume it in your app. To do that, open the `README.md` file. You'll find it in the `plugins\plugin-cordova-geolocation` folder as shown in the following image.
 
-    ![Readme File](media/vs-taco-2015-first-app/plugin-readme.png)
+    ![Readme File](media/get-started-first-mobile-app/plugin-readme.png)
 
     Let's add some code that consumes this plugin.
 
@@ -589,7 +589,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 
     > **Note**: If you use the Apache Ripple emulator, you’ll have to configure it with your location.
 
-    > ![Change Apache Ripple emulator location](media/vs-taco-2015-first-app/change-ripple-location.png)
+    > ![Change Apache Ripple emulator location](media/get-started-first-mobile-app/change-ripple-location.png)
 
 ## <a id="tailor"></a>Tailor the app to a platform
 
@@ -609,7 +609,7 @@ This is where the `merges` folder becomes useful. We touched on that folder earl
 
     You now have a copy of the `weather.js` file in the `merges\android` folder.
 
-    ![Platform-Specific Javascript File](media/vs-taco-2015-first-app/android-js-file.png)
+    ![Platform-Specific Javascript File](media/get-started-first-mobile-app/android-js-file.png)
 
 5. In the `merges\android\scripts\weather.js` file, add the following code to the `getWeatherWithGeoLocation` method.
 
@@ -621,7 +621,7 @@ This is where the `merges` folder becomes useful. We touched on that folder earl
 
     The app now has the title **Android Weather** because `merges\android\scripts\weather.js` file replaces `www\scripts\weather.js` file for the Android version of your app.
 
-    ![Tailor the behavior](media/vs-taco-2015-first-app/tailor-js.png)
+    ![Tailor the behavior](media/get-started-first-mobile-app/tailor-js.png)
 
     Making a copy of a file this large to change one line of code is an extreme example, but you can begin to imagine the possibilities, and you can always refactor your code in ways that leverage the `merges` folder more efficiently.
 
@@ -641,7 +641,7 @@ In some cases, you'll have to tweak the layout of your pages so that they appear
 
     You now have a file named `index.css` in both the `\merges\android\css` folder and the `www\css` folders.
 
-    ![Platform-Specific style sheet File](media/vs-taco-2015-first-app/android-css-file.png)
+    ![Platform-Specific style sheet File](media/get-started-first-mobile-app/android-css-file.png)
 
 5. Replace the contents of the new `\merges\android\css\index.css` file with the following code.
 
@@ -706,7 +706,7 @@ In some cases, you'll have to tweak the layout of your pages so that they appear
 
     The app header has a blue background because `merges\android\css\index.css` replaced `www\css\index.css` in the Android version of the app.
 
-    ![Tailor the appearance](media/vs-taco-2015-first-app/tailor-css.png)
+    ![Tailor the appearance](media/get-started-first-mobile-app/tailor-css.png)
 
 
 ## <a id="next-steps"></a>Next steps
@@ -740,7 +740,7 @@ search for available Cordova plugins on npm (Cordova 5.x or greater). The naming
 
 **Try using Bower to add a package to your project**
 
-see [Add packages by using Bower](tutorial-using-bower.md).
+see [Add packages by using Bower](../adding-javascript-packages/tutorial-using-bower.md).
 
 **Learn about other great ways to leverage the Visual Studio debugger**
 

@@ -18,7 +18,7 @@ Let's help you set things up.
 
 1. Install version ```0.12.9``` of [Node.js](http://nodejs.org/).
 
-    This version of node.js is compatible with all versions of Cordova. If you have trouble finding it on the [Node.js](http://nodejs.org/) website, see [Install the most compatible version of Node.js (0.12.x)](./develop-apps/change-node-version.md#install-the-most-compatible-version-of-nodejs-012x).
+    This version of node.js is compatible with all versions of Cordova. If you have trouble finding it on the [Node.js](http://nodejs.org/) website, see [Install the most compatible version of Node.js (0.12.x)](../change-cordova-version/change-node-version.md#install-the-most-compatible-version-of-node.js-(0.12.x)).
 
     That said, you can use Node.js version ```4x``` or ```5x``` as long as your project uses Cordova CLI version ```5.4.1``` or later.
 

@@ -1,8 +1,10 @@
-<properties pageTitle="Cordova whitelist and Content Security Policy guide"
-  description="Cordova whitelist and Content Security Policy guide"
-  services=""
-  documentationCenter=""
-  authors="Chuxel" />
+---
+title: "Cordova whitelist and Content Security Policy guide"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
+
 
 # Cordova whitelist and Content Security Policy guide
 
@@ -51,7 +53,7 @@ There is still some variation in behavior by platform for these whitelist featur
 Both the default Cordova CLI template and Visual Studio's blank template use this feature to install the Whitelist plugin automatically on first build.
 
 ## The W3C Content Security Policy (CSP)
-A topic of frequent conversation for security focused developers on the web is the [W3C Content Security Policy (CSP)](http://go.microsoft.com/fwlink/?LinkID=617696) feature that is available in Chrome, Safari, and Internet Explorer Edge. CSP support is available natively to Cordova apps targeting iOS, Windows 10 and up, and Android 4.4 and up. **However, you can get support back to Android 4.0 by using something called the Crosswalk WebView.** See [improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md#crosswalk) for information adding Crosswalk to your project.
+A topic of frequent conversation for security focused developers on the web is the [W3C Content Security Policy (CSP)](http://go.microsoft.com/fwlink/?LinkID=617696) feature that is available in Chrome, Safari, and Internet Explorer Edge. CSP support is available natively to Cordova apps targeting iOS, Windows 10 and up, and Android 4.4 and up. **However, you can get support back to Android 4.0 by using something called the Crosswalk WebView.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.
 
 ### The CSP in Cordova
 CSP support is a native browser capability that allows you to control exactly what content your app can access and at a very granular level. In fact, when using the CSP, you can generally keep the access origin to "*" as you'll be able to more tightly control security using the policy.
@@ -147,7 +149,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
 	Start with the most locked down security policy you can, and back away as needed. That way you'll ensure you're using the most secure practices you can from the start.
 
-    > **Note:** To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../develop-apps/cordova-crosswalk.md#crosswalk) for information adding Crosswalk to your project.    
+    > **Note:** To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.    
 
 ##Additional Security Topics
 - [Learn about Cordova platform and app security features](best-practices.md)

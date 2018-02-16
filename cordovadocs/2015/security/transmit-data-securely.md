@@ -1,8 +1,9 @@
-<properties pageTitle="Securely transmit data"
-  description="Securely transmit Cordova app data using SSL and certificate pinning. Use the Intune MAM App SDK, Azure Mobile Apps, and the Azure App Service to speed up your workflow."
-  services=""
-  documentationCenter=""
-  authors="clantz" />
+---
+title: "Securely transmit data"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.author: "jmatthiesen"
+---
 
 #Securely transmit data
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate. 

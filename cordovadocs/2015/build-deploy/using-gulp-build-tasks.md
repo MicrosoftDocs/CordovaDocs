@@ -208,7 +208,7 @@ If you're creating an automated build script, you can find a more complete list 
 <a name="tacoteambuild"></a>
 ### Use the taco-team-build module with gulp
 
-The [taco-team-build helper module](http://go.microsoft.com/fwlink/?LinkID=533736) assists with builds using gulp and alleviates various [common problems](./tutorial-team-build/tutorial-team-build-readme.md) when building a Cordova project from the command line, especially in a team or CI environment. It can be used with any number of build systems including Jake, Grunt, gulp, and even from the command line. It also helps you use gulp to build for multiple platforms, as described in the next section. 
+The [taco-team-build helper module](http://go.microsoft.com/fwlink/?LinkID=533736) assists with builds using gulp and alleviates various [common problems](../build-deploy/get-started-with-ci.md) when building a Cordova project from the command line, especially in a team or CI environment. It can be used with any number of build systems including Jake, Grunt, gulp, and even from the command line. It also helps you use gulp to build for multiple platforms, as described in the next section. 
 
 The taco-team-build repository includes sample gulpfile.js and package.json files, along with documentation. To get started, place the contents of the **samples/gulp** folder from the [taco-team-build repository](http://go.microsoft.com/fwlink/?LinkID=533736) in your project root. Alternately, create package.json and gulpfile.js files in your root as follows:   
 

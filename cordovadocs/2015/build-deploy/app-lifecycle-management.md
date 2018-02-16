@@ -267,7 +267,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                       TFS 2015 - See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>
                     </li>
                     <li>
-                      TFS 2013 - See <a href="../tutorial-team-build/TFS2013.md">Using Tools for Apache Cordova with TFS 2013</a>
+                      TFS 2013 - See <a href="../build-deploy/tfs2013.md">Using Tools for Apache Cordova with TFS 2013</a>
                     </li>
                   </ol>
                 </td>

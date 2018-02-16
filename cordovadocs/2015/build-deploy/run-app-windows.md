@@ -26,7 +26,7 @@ Visual Studio provides these three options for deploying an app built using Visu
 
 Windows 8, Windows 8.1, Windows 10, or Windows Server 2012 R2 (with Desktop Experience enabled) is required to deploy and run your app on Windows.
 
-You can configure your Windows app to target your Windows versions using the configuration designer. For more information, see [Configure Your App Built with Visual Studio Tools for Apache Cordova](../develop-apps/configure-app.md).
+You can configure your Windows app to target your Windows versions using the configuration designer. For more information, see [Configure Your App Built with Visual Studio Tools for Apache Cordova](../first-steps/installation.md).
 
 Follow these instructions to run your app on your computer or on the Windows Simulator.
 

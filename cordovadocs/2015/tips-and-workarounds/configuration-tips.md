@@ -39,7 +39,7 @@ You can install the dependencies in any order, except for Java. You must install
 
 * [Joyent Node.js](http://nodejs.org)
 
-    We recommend installing the x86 version of Node.js. Before installing this software, read about [safely installing Node.js](../develop-apps/change-node-version.md).
+    We recommend installing the x86 version of Node.js. Before installing this software, read about [safely installing Node.js](../change-cordova-version/change-node-version.md).
 
 * [Google Chrome](https://www.google.com/intl/en/chrome/browser/index.html)
 
