@@ -17,7 +17,7 @@ You can download Visual Studio from the [Microsoft Download Center](http://go.mi
 
 * To install, start, and configure the remotebuild agent (previously called vs-mda-remote) for building iOS apps, see the following:
 
-    * [Install the remote agent and get it running](../first-steps/ios-guide.md#remoteagent) (external topic)
+    * [Install the remote agent and get it running](../first-steps/ios-guide.md) (external topic)
 
     * [Generate a new security PIN](#IosPin)
 
@@ -181,7 +181,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
         remotebuild certificates reset --hostname=my.hostname.com
 
-    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](ios-guide.md#first-install-a-few-things-onto-your-mac).
+    > **Note** If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md#install).
 
 3. When prompted, type “Y” and then type Enter.
 
