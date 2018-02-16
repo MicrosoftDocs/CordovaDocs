@@ -317,7 +317,7 @@ Build your app to generate the package that you will submit to the store.
 
 1. On your Mac, make sure that the remote agent is running.
 
-    See [Start the remote agent on your mac](./getting-started/ios-guide#remoteAgent).
+    See [Start the remote agent on your mac](../first-steps/ios-guide.md#remoteAgent).
 
 2. In Visual Studio, open the project for your app.
 

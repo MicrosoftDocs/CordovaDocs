@@ -73,7 +73,7 @@ If you want to manually migrate the old project, take the following steps.
 
     ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/vs-2015-project-structure.png)
 
-    > **Note** If you're using TypeScript, you'll need to add a tsconfig.json to your project folder and define config settings for your project. See the [Configuring TypeScript](../getting-started/tutorial-typescript.md) section for details.
+    > **Note** If you're using TypeScript, you'll need to add a tsconfig.json to your project folder and define config settings for your project. See the [Configuring TypeScript](../first-steps/develop-with-typescript.md) section for details.
 10. Open the `.jsproj` file in Visual Studio 2015.
 
     Here is what this example project looks like in Solution Explorer.

@@ -83,10 +83,10 @@
 ## [General](tips-and-workarounds/general-tips.md)
 ## [Tools configuration](tips-and-workarounds/configuration-tips.md)
 ## [Android](tips-and-workarounds/android-tips.md)
-## [iOS and OS X](tips-and-workarounds/tips-and-workarounds-ios-readme.md)
+## [iOS and OS X](tips-and-workarounds/ios-readme.md)
 ## [Windows](tips-and-workarounds/windows-tips.md)
 ## [Performance](tips-and-workarounds/performance-tips.md)
-## [Symlink and iOS plugins](tips-and-workarounds/tips-and-workarounds-ios-ios-plugin-symlink-fix-readme.md)
+## [Symlink and iOS plugins](tips-and-workarounds/ios-plugin-symlink-fix-readme.md)
 ## [Errors from files in Platforms folder](tips-and-workarounds/ios-osx-set-execute-readme.md)
 ## [Access a native Cordova project](tips-and-workarounds/access-native-cordova-project.md)
 # Release notes & bugs

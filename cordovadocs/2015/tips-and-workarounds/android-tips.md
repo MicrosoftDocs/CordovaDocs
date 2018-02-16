@@ -8,7 +8,7 @@ ms.author: "jmatthiesen"
 
 #Android tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Android platform.
-> **Note**: If your problem is security related, please read [May 26th, 2015 Android Security Issue](../tutorial-cordova-5-readme/)
+> **Note**: If your problem is security related, please read [May 26th, 2015 Android Security Issue](./android/security-05-26-2015/android-security-05-26-2015-readme.md)
 
 <a name="android"></a>
 ##Resolve Android build and deployment errors

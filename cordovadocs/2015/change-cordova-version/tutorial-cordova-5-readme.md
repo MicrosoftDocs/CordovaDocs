@@ -198,7 +198,7 @@ In particular:
 
 - Elimination of the existing dynamic content restrictions in Windows 8.0 and 8.1.
 - Cordova plugin support for external hosted content through the use of the same &lt;allow-navigation&gt; element used by Android and iOS.
-- Support for the powerful Content Security Policy (CSP) that is also now recommended for use with the Android and iOS Cordova platforms.  See [this article for more details](./cordova-5-security.md).
+- Support for the powerful Content Security Policy (CSP) that is also now recommended for use with the Android and iOS Cordova platforms.  See [this article for more details](../security/whitelists.md).
 - Apps can now run in two different security modes:
 	- Remote mode: The default, flexible security mode that only has a hand full of store submission restrictions.
 	- Local mode: A more secure mode that adds additional protections but disables hosted content and inline script

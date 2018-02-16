@@ -141,7 +141,7 @@ As a workaround, if you enter this state, soft reset your iOS device.
 
 ##**Errors about missing header or library files in plugins**
 
-There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md#symlink) article for a fix.
+There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-and-workarounds/ios-readme.md) article for a fix.
 
 ##**Custom iOS Simulator targets not in dropdown**
 

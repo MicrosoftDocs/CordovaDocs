@@ -68,7 +68,6 @@ Try these steps if you have trouble deploying to emulators or devices.
     If the issue is only on the Android platform, see [Android](./android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](../windows/tips-and-workarounds-windows-readme.md).
 
 6. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
-7. Try [clearing the cache](../getting-started/configure-vs-tools-apache-cordova.md#vstac) from **Tools**, **Options**, **Tools for Apache Cordova** and re-installing vs-tac.
 
 <a name="debugging"></a>
 ##Unable to start debugging
@@ -296,7 +295,7 @@ One of the advantages associated with Apache Cordova is its active plugin commun
 
 4. See if there is an update to the plugin and install it by removing the plugin using the **Installed** tab of the config.xml designer and re-add the plugin.
 
-5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](../ios/tips-and-workarounds-ios-readme.md#symlink) for specific symptoms and a workaround.
+5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](ios-plugin-symlink-fix-readme.md) for specific symptoms and a workaround.
 
 6. See if the plugin causing problems has transitioned to npm as a part of the Cordova [repository transition](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) and therefore has a new ID. You could have multiple copies of the same plugin installed (ex: both org.apache.cordova.camera and cordova-plugin-camera) or an outdated version of the plugin with bugs. Check the **Installed** tab of the config.xml designer for duplicates and consult [this article for information](#plugin-npm) on why the plugin ID may have changed and how to get an updated version of the plugin.
 

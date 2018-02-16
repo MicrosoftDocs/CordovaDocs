@@ -19,7 +19,7 @@ The complete todo list sample app can be downloaded here:
 
 ## Pre-requisites
 
-Before you can create a new project, make sure that you’ve met all system requirements and installed the Visual Studio Tools for Apache Cordova (and optional component in Visual Studio). For more information, see [Install Visual Studio Tools for Apache Cordova](install-vs-tools-apache-cordova.md).
+Before you can create a new project, make sure that you’ve met all system requirements and installed the Visual Studio Tools for Apache Cordova (and optional component in Visual Studio). For more information, see [Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md).
 
 ## Get the complete sample and run it
 

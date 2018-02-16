@@ -298,7 +298,7 @@ For each of the Ionic starter app templates that you installed and want to run, 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     ```
 
-    This will fulfill Apache Cordova 5 [security requirements](../tutorial-cordova-5/cordova-5-security.md).
+    This will fulfill Apache Cordova 5 [security requirements](../security/whitelists.md).
 
 12. Choose a deployment target like **Android** or **Windows-x86** and see the other sections in this article for possible configuration changes or code changes you might need to make to the app.
 
@@ -358,7 +358,7 @@ If you manually imported the Ionic project, you will need to make some changes t
 
 ## What's Next?
 
-You can use Visual Studio's build and [debug tools](../debug-and-test/debug-using-visual-studio.md), use the configuration manager to easily [add device plugins](../access-device-capabilities/manage-plugins.md) to your app to get up and running quick. To learn more about Ionic, see the Ionic framework docs.
+You can use Visual Studio's build and [debug tools](../build-deploy/debug-using-visual-studio.md), use the configuration manager to easily [add device plugins](../access-device-capabilities/manage-plugins.md) to your app to get up and running quick. To learn more about Ionic, see the Ionic framework docs.
 
 ![Add plugins](media/vs-taco-2015-tutorial-ionic/ionic-add-plugin.png)
 
