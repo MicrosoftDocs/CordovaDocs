@@ -1,18 +1,11 @@
-<properties
-   pageTitle="Configure your app built with Visual Studio Tools for Apache Cordova | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="jmatthiesen"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="11/12/2015"
-   ms.author="jomatthi"/>
+---
+title: "Configure your app built with Visual Studio Tools for Apache Cordova | Cordova"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.date: "11/12/2015"
+ms.author: "jmatthiesen"
+---
+
 
 # Add platform-specific content to your Cordova project
 

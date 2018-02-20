@@ -740,7 +740,7 @@ search for available Cordova plugins on npm (Cordova 5.x or greater). The naming
 
 **Try using Bower to add a package to your project**
 
-see [Add packages by using Bower](../adding-javascript-packages/tutorial-using-bower.md).
+see [Add packages by using Bower](using-bower.md).
 
 **Learn about other great ways to leverage the Visual Studio debugger**
 
