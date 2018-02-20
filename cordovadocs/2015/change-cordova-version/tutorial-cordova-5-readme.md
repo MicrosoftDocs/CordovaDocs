@@ -48,7 +48,7 @@ Other components are also versioned independently, but typically you will not be
 
 Similarly the major version update in Cordova 6.0.0 was triggered by breaking changes with the release of Cordova Android 5.0.0 .
 
-Note that you can actually add different platform versions to your project for a given CLI version through the use of some XML elements or command line options for edge case scenarios. See the [May 26th, 2015 Android Cordova Platform Security Issue](../tips-and-workarounds/android/security-05-26-2015/android-security-05-26-2015-readme.md) article for a specific example of how this works.
+Note that you can actually add different platform versions to your project for a given CLI version through the use of some XML elements or command line options for edge case scenarios. See the [May 26th, 2015 Android Cordova Platform Security Issue](../tips-workarounds/android/security-05-26-2015/android-security-05-26-2015-readme.md) article for a specific example of how this works.
 
 ## Changes with the release of Cordova 6
 Cordova 6's main change was updates to the Android platform to support Android Marshmallow. While not as dramatic a change as Cordova 4 to 5, there are some impacts to both Cordova 5 and 6 users that you will want to know about.
@@ -243,7 +243,7 @@ The config.xml designer in Visual Studio will automatically use the new plugin I
 
 **If you do not see this behavior, update Tools for Apache Cordova.** Some very early adopters may not see some of the improvements described in this document until after you update. You will soon see a notification in the notification center (flag in the upper right) prompting you to update.
 
-See [tips and workarounds](../tips-and-workarounds/general-tips.md#plugin-npm)  for additional details on adding npm versions of plugins to your project.
+See [tips and workarounds](../tips-workarounds/general-tips.md#plugin-npm)  for additional details on adding npm versions of plugins to your project.
 
 ####Cordova Plugin Registry
 Plugins.cordova.io now has two registry sections:
@@ -258,7 +258,7 @@ Both sets of plugins can be used with Cordova 5.0.0+, so in the short term, you 
 ####Cordova 3.x and 4.x Don't Support Npm as a Plugin Source
 An early source of confusion can lead from the fact that Cordova 3.x and 4.x cannot use plugins sourced from npm. The Cordova CLI in these versions does not have the capability. A specific issue that can come up is that updates to plugins will now generally be going to npm **not** to the older plugin registry sourced method used by these earlier version of Cordova.
 
-Generally, if you need an updated plugin, update to Cordova 5.1.1 or later. See the [tips and workarounds](../tips-and-workarounds/general-tips.md#plugin-npm) section if you must get an updated plugin for a project that uses an earlier version of Cordova for potential options.
+Generally, if you need an updated plugin, update to Cordova 5.1.1 or later. See the [tips and workarounds](../tips-workarounds/general-tips.md#plugin-npm) section if you must get an updated plugin for a project that uses an earlier version of Cordova for potential options.
 
 <a name="gradle"></a>
 ###Gradle Build Instead of Ant for Android
@@ -301,4 +301,4 @@ Simply updating to Cordova 5.0.0+ will automatically cause Gradle to be used fro
 
 		... replacing the Cordova version and plugin name for those that apply to your situation. You can also specify a fully qualified Git URI or filesystem path in place of the plugin name.
 
-	2. If you're able to reproduce the problem, you might want to contact the plugin author and let them know about the it. Before doing so, be sure to check for existing open issues as more than likely there's already one on the plugin author's GitHub site that you can use to provide additional information. Mention that you encountered issues when using Tools for Apache Cordova but include the Cordova CLI repro for the plugin author's benefit. See the [tips and workarounds](../tips-and-workarounds/general-tips.md#plugin-npm) section of our docs for additional troubleshooting tips.
+	2. If you're able to reproduce the problem, you might want to contact the plugin author and let them know about the it. Before doing so, be sure to check for existing open issues as more than likely there's already one on the plugin author's GitHub site that you can use to provide additional information. Mention that you encountered issues when using Tools for Apache Cordova but include the Cordova CLI repro for the plugin author's benefit. See the [tips and workarounds](../tips-workarounds/general-tips.md#plugin-npm) section of our docs for additional troubleshooting tips.

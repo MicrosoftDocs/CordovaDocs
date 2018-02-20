@@ -32,7 +32,7 @@ Here’s how to run your app on the [Visual Studio Emulator for Android](https:/
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-workarounds/android-tips.md).
 
 ## Google Android Emulator <a name="google"></a>
 
@@ -80,7 +80,7 @@ Before you run your app on the Google Android emulator in Visual Studio, use the
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-workarounds/android-tips.md).
 
 ### Configure a high-performance Google x86 emulator <a name="HAXM"></a>
 
@@ -149,7 +149,7 @@ If you have a PC with an Intel processor, you can improve the performance of the
 
 ### Troubleshooting? Let's fix it
 
-If you have errors installing or using the HAXM driver, see [Resolving issues with the HAXM driver](http://taco.visualstudio.com/en-us/docs/tips-and-workarounds-android-readme/).
+If you have errors installing or using the HAXM driver, see [Resolving issues with the HAXM driver](../tips-and-workarounds/android-tips.md).
 
 ## Genymotion emulator
 
@@ -177,7 +177,7 @@ The [Genymotion emulator](http://www.genymotion.com/) is a popular alternative t
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-and-workarounds/android-tips.md).
+If you have trouble deploying to Android emulators or devices, see [Resolve Android build and deployment errors](../tips-workarounds/android-tips.md).
 
 ## Android devices
 

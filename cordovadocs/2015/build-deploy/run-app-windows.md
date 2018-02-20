@@ -54,7 +54,7 @@ Follow these instructions to run your app on your computer or on the Windows Sim
 
 ### Troubleshooting? Let's fix it
 
-If you have trouble deploying to Windows, see [Resolve Windows build and deployment errors](../tips-and-workarounds/windows-tips.md).
+If you have trouble deploying to Windows, see [Resolve Windows build and deployment errors](../tips-workarounds/windows-tips.md).
 
 ![Download the tools](media/run-app-windows/run-windows-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
 

@@ -44,7 +44,7 @@ The following four json files can cause this to occur if added to source control
 - plugins/remote_ios.json
 - plugins/wp8.json.
 
-Remove these files from source control if you are not checking in the "platforms" folder (recommended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-and-workarounds/general-tips.md) for additional details.
+Remove these files from source control if you are not checking in the "platforms" folder (recommended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-workarounds/general-tips.md) for additional details.
 
 ##**Plugin with variables not working**
 
@@ -58,7 +58,7 @@ Due to a Cordova issue with Cordova 4.3.0 and 4.3.1, you can run into problems w
 
 ##**Slow first build or first plugin add**
 
-The first build or plugin that you add for a given version of Cordova will be slower than subsequent builds as VS must first dynamically acquire Cordova. See the Output Window for more detail on the progress. Furthermore, the first remote iOS build will exhibit the same behavior as the agent downloads Cordova on your OSX machine. If you encounter a CordovaModuleLoadError with the first iOS build for a given Cordova version, you can follow [these instructions](../tips-and-workarounds/ios-readme.md) to resolve the problem.
+The first build or plugin that you add for a given version of Cordova will be slower than subsequent builds as VS must first dynamically acquire Cordova. See the Output Window for more detail on the progress. Furthermore, the first remote iOS build will exhibit the same behavior as the agent downloads Cordova on your OSX machine. If you encounter a CordovaModuleLoadError with the first iOS build for a given Cordova version, you can follow [these instructions](../tips-workarounds/ios-readme.md) to resolve the problem.
 
 ##**Old versions of Cordova plugins due to Cordova plugin ID changes**
 
@@ -74,11 +74,11 @@ Git sourced plugins will not install properly if you have not installed the [Git
 
 Cordova 5.1.1 has a bug that can cause plugins installed from a Git repo to fail with the error "Error: EXDEV, cross-device link not permitted" if the project is on a different drive than your temp folder.
 
-See [tips and workarounds](../tips-and-workarounds/general-tips.md) for information about how to add plugins that are not present in the config designer. You can add them from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when you install, or you can instead download a copy, unzip it, and add the plugin from the filesystem.
+See [tips and workarounds](../tips-workarounds/general-tips.md) for information about how to add plugins that are not present in the config designer. You can add them from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when you install, or you can instead download a copy, unzip it, and add the plugin from the filesystem.
 
 ##**TypeError: Request path contains unescaped characters**
 
-When building or installing a plugin, you might encounter this error if you are using a proxy with certain versions of Node.js and Cordova after a "npm http GET". This is a Cordova issue and the simplest workaround is to downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). This will be resolved in a future version of Cordova. See [tips and workarounds](../tips-and-workarounds/general-tips.md) for additional details.
+When building or installing a plugin, you might encounter this error if you are using a proxy with certain versions of Node.js and Cordova after a "npm http GET". This is a Cordova issue and the simplest workaround is to downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). This will be resolved in a future version of Cordova. See [tips and workarounds](../tips-workarounds/general-tips.md) for additional details.
 
 ##**Errors from npm related to permission problems**
 

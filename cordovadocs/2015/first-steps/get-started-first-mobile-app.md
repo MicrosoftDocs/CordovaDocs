@@ -726,7 +726,7 @@ Just like any browser, your Cordova app supports HTTP requests and Ajax calls. H
 
 Additionally, your server--or servers that you pull from--may have additional security that restricts your app from being able to pull resources into your app.
 
-* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](../tips-and-workarounds/general-tips.md).
+* Cross-origin resource sharing (CORS) policies regulates which resources (e.g. fonts, JavaScript, etc.) from a web page can be requested from another domain outside the domain from which the resource originated. So, often times when your app is pulling data, fonts, images, and scripts from another web service, you need to make it in the form of a CORS request. [See more information](../tips-workarounds/general-tips.md).
 
 **Easy backend set up with Azure**
 

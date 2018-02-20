@@ -22,7 +22,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
     For example, we suggest you test on Windows:
     * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../tips-and-workarounds/general-tips.md) for more general help.
+    If you see the same error on other platforms, the issue is likely not Android-specific, see [Resolve build and deployment errors](../tips-workarounds/general-tips.md) for more general help.
 
 2. If you are running on an Android device, make sure that **Developer Mode** is enabled on the device. Try the instructions [here](http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) to enable developer mode.
 

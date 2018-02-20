@@ -22,14 +22,14 @@ However, if you update your Cordova version to 5.0.0 or later the config designe
 ----------
 **Cannot access any network resources from Android app:** The Android platform contained within Cordova 5.0.0+ does not have a "whitelist" plugin installed by default and therefore blocks network access by default. There are now two whitelist plugins that can be installed:
 
-* Installing “cordova-plugin-whitelist” is the recommended whitelist plugin and results in some new behaviors and introduces new config.xml elements that can be added manually by right clicking on config.xml and selecting **View Code**. You can install the plugin from the command line or by adding this XML element to config.xml (see [this article for more details](../tips-and-workarounds/general-tips.md):
+* Installing “cordova-plugin-whitelist” is the recommended whitelist plugin and results in some new behaviors and introduces new config.xml elements that can be added manually by right clicking on config.xml and selecting **View Code**. You can install the plugin from the command line or by adding this XML element to config.xml (see [this article for more details](../tips-workarounds/general-tips.md):
 
     ~~~~~~~~~~~~~~~~~
     <vs:plugin name="cordova-plugin-whitelist" version="1.1.0" />
     ~~~~~~~~~~~~~~~~~
 
 * Installing “cordova-plugin-legacy-whitelist” will cause the platform to behave the way it did in 4.x and enables the "Domain Access" list in the configuration designer. You can install this plugin from the command
-line or by adding this XML element to config.xml (see [this article for more details](../tips-and-workarounds/general-tips.md)):
+line or by adding this XML element to config.xml (see [this article for more details](../tips-workarounds/general-tips.md)):
 
     ~~~~~~~~~~~~~~~~~
     <vs:plugin name="cordova-plugin-legacy-whitelist" version="1.1.0" />
@@ -38,7 +38,7 @@ line or by adding this XML element to config.xml (see [this article for more det
 ----------
 **Error when adding plugin using Git URI with Cordova 5.1.1:** Cordova 5.1.1 has a bug that can cause plugins installed from a Git repo to fail with the error **Error: EXDEV, cross-device link not permitted** if the project is on a different drive than your temp folder.
 
-See [tips and workarounds](../tips-and-workarounds/general-tips.md) for information on adding plugins not present in the config designer. You can add these plugins from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when installing or you can instead download a copy, unzip it, and add the plugin from the filesystem.
+See [tips and workarounds](../tips-workarounds/general-tips.md) for information on adding plugins not present in the config designer. You can add these plugins from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when installing or you can instead download a copy, unzip it, and add the plugin from the filesystem.
 
 ----------
 **Missing Android SDK 22:** The Android platform in Cordova 5.0.0 requires Android SDK API Level 22 which may not be installed on your system. Install the SDK using the Android SDK manager.

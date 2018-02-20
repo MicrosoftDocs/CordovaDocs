@@ -88,7 +88,7 @@ You can clear the checkbox of any component that you don't want to install in th
 
 ![Multi-Hybrid Device Apps installer](media/vs-taco-2015-install/IC816239.png)
 
-If you prefer to install them manually, see [install the dependencies manually](../tips-and-workarounds/configuration-tips.md).
+If you prefer to install them manually, see [install the dependencies manually](../tips-workarounds/configuration-tips.md).
 
 ## Update Visual Studio Tools for Apache Cordova
 

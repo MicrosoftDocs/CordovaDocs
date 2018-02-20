@@ -41,7 +41,7 @@ On the surface, this seems like all files in a given Cordova project should be a
 	- *.suo
 	- *.jsproj.user
 
-**Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in. Simply remove these files from source control to resolve the issue. Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-and-workarounds/general-tips.md) for additional tips on addressing common build issues.
+**Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in. Simply remove these files from source control to resolve the issue. Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-workarounds/general-tips.md) for additional tips on addressing common build issues.
 
 <a name="depends"></a>
 ##Installing Dependencies
@@ -103,7 +103,7 @@ You may also need to configure proxy settings for Java. This can be [accomplishe
 JAVA_OPTS="-Dhttps.proxyHost=<host> -Dhttps.proxyPort=<port> -Dhttp.proxyHost=<host> -Dhttp.proxyPort=<port> -DproxySet=true"
 ```
 
-Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a recent version of Node just (like Node 4 if your Cordova version allows it) or downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). See [tips and workarounds](../tips-and-workarounds/general-tips.md#cordovaproxy) for additional details.
+Finally, if you see the error "**TypeError: Request path contains unescaped characters**" when building or installing a plugin you may need to either upgrade to a recent version of Node just (like Node 4 if your Cordova version allows it) or downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). See [tips and workarounds](../tips-workarounds/general-tips.md#cordovaproxy) for additional details.
 
 <a name="osxgotcha"></a>
 ## iOS/OSX Gotchas: Troubleshooting Tips for Building on a Mac
@@ -146,7 +146,7 @@ You should not run into this situation if you are using the [Visual Studio Team 
    To resolve this problem you have two options:
    
    1.  Don't check in the contents of the "platforms" folder into source control. This is by far the path of least resistance. The Gulp build script can add them at the time you build.	
-   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-and-workarounds/ios-osx-set-execute-readme.md) available in the tips and workarounds section.
+   2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is a [Cordova hook based version of this script](../tips-workarounds/ios-osx-set-execute-readme.md) available in the tips and workarounds section.
 
 4. **Signing suddenly stopped working for iOS on Feb 14th, 2016.** Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 

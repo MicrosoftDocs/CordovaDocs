@@ -120,7 +120,7 @@ The first build using the remote iOS build agent for a given version of Cordova 
 
 ##**Adding "plugins/&lt;platform&gt;.json" or "plugins/remote_ios.json" to source control can result in non-functional plugins**
 
-Five .json files that can cause issues if added to source control are missing from the default source code exclusion list including "plugins/remote_ios.json." If you encounter a build that has non-functional Cordova APIs after fetching the project from source control, you should ensure that "plugins/android.json", "plugins/ios.json", "plugins/windows.json", "plugins/remote_ios.json", and "plugins/wp8.json" are removed from source control and retry. See this [Tips and Workarounds](../tips-and-workarounds/general-tips.md) for additional details.
+Five .json files that can cause issues if added to source control are missing from the default source code exclusion list including "plugins/remote_ios.json." If you encounter a build that has non-functional Cordova APIs after fetching the project from source control, you should ensure that "plugins/android.json", "plugins/ios.json", "plugins/windows.json", "plugins/remote_ios.json", and "plugins/wp8.json" are removed from source control and retry. See this [Tips and Workarounds](../tips-workarounds/general-tips.md) for additional details.
 
 ##**Deploying to iOS 8.3 device fails from OSX Mavericks or below**
 
@@ -128,7 +128,7 @@ If deploying to iOS 8.3 device fails because vs-mda-remote cannot find Developer
 
 ##**"Could not find module 'Q'" error when building iOS**
 
-If your OSX machine has a case sensitive file system, you can hit this error with certain versions of Cordova like Cordova 5.1.1. (Most people do not turn on case sensitivity.) A fix is in the works and will be in the next version of the Cordova iOS platform along with an updated version of Cordova itself. Watch the [Cordova homepage](http://cordova.apache.org) for release announcements. Once the Cordova iOS platform is released, you can follow [these directions](../tips-and-workarounds/general-tips.md) to use it at release or you may wait until a full Cordova "tools" release also occurs and update the Cordova version using the config designer.
+If your OSX machine has a case sensitive file system, you can hit this error with certain versions of Cordova like Cordova 5.1.1. (Most people do not turn on case sensitivity.) A fix is in the works and will be in the next version of the Cordova iOS platform along with an updated version of Cordova itself. Watch the [Cordova homepage](http://cordova.apache.org) for release announcements. Once the Cordova iOS platform is released, you can follow [these directions](../tips-workarounds/general-tips.md) to use it at release or you may wait until a full Cordova "tools" release also occurs and update the Cordova version using the config designer.
 
 ##**Incremental builds not faster than initial build when using VS 2015 RC or RTM**
 
@@ -141,7 +141,7 @@ As a workaround, if you enter this state, soft reset your iOS device.
 
 ##**Errors about missing header or library files in plugins**
 
-There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-and-workarounds/ios-readme.md) article for a fix.
+There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-workarounds/ios-readme.md) article for a fix.
 
 ##**Custom iOS Simulator targets not in dropdown**
 

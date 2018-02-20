@@ -817,7 +817,7 @@ This is caused by the Mac development environment needing an update to several m
 
 Try these things:
 
-* Review [iOS and OSX Tips and Workarounds](../tips-and-workarounds/ios-readme.md).
+* Review [iOS and OSX Tips and Workarounds](../tips-workarounds/ios-readme.md).
 
 * Review [Known issues: iOS](../known-issues/known-issues-ios.md).
 

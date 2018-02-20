@@ -14,7 +14,7 @@ This article matches the steps of the Cordova [Video tutorial](http://go.microso
 
 ### Fix build and deployment errors
 
-See these [troubleshooting tips](../tips-and-workarounds/general-tips.md).
+See these [troubleshooting tips](../tips-workarounds/general-tips.md).
 
 ### Use the diagnostic tools
 
@@ -381,7 +381,7 @@ For Windows 8, Windows 8.1, and Windows Phone 8.1 apps, you can use the same Vis
 
 For Windows Phone 8 apps, you cannot attach the Visual Studio debugger. Instead, you can use Web Inspector Remote ([weinre](http://people.apache.org/~pmuellr/weinre/docs/latest/)), which is described in a [Microsoft Open Technologies blog post](http://msopentech.com/blog/2013/05/31/now-on-ie-and-firefox-debug-your-mobile-html5-page-remotely-with-weinre-web-inspector-remote/).
 
-As an alternative to using weinre for Windows Phone 8 debugging, you can instead add the Console plugin to your app, build your app, and then open the generated native Windows Phone 8 project in Visual Studio. The native project can be found under the platforms\wp8 folder. With the native project open, you can use the Output window to view console output. For more information about accessing the native projects, see [Access a Native Cordova Project](../tips-and-workarounds/access-native-cordova-project.md).
+As an alternative to using weinre for Windows Phone 8 debugging, you can instead add the Console plugin to your app, build your app, and then open the generated native Windows Phone 8 project in Visual Studio. The native project can be found under the platforms\wp8 folder. With the native project open, you can use the Output window to view console output. For more information about accessing the native projects, see [Access a Native Cordova Project](../tips-workarounds/access-native-cordova-project.md).
 
 >**Caution**: Changes you make to the native project will be overwritten when you rebuild the Cordova app.
 
