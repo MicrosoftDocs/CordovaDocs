@@ -1,18 +1,11 @@
-<properties
-   pageTitle="Run your Apache Cordova app on Windows | Cordova"
-   description="description"
-   services="na"
-   documentationCenter=""
-   authors="Mikejo5000"
-   tags=""/>
-<tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-   ms.service="na"
-   ms.devlang="javascript"
-   ms.topic="article"
-   ms.tgt_pltfrm="mobile-multiple"
-   ms.workload="na"
-   ms.date="09/10/2015"
-   ms.author="mikejo"/>
+---
+title: "Run your Apache Cordova app on Windows | Cordova"
+author: "jmatthiesen"
+ms.prod: "visual-studio-dev14"
+ms.date: "09/10/2015"
+ms.author: "jmatthiesen"
+---
+
 # Run your Apache Cordova app on Windows
 
 

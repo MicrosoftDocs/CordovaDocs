@@ -149,7 +149,7 @@ If you have a PC with an Intel processor, you can improve the performance of the
 
 ### Troubleshooting? Let's fix it
 
-If you have errors installing or using the HAXM driver, see [Resolving issues with the HAXM driver](../tips-and-workarounds/android-tips.md).
+If you have errors installing or using the HAXM driver, see [Resolving issues with the HAXM driver](../tips-workarounds/android-tips.md).
 
 ## Genymotion emulator
 
