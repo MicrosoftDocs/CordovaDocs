@@ -7,7 +7,7 @@
           "**/*.yml"
         ],
         "group": "2015",
-        "src": "cordovadocs2015"
+        "src": "2015"
       },
       {
         "files": [
@@ -15,19 +15,7 @@
           "**/*.yml"
         ],
         "group": "2017",
-        "src": "cordovadocs"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "cordovadocs",
-          "cordovadocs2015",
-          "**/includes/**"
-        ]
+        "src": "2017"
       }
     ],
     "resource": [
@@ -37,30 +25,33 @@
           "**/*.jpg"
         ],
         "group": "2015",
-        "src": "cordovadocs2015"
-      }
+        "src": "2015"
+      },
       {
         "files": [
           "**/*.png",
           "**/*.jpg"
         ],
         "group": "2017",
-        "src": "cordovadocs"
+        "src": "2017"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "uhfHeaderId": "MSDocsHeader-VisualStudio",
+            "breadcrumb_path": "/visualstudio/cross-platform/tools-for-cordova/_breadcrumb/toc.json",
+            "searchScope": ["Cordova"],
+            "titleSuffix": "Cordova", 
             "author": "",
             "ms.author": "",
-            "manager": "rsalva",
             "ms.date": "02/28/2017",
             "ms.topic": "article",
             "audience": "developer",
             "ms.reviewer": "",
             "ms.prod": "visual-studio-dev15",
             "ms.technology": "cordova",
+            "ms.devlang": "javascript",
             "ms.tgt_pltfrm": "mobile-multiple",
             "contributors_to_exclude": ["conceptdev","meganbradley"]
     },
@@ -69,12 +60,12 @@
     "dest": "cordovadocs",
     "groups": {
       "2015": {
-        "dest": "2015-dest",
-        "moniker_range": "ToolsForCordova-2015"
+        "dest": "2015",
+        "moniker_range": "toolsforcordova-2015"
       },
-      "group2": {
-        "dest": "2017-dest",
-        "moniker_range": "ToolsForCordova-2017"
+      "2017": {
+        "dest": "2017",
+        "moniker_range": "toolsforcordova-2017"
       }
     }
   }

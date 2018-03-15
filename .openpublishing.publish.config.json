@@ -8,6 +8,11 @@
       "build_output_subfolder": "cordovadocs",
       "locale": "en-us",
       "version": 0,
+      "monikers": [],           
+      "moniker_ranges": [
+        "toolsforcordova-2015",
+        "toolsforcordova-2017"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -15,8 +20,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "moniker_ranges": ["ToolsForCordova-2015", "ToolsForCordova-2017"]
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
