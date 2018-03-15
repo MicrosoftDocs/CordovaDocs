@@ -16,7 +16,7 @@ ms.author: "johnwargo"
 
 # Application Lifecycle Management (ALM) with Apache Cordova Apps
 
-Developing apps for modern platforms involves many more activities than just writing code. DevOps (a combination of Development and Pperations) recognizes a variety of activities across an app’s complete lifecycle. These include Agile planning and tracking work, architecture, designing and implementing code, managing a source code repositories, running builds, managing continuous integration and deployment tasks, testing (including unit tests, UI, and performance tests), running various forms of diagnostics in both development and production environments, and monitoring app performance and user behaviors in real time through telemetry and analytics.
+Developing apps for modern platforms involves many more activities than just writing code. DevOps (a combination of Development and Operations) recognizes a variety of activities across an app’s complete lifecycle. These include Agile planning and tracking work, architecture, designing and implementing code, managing a source code repositories, running builds, managing continuous integration and deployment tasks, testing (including unit tests, UI, and performance tests), running various forms of diagnostics in both development and production environments, and monitoring app performance and user behaviors in real time through telemetry and analytics.
 
 Visual Studio and Visual Studio Team Services (VSTS) provide a variety of DevOps capabilities (also referred to as application lifecycle management or ALM) for development organizations, a number of which are applicable to Cordova apps. Tools that are designed for .NET languages like C#, however, do not apply to JavaScript code. Other tools require tight integration with build and runtime environments. Because Cordova apps on Windows run as native apps, you’re able to use a variety of Visual Studio’s diagnostic tools such as performance profilers that are not available for non-Windows platforms.
 
@@ -169,22 +169,23 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>No</p>
             </td>
         </tr>
-        <td rowspan="5">
-            <p>
-                <strong>Code</strong>
-            </p>
-        </td>
-        <td>
-            <p><a href="https://msdn.microsoft.com/library/ms181237.aspx">Use Team Foundation Version Control</a></p>
-        </td>
-        <td>
-            <p>Yes</p>
-        </td>
-        <td>
-            <p>
-
-            </p>
-        </td>
+        <tr>
+            <td rowspan="5">
+                <p>
+                    <strong>Code</strong>
+                </p>
+            </td>
+            <td>
+                <p><a href="https://msdn.microsoft.com/library/ms181237.aspx">Use Team Foundation Version Control</a></p>
+            </td>
+            <td>
+                <p>Yes</p>
+            </td>
+            <td>
+                <p>
+                    &nbsp;
+                </p>
+            </td>
         </tr>
         <tr>
             <td>
@@ -195,7 +196,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>
-
+                    &nbsp;
                 </p>
             </td>
         </tr>
@@ -246,7 +247,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>Android, Windows, WP8, can be built on a Windows build server while a Mac can be used as a build server for
-                    iOS. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>
+                    iOS. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a></p>
             </td>
         </tr>
         <tr>
@@ -291,6 +292,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>
+                    &nbsp;
                 </p>
             </td>
         </tr>
@@ -302,7 +304,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>For VSTS, select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.
+                <p>For VSTS, select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
             </td>
         </tr>
         <tr>
@@ -318,7 +320,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -329,7 +333,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -340,7 +346,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Windows devices and Android emulators only</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>
@@ -351,7 +359,9 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>No</p>
             </td>
             <td>
-                <p></p>
+                <p>
+                    &nbsp;
+                </p>
             </td>
         </tr>
         <tr>

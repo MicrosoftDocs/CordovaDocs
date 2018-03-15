@@ -190,7 +190,7 @@ In this section, we'll add code the Weather Provider to connect with the externa
 
   	  //Do we have a location?
 	  if (loc.long) {
-	    //then use the 'grographical coordinates' version of the API
+	    //then use the 'geographical coordinates' version of the API
 	    uri += '?lat=' + loc.lat + '&lon=' + loc.long;
 	  } else {
 	    //Otherwise, use the zip code
@@ -603,7 +603,7 @@ The weather API the app uses has an API for retrieving forecast data, so lets di
 	days: Array<string> = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	```
 
-4.	When the page loads, we want the app to default to displaying the current conditions, so add the following code to the `onViewDidLoad` function:
+4.	When the page loads, we want the app to default to displaying the current conditions, so add the following code to the `ionViewDidLoad` function:
 
 	```typescript
 	//Switch to the Current segment
