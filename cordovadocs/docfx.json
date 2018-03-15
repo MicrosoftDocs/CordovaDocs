@@ -6,11 +6,16 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "exclude": [
-          "**/obj/**",
-          "cordovadocs/**",
-          "**/includes/**"
-        ]
+        "group": "2015",
+        "src": "2015"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "2017",
+        "src": "2017"
       }
     ],
     "resource": [
@@ -19,31 +24,49 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "exclude": [
-          "**/obj/**",
-          "cordovadocs/**",
-          "**/includes/**"
-        ]
+        "group": "2015",
+        "src": "2015"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "2017",
+        "src": "2017"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "uhfHeaderId": "MSDocsHeader-VisualStudio",
+            "breadcrumb_path": "/visualstudio/cross-platform/tools-for-cordova/_breadcrumb/toc.json",
+            "searchScope": ["Cordova"],
+            "titleSuffix": "Cordova", 
             "author": "",
             "ms.author": "",
-            "manager": "rsalva",
             "ms.date": "02/28/2017",
             "ms.topic": "article",
             "audience": "developer",
             "ms.reviewer": "",
             "ms.prod": "visual-studio-dev15",
             "ms.technology": "cordova",
+            "ms.devlang": "javascript",
             "ms.tgt_pltfrm": "mobile-multiple",
             "contributors_to_exclude": ["conceptdev","meganbradley"]
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "cordovadocs"
+    "dest": "cordovadocs",
+    "groups": {
+      "2015": {
+        "dest": "2015",
+        "moniker_range": "toolsforcordova-2015"
+      },
+      "2017": {
+        "dest": "2017",
+        "moniker_range": "toolsforcordova-2017"
+      }
+    }
   }
 }
