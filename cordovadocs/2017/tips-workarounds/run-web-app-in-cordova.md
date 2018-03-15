@@ -311,7 +311,7 @@ In order for the web app to leverage the Cordova container's native capabilities
     <h2>index</h2>
 
     @section Metas{
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb-redirect.azurewebsites.net/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://YOUR-HOSTED-WEB-APP-URL/ https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     }
 
     @if (platform == "android" || platform == "ios" || platform == "windows")
