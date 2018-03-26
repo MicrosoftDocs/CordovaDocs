@@ -74,15 +74,15 @@ If you want to manually migrate the old project, take the following steps.
     ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/vs-2015-project-structure.png)
 
     > **Note** If you're using TypeScript, you'll need to add a tsconfig.json to your project folder and define config settings for your project. See the [Configuring TypeScript](../first-steps/develop-with-typescript.md) section for details.
-10. Open the `.jsproj` file in Visual Studio 2015.
+9. Open the `.jsproj` file in Visual Studio 2015.
 
-    Here is what this example project looks like in Solution Explorer.
+   Here is what this example project looks like in Solution Explorer.
 
-    ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/solution-explorer.png)
+   ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/solution-explorer.png)
 
-  Now you can build and run your application by pressing F5 with the desired platform and device selected.
+   Now you can build and run your application by pressing F5 with the desired platform and device selected.
 
-  > **Note** If you have errors, you may need to update file references to reflect the new folder structure.
+   > **Note** If you have errors, you may need to update file references to reflect the new folder structure.
 
 ### Update Configl.xml
 
@@ -90,28 +90,28 @@ Next, you need to make sure that your icons and splash screens are picked up cor
 
 1. In Visual Studio's Solution Explorer, open config.xml.
 
-3. From the config.xml shortcut menu, choose **View Code**.
+2. From the config.xml shortcut menu, choose **View Code**.
 
-4. In config.xml, replace the platform section, such as the following:
+3. In config.xml, replace the platform section, such as the following:
 
     ```
-  <vs:platformSpecificValues>
-  <vs:platformSpecificWidget platformName="windows" id="" version="0.0.0.0">
+   <vs:platformSpecificValues>
+   <vs:platformSpecificWidget platformName="windows" id="" version="0.0.0.0">
     <vs:name />
-  </vs:platformSpecificWidget>
-</vs:platformSpecificValues>
+   </vs:platformSpecificWidget>
+   </vs:platformSpecificValues>
     ```
 
     with this xml:
 
      ```
-  <platform name="android">
+   <platform name="android">
     <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
     <icon src="res/icons/android/icon-48-mdpi.png" density="mdpi" />
     <icon src="res/icons/android/icon-72-hdpi.png" density="hdpi" />
     <icon src="res/icons/android/icon-96-xhdpi.png" density="xhdpi" />
-  </platform>
-  <platform name="ios">
+   </platform>
+   <platform name="ios">
     <icon src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
     <icon src="res/icons/ios/icon-60.png" width="60" height="60" />
     <icon src="res/icons/ios/icon-60-2x.png" width="120" height="120" />
@@ -127,8 +127,8 @@ Next, you need to make sure that your icons and splash screens are picked up cor
     <icon src="res/icons/ios/icon-small-2x.png" width="58" height="58" />
     <icon src="res/icons/ios/icon-50.png" width="50" height="50" />
     <icon src="res/icons/ios/icon-50-2x.png" width="100" height="100" />
-  </platform>
-  <platform name="windows">
+   </platform>
+   <platform name="windows">
     <icon src="res/icons/windows/Square150x150Logo.scale-100.png" width="150" height="150" />
     <icon src="res/icons/windows/Square150x150Logo.scale-240.png" width="360" height="360" />
     <icon src="res/icons/windows/Square30x30Logo.scale-100.png" width="30" height="30" />
@@ -140,12 +140,12 @@ Next, you need to make sure that your icons and splash screens are picked up cor
     <icon src="res/icons/windows/StoreLogo.scale-240.png" width="120" height="120" />
     <icon src="res/icons/windows/Wide310x150Logo.scale-100.png" width="310" height="150" />
     <icon src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
-  </platform>
-  <platform name="wp8">
+   </platform>
+   <platform name="wp8">
     <icon src="res/icons/wp8/ApplicationIcon.png" width="62" height="62" />
     <icon src="res/icons/wp8/Background.png" width="173" height="173" />
-  </platform>
-  <platform name="android">
+   </platform>
+   <platform name="android">
     <splash src="res/screens/android/screen-hdpi-landscape.png" density="land-hdpi"/>
     <splash src="res/screens/android/screen-ldpi-landscape.png" density="land-ldpi"/>
     <splash src="res/screens/android/screen-mdpi-landscape.png" density="land-mdpi"/>
@@ -154,8 +154,8 @@ Next, you need to make sure that your icons and splash screens are picked up cor
     <splash src="res/screens/android/screen-ldpi-portrait.png" density="port-ldpi"/>
     <splash src="res/screens/android/screen-mdpi-portrait.png" density="port-mdpi"/>
     <splash src="res/screens/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
-  </platform>
-  <platform name="ios">
+   </platform>
+   <platform name="ios">
     <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480"/>
     <splash src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>
     <splash src="res/screens/ios/screen-ipad-portrait.png" width="768" height="1024"/>
@@ -166,15 +166,15 @@ Next, you need to make sure that your icons and splash screens are picked up cor
     <splash src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334"/>
     <splash src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208"/>
     <splash src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" height="1242"/>
-  </platform>
-  <platform name="windows">
+   </platform>
+   <platform name="windows">
     <splash src="res/screens/windows/SplashScreen.scale-100.png" width="620" height="300"/>
     <splash src="res/screens/windows/SplashScreen.scale-240.png" width="1152" height="1920"/>
     <splash src="res/screens/windows/SplashScreenPhone.scale-240.png" width="1152" height="1920"/>
-  </platform>
-  <platform name="wp8">
+   </platform>
+   <platform name="wp8">
     <splash src="res/screens/wp8/SplashScreenImage.jpg" width="480" height="800"/>
-  </platform>
+   </platform>
      ```
 
     Now, icons and splash screens should load correctly when you run the app!

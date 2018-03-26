@@ -149,40 +149,40 @@ Finally, if you see the error "**TypeError: Request path contains unescaped char
 
 There are a few relatively common issues when building a Cordova app on macOS related to permissions that are worth noting.
 
-1.	**You are seeing permission errors from "npm":** If you are seeing npm permission errors, you may be running into a situation where the build agent user's cache folder (`~/.npm`) is inaccessible. Generally this occurs if the folder or some of its contents were created while running as an administrator (perhaps using the `sudo` command). Fortunately this is easy to resolve:
+1. **You are seeing permission errors from "npm":** If you are seeing npm permission errors, you may be running into a situation where the build agent user's cache folder (`~/.npm`) is inaccessible. Generally this occurs if the folder or some of its contents were created while running as an administrator (perhaps using the `sudo` command). Fortunately this is easy to resolve:
 
-    1.	Log into macOS as the user that installed and set up the cross-platform agent.
+   1.  Log into macOS as the user that installed and set up the cross-platform agent.
 
-    2.	Open the Terminal app and type:
+   2.  Open the Terminal app and type:
 
-        ```
-        sudo npm cache clear
-        ```
+       ```
+       sudo npm cache clear
+       ```
 
-    3.	Next, type:
+   3.  Next, type:
 
-        ```
-        sudo chown -R `whoami` ~/.npm
-        ```
+       ```
+       sudo chown -R `whoami` ~/.npm
+       ```
 
-2.	**You checked in the `hooks` folder from Windows and are seeing `spawn EACCES errors`**: If you encounter a `spawn EACCES` error when building on macOS or Linux, be sure all of the files in the Cordova project's `hooks` folder has their execute attribute set. Set the execute attribute on the files in source control or use the linux `chmod` command as a part of your build script; for example:
+2. **You checked in the `hooks` folder from Windows and are seeing `spawn EACCES errors`**: If you encounter a `spawn EACCES` error when building on macOS or Linux, be sure all of the files in the Cordova project's `hooks` folder has their execute attribute set. Set the execute attribute on the files in source control or use the linux `chmod` command as a part of your build script; for example:
 
-	```
-	chmod +x file_name
-	```
+   ```
+   chmod +x file_name
+   ```
 
-	This is commonly seen with the **Ionic framework** due to the hook in `hooks/after_prepare` step.
+   This is commonly seen with the **Ionic framework** due to the hook in `hooks/after_prepare` step.
 
-3.  **You checked in the `platforms` folder from Windows and are seeing permission errors:**
+3. **You checked in the `platforms` folder from Windows and are seeing permission errors:**
 
-	You should not run into this situation if you are using the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension, but if you are seeing errors that are originating from files in your project's `platforms` folder, the root cause may be that you checked in shell scripts under the `platforms/android/cordova` or `platforms/ios/cordova` folders from Windows. This is because the NTFS file system has no concept of the **execute** permission required to run these from macOS. The `platforms` folder is not intended to be checked in and by default are excluded from Cordova projects in Visual Studio as a result.
+   You should not run into this situation if you are using the VSTS [Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188) extension, but if you are seeing errors that are originating from files in your project's `platforms` folder, the root cause may be that you checked in shell scripts under the `platforms/android/cordova` or `platforms/ios/cordova` folders from Windows. This is because the NTFS file system has no concept of the **execute** permission required to run these from macOS. The `platforms` folder is not intended to be checked in and by default are excluded from Cordova projects in Visual Studio as a result.
 
-    For example, this error is saying the "version" script is not executable:
+   For example, this error is saying the "version" script is not executable:
 
-	```
-    [17:41:57] Error:
-    /Users/vsoagent/vsoagent/agent/work/build/b424d56537be4854de825289f019285698609afddf826d5d1a185eb60b806e47/repo/tfs-vnext test/platforms/android/cordova/version:
-    Command failed with exit code EACCES
+   ```
+   [17:41:57] Error:
+   /Users/vsoagent/vsoagent/agent/work/build/b424d56537be4854de825289f019285698609afddf826d5d1a185eb60b806e47/repo/tfs-vnext test/platforms/android/cordova/version:
+   Command failed with exit code EACCES
    ```
 
    To resolve this problem you have two options:

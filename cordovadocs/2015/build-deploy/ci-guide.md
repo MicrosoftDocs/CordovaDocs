@@ -23,7 +23,7 @@ This remainder of this article will go through the general approach for tackling
 >**Note** Team Foundation Services 2013 cannot easily take advantage of the workflow described here (though 2015 can) as it is MSBuild based. See the [Team Foundation Services 2013](http://go.microsoft.com/fwlink/?LinkID=533770) tutorial for details.
 
 <a name="whattoadd"></a>
-##What to Add to Source Control
+## What to Add to Source Control
 On the surface, this seems like all files in a given Cordova project should be added to source control. However, to avoid unexpected issues, we recommend excluding the following files and folders from source control.
 
 * The following folders should be excluded:
@@ -44,41 +44,41 @@ On the surface, this seems like all files in a given Cordova project should be a
 **Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in. Simply remove these files from source control to resolve the issue. Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-workarounds/general-tips.md) for additional tips on addressing common build issues.
 
 <a name="depends"></a>
-##Installing Dependencies
+## Installing Dependencies
 Cordova builds require that a number of dependencies be properly installed and configured on the system. However, exactly which dependencies are required varies based on the Cordova "platform" (Android, iOS, Windows and Windows Phone 8.1/10, Windows Phone 8.0) you want to build.
 
 Installing Visual Studio 2015 with the Tools for Apache Cordova option will automatically install these dependencies but you will still need to configure some of the environment variables by hand for Android. See [Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](http://go.microsoft.com/fwlink/?LinkID=691186) for a summary of these variables. Also note that the **Hosted** pool in Visual Studio Team Services is pre-configured for use as are agents in [MacinCloud's Visual Studio Team Services plan](http://go.microsoft.com/fwlink/?LinkID=533789).
 
 Otherwise you can manually install only those dependencies that are needed for building the platforms you are interested in.
 
-1.  Install Node.js and make sure it is available to the system user you intend to have run your builds. The [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188) also works with TFS and automatically ensures the correct version of Node.js is used for a given version of Cordova. Otherwise the version of Node.js required will vary based on the Cordova version:
+1. Install Node.js and make sure it is available to the system user you intend to have run your builds. The [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188) also works with TFS and automatically ensures the correct version of Node.js is used for a given version of Cordova. Otherwise the version of Node.js required will vary based on the Cordova version:
     
-    1. Cordova < 5.3.3 - Node 0.12.9 or lower
-    2. Cordova 5.3.3 - 5.4.0 - Node 4 or lower
-    2. Cordova > 5.4.0 - Node 0.12.x, 4, or 5
+   1. Cordova < 5.3.3 - Node 0.12.9 or lower
+   2. Cordova 5.3.3 - 5.4.0 - Node 4 or lower
+   2. Cordova > 5.4.0 - Node 0.12.x, 4, or 5
 
-    Node 0.12.9 is currently compatible with all Cordova versions and is therefore a safe bet. You may want to consider downloading a non-installer based version of [Node.js from its distribution archive](https://nodejs.org/dist/) if you need access to more than one and will not be using VS Team Services or TFS 2015.
+   Node 0.12.9 is currently compatible with all Cordova versions and is therefore a safe bet. You may want to consider downloading a non-installer based version of [Node.js from its distribution archive](https://nodejs.org/dist/) if you need access to more than one and will not be using VS Team Services or TFS 2015.
 
-2.  Install the platform specific dependencies on the server and make them available to this same user. See the following guides for details:
+2. Install the platform specific dependencies on the server and make them available to this same user. See the following guides for details:
 
-    1.   [Android Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533774). A few notes:
+   1. [Android Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533774). A few notes:
 
-        * You do not need to install Android Studio or Eclipse. Instead you may download and install one of the ["SDK Tools Only" packages](http://go.microsoft.com/fwlink/?LinkID=533747).
-        * When building, you may encounter an error telling you that you need to install specific SDK versions or tools depending on the version of Cordova you are using. Note that these messages are talking about the *tools and SDK* versions *not* the device target versions.
+      * You do not need to install Android Studio or Eclipse. Instead you may download and install one of the ["SDK Tools Only" packages](http://go.microsoft.com/fwlink/?LinkID=533747).
+      * When building, you may encounter an error telling you that you need to install specific SDK versions or tools depending on the version of Cordova you are using. Note that these messages are talking about the *tools and SDK* versions *not* the device target versions.
 
-        	* You can install additional SDKs using [the Android SDK Manager](http://go.microsoft.com/fwlink/?LinkID=533775).
-        	* Note that only the "SDK Platform" is required for a given API level so you may uncheck other options. Android system images in particular are large and are not needed.
-            * Be sure to also install the "platform tools"
-            * Projects created using Visual Studio will typically use either the API SDK 19, 21, 22, or 23.
+         * You can install additional SDKs using [the Android SDK Manager](http://go.microsoft.com/fwlink/?LinkID=533775).
+         * Note that only the "SDK Platform" is required for a given API level so you may uncheck other options. Android system images in particular are large and are not needed.
+         * Be sure to also install the "platform tools"
+         * Projects created using Visual Studio will typically use either the API SDK 19, 21, 22, or 23.
 
-    2.   OSX only: [iOS Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533776). You do not need to install the deployment tools mentioned.
+   2. OSX only: [iOS Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533776). You do not need to install the deployment tools mentioned.
 
-    3.   Windows only:
-        1.  [Windows (and Phone) 8.1/10 Platfrom Guide](http://go.microsoft.com/fwlink/?LinkID=533777)
-        2.  [Legacy Windows Phone 8.0 Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533778)
+   3. Windows only:
+      1.  [Windows (and Phone) 8.1/10 Platfrom Guide](http://go.microsoft.com/fwlink/?LinkID=533777)
+      2.  [Legacy Windows Phone 8.0 Platform Guide](http://go.microsoft.com/fwlink/?LinkID=533778)
 
 <a name="proxy"></a>
-##Internet Access & Proxy Setup
+## Internet Access & Proxy Setup
 If your build server is running in a datacenter, it may be very locked down and not have unrestricted access to the Internet. Due to dynamic acquistion requirements, you will need to allow the build servers to access the following domains:
 
 - npm: http://registry.npmjs.org
@@ -109,38 +109,38 @@ Finally, if you see the error "**TypeError: Request path contains unescaped char
 ## iOS/OSX Gotchas: Troubleshooting Tips for Building on a Mac
 There are a few relativley common issues when building a Cordova app on OSX related to permissions that are worth noting.
 
-1.  **You are seeing permission errors from "npm":** If you are seeing permission errors from "npm," you may be running into a situation where the build agent user's cache folder (~/.npm) is inaccessible. Generally this occurs if the folder or some of its contents was created while running as an administrator (sudo). Fortunately this is easy to resolve:
+1. **You are seeing permission errors from "npm":** If you are seeing permission errors from "npm," you may be running into a situation where the build agent user's cache folder (~/.npm) is inaccessible. Generally this occurs if the folder or some of its contents was created while running as an administrator (sudo). Fortunately this is easy to resolve:
 
-    1.  Log into OSX with the user that installed and set up the cross-platform agent
-    2.  Open the Terminal app and type:
+   1.  Log into OSX with the user that installed and set up the cross-platform agent
+   2.  Open the Terminal app and type:
 
-        ```
-        sudo npm cache clear
-        ```
+       ```
+       sudo npm cache clear
+       ```
 
-    3.  Next, type:
+   3.  Next, type:
 
-        ```
-        sudo chown -R `whoami` ~/.npm
-        ```
+       ```
+       sudo chown -R `whoami` ~/.npm
+       ```
 
-2.  **You checked in the "hooks" folder from Windows and are seeing "spawn EACCES" errors:** If you encounter a "spawn EACCES" error when building on a Mac or Linux, be sure all files in the hooks folder to have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or execute a set of chmod commands as a part of your build script.  Ex:
+2. **You checked in the "hooks" folder from Windows and are seeing "spawn EACCES" errors:** If you encounter a "spawn EACCES" error when building on a Mac or Linux, be sure all files in the hooks folder to have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or execute a set of chmod commands as a part of your build script.  Ex:
 
-	```
-	chmod +x <file name goes here>
-	```
+   ```
+   chmod +x <file name goes here>
+   ```
 
-	This is commonly seen with **Ionic** due to the hook in hooks/after_prepare.
+   This is commonly seen with **Ionic** due to the hook in hooks/after_prepare.
         
-3.  **You checked in the "platforms" folder from Windows and are seeing permission errors:** 
-You should not run into this situation if you are using the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188), but if you are seeing errors that are originating from files in your project's "platforms" folder, the root cause may be that you checked in shell scripts under the "platforms/android/cordova" or "platforms/ios/cordova" folders from Windows. This is because the NTFS file system has no concept of an "execute bit" that is required to run these from OSX. (The contents of the platforms is generally not intended for checked in and by default are excluded from Cordova projects in Visual Studio as a result.)
+3. **You checked in the "platforms" folder from Windows and are seeing permission errors:** 
+   You should not run into this situation if you are using the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188), but if you are seeing errors that are originating from files in your project's "platforms" folder, the root cause may be that you checked in shell scripts under the "platforms/android/cordova" or "platforms/ios/cordova" folders from Windows. This is because the NTFS file system has no concept of an "execute bit" that is required to run these from OSX. (The contents of the platforms is generally not intended for checked in and by default are excluded from Cordova projects in Visual Studio as a result.)
 
-    For example, this error is saying the "version" script is not executable:
+   For example, this error is saying the "version" script is not executable:
 
-	```
-    [17:41:57] Error:
-    /Users/vsoagent/vsoagent/agent/work/build/b424d56537be4854de825289f019285698609afddf826d5d1a185eb60b806e47/repo/tfs-vnext test/platforms/android/cordova/version:
-    Command failed with exit code EACCES
+   ```
+   [17:41:57] Error:
+   /Users/vsoagent/vsoagent/agent/work/build/b424d56537be4854de825289f019285698609afddf826d5d1a185eb60b806e47/repo/tfs-vnext test/platforms/android/cordova/version:
+   Command failed with exit code EACCES
    ```
 
    To resolve this problem you have two options:
@@ -151,7 +151,7 @@ You should not run into this situation if you are using the [Visual Studio Team 
 4. **Signing suddenly stopped working for iOS on Feb 14th, 2016.** Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
 <a name="basic"></a>
-##Behind the Scenes: Basic Workflow
+## Behind the Scenes: Basic Workflow
 In general, we reccomend following one of the tutorials above. Each build server technology is a bit different and in this article we will focus on the general steps required to build a Cordova app regardless of technology using the Cordova Command Line Interface.
 
 The basic flow for building a Cordova app is simple on the surface:
@@ -174,7 +174,7 @@ The Cordova CLI is node.js based, so these exact same steps can be run from Wind
 
 Exactly how these steps are executed will vary depending on your build server. However, there are a **number of challenges that may not be immediately obvious** when setting up an automated build environment. This are article will describe some techniques for dealing with these common problems.
 
-###A Note on TypeScript
+### A Note on TypeScript
 Unlike Visual Studio, it's important to note that the base Cordova CLI does not itself automatically compile TypeScript code. If you are using a build language like Gulp or Grunt, there are convenient plugins that you can use to compile your TypeScript code. Otherwise there is also a node.js based command line utility that works both on Windows and OSX. See the following links for additional details:
 
 -   [Compiling TypeScript from the command line](http://go.microsoft.com/fwlink/?LinkID=533802)
@@ -182,7 +182,7 @@ Unlike Visual Studio, it's important to note that the base Cordova CLI does not 
 -   [grunt-typescript](http://go.microsoft.com/fwlink/?LinkID=533779)
 
 <a name="challenges"></a>
-##Behind the Scenes: Resolving Common Cordova Challenges
+## Behind the Scenes: Resolving Common Cordova Challenges
 When building Cordova projects in a server environment, there are a number of challenges you may encounter. If you are looking for a quick solution you should consider the **[Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188)** or the [Gulp](./using-gulp-build-tasks.md) tutorial as they are specifically designed to help resolve these problems regardless of build system.  If you're interested in understanding what is going on behind the scenes, read on.
 
 The challenges are as follows:
@@ -201,7 +201,7 @@ The challenges are as follows:
 
 
 <a name="multicli"></a>
-###Building with Multiple Versions of the Cordova CLI
+### Building with Multiple Versions of the Cordova CLI
 The Cordova CLI is a standard Node.js npm package and thus can be installed either [globally or locally](http://go.microsoft.com/fwlink/?LinkID=533780). The trick, then, is to use a local installation of the Cordova CLI rather than a global one. There are two different methods that you can use to install Cordova locally: at the project level or in a global cache.
 
 #### Project Level
@@ -304,7 +304,7 @@ To avoid re-installing each time, you can take advantage of Visual Studio's **ta
 A variation of this method is used by **Visual Studio, the TACO CLI, the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188), and the taco-team-build Node module** referenced in the [Gulp](./using-gulp-build-tasks.md) and [Jenkins](./jenkins.md) tutorials.
 
 <a name="platforms"></a>
-###Adding Platforms
+### Adding Platforms
 Adding platforms in Cordova is quite simple using the "cordova platform" command. Ex:
 
 ```
@@ -339,7 +339,7 @@ However, there are a couple of common problems when executing this command that 
     ```
 
 <a name="ipa"></a>
-###Generating an iOS App Store Package 
+### Generating an iOS App Store Package 
 #### Solving iOS Keychain Permission Errors
 When building for iOS you may run itno permissions issues when using a build server like [Jenkins](http://go.microsoft.com/fwlink/?LinkID=533784) because the build agent does not have permissions to access the login keychain were your installed signing certificates are located. In this case, the codesign utlity then attempts to pop-up a dialog where you enter the appropriate password but typically this won't be possible since you are not logged in interactivley. You will then see a very cryptic **User interaction not allowed** error.
 
@@ -367,7 +367,7 @@ In order to distribute your iOS application you will need to generate an "iOS Ap
 xcrun -v -sdk iphoneos PackageApplication source.app -o dest.ipa
 ```
 
-In Cordova projects, the source ".app" package can be found in the platforms/ios/build/device folder in your project after a successful Cordova "device" build. As an important detail, "source.app" and "dest.ipa" above should be **absolute paths** and the name of the package is taken from the "Display Name" (widget/@name) in config.xml which may not match your project folder name. Ex:
+In Cordova projects, the source ".app" package can be found in the platforms/ios/build/device folder in your project after a successful Cordova "device" build. As an important detail, "source.app" and "dest.ipa" above should be <strong>absolute paths</strong> and the name of the package is taken from the "Display Name" (widget/@name) in config.xml which may not match your project folder name. Ex:
 
 ```
 xcrun -v -sdk iphoneos PackageApplication "/Users/cdvusr/Documents/cordova/myapp/platforms/ios/build/device/My Cordova App.app" -o "/Users/cordova/Documents/cordova/myapp/platforms/ios/build/device/My Cordova App.ipa"

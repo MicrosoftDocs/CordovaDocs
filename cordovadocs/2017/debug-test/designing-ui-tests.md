@@ -374,7 +374,7 @@ This is where “hooks” in the test frameworks come into play, which are speci
 </tbody>
 </table>
 
-In our test code with WeatherApp, the *before* hook is a perfect place to all *appDriver.init* to launch the app. Note that in this code we are using the yiewd form of *function**, *appDriver.run*, and *yield*:
+In our test code with WeatherApp, the <em>before</em> hook is a perfect place to all <em>appDriver.init</em> to launch the app. Note that in this code we are using the yiewd form of <em>function</em><em>, *appDriver.run</em>, and <em>yield</em>:
 
 ```JavaScript
 	before(function (done) {
@@ -411,7 +411,7 @@ To refactor code that you want to use from multiple tests, be sure to use *funct
 	}
 ```
 
-Because this is declared using *function**, we have to use *yield* when calling it. For example, with this and the *before* hook in place, the startup test for element visibility is simple:
+Because this is declared using <em>function</em><em>, we have to use *yield</em> when calling it. For example, with this and the <em>before</em> hook in place, the startup test for element visibility is simple:
 
 ```JavaScript
 	it ('displays either weather data or an error message on startup', function (done) {

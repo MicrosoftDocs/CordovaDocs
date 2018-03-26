@@ -20,8 +20,8 @@ The application displays current weather conditions based on the current device 
 
 ## <a id="get-started"></a>First, create a project
 
-1.	Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
-2.	In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears, select **Blank App (Apache Cordova)** as shown in the figure:
+1.  Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
+2.  In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears, select **Blank App (Apache Cordova)** as shown in the figure:
 
     ![Project template locations](media/get-started-first-mobile-app/blank-project-template.png)
 
@@ -61,13 +61,13 @@ This table gives you the basic idea of how you might use each one.
   </th>
 </tr>
  <tr>
-   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io//">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won't use it in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-using-bower/">here</a>.</td>
+   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io//">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won&#39;t use it in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-using-bower/">here</a>.</td>
  </tr>
  <tr>
-   <td><strong>build.json</strong></td><td>This file contains parameters that Visual Studio uses to build a signed Android package. <br><br>We won't create one in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-package-publish-readme/">here</a>.</td>
+   <td><strong>build.json</strong></td><td>This file contains parameters that Visual Studio uses to build a signed Android package. <br><br>We won&#39;t create one in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-package-publish-readme/">here</a>.</td>
  </tr>
  <tr>
-   <td><strong>config.xml</strong></td><td>Contains the settings of your app. <br><br>We'll change these settings later in this guide.</td>
+   <td><strong>config.xml</strong></td><td>Contains the settings of your app. <br><br>We&#39;ll change these settings later in this guide.</td>
  </tr>
  <tr>
    <td><strong>package.json</strong></td><td>Contains settings used by the node package manager (npm) to install dependencies for the app.</td>
@@ -170,7 +170,7 @@ The application uses the [**jQuery**](https://jquery.com/) and [**jQuery Mobile*
 Let's add the JQuery and JQuery Mobile NuGet packages to the project. 
 
 > **Note:** Before starting the following steps, point your browser of choice to [the jQuery Mobile download site](http://jquerymobile.com/download/) to note which version of the jQuery library is compatible with the current shipping release of jQuery Mobile. At the time of this writing, jQuery Mobile version 1.4.5 is compatible with jQuery version 1.8 through 1.11, and version 2.1. In the steps that follow, be sure you install compatible versions of both frameworks. The NuGet Package Manager should deploy compatible versions of dependent libraries, but it's best to make sure first.
- 
+
 1. Choose **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery** NuGet package to your solution.
 
     ![JQuery Package](media/get-started-first-mobile-app/nuget-jquery.png)
@@ -264,7 +264,7 @@ The project's `index.html` is the first page that appears when users run your ap
 1. Open the `www\index.html` file and remove this HTML. It's just a part of the default template that you run out of the box. We won't need it.
 
     ```html
- 	<div class="app">
+    <div class="app">
       <h1>Apache Cordova</h1>
       <div id="deviceready" class="blink">
          <p class="event listening">Connecting to Device</p>
@@ -368,11 +368,11 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 3. Name the file `weather.js`, and then choose the **Add** button.
 
-	![Scripts Folder](media/get-started-first-mobile-app/add-weather-js-file.png)
+    ![Scripts Folder](media/get-started-first-mobile-app/add-weather-js-file.png)
 
 4. Open the `www\scripts\weather.js` file and add the following function. Replace `Your_Key_Here` with the key that you got from [OpenWeatherMap](https://home.openweathermap.org/).
 
-	 ```javascript       
+     ```javascript       
 
     var OpenWeatherAppKey = "Your_Key_Here";
 
@@ -422,7 +422,7 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
       }
     }
 
-	```
+    ```
 
     This function gets a zip code from the input box, and uses a free service to get the weather for that zip code. The rest of this code uses JQuery syntax to populate controls on the page with data from the service.
 
@@ -430,20 +430,20 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 5. Open the `www\index.html` file, and add this reference to the `<body>` of the page (at the bottom of the body section, where the other JavaScript references are located).
 
-	```html   
+    ```html   
     <script src="scripts/weather.js"></script>
-	```
+    ```
 
     When you're done, your script reference should look something like the following.
 
-	```html   
+    ```html   
     <script src="scripts/jquery-2.2.0.min.js"></script>
     <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/weather.js"></script>
-	```
+    ```
 
 6. Add `http://api.openweathermap.org` to the page's Content Security Policy (CSP). The CSP is just a line of HTML that is located inside of the `<head>`. Use it to declare approved origins of content that browsers should be allowed to load on your website. It looks like this:
 
@@ -470,9 +470,9 @@ Let's run the app, but this time let's use an emulator.
 
     ![Android Emulator](media/get-started-first-mobile-app/android-emulator.png)
 
-    > **Note:** According to your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe):
-
-    > ![Android Emulator Error](media/get-started-first-mobile-app/android-emulator-error.png)
+   > **Note:** According to your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe):
+   > 
+   > ![Android Emulator Error](media/get-started-first-mobile-app/android-emulator-error.png)
 
 2. In the Android emulator, type a valid United States zip code into the edit box (for example: 33101), and then press the **Get Weather** button.
 
@@ -536,7 +536,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 
 3. In the `www\scripts\weather.js` file add the following code right after the `showWeatherData` function
 
-	 ```javascript       
+     ```javascript       
      function getWeatherWithGeoLocation() {
        navigator.geolocation.getCurrentPosition(onGetLocationSuccess, onGetLocationError, { enableHighAccuracy: true });
       $('#error-msg').show();
@@ -564,32 +564,31 @@ Let's add a plugin that gives us access to the device's geolocation system. That
       $('#get-weather-btn').prop('disabled', false);
     }  
 
-	```
+    ```
 
     This code uses the device's geolocation capability to get the latitude and longitude of the device's location. It then gets the weather for that location.
 
-4.  Open the project's `www\scripts\index.js` file, and add the following code to the `onDeviceReady` function.
+4. Open the project's `www\scripts\index.js` file, and add the following code to the `onDeviceReady` function.
 
-    ```javascript
+   ```javascript
 
-	  getWeatherWithGeoLocation();
+     getWeatherWithGeoLocation();
+   ```
+   When you're done, the ``onDeviceReady`` function should look like this:
 
+   ```javascript
+
+    function onDeviceReady() {        
+      $('#get-weather-btn').click(getWeatherWithZipCode);
+      getWeatherWithGeoLocation();
+   };
     ```
-    When you're done, the ``onDeviceReady`` function should look like this:
 
-    ```javascript
+5. Run the app. When the app starts, the label *Determining your current location ...* appears. After a brief period of time, the weather data for your location appears in the app.
 
-     function onDeviceReady() {	       
-       $('#get-weather-btn').click(getWeatherWithZipCode);
-       getWeatherWithGeoLocation();
-	};
-     ```
-
-6. Run the app. When the app starts, the label *Determining your current location ...* appears. After a brief period of time, the weather data for your location appears in the app.
-
-    > **Note**: If you use the Apache Ripple emulator, you’ll have to configure it with your location.
-
-    > ![Change Apache Ripple emulator location](media/get-started-first-mobile-app/change-ripple-location.png)
+   > **Note**: If you use the Apache Ripple emulator, you’ll have to configure it with your location.
+   > 
+   > ![Change Apache Ripple emulator location](media/get-started-first-mobile-app/change-ripple-location.png)
 
 ## <a id="tailor"></a>Tailor the app to a platform
 
@@ -613,9 +612,9 @@ This is where the `merges` folder becomes useful. We touched on that folder earl
 
 5. In the `merges\android\scripts\weather.js` file, add the following code to the `getWeatherWithGeoLocation` method.
 
-	```javascript
+    ```javascript
     $('#app-title').text("Android Weather");
-	```
+    ```
 
 6. Run your app in the Apache Ripple Simulator.
 
@@ -645,7 +644,7 @@ In some cases, you'll have to tweak the layout of your pages so that they appear
 
 5. Replace the contents of the new `\merges\android\css\index.css` file with the following code.
 
-	```css
+    ```css
     .not-displayed {
         display: none;
     }
@@ -687,7 +686,7 @@ In some cases, you'll have to tweak the layout of your pages so that they appear
         color: #ffffff;
         text-shadow: 0 1px 0 #005599;
     }
-	```
+    ```
 
     Note that the styles defined in this new CSS file are identical to the `www\css\index.css`, with the exception of these element:
 

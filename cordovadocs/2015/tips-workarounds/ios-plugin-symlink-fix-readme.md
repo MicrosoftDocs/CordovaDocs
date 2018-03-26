@@ -6,7 +6,7 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#Cordova plugin Symlink fix for iOS plugins with custom frameworks
+# Cordova plugin Symlink fix for iOS plugins with custom frameworks
 
 License: MIT
 
@@ -21,9 +21,9 @@ To install it:
 1. Download [hook-symlink-fix.js](https://github.com/Microsoft/cordova-docs/tree/master/articles/tips-and-workarounds/ios/ios-plugin-symlink-fix) and drop it a **hooks** folder in your project root.
 2. Update config.xml with the following (using right-click->**View Code**):
 
-  ```
-  <hook type="before_compile" src="hooks/hook-symlink-fix.js" />
-  ```
+   ```
+   <hook type="before_compile" src="hooks/hook-symlink-fix.js" />
+   ```
 
 3. Run a "Clean" operation in Visual Studio or remove the iOS platform, and then re-add it if you are using the command line.
 

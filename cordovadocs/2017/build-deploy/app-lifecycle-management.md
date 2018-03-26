@@ -304,7 +304,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>For VSTS, select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
+                <p>For VSTS, select &quot;Continous Integration&quot; under the &quot;Triggers&quot; tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
             </td>
         </tr>
         <tr>

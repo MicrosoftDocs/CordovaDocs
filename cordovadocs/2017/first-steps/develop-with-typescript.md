@@ -19,16 +19,16 @@ ms.author: "johnwargo"
 
 TypeScript editing capabilities are built in to Visual Studio, and Visual Studio Tools for Apache Cordova includes special templates you can use to create Cordova applications using TypeScript. During the build process, Visual Studio automatically compiles your application's TypeScript code into JavaScript before packaging the application's files into the Apache Cordova native application container. In this guide, you'll learn how to use TypeScript for your Apache Cordova applications using Visual Studio Tools for Apache Cordova (TACO).
 
-##<a name="getStarted"></a>Creating a Cordova TypeScript Application Project
+## <a name="getStarted"></a>Creating a Cordova TypeScript Application Project
 
 Visual Studio provides a Cordova application template using TypeScript; if you'd prefer to start with a complete project, take a look at the [TypeScript Module samples](#samples). To create a new Cordova application using the TACO TypeScript template, complete the following steps:
 
-1.	Open **Visual Studio**, then open the **File** menu, select **New**, then **Project**.
-2.	Expand the list of **Installed** templates, then expand **Templates** and **TypeScript**, and finally select the **Mobile Apps** category. In the list of templates, select the **Blank App (Apache Cordova)** template.
+1.  Open **Visual Studio**, then open the **File** menu, select **New**, then **Project**.
+2.  Expand the list of **Installed** templates, then expand **Templates** and **TypeScript**, and finally select the **Mobile Apps** category. In the list of templates, select the **Blank App (Apache Cordova)** template.
 
-	![New TypeScript project template](media/vs-taco-tutorial-typescript/figure-01.png)
+    ![New TypeScript project template](media/vs-taco-tutorial-typescript/figure-01.png)
 
-3.	Enter a **Name**, **Location**, and **Solution Name** for the new project, then click the **OK** button. Visual Studio will whir and click for a few seconds then open the new TypeScript project in the Solution Explorer.
+3.  Enter a **Name**, **Location**, and **Solution Name** for the new project, then click the **OK** button. Visual Studio will whir and click for a few seconds then open the new TypeScript project in the Solution Explorer.
 
 At this point, you have a complete Apache Cordova project configured for coding in TypeScript. Everything you know about building, testing and debugging Cordova application projects remains the same. The only difference is that there are a few additional files added to the project, and you'll code the application's logic in TypeScript instead of JavaScript.
 
@@ -37,7 +37,7 @@ At this point, you have a complete Apache Cordova project configured for coding 
 
 In the next section, you'll learn about the differences between a typical Cordova JavaScript application and the project you just created. For a refresher on the anatomy of a Cordova application project, see [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md).
 
-##<a id="explore"></a>Exploring The Cordova TypeScript Project
+## <a id="explore"></a>Exploring The Cordova TypeScript Project
 
 A Cordova application project in Visual Studio mimics the project folder structure of a typical Cordova application. The Cordova web application files are found in the project's `www` folder, where you'll find the project's `index.html` file and folders for the project's JavaScript files (`scripts`), CSS files (`css`) and images (`images`).
 
@@ -115,7 +115,6 @@ function onPause(): void {
 function onResume(): void {
     // TODO: This application has been reactivated. Restore application state here.
 }
-
 ```
 
 When you build this project, to run the application in the browser, an emulator, simulator or physical device, the project's TypeScript source code is compiled into a JavaScript and JavaScript Source Map files  in the `www\scripts` folder. The project's `application.ts` and `startup.ts` files are compiled into corresponding `application.js` and `startup.js` files. To facilitate JavaScript debugging, JavaScript Source Map files `application.js.map` and `startup.js.map` are created during compilation as well.
@@ -143,20 +142,20 @@ The last file unique to a TypeScript project is `tsconfig.json`, it's the config
 }
 ```
 
-##<a name="addToExisting"></a>Adding TypeScript to an Existing JavaScript Application
+## <a name="addToExisting"></a>Adding TypeScript to an Existing JavaScript Application
 
 TypeScript files can be added to any Cordova project using the TypeScript item template. Right-click on your project's `scripts` folder, then select **Add** -> **New JavaScript File**. In the list of templates, select **TypeScript File**, give the file a name, and then click the **Add** button to create the file.
 
 ![TypeScript Project Solution Explorer](media/vs-taco-tutorial-typescript/figure-04.png)
 
-##<a name="samples"></a>Get the Sample Applications
+## <a name="samples"></a>Get the Sample Applications
 
 The starter samples extend the [Greeter tutorial](http://www.typescriptlang.org/Tutorial) from the TypeScript handbook and include some basic plugin code that supports Geolocation. The two samples are complete Visual Studio projects.
 
   * [AMD and RequireJS sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-amd)
   * [CommonJs and Browserify sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-commonjs)
 
-##<a name="learnMore"></a>Learn More About Using TypeScript
+## <a name="learnMore"></a>Learn More About Using TypeScript
 
 Here are a few links to help you learn more about working with TypeScript:
 

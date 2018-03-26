@@ -58,13 +58,13 @@ Have a quick look at this table. It presents each action, its impact, and what y
     <tbody>
         <tr>
             <td>Use the most recent version of the CLI</td>
-            <td style="text-align:left">Existing plugins might not work as expected if they're tied to an older version of each Cordova platform.</td>
+            <td style="text-align:left">Existing plugins might not work as expected if they&#39;re tied to an older version of each Cordova platform.</td>
             <td style="text-align:left">Remove those plugins from your project.  Then, add the most recent version of those plugins to your project.</td>
         </tr>
         <tr>
             <td>Continue using the same version of the CLI</td>
             <td style="text-align:left">New plugins might not work as expected unless you explicitly add an older version of the plugin. </td>
-            <td style="text-align:left">If no breaking changes were introduced in newer versions of each Cordova platform then plugins might work as expected.<br><br>If things don't quite work right in code that use those plugins, just add older versions of plugins to your project. </td>
+            <td style="text-align:left">If no breaking changes were introduced in newer versions of each Cordova platform then plugins might work as expected.<br><br>If things don&#39;t quite work right in code that use those plugins, just add older versions of plugins to your project. </td>
         </tr>
         <tr>
             <td>Use an older version of the CLI</td>

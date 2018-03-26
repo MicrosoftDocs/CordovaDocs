@@ -10,7 +10,7 @@ Security is a very broad topic that covers a number of different aspects of an a
 
 For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki) along with taking advantage of [Cordova platform security features](./best-practices.md), properly [authorizing your users](./authentication.md), and taking steps to secure [data you store locally or send to or from services](./data-encryption.md). However, here are some additional things you can do to further reduce risk.
 
-##Find issues with linting & code analysis tools
+## Find issues with linting & code analysis tools
 Static and dynamic code analysis tools can also help you identify problems and before you release your app. Linting/hinting tools like [JSHint](http://jshint.com/) for JavaScript, [FxCop](https://msdn.microsoft.com/en-us/library/bb429476.aspx) for C#, [OCLint](http://oclint.org/) for Objective-C (iOS), or the [Android SDK's lint](http://developer.android.com/tools/debugging/improving-w-lint.html) tool can help get you going.
 
 You can then step into more advanced static and dynamic code analysis tools like those offered by [HP Fortify](http://www8.hp.com/us/en/software-solutions/application-security/). Products like these are particularly useful if you are subject to compliance rules like PCI DSS.
@@ -19,7 +19,7 @@ JavaScript code typically makes up the bulk of your app's code and JSHint/JSLint
 
 C#, Objective-C, Java, and C++ code will normally be in plugins or the Cordova implementations for platforms like Android and iOS. You can get the most complete coverage of this type of code and then running a build for the platform in question. A fully formed project is present in the "platforms" folder in the project (ex: platforms/android).
 
-##Device compliance, malware, and jailbreak detection with Intune
+## Device compliance, malware, and jailbreak detection with Intune
 When building an internal facing app, Mobile Device Management (MDM) and Mobile Application Management (MAM) solutions like **[Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)** can detect Malware on Android and report jailbroken or rooted devices for iOS and Android. Intune's MAM capabilities can also be used stand alone and complement an existing MDM solution.
 
 See the following articles for additional information:
@@ -53,7 +53,7 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
 
 See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
 
-##Threat detection
+## Threat detection
 Even the most careful implementation can still have vulnerabilities so another aspect of security is detecting problems. In addition to the features Intune provides, Microsoft has a number of additional products that can help out in this space.
 
 **[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)** is an extremely useful service that can help detect anomalous activity against user accounts. When combined with an authentication solution that supports Azure AD like Azure Mobile Apps or the ADAL Cordova plugin and passing the authentication token to any service calls you make for verification on the server side, you will be able to gain deep insights into potential brute force or compromised logins attacks.
@@ -64,7 +64,7 @@ For Azure based services, databases, and VMs, you can use **[Azure Security Cent
 
 **[Microsoft Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/)** is an on-premisems.product that provides an intelligent and adapting mechanism for [detecting potential threats across services and servers in a datacenter](https://technet.microsoft.com/en-us/library/dn707706.aspx). This is particularly useful in the mobile context when your app needs to access services housed within a corporate datacenter rather than Azure.
 
-##Additional Security Topics
+## Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)
 - [Encrypt your local app data](./data-encryption.md)
 - [Learn about securely transmitting data](./transmit-data-securely.md)

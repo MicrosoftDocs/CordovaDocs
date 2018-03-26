@@ -35,27 +35,27 @@ To use Visual Studio to debug your Cordova apps, you must:
 
 ### To use the diagnostic tools
 
-1.  With the AngularJS ToDoList sample app open in Visual Studio, choose Android in the **Solution Platforms** list.
+1. With the AngularJS ToDoList sample app open in Visual Studio, choose Android in the **Solution Platforms** list.
 
-2.  Choose **Simulate in Browser - Nexus 6** as a debug target.
+2. Choose **Simulate in Browser - Nexus 6** as a debug target.
 
-3.  Press F5 to start the debugger.
+3. Press F5 to start the debugger.
 
-4.  When the ToDoList app loads in Chrome, add another task item to verify that the app is working correctly.
+4. When the ToDoList app loads in Chrome, add another task item to verify that the app is working correctly.
 
-5.  In controllers.js, add a breakpoint to `var text = $scope.newToDoText;` in the `addToDo` function by clicking in the gray left margin.
+5. In controllers.js, add a breakpoint to `var text = $scope.newToDoText;` in the `addToDo` function by clicking in the gray left margin.
 
-	```javascript
-$scope.addToDo = function () {
-    var text = $scope.newToDoText;
-    if (!text) {
-    return;
-};
-```
+   ```javascript
+   $scope.addToDo = function () {
+   var text = $scope.newToDoText;
+   if (!text) {
+   return;
+   };
+   ```
 
-    With the breakpoint added, the editor looks like this.
+   With the breakpoint added, the editor looks like this.
 
-    ![Setting a breakpoint](media/debug-using-visual-studio/video-debug-breakpoint.png)
+   ![Setting a breakpoint](media/debug-using-visual-studio/video-debug-breakpoint.png)
 
 6. In the running app, add another ToDoList task item.
 
@@ -90,35 +90,35 @@ $scope.addToDo = function () {
 
     On the right, you have the CSS property values for the currently selected element.
 
-    *   The Styles tab shows the CSS styles associated with the element with styles organized by CSS selector name.
+   * The Styles tab shows the CSS styles associated with the element with styles organized by CSS selector name.
 
-    *   The Computed tab shows real-time CSS style property values for the element.
+   * The Computed tab shows real-time CSS style property values for the element.
 
-    *   The Layout tab shows the box model for the element.
+   * The Layout tab shows the box model for the element.
 
-    You can make changes to your UI right here in DOM Explorer (in the live DOM view, Styles, and Layout tabs), and see the changes immediately reflected in your running app. This makes the UI easier to debug.
+     You can make changes to your UI right here in DOM Explorer (in the live DOM view, Styles, and Layout tabs), and see the changes immediately reflected in your running app. This makes the UI easier to debug.
 
-    For example, you could edit the font size for a list item (an **input** element) in the Styles tab.
+     For example, you could edit the font size for a list item (an **input** element) in the Styles tab.
 
-    ![Editings a value in the Styles tab](media/debug-using-visual-studio/video-debug-dom-ex.png)
+     ![Editings a value in the Styles tab](media/debug-using-visual-studio/video-debug-dom-ex.png)
 
-9.  Select an element such as the location under a ToDo list item (an **h3** element) and edit the value.
+9. Select an element such as the location under a ToDo list item (an **h3** element) and edit the value.
 
-    Your changes will appear in the app in the Chrome browser.
+   Your changes will appear in the app in the Chrome browser.
 
-    Another critical tool to help debug Cordova apps is the JavaScript Console. You can also use the JavaScript Console window to read errors and messages sent from your running app, and also to evaluate lines of JavaScript code that run within the current script context.
+   Another critical tool to help debug Cordova apps is the JavaScript Console. You can also use the JavaScript Console window to read errors and messages sent from your running app, and also to evaluate lines of JavaScript code that run within the current script context.
 10. Look at the output in the JavaScript Console window to view messages.
 
 	> [!NOTE]
     > For a list of commands such as `console.log`, see [JavaScript Console commands](https://msdn.microsoft.com/library/hh696634.aspx)
 
-11.  To evaluate JavaScript, type JavaScript code in the input box. For example, type "document." and you will see IntelliSense information for the document object for the current HTML page displayed in Cordova Simulate (Chrome).
+11. To evaluate JavaScript, type JavaScript code in the input box. For example, type "document." and you will see IntelliSense information for the document object for the current HTML page displayed in Cordova Simulate (Chrome).
 
     ![Using the JavaScript Console](media/debug-using-visual-studio/video-debug-js-console.png)
 
     You can run code by pressing Enter (single-line mode) or by choosing the green arrow button (multi-line mode).
 
-12.  Press Enter to see the value of the document object in the console window.
+12. Press Enter to see the value of the document object in the console window.
 
 	> [!TIP]
     > Set breakpoints in your code to get your app into the desired state, and then use the JavaScript Console to check variables and evaluate code.
@@ -275,29 +275,29 @@ If the debugger is not attaching to Chrome when you press F5, you can attach the
 
 ### To debug on Android versions 2.3.3-4.3 with the jsHybugger plugin
 
-1.  Open your Cordova project in Visual Studio.
+1. Open your Cordova project in Visual Studio.
 
-2.  In your project, create a **plugins** folder if one doesn’t already exist. (To add a folder, open the shortcut menu for your project in Solution Explorer, choose **Add**, **New Folder**, and then set the folder name to **plugins**.)
+2. In your project, create a **plugins** folder if one doesn’t already exist. (To add a folder, open the shortcut menu for your project in Solution Explorer, choose **Add**, **New Folder**, and then set the folder name to **plugins**.)
 
-3.   [Download the jsHybugger plugin](https://www.jshybugger.com/download?release=Plugin) and extract its contents.
+3. [Download the jsHybugger plugin](https://www.jshybugger.com/download?release=Plugin) and extract its contents.
 
-    > [!NOTE]
-    > For more information about this plugin, see the [jsHybugger website](https://www.jshybugger.com/). You can use the plugin without a license, but debugging sessions are limited to two minutes. For unlimited debugging, you must [purchase a jshybugger license](https://www.jshybugger.com/#!/buy). The following instructions assume that you’ve purchased a license and downloaded the license file as jshybugger_license.xml.
+   > [!NOTE]
+   > For more information about this plugin, see the [jsHybugger website](https://www.jshybugger.com/). You can use the plugin without a license, but debugging sessions are limited to two minutes. For unlimited debugging, you must [purchase a jshybugger license](https://www.jshybugger.com/#!/buy). The following instructions assume that you’ve purchased a license and downloaded the license file as jshybugger_license.xml.
 
-1.  Place the unzipped jshybugger-plugin-**x.x.x** folder in your project’s **plugins** folder.
+4. Place the unzipped jshybugger-plugin-**x.x.x** folder in your project’s **plugins** folder.
 
-2.  Place the jshybugger_license.xml file in the root of your project.
+5. Place the jshybugger_license.xml file in the root of your project.
 
-    Here’s what your project will look like in Solution Explorer.
+   Here’s what your project will look like in Solution Explorer.
 
-    ![Project structure after installing jsHybugger](media/debug-using-visual-studio/debug-jshybugger-solution-explorer.png)
-3.  In your project, choose **Android** from the **Solution Platforms** list, and then choose one of the Android deployment targets.
+   ![Project structure after installing jsHybugger](media/debug-using-visual-studio/debug-jshybugger-solution-explorer.png)
+6. In your project, choose **Android** from the **Solution Platforms** list, and then choose one of the Android deployment targets.
 
-4.  Press F5 to start debugging.
+7. Press F5 to start debugging.
 
-    You can interact with your page using the JavaScript Console, and use the DOM Explorer to inspect HTML and CSS.
+   You can interact with your page using the JavaScript Console, and use the DOM Explorer to inspect HTML and CSS.
 
-    >**Important**: You must remove the jsHybugger plugin and the license file from your project before you publish your app.
+   >**Important**: You must remove the jsHybugger plugin and the license file from your project before you publish your app.
 
 The plugin has no effect when you’re using the Cordova Simulate emulator or debugging on Android 4.4 emulators and devices, so there’s no need to remove it when you switch between different Android targets during testing.
 

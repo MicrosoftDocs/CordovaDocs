@@ -67,7 +67,7 @@ The following table provides specific information for each platform.
     <tbody>
         <tr>
             <td>Android</td>
-            <td style="text-align:left">Place the custom <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">AndroidManifest.xml</a> file in the res/native/android folder to configure settings such as custom intents. <br><br>Use the generated version of the file in the platforms/android folder after building a Debug configuration of the project for Android.></td>
+            <td style="text-align:left">Place the custom <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">AndroidManifest.xml</a> file in the res/native/android folder to configure settings such as custom intents. <br><br>Use the generated version of the file in the platforms/android folder after building a Debug configuration of the project for Android.&gt;</td>
         </tr>
         <tr>
             <td>iOS</td>

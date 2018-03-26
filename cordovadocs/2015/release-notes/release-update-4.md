@@ -12,9 +12,9 @@
      ms.date="10/26/2015"
      ms.author="lizhong"/>
 
-#**Update 4 - Visual Studio Tools for Apache Cordova**
+# <strong>Update 4 - Visual Studio Tools for Apache Cordova</strong>
 
-##Feature updates:
+## Feature updates:
 
 **Chain Android SDK v23 into VS TACO feed**
 
@@ -34,7 +34,7 @@ We added the inlineSources property to the project templates’ tsconfig.json fi
 
 ---------------------------
 
-##Bug fixes:
+## Bug fixes:
 
 **Launching the Chrome Dev tools when VS is attached no longer closes Chrome**
 

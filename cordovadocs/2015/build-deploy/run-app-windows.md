@@ -25,7 +25,7 @@ Follow these instructions to run your app on your computer or on the Windows Sim
 
 ### To run your app
 
-1.  With your app open in Visual Studio, open config.xml, choose the **Windows** tab, and select either **Windows 8.1** or **Windows 10** in the **Target Platform** drop-down box.
+1. With your app open in Visual Studio, open config.xml, choose the **Windows** tab, and select either **Windows 8.1** or **Windows 10** in the **Target Platform** drop-down box.
 
 2. From the **Solution Platforms** list, choose a Windows platform such as **Windows-x64** from the **Solution Platforms** list.
 
@@ -33,11 +33,11 @@ Follow these instructions to run your app on your computer or on the Windows Sim
 
     If you don’t see this list, choose **Solution Platforms** from the **Add/Remove Buttons** list to display it.
 
-    >**Tip** To test plaform behavior, target **Windows-64* or **Windows-x86** rather than **Windows-Any CPU**.
+   > <strong>Tip</strong> To test plaform behavior, target <strong>Windows-64* or **Windows-x86</strong> rather than <strong>Windows-Any CPU</strong>.
 
-3.  In the deployment target list, choose **Local Machine** or **Simulator**.
+3. In the deployment target list, choose **Local Machine** or **Simulator**.
 
-4.  Press F5 to start the app, or Shift+F5 to start the app without attaching the debugger.
+4. Press F5 to start the app, or Shift+F5 to start the app without attaching the debugger.
 
 5. If you are running on a device, Visual Studio will show you a message with a link so that you can enable developer mode. Once you enable developer mode, press F5 again.
 

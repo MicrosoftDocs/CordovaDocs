@@ -8,10 +8,10 @@ ms.author: "jmatthiesen"
 # Get started with continous integration (CI)
 With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite team / continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.
 
-##Visual Studio Team Services and Team Foundation Services 2015 quick start
+## Visual Studio Team Services and Team Foundation Services 2015 quick start
 Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managaging certificates for iOS! Simply install the **[Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188)** and add a Cordova Build task to your build definition. 
 
-<p>
+
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" /></td>
 <td><strong>Visual Studio Team Services Extension for Cordova</strong><br />
@@ -19,11 +19,11 @@ Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation 
 <a href="http://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
 </td>
 </tr></table>
-</p>
+
 
 See the quick start on the [extension](http://go.microsoft.com/fwlink/?LinkID=691188) page along with the detailed [Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](http://go.microsoft.com/fwlink/?LinkID=691186) tutorial.
 
-##Gulp build quick start
+## Gulp build quick start
 If you would prefer not to use the extension or are not using VS Team Services or TFS, you can get your project running in nearly any CI system quickly using the [taco-team-build node module](http://go.microsoft.com/fwlink/?LinkID=533736) and Gulp. Note that the method described here can be used with Jenkins, as an alternative for VS Team Services or TFS 2015, and others but will **not** work with TFS 2013. See [Tutorials on Specific CI Systems](#ci) for details.
 
 To get going quickly, follow these steps:
@@ -81,7 +81,7 @@ To get going quickly, follow these steps:
 
 That's it!
 
-##Tutorials on specific CI systems
+## Tutorials on specific CI systems
 <a name="ci"></a>
 For additional detail on configuring specific build systems, see the following detailed tutorials:
 

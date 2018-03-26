@@ -5,7 +5,7 @@ author: "kraigb"
 ms.author: "kraigb"
 ---
 
-#UI Testing for Apache Cordova Apps with Appium
+# UI Testing for Apache Cordova Apps with Appium
 
 UI testing is a core complement to unit testing (and also to integration testing, which is essentially unit testing across larger components in an app’s source code). Whereas unit testing exercises an app’s code directly by calling methods and accessing properties, revealing low-level functional defects, UI testing exercises an app through its external user interface, just as customers will. This reveals defects in the user experience, such as layout problems on different devices, that unit testing cannot.
 

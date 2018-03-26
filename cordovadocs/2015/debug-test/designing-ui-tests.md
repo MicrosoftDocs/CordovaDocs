@@ -367,7 +367,7 @@ This is where “hooks” in the test frameworks come into play, which are speci
 </tbody>
 </table>
 
-In our test code with WeatherApp, the *before* hook is a perfect place to all *appDriver.init* to launch the app. Note that in this code we are using the yiewd form of *function**, *appDriver.run*, and *yield*:
+In our test code with WeatherApp, the <em>before</em> hook is a perfect place to all <em>appDriver.init</em> to launch the app. Note that in this code we are using the yiewd form of <em>function</em><em>, *appDriver.run</em>, and <em>yield</em>:
 
 	before(function (done) {
 	  appDriver.run(function *() {
@@ -400,7 +400,7 @@ To refactor code that you want to use from multiple tests, be sure to use *funct
 	    return eitherVisible; 
 	}
 
-Because this is declared using *function**, we have to use *yield* when calling it. For example, with this and the *before* hook in place, the startup test for element visibility is simple:
+Because this is declared using <em>function</em><em>, we have to use *yield</em> when calling it. For example, with this and the <em>before</em> hook in place, the startup test for element visibility is simple:
 
 	it ('displays either weather data or an error message on startup', function (done) {
 	  appDriver.run(function* () {
@@ -588,5 +588,5 @@ The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/feature
 	![Test results in Test Explorer](media/designing/05-node-tools-test-results.png) 
 
 > **Note**: The Node.js tools at present will reload the test file for each test it runs. In the example of [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js), this means that all the setup code to initialize Appium and launch the app will be run for each test, and the app will shut down after each one as well. This is of little consequence if you need to relaunch the app for certain tests to begin with, but can make running other groups of tests slower.
-
+> 
 > **Note**: When you reopen the project, the Node.js tools will rescan files for tests, including files contained in *node_modules*. If you’ve installed other packages locally, as we’ve done in this example, the scan will take some time and show many additional tests in Test Explorer. To isolate your UI tests, locate and select them in the list, the right-click and select **Group By > Project**. This will put them into a list of their own with perhaps just a couple of other tests. To run them specifically, then, select them, right-click, and select **Run Selected Tests**.

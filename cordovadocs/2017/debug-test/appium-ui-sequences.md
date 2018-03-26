@@ -39,12 +39,12 @@ One thing you’ll discover is that **wd** lacks an API reference; you primarily
 </thead>
 <tbody>
 <tr>
-<td>elementCommands.js</td><td>Actions on elements</td><td><strong>getValue</strong>, text, textPresent, <strong>clear</strong>, type, <strong>sendKeys</strong>, <strong>setText</strong>, <strong>click</strong>, tap, doubleClick, getAttribute, getTagName, <strong>isDisplayed**, isSelected, isEnabled, isVisible, element, elements, equals, <strong>sleep</strong></td>
+<td>elementCommands.js</td><td>Actions on elements</td><td><strong>getValue</strong>, text, textPresent, <strong>clear</strong>, type, <strong>sendKeys</strong>, <strong>setText</strong>, <strong>click</strong>, tap, doubleClick, getAttribute, getTagName, <strong>isDisplayed<strong>, isSelected, isEnabled, isVisible, element, elements, equals, <strong>sleep</strong></td>
 </tr>
 <tr>
 <td>commands.js</td>
 <td>Configuration and session control, element location</td>
-<td><strong>elementBy[ClassName, CssSelector, Id, Name, LinkText, TagName, Css**]</strong> etc.; <strong>quit</strong>, waitForElement[s], takeScreenshot, saveScreenshot, rotateDevice, toggleAirplaneModeOnDevice, [un]lockDevice, shakeDevice</td>
+<td><strong>elementBy[ClassName, CssSelector, Id, Name, LinkText, TagName, Css</strong>]</strong> etc.; <strong>quit</strong>, waitForElement[s], takeScreenshot, saveScreenshot, rotateDevice, toggleAirplaneModeOnDevice, [un]lockDevice, shakeDevice</td>
 </tr>
 <tr>
 <td>actions.js</td><td>Support to touch gestures (TouchAction and MultiAction objects</td><td>TouchAction: longPress, press, release, tap, wait, perform, cancel
@@ -192,4 +192,4 @@ The resulting test code is then very clean, as seen in **[test04.js](https://git
 
 As you can see, using **yiewd** produces test code that’s almost as clean as implicit chaining, yet has discrete method calls and explicit variables that allow for easy debugging and intermediate computations. For this reason, we’ll be using **yiewd** in all the examples that follow.
 
-> Function*: the function* syntax defines a “generator” function that can be exited and later re-entered, as described on the [Mozilla Developer Network function* page]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*). This works hand-in-hand with *yield* and is essential to make the code above work properly because a bunch of callbacks are still in operation under the covers. Again, if you see syntax errors with function*, be sure to update Node.js.
+> Function<em>: the function</em> syntax defines a “generator” function that can be exited and later re-entered, as described on the [Mozilla Developer Network function* page]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*). This works hand-in-hand with <em>yield</em> and is essential to make the code above work properly because a bunch of callbacks are still in operation under the covers. Again, if you see syntax errors with function*, be sure to update Node.js.

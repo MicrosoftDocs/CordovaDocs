@@ -40,7 +40,7 @@ If we wanted to add the ability for the root WebView to navigate to www.microsof
 <allow-navigation href="http://www.microsoft.com" />
 ```
 
-> **Note**: If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the **[InAppBrowser plugin](http://go.microsoft.com/fwlink/?LinkID=617694)** without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
+> <strong>Note</strong>: If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the <strong>[InAppBrowser plugin](http://go.microsoft.com/fwlink/?LinkID=617694)</strong> without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
 
 There is still some variation in behavior by platform for these whitelist features based on the concerns and capabilities of the underlying native technology.
 
@@ -85,17 +85,17 @@ You can find a [great tutorial on using the CSP in detail here](http://go.micros
 
 	- If you really need inline script, you can add the 'unsafe-inline' declaration. Of the two, inline script is actually a higher risk than eval since something as simple as using innerHTML without proper filtering can allow a hacker to add inline script. Inline script is very common, but if your app is security focused, you should avoid it. Note that the 'unsafe-inline' declaration in the Cordova CLI template applies to style-src which enables inline CSS declarations not JavaScript.
 
-1. The default CSP policy in the Cordova CLI template only allows access to JavaScript and CSS files inside the app or the same domain, not a different domain. **As a result, CDN hosted content typically cannot be referenced.**
+2. The default CSP policy in the Cordova CLI template only allows access to JavaScript and CSS files inside the app or the same domain, not a different domain. **As a result, CDN hosted content typically cannot be referenced.**
 
-	- This is another technique to reduce risk by stating that a given web page can only reference content from **'self'**. The end result is that cross-site scripting vulnerabilities are further reduced by preventing your web page from being hijacked to include content from an external, untrusted sources.
+   - This is another technique to reduce risk by stating that a given web page can only reference content from **'self'**. The end result is that cross-site scripting vulnerabilities are further reduced by preventing your web page from being hijacked to include content from an external, untrusted sources.
 
-	- You can loosen this restriction by listing other trusted domains. In fact, the default Cordova CLI template lists "https://ssl.gstatic.com" as a trusted domain since Android needs it for TalkBack to function properly.
+   - You can loosen this restriction by listing other trusted domains. In fact, the default Cordova CLI template lists "<https://ssl.gstatic.com>" as a trusted domain since Android needs it for TalkBack to function properly.
 
-		```
-		default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
-		```
+       ```
+       default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
+       ```
 
-	This above CSP policy says that content originating from the same domain ('self'), data URIs (data:), Cordova internal APIs (gap:), https://ssl.gstatic.com, and eval statments are allowed, but all others are denied.
+     This above CSP policy says that content originating from the same domain ('self'), data URIs (data:), Cordova internal APIs (gap:), https://ssl.gstatic.com, and eval statments are allowed, but all others are denied.
 
 ## Updating an existing project
 If you don't use a Visual Studio or Cordova base template or when you upgrade a project to Cordova 5.0.0+ from Cordova 4.3.1 or below in Visual Studio, you will want to take the following steps to ensure your app functions as you would expect.
@@ -151,7 +151,7 @@ If you don't use a Visual Studio or Cordova base template or when you upgrade a 
 
     > **Note:** To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.    
 
-##Additional Security Topics
+## Additional Security Topics
 - [Learn about Cordova platform and app security features](best-practices.md)
 - [Encrypt your local app data](data-encryption.md)
 - [Learn about securely transmitting data](transmit-data-securely.md)

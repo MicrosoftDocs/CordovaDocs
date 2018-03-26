@@ -5,7 +5,7 @@ ms.prod: "visual-studio-dev14"
 ms.author: "jmatthiesen"
 ---
 
-#Using mocks for platform APIs, plugins, and other external dependencies
+# Using mocks for platform APIs, plugins, and other external dependencies
 
 Unit testing executes code in a runtime that’s separate from the runtime in which the app will eventually run on a mobile platform. Unit testing thus happens without deploying the code to an emulator or device that’s running the platform operating system.
 

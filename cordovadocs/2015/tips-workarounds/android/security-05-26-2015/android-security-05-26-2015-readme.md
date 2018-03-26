@@ -6,7 +6,7 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#May 26th, 2015 Android Cordova Platform Security Issue
+# May 26th, 2015 Android Cordova Platform Security Issue
 Recently [Trend Micro uncovered a security flaw](http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-apache-vulnerability-that-allows-one-click-modification-of-android-apps/) in the Cordova Android “platform” that affects all versions of Cordova. As a result the [Cordova community has taken swift action to resolve the issue by releasing a patched version of the platform](http://cordova.apache.org/announcements/2015/05/26/android-402.html). While it is difficult to know if a given app has been compromised by this issue, it is a broad risk and therefore we recommend all app developers update their projects to use the patched versions of the Cordova Android platform.
 
 While we are working with the community on a “tools release” for the Apache Cordova Command Line Interface (CLI) to update the default version of the Android platform to include this patch, you can immediately update your project to the patched version of the Cordova Android platform when using Cordova 4.3.0 or 5.0.0 with Tools for Apache Cordova 2015 RC or later.
@@ -15,7 +15,7 @@ Developers using the Cordova CLI without Visual Studio can [follow the steps cov
 
 We recommend all users of VS 2013 CTPs or earlier VS 2015 CTPs upgrade to VS 2015 RC or later so that they can take advantage of features described in this article to mitigate the security issue.
 
-##Updating Your Project
+## Updating Your Project
 
 First, you need to add one XML element into config.xml in your project.
 
@@ -48,7 +48,7 @@ The next time you build you will now be on the patched version of the Android pl
 
 To make this simple, [you can find an updated version of the config.xml file in the VS template  here](https://github.com/Microsoft/cordova-docs/tree/master/tips-and-workarounds/android/security-05-26-2015) along with a batch file that will remove the old version of the Android platform when executed from your project folder.
 
-##Long Term
+## Long Term
 
 An upcoming “tools release” of the Apache Cordova CLI will use the patched version of the Cordova Android platform by default. We will be updating the default templates in Visual Studio Tools for Apache Cordova to use this updated version of Cordova for new projects, but it is also worth noting that we’ve made changes as of Visual Studio 2015 RC to make updating the Cordova version in existing projects simple as well. To do so, follow these steps:
 

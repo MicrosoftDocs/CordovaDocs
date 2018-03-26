@@ -5,7 +5,7 @@ ms.prod: "visual-studio-dev14"
 ms.author: "jmatthiesen"
 ---
 
-#Using the Chutzpah test runner with a Cordova App project
+# Using the Chutzpah test runner with a Cordova App project
 
 > The sample for this and the next topic is [chutzpah-jasmine-vs](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/chutzpah-jasmine-VS) in the cordova-samples repository on GitHub. 
  

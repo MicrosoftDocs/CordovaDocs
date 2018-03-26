@@ -12,11 +12,11 @@ ms.date: "05/15/2016"
 ms.author: "kirupac"
 ---
 
-#General Cordova tips and workarounds
+# General Cordova tips and workarounds
 This document covers tips, tricks, and known workarounds for general issues with Cordova or Tools for Apache Cordova.
 
 <a name="connection"></a>
-##App not connecting to the internet or failing to retrieve data or resources
+## App not connecting to the internet or failing to retrieve data or resources
 
 A Cordova app has two distinct layers of securirty. At the client-side application level, the Content Security Policy meta tag and the Whitelist plugin rules set in config.xml prevent other sites from injecting unwanted resources into your app. Errors due to a restrictive CSP usually prompt you to adjust the CSP and whiltelist rules. Learn how to set these rules in the [following guide](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/).
 
@@ -27,7 +27,7 @@ If your app is attempting to pull data from an [Azure Mobile Apps backend](https
 ![CORS](media/general-tips/cors.png)
 
 <a name="firsttime"></a>
-##Resolve build and deployment errors when you build for the first time
+## Resolve build and deployment errors when you build for the first time
 
 Try these steps.
 
@@ -49,35 +49,35 @@ Try these steps.
     If you're not sure what to do next, see the next section on resolving general build and deployment errors.
 
 <a name="general"></a>
-##Resolve general build and deployment errors
+## Resolve general build and deployment errors
 
 Try these steps if you have trouble deploying to emulators or devices.
 
 1. Running on a device? Make sure that your device is enabled for development. Instructions to do this are different for each platform.
     * For Android, see [Android](android-tips.md). For iOS, see [iOS guide](../first-steps/ios-guide.md). (iOS devices need a provisioning profile.) For Windows, see [this article](../run-your-app/run-app-windows.md).
 2. If you are running on a device and the app is already installed, uninstall the app and try again.
-4. Delete the project's platforms/*platform* folder (such as platforms/android) and the plugins folder from the project and try again (navigating to the root of your project folder in a command window and typing the command  `cordova platforms remove android` also removes the platform).
+3. Delete the project's platforms/*platform* folder (such as platforms/android) and the plugins folder from the project and try again (navigating to the root of your project folder in a command window and typing the command  `cordova platforms remove android` also removes the platform).
 
     ![The platforms and plugins folders](media/general-tips/platforms-folder.png)
 
     If the issue only occurs with a particular plugin, you may have an incompatibility with the plugin or between your Cordova version and the plugin version.
 
-3. If you haven't done it already, [check your update notifications and run the dependency checker](#firsttime).
-4. If you are not using a new blank project already, create an empty project using the Blank App template (you can find it under **JavaScript**, **Apache Cordova Apps** when creating a new project) and see if you get the same error when you build.
+4. If you haven't done it already, [check your update notifications and run the dependency checker](#firsttime).
+5. If you are not using a new blank project already, create an empty project using the Blank App template (you can find it under **JavaScript**, **Apache Cordova Apps** when creating a new project) and see if you get the same error when you build.
     If the Blank App template runs fine, the issue may be specific to your project.
-5. Try to run your app against a different platform or emulator and see if that is successful.
+6. Try to run your app against a different platform or emulator and see if that is successful.
 
     Here are a few suggested platforms for testing:
-    * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
-    * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
+   * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
+   * Open the configuration designer (config.xml), the **Windows** tab, select your OS version, and then try running against **Windows-x64** or **Windows-x86** and select **Local Machine**.
 
-    If the issue is only on the Android platform, see [Android](android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](windows-tips.md).
+     If the issue is only on the Android platform, see [Android](android-tips.md). If the issue is only on iOS, see the troubleshooting tips in the [iOS setup guide](../first-steps/ios-guide.md). If the issue is only on Windows, see [Windows](windows-tips.md).
 
-6. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
-7. Try [clearing the cache](../tips-workarounds/configuration-tips.md#clear-cache) from **Tools**, **Options**, **Tools for Apache Cordova**.
+7. If you see a message that you are unable to start debugging or if no emulators or devices are visible as debug targets, see [this workaround](#debugging).
+8. Try [clearing the cache](../tips-workarounds/configuration-tips.md#clear-cache) from **Tools**, **Options**, **Tools for Apache Cordova**.
 
 <a name="debugging"></a>
-##Unable to start debugging
+## Unable to start debugging
 
 If you get a message in Visual Studio that says you can't start debugging your app, try these steps. Also, try these steps if no emulators or devices are listed in the debug target dropdown list.
 
@@ -89,7 +89,7 @@ If you get a message in Visual Studio that says you can't start debugging your a
 4. Restart Visual Studio and try again.
 
 <a name="missingexclude"></a>
-##Building a Cordova project from source control results in a successful build, but with Cordova plugin APIs not returning results when the app is run
+## Building a Cordova project from source control results in a successful build, but with Cordova plugin APIs not returning results when the app is run
 Due to a bug in the VS templates in VS 2015 RC, four json files that can cause issues if they are added to source control, are missing from the default source code exclusion list:
 
 - plugins/android.json
@@ -121,7 +121,7 @@ For **existing local copies**, you can either fetch a fresh copy from source con
 
 <a name="cordovaproxy"></a>
 
-##"TypeError: Request path contains unescaped characters" during a build or when installing a plugin
+## "TypeError: Request path contains unescaped characters" during a build or when installing a plugin
 When building or installing a plugin, you might encounter an error if you are using a proxy with certain versions of Node.js and Cordova after a ```npm http GET```. For example:
 
 ```
@@ -135,7 +135,7 @@ The simplest workaround is to **downgrade Node.js to 0.10.29**. This will be res
 
 <a name="plugin-xml"></a>
 
-##Using Plugins Not Listed in the Config Designer
+## Using Plugins Not Listed in the Config Designer
 You can add plugins by using a Git URI or the local filesystem by using the **Custom** tab of the **Plugins** section in the config.xml designer. Using a Git URI can cause you to get a "dev" version of a plugin. See [these instructions](#plugin-github) for how you can use a specific version of a GitHub sourced plugin.
 
 <a name="plugin-github"></a>
@@ -183,7 +183,7 @@ https://github.com/wildabeast/BarcodeScanner
 	![Custom Local Plugin](media/general-tips/git-local-1.png)
 
 <a name="plugin-npm"></a>
-##Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
+## Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
 
 ### Background
 
@@ -315,7 +315,7 @@ One last tip: Note that modifying the contents of the **plugins** folder does no
 
 <a name="build-errors-long-path"></a>
 
-##Build errors caused by long path and file names
+## Build errors caused by long path and file names
 If your project is located inside a deeply nested directory in your file system, or you have a particularly long user name, you might receive build errors when building your project by using Visual Studio (Ex: "The filename or extension is too long"). The underlying reason has to do with NTFS filesystem limitations in Windows and how the npm packaging system for Node.js works. To resolve:
 
 1. First, the most effective workaround is to move your projects to a location closer to the root of your drive (ie, C:\Projects\).

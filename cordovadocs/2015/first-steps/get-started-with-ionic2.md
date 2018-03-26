@@ -41,43 +41,43 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
 ## Creating an Ionic Project in Visual Studio
 
-1.	Create a new Ionic project. Open the **File** menu, select **New**, then **Project**. In the new project dialog, expand the **TypeScript** templates section, and then select **Apache Cordova Apps**. Ionic offers three default app styles: **Blank**, **Sidemenu**, and **Tabs**; this is a simple project, so select the Blank template. 
+1. Create a new Ionic project. Open the **File** menu, select **New**, then **Project**. In the new project dialog, expand the **TypeScript** templates section, and then select **Apache Cordova Apps**. Ionic offers three default app styles: **Blank**, **Sidemenu**, and **Tabs**; this is a simple project, so select the Blank template. 
 
-	Give the new project a **Name** and **Location**, and then click the **OK** button. This app will later become our Weather App project, so you should probably call it **Weather App** or **Weather App Ionic 2** to save time.
+   Give the new project a **Name** and **Location**, and then click the **OK** button. This app will later become our Weather App project, so you should probably call it **Weather App** or **Weather App Ionic 2** to save time.
 
-	![New Project dialog](media/vs-taco-2015-tutorial-ionic2/figure-04.png)
+   ![New Project dialog](media/vs-taco-2015-tutorial-ionic2/figure-04.png)
 
-2.	Check the new Ionic project's readme file for any additional tools that must be installed to use the template. 
+2. Check the new Ionic project's readme file for any additional tools that must be installed to use the template. 
 	
-	![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-05.png) 
+   ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-05.png) 
 
-	At the time of this writing, you'll need to install the following Visual Studio extensions:
+   At the time of this writing, you'll need to install the following Visual Studio extensions:
 
-	+ NPM Task Runner
-	+ TypeScript 2.0.6 editor
-	+ Microsoft ASP.NET and Web Tools Preview 2
+   + NPM Task Runner
+   + TypeScript 2.0.6 editor
+   + Microsoft ASP.NET and Web Tools Preview 2
 	
-	The requirements may change as updates are made to the templates. To install the required extensions, open the **Tools** menu, and select **Extensions and Updates**. Use search to locate and install the required extensions.
+   The requirements may change as updates are made to the templates. To install the required extensions, open the **Tools** menu, and select **Extensions and Updates**. Use search to locate and install the required extensions.
 
-3.	Ionic is a heavy framework, it requires a lot of tools and libraries to operate. Once Visual Studio creates the new project, it kicks off a process to download and install the required components using the Node Package Manager (npm). Wait a few minutes as Ionic's npm packages are installed.
+3. Ionic is a heavy framework, it requires a lot of tools and libraries to operate. Once Visual Studio creates the new project, it kicks off a process to download and install the required components using the Node Package Manager (npm). Wait a few minutes as Ionic's npm packages are installed.
 
-    > **Note** This process will take several minutes depending on your system and internet connection speeds.
+   > **Note** This process will take several minutes depending on your system and internet connection speeds.
 
-    To check progress, open **Solution Explorer** and look for the **Dependencies** node. You should see **Restoring...**, if you don't, right-click on the Dependencies node in Solution Manager then select **Restore Packages**.
+   To check progress, open **Solution Explorer** and look for the **Dependencies** node. You should see **Restoring...**, if you don't, right-click on the Dependencies node in Solution Manager then select **Restore Packages**.
 
-	![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-06.png)
+   ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-06.png)
 
-    > **Note:** After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project will be OK at this point.
-     
-    > ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-07.png)
+   > **Note:** After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project will be OK at this point.
+   > 
+   > ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-07.png)
 
-	You can monitor the package installation process through Visual Studio's Output window. Open the **View** menu, then select **Output** or use the keyboard shortcut **Ctrl-W** + **O**:
+   You can monitor the package installation process through Visual Studio's Output window. Open the **View** menu, then select **Output** or use the keyboard shortcut **Ctrl-W** + **O**:
     
-	![Task Runner](media/vs-taco-2015-tutorial-ionic2/figure-08.png)
+   ![Task Runner](media/vs-taco-2015-tutorial-ionic2/figure-08.png)
 
-4.	At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](../first-steps/ios-guide.md) for additional information.
+4. At this point, you have a complete Ionic application project ready to go. To test and debug the application in Visual Studio, select a **target platform** in the Standard Toolbar, select a **target device**, then pres **F5** to run the application on the selected target. Developing iOS applications requires some extra configuration; refer to the [Visual Studio Tools for Apache Cordova: iOS Guide](../first-steps/ios-guide.md) for additional information.
 	
-	![Ionic application running on Android](media/vs-taco-2015-tutorial-ionic2/figure-09.png)   
+   ![Ionic application running on Android](media/vs-taco-2015-tutorial-ionic2/figure-09.png)   
 
 ## Enabling Live Reload in Ripple
 
@@ -1036,7 +1036,7 @@ You may need to re-enter your credentials. If the notifications indicate that yo
 
 The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting] (https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
 
 ### <a name="breakpoints"></a> Having trouble hitting breakpoints in your .ts files?
 
