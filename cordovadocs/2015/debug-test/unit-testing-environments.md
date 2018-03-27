@@ -5,7 +5,7 @@ ms.prod: "visual-studio-dev14"
 ms.author: "jmatthiesen"
 ---
 
-#Unit testing environments for JavaScript and Apache Cordova
+# Unit testing environments for JavaScript and Apache Cordova
 Unit testing in an Apache Cordova app means writing tests that exercise the app’s JavaScript code, but this happens outside the context of the running app and outside the context of any given mobile platform. Where unit testing is concerned, that is, it’s actually not particularly relevant that Cordova is involved: the tests and the code under test are loaded and executed into a separate runtime. This has a practical implication about plug-ins and platform features that is dicussed in [Using mocks for platform APIs, plugins, and other external dependencies](unit-test-mocking.md). For now, what’s important is understanding how JavaScript code executes in response to tests.
 
 A unit testing environment consists of the three components: the runtime, a test framework, and a test runner:
@@ -21,7 +21,7 @@ A unit testing environment consists of the three components: the runtime, a test
 </style>
 <table>
 <tr>
-<td>Component</td><td>Description</td><td>Examples for JavaScript>
+<td>Component</td><td>Description</td><td>Examples for JavaScript&gt;
 </tr>
 <tr>
 <td>Runtime</td><td>Loads and executes code being tested outside the app. This can happen in a browser or a separate runtime sometimes referred to as a “headless browser.”</td><td>Browsers; Node.js, PhantomJS, Chrome V8</td>

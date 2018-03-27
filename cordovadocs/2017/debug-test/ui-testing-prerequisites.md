@@ -54,7 +54,7 @@ Then check that you have the necessary environment variables set as described in
 <tbody>
 </table>
 
-##Update Node.js
+## Update Node.js
 
 Make sure you have a current version of Node.js installed—we’ll need it for certain features in our test code. The easiest way is to just use the following command from a command prompt:
 
@@ -66,7 +66,7 @@ You can check the version as follows:
 
 Version 4.4.3 is suitable for this tutorial.
 
-##Run the test app in the emulator
+## Run the test app in the emulator
 
 To learn how to write and run UI tests for Apache Cordova apps, we need an app to test. For this we’ll use the simple WeatherApp sample from [https://github.com/Microsoft/cordova-samples/tree/master/weather-app](https://github.com/Microsoft/cordova-samples/tree/master/weather-app):
 
@@ -84,7 +84,7 @@ To learn how to write and run UI tests for Apache Cordova apps, we need an app t
 
 ![Sample Weather App for Android](media/prereqs/01-weather-app.png)
 
-##Verify WebDriver operation
+## Verify WebDriver operation
 
 The test code we’ll eventually write uses the Appium WebDriver client library for Node.js, known as **[wd](https://github.com/admc/wd)**. In this section, we’ll write some simple code to make sure we have this library installed correctly.
 

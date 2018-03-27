@@ -5,7 +5,7 @@ author: "kraigb"
 ms.author: "kraigb"
 ---
 
-#Debugging unit tests
+# Debugging unit tests
 One of the most significant benefits to unit testing inside Visual Studio is the ability to debug your code during a test, and to debug the tests themselves. Unit tests are code, after all, and that code is prone to its own bugs.
 
 The unexpected test failure in the previous topic, [Improving the unit tests: an introduction to test-driven development](test-driven-development.md) is not the result of buggy unit code, but actually a buggy unit test. Let’s use the debugger to find out why.
@@ -33,7 +33,7 @@ Stopping the debugger, changing the two instances of ```norm.Name``` to ```norm.
 > [!NOTE]
 > although the **Run All** command for tests automatically saves changed files, rerunning a selected test does not. If you forget to save a file before running a selected test, you could be quite confused as to why it’s still failing!
 
-##<a name="variances"></a>Runtime variances
+## <a name="variances"></a>Runtime variances
 
 Having fixed the bugs in the truncation test, only one failed test remains: “defaults with unknown fields, similar properties.” What’s confusing here is that the test itself is almost identical to the test before it:
 

@@ -5,12 +5,12 @@ author: "kraigb"
 ms.author: "kraigb"
 ---
 
-#A primer on unit testing and continuous integration
+# A primer on unit testing and continuous integration
 Great apps—like great artists, actors, and athletes—are great performers. To validate and continually improve their performances, human beings undergo extensive training, practice, rehearsals, and after-the-fact reviews. In software development we achieve the same ends through many levels of rigorous testing across the entire application lifecycle.
 
 Chances are you’ve heard about unit testing, but you might not be clear on what it is, exactly. This primer, then, provides a background understanding of the nature of unit testing and the terminology often used in its context.
 
-##Difference between unit testing and other types of testing
+## Difference between unit testing and other types of testing
 
 Most forms of testing, such as functional testing, UI/acceptance testing, performance profiling, integration testing, security testing, usability testing, and so forth, all work with an app that’s been built and deployed to emulators or test devices. Testing then happens through the app’s user interface, which can be done manually or through scripts and other automation tools. Such testing, which has no knowledge of the app’s code, is referred to as “black box” testing.
 
@@ -55,7 +55,7 @@ The unit test knows how the *doAdditionOperation* function *should* behave, so i
 
 >**Unit tests for a library belong with the library**: In your projects, invest in unit tests for your own app code, but not for libraries. Those libraries should already have their own unit tests within their own repository alongside the library source code. If a library lacks such tests, work with the author or contribute to the open-source project to add them. This way everyone benefits from your contribution, and app developers can use the library with full confidence.
 
-##Using unit tests and continuous integration to minimize the cost of bugs
+## Using unit tests and continuous integration to minimize the cost of bugs
 
 Because unit tests are just pieces of code calling other pieces of code, they can (and should) run very quickly; a whole suite of unit tests typically runs in a matter of seconds. This characteristic makes it easy for a developer to run a test suite against their work-in-progress to quickly detect any unintended changes in behavior—called *regressions*—prior to committing code to their team’s version control repository.
 

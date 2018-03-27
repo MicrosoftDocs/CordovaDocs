@@ -62,19 +62,19 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     Visual Studio creates the Cordova mobile app project and adds it to the starter solution. The project appears in Solution Explorer.
 
-3. In Solution Explorer, right-click the new Cordova project and choose **Set as Startup Project**.
+4. In Solution Explorer, right-click the new Cordova project and choose **Set as Startup Project**.
 
-4. Before you run the app, first identify one or more emulators or devices for initial testing of the Hosted App sample based on your dev environment.
+5. Before you run the app, first identify one or more emulators or devices for initial testing of the Hosted App sample based on your dev environment.
 
-    * If you are running Windows 10 on a machine that supports [Hyper-V](https://msdn.microsoft.com/en-us/library/mt228280.aspx) (no VM support), you can plan to test on the Visual Studio Emulator for Android. This is a fast, full-featured emulator. (Running on a VM is not supported.)
+   * If you are running Windows 10 on a machine that supports [Hyper-V](https://msdn.microsoft.com/en-us/library/mt228280.aspx) (no VM support), you can plan to test on the Visual Studio Emulator for Android. This is a fast, full-featured emulator. (Running on a VM is not supported.)
 
-    * If you are running Windows 10, you can plan to test on the Windows Phone 10 emulator or your Windows 10 device. If your device has a webcam, you can use it later in the tutorial!
+   * If you are running Windows 10, you can plan to test on the Windows Phone 10 emulator or your Windows 10 device. If your device has a webcam, you can use it later in the tutorial!
 
-    * If you are running Windows 7 or later, plan to run on the [Ripple Simulator](../build-deploy/run-app-ripple-simulator.md). (install Chrome now if you don't have it). Later in the tutorial, you will need to configure a full-featured emulator, such as the Google Android Emulator or GenyMotion, or you can run against an actual device if you have one available. (Ripple does not support the Camera plugin.)
+   * If you are running Windows 7 or later, plan to run on the [Ripple Simulator](../build-deploy/run-app-ripple-simulator.md). (install Chrome now if you don't have it). Later in the tutorial, you will need to configure a full-featured emulator, such as the Google Android Emulator or GenyMotion, or you can run against an actual device if you have one available. (Ripple does not support the Camera plugin.)
 
-    > **Note**: You can run the app on iOS, but setup requires additional steps and either a Mac or cloud-based Mac service and we will not be showing those steps in the tutorial. For more info, see the [iOS Guide](ios-guide.md).
+     > **Note**: You can run the app on iOS, but setup requires additional steps and either a Mac or cloud-based Mac service and we will not be showing those steps in the tutorial. For more info, see the [iOS Guide](ios-guide.md).
 
-5. Now, select a preferred emulator in Visual Studio.
+6. Now, select a preferred emulator in Visual Studio.
 
      Choose a platform to run against from the Solution Platforms list in the debug toolbar at the top of Visual Studio.
 
@@ -320,20 +320,20 @@ To save time and steps, instead of republishing the ASP.NET project to a new Azu
 1. Update the URL references in both projects to point to the new site. Specifically, update these references:
 
     In the CordovaHostedApp-Client project:
-    * In config.xml, update the `<allow-navigation>` element with the new URL:
-        https://cordovahostedweb-redirect.azurewebsites.net/
-    * In index.html, update the CSP `<meta>` element with the same URL.
-    * In index.js, you already modified the targetURL variable with the new URL, but you can verify that it's correct. It should look like this:
+   * In config.xml, update the `<allow-navigation>` element with the new URL:
+       https://cordovahostedweb-redirect.azurewebsites.net/
+   * In index.html, update the CSP `<meta>` element with the same URL.
+   * In index.js, you already modified the targetURL variable with the new URL, but you can verify that it's correct. It should look like this:
 
-        ```
-        var targetUrl = "https://cordovahostedweb-redirect.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
-        ```
+       ```
+       var targetUrl = "https://cordovahostedweb-redirect.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
+       ```
 
-    In the CordovaHostedWeb project:
+     In the CordovaHostedWeb project:
 
-    * In Views/Cordova/index.cshtml, you already modified the CSP `<meta>` element with the new URL, so you don’t need to change it.
+   * In Views/Cordova/index.cshtml, you already modified the CSP `<meta>` element with the new URL, so you don’t need to change it.
 
-4. Press F5.
+2. Press F5.
 
     This time, when the hosted app loads on your device or emulator, the Cordova-specific page will load.
 
@@ -443,18 +443,18 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 1. Update the URL references in both projects to point to the new site. Specifically, update these references:
 
     In the CordovaHostedApp-Client project:
-    * In config.xml, update the `<allow-navigation>` element with the new URL:
-        https://cordovahostedweb.azurewebsites.net/
-    * In index.html, update the CSP `<meta>` element with the same URL.
-    * In index.js, update the targetURL variable with the new URL. Verify that you are using the correct value for the targetUrl. It should look like this:
+   * In config.xml, update the `<allow-navigation>` element with the new URL:
+       https://cordovahostedweb.azurewebsites.net/
+   * In index.html, update the CSP `<meta>` element with the same URL.
+   * In index.js, update the targetURL variable with the new URL. Verify that you are using the correct value for the targetUrl. It should look like this:
 
-        ```
-        var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
-        ```
+       ```
+       var targetUrl = "https://cordovahostedweb.azurewebsites.net/cordova/setPlatformCookie?platform=" + cordova.platformId;
+       ```
 
-    In the CordovaHostedWeb project:
+     In the CordovaHostedWeb project:
 
-    * In Views/Cordova/index.cshtml, update the CSP <meta> element with the new URL.
+   * In Views/Cordova/index.cshtml, update the CSP <meta> element with the new URL.
 
 2. Choose your preferred emulator to run the app.
 
@@ -534,7 +534,7 @@ You can get the CSS to create a nice Splash screen from the [complete sample](ht
 
 The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting] (https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
 
 ## Appendix: Publish the Web site
 

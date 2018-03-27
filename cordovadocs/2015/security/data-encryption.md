@@ -12,7 +12,7 @@ For the most part you should apply the same [best practices to your code as you 
 
 Here are some recommendations that can help encrypt sensitive data in Cordova apps. 
 
-##Encrypt data using Web Crypto via Crosswalk and a shim
+## Encrypt data using Web Crypto via Crosswalk and a shim
 The best starting point whenever you are tackling a problem related to security is to rely on browser features as they undergo significant testing and have abundant real-world use going for them. While the API is a bit cumbersome, Web Crypto is a W3C standard that lets the browser itself encrypt data that has growing native browser support. 
 
 Historically [crypto.subtle.encrypt and decrypt](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) had [varying levels of support](http://caniuse.com/#search=web%20crypto) in browsers with one in particular being the biggest problem for Cordova: Android. To resolve this problem we'll need to take advantage of something called "Crosswalk."
@@ -80,7 +80,7 @@ crypto.subtle.generateKey(cryptoSubtleAlgo, true, ["encrypt", "decrypt"])
     });
 ```
 
-##Consider community plugins
+## Consider community plugins
 In addition to the above base capabilities there are a number of community plugins that can be used to encrypt data locally. Microsoft does not directly support these plugins, so security focused organizations should be sure to run a static and or dynamic code analysis tool on the resulting project code (including these plugins) during any planned security audits. However, Intel maintains one of these plugins and the plugin author of cordova-sqlite-storage offers support contracts for those that are interested.
 
 <style>
@@ -171,7 +171,7 @@ Other versions:
     cordova plugin add https://github.com/litehelpers/Cordova-sqlcipher-adapter.git --save
     ```
 
-##Consider Intune MAM features to force encryption
+## Consider Intune MAM features to force encryption
 [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) is a [mobile application management](https://en.wikipedia.org/wiki/Mobile_application_management) (MAM) and [mobile device management](https://en.wikipedia.org/wiki/Mobile_device_management) (MDM) platform that supports Android, iOS, and Windows devices. Intune's MAM capabilities can be used without managing devices which means it can be used in combination with existing MDM solutions like Airwatch and Mobile Iron. Currently it is targeted at Active Directory authorized apps and thus is most applicable to enterprise focused scenarios. It provides the ability to enforce policies at the **app level** including encryption of all local data. It's therefore a low friction way to increase your security. 
 
 Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy. 
@@ -198,14 +198,14 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
 
 See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
 
-##Consider native Windows APIs for Windows
+## Consider native Windows APIs for Windows
 One often missed feature that the Windows platform for Cordova has is the ability to call **any** JavaScript enabled [Windows API](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) from your Cordova app **without a plugin**. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec. 
 
 This includes all features contained within the **Windows.Security** and **Windows.Security.Cryptography** namespaces! However, be aware that there may be some variations between Windows 10 and Windows 8.1 APIs depending on which OS you are targeting.
 
  See **[Windows API documentation](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx)** for additional details and specifics.
 
-##Additional Security Topics
+## Additional Security Topics
 - [Learn about Cordova platform and app security features](best-practices.md)
 - [Learn about securely transmitting data](transmit-data-securely.md)
 - [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](authentication.md)

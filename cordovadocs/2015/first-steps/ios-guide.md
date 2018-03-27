@@ -182,7 +182,7 @@ This type of provisioning profile gives you the most flexibility. For this optio
 
 * Install the provisioning profile onto your device
 
- Let's go through each step in this process.
+  Let's go through each step in this process.
 
 **Enroll in the Apple Developer program**
 

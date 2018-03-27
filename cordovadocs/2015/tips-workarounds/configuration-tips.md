@@ -32,7 +32,7 @@ You can download Visual Studio from the [Microsoft Download Center](http://go.mi
     >**Caution:**
   If you are migrating a project from an earlier version of Visual Studio, see this [migration information](https://github.com/Microsoft/cordova-docs/blob/master/known-issues/known-issues-vs2015.md#known-issues—visual-studio-2015) (github).
 
-##<a name="ThirdParty"></a>Install dependencies manually
+## <a name="ThirdParty"></a>Install dependencies manually
 If you choose not to install one or more dependencies with the extension, you can install them later manually.
 
 You can install the dependencies in any order, except for Java. You must install and configure Java before you install the Android SDK. Read the following information and use these links to install dependencies manually.
@@ -48,63 +48,63 @@ You can install the dependencies in any order, except for Java. You must install
     When you install Git command line tools, select the option that adds Git to your command prompt path.
 
     >**Caution:**
-Git command line tools 1.9.5 are installed by default. Unexpected failures may occur if you install a version prior to 1.9.0.
+  Git command line tools 1.9.5 are installed by default. Unexpected failures may occur if you install a version prior to 1.9.0.
 
 * [Apache Ant](http://go.microsoft.com/fwlink/?LinkID=396869)
 
-     * Download and extract Ant to a location like C:/ant-1.x.x
+  * Download and extract Ant to a location like C:/ant-1.x.x
 
-     * Set the ANT_HOME environment variable to point to the preceding location.
+  * Set the ANT_HOME environment variable to point to the preceding location.
 
-     * Add %ANT_HOME%\bin to the system path.
+  * Add %ANT_HOME%\bin to the system path.
 
     >**Note:**
-If you need to set this environment variable manually, see [Override system environment variables](#env-var).
+    If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 * [32-bit Oracle Java 7](http://go.microsoft.com/fwlink/?LinkID=396871)
 
-    * Set the JAVA_HOME environment variable to C:/Program Files/Java/jdk1.7.0_55
+  * Set the JAVA_HOME environment variable to C:/Program Files/Java/jdk1.7.0_55
 
-    * Add this to the system path: %JAVA_HOME%\bin
+  * Add this to the system path: %JAVA_HOME%\bin
 
-    * To avoid out of memory issues, set a *JAVA_OPTIONS environment variable with at least -Xmx512M in it.
+  * To avoid out of memory issues, set a *JAVA_OPTIONS environment variable with at least -Xmx512M in it.
 
     >**Note:**
-If you need to set this environment variable manually, see [Override system environment variables](#env-var).
+    If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 * [Android SDK](http://go.microsoft.com/fwlink/?LinkID=396873) with the following SDK packages:
 
-   * Android SDK Tools (latest version) * Android SDK Platform-tools (latest version)
+  * Android SDK Tools (latest version) * Android SDK Platform-tools (latest version)
 
-   * Android SDK Build-tools (19.1, 19.0.3, and 21)
+  * Android SDK Build-tools (19.1, 19.0.3, and 21)
 
-   * Android 5.0 (API level 21) with the following packages:
+  * Android 5.0 (API level 21) with the following packages:
 
-      * SDK Platform
+    * SDK Platform
 
-      * If you want to use the Google Android Emulator to emulate a 5.0.x device:
+    * If you want to use the Google Android Emulator to emulate a 5.0.x device:
 
-         * ARM EABI v7a System Image
+      * ARM EABI v7a System Image
 
-         * Intel x86 Atom System Image
+      * Intel x86 Atom System Image
 
-         * Google APIs (x86 System Image)
+      * Google APIs (x86 System Image)
 
-         * Google APIs (ARM System Image)
+      * Google APIs (ARM System Image)
 
-         * If you want to use Cordova 5.0.0 or later:
+      * If you want to use Cordova 5.0.0 or later:
 
-           * Android 5.1.x (API level 22) with the following packages: SDK platform
+        * Android 5.1.x (API level 22) with the following packages: SDK platform
 
-           The following illustration shows the minimum required packages in the Android SDK Manager.
+        The following illustration shows the minimum required packages in the Android SDK Manager.
 
-           ![Cordova_SDK_Android_Packages](media/configure-vs-tools-apache-cordova/IC795810.png)
+        ![Cordova_SDK_Android_Packages](media/configure-vs-tools-apache-cordova/IC795810.png)
 
-           Set the ADT_HOME environment variable to the SDK installation location.
+        Set the ADT_HOME environment variable to the SDK installation location.
 
-           Add this to the system path: %ADT_HOME%\tools;%ADT_HOME%\platform-tools
+        Add this to the system path: %ADT_HOME%\tools;%ADT_HOME%\platform-tools
 
-           If you need to set this environment variable manually, see [Override system environment variables](#env-var).
+        If you need to set this environment variable manually, see [Override system environment variables](#env-var).
 
-          >**Tip:** If you install the Android SDK to its default location on Windows, it gets installed to C:\Program Files (x86)\Android\android-sdk.
+        >**Tip:** If you install the Android SDK to its default location on Windows, it gets installed to C:\Program Files (x86)\Android\android-sdk.
 
 * If you want to use the Google Android Emulator to emulate a 5.1.x device:
 
@@ -124,7 +124,7 @@ If you need to set this environment variable manually, see [Override system envi
     2. Unzip the binaries and then unblock net45\Release\WebSocket4Net.dll. To unblock the DLL, open the file Properties for the DLL and choose Unblock in the General tab (at the bottom of the dialog box).
     3. After you unblock the DLL, copy net45\Release\WebSocket4Net.dll into the %ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\WebClient\Diagnostics\ToolWindows folder on your computer.
 
-##<a name="env-var"></a>Override system environment variables
+## <a name="env-var"></a>Override system environment variables
 
 Visual Studio detects the configurations for the third-party software you’ve installed, and maintains the installation paths in the following environment variables:
 
@@ -145,7 +145,7 @@ Visual Studio uses these environment variables when building and running your ap
 * You want your global environment path to be different from the local Visual Studio environment.
 
 ### To override the variables
-1. On the Visual Studio menu bar, choose **Tools**, **Options**. 4. In the **Options** dialog box, choose **Tools* for Apache Cordova**, and then choose **Environment Variable Overrides**.
+1. On the Visual Studio menu bar, choose <strong>Tools</strong>, <strong>Options</strong>. 4. In the <strong>Options</strong> dialog box, choose <strong>Tools* for Apache Cordova</strong>, and then choose <strong>Environment Variable Overrides</strong>.
 
 2. Make your changes:
 
@@ -155,9 +155,9 @@ Visual Studio uses these environment variables when building and running your ap
     * To reset an environment variable to its default value, clear its check box or choose **Reset to Default**.
 
 3. Choose the **OK** button to save your changes and close the dialog box.
-![Environment variables, warning message](media/configure-vs-tools-apache-cordova/options-dialog.png)
+   ![Environment variables, warning message](media/configure-vs-tools-apache-cordova/options-dialog.png)
 
-##<a name="IosPin"></a>Generate a new security PIN
+## <a name="IosPin"></a>Generate a new security PIN
 
 When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first time, the generated PIN is valid for a limited amount of time (10 minutes by default). If you don’t connect to the agent before the time expires, or if you want to connect a second client to the agent, you will need to generate a new PIN.
 ### To generate a new security PIN
@@ -171,7 +171,7 @@ When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first ti
 
 4. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
 
-##<a name="IosCert"></a>Generate a new server certificate
+## <a name="IosCert"></a>Generate a new server certificate
 For security purposes, the server certificates that pair Visual Studio with the remote agent are tied to your Mac’s IP or host name. If these values have changed, you will need to generate a new server certificate, and then reconfigure Visual Studio with the new values.
 
 ### To generate a new server certificate
@@ -193,7 +193,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 5. Follow instructions to [start the agent](../first-steps/ios-guide.md#remoteAgent) on your Mac and configure the agent in Visual Studio.
 
-##<a name="IosConfig"></a>Configure the iOS remote agent
+## <a name="IosConfig"></a>Configure the iOS remote agent
 
 You can configure the remote agent using various command line options. For example, you can specify the port to listen for build requests and specify the maximum number of builds to maintain on the file system. (By default, the limit is 10\. The agent will remove builds that exceed the maximum on shutdown.)
 
@@ -234,7 +234,7 @@ The server.log file might assist in troubleshooting build issues.
 
 The configuration file must be in JSON format. The startup options and their values must not include dashes. To see a documented configuration file, look at the remotebuild/examples/exampleConfig.json folder in the remote agent installation directory, although you must remove the comments in the file that you use for your configuration. An example of a path you might use when running this command is _/Users/<username\>/myConfig.json_. The default path where the agent looks for a configuration file is ~/.taco_home/RemoteBuild.config.\
 
-##<a name="IosVerify"></a>Verify the iOS remote agent configuration
+## <a name="IosVerify"></a>Verify the iOS remote agent configuration
 Once you have [installed the agent](../first-steps/ios-guide.md), you can verify the remote agent configuration.
 
 ### To verify the remote agent configuration
@@ -264,7 +264,7 @@ This command will fail if the agent is not running in a second window, or if the
 
 For more information about app provisioning and certificate signing identities, see [Package your Cordova app so that you can publish it](../publishing/publish-to-a-store.md).
 
-##<a name="vstac"></a>Reinstall the Cordova CLI pre-processor (vs-tac)
+## <a name="vstac"></a>Reinstall the Cordova CLI pre-processor (vs-tac)
 
 If you see unexpected errors when trying to build the Blank App template after installing Visual Studio Tools for Apache Cordova, you can try clearing your cache and reinstalling the Cordova CLI pre-processor, vs-tac, on your PC. Typically, this is only necessary if you try to build a Cordova app and see the error Cannot find module *[modulename]*.
 
@@ -296,7 +296,7 @@ If you have no errors, you do not need to re-install vs-tac. If you still have t
 2. Open a command line and type the following command:
 
         npm install -g <path-to-vs-tac>
-The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\ApacheCordovaTools\packages\vs-tac
+   The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\ApacheCordovaTools\packages\vs-tac
 
 3. Re-open Visual Studio.
 
@@ -306,7 +306,7 @@ The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.
 
     If this does not resolve the issue, see the [Known Issues](../known-issues/known-issues-general.md).
 
-##Configure tools to work with a proxy
+## Configure tools to work with a proxy
 If you are using Visual Studio behind a proxy, such as a corporate firewall, you may need to configure proxy settings for the npm package manager and for git before you can use Visual Studio Tools for Apache Cordova.
 
 >**Important:**
@@ -325,11 +325,11 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 4. In the Visual Studio developer command window, type the following command.
 
         npm config set proxy <proxy-port>
-where *proxy-port* is the proxy address and port number, such as http://proxy.mycompany.com:80/.
+   where *proxy-port* is the proxy address and port number, such as http://proxy.mycompany.com:80/.
 5. Then type this command:
 
         npm config set https-proxy <proxy-port>
-where proxy-port might be a value such as http://proxy.mycompany.com:80/
+   where proxy-port might be a value such as http://proxy.mycompany.com:80/
 
 6. Open Visual Studio.
 
@@ -341,12 +341,12 @@ where proxy-port might be a value such as http://proxy.mycompany.com:80/
 2. Open a Visual Studio developer command window (Ctrl + Alt + A) and type the following command.
 
         git config --global http.proxy http://<username>:<password>@<proxy-port>
-where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80.
+   where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80.
 
 3. Type this command:
 
         git config --global https.proxy http://<username>:<password>@<proxy-port>
-where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80
+   where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80
 
 4. Open Visual Studio.
 

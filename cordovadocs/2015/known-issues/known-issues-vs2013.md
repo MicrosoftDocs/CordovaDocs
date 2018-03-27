@@ -6,13 +6,13 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#**Known Issues - CTP 3/3.1 for Visual Studio 2013**
+# <strong>Known Issues - CTP 3/3.1 for Visual Studio 2013</strong>
 
 > **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 
 This article covers known issues specific to Visual Studio Tools for Apache Cordova CTP3/3.1 and Visual Studio 2013.
 
-##**Missing iOS Icons and Splashscreens**
+## <strong>Missing iOS Icons and Splashscreens</strong>
 
 When using version 0.2.8 or higher of vs-mda-remote, you should add the following XML elements to your config.xml to ensure your icons and splash screens are picked up properly.
 
@@ -52,6 +52,6 @@ Alternatively, you can install version 0.2.7 instead by using the following comm
 
     npm install -g vs-mda-remote@0.2.7
 
-##**Incorrect Application Id & Publisher Name after creating app packages**
+## <strong>Incorrect Application Id & Publisher Name after creating app packages</strong>
 
 While trying to associate a Cordova app with Windows Store using Visual Studio 2013 and CTP3.1, the AppxManifest.xml doesn’t get updated with the appropriate Application Id & publisher name. We have fixed this issue in Visual Studio 2015 RC. To fix this issue in Visual Studio 2013, install the plugin from [https://github.com/Chuxel/taco-tricks/tree/master/plugin-windows-package-fix](https://github.com/Chuxel/taco-tricks/tree/master/plugin-windows-package-fix) and try building your application again.

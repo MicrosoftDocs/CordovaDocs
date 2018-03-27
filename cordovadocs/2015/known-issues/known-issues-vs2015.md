@@ -6,13 +6,13 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#**Known Issues - Visual Studio 2015**
+# <strong>Known Issues - Visual Studio 2015</strong>
 
 > **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 
 This article covers known issues specific to Visual Studio Tools for Apache Cordova 2015.
 
-##**Project structure change from CTP3/3.1**
+## <strong>Project structure change from CTP3/3.1</strong>
 
 Projects created in an earlier version of Visual Studio will need to be migrated to support the new Cordova CLI based project structure in VS 2015 that is more interoperable with 3rd party tools and CLIs.
 
@@ -20,7 +20,7 @@ To migrate your previous projects to the new structure:
 
 * See [Migrate your project](../first-steps/migrate-to-vs2015.md).
 
-##Visual Studio 2015 RTM
+## Visual Studio 2015 RTM
 **The debug dropdown just shows 'Start' and no other target options appear such as Ripple, devices, emulators & simulators:**
 In some cases, when you uninstall VS2013 or a previous version (RC) of VS2015, a library gets corrupted that causes the debug dropdown not to show all the target options. To resolve this issue:
 
@@ -46,7 +46,7 @@ In some cases, when you uninstall VS2013 or a previous version (RC) of VS2015, a
 
 However, if you update your Cordova version to 5.0.0 or later the config designer should automatically see the new IDs in the "Plugins" tab of the designer. If you do not see this behavior, update Tools for Apache Cordova because this functionality was added in a small post-RTM update. You will get an update notification soon prompting you to update or, when creating a new project, you can click "Install Tools for Apache Cordova" from the Apache Cordova templates section. To avoid unexpected behaviors, be sure to remove plugins with the older IDs before using the "Installed" tab to update the tools.
 
-##Visual Studio 2015 RC
+## Visual Studio 2015 RC
 ----------
 **VS 2015 RC and Cordova 5.x.x / Cordova Android 4.x.x:** See [Cordova 5.x.x known issues](known-issues-cordova5.md) for details on Android related issues that are specific to Cordova 5.0.0 and up.
 
@@ -85,6 +85,6 @@ Remove these files from source control if you are not checking in the "platforms
         cordova plugin add nl.x-services.plugins.launchmyapp --variable URL_SCHEME=myscheme
 	    ~~~~~~~~~~~~~~
 
-##Visual Studio 2015 CTP6
+## Visual Studio 2015 CTP6
 ----------
 **Ant uninstalled when upgrading from CTP5 to CTP6:** When you upgrade from VS2015 CTP5 to CTP6, Apache Ant gets uninstalled. The workaround is to reinstall Ant. You can find manual instructions for installing and configuring Ant at [this location](https://msdn.microsoft.com/en-us/library/dn757054.aspx#InstallTools).

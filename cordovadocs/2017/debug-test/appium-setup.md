@@ -5,13 +5,13 @@ author: "kraigb"
 ms.author: "kraigb"
 ---
 
-#Appium setup
+# Appium setup
 
 There are two ways to install and run an Appium server, via npm on the command line, and by downloading and installing the Appium GUI tool.
 
 Because our focus in this documentation is using Appium for test automation, we’ll be working with Appium from the command line and through code. We'll also install Appium using npm. If you want to try the GUI tool, you can install it from from [https://bitbucket.org/appium/appium.app/downloads](https://bitbucket.org/appium/appium.app/downloads) (This is linked from the Appium homepage, [http://appium.io/](http://appium.io/) so don’t worry about the bitbucket.org domain name.)
 
-##Installing Appium via npm
+## Installing Appium via npm
 
 Open a command prompt and install Appium globally via **npm**, as is common with development tools. This installs quite a few dependencies and might take a while depending on your Internet connection:
 
@@ -36,7 +36,7 @@ Output for Android looks like the following; if anything is missing, you’ll se
     info AppiumDoctor Everything looks good, bye!
     info AppiumDoctor
 
-##Starting the Appium server
+## Starting the Appium server
 
 Once Appium is installed, open a new command prompt and start the server as below (with Appium installed globally as in the previous section, you can be in any folder):
 
@@ -55,7 +55,7 @@ If you want to have the server listen to requests on a different port, such as l
 
 You can use other [Appium server arguments]( http://appium.io/slate/en/master/?javascript#appium-server-arguments) to also specify the environment configuration and point to the app package (which is what the GUI tool uses when it launches the server). For our purposes here, however, we’ll do all the configuration in code as described in the next section because we can then keep the configuration directly with the tests that depend on it.
 
-##Connect to and configure the Appium server in code (test01.js)
+## Connect to and configure the Appium server in code (test01.js)
 
 Configuring the Appium server means settings the appropriate capabilities for the desired test environment along with pointing to the app package to test. Again, you can do this through the command line’s --default-capabilities arguments, as described on [The --defaultCapabilities flag]( http://appium.io/slate/en/master/?javascript#server-flags), or in code by initializing Appium with the options described on [Appium server capabilities]( http://appium.io/slate/en/master/?javascript#appium-server-capabilities).
 

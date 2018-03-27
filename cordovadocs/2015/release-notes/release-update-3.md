@@ -12,7 +12,7 @@
      ms.date="10/09/2015"
      ms.author="jomatthi"/>
 
-#**Update 3 - Visual Studio Tools for Apache Cordova**
+# <strong>Update 3 - Visual Studio Tools for Apache Cordova</strong>
 Update 3 of the Visual Studio Tools for Apache Cordova, includes the following changes:
 
 * **Addresses a blocking issue when trying to use the Tools for Apache Cordova along with the ASP.NET 5 Beta 7 releas.**

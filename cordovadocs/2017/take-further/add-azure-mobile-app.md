@@ -13,9 +13,9 @@ ms.date: "08/21/2016"
 ms.author: "mikejo"
 ---
 
-#Add Azure data storage, offline sync, and push notifications
+# Add Azure data storage, offline sync, and push notifications
 
-##Overview
+## Overview
 
 Azure App Service is a cloud app service that integrates everything you need to quickly and easily build
 [web](https://azure.microsoft.com/en-us/services/app-service/web/) and [mobile](https://azure.microsoft.com/en-us/services/app-service/mobile/)
@@ -27,14 +27,14 @@ push notifications. You can create a no-code backend in minutes and extend it to
 
 The tasks in this article show you how to create an Azure Mobile App that uses an Azure Easy table for data storage, offline data sync, authentication, and supports push notifications for Android, iOS, and Windows.
 
-##Prerequisites: Get the Azure connected services client app
+## Prerequisites: Get the Azure connected services client app
 
 To get the sample, find the
 [Azure connected services sample](https://github.com/Microsoft/cordova-samples/tree/master/azure-connected-services) on GitHub.
 
 Download the sample and open it in Visual Studio.
 
-##Task 1: Create an Azure Mobile App backend
+## Task 1: Create an Azure Mobile App backend
 
 On the Azure portal, create an Azure Mobile App backend. Follow steps in this video to create the Azure Mobile App backend. You will need to create an Azure account if you don't have one.
 
@@ -45,7 +45,7 @@ For documentation that shows similar steps, see the [Getting Started Tutorial](h
 > [!NOTE]
 > You can follow steps described in the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) to download the Azure sample, but if you use the getting started sample instead of the Azure connected services sample, you must take extra steps to add required plugins, to add offline sync and push notification code, and to update the Cordova version in your app.
 
-##Task 2: Update your Cordova app and your Mobile App backend code
+## Task 2: Update your Cordova app and your Mobile App backend code
 
 The Azure connected services sample uses an Azure Easy table to store todolist items.
 
@@ -80,7 +80,7 @@ To use authentication:
 
 * If you are not using push, comment out the call to the `registerForPushNotifications` function in index.js and then skip to [Task 8: Add authentication](#authentication).
 
-##Task 3: Create an Azure push notification hub
+## Task 3: Create an Azure push notification hub
 
 If you want to add support for push notifications to your Azure Mobile App, follow steps in this video.
 
@@ -88,7 +88,7 @@ If you want to add support for push notifications to your Azure Mobile App, foll
 
 To follow the same steps in the tutorial, see [Create a notification hub](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#create-hub).
 
-##Task 4: (Optional) Configure Google Cloud Messaging (GCM)
+## Task 4: (Optional) Configure Google Cloud Messaging (GCM)
 
 If you want to send push notifications to Android devices, you must configure GCM and add the GCM credentials to your notification hub. Follow steps in this video.
 
@@ -96,7 +96,7 @@ If you want to send push notifications to Android devices, you must configure GC
 
 To follow the same steps in the tutorial, see [Enable Google Cloud Messaging](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-the-app-on-android).
 
-##Task 5: (Optional) Configure Apple Push Notification Service (APNS)
+## Task 5: (Optional) Configure Apple Push Notification Service (APNS)
 
 If you want to send push notifications to iOS devices, you must configure APNS and add the APNS credentials to your notification hub. Follow steps in this video.
 
@@ -107,7 +107,7 @@ To follow the same steps in the tutorial, see [Register the app for push notific
 > [!NOTE]
 > The PhoneGap push plugin requires XCode 7.
 
-##Task 6: (Optional) Configure Windows Notification Service (WNS)
+## Task 6: (Optional) Configure Windows Notification Service (WNS)
 
 If you want to send push notifications to Windows devices, you must configure WNS and add the WNS credentials to your notification hub. Follow steps in this video.
 
@@ -115,7 +115,7 @@ If you want to send push notifications to Windows devices, you must configure WN
 
 To follow the same steps in the tutorial, see [Register your app for push notifications with WNS](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-windows).
 
-##Task 7: Get ready to run your app!
+## Task 7: Get ready to run your app!
 
 Watch this video to make sure your app is ready to handle push notifications:
 
@@ -137,7 +137,7 @@ To test push notifications in your Windows App:
 
 Follow the steps in [Test push notifications in your Windows app](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-windows)
 
-##Task 8: Add authentication <a id="authentication"></a>
+## Task 8: Add authentication <a id="authentication"></a>
 
 Watch this video to add authentication to the Azure connected services sample. The video shows adding authentication with Twitter, but the steps are similar for other services as well.
 
@@ -147,7 +147,7 @@ To follow similar steps in the tutorial, see [How to: Authenticate users](https:
 
 Select a device target and press F5 to run your app with authentication.
 
-##Troubleshooting: Let's fix it
+## Troubleshooting: Let's fix it
 
 * Platform notification service (PNS) credentials won't validate in Azure notification hub?
 
@@ -178,7 +178,7 @@ Select a device target and press F5 to run your app with authentication.
     [See Cordova troubleshooting tips](../tips-workarounds/general-tips.md#resolve-build-and-deployment-errors-when-you-build-for-the-first-time)
 
 
-##Links
+## Links
 
 Please refer to the following links to learn how to use Azure Mobile App SDK in your Cordova app.
 

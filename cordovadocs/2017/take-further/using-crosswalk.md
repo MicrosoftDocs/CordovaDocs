@@ -88,5 +88,4 @@ You may find a menu option to launch the AVD manager in your start menu. If not,
 
 ```
 "C:\Program Files (x86)\Android\android-sdk\tools\android.bat" avd
-
 ```

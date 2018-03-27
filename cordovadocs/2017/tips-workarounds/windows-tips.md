@@ -12,20 +12,20 @@ ms.date: "05/15/2016"
 ms.author: "kirupac"
 ---
 
-#Windows tips and workarounds
+# Windows tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform.
 
 <a name="windows"></a>
-##Resolve Windows build and deployment errors
+## Resolve Windows build and deployment errors
 
 Try these steps if you have trouble building and deploying to Windows or Windows Phone emulators or devices.
 
 1. Before taking any other steps, try running your app against other platforms or emulators to make sure the issue is Windows-specific.
 
     For example, we suggest you test on Android:
-    * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
+   * Try running against Android and select **Simulate in Browser - Nexus 6** (Chrome required)
 
-    If you see the same error on other platforms, the issue is likely not Windows-specific, see [Resolve build and deployment errors](general-tips.md) for more general help.
+     If you see the same error on other platforms, the issue is likely not Windows-specific, see [Resolve build and deployment errors](general-tips.md) for more general help.
 
 2. Open the configuration designer (config.xml), Windows tab, and make sure you select the OS that your are currently trying to target (Windows 8.1 or Windows 10).
 

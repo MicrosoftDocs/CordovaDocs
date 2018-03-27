@@ -20,7 +20,7 @@ The [Microsoft Visual Studio Team Services (VSTS) Agent](https://github.com/Micr
 
 Visual Studio Team Services can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managing certificates for iOS. Simply install the **[Cordova Build](http://go.microsoft.com/fwlink/?LinkID=691188)** agent and add a Cordova Build task to your build definition.
 
-<p>
+
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="Apache Cordova logo" /></td>
 <td><strong>Cordova Build</strong><br />
@@ -29,7 +29,7 @@ Visual Studio Client Tools<br />
 <a href="http://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
 </td>
 </tr></table>
-</p>
+
 
 See **[Build Apache Cordova apps](http://go.microsoft.com/fwlink/?LinkID=691186)** for additional details.
 

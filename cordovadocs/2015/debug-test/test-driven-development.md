@@ -5,7 +5,7 @@ ms.prod: "visual-studio-dev14"
 ms.author: "jmatthiesen"
 ---
 
-#Improving the unit tests: an introduction to test-driven development
+# Improving the unit tests: an introduction to test-driven development
 
 > The full sample for this topic is [chutzpah-jasmine-vs](https://github.com/Microsoft/cordova-samples/tree/master/unit-testing/chutzpah-jasmine-VS) in the cordova-samples repository on GitHub.
  
@@ -31,7 +31,7 @@ function normalizeData(jsonIn) {
 
 The question is, what should we work on first? Write the code for ```normalizeData```, or write tests?
 
-##Test-driven development
+## Test-driven development
 
 Developers who narrowly define their role as “writing code” will probably jump right into ```normalizeData``` and make it handle different kinds of data that might get thrown at it. After a time, they’ll likely write a few tests. In the process, they’ll see that some of those tests still fail because there are certain code cases that ```normalizeData``` doesn’t handle properly. So they’ll improve ```normalizeData``` to handle those cases, then write a few more tests, which might reveal additional issues in the unit code. This puts one into a pattern of bouncing back and forth between thinking about coding and thinking about data for test cases, which can result in missed test cases and faulty code.
 
@@ -45,7 +45,7 @@ This is precisely the process that’s called *test-driven development*: write t
 
 The big advantage of test-driven development is that it cleanly separates the task of coming up with input cases from the task of writing the code to handle those cases. Ultimately, if you’re going to do a really good job testing your code, you’ll have to separate these tasks one way or another. Test-driven development acknowledges this up front. It makes it easier to generate a comprehensive set of tests early on, which means you write more robust code earlier in the process and thus reduce the overall cost of development.
 
-##Thinking through the inputs
+## Thinking through the inputs
 
 Let’s apply the process of test-driven development to our example and begin by thinking through the input variations for ```normalizeData```. We already have an input case for the golden path JSON:
 
@@ -111,7 +111,7 @@ Once you get going on thinking through the variations, it’s quite easy to iden
 
 In writing this example, in fact, I probably spent a total of 15 minutes thinking about these variations, and experienced testers will probably have a fully-developed list of JSON test strings already in hand (including many more values with embedded HTML, JavaScript, SQL, and forms used in security attacks). The point is that once you get going on thinking about input cases, it’s pretty easy to just write them out, and you create a resource you can use in other similar unit tests.
 
-##Converting inputs cases to tests
+## Converting inputs cases to tests
 
 Having identified the inputs, we next map each case to expected outputs in the form of a test, and give each test a name at the same time. Using a simple template that we can paste into ```normalize_tests.js``` for each of the thirty tests cases, we can then copy-paste the inputs into the tests and add tests for the expected outputs.
 
@@ -172,7 +172,7 @@ You’ll also discover in this process that groups of tests follow a similar pat
 
 By the way, one of the unit tests show above is buggy. Do you see which one? We’ll encounter this later on in Debugging unit tests.
 
-##Running the tests against an empty unit
+## Running the tests against an empty unit
 
 Having written out all the tests, we can now run them against a still-empty ```normalizeData``` function and see the results in Test Explorer:
 
@@ -184,7 +184,7 @@ Notice also how Test Explorer shows the names you assigned to each individual te
 
 >**Note**: With the runtime we're using here, an empty function returns ```undefined``` by default. Other runtimes might instead return ```null``` by default in which case a number of our tests will initially pass. However, as we add code to ```normalizeData``` those tests would eventually fail until we had the correct implementation for those specific cases.
 
-##Adding code to the unit to handle test cases
+## Adding code to the unit to handle test cases
 
 Having run all our tests against and empty implementation, we now have a to-do list for coding work. Let’s start by addressing the first failed test and handle the “golden path”:
 

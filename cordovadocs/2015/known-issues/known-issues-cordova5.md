@@ -6,14 +6,14 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#**Apache Cordova 5.x.x Related Known Issues**
+# <strong>Apache Cordova 5.x.x Related Known Issues</strong>
 
 > **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying using Apache Cordova 5.0.0+.
 
 In general we recommend **using Cordova 5.1.1 or above** instead of 5.0.0 because there are a number of issues including a security issue in Cordova 5.0.0.
 
-##Apache Cordova 5.x.x General Issues
+## Apache Cordova 5.x.x General Issues
 ----------
 **config.xml Designer Does Not Show Updated Plugin IDs with Cordova 5.0.0+:** A significant change occurred with Cordova 5.0.0+ that also altered the IDs of many core Cordova plugins. The Visual Studio 2015 config designer uses the old IDs (for example, org.apache.cordova.camera not cordova-plugin-camera) with Cordova 4.3.1 and previous versions because versions of Cordova before 5.0.0 do not support npm.
 

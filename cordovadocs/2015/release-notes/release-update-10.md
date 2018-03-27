@@ -9,7 +9,7 @@ ms.date: "06/01/2016"
 ms.author: "rmpablos"
 ---
 
-#**Update 10 - Visual Studio Tools for Apache Cordova**
+# <strong>Update 10 - Visual Studio Tools for Apache Cordova</strong>
  *Visual Studio TACO Update 10 corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60527.5.*
 
 ## Setup Instructions

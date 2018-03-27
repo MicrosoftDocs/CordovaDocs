@@ -5,12 +5,12 @@ author: "Chuxel"
 ms.author: "clantz"
 ---
 
-#Securely transmit data
+# Securely transmit data
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate.
 
 For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible. This document will outline some of the security features that exist in Cordova, community plugins, and related Microsoft products for transmitting data securely.
 
-##SSL and Auth Tokens
+## SSL and Auth Tokens
 General web best practices apply to Cordova based development including an obvious but sometimes skipped recommendation: **Always use SSL**. While this seems obvious for calls you make that contained sensitive data, it is also important for **any service call that is authenticated** since you will need to pass authentication information like access tokens across in your calls. This is even more important for Cordova since native client authentication [bearer tokens](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer-19.html) often last longer than web based ones. The core assumption is that you are persisting these auth tokens in a secure way when using native API generally not available to the web (such as via library like ADAL that does it for you).
 
 A second related recommendation is to authenticate and authorize all calls using a user login driven authentication token rather than user name and password or an app-level token. The challenges with user name and password are obvious as the information must be passed in clear text. App level authentication or secrets can be acceptable some scenarios, but the downside with this approach is that changing the app authentication will require an app update to accomplish. [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can help with situations where you must use an app or service level authentication token / secret / certificate by hiding these values behind a service that is itself authenticated. That said, often it is best to keep these types of service calls behind an app specific service layer that is authenticated against a user rather than having an app call them directly.
@@ -123,14 +123,14 @@ function get10UsersFromADGraph(adTenantId, adalToken, callback) {
 
 This general approach can be reused for services across Azure and O365 services but there are variations from service to service. See documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) service documentation for additional details on token passing to downstream services.
 
-##Certificate Pinning
+## Certificate Pinning
 Another trick used in high security situations is something called [certificate pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning). The idea here is you can significantly reduce the chances of a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) by "pinning" the allowed public certificates accepted by your app when making the connection to highly trusted, official certificate authorities (like Verisign, Geotrust, GoDaddy) that you are actually using. The end result is that someone trying to execute a man in the middle attack would need a valid SSL certificate from that specific authority to trick your app into connecting to it.
 
 Cordova and most underlying native webviews unfortunately do not generally support this out-of-box. You can technically approximate certificate pinning as described in the [Cordova Security Guide](https://cordova.apache.org/docs/en/edge/guide/appdev/security/index.html), there are two plugins that can help resolve this problem for you.
 
 In general, it is best to stick with the base XML HTTP Request implementation when making service calls but these plugin can be useful when you are in a particularly high security situation. Note that Microsoft does not directly support these plugins, so security focused organizations should be sure to run a static and or dynamic code analysis tool on the resulting project code (including these plugins) during any planned security audits. That said one is [maintained by Intel](https://software.intel.com/en-us/app-security-api) while the other has a [fork that been verified by Telerik](http://plugins.telerik.com/cordova/plugin/secure-http).
 
-###com-intel-security-cordova-plugin
+### com-intel-security-cordova-plugin
 One excellent community plugin maintained by Intel with certificate pinning support is **[com-intel-security-cordova-plugin](https://www.npmjs.com/package/com-intel-security-cordova-plugin)**.  It has fantastic documentation and a great **[quick start on certificate pinning](https://software.intel.com/en-us/node/604523)**. Adding the plugin is easy:
 
 
@@ -153,7 +153,7 @@ One excellent community plugin maintained by Intel with certificate pinning supp
     cordova plugin add com-intel-security-cordova-plugin --save
     ```
 
-###cordova-plugin-http
+### cordova-plugin-http
 Another is the **[cordova-plugin-http](https://www.npmjs.com/package/cordova-plugin-http)** community plugin is designed to provide an API compatible XML HTTP Request implementation that adds support for certificate pinning among other features to **iOS and Android**.
 
 Here's a quick start:
@@ -201,7 +201,7 @@ Here's a quick start:
     });
     ```
 
-##Consider Resource Access Controls via MDM
+## Consider Resource Access Controls via MDM
 When building an internal facing app, Mobile Device Management (MDM) and Mobile Application management (MAM) solutions like [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) can help you restrict access to services and network resources by enforcing data access controls for enrolled devices. Features include:
 
 - Allowing you to require VPN or secure Wifi access to connect to key services by helping you [manage device profiles](https://technet.microsoft.com/en-us/library/dn997277.aspx).
@@ -211,7 +211,7 @@ If you have apps that can access particularly sensitive internal data, you will 
 
 Note that the Intune MAM features mentioned previously can also force authentication at an app level even if the app itself does not require authentication as a part of Intune's Mobile Application management (MAM) features. This allows administrators to add an additional validation in place before entering an app that may be accessing data.  In addition, products like [Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management) particularly in combination with [Azure AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) can also be used to ensure that only authorized users can access sensitive data. See the article on [preventing, detecting, and remediating security issues](./detect-security-threats.md) for more details.
 
-##Additional Security Topics
+## Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)
 - [Encrypt your local app data](./data-encryption.md)
 - [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](./authentication.md)

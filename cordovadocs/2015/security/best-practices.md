@@ -6,7 +6,7 @@ ms.author: "jmatthiesen"
 ---
 
 
-#Cordova platform security features
+# Cordova platform security features
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate. A forced lockdown approach can block critical scenarios and thus tends to have undesired results.
 
 For the most part you should apply the same [best practices to your code as you do for web apps](https://code.google.com/archive/p/browsersec/wikis/Main.wiki). However, given the increased capabilities Cordova apps are afforded, it is important to limit your risk as much as possible. This document will outline some of the security features that exist in Cordova and some general best practices for improving the overall security of your app beyond what you may typically think about for web apps. 
@@ -22,7 +22,7 @@ You should **absolutely not use Cordova versions < 4.3.1** as your app will be r
 
 Read on for some additional guidance and recommendations and see the **[Apache Cordova Security Guide](https://cordova.apache.org/docs/en/6.0.0/guide/appdev/security/index.html)** on Apache's site for additional tips.
 
-##Use Crosswalk and Cordova 5+
+## Use Crosswalk and Cordova 5+
 As outlined above, Cordova 5 and the Crosswalk WebView can significantly improve the security of your app on Android particularly given the device fragmentation issues that exist today. Simply adding "cordova-plugin-crosswalk-webview" to your project when using Cordova 5+ enables these features. To add it to your project:
 
 1. In Visual Studio, simply click "Add" on the **Crosswalk Webview Engine** plugin in the **config.xml designer.**
@@ -42,7 +42,7 @@ Note that Crosswalk 14 can cause a crash when using Web Crypto and Crosswalk 16 
 
 You should only add this preference if you encounter issues as it disables useful features like "Shared Mode".
 
-##Use a strict Content Security Policy
+## Use a strict Content Security Policy
 By default, simply adding a CSP declaration to an HTML page locks it down very tightly. By default, applying a CSP **disables both eval() and inline script** and only allows access to JavaScript and CSS files from the **same origin as the HTML page**. Typically for Cordova apps this means only **local content** and as a result, CDN hosted content typically cannot be referenced.  Breaking these down in terms of risk:
 
 1. **Inline script** for JavaScript content, though extremely handy for testing and development, is one of the largest risks for attacks. When inline script is allowed, all it takes is one unescaped input pumped to innerHTML to allow a user to run any arbitrary JavaScript code. Note the inline script restriction also applies to **onload** and similar HTML attributes for the exact same reason. For example, imagine textInput in this code game from an input element in HTML:
@@ -79,7 +79,7 @@ The default CSP policy in Visual Studio and Cordova templates is a solid startin
 
 See the **[Cordova whitelist and Content Security Policy guide](whitelists.md)** for additional details on configuring a CSP policy to meet your needs.
 
-##Manage your whitelists
+## Manage your whitelists
 When using Cordova 5+, you will need to install a whitelist plugin to enable access to external network resources on Android. iOS and Windows 10 also supports the features in the whitelist plugin but as of 6.0.0 they are provided by the iOS platform itself. Regardless, the new whitelist plugin that is pre-installed in new Cordova projects either created from the CLI or Visual Studio actually introduce three separate elements designed to enable more discrete control that was possible in the past.
 
 The **access** element from previous versions of Cordova returns but only controls where your app can make XHR requests or access other external content from a web page for Android and iOS. It no longer controls whether you can navigate to a different domain (such as hosted content). A new **allow-navigation** element has been added that then enables you to specify where the app can navigate instead. Finally, a new **allow-intent** element has been introduced specifically designed to control Android intents.
@@ -102,7 +102,7 @@ In general it is best to trim access down to only those URIs you actually need t
 
 Note that there are some nuances on how these whitelist work and both Windows Phone 8.0 and Windows / Windows Phone 8.1 do not support all of these elements. See the **[Cordova whitelist and Content Security Policy guide](whitelists.md)** for additional details.
 
-##When in doubt, InAppBrowser
+## When in doubt, InAppBrowser
 If you must include content from an external source that you do not have complete and total control over, **use the InAppBrowser plugin** and host the content there. This plugin places content in a separate webview without access to Cordova interfaces and therefore significantly reduces the risk to your app and its data. It's easy to setup and replaces **window.open** with a secure implementation.
 
 1. In Visual Studio, simply click "Add" on the **InAppBrowser** plugin in the **config.xml designer.**
@@ -118,7 +118,7 @@ You can now open pages not in the allow-navigation whitelist in a sandboxed webv
 window.open("http://www.bing.com", "_self");
 ```
 
-##Use "Local Mode" for Windows 10
+## Use "Local Mode" for Windows 10
 Windows 10 support in the Cordova Windows platform resolves many of the differences that existed between the Windows 8.0/8.1 platform and Android and iOS. In addition, it includes a "local mode" that improves security. The mode only allows navigation to pages hosed within the app, disables inline script, and only allows JavaScript and CSS references from within the app.
 
 One often missed feature that the Windows platform for Cordova has is the ability to call any JavaScript enabled [Windows API](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) from your Cordova app without a plugin. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec. Putting the app in "local mode" reduces risk given the number of APIs your app has access to by enforcing a base set of CSP rules at a OS level rather than relying exclusively on a CSP meta tag. The store submission process for the Windows Store does reject apps using certain "capabilities" when running in the Cordova default "remote mode" (though none of these capabilities are used in core Cordova plugins). These restrictions are lifted completely when running in local mode allowing you full access to Windows APIs.
@@ -134,7 +134,7 @@ The WindowsDefaultUriPrefix preference flips Cordova into "local mode" instead o
 
 See the **[Cordova Windows 10 platform documentation](http://cordova.apache.org/docs/en/latest/guide/platforms/win8/win10-support.html)** for additional details on the difference along with the additional capabilities that are enabled when submitting to the public Windows Store.
 
-##Consider Intune MAM features
+## Consider Intune MAM features
 [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) is a [mobile application management](https://en.wikipedia.org/wiki/Mobile_application_management) (MAM) and [mobile device management](https://en.wikipedia.org/wiki/Mobile_device_management) (MDM) platform that supports Android, iOS, and Windows devices. Intune's MAM capabilities can be used without managing devices which means it can be used in combination with existing MDM solutions like Airwatch and Mobile Iron. Currently it is targeted at Active Directory authorized apps and thus is most applicable to enterprise focused scenarios. It provides the ability to enforce policies at the **app level** including encryption of all local data, disabling cut-copy-paste, and more. A Cordova plugin for Android and iOS that is a part of Intune's App SDK enables more nuanced control that is typically availalbe from other MAM solutions. As a result it fundamentally improves the security of Cordova as an overall platform.
 
 Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy. 
@@ -161,7 +161,7 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
 
 See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
 
-##Additional Security Topics
+## Additional Security Topics
 - [Encrypt your local app data](data-encryption.md)
 - [Learn about securely transmitting data](transmit-data-securely.md)
 - [Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova](authentication.md)

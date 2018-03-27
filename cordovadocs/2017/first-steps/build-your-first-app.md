@@ -28,19 +28,19 @@ The application displays current weather conditions based on the current device 
 
 ## <a id="create-project"></a>Create An Apache Cordova Project
 
-1.	Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
-2.	In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears there, select **Blank App (Apache Cordova)** as shown in the figure:
+1. Open Visual Studio and create a new project by opening the **File** menu, select **New** then **Project**; you can also use the key combination: **Ctrl**+**Shift**+**N**.
+2. In the **New Project** dialog, open the list of installed templates, and expand the **JavaScript** option. In the list of templates that appears there, select **Blank App (Apache Cordova)** as shown in the figure:
 
-	![Visual Studio: New JavaScript Project](media/vs-taco-2017-first-app/figure-02.png)
+   ![Visual Studio: New JavaScript Project](media/vs-taco-2017-first-app/figure-02.png)
 
-	> [!NOTE]
-	> If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
+   > [!NOTE]
+   > If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
+   > 
+   > ![Visual Studio: New TypeScript Project](media/vs-taco-2017-first-app/figure-03.png)
 
-	> ![Visual Studio: New TypeScript Project](media/vs-taco-2017-first-app/figure-03.png)
+3. Name the project **WeatherApp**, specify a target folder, and then click the **OK** button to create the project.
 
-3.	Name the project **WeatherApp**, specify a target folder, and then click the **OK** button to create the project.
-
-	During the project creation process, Visual Studio creates a **Solution** for the project then uses the Cordova command line interface (CLI) and other tools to create the Cordova application project folder structure, add platforms to the project (Android, iOS, and Windows), and populates the project's web application with default content from the template.
+   During the project creation process, Visual Studio creates a **Solution** for the project then uses the Cordova command line interface (CLI) and other tools to create the Cordova application project folder structure, add platforms to the project (Android, iOS, and Windows), and populates the project's web application with default content from the template.
 
 At this point, you've created a complete Apache Cordova project and you're ready to start coding.
 
@@ -480,23 +480,23 @@ Now we'll add the function that responds to the **Find Weather** button's `click
 
 Now that the app has the code it needs to retrieve weather conditions, let's run it, but this time use a device emulator.
 
-1.	In the list of Android emulators, choose the one of the **Google Emulator** options (Phone or Tablet). Visual Studio will build the mobile app, launch the selected emulator, then deploy the app in the emulator.
+1. In the list of Android emulators, choose the one of the **Google Emulator** options (Phone or Tablet). Visual Studio will build the mobile app, launch the selected emulator, then deploy the app in the emulator.
 
-	![Android Target Options](media/vs-taco-2017-first-app/figure-21.png)
+   ![Android Target Options](media/vs-taco-2017-first-app/figure-21.png)
 
-    > [!NOTE]
-    > Depending on your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe) and retry launching the emulator:
+   > [!NOTE]
+   > Depending on your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe) and retry launching the emulator:
+   > 
+   > ![Android Emulator Error](media/vs-taco-2017-first-app/figure-22.png)
 
-    > ![Android Emulator Error](media/vs-taco-2017-first-app/figure-22.png)
+2. In the Android emulator, type a valid United States zip code into the edit box (for example: 44313), and then press the **Find Weather** button. Current weather data for target zip code will appear on the page.
 
-2.	In the Android emulator, type a valid United States zip code into the edit box (for example: 44313), and then press the **Find Weather** button. Current weather data for target zip code will appear on the page.
+   ![Android Emulator Running the Weather App](media/vs-taco-2017-first-app/figure-23.png)
 
-    ![Android Emulator Running the Weather App](media/vs-taco-2017-first-app/figure-23.png)
+   The app we've built is completely cross platform, it should run anywhere. If you have a little extra time, run this app in a Windows Phone emulator.
 
-    The app we've built is completely cross platform, it should run anywhere. If you have a little extra time, run this app in a Windows Phone emulator.
-
-    > [!NOTE]
-    > You should test your app on as many physical devices (running on as many Operating System versions) as you can. Emulators and Simulators often behave different than a real device on certain circumstances and respond at different speeds. For example, an app may work in the simulator without a problem, but it may fail on a real device, or it can run faster on the device compared with an emulator. More information [here](https://cordova.apache.org/docs/en/latest/guide/next/index.html).
+   > [!NOTE]
+   > You should test your app on as many physical devices (running on as many Operating System versions) as you can. Emulators and Simulators often behave different than a real device on certain circumstances and respond at different speeds. For example, an app may work in the simulator without a problem, but it may fail on a real device, or it can run faster on the device compared with an emulator. More information [here](https://cordova.apache.org/docs/en/latest/guide/next/index.html).
 
 ## <a id="find-fix"></a>Find and Fix problems
 

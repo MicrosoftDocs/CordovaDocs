@@ -12,7 +12,7 @@
      ms.date="03/08/2016"
      ms.author="rmpablos"/>
 
-#**Update 8 - Visual Studio Tools for Apache Cordova**
+# <strong>Update 8 - Visual Studio Tools for Apache Cordova</strong>
 Visual Studio TACO Update 8 corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60321.1 and is included with Visual Studio 2015 Update 2.
 
 ## Setup Instructions

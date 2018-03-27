@@ -155,4 +155,4 @@ Instead of overriding the host name, you may instead use the IP address of your 
 
     ![Using an IP address to configure VS](media/host-a-mac-in-the-cloud/IC816242.png)
 
-  That’s it. You are finished configuring the agent!
+   That’s it. You are finished configuring the agent!

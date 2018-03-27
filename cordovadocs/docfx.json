@@ -39,21 +39,26 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "uhfHeaderId": "MSDocsHeader-VisualStudio",
-            "breadcrumb_path": "/visualstudio/cross-platform/tools-for-cordova/_breadcrumb/toc.json",
-            "searchScope": ["Cordova"],
-            "titleSuffix": "Cordova", 
-            "author": "",
-            "ms.author": "",
-            "ms.date": "02/28/2017",
-            "ms.topic": "article",
-            "audience": "developer",
-            "ms.reviewer": "",
-            "ms.prod": "visual-studio-dev15",
-            "ms.technology": "cordova",
-            "ms.devlang": "javascript",
-            "ms.tgt_pltfrm": "mobile-multiple",
-            "contributors_to_exclude": ["conceptdev","meganbradley"]
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
+      "breadcrumb_path": "/visualstudio/cross-platform/tools-for-cordova/_breadcrumb/toc.json",
+      "searchScope": [
+        "Cordova"
+      ],
+      "titleSuffix": "Cordova",
+      "author": "",
+      "ms.author": "",
+      "ms.date": "02/28/2017",
+      "ms.topic": "article",
+      "audience": "developer",
+      "ms.reviewer": "",
+      "ms.prod": "visual-studio-dev15",
+      "ms.technology": "cordova",
+      "ms.devlang": "javascript",
+      "ms.tgt_pltfrm": "mobile-multiple",
+      "contributors_to_exclude": [
+        "conceptdev",
+        "meganbradley"
+      ]
     },
     "fileMetadata": {},
     "template": [],
@@ -67,6 +72,7 @@
         "dest": "2017",
         "moniker_range": "toolsforcordova-2017"
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }

@@ -13,7 +13,7 @@ While working on your Cordova project, you might want download and use a JavaScr
 
 In this article, we'll walk through how to use Bower directly from a command line and from within the Visual Studio Tools for Apache Cordova.
 
-##<a name="cmdLine"></a>How do I  add libraries to my Cordova project using the Bower command line?
+## <a name="cmdLine"></a>How do I  add libraries to my Cordova project using the Bower command line?
 To use Bower from the command line, you'll need to install Node.js from [nodejs.org](https://nodejs.org/). Then you'll use the Node Package Manager (NPM), included with Node.js, to install bower:
 
 `npm install -g bower`
@@ -55,7 +55,7 @@ After you use the command above, you could get more information about a package,
 
 Once you find a package and version combination that you like, add it to your bower.json file using the `bower install` command described earlier.
 
-##<a name="TACO"></a>How do I add libraries to my Cordova project in the Visual Studio Tools for Apache Cordova?
+## <a name="TACO"></a>How do I add libraries to my Cordova project in the Visual Studio Tools for Apache Cordova?
 In Visual Studio, support for Bower is built-in; if a bower.json file is included in a project, the tools recognize that Bower is being used, and will automatically download dependencies.
 
 To use Bower to download libraries into a new project, add a new bower.json file to your project:
@@ -90,7 +90,7 @@ When entering a version number, IntelliSense also suggests the latest stable ver
 
 ![Visual Studio IntelliSense with suggestions for Bower package version numbers](media/tutorial-using-bower/bower-package-version-intellisense.png)
 
-##<a name="useFile"></a>How do I use a file in my Cordova project, after it's installed from Bower?
+## <a name="useFile"></a>How do I use a file in my Cordova project, after it's installed from Bower?
 By default, any packages downloaded from Bower will be saved to disk in a bower_components folder located next to the bower.json file. In a typical Cordova project, this means you'll have a project folder that looks like the following:
 
 ```
@@ -107,7 +107,7 @@ config.xml
 
 If you need to deploy the files from Bower as part of your application, then you'll need to copy these files directly from bower_components into your www folder. If you want to pick the specific files that get deployed to your app, this can be done manually or by using a tool like a task runner. If you want to deploy all of the bower_components with your app, then you can use the steps in the following section to simplify your project layout.
 
-##<a name="downloadToWww"></a>How do I set up Bower to deploy all of my dependencies with my Cordova application?
+## <a name="downloadToWww"></a>How do I set up Bower to deploy all of my dependencies with my Cordova application?
 Bower packages often come with many files you don't need to include as part of your built application. However, if you don't mind deploying these files with your app, you can easily set up Bower to add all packages directly into your project's `www` folder so that they're deployed. To do this, add a new file called .bowerrc to the root of your project:
 
 1. Right-click on your project and choose the **Add**->**New Item** menu.

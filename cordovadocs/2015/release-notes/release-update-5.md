@@ -6,7 +6,7 @@ ms.date: "12/14/2014"
 ms.author: "jmatthiesen"
 ---
 
-#**Update 5 - Visual Studio Tools for Apache Cordova**
+# <strong>Update 5 - Visual Studio Tools for Apache Cordova</strong>
 Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14.060106.1. [Read more on our developer blog.](http://microsoft.github.io/vstacoblog/2016/01/13/annoucing-update-5.html)
 
 ## Setup Instructions
@@ -41,14 +41,14 @@ Additionally, you can directly specify the version of Cordova you want to use fr
 
 Visual Studio tracks the modified date of each file to incorporate changes made from the CLI when VS is closed.
 
-###Use MSBuild to build from command line
+### Use MSBuild to build from command line
 
 In cases when you want to integrate cordova projects with existing solutions and build systems based on msbuild, we have reviewed the MSBuild properties and set default values. So know you can build cordova project from command line without the need to specify additional properties. This will help to build cordova solutions using TFS 2013 or any other build system.
 
-###iOS build updates
+### iOS build updates
 Support was added for the iOS 6s simulator, and the incremental build feature was improved.
 
-##Bugs Solved
+## Bugs Solved
 
 ### Ripple no longer breaks if you are running Visual Studio as admin.
 
@@ -84,7 +84,7 @@ In previous versions, our build uses prepared and compiled instead of calling bu
 
 Previously, the installed plugins view adds a new instance of the same plugin in the Installed list for every failed attempt to add the plugin.
 
-##Known Issues
+## Known Issues
 
 ### Node.JS 5.0 build fail
 

@@ -37,46 +37,46 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
 2. Open the Jenkins Dashboard in a web browser (typically at http://localhost:8080/ if running locally)
 
 3. Install the NodeJS Plugin
-	1. Click Manage Jenkins > Manage Plugins
+   1. Click Manage Jenkins > Manage Plugins
 
-	3. Click the "Available" tab
+   2. Click the "Available" tab
 
-	3. Filter to "NodeJS". Note that if you do not see it, it may already be installed.
+   3. Filter to "NodeJS". Note that if you do not see it, it may already be installed.
 
-	4. Check "Install" checkbox and click "Install without restart"
+   4. Check "Install" checkbox and click "Install without restart"
 
-	![NodeJS Plugin](media/jenkins/jenkins-0.png)
+      ![NodeJS Plugin](media/jenkins/jenkins-0.png)
 
 4. Configure the NodeJS Plugin
-	1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
+   1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
 
-	2. Click on Manage Jenkins > Configure System
+   2. Click on Manage Jenkins > Configure System
 
-	3. Under NodeJS, add installation locations for Windows and OSX. By default Windows will install node in "C:\Program Files (x86)\nodejs" while OSX keeps it under "/usr/local" (technically /usr/local/bin). You can ignore the warning that appears about "\usr\local" not existing on Windows. Set these based on your server's configuration.
+   3. Under NodeJS, add installation locations for Windows and OSX. By default Windows will install node in "C:\Program Files (x86)\nodejs" while OSX keeps it under "/usr/local" (technically /usr/local/bin). You can ignore the warning that appears about "\usr\local" not existing on Windows. Set these based on your server's configuration.
 
-	4. Click "Save"
+   4. Click "Save"
 
-	![NodeJS Plugin](media/jenkins/jenkins-0-1.png)
+      ![NodeJS Plugin](media/jenkins/jenkins-0-1.png)
 
 ### Additional Setup for iOS Builds
 For iOS, we will be taking advantage of an [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and a [slave agent](http://go.microsoft.com/fwlink/?LinkID=613696) on OSX. Here's a basic walkthrough for configuring these.  
 
 1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
 
-3. Install the EnvInject Plugin
-	1. Click Manage Jenkins > Manage Plugins
+2. Install the EnvInject Plugin
+   1. Click Manage Jenkins > Manage Plugins
 
-	3. Click the "Available" tab
+   2. Click the "Available" tab
 
-	3. Filter to "EnvInject". Note that if you do not see it, it may already be installed.
+   3. Filter to "EnvInject". Note that if you do not see it, it may already be installed.
 
-	4. Check "Install" checkbox and click "Install without restart"
+   4. Check "Install" checkbox and click "Install without restart"
 
-	![EnvInject Plugin](media/jenkins/jenkins-1.png)
+      ![EnvInject Plugin](media/jenkins/jenkins-1.png)
 
-	We will use the EnvInject plugin in our Jenkins project build config for OSX later in this tutorial.
+      We will use the EnvInject plugin in our Jenkins project build config for OSX later in this tutorial.
 
-4. Prep OSX for Use with a Slave Agent
+3. Prep OSX for Use with a Slave Agent
 
 	1. First, if you have not already, [install the Java SE JDK](http://go.microsoft.com/fwlink/?LinkID=613705) on your OSX build server as the agent will use it. (The JRE alone is not sufficient.)
 
@@ -90,41 +90,41 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 	![Enable SSH](media/jenkins/jenkins-2.png)
 
-5. Configure an OSX Slave Agent
+4. Configure an OSX Slave Agent
 
 	Next we need to setup our OSX Slave agent. The following is a brief summary. See [here](http://go.microsoft.com/fwlink/?LinkID=613696) for detailed instructions.
 
-	1. Go to the Jenkins Dashboard again
+   1. Go to the Jenkins Dashboard again
 
-	2. Click Manage Jenkins > Manage Nodes > New Node
+   2. Click Manage Jenkins > Manage Nodes > New Node
 
-	5. Select "Dumb Slave" and give it this agent a name
+   3. Select "Dumb Slave" and give it this agent a name
 
-	6. For "Launch Method," choose "Launch slave agents on Unix machines via SSH" and enter the login information based on your Remote Login settings above.
+   4. For "Launch Method," choose "Launch slave agents on Unix machines via SSH" and enter the login information based on your Remote Login settings above.
 
-	7. Add two Labels of "cordova" and "ios". We will use these labels to route builds to the correct server later in this tutorial.
+   5. Add two Labels of "cordova" and "ios". We will use these labels to route builds to the correct server later in this tutorial.
 
-	8. Click "Save" when done.
+   6. Click "Save" when done.
 
-	![Slave Agent Config](media/jenkins/jenkins-3.png)
+      ![Slave Agent Config](media/jenkins/jenkins-3.png)
 
-	Jenkins will now use SSH to start up the slave agent on OSX as needed.
+      Jenkins will now use SSH to start up the slave agent on OSX as needed.
 
-6. (Optional) Add Label to Windows Build Node(s)
+5. (Optional) Add Label to Windows Build Node(s)
 
 	You should also add labels to any build nodes (including Master) if you do not intend to install all of the Cordova dependencies on each of your build servers.
 
-	1. Go to the Jenkins Dashboard again
+   1. Go to the Jenkins Dashboard again
 
-	2. Click Manage Jenkins > Manage Nodes
+   2. Click Manage Jenkins > Manage Nodes
 
-	3. Click on the Configure Icon for one of your Windows nodes like "master"
+   3. Click on the Configure Icon for one of your Windows nodes like "master"
 
-	![Slave Agent Config](media/jenkins/jenkins-4.png)
+      ![Slave Agent Config](media/jenkins/jenkins-4.png)
 
-	4. Enter a label of "cordova" and "windows" and click "Save."
+   4. Enter a label of "cordova" and "windows" and click "Save."
 
-	![Slave Agent Label Config](media/jenkins/jenkins-5.png)
+      ![Slave Agent Label Config](media/jenkins/jenkins-5.png)
 
 ## Environment Variables
 Next you will need to set the following environment variables if they have not already been configured in your build server environment. These can either be set as system variables on your build server, by checking the "Environment variables" option when [managing your build nodes](http://go.microsoft.com/fwlink/?LinkID=613696), or using the [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and checking the "Inject environment variables to the build process" option in your project build config.
@@ -168,7 +168,7 @@ Next you will need to set the following environment variables if they have not a
 <td align="left"><strong>GRADLE_USER_HOME</strong></td>
 <td align="left">Optional</td>
 <td align="left">Overrides the default location Gradle build system dependencies should be installed when building Android using Cordova 5.0.0+</td>
-<td align="left">If not specified, uses %HOME%\.gradle on Windows or ~/.gradle on OSX</td>
+<td align="left">If not specified, uses %HOME%.gradle on Windows or ~/.gradle on OSX</td>
 </tr>
 <tr>
 <td align="left"><strong>CORDOVA_CACHE</strong></td>

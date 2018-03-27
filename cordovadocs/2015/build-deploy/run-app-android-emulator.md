@@ -76,7 +76,7 @@ Before you run your app on the Google Android emulator in Visual Studio, use the
 
     Visual Studio deploys the app to the Android emulator that is currently running. If no emulator is running, Visual Studio starts the last emulator that was created using the AVD Manager, and then deploys the app.
 
-  If you want to debug your app against Android versions 4.1.2-4.3, see the information about the jsHybugger plugin in the article [Debug Your App Built with Visual Studio Tools for Apache Cordova](../build-deploy/debug-using-visual-studio.md).
+   If you want to debug your app against Android versions 4.1.2-4.3, see the information about the jsHybugger plugin in the article [Debug Your App Built with Visual Studio Tools for Apache Cordova](../build-deploy/debug-using-visual-studio.md).
 
 ### Troubleshooting? Let's fix it
 
@@ -195,9 +195,9 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 3. Make sure that adb (Android Debug Bridge) sees the device using adb.exe.
 
-    1. Open a VisualStudio developer prompt in admin mode.
+   1. Open a VisualStudio developer prompt in admin mode.
 
-    2. Type the following command:
+   2. Type the following command:
 
       ```
       "%ADT_HOME%\platform-tools\adb.exe" devices
@@ -205,17 +205,17 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
       You should see your device in the list as shown here.
 
-    ![Viewing your device using the Android Debug Bridge](media/run-app-android-emulator/IC816243.png)
+      ![Viewing your device using the Android Debug Bridge](media/run-app-android-emulator/IC816243.png)
 
-3. With your app open in Visual Studio, choose **Android** from the Solution Platforms list. (If you don’t see this option, choose Solution Platforms from the **Add/Remove Buttons** list.)
+4. With your app open in Visual Studio, choose **Android** from the Solution Platforms list. (If you don’t see this option, choose Solution Platforms from the **Add/Remove Buttons** list.)
 
-4. In the device list, choose **Device**.
+5. In the device list, choose **Device**.
 
     ![Deploying to an Android device](media/run-app-android-emulator/IC740309.png )
 
-5. Press F5 to start the app, or Shift+F5 to start the app without debugging.
+6. Press F5 to start the app, or Shift+F5 to start the app without debugging.
 
-6. When prompted, choose **Allow USB Debugging**.
+7. When prompted, choose **Allow USB Debugging**.
 
 ![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
 

@@ -6,7 +6,7 @@ ms.date: "09/10/2015"
 ms.author: "jmatthiesen"
 ---
 
-#Workaround for Missing Execute Bit for Builds on OSX After Checking in Platforms Folder from Windows
+# Workaround for Missing Execute Bit for Builds on OSX After Checking in Platforms Folder from Windows
 
 License: MIT
 
@@ -22,12 +22,12 @@ Command failed with exit code EACCES
 
 To resolve this problem you have two options:
 
-1.  Don't check in or copy the contents of the **platforms** folders. This is by far the path of least resistance.
+1. Don't check in or copy the contents of the **platforms** folders. This is by far the path of least resistance.
 
-2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a simple script to set the execute bits on these files and include it as a part of your build process.
-	1. Download [hook-execute-bit-fix.js](https://github.com/Microsoft/cordova-docs/tree/master/articles/tips-and-workarounds/ios/osx-set-execute) and drop it in a **hooks** folder in your project root.
+2. If you absolutely must check in the contents of the platforms folder from Windows, you can craft a simple script to set the execute bits on these files and include it as a part of your build process.
+   1. Download [hook-execute-bit-fix.js](https://github.com/Microsoft/cordova-docs/tree/master/articles/tips-and-workarounds/ios/osx-set-execute) and drop it in a **hooks** folder in your project root.
 
-	2. Update config.xml with the following (using right-click->**View Code**):
+   2. Update config.xml with the following (using right-click->**View Code**):
 
 	  ```
 	  <hook type="before_plugin_add" src="hooks/hook-execute-bit-fix.js" />
@@ -35,7 +35,7 @@ To resolve this problem you have two options:
 	  <hook type="before_prepare" src="hooks/hook-execute-bit-fix.js" />
 	  ```
 
-	2. Commit and check these into source control.
+   3. Commit and check these into source control.
 
-	3. Next time you build, run, and add a plugin, the problem should be resolved.
+   4. Next time you build, run, and add a plugin, the problem should be resolved.
 

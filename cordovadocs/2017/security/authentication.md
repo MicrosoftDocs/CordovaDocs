@@ -10,7 +10,7 @@ Security is a very broad topic that covers a number of different aspects of an a
 
 A critical task for application security is authenticating and authorizing users accessing your app and its associated local or remote data. In this article we'll touch on some options that can help get you get auth up and running.
 
-##Azure App Service Auth and Azure Mobile Apps
+## Azure App Service Auth and Azure Mobile Apps
 [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is a suite of services designed to help you build great web and mobile apps. [Azure Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/) are mobile integrated client apps that take advantage of features within the broader Azure App Service including Web Apps and API Apps along with some additional useful features and client libraries.
 
 A core first step in accessing all of these great services, however, is authorizing users both to access the app for the app to then access data in the cloud. Fortunately, the Cordova plugin for Azure Mobile Apps has an unified authentication interface that currently supports authenticating against Azure Active Directory, Facebook, Google, Twitter, and Microsoft accounts. The unified interface means that you're abstracted from downstream changes and can expect additional provider options and features in the future to streamline things even more.
@@ -29,7 +29,7 @@ You can add the Azure Mobile Apps plugin your app as follows:
 
 Note that you can also get basic information about the user logged in by making a REST call to the **/.auth/me** service endpoint and passing the appropriate auth token. See the **[Azure Mobile Apps authentication documentation](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/)** and the article on **[securely transmitting data](./transmit-data-securely.md)** for additional details on token passing.
 
-###Try the Azure connected services sample app
+### Try the Azure connected services sample app
 
 To get the sample, find the
 [Azure connected services sample](https://github.com/Microsoft/cordova-samples/tree/master/azure-connected-services) on GitHub.
@@ -61,7 +61,7 @@ Then follow these steps:
     registerForPushNotifications();
     ```
 
-##Active Directory Authentication Library for Cordova
+## Active Directory Authentication Library for Cordova
 Active Directory (AD) provides an industry leading identity server both in the cloud and on-premises through Azure Active Directory (AAD) and Active Directory Federation Services (ADFS). You can securely authenticate, authorize, access information in AD, and take advantage of device level single sign on and multi-factor authentication (MFA) capabilities through the powerful Active Directory Authentication Library (ADAL) available for all major native and cross-platform mobile and server side technologies.
 
 For Cordova this functionality is provided via the ADAL plugin which can be used both with AAD and on-premises ADFS v3 and up. Note that the ADAL plugin is activley maintained but currently in **preview.** It uses the Android, iOS, and .NET ADAL native libraries under the covers and therefore persists auth tokens in a secure cache that you can then query to pass to downstream services.
@@ -101,12 +101,12 @@ client.login("aad", {"access_token": tokenFromADAL})
 ```
 -->
 
-##JavaScript & 3rd Party Options
+## JavaScript & 3rd Party Options
 Cordova also can take advantage of pure JavaScript based solutions to authenticate against Oauth providers thanks to the **InAppBrowser** plugin. See [this article](http://phonegap-tips.com/articles/google-api-oauth-with-phonegaps-inappbrowser.html) for an excellent overview on the general approach JavaScript based solutions take. These options can be useful when client libraries are not available. The **[ngCordovaOauth](https://github.com/nraboy/ng-cordova-oauth)** library encapsulates this approach to allow you to target an impressive array of different Oauth providors including on-prem ADFS. However, in general we recommend using provider Cordova plugins, the ADAL plugin, or Azure when security is of paramount concern.
 
 If neither of the above options meet your needs, there are a number of 3rd party solutions that may be of use. First note that many Single Sign-On (SSO) solutions including [Auth0](https://auth0.com/) actually explictly support PhoneGap/Cordova in their JavaScript client libraries or related Cordova plugins. If you already have a SSO provider, be sure to check with them to see what best practices they provide for Cordova apps.
 
-##Additional Security Topics
+## Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)
 - [Encrypt your local app data](./data-encryption.md)
 - [Learn about securely transmitting data](./transmit-data-securely.md)

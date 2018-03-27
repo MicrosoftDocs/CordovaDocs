@@ -13,7 +13,7 @@ ms.date: "01/26/2016"
 ms.author: "sureshja"
 ---
 
-#Add Crash Analytics to your Cordova app
+# Add Crash Analytics to your Cordova app
 
 Please follow the links given below to learn more about HockeyApp and using it your apps:
 
