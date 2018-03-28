@@ -58,7 +58,10 @@
       "contributors_to_exclude": [
         "conceptdev",
         "meganbradley"
-      ]
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/CordovaDocs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/"
     },
     "fileMetadata": {},
     "template": [],
