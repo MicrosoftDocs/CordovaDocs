@@ -167,29 +167,9 @@ Other versions:
 ## Consider Intune MAM features to force encryption
 [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) is a [mobile application management](https://en.wikipedia.org/wiki/Mobile_application_management) (MAM) and [mobile device management](https://en.wikipedia.org/wiki/Mobile_device_management) (MDM) platform that supports Android, iOS, and Windows devices. Intune's MAM capabilities can be used without managing devices which means it can be used in combination with existing MDM solutions like Airwatch and Mobile Iron. Currently it is targeted at Active Directory authorized apps and thus is most applicable to enterprise focused scenarios. It provides the ability to enforce policies at the **app level** including encryption of all local data. It's therefore a low friction way to increase your security.
 
-Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy.
+Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates as of May 1, 2018. Any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality with respect to Intune policy and management. Intune plans to continue supporting apps built with Cordova. However, to continue to function with Intune policy and management, we recommend that you use the Intune App Wrapping Tool to wrap the apps for each respective platform. After wrapping, you can deploy your application to your end users through Intune as per normal. 
 
-1. In Visual Studio, when using Tools for Apache Cordova **Update 9 and up**, double click config.xml to go into config.xml designer, click on the **Plugins** tab, then **Custom**, select **ID** as the method to retrieve the plugin, and enter **cordova-plugin-ms-intune-mam**.
-
-    For earlier versions of Tools for Apache Cordova, right click on config.xml, select View Code, and then add one of the following. The plugin will be added on next build.
-
-    ```
-    <plugin name="cordova-plugin-ms-intune-mam" spec="~1.0.0" />
-    ```
-
-    ...or for Cordova < 5.1.1...
-
-    ```
-    <vs:plugin name="cordova-plugin-ms-intune-mam" version="1.0.0" />
-    ```
-
-2. When using the command line or Visual Studio Code, you can add the plugin using the Cordova CLI as follows:
-
-    ```
-    cordova plugin add cordova-plugin-ms-intune-mam --save
-    ```
-
-See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
+See **[Microsoft Intune App Wrapping Tool documentation](https://docs.microsoft.com/en-us/intune/apps-prepare-mobile-application-management)** for more information.
 
 ## Consider native Windows APIs for Windows
 One often missed feature that the Windows platform for Cordova has is the ability to call **any** JavaScript enabled [Windows API](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) from your Cordova app **without a plugin**. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec.
