@@ -65,7 +65,7 @@ When you execute these commands, the Cordova CLI adds entries to the `config.xml
     <description>
         A simple weather application
     </description>
-    <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Visual Studio JS Mobile Tooling</author>
+    <author email="vscordovatools@microsoft.com" href="http://https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017">Visual Studio JS Mobile Tooling</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

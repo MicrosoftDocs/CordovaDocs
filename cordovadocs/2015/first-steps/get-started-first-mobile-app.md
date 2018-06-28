@@ -61,10 +61,10 @@ This table gives you the basic idea of how you might use each one.
   </th>
 </tr>
  <tr>
-   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io//">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won&#39;t use it in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-using-bower/">here</a>.</td>
+   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io//">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won&#39;t use it in this guide, but you can learn more about it <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/using-bower?view=toolsforcordova-2017">here</a>.</td>
  </tr>
  <tr>
-   <td><strong>build.json</strong></td><td>This file contains parameters that Visual Studio uses to build a signed Android package. <br><br>We won&#39;t create one in this guide, but you can learn more about it <a href="https://taco.visualstudio.com/en-us/docs/tutorial-package-publish-readme/">here</a>.</td>
+   <td><strong>build.json</strong></td><td>This file contains parameters that Visual Studio uses to build a signed Android package. <br><br>We won&#39;t create one in this guide, but you can learn more about it <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/publishing/publish-to-a-store?view=toolsforcordova-2017">here</a>.</td>
  </tr>
  <tr>
    <td><strong>config.xml</strong></td><td>Contains the settings of your app. <br><br>We&#39;ll change these settings later in this guide.</td>
@@ -81,13 +81,13 @@ This table gives you the basic idea of how you might use each one.
 
 #### www
 
-The project's `www` folder contains the web application content files for the Cordova application, so most of your development will occur inside this folder.  Here you'll find the web application content that is packaged into a native mobile application by the Cordova SDK. The HTML, JavaScript, and CSS files in this folder will render in the Cordova app the same way they will in a mobile browser, so be sure to optimize the content for the smaller and more limited smartphones and tablets. 
+The project's `www` folder contains the web application content files for the Cordova application, so most of your development will occur inside this folder.  Here you'll find the web application content that is packaged into a native mobile application by the Cordova SDK. The HTML, JavaScript, and CSS files in this folder will render in the Cordova app the same way they will in a mobile browser, so be sure to optimize the content for the smaller and more limited smartphones and tablets.
 
 ![www folder](media/get-started-first-mobile-app/www.png)
 
 The folder's `index.html` file is the main entry point for the web application, it's loaded by default when the Cordova application launches. The folder contains several subfolders that follow a typical web application folder structure:
 
-+ `css` - Stores the web application's Cascading Style Sheet (CSS) files. The `index.css` shown in the folder is the standard .css file included with the default Cordova application template. 
++ `css` - Stores the web application's Cascading Style Sheet (CSS) files. The `index.css` shown in the folder is the standard .css file included with the default Cordova application template.
 + `images` - Stores any image files used by the web application. The `cordova.png` file shown in the folder is the Cordova logo that displays in the center of the application screen in the default Cordova application template.
 + `scripts` - Stores JavaScript files used by the web application. The project's `index.js` file contains the bootstrap code that initializes the Cordova application; it registers callback functions for the Cordova `deviceReady` event. The `platformOverrides.js` file works in conjunction with similar files located in the `merges` folder to enable developers to deliver different code per target platform. See [merges Folder](#merges) for additional information.
 
@@ -103,7 +103,7 @@ For example, any content in the `merges\android` folder is copied to the Android
 
 To help deliver a consistent web application experience in Cordova apps, the default project created by Visual Studio Tools for Apache Cordova includes `platformOverrides.js` files for Android (in `merges\android\scripts\platformOverrides.js`) and Windows (in `merges\windows\scripts\platformOverrides.js`) along with a platform-specific JavaScript library. On Android, it adds a polyfill for `bind()` on older Android devices, and on Windows it adds Microsoft's safeHTML polyfill library. The `merges\ios` folder doesn't include a `platformOverrides.js` file, so there's no platform-specific override, iOS applications get the generic version of the file located in `www\scripts\platformOverriders.js`.
 
-![root files](media/get-started-first-mobile-app/platform-overrides.png) 
+![root files](media/get-started-first-mobile-app/platform-overrides.png)
 
 For additional information on how merges works, see [Using merges to Customize Each Platform](https://cordova.apache.org/docs/en/latest/guide/cli/#using-merges-to-customize-each-platform) in the Cordova documentation.
 
@@ -167,7 +167,7 @@ Apps can be as complicated or as simple as you want them to be. The goal of this
 
 The application uses the [**jQuery**](https://jquery.com/) and [**jQuery Mobile**](https://jquerymobile.com/) libraries to help craft the app's UI and simplify the code. jQuery is a JavaScript library that makes certain tasks easier such as changing the properties of a control or handling its events. jQuery Mobile is a touch-optimized HTML5 UI framework, built on jQuery, designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices. Together, they give us a quick way to style the application without having to do custom CSS work.
 
-Let's add the JQuery and JQuery Mobile NuGet packages to the project. 
+Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 > **Note:** Before starting the following steps, point your browser of choice to [the jQuery Mobile download site](http://jquerymobile.com/download/) to note which version of the jQuery library is compatible with the current shipping release of jQuery Mobile. At the time of this writing, jQuery Mobile version 1.4.5 is compatible with jQuery version 1.8 through 1.11, and version 2.1. In the steps that follow, be sure you install compatible versions of both frameworks. The NuGet Package Manager should deploy compatible versions of dependent libraries, but it's best to make sure first.
 
@@ -191,7 +191,7 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 4. Drag all of the `.css` files and the `images` folder from the project's `Content` folder to `www\css` folder.
 
-    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-css.png)    
+    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-css.png)
 
 3. Add this script reference to the `<body>` tag of your [index.html](#tour-project) file (at the bottom of the body section, where the other JavaScript references are located):
 
@@ -258,7 +258,7 @@ The project's `index.html` is the first page that appears when users run your ap
     #error-msg {
         text-align: center;
         margin-top:  50%;
-        font-weight: bold;    
+        font-weight: bold;
     }
     ```
 1. Open the `www\index.html` file and remove this HTML. It's just a part of the default template that you run out of the box. We won't need it.
@@ -328,22 +328,22 @@ The project's `index.html` is the first page that appears when users run your ap
 
 This is a good time to quickly look at the `index.js` file. This file loads when the user runs the app.  Why? Because the `index.html` page contains this reference to it:
 
-```javascript       
+```javascript
 <script src="scripts/index.js"></script>
 ```
 
 You'll notice a few things about the `index.js` file. First, all the code in that file is enclosed within an *anonymous self-invoking function* (or _Immediately Invoked Function Expression_, or _[IIFE](https://developer.mozilla.org/docs/Glossary/IIFE)_). This is a fancy way of saying that this function executes automatically when the file loads.
 
-```javascript      
+```javascript
 (function () {
     "use strict";
     // all the stuff is in this function.
 })();
 ```
 
-Enclosed in this function, you'll see an event handler that runs when the Cordova device APIs are fully loaded.  
+Enclosed in this function, you'll see an event handler that runs when the Cordova device APIs are fully loaded.
 
-```javascript      
+```javascript
 function onDeviceReady() {
 
     // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
@@ -372,7 +372,7 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 4. Open the `www\scripts\weather.js` file and add the following function. Replace `Your_Key_Here` with the key that you got from [OpenWeatherMap](https://home.openweathermap.org/).
 
-     ```javascript       
+     ```javascript
 
     var OpenWeatherAppKey = "Your_Key_Here";
 
@@ -430,13 +430,13 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 5. Open the `www\index.html` file, and add this reference to the `<body>` of the page (at the bottom of the body section, where the other JavaScript references are located).
 
-    ```html   
+    ```html
     <script src="scripts/weather.js"></script>
     ```
 
     When you're done, your script reference should look something like the following.
 
-    ```html   
+    ```html
     <script src="scripts/jquery-2.2.0.min.js"></script>
     <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
@@ -457,7 +457,7 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
     ```html
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:
     http://api.openweathermap.org https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
-    'unsafe-inline'; media-src *">           
+    'unsafe-inline'; media-src *">
     ```
 
     > **Note:** The Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted web page context. You can read more about it [here](http://content-security-policy.com/).
@@ -471,7 +471,7 @@ Let's run the app, but this time let's use an emulator.
     ![Android Emulator](media/get-started-first-mobile-app/android-emulator.png)
 
    > **Note:** According to your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe):
-   > 
+   >
    > ![Android Emulator Error](media/get-started-first-mobile-app/android-emulator-error.png)
 
 2. In the Android emulator, type a valid United States zip code into the edit box (for example: 33101), and then press the **Get Weather** button.
@@ -536,7 +536,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 
 3. In the `www\scripts\weather.js` file add the following code right after the `showWeatherData` function
 
-     ```javascript       
+     ```javascript
      function getWeatherWithGeoLocation() {
        navigator.geolocation.getCurrentPosition(onGetLocationSuccess, onGetLocationError, { enableHighAccuracy: true });
       $('#error-msg').show();
@@ -562,7 +562,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
     function onGetLocationError(error) {
       $('#error-msg').text('Error getting location');
       $('#get-weather-btn').prop('disabled', false);
-    }  
+    }
 
     ```
 
@@ -578,7 +578,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 
    ```javascript
 
-    function onDeviceReady() {        
+    function onDeviceReady() {
       $('#get-weather-btn').click(getWeatherWithZipCode);
       getWeatherWithGeoLocation();
    };
@@ -587,7 +587,7 @@ Let's add a plugin that gives us access to the device's geolocation system. That
 5. Run the app. When the app starts, the label *Determining your current location ...* appears. After a brief period of time, the weather data for your location appears in the app.
 
    > **Note**: If you use the Apache Ripple emulator, you’ll have to configure it with your location.
-   > 
+   >
    > ![Change Apache Ripple emulator location](media/get-started-first-mobile-app/change-ripple-location.png)
 
 ## <a id="tailor"></a>Tailor the app to a platform
@@ -677,7 +677,7 @@ In some cases, you'll have to tweak the layout of your pages so that they appear
     #error-msg {
         text-align: center;
         margin-top:  50%;
-        font-weight: bold;    
+        font-weight: bold;
     }
 
     .ui-bar-inherit.ui-header.header {
@@ -716,11 +716,11 @@ Here are a few ideas about what you can explore next on your journey to build mo
 
 **Connect to Existing Data**
 
-Want to pull in data from sites like [StackExchange](https://api.stackexchange.com/) or [Github](https://developer.github.com/v3/)? How about your own database? 
+Want to pull in data from sites like [StackExchange](https://api.stackexchange.com/) or [Github](https://developer.github.com/v3/)? How about your own database?
 
 Just like any browser, your Cordova app supports HTTP requests and Ajax calls. However, Cordova adds additional security to filter which scripts, CSS files, map files and data files can be pulled into your app.
 
-* The [Cordova Whitelist Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/) (which is automatically added into every project) controls which URLs the WebView itself can be navigated to, can open, or can make network requests from when loading the app. 
+* The [Cordova Whitelist Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/) (which is automatically added into every project) controls which URLs the WebView itself can be navigated to, can open, or can make network requests from when loading the app.
 * A Content Security Policy contained in a tag on index.html <meta http-equiv="Content-Security-Policy" ... /> controls which network requests (images, XHRs, etc) are allowed to be made after your app has loaded, via webview directly.
 
 Additionally, your server--or servers that you pull from--may have additional security that restricts your app from being able to pull resources into your app.
@@ -729,7 +729,7 @@ Additionally, your server--or servers that you pull from--may have additional se
 
 **Easy backend set up with Azure**
 
-Get straight to building by hooking your app up to Azure. Azure offers a Mobile App service that utilizes Easy Tables to get your app connected to a SQL database with only a couple lines of javascript. [This helpful guide](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) takes you through the process of creating a mobile app backend, and ends with the option of creating a quickstart Cordova app, or adding connections to an existing app. 
+Get straight to building by hooking your app up to Azure. Azure offers a Mobile App service that utilizes Easy Tables to get your app connected to a SQL database with only a couple lines of javascript. [This helpful guide](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) takes you through the process of creating a mobile app backend, and ends with the option of creating a quickstart Cordova app, or adding connections to an existing app.
 
 **Explore available Cordova plugins**
 

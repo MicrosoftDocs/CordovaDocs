@@ -7,7 +7,7 @@ ms.author: "jmatthiesen"
 ---
 
 # Get started with Ionic apps in Visual Studio <a name="video"></a>
-[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using Cordova. You can use Visual Studio 2015 to easily create and debug cross-platform Ionic apps. 
+[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using Cordova. You can use Visual Studio 2015 to easily create and debug cross-platform Ionic apps.
 
 > If you want to use Ionic 2 (still in beta) check out [this blog post](https://blogs.msdn.microsoft.com/rido/2016/05/11/ionic2-and-visual-studio/)
 
@@ -217,7 +217,7 @@ If you have an existing Ionic project or want to run one of the other Ionic samp
 
     * In Visual Studio, choose **File**, **New**, **Project**, **JavaScript**, **Apache Cordova Apps**, **Blank App** and name the new project "blank".
 
-    * Choose **Windows-x86**, **Local Machine** (requires Windows 8.1 or Windows 10) and press F5 to run the app (make sure the app loads correctly). If any issues occur, see [Other issues?](#other).  
+    * Choose **Windows-x86**, **Local Machine** (requires Windows 8.1 or Windows 10) and press F5 to run the app (make sure the app loads correctly). If any issues occur, see [Other issues?](#other).
 
 3. [Install the Ionic CLI](http://ionicframework.com/docs/cli/install.html).
 
@@ -465,8 +465,8 @@ If you have errors running the Blank App template (rather than just the Ionic st
 
 1. In Visual Studio, go to **Tools**, **Options**, **Tools for Apache Cordova** and run the Dependency Checker.
 
-    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](http://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova/#ThirdParty) to install API19 and API22.
+    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty) to install API19 and API22.
 
 2. If you see an error message in the Output window in Visual Studio, use any links provided to try to resolve the issue.
 
-3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](http://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova/#vstac). Otherwise, see [Known Issues](http://taco.visualstudio.com/en-us/docs/known-issues-general/) or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
+3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#vstac). Otherwise or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).

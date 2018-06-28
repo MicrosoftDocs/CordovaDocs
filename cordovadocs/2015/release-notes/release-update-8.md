@@ -13,7 +13,7 @@
      ms.author="rmpablos"/>
 
 # <strong>Update 8 - Visual Studio Tools for Apache Cordova</strong>
-Visual Studio TACO Update 8 corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60321.1 and is included with Visual Studio 2015 Update 2.
+[Visual Studio TACO Update 8](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015) corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60321.1 and is included with Visual Studio 2015 Update 2.
 
 ## Setup Instructions
 This update is installed along with Visual Studio 2015 Update 2. You can also install it directly in Visual Studio 2015 Update 1:
@@ -28,7 +28,7 @@ Update 8.1 includes a fix to a bug where building a Cordova project results in t
 
 Our solution: In the file c:\users\<currentuser>\appdata\roaming\Microsoft\VisualStudio\MDA\vs-npm\2.14.9\etc\npmrc, we change the value of “prefix” to be c:\users\<currentuser>\appdata\roaming\npm, and save the file. Building should now work.
 
-If you have not updated to 8.1, you can manually make this change for your code to work. 
+If you have not updated to 8.1, you can manually make this change for your code to work.
 
 ## New Features:
 
@@ -38,7 +38,7 @@ The Cordova Plugin Registry, or CPR, is now offline. This means projects targett
 
 This transition was [announced](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) a long time ago - almost a year at this point - but was only just recently taken down.
 
-If you are running into this issue, the workarounds are to either [upgrade to a newer CLI version](http://taco.visualstudio.com/en-us/docs/change-cli-version/) or [add a plugin through the custom tab](http://taco.visualstudio.com/en-us/docs/manage-plugins/#Custom).
+If you are running into this issue, the workarounds are to either [upgrade to a newer CLI version](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015) or [add a plugin through the custom tab](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/take-further/using-plugins?view=toolsforcordova-2017#Custom).
 
 ![TACO Options Updated](media/release-update-8/npm-sandboxing-options.png)
 
