@@ -108,7 +108,7 @@ At times, the custom plugins in the Cordova registry might not meet all your app
 
 If you need to extend your app using a custom plugin, check the plugin registry first and use code that others have already written. If an existing plugin is close to what you need, download it, make improvements, and then submit those changes to the original author. This is a great way of giving back to the Cordova community and making it easier for others to solve similar problems. Install the custom plugin using the configuration designer. When the plugin.xml file is next to the www folder in the project folder tree, the required JavaScript files from the plugin’s www folder will be loaded automatically at runtime. You do not need to reference these files from an HTML file. You can also set breakpoints within these code files if needed. The build process also compiles any platform-specific files in the src folder.
 
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 ## See Also
 
@@ -118,6 +118,6 @@ If you need to extend your app using a custom plugin, check the plugin registry 
 
 **Other Resources**
 
-[Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)  
-[Cordova plugins registry](http://plugins.cordova.io)  
-[FAQ](http://go.microsoft.com/fwlink/p/?linkid=398476)  
+[Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)
+[Cordova plugins registry](http://plugins.cordova.io)
+[FAQ](http://go.microsoft.com/fwlink/p/?linkid=398476)

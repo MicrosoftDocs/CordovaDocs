@@ -8,7 +8,7 @@ ms.author: "jmatthiesen"
 
 # Run your Apache Cordova app on the Apache Ripple simulator
 
-The Apache Ripple simulator runs as a web app inside the Google Chrome browser. In Cordova, it can be used to simulate your app on a number of iOS and Android devices, and it provides basic support for core Cordova plugins like Geolocation and Device Orientation. 
+The Apache Ripple simulator runs as a web app inside the Google Chrome browser. In Cordova, it can be used to simulate your app on a number of iOS and Android devices, and it provides basic support for core Cordova plugins like Geolocation and Device Orientation.
 
 The Ripple simulator helps you quickly start validating how your app looks and feels on iOS and Android, because both platforms use a browser with a similar code base. The Ripple simulator is particularly useful for validating layout and CSS code. For higher fidelity emulation that’s specific to a platform, use the [Android](run-app-android-emulator.md) or [iOS](run-app-ios.md) emulators or an actual device.
 
@@ -67,7 +67,7 @@ You can change the target device on the fly while your app is running in Chrome.
 
     ![Changing the device in Chrome](media/run-app-ripple-simulator/run-ripple-change-device.png)
 
-![Download the tools](media/run-app-ripple-simulator/run-ripple-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/run-app-ripple-simulator/run-ripple-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 #### See Also
 

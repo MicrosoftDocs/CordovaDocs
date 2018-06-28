@@ -10,7 +10,7 @@ ms.author: "jmatthiesen"
 
 Visual Studio brings a seamless and common tooling experience for developing Cordova apps across app types and device platforms. When developing Apache Cordova apps, you can use diagnostic tools such as the Visual Studio debugger, the DOM Explorer, and the JavaScript Console to fix problems in your apps. For platform-specific differences in the debugger experience, see [Debugging features by platform](#Debugging features by platform).
 
-This article matches the steps of the Cordova [Video tutorial](http://go.microsoft.com/fwlink/p/?LinkID=534729) on debugging. The steps match video content that follows the introduction of the tools and features (approximately four minutes from the start).  If you want steps to debug for a particular platform, see [Debugging features by platform](#Debugging features by platform). 
+This article matches the steps of the Cordova [Video tutorial](http://go.microsoft.com/fwlink/p/?LinkID=534729) on debugging. The steps match video content that follows the introduction of the tools and features (approximately four minutes from the start).  If you want steps to debug for a particular platform, see [Debugging features by platform](#Debugging features by platform).
 
 ### Fix build and deployment errors
 
@@ -385,7 +385,7 @@ As an alternative to using weinre for Windows Phone 8 debugging, you can instead
 
 >**Caution**: Changes you make to the native project will be overwritten when you rebuild the Cordova app.
 
-![Download the tools](media/debug-using-visual-studio/debug-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/debug-using-visual-studio/debug-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 #### See Also
 [Get Started with Visual Studio Tools for Apache Cordova](../first-steps/installation.md)

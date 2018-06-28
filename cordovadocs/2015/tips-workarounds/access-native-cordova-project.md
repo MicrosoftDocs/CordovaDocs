@@ -58,7 +58,7 @@ In some cases you may need to get access to the generated Xcode project to troub
     The final entries of the build output should look similar to this:
 	```
 	1>  ** BUILD SUCCEEDED **
-	1>  
+	1>
 	1>  Command finished with error code
 	    0:/Users/<username>/remote-builds/builds
 	    /8382/cordovaApp
@@ -124,7 +124,7 @@ The Cordova <span class="code">serve</span> command lets you test the layout and
 
 > **Caution:** You need to rebuild the app to update its content.
 
-![Download the tools](media/access-native-cordova-project/access-native-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/access-native-cordova-project/access-native-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 </div></div><div>
 

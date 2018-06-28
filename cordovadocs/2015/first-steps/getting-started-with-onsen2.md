@@ -17,7 +17,7 @@ Onsen UI is fully independent of frameworks - you can easily plug these componen
 ## Get the Onsen UI templates
 You can install the Onsen UI starter templates in Visual Studio and use them to start building an app.
 
-1. If you haven't already, [install Visual Studio 2015](https://www.visualstudio.com/).
+1. If you haven't already, [install Visual Studio 2015](https://visualstudio.microsoft.com/).
 
     When you install Visual Studio, make sure you include the optional components, **HTML/JavaScript (Apache Cordova)** under **Cross-Platform Mobile Development**.
 

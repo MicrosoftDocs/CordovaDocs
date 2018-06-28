@@ -15,7 +15,7 @@ This article shows how you can build hybrid apps using Apache Cordova in Visual 
  - [Node JS on OS X](http://nodejs.org/)
  - [Windows 7 or 8+](http://windows.microsoft.com/en-us/windows/downloads)
  - [Parallels on OS X](http://www.parallels.com/) or a similar virtual machine solution
- - [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://www.visualstudio.com/en-us/features/cordova-vs.aspx) installed
+ - [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://visualstudio.microsoft.com/vs/features/cordova/) installed
 
 Any Mac that can run Mavericks or Yosemite should work with Parallels and Visual Studio, such as a 2013 MacBook Pro.
 

@@ -961,4 +961,4 @@ The complete sample includes additional code to store and retrieve todo list ite
 
 6. Press F5 to re-run the app. Now, todo list items will be stored in Azure.
 
-![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/node-js/)
