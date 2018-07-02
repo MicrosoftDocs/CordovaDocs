@@ -86,7 +86,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     If you are running initially on Ripple, choose **Android,** then **Ripple - Nexus (Galaxy)** from the device list. See the illustration below.
 
-    ![Run the default Blank App template](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-ripple.png)  
+    ![Run the default Blank App template](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-ripple.png)
 
 7. Press F5 to start the app.
 
@@ -177,7 +177,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
-4. In index.html, replace the default [Content-Security-Policy](http://taco.visualstudio.com/docs/cordova-5-security/#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following `<meta>` element.
+4. In index.html, replace the default [Content-Security-Policy](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following `<meta>` element.
 
     ```
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb-starter.azurewebsites.net https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
@@ -270,7 +270,7 @@ Now, you will update the web site to display a mobile-specific page if the site 
 
     This page contains the following code.
 
-    ```    
+    ```
     @{
         ViewBag.Title = "index";
         var platform = ViewBag.Platform;
@@ -411,8 +411,8 @@ The starter ASP.NET project (CordovHostedWeb) already has the plugin code. Now, 
         var options = {
             quality: 20,
             destinationType: Camera.DestinationType.DATA_URL,
-            sourceType: 1,      
-            encodingType: 0     
+            sourceType: 1,
+            encodingType: 0
         };
 
         navigator.camera.getPicture(
@@ -421,7 +421,7 @@ The starter ASP.NET project (CordovHostedWeb) already has the plugin code. Now, 
                 el = <HTMLElement>document.getElementsByClassName('media-object')[0];
                 var srcAttr = document.createAttribute("src");
                 srcAttr.value = "data:image/jpeg;base64," + imgData;
-                el.attributes.setNamedItem(srcAttr);                    
+                el.attributes.setNamedItem(srcAttr);
             },
             function () {
                 alert('Error taking picture');
@@ -458,7 +458,7 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 
 2. Choose your preferred emulator to run the app.
 
-    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](http://taco.visualstudio.com/en-us/docs/run-app-apache/), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
+    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
 
 3. Press F5 to run the app.
 

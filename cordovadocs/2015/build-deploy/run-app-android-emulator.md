@@ -12,7 +12,7 @@ There are many options for running your apps built using Visual Studio Tools for
 
 ## Visual Studio Emulator for Android
 
-Here’s how to run your app on the [Visual Studio Emulator for Android](https://www.visualstudio.com/msft-android-emulator-vs.aspx). For system requirements, see [System Requirements for the Visual Studio Emulator for Android](https://msdn.microsoft.com/en-us/library/mt228280.aspx).
+Here’s how to run your app on the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/). For system requirements, see [System Requirements for the Visual Studio Emulator for Android](https://msdn.microsoft.com/en-us/library/mt228280.aspx).
 
 >**Important**: The Visual Studio Emulator for Android is only available in Visual Studio 2015.
 
@@ -217,10 +217,10 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 7. When prompted, choose **Allow USB Debugging**.
 
-![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://isualstudio.microsoft.com/vs/features/cordova/)
 
 ## See Also
 
-[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
-[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/visual-studio-unit-testing-with-chutzpah.md)  
-[Package Your App](../publishing/publish-to-a-store.md)  
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
+[Debug Your App Built with Visual Studio Tools for Apache Cordova](../debug-test/visual-studio-unit-testing-with-chutzpah.md)
+[Package Your App](../publishing/publish-to-a-store.md)
