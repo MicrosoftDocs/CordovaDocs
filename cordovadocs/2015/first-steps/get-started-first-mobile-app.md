@@ -61,7 +61,7 @@ This table gives you the basic idea of how you might use each one.
   </th>
 </tr>
  <tr>
-   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io//">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won&#39;t use it in this guide, but you can learn more about it <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/using-bower?view=toolsforcordova-2017">here</a>.</td>
+   <td><strong>bower.json</strong></td><td>This file manages the <a href="http://bower.io/">Bower</a> packages dependencies of your app. <br><br>Bower is a package manager. We won&#39;t use it in this guide, but you can learn more about it <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/using-bower?view=toolsforcordova-2017">here</a>.</td>
  </tr>
  <tr>
    <td><strong>build.json</strong></td><td>This file contains parameters that Visual Studio uses to build a signed Android package. <br><br>We won&#39;t create one in this guide, but you can learn more about it <a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/publishing/publish-to-a-store?view=toolsforcordova-2017">here</a>.</td>
