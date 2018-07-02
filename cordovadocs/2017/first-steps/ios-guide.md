@@ -262,7 +262,7 @@ In Visual Studio, the DOM explorer and other debugging tool windows open, enabli
 
 ## <a id="run-on-device"></a>Run Your App On An iOS Device
 
-You'll need an Apple [**Provisioning Profile**](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html) to run your app on a device. Create one by using an Apple Developer account. You can also create one with your free Apple ID but there are limitations; see [Supported Capabilities](https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html#//apple_ref/doc/uid/TP40012582-CH38-SW1).
+You'll need an Apple [**Provisioning Profile**](https://help.apple.com/developer-account/#/dev037e8f543) to run your app on a device. Create one by using an Apple Developer account. You can also create one with your free Apple ID but there are limitations; see [Supported Capabilities](https://developer.apple.com/library/prerelease/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html#//apple_ref/doc/uid/TP40012582-CH38-SW1).
 
 ### <a id="ios-on-mac"></a> iOS Device Connected to a Mac
 
