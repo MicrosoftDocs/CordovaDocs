@@ -34,4 +34,4 @@ The Visual Studio installer identifies and installs the right versions of the re
 
 ## Get the tools
 
-Visual Studio Tools for Apache Cordova is installed using the standard Visual Studio installer which you can download from the [Microsoft Download Center](https://aka.ms/vs/15/release/vs_enterprise.exe). Refer to [Install Visual Studio Tools for Apache Cordova](first-steps/installation.md) for complete installation instructions. Start writing your first Cordova app using [Create Your First App Using Visual Studio Tools for Apache Cordova](first-steps/build-your-first-app.md).
+Visual Studio Tools for Apache Cordova is installed using the standard Visual Studio installer which you can download from the [Microsoft Download Center](https://www.visualstudio.com/vs/visual-studio-2017-rc/). Refer to [Install Visual Studio Tools for Apache Cordova](first-steps/installation.md) for complete installation instructions. Start writing your first Cordova app using [Create Your First App Using Visual Studio Tools for Apache Cordova](first-steps/build-your-first-app.md).
