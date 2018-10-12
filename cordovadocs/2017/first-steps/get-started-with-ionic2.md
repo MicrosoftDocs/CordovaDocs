@@ -13,7 +13,7 @@ ms.author: "johnwargo"
 
 # Getting started with Ionic 2 apps in Visual Studio 2017
 
-[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using [Apache Cordova](http://cordova.io). The Ionic Framework gives Cordova applications a native look and feel, and automatically adjusts that look across platforms. You can use Visual Studio 2017 and Visual Studio Tools for Apache Cordova (TACO) to easily create and debug cross-platform Ionic apps. The [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md) guide showed how to create a simple Weather app using jQuery and jQuery Mobile. In this article, you'll learn how to configure a Visual Studio 2017 development environment for Ionic 2, and create the Ionic 2 version of the Weather App shown below:
+[Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using [Apache Cordova](http://cordova.io). The Ionic Framework gives Cordova applications a native look and feel, and automatically adjusts that look across platforms. You can use Visual Studio 2017 and Visual Studio Tools for Apache Cordova (TACO) to easily create and debug cross-platform Ionic apps. The [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md) guide showed how to create a simple Weather app using the Ionic Framework. In this article, you'll learn how to configure a Visual Studio 2017 development environment for Ionic 2, and create the Ionic 2 version of the Weather App shown below:
 
 ![Finished Weather application](media/vs-taco-tutorial-ionic2/figure-01.png)
 
