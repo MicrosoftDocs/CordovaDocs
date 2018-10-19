@@ -4,8 +4,11 @@ description: "Improving Android browser consistency and features with the Crossw
 author: "Chuxel"
 ms.author: "clantz"
 ---
-
 # Improving Android browser consistency and features with the Crosswalk WebView
+
+> [!WARNING]
+> This project is not maintained anymore. The last Crosswalk release was Crosswalk 23. Read more in the announcement on the [project page](http://go.microsoft.com/fwlink/?LinkID=617678).
+
 An exciting new development in the Cordova Android platform in Cordova 5 and up is the support for what are called "pluggable WebViews." What this feature allows you to do is swap out the built in Android WebView with a completely different WebView implementation. This is a significant improvement because the Android browser and thus the WebView is locked at a specific version without the ability to update unless you update the version of the OS on the device. This has changed in the Android OS as of 5.0, but unlike iOS or Windows where devices can opt to upgrade and developers need only concern themselves with a few major versions of the browser, older Android devices are locked at a particular sub-revision of Android (and thus the browser) with no ability to upgrade the device in many cases. The end result has been a vast array of small differences between Android devices.
 
 [Crosswalk](http://go.microsoft.com/fwlink/?LinkID=617678) is a project that is designed to allow developers to use a very recent and specific version of the Chromium WebView inside their Android app. The Crosswalk WebView can be used in apps running on Android 4.0 and up and brings with it the significant advantage of a consistent WebView implementation across all Android device versions it supports.
