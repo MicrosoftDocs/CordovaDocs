@@ -208,7 +208,7 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 
 	At this point, Visual Studio connects to the remote agent to validate the configuration; if you don't receive any errors, you've successfully connected to the server.
 
-	If Visual Studio cannot connect to the `remotebuld` server using the settings you provided, you'll see an error similar to the following:
+	If Visual Studio cannot connect to the `remotebuild` server using the settings you provided, you'll see an error similar to the following:
 
 	![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-13.png)
 
