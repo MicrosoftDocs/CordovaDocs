@@ -3,7 +3,7 @@ title: "Debugging UI tests"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "01/24/2017"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Debugging UI tests

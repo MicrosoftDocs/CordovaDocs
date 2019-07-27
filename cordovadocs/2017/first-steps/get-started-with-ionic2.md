@@ -8,7 +8,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/16/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Getting started with Ionic 2 apps in Visual Studio 2017

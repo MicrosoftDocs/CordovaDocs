@@ -2,7 +2,7 @@
 title: "Using the Chutzpah test runner"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Using the Chutzpah test runner with a Cordova App project

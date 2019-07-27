@@ -3,7 +3,7 @@ title: "Primer on unit testing and continuous integration"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: ""
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # A primer on unit testing and continuous integration

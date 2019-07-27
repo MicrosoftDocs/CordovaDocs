@@ -10,7 +10,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/12/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Application Lifecycle Management (ALM) with Apache Cordova Apps

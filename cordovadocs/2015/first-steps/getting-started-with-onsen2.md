@@ -3,7 +3,7 @@ title: "Getting started with Onsen apps in Visual Studio"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "06/15/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Get started with Onsen UI apps in Visual Studio

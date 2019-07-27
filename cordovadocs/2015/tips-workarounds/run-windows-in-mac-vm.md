@@ -4,7 +4,7 @@ author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "09/11/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Build a Cordova app for iOS by using Parallels

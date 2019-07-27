@@ -3,7 +3,7 @@ title: "Manage plugins for apps built with Visual Studio Tools for Apache Cordov
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Manage plugins for apps built with Visual Studio Tools for Apache Cordova

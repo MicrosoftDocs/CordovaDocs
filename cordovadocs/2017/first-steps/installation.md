@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/28/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Installing Visual Studio Tools for Apache Cordova

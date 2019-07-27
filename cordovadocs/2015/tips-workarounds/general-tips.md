@@ -4,7 +4,7 @@ author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "05/15/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # General Cordova tips and workarounds

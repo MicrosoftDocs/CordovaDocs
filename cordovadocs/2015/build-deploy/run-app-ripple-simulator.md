@@ -3,7 +3,7 @@ title: "Cordova build process in Visual Studio | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "06/06/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Run your Apache Cordova app on the Apache Ripple simulator

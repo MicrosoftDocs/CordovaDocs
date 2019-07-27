@@ -2,7 +2,7 @@
 title: "Unit testing environments for JavaScript"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Unit testing environments for JavaScript and Apache Cordova

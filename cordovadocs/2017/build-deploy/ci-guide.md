@@ -8,7 +8,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/11/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Continuous Integration for Apache Cordova Apps

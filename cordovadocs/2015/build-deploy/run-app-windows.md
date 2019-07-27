@@ -3,7 +3,7 @@ title: "Run your Apache Cordova app on Windows | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Run your Apache Cordova app on Windows

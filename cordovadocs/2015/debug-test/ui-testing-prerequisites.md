@@ -2,7 +2,7 @@
 title: "UI Testing Prerequisites"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Prerequisites

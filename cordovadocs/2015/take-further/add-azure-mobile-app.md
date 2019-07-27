@@ -3,7 +3,7 @@ title: "Add Azure App Service Mobile App | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "08/21/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Add Azure data storage, offline sync, and push notifications

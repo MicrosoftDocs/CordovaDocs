@@ -3,7 +3,7 @@ title: "Debug your app built with Visual Studio Tools for Apache Cordova | Cordo
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "07/25/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Debug your app built with Visual Studio Tools for Apache Cordova

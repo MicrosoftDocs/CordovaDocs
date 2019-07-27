@@ -2,7 +2,7 @@
 title: "Basic unit testing with Jasmine and Karma"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Basic unit testing in action with Jasmine and Karma

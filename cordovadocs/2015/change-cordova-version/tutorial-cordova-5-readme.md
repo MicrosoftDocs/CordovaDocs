@@ -2,7 +2,7 @@
 title: "Major Changes in Apache Cordova 5 & 6"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Adapting to changes caused by Apache Cordova 5.x and 6.x

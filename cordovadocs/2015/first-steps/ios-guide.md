@@ -3,7 +3,7 @@ title: "Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apac
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "7/25/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apache Cordova project

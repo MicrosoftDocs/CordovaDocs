@@ -3,7 +3,7 @@ title: "Authenticating users with Azure Mobile Apps or ADAL"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: ""
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Authenticate users with Azure Mobile Apps or the Active Directory Authentication Library for Cordova

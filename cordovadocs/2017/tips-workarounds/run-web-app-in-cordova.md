@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "01/27/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Run Your Hosted Web App in an Apache Cordova App

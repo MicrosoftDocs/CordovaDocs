@@ -4,7 +4,7 @@ author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "sample"
 ms.date: "01/16/2017"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Favorite Samples & Examples

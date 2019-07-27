@@ -3,7 +3,7 @@ title: "Get started with Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "04/13/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Get started with Visual Studio Tools for Apache Cordova

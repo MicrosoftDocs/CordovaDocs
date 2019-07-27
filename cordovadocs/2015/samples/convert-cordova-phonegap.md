@@ -4,7 +4,7 @@ author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "sample"
 ms.date: "09/11/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
  
 # Convert a Cordova project to a PhoneGap project

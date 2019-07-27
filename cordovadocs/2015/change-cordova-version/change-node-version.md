@@ -3,7 +3,7 @@ title: "Safely update Node.js (Visual Studio Tools for Apache Cordova) | Cordova
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "04/18/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Safely update Node.js (Visual Studio Tools for Apache Cordova)
