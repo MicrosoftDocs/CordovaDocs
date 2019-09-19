@@ -99,7 +99,7 @@ Chrome has their CPU profiler separate, so you'll need to switch to the **Profil
 
 ![start profiling](media/measure-performance/start-profiling.png)
 
-The following image shows the CPU profile of our app. You can see that the createHMTL function took 360ms, of which 49ms was spent in the funciton itself. 309ms was spent setting ```innerHtml```.
+The following image shows the CPU profile of our app. You can see that the createHMTL function took 360ms, of which 49ms was spent in the function itself. 309ms was spent setting ```innerHtml```.
 
 ![cpu profile](media/measure-performance/cpu-profile.png)
 
