@@ -123,7 +123,7 @@ Apache Cordova uses the contents of the `res` folder to store non-web applicatio
 
     Visual Studio will build the application, then open a browser window running the application in the Apache Ripple simulator. New projects use the default Cordova template, so, since we've not added any code to the application, it will simply display the Cordova logo and a notification that the device is ready.
 
-    > **NOTE:** There will already be some errors on the JavaScript console, such as failure to load favicon.ico, ripple.js and ajax-loader.gif. But these are not neccessary to continue developing in Ripple.
+    > **NOTE:** There will already be some errors on the JavaScript console, such as failure to load favicon.ico, ripple.js and ajax-loader.gif. But these are not necessary to continue developing in Ripple.
 
     ![Ripple Emulator](media/get-started-first-mobile-app/blank-app.png)
 
