@@ -2,7 +2,7 @@
 title: "Get Started with Continous Integration (CI)"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Get started with continous integration (CI)

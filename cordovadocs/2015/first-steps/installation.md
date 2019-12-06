@@ -3,7 +3,7 @@ title: "Installing Visual Studio Tools for Apache Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "10/28/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
    
 # Install Visual Studio Tools for Apache Cordova

@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/11/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Visual Studio Tools for Apache Cordova: iOS Guide

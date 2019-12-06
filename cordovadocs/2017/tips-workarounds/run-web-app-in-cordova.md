@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "01/27/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Run Your Hosted Web App in an Apache Cordova App
@@ -224,7 +224,7 @@ In this section, you'll update the Cordova application so it pulls its content f
 
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
-5.	In the project's `www\index.html` file's `<head>` section, replace the existing [Content-Security-Policy](http://taco.visualstudio.com/docs/cordova-5-security/#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following:
+5.	In the project's `www\index.html` file's `<head>` section, replace the existing [Content-Security-Policy](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following:
 
     ```HTML
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://YOUR-HOSTED-WEB-APP-URL https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">

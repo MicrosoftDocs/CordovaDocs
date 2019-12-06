@@ -2,7 +2,7 @@
 title: "Use gulp to automate tasks in a Cordova project"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Automate tasks for your Cordova project using gulp

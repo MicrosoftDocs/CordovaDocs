@@ -2,7 +2,7 @@
 title: "Improving Android browser consistency and features with the Crosswalk WebView"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Improving Android browser consistency and features with the Crosswalk WebView

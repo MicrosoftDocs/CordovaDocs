@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/27/2017"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Run Your Apache Cordova App on Android

@@ -2,7 +2,7 @@
 title: "Quickly remediate security issues using CodePush and Intune"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Quickly remediate security issues using CodePush and Intune

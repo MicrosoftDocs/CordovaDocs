@@ -3,7 +3,7 @@ title: "Run your Apache Cordova app on Windows Phone | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Run your Apache Cordova app on Windows Phone
@@ -73,7 +73,7 @@ If you have trouble deploying to Windows Phone, see [Resolve Windows build and d
 
 If you have trouble deploying to Windows Phone, see [Resolve Windows build and deployment errors](../tips-workarounds/windows-tips.md).
 
-![Download the tools](./media/run-app-windows-phone/run-windows-phone-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](./media/run-app-windows-phone/run-windows-phone-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 ### See Also
 

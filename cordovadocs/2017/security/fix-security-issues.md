@@ -17,7 +17,7 @@ In the context of security this is extremly useful for quickly remediating secur
 
 See the **[CodePush Getting Started Guide](http://microsoft.github.io/code-push/docs/getting-started.html)** for information on getting up and running.
 
-## Use an interal app store
+## Use an internal app store
 Internal facing mobile apps are becoming increasingly common and some organizations opt to deploy these to public app stores. The challenge with this approach is that updates to the native app container are then subject to app store turnaround times (though CodePush can help remediate concerns with static and JavaScript content).
 
 Fortunately, Mobile Device Management (MDM) suites like **[Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)** typically provide an internal app store that enable internal users to quickly gain access to both internal and externally developed apps. These features also include bring-your-own-device (BYOD) scenarios where mobile users may not want their devices controlled as strictly as corporate owned ones. Intune can also reduce the scope of your risk by restricting access to apps based Active Directory user groups. This can be useful for "super user apps", development or test versions of apps, or when you simply want to only offer an app to a subset of employees.

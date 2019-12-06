@@ -3,7 +3,7 @@ title: "May 26th, 2015 Android Cordova Platform Security Issue"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # May 26th, 2015 Android Cordova Platform Security Issue

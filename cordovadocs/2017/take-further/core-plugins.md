@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "08/04/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # <a id="top"></a>Visual Studio Core Plugins

@@ -9,7 +9,7 @@ ms.devlang: "typescript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/15/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Using TypeScript in a Cordova project
@@ -76,7 +76,7 @@ import * as Application from './application';
 declare var require: (modules: string[], ready: Function, errback: Function) => void;
 
 // Try and load platform-specific code from the /merges folder.
-// More info at http://taco.visualstudio.com/en-us/docs/configure-app/#Content.
+// More info at https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/take-further/add-platform-specific-content?view=toolsforcordova-2017#Content.
 require(["./platformOverrides"],
     () => Application.initialize(),
     () => Application.initialize());

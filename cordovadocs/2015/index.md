@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Visual Studio Tools 2015 for Apache Cordova

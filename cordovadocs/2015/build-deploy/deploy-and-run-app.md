@@ -3,7 +3,7 @@ title: "Cordova build process in Visual Studio | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Cordova build process in Visual Studio
@@ -34,12 +34,12 @@ When building for Windows/Windows Phone 8.1 and 10, Cordova generates a Windows 
 
 To make the Ripple build process to be as fast as possible, the CLI is used to generate the needed plugin code, but otherwise, Visual Studio provides the web content directly (instead of providing content from the generated native project). When you run the app, the Ripple emulator is initialized, and Chrome is started using a Ripple URL (for example, http://localhost:4400/index.html?enableripple=cordova-3.0.0-Nexus7 for the Nexus7 tablet device). All Chrome settings are stored locally to your Visual Studio instance so that your normal browser experience is not affected. For more information, see [Run Your Apache Cordova App on the Apache Ripple Simulator](run-app-ripple-simulator.md).
 
-![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 ## See Also
 
 **Concepts**
 
-[Get Started with Visual Studio Tools for Apache Cordova](../index.md)  
-[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)  
-[Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/get-started-first-mobile-app.md)  
+[Get Started with Visual Studio Tools for Apache Cordova](../index.md)
+[Install Visual Studio Tools for Apache Cordova](../first-steps/installation.md)
+[Create Your First App Using Visual Studio Tools for Apache Cordova](../first-steps/get-started-first-mobile-app.md)

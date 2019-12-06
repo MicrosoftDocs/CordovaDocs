@@ -2,7 +2,7 @@
 title: "Detect security issues using Intune, Active Directory, and Azure"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Detect potential security threats 

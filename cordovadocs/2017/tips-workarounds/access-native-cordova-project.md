@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 # Access a native Cordova project
 

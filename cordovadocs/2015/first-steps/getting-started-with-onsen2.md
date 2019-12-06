@@ -3,12 +3,12 @@ title: "Getting started with Onsen apps in Visual Studio"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "06/15/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Get started with Onsen UI apps in Visual Studio
 
-Onsen UI is a front-end UI framework for developing cross-platform mobile apps using Apache Cordova and PhoneGap. 
+Onsen UI is a front-end UI framework for developing cross-platform mobile apps using Apache Cordova and PhoneGap.
 
 [Onsen UI 2.0](https://onsen.io/v2/) was released and supports React, Angular 1 and 2, and Web Components together within your Cordova app. With more than 100 components, you can easily create great-looking HTML5 hybrid mobile apps with Material and Flat design.
 
@@ -17,7 +17,7 @@ Onsen UI is fully independent of frameworks - you can easily plug these componen
 ## Get the Onsen UI templates
 You can install the Onsen UI starter templates in Visual Studio and use them to start building an app.
 
-1. If you haven't already, [install Visual Studio 2015](https://www.visualstudio.com/).
+1. If you haven't already, [install Visual Studio 2015](https://visualstudio.microsoft.com/).
 
     When you install Visual Studio, make sure you include the optional components, **HTML/JavaScript (Apache Cordova)** under **Cross-Platform Mobile Development**.
 
@@ -55,14 +55,14 @@ You can install the Onsen UI starter templates in Visual Studio and use them to 
 
     ![Onsen UI Android Debug Target](media/vs-taco-2015-tutorial-onsen/image05.png)
 
-    You can configure a Google Android emulator in [AVD Manager](http://taco.visualstudio.com/en-us/docs/run-app-apache/).
+    You can configure a Google Android emulator in [AVD Manager](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017).
 
 3. Press F5, and the app should load correctly.
 
     ![Onsen UI Android App](media/vs-taco-2015-tutorial-onsen/image00.png)
 
 ## Get your app running on iOS
-You can run initially on the Ripple Emulator after selecting iOS as a debug target, but for detailed info on setting up the remotebuild agent for iOS, see [this topic](http://taco.visualstudio.com/en-us/docs/ios-guide/).
+You can run initially on the Ripple Emulator after selecting iOS as a debug target, but for detailed info on setting up the remotebuild agent for iOS, see [this topic](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017).
 
 The Onsen UI starter templates run correctly on iOS when the remotebuild agent is running on a Mac (or using an extension like [Monaca for Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/21a7a495-5a24-4eab-a519-2f6e6d176049)), and when Visual Studio is configured to connect to it). Please note that the complete steps are outside the scope here.
 

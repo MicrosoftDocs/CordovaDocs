@@ -4,11 +4,11 @@ author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "05/15/2016"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Windows tips and workarounds
-This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform. 
+This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform.
 
 <a name="windows"></a>
 ## Resolve Windows build and deployment errors
@@ -59,7 +59,7 @@ Here are some of the more common issues that you might see on Windows.
 
     ![unhandled exception](media/tips-and-workarounds-windows-readme/unhandled-exception.png)
 
-    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://taco.visualstudio.com/en-us/docs/tutorial-ionic/#unhandled) to call platformOverrides.js to fix this issue.
+    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/getting-started-with-ionic?view=toolsforcordova-2015) to call platformOverrides.js to fix this issue.
 
 * WWAHost runtime error?
 

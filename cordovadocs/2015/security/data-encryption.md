@@ -2,7 +2,7 @@
 title: "Securing Cordova app data using encryption and Intune"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Encrypt your local app data

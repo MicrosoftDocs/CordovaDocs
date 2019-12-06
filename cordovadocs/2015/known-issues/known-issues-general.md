@@ -2,7 +2,7 @@
 title: "General Known Issues"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # <strong>General Known Issues</strong>

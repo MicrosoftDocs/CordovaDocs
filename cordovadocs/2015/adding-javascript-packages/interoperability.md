@@ -3,7 +3,7 @@ title: "Video Walkthrough: Interoperate with third-party tools | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/11/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Video Walkthrough: Interoperate with third-party tools

@@ -3,12 +3,12 @@ title: "Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apac
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "7/25/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 # Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apache Cordova project
 
-If you want to build an iOS version of your app, you'll need a Mac to do it. Currently, there is no way to build an iOS app without one. You can use a physical Mac or a cloud-hosted one. Just make sure that it's running Mac OS X Mavericks or later. 
+If you want to build an iOS version of your app, you'll need a Mac to do it. Currently, there is no way to build an iOS app without one. You can use a physical Mac or a cloud-hosted one. Just make sure that it's running Mac OS X Mavericks or later.
 
 In this guide, we'll help you get everything setup right so that you can build, run, and debug your app. We'll stop a few times to check and see if everything is working as expected. If something isn't behaving, we'll propose a few ideas that have worked for others.
 
@@ -64,7 +64,7 @@ To start the remote agent in secure mode, type this command.
  remotebuild
 ```
 
-The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, port number, and security pin appear in the Terminal app.  
+The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, port number, and security pin appear in the Terminal app.
 
 ![Remote Agent Output](media/vs-taco-2015-ios-guide/IC816236.png)
 
@@ -78,7 +78,7 @@ Often times when folks have trouble connecting to their remote agent, they'll st
 
 Start the remote agent without secure mode only if you are comfortable with the trade-offs between risk and convenience.
 
-For example, if your Mac is publically accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. That said, if your Mac is accessible to only you, it's easier and less error prone to run your remote agent without secure mode.  
+For example, if your Mac is publically accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. That said, if your Mac is accessible to only you, it's easier and less error prone to run your remote agent without secure mode.
 
 To start the remote agent **without** secure mode, type this command
 
@@ -86,7 +86,7 @@ To start the remote agent **without** secure mode, type this command
  remotebuild --secure false
 ```
 
-The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, and port number appear in the Terminal app.  
+The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, and port number appear in the Terminal app.
 
 You'll use those pieces of information in the next section.
 
@@ -699,7 +699,7 @@ If you've resolved this problem another way, please share it in a comment.
 
 ### <a id="install-xcode"></a>Did you receive an error that tells you that a tool requires Xcode?
 
-Make sure that [Xcode](https://developer.apple.com/xcode/download/) is installed on your Mac. Then, open Xcode and accept the license agreement. This is important. If you don't accept the license agreement, you'll keep getting build errors.  
+Make sure that [Xcode](https://developer.apple.com/xcode/download/) is installed on your Mac. Then, open Xcode and accept the license agreement. This is important. If you don't accept the license agreement, you'll keep getting build errors.
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
@@ -730,7 +730,7 @@ Alternatively, start the remotebuild agent on a different port. (Try using port 
 
 This can happen if your project uses a version of the Cordova Command Line Interface (CLI) that is lower than ```4.3```.
 
-To fix this problem, update the [CLI version of your project](http://taco.visualstudio.com/en-us/docs/change-cli-version/#how-to-update-the-cli-version-of-your-project).
+To fix this problem, update the [CLI version of your project](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015#how-to-update-the-cli-version-of-your-project).
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
@@ -748,7 +748,7 @@ For steps, see the [Option 2: Use your free Apple ID](#apple-id) section of this
 
 ### <a id="cli"</a>Did you receive any other type of build error
 
-Under the covers, Visual Studio Tools for Apache Cordova uses the Cordova SDK to manage interactions with mobile device SDKs and other tools. Therefore, when you see build errors that aren't covered elsewhere in this guide, chances are that the errors are coming from external tools used by Visual Studio. When this happens, general purpose Cordova best practices, tips and tricks apply. Refer to the [Apache Cordova documentation](http://cordova.apache.org/docs/en/latest/) or existing [Apache Cordova](http://stackoverflow.com/questions/tagged/cordova) or [Visual Studio Tolls for Apache Cordova](http://stackoverflow.com/questions/tagged/visual-studio-cordova) questions on Stack Overflow for help from other people who have solved similar issues.  
+Under the covers, Visual Studio Tools for Apache Cordova uses the Cordova SDK to manage interactions with mobile device SDKs and other tools. Therefore, when you see build errors that aren't covered elsewhere in this guide, chances are that the errors are coming from external tools used by Visual Studio. When this happens, general purpose Cordova best practices, tips and tricks apply. Refer to the [Apache Cordova documentation](http://cordova.apache.org/docs/en/latest/) or existing [Apache Cordova](http://stackoverflow.com/questions/tagged/cordova) or [Visual Studio Tolls for Apache Cordova](http://stackoverflow.com/questions/tagged/visual-studio-cordova) questions on Stack Overflow for help from other people who have solved similar issues.
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 
@@ -770,7 +770,7 @@ This is a known issue with Apache Cordova 6.3.1 and for the Visual Studio tools 
 
 + Add a `developmentTeam` property to the `ios` build settings in your project's `build.json` file (an example is shown below).
 + Set the `build.json` file's `codeSignIdentity` property to the static value `iPhone Developer`.
-+ Setup a `before_compile` hook in your project to copy the `developmentTeam` property into the project's `platforms/ios/cordova/build.xcconfig` file.  
++ Setup a `before_compile` hook in your project to copy the `developmentTeam` property into the project's `platforms/ios/cordova/build.xcconfig` file.
 
 The project's `build.json` file should look something like the following:
 

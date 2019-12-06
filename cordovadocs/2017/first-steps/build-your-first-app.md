@@ -9,12 +9,12 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "04/13/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Getting Started With Visual Studio Tools For Apache Cordova
 
-Use Visual Studio Tools for Apache Cordova to build mobile apps using web technologies (HTML, CSS, JavaScript) that run on Android, iOS, and Windows devices. Since Cordova apps are built using web application code, you'll be able to share the majority of your code across device platforms; [learn more](https://www.visualstudio.com/explore/cordova-vs).
+Use Visual Studio Tools for Apache Cordova to build mobile apps using web technologies (HTML, CSS, JavaScript) that run on Android, iOS, and Windows devices. Since Cordova apps are built using web application code, you'll be able to share the majority of your code across device platforms; [learn more](https://visualstudio.microsoft.com/vs/features/cordova/).
 
 In this guide, we'll show how to build, test and debug a Cordova application using the Visual Studio Tools for Apache Cordova. Along the way, you'll build a simple mobile weather app that looks like this:
 
@@ -34,7 +34,7 @@ The application displays current weather conditions based on the current device 
 
    > [!NOTE]
    > If you prefer to use TypeScript instead of JavaScript for this app, expand **Other Languages** in the **Installed** list, select **TypeScript**, and then select **Blank App (ApacheCordova)** as shown in the following figure:
-   > 
+   >
    > ![Visual Studio: New TypeScript Project](media/vs-taco-2017-first-app/figure-03.png)
 
 3. Name the project **WeatherApp**, specify a target folder, and then click the **OK** button to create the project.
@@ -485,7 +485,7 @@ Now that the app has the code it needs to retrieve weather conditions, let's run
 
    > [!NOTE]
    > Depending on your PC configuration some warnings or errors might appear, like firewall alerts or a message that indicating that the emulator must run in elevated mode. If you receive the following error, stop the Android Debug Bridge process (adb.exe) and retry launching the emulator:
-   > 
+   >
    > ![Android Emulator Error](media/vs-taco-2017-first-app/figure-22.png)
 
 2. In the Android emulator, type a valid United States zip code into the edit box (for example: 44313), and then press the **Find Weather** button. Current weather data for target zip code will appear on the page.

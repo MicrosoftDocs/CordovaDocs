@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/28/2016"
-ms.author: "johnwargo"
+ms.author: jowargo
 ---
 
 # Installing Visual Studio Tools for Apache Cordova
@@ -20,7 +20,7 @@ This guide covers the required steps to install Visual Studio Tools for Apache C
 
 ## System Requirements
 
-Start by ensuring your development system meets the [minimum system requirements for Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Apache Cordova app development adds the following system requirements:
+Start by ensuring your development system meets the [Visual Studio 2017 Product Family System Requirements](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-system-requirements-vs). Apache Cordova app development adds the following system requirements:
 
 + To test and debug Cordova apps using [Cordova Simulate](simulate-in-browser.md) requires installation of the [Google Chrome Browser](https://www.google.com/chrome/).
 + To test and debug Android apps using the higher-performance emulator (Android Emulator 2.0), you must disable Hyper-V, and install Intel's Hardware Accelerated Execution Manager (HAXM). HAXM is installed automatically when you install an Intel-based Android emulator through the Android SDK Manager.
@@ -28,7 +28,7 @@ Start by ensuring your development system meets the [minimum system requirements
 + Universal Windows app development for all target platforms requires that Visual Studio is installed on Windows 10. Older versions of Windows are not compatible.
 + Universal Windows apps can be built from the command line when using Server 2012 R2 or Server 2016. UWP development—including designing, editing, and debugging—is not available on Windows Server.
 
-Next, download [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017-rc/).
+Next, download [Visual Studio 2017](https://visualstudio.microsoft.com/vs/whatsnew/).
 
 ## <a id="install"></a>Install Cordova Tools With An Initial Visual Studio Installation
 

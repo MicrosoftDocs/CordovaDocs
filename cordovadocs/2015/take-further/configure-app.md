@@ -3,13 +3,13 @@ title: "Configure your app built with Visual Studio Tools for Apache Cordova | C
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "11/12/2015"
-ms.author: "jmatthiesen"
+ms.author: jomatthi
 ---
 
 
 # Add platform-specific content to your Cordova project
 
-Tailor your app to specific platforms with images, functions, styles, and configuration files.  
+Tailor your app to specific platforms with images, functions, styles, and configuration files.
 
 ## <a id="VisualAssets"></a>Add platform-specific visual assets
 
@@ -21,7 +21,7 @@ Add visual assets such as icons and splash screens for specific device resolutio
 
 The file name of each resource provides some information about the asset. For example, the **screen-ldpi-portrait.png** file in the **res\icons\screens\android** folder represents a splash screen for a low-resolution screen (ldpi, or 426x320) for an Android device in portrait orientation.
 
-For more information about icon assets, see [Icons](https://cordova.apache.org/docs/en/latest/config_ref/images.html). 
+For more information about icon assets, see [Icons](https://cordova.apache.org/docs/en/latest/config_ref/images.html).
 
 To work with splash screen assets, see the [cordova-plugin-splashscreen plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/).
 
@@ -80,4 +80,4 @@ The following table provides specific information for each platform.
 </table>
 
 
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://www.visualstudio.com/cordova-vs.aspx)
+![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)

@@ -572,9 +572,9 @@ Running *mocha test07.js* again shows that we now pass those tests.
 
 ## Run tests with the Node.js Tools for Visual Studio
 
-The [Node.js Tools for Visual Studio](https://www.visualstudio.com/en-us/features/node-js-vs.aspx) can be used as a test runner for Mocha, with direct integration into Visual Studio’s Test Explorer:
+The [Node.js Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/) can be used as a test runner for Mocha, with direct integration into Visual Studio’s Test Explorer:
 
-1.	Install any edition of Visual Studio 2015 (Community, Professional, or Enterprise) along with the [Node.js tools]( https://www.visualstudio.com/en-us/features/node-js-vs.aspx). You can install the latter using **Tools > Extensions and Updates**, then click **Online** on the left, search for Node.js, and install the tools (you’ll be prompted to restart Visual Studio in the process):
+1.	Install any edition of Visual Studio 2015 (Community, Professional, or Enterprise) along with the [Node.js Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/). You can install the latter using **Tools > Extensions and Updates**, then click **Online** on the left, search for Node.js, and install the tools (you’ll be prompted to restart Visual Studio in the process):
 
 	![Installing the Node.js Tools for Visual Studio](media/designing/02-node-tools-install.png)
 
