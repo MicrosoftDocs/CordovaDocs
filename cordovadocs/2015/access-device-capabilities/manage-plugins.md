@@ -12,8 +12,7 @@ Apache Cordova uses plugins to provide access to native device capabilities that
 
 You enable plugins by using the Cordova config.xml file. Visual Studio provides ways to update this file using the configuration designer.
 
->**Note:**
-To see the core plugins available in the configuration designer, see [List of available plugins](#List). For more information on plugins, see the [Cordova config.xml documentation](https://go.microsoft.com/fwlink/p/?LinkID=510632).
+>**Note:** For more information on plugins, see the [Cordova config.xml documentation](https://go.microsoft.com/fwlink/p/?LinkID=510632).
 
 ## <a id="Adding"></a>Add a core plugin
 
@@ -73,7 +72,7 @@ The [Cordova plugins registry](http://plugins.cordova.io) provides information a
 
 Occasionally you might need to install a specific version of a Cordova plugin that is not listed in the configuration designer. If this plugin is available in plugins.cordova.io when using any version of Cordova, or in npm when using Cordova 5.0.0+, you can add the following element to config.xml and the plugin will be installed on when you next build your project:
 
-1. If any of plugins you intend to install were already added to your project (particularly with an older ID), [Remove them](#remove).
+1. If any of plugins you intend to install were already added to your project (particularly with an older ID), [remove them](#removing).
 
 2. In **Solution Explorer**, open the shortcut menu for config.xml and choose **View Code**.
 
