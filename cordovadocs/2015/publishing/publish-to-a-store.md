@@ -427,7 +427,7 @@ Which version of Windows does your app target? Choose a section:
 
 4. Complete the wizard.
 
-    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt627715.aspx#create_package)
+    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/library/windows/apps/xaml/mt627715.aspx#create_package)
 
 5. Find your packaging files in the ```AppPackages``` folder in the root of your project.
 
@@ -450,7 +450,7 @@ Which version of Windows does your app target? Choose a section:
 
 4. Complete the wizard.
 
-    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt627715.aspx#create_package)
+    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/library/windows/apps/xaml/mt627715.aspx#create_package)
 
 5. Find your packaging files in the ```AppPackages``` folder in the root of your project.
 
@@ -488,7 +488,7 @@ Which version of Windows does your app target? Choose a section:
 
 4. Complete the wizard and in the wizard choose which platforms you want to make your app available to.
 
-    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt627715.aspx#create_package)
+    For step-by-step guidance, see [Create an app package](https://msdn.microsoft.com/library/windows/apps/xaml/mt627715.aspx#create_package)
 
 5. Find your packaging files in the ```AppPackages``` folder in the root of your project.
 
@@ -497,4 +497,4 @@ Which version of Windows does your app target? Choose a section:
 
 To publish your app to the store, see [Publish Windows apps](https://dev.windows.com/en-us/publish).
 
-To install your app directly onto a device [Sideload your app package](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt627715.aspx#sideload_package).
+To install your app directly onto a device [Sideload your app package](https://msdn.microsoft.com/library/windows/apps/xaml/mt627715.aspx#sideload_package).

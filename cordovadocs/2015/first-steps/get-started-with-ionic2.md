@@ -17,7 +17,7 @@ ms.author: jomatthi
 To manage, code, run and debug Ionic 2 applications using Visual Studio, you must install the following:
 
 + [Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794)
-+ [Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/installation?view=toolsforcordova-2017)
++ [Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/installation?view=toolsforcordova-2017)
 + Visual Studio Ionic 2 Templates (described below)
 + Ionic Template dependencies (described below)
 
@@ -1034,9 +1034,9 @@ You may need to re-enter your credentials. If the notifications indicate that yo
 
 ### <a id="vsAndroidEmu"></a> Visual Studio Emulator for Android won't run?
 
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
+The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/library/mt228282).
 
 ### <a name="breakpoints"></a> Having trouble hitting breakpoints in your .ts files?
 

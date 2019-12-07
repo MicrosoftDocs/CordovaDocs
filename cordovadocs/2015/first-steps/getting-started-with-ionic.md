@@ -455,9 +455,9 @@ You may need to re-enter your credentials. If the notifications indicate that yo
 
 ### <a id="vsAndroidEmu"></a> Visual Studio Emulator for Android won't run?
 
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
+The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/library/mt228282).
 
 ### <a id="other"></a> Other issues?
 
@@ -465,8 +465,8 @@ If you have errors running the Blank App template (rather than just the Ionic st
 
 1. In Visual Studio, go to **Tools**, **Options**, **Tools for Apache Cordova** and run the Dependency Checker.
 
-    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty) to install API19 and API22.
+    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty) to install API19 and API22.
 
 2. If you see an error message in the Output window in Visual Studio, use any links provided to try to resolve the issue.
 
-3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#vstac). Otherwise or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
+3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#vstac). Otherwise or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).

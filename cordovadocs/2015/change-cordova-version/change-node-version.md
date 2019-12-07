@@ -8,7 +8,7 @@ ms.author: jomatthi
 
 # Safely update Node.js (Visual Studio Tools for Apache Cordova)
 
-Cordova uses [Node.js](http://nodejs.org/) to perform automation tasks. [Visual Studio Taco Update 8](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015) ensures that Cordova uses a compatible version of node.js. If you haven't installed the update, and you plan to install a new version of node.js onto your computer, make sure that it's compatible with the version of Cordova that your project uses. This topic helps you do that.
+Cordova uses [Node.js](http://nodejs.org/) to perform automation tasks. [Visual Studio Taco Update 8](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015) ensures that Cordova uses a compatible version of node.js. If you haven't installed the update, and you plan to install a new version of node.js onto your computer, make sure that it's compatible with the version of Cordova that your project uses. This topic helps you do that.
 
 ## Find out which version of Node.js is installed
 

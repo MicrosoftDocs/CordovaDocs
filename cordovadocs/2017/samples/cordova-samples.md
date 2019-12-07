@@ -1,7 +1,6 @@
 ---
 title: "Samples & Examples"
 description: "Apache Cordova Samples we made and examples we like"
-author: "ljzhong"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -9,7 +8,6 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "sample"
 ms.date: "05/02/2016"
-ms.author: "lizhong"
 ---
 
 # Favorite Samples & Examples

@@ -33,7 +33,7 @@ To get going quickly, follow these steps:
     * Install [Node.js](http://go.microsoft.com/fwlink/?LinkID=396867) and you'll also need to install the [Git command line tools](http://go.microsoft.com/fwlink/?LinkID=396870) on Windows. Note that the default option for Git's install does not place the tools in the path. Select option to run the tools from the command prompt.
     * **Android** requires the [Java](http://go.microsoft.com/fwlink/?LinkID=396871), [Ant](http://go.microsoft.com/fwlink/?LinkID=396869) (Cordova < 5.0.0 only), and the [Android SDK](http://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed (usually API 21 or 22). Add environment variables for ANDROID_HOME pointing to your Android SDK install, ANT_HOME to your Ant install, and JAVA_HOME to your Java install. Add %ANT_HOME%\bin to your path.
     * **iOS** requires Xcode (from the Mac app store) and [Node.js](http://go.microsoft.com/fwlink/?LinkID=396867)
-    * See the [General CI tutorial](ci-guide.md#depends) or [Install Dependencies Manually](https://msdn.microsoft.com/en-us/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
+    * See the [General CI tutorial](ci-guide.md#depends) or [Install Dependencies Manually](https://msdn.microsoft.com/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
 
 2. **Update package.json in your project:** Add these lines to a package.json file in your project. Use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a package.json file in the root of your project.
 

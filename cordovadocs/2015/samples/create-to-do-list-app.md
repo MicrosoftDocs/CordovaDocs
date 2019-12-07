@@ -29,7 +29,7 @@ If want to skip right to the complete sample and run it, get it by downloading t
 A few things to know before you run the app:
 
 * By default, the sample will use HTML5 Web storage (local storage) for todo list items.
-* To store todo list items on Azure (optional), you need to [set up a SQL database](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) using the Azure portal. When you have set up the Azure database, update the AngularJS ToDo List app:
+* To store todo list items on Azure (optional), you need to [set up a SQL database](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) using the Azure portal. When you have set up the Azure database, update the AngularJS ToDo List app:
 
     1. In azureStorage.js, include the Azure Mobile Apps URL where instructed by code comments.
     2.  In index.html, update the following URL in the Content-Security-Policy `<meta>` element to match your Mobile Apps URL: http://youraddress.azurewebsites.net
@@ -639,7 +639,7 @@ In this section, you’ll add additional service modules to support features suc
         function Maps($rootScope, $q, $window, $resource, cordova) {
             var BING_MAPS_API_KEY = 'API-KEY-GOES-HERE'; // TODO: Add your Bing Maps API key
             if (BING_MAPS_API_KEY === 'API-KEY-GOES-HERE') {
-                console.warn("A Bing Maps API key was not provided, skipping the API call. Get an API key at https://msdn.microsoft.com/en-us/library/ff428642.aspx");
+                console.warn("A Bing Maps API key was not provided, skipping the API call. Get an API key at https://msdn.microsoft.com/library/ff428642.aspx");
             }
             this.url = 'http://dev.virtualearth.net/REST/v1/Locations/:latitude,:longitude?key=' + BING_MAPS_API_KEY;
 
@@ -766,7 +766,7 @@ The complete sample includes additional code to store and retrieve todo list ite
 
 1. If you don’t already have one, create a [Microsoft Azure account](http://azure.microsoft.com/pricing/free-trial/).
 
-2. On the Azure portal, [set up a SQL database](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) using a free trial version of Azure.
+2. On the Azure portal, [set up a SQL database](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) using a free trial version of Azure.
 
 3. Add required plugins to the project using the configuration designer. To do this, take these steps.
 

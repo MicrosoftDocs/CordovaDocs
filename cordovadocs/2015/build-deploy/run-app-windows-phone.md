@@ -57,7 +57,7 @@ If you have trouble deploying to Windows Phone, see [Resolve Windows build and d
 
 2. Unlock your device for development.
 
-    For Windows Phone 10, see [enable your device for development](https://msdn.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). For Windows Phone 8, see [get a developer license](https://msdn.microsoft.com/library/windows/apps/hh974578) and [register your phone](https://msdn.microsoft.com/en-us/library/windows/apps/dn614128).
+    For Windows Phone 10, see [enable your device for development](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development). For Windows Phone 8, see [get a developer license](https://msdn.microsoft.com/library/windows/apps/hh974578) and [register your phone](https://msdn.microsoft.com/library/windows/apps/dn614128).
 
 3. With your app open in Visual Studio, open config.xml, choose the **Windows** tab, and select either **Windows 8.1** or **Windows 10** in the **Target Platform** drop-down box.
 

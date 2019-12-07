@@ -10,7 +10,6 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
-ms.author: "adamre"
 ---
 
 # Measure the performance of a Cordova app
