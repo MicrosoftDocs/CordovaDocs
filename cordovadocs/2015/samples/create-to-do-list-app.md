@@ -764,7 +764,7 @@ The complete sample includes additional code to store and retrieve todo list ite
 
 ### To add Azure Mobile Apps
 
-1. If you don’t already have one, create a [Microsoft Azure account](http://azure.microsoft.com/pricing/free-trial/).
+1. If you don’t already have one, create a [Microsoft Azure account](https://azure.microsoft.com/pricing/free-trial/).
 
 2. On the Azure portal, [set up a SQL database](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) using a free trial version of Azure.
 

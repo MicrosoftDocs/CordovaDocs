@@ -24,7 +24,7 @@ Fortunately, Mobile Device Management (MDM) suites like **[Microsoft Intune](htt
 
 As a result, Intune's internal app store allows you to reduce the amount of time it takes to make an app update available to your internal users from days to minutes and can reduce the scope of your risk. Intune's mobile app store / company portal capabilities include support for Android, iOS, Windows, and Samsung KNOX based devices.  
 
-See **[deploy and configure apps with Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646965.aspx)** for more details.
+See **[deploy and configure apps with Microsoft Intune](https://technet.microsoft.com/library/dn646965.aspx)** for more details.
 
 ## Additional Security Topics
 - [Learn about Cordova platform and app security features](best-practices.md)

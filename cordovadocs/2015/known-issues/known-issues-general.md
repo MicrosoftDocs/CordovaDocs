@@ -32,7 +32,7 @@ See [Safely update Node.js](../change-cordova-version/change-node-version.md) an
 
 ## <strong>Missing Platform Dropdown</strong>
 
-The “Solution Platform” dropdown might not appear in the toolbar when upgrading Visual Studio 2013 from a previous version to Update 4. You can add using the “Standard Toolbar Options” drop-down as described in [Microsoft Support article 2954109](http://support.microsoft.com/kb/2954109).
+The “Solution Platform” dropdown might not appear in the toolbar when upgrading Visual Studio 2013 from a previous version to Update 4. You can add using the “Standard Toolbar Options” drop-down as described in [Microsoft Support article 2954109](https://support.microsoft.com/kb/2954109).
 
 ## <strong>Building a Cordova project from source control results in Cordova plugin APIs not returning Results</strong>
 

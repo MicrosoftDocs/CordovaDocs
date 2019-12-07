@@ -24,9 +24,9 @@ When building an internal facing app, Mobile Device Management (MDM) and Mobile 
 
 See the following articles for additional information:
 
-- [Manage device compliance policies for Microsoft Intune](https://technet.microsoft.com/en-us/library/dn705843.aspx)
-- [Create and deploy mobile app management policies with Microsoft Intune](https://technet.microsoft.com/en-us/library/mt627829.aspx)
-- [Decide how to prepare apps for mobile application management with Microsoft Intune](https://technet.microsoft.com/en-us/library/mt631425.aspx). 
+- [Manage device compliance policies for Microsoft Intune](https://technet.microsoft.com/library/dn705843.aspx)
+- [Create and deploy mobile app management policies with Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx)
+- [Decide how to prepare apps for mobile application management with Microsoft Intune](https://technet.microsoft.com/library/mt631425.aspx). 
 
 Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an app SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Intune App SDK for Cordova is exposed via a Cordova plugin.  Adding the plugin is easy. 
 
@@ -51,7 +51,7 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
     cordova plugin add cordova-plugin-ms-intune-mam --save
     ```
 
-See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
+See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/library/dn878028.aspx) versions of the tools for more information.
 
 ## Threat detection
 Even the most careful implementation can still have vulnerabilities so another aspect of security is detecting problems. In addition to the features Intune provides, Microsoft has a number of additional products that can help out in this space.
@@ -62,7 +62,7 @@ See [Azure Active Directory Identity Protection documentation](https://azure.mic
 
 For Azure based services, databases, and VMs, you can use **[Azure Security Center](https://azure.microsoft.com/services/security-center/)** which builds on top of Azure's world class certifications and enables some powerful security features for your Virtual Machines and SQL databases including full support for auditing SQL servers, threat detection, transparent data encryption, and monitoring and notification about recommended updates.
 
-**[Microsoft Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/)** is an on-premisems.product that provides an intelligent and adapting mechanism for [detecting potential threats across services and servers in a datacenter](https://technet.microsoft.com/en-us/library/dn707706.aspx). This is particularly useful in the mobile context when your app needs to access services housed within a corporate datacenter rather than Azure. 
+**[Microsoft Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/)** is an on-premisems.product that provides an intelligent and adapting mechanism for [detecting potential threats across services and servers in a datacenter](https://technet.microsoft.com/library/dn707706.aspx). This is particularly useful in the mobile context when your app needs to access services housed within a corporate datacenter rather than Azure. 
 
 ## Additional Security Topics
 - [Learn about Cordova platform and app security features](best-practices.md)
