@@ -16,7 +16,7 @@ ms.author: "clantz"
 
 Visual Studio brings a seamless and common tooling experience for developing Cordova apps across app types and device platforms. When developing Apache Cordova apps, you can use diagnostic tools such as the Visual Studio debugger, the DOM Explorer, and the JavaScript Console to fix problems in your apps. For platform-specific differences in the debugger experience, see [Debugging features by platform](#Debugging features by platform).
 
-This article matches the steps of the Cordova [Video tutorial](http://go.microsoft.com/fwlink/p/?LinkID=534729) on debugging. The steps match video content that follows the introduction of the tools and features (approximately four minutes from the start).  If you want steps to debug for a particular platform, see [Debugging features by platform](#Debugging features by platform).
+This article matches the steps of the Cordova [Video tutorial](https://go.microsoft.com/fwlink/p/?LinkID=534729) on debugging. The steps match video content that follows the introduction of the tools and features (approximately four minutes from the start).  If you want steps to debug for a particular platform, see [Debugging features by platform](#Debugging features by platform).
 
 ### Fix build and deployment errors
 
@@ -26,7 +26,7 @@ See these [troubleshooting tips](../tips-workarounds/general-tips.md).
 
 To use Visual Studio to debug your Cordova apps, you must:
 
-1.  [Install Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=397606) with Visual Studio Tools for Apache Cordova.
+1.  [Install Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=397606) with Visual Studio Tools for Apache Cordova.
 
 2.  If you want to follow the steps in this tutorial, download the [AngularJS ToDoList sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs), unzip it, and open the solution (.sln file) in Visual Studio.
 
@@ -386,7 +386,7 @@ The supported set of console commands, and their behavior, is provided by the ho
 Features available in the **Styles**, **Computed**, and **Layout** tabs of the [Quickstart: Debug HTML and CSS](https://msdn.microsoft.com/library/hh441474.aspx)  are supported on iOS.
 
 > [!WARNING]
-> We’ll continue to improve debugging support in subsequent releases. For detailed information about debugging support, see [Known Issues](http://go.microsoft.com/fwlink/?linkid=398782).
+> We’ll continue to improve debugging support in subsequent releases. For detailed information about debugging support, see [Known Issues](https://go.microsoft.com/fwlink/?linkid=398782).
 
 ### <a name="DbgWindows"></a>To debug in Windows and Windows Phone
 For Windows 8, Windows 8.1, and Windows Phone 8.1 apps, you can use the same Visual Studio debugging tools that you would use for any Windows Store app built using HTML and JavaScript. For more information, see [Debug Store apps in Visual Studio](https://msdn.microsoft.com/library/hh441472.aspx) in the Windows Dev Center.

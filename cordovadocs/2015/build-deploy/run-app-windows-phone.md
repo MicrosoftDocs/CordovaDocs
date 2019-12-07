@@ -73,7 +73,7 @@ If you have trouble deploying to Windows Phone, see [Resolve Windows build and d
 
 If you have trouble deploying to Windows Phone, see [Resolve Windows build and deployment errors](../tips-workarounds/windows-tips.md).
 
-![Download the tools](./media/run-app-windows-phone/run-windows-phone-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
+![Download the tools](./media/run-app-windows-phone/run-windows-phone-download-link.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 ### See Also
 

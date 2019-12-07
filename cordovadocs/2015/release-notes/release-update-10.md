@@ -16,7 +16,7 @@ ms.author: "rmpablos"
 ## Setup Instructions
 You can get this update following this link
 
-[http://go.microsoft.com/fwlink/?LinkId=799777](http://go.microsoft.com/fwlink/?LinkId=799777)
+[https://go.microsoft.com/fwlink/?LinkId=799777](https://go.microsoft.com/fwlink/?LinkId=799777)
 
 Or wait until you receive a notification in Visual Studio.
 

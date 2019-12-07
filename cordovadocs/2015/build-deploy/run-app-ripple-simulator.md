@@ -67,7 +67,7 @@ You can change the target device on the fly while your app is running in Chrome.
 
     ![Changing the device in Chrome](media/run-app-ripple-simulator/run-ripple-change-device.png)
 
-![Download the tools](media/run-app-ripple-simulator/run-ripple-download-link.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
+![Download the tools](media/run-app-ripple-simulator/run-ripple-download-link.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
 
 #### See Also
 

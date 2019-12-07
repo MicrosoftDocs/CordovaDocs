@@ -15,7 +15,7 @@ Static and dynamic code analysis tools can also help you identify problems and b
 
 You can then step into more advanced static and dynamic code analysis tools like those offered by [HP Fortify](http://www8.hp.com/us/en/software-solutions/application-security/). Products like these are particularly useful if you are subject to compliance rules like PCI DSS.
 
-JavaScript code typically makes up the bulk of your app's code and JSHint/JSLint or more advanced code analysis tools can be run on your JavaScript code directly (say via a [Gulp task](https://www.npmjs.com/package/gulp-jshint)). This makes it easy to add to any [Continous Integration](http://go.microsoft.com/fwlink/?LinkID=691186) you may be doing.
+JavaScript code typically makes up the bulk of your app's code and JSHint/JSLint or more advanced code analysis tools can be run on your JavaScript code directly (say via a [Gulp task](https://www.npmjs.com/package/gulp-jshint)). This makes it easy to add to any [Continous Integration](https://go.microsoft.com/fwlink/?LinkID=691186) you may be doing.
 
 C#, Objective-C, Java, and C++ code will normally be in plugins or the Cordova implementations for platforms like Android and iOS. You can get the most complete coverage of this type of code and then running a build for the platform in question. A fully formed project is present in the "platforms" folder in the project (ex: platforms/android).
 

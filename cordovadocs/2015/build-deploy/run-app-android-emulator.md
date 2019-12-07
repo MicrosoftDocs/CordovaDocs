@@ -217,7 +217,7 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 7. When prompted, choose **Allow USB Debugging**.
 
-![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://isualstudio.microsoft.com/vs/features/cordova/)
+![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://isualstudio.microsoft.com/vs/features/cordova/)
 
 ## See Also
 

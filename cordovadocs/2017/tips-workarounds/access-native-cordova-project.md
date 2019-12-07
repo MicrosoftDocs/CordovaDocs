@@ -29,7 +29,7 @@ If you want to build an app by using the native project or use native debugging 
 
 ### To build an app using a native project
 
-1. Make sure that you have [installed the tools for Apache Cordova](http://aka.ms/mchm38).
+1. Make sure that you have [installed the tools for Apache Cordova](https://aka.ms/mchm38).
 
 2.  Install the Cordova CLI by typing the following command at a command prompt:
 

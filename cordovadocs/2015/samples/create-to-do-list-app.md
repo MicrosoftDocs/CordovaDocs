@@ -16,7 +16,7 @@ For an overview of tasks required to build a Cordova app, see [Create Your First
 
 The complete todo list sample app can be downloaded here:
 
-* [AngularJS sample](http://go.microsoft.com/fwlink/p/?LinkID=398516)
+* [AngularJS sample](https://go.microsoft.com/fwlink/p/?LinkID=398516)
 
 ## Pre-requisites
 
@@ -303,7 +303,7 @@ In this section, you’ll register AngularJS app modules to help separate applic
 
 ## <a id="DataModel"></a>Add the data model
 
-The data model is represented by the `xPlat.services` module, which you’ll implement in the files in the services folder. This code includes a service that provides local storage of todo list items using HTML5 Web Storage (localStorage.js). In this initial implementation, the app also provides placeholder code for Bing Maps services, which can be implemented fully later on. The [complete sample app](http://go.microsoft.com/fwlink/?LinkID=398516) also uses Azure to store data.
+The data model is represented by the `xPlat.services` module, which you’ll implement in the files in the services folder. This code includes a service that provides local storage of todo list items using HTML5 Web Storage (localStorage.js). In this initial implementation, the app also provides placeholder code for Bing Maps services, which can be implemented fully later on. The [complete sample app](https://go.microsoft.com/fwlink/?LinkID=398516) also uses Azure to store data.
 
 ### To add code for the data model
 
@@ -740,7 +740,7 @@ Now, you can add new todo list items by typing text and pressing Enter (Ripple) 
 
 ## <a id="BingMaps"></a>Add Bing Maps services (optional)
 
-The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes a Bing Maps service to associate your current address with each todo list item.
+The [complete sample](https://go.microsoft.com/fwlink/p/?LinkID=398516) includes a Bing Maps service to associate your current address with each todo list item.
 
 >**Tip**: If you are more interested in setting up Azure Mobile Apps, you can skip these steps and go to the next section.
 
@@ -760,7 +760,7 @@ The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes 
 
 ## <a id="Azure"></a>Add Azure Mobile Apps (optional)
 
-The complete sample includes additional code to store and retrieve todo list items using Azure Mobile Apps. This code is implemented as an additional service (named azureStorage) in azureStorage.js. You can obtain this code from the [complete sample app](http://go.microsoft.com/fwlink/p/?LinkID=398516), or you can follow the instructions here to add the service.
+The complete sample includes additional code to store and retrieve todo list items using Azure Mobile Apps. This code is implemented as an additional service (named azureStorage) in azureStorage.js. You can obtain this code from the [complete sample app](https://go.microsoft.com/fwlink/p/?LinkID=398516), or you can follow the instructions here to add the service.
 
 ### To add Azure Mobile Apps
 
@@ -961,4 +961,4 @@ The complete sample includes additional code to store and retrieve todo list ite
 
 6. Press F5 to re-run the app. Now, todo list items will be stored in Azure.
 
-![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/node-js/)
+![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/node-js/)

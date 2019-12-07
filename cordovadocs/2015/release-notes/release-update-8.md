@@ -16,7 +16,7 @@ ms.date: "03/08/2016"
 
 This update is installed along with Visual Studio 2015 Update 2. You can also install it directly in Visual Studio 2015 Update 1:
 
-[Visual Studio Tools for Apache Cordova Update 8 Download](http://go.microsoft.com/fwlink/?LinkId=761465)
+[Visual Studio Tools for Apache Cordova Update 8 Download](https://go.microsoft.com/fwlink/?LinkId=761465)
 
 Please note that this installer will require you to have already installed a previously version of VS TACO.
 

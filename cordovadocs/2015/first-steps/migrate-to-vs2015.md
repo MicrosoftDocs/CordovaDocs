@@ -38,7 +38,7 @@ If you want to manually migrate the old project, take the following steps.
 
 ### Create a blank project in Visual Studio 2015
 
-1. If you haven't already, [Install Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794) with Visual Studio Tools for Apache Cordova.
+1. If you haven't already, [Install Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794) with Visual Studio Tools for Apache Cordova.
 
     ![Install Cordova components](media/vs-taco-2015-migrate-to-vs2015/install-cordova-components.png)
 

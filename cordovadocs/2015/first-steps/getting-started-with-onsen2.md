@@ -15,6 +15,7 @@ Onsen UI is a front-end UI framework for developing cross-platform mobile apps u
 Onsen UI is fully independent of frameworks - you can easily plug these components into any project, regardless of JavaScript framework. For more info, see  [Onsen UI 2.0](https://onsen.io/v2/docs/js.html).
 
 ## Get the Onsen UI templates
+
 You can install the Onsen UI starter templates in Visual Studio and use them to start building an app.
 
 1. If you haven't already, [install Visual Studio 2015](https://visualstudio.microsoft.com/).
@@ -29,7 +30,7 @@ You can install the Onsen UI starter templates in Visual Studio and use them to 
 
     Or, do it in Visual Studio, by selecting **Tools**, **Extensions** and **Updates**. In the **Extensions and Updates** dialog box, select **Online**. In the search box, type **Onsen UI**.
 
-    ![Onsen UI Extenstions and Updates](media/vs-taco-2015-tutorial-onsen/image06.png)
+    ![Onsen UI Extensions and Updates](media/vs-taco-2015-tutorial-onsen/image06.png)
 
 3. Choose **Download** to download and install them. When you are asked for permission to install the templates, give your permission.
 
@@ -89,8 +90,6 @@ You can debug your Onsen UI app direct on the Windows 10 device.
 2. Choose a Windows deployment target **Device**.
 
 3. Press F5 to run your app.
-
-
 
 ## Use TypeScript in an Onsen UI app
 

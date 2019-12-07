@@ -303,7 +303,7 @@ The general settings of your app appear in the **Common** page of the configurat
 
     For example, the WeatherApp that appears in the previous image, obtains weather data from a service endpoint that has the domain ```https://query.yahooapis.com```.
 
-The purpose of most other settings clear from the title, but you can find more information about them here: [The config.xml File](http://go.microsoft.com/fwlink/p/?LinkID=510632&clcid=0x409).
+The purpose of most other settings clear from the title, but you can find more information about them here: [The config.xml File](https://go.microsoft.com/fwlink/p/?LinkID=510632&clcid=0x409).
 
 iOS-specific settings appear in the **iOS** tab of the configuration designer.
 

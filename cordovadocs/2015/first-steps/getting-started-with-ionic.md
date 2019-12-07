@@ -19,7 +19,7 @@ Watch a video showing how to find and run the Ionic templates.
 
 You can install the Ionic starter templates in Visual Studio and use them to start building an app.
 
-1. If you haven't already, [install Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794).
+1. If you haven't already, [install Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794).
 
     When you install Visual Studio, make sure you include the optional components, **HTML/JavaScript (Apache Cordova)** under Cross-Platform Mobile Development.
 
@@ -209,7 +209,7 @@ If you have an existing Ionic project or want to run one of the other Ionic samp
 
 ### Set up your machine for Ionic with VS <a name="getStarted"></a>
 
-1. If you haven't already, [install Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794).
+1. If you haven't already, [install Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794).
 
     When you install Visual Studio, make sure you include the optional components, **HTML/JavaScript (Apache Cordova)** under Cross-Platform Mobile Development.
 

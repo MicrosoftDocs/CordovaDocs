@@ -10,7 +10,7 @@ The process of building apps typically involves many repetitive tasks such as co
 
 The central tool for automation is a flexible *task runner* that be configured to run interdependent tasks sequentially, feeding the results of one task into another, and to run independent tasks in parallel. 
 
-[Gulp](http://go.microsoft.com/fwlink/?LinkID=533803) is a popular JavaScript-based task runner with a large number of [useful plugins](http://go.microsoft.com/fwlink/?LinkID=533790) that control a wide range of common tasks. These means you can define (in JavaScript) and automate just about any process you need. Gulp also includes a built-in file system watcher that can automatically run tasks when files change. And because gulp is built on Node.js like the [Apache Cordova Command Line interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI), the two are highly complementary. 
+[Gulp](https://go.microsoft.com/fwlink/?LinkID=533803) is a popular JavaScript-based task runner with a large number of [useful plugins](https://go.microsoft.com/fwlink/?LinkID=533790) that control a wide range of common tasks. These means you can define (in JavaScript) and automate just about any process you need. Gulp also includes a built-in file system watcher that can automatically run tasks when files change. And because gulp is built on Node.js like the [Apache Cordova Command Line interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI), the two are highly complementary. 
 
 In this tutorial we will cover a few ways gulp can be used with Cordova:
 
@@ -35,7 +35,7 @@ In this example we'll start a gulp task in Visual Studio whenever a project is b
 
     > **Note**: the Visual Studio Tools for Apache Cordova automatically install Node.js and npm on your machine. 
 
-2. Create a **[package.json](http://go.microsoft.com/fwlink/?LinkID=533781)** file in your project root if it doesn't exist. In this file, reference the version of gulp you want to use:
+2. Create a **[package.json](https://go.microsoft.com/fwlink/?LinkID=533781)** file in your project root if it doesn't exist. In this file, reference the version of gulp you want to use:
 
     ```json
     {
@@ -47,7 +47,7 @@ In this example we'll start a gulp task in Visual Studio whenever a project is b
 
 ### <a Name="install-plugins"></a>Install gulp plugins
 
-Gulp itself doesn't do much without plugins to control individual tasks. For this exercise we'll install the [gulp-uglify](http://go.microsoft.com/fwlink/?LinkID=533793) and gulp-concat plugins. The same steps apply to any others like those for [TypeScript](http://go.microsoft.com/fwlink/?LinkID=533748), [LESS](http://go.microsoft.com/fwlink/?LinkID=533791), and [SASS](http://go.microsoft.com/fwlink/?LinkID=533792).
+Gulp itself doesn't do much without plugins to control individual tasks. For this exercise we'll install the [gulp-uglify](https://go.microsoft.com/fwlink/?LinkID=533793) and gulp-concat plugins. The same steps apply to any others like those for [TypeScript](https://go.microsoft.com/fwlink/?LinkID=533748), [LESS](https://go.microsoft.com/fwlink/?LinkID=533791), and [SASS](https://go.microsoft.com/fwlink/?LinkID=533792).
 
 To add a plugin, first add a reference to package.json (the ~ before a version number means "at least this version"):
 
@@ -135,7 +135,7 @@ By default, bindings in the Task Runner Explorer work only inside of Visual Stud
 gulp combine-and-uglify
 ```
 
-That said, it is possible to assign bindings in Visual Studio and have them apply to builds  initiated from the command line or in a continuous tntegration environment. This is done with a [Cordova hook](http://go.microsoft.com/fwlink/?LinkID=533744) as described in [this GitHub repo to add a pre-built Cordova hook to your project](https://github.com/Microsoft/cordova-docs/tree/master/articles/tutorial-gulp/hook-task-runner-binding). You can modify this example to meet your needs.
+That said, it is possible to assign bindings in Visual Studio and have them apply to builds  initiated from the command line or in a continuous tntegration environment. This is done with a [Cordova hook](https://go.microsoft.com/fwlink/?LinkID=533744) as described in [this GitHub repo to add a pre-built Cordova hook to your project](https://github.com/Microsoft/cordova-docs/tree/master/articles/tutorial-gulp/hook-task-runner-binding). You can modify this example to meet your needs.
 
 
 ## <a name="build"></a>Use gulp to build an app
@@ -143,7 +143,7 @@ That said, it is possible to assign bindings in Visual Studio and have them appl
 Because it can run on Windows or OSX, gulp provides a unified cross-platform build language for automating and testing builds in a team / continuous integration (CI) environment such as Jenkins or Team Foundation Server 2015. You might also prefer to use a gulp-based workflow rather than the Cordova CLI itself.
 
 ### Behind the scenes: Use cordova-lib with gulp
-For a quick start, we recommend using the [taco-team-build helper module](http://go.microsoft.com/fwlink/?LinkID=533736) described below. In this section we will outline how this node module uses Cordova internally and how you can use Cordova directly from gulp if you would prefer.
+For a quick start, we recommend using the [taco-team-build helper module](https://go.microsoft.com/fwlink/?LinkID=533736) described below. In this section we will outline how this node module uses Cordova internally and how you can use Cordova directly from gulp if you would prefer.
 
 The Cordova CLI internally uses a node module called **cordova-lib**, which encapsulates all of the CLI's core functionality in a series of JavaScript APIs. Cordova-lib is simultaneously released with the Cordova CLI as an npm package and can be used directly from a gulp script.
 
@@ -210,9 +210,9 @@ If you're creating an automated build script, you can find a more complete list 
 <a name="tacoteambuild"></a>
 ### Use the taco-team-build module with gulp
 
-The [taco-team-build helper module](http://go.microsoft.com/fwlink/?LinkID=533736) assists with builds using gulp and alleviates various [common problems](../build-deploy/get-started-with-ci.md) when building a Cordova project from the command line, especially in a team or CI environment. It can be used with any number of build systems including Jake, Grunt, gulp, and even from the command line. It also helps you use gulp to build for multiple platforms, as described in the next section. 
+The [taco-team-build helper module](https://go.microsoft.com/fwlink/?LinkID=533736) assists with builds using gulp and alleviates various [common problems](../build-deploy/get-started-with-ci.md) when building a Cordova project from the command line, especially in a team or CI environment. It can be used with any number of build systems including Jake, Grunt, gulp, and even from the command line. It also helps you use gulp to build for multiple platforms, as described in the next section. 
 
-The taco-team-build repository includes sample gulpfile.js and package.json files, along with documentation. To get started, place the contents of the **samples/gulp** folder from the [taco-team-build repository](http://go.microsoft.com/fwlink/?LinkID=533736) in your project root. Alternately, create package.json and gulpfile.js files in your root as follows:   
+The taco-team-build repository includes sample gulpfile.js and package.json files, along with documentation. To get started, place the contents of the **samples/gulp** folder from the [taco-team-build repository](https://go.microsoft.com/fwlink/?LinkID=533736) in your project root. Alternately, create package.json and gulpfile.js files in your root as follows:   
 
 - **package.json**  
 
@@ -250,7 +250,7 @@ When you run this task (either from the command line or Visual Studio's Task Run
 
    4. Fixes missing execute bits for files in the hooks or platforms folder when running on OSX or Linux.
 
-   5. Adds the [Cordova CI Support Plugin](http://go.microsoft.com/fwlink/?LinkID=533753) to the project if needed.
+   5. Adds the [Cordova CI Support Plugin](https://go.microsoft.com/fwlink/?LinkID=533753) to the project if needed.
 
 
 Within the callback function given to gulp.task function, *cordovaBuild.buildProject* does the asynchronous build step, installing the specified platform ("android" in this case) if necessary. *buildProject* returns a promise to which we then chain other build steps like copying the result of the build.
@@ -258,7 +258,7 @@ Within the callback function given to gulp.task function, *cordovaBuild.buildPro
 
 ### Create a gulp script that builds for multiple platforms 
 
-It's very helpful, especially in a CI environment, to automate building your project for all target platforms. The gulpfile.js script below provides this flexibility. It builds Android, Windows, Windows Phone 8 targets when run on a Windows build machine, and builds the iOS target when run on an OS X build machine. A more complete version of this script can be found in the **samples/gulp** folder in the [taco-team-build repository](http://go.microsoft.com/fwlink/?LinkID=533736).
+It's very helpful, especially in a CI environment, to automate building your project for all target platforms. The gulpfile.js script below provides this flexibility. It builds Android, Windows, Windows Phone 8 targets when run on a Windows build machine, and builds the iOS target when run on an OS X build machine. A more complete version of this script can be found in the **samples/gulp** folder in the [taco-team-build repository](https://go.microsoft.com/fwlink/?LinkID=533736).
 
 ```javascript
 var gulp = require("gulp"),
@@ -321,7 +321,7 @@ gulp.task("build", function() {
 
 ### <a name="ts"></a>Build a Typescript project
 
-If you're using TypeScript in your Cordova app project, you can use the [gulp-typescript](http://go.microsoft.com/fwlink/?LinkID=533748) plugin to compile TypeScript as part of an automated build. Refer back to the [Install plugins](#install-plugins) section for the ways to do this; 
+If you're using TypeScript in your Cordova app project, you can use the [gulp-typescript](https://go.microsoft.com/fwlink/?LinkID=533748) plugin to compile TypeScript as part of an automated build. Refer back to the [Install plugins](#install-plugins) section for the ways to do this; 
 ```"gulp-typescript": "^2.11.0"``` is the dependency that should be listed in package.json.
 
 The following gulpfile.js loads the plugin and runs a task to compile all Typescript (<strong><em>.ts</em><em>) files found in the project's *scripts</em> folder, saving the results in a single file **www/scripts/appBundle.js</strong>*:
@@ -369,7 +369,7 @@ gulp.task("build", ["scripts"], function () {
 ...
 ```
 
-The **samples/gulp** folder in the [taco-team-build repository](http://go.microsoft.com/fwlink/?LinkID=533736) contains sample **gulpfile.js** and **package.json** files that are already configured to include TypeScript.
+The **samples/gulp** folder in the [taco-team-build repository](https://go.microsoft.com/fwlink/?LinkID=533736) contains sample **gulpfile.js** and **package.json** files that are already configured to include TypeScript.
 
 ## <a name="watch"></a>Automatically run gulp tasks when you change files in your project
 

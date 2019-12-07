@@ -16,7 +16,7 @@ Visual Studio Tools for Apache Cordova allow you to build cross-platform, multi-
 
 ## Install remotebuild
 
-To get started with MacInCloud, first set up either an account or a trial version. Make sure you enable the remote build port feature during checkout. Once you have provided your login information, connect to your Mac using Remote Desktop, and then you can set up [remotebuild](http://go.microsoft.com/fwlink/?LinkId=618169). 
+To get started with MacInCloud, first set up either an account or a trial version. Make sure you enable the remote build port feature during checkout. Once you have provided your login information, connect to your Mac using Remote Desktop, and then you can set up [remotebuild](https://go.microsoft.com/fwlink/?LinkId=618169). 
 
 ![Opening remote desktop](media/host-a-mac-in-the-cloud/remotebuild_start.png)
 

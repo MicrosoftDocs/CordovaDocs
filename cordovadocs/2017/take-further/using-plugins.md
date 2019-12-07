@@ -74,10 +74,10 @@ The [Cordova plugins registry](http://plugins.cordova.io) provides information a
 
 ## <a id="Custom"></a>Extend a custom plugin
 
-At times, the custom plugins in the Cordova registry might not meet all your app requirements, and you might want to extend a plugin or create your own plugin. For example, if you need to offload computationally expensive functions to native code, expose new device capabilities to your app, or apply a fix to an existing plugin that you would prefer not to release publicly, you might want to extend or create a plugin. You can find more information about creating your own plugins in the [plugin development guide](http://go.microsoft.com/fwlink/p/?LinkID=510633) in the Cordova documentation.
+At times, the custom plugins in the Cordova registry might not meet all your app requirements, and you might want to extend a plugin or create your own plugin. For example, if you need to offload computationally expensive functions to native code, expose new device capabilities to your app, or apply a fix to an existing plugin that you would prefer not to release publicly, you might want to extend or create a plugin. You can find more information about creating your own plugins in the [plugin development guide](https://go.microsoft.com/fwlink/p/?LinkID=510633) in the Cordova documentation.
 
 If you need to extend your app using a custom plugin, check the plugin registry first and use code that others have already written. If an existing plugin is close to what you need, download it, make improvements, and then submit those changes to the original author. This is a great way of giving back to the Cordova community and making it easier for others to solve similar problems. Install the custom plugin using the configuration designer. When the plugin.xml file is next to the www folder in the project folder tree, the required JavaScript files from the plugin’s www folder will be loaded automatically at runtime. You do not need to reference these files from an HTML file. You can also set breakpoints within these code files if needed. The build process also compiles any platform-specific files in the src folder.
 
 ## See Also
-[Cordova config.xml documentation](http://go.microsoft.com/fwlink/p/?LinkID=510632)
+[Cordova config.xml documentation](https://go.microsoft.com/fwlink/p/?LinkID=510632)
 [Cordova plugins registry](http://plugins.cordova.io)

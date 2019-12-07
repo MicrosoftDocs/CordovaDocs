@@ -8,9 +8,9 @@ ms.author: jomatthi
 
 # Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system
 ## Background
-[Jenkins](http://go.microsoft.com/fwlink/?LinkID=613695) is a hugely popular CI server with a large install base so using it to build your Cordova project may be the way to go if you already have it installed and running in your environment. Fortunatley Tools for Apache Cordova is designed to work with a number of different team build systems since the projects it creates are standard [Apache Cordova Command Line interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.
+[Jenkins](https://go.microsoft.com/fwlink/?LinkID=613695) is a hugely popular CI server with a large install base so using it to build your Cordova project may be the way to go if you already have it installed and running in your environment. Fortunatley Tools for Apache Cordova is designed to work with a number of different team build systems since the projects it creates are standard [Apache Cordova Command Line interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.
 
-[Gulp](http://go.microsoft.com/fwlink/?LinkID=533803) is an increasingly popular JavaScript based task runner with a large number of [useful plugins](http://go.microsoft.com/fwlink/?LinkID=533790) designed to automate common “tasks” for everything from compilation, to packaging, deployment, or simply copying files around. Both Gulp and Cordova CLI are Node.js based which makes the two highly complementary technologies. For these reasons, this tutorial will focus on the use Gulp rather than MSBuild as the primary build language for Cordova apps when using Jenkins.
+[Gulp](https://go.microsoft.com/fwlink/?LinkID=533803) is an increasingly popular JavaScript based task runner with a large number of [useful plugins](https://go.microsoft.com/fwlink/?LinkID=533790) designed to automate common “tasks” for everything from compilation, to packaging, deployment, or simply copying files around. Both Gulp and Cordova CLI are Node.js based which makes the two highly complementary technologies. For these reasons, this tutorial will focus on the use Gulp rather than MSBuild as the primary build language for Cordova apps when using Jenkins.
 
 >**Troubleshooting Tip**: Be aware that we recommend against adding the "platforms" folder or the following json files in the "plugins" folder into source control: android.json, ios.json, remote_ios.json, windows.json, and wp8.json. See "What to Add to Source Control" in the [general CI guide](ci-guide.md#what-to-add-to-source-control) for additional details.
 
@@ -23,14 +23,14 @@ Since the build process we will describe here is not directly dependent on MSBui
 
 >**Troubleshooting Tip**: See ["Internet Access & Proxy Setup" in the general CI tutorial](ci-guide.md) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
-For OSX, the pre-requisites will need to be installed manually, but mirror [the requirements for the Visual Studio remote build agent](http://go.microsoft.com/fwlink/?LinkID=533745). However, unlike with TFS 2013, you do not need to install the remote build agent itself if your OSX machine will only be used for team / CI builds.
+For OSX, the pre-requisites will need to be installed manually, but mirror [the requirements for the Visual Studio remote build agent](https://go.microsoft.com/fwlink/?LinkID=533745). However, unlike with TFS 2013, you do not need to install the remote build agent itself if your OSX machine will only be used for team / CI builds.
 
-For the purposes of this tutorial, we will assume your primary Jenkins build server is installed on Windows. However, it is relatively straight forward to tweak these instructions to have your primary build server be on Linux or OSX. However, be aware that you will need to have a Windows [slave agent](http://go.microsoft.com/fwlink/?LinkID=613696) if you intend to build for the Windows (Windows or Windows Phone 8.1 or Windows 10) or Windows Phone 8 (WP8) Cordova platforms.
+For the purposes of this tutorial, we will assume your primary Jenkins build server is installed on Windows. However, it is relatively straight forward to tweak these instructions to have your primary build server be on Linux or OSX. However, be aware that you will need to have a Windows [slave agent](https://go.microsoft.com/fwlink/?LinkID=613696) if you intend to build for the Windows (Windows or Windows Phone 8.1 or Windows 10) or Windows Phone 8 (WP8) Cordova platforms.
 
-If you have not already, start out by installing and setting up up Jenkins itself. See the [Jenkins website for details](http://go.microsoft.com/fwlink/?LinkID=613697). Note that you may want to install other [Jenkins plugins](http://go.microsoft.com/fwlink/?LinkID=613704) such as the [Jenkins Git Plugin](http://go.microsoft.com/fwlink/?LinkID=613698) depending on your environment.
+If you have not already, start out by installing and setting up up Jenkins itself. See the [Jenkins website for details](https://go.microsoft.com/fwlink/?LinkID=613697). Note that you may want to install other [Jenkins plugins](https://go.microsoft.com/fwlink/?LinkID=613704) such as the [Jenkins Git Plugin](https://go.microsoft.com/fwlink/?LinkID=613698) depending on your environment.
 
 ### Install the NodeJS Plugin
-We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?LinkID=613699) to help manage our Node.js environment. Here's a quick summary of how to install it.
+We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?LinkID=613699) to help manage our Node.js environment. Here's a quick summary of how to install it.
 
 1. Start up Jenkins CI. If you installed it as a service on Windows, it is likely already running.
 
@@ -59,7 +59,7 @@ We're going to use the [Jenkins NodeJS Plugin](http://go.microsoft.com/fwlink/?L
       ![NodeJS Plugin](media/jenkins/jenkins-0-1.png)
 
 ### Additional Setup for iOS Builds
-For iOS, we will be taking advantage of an [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and a [slave agent](http://go.microsoft.com/fwlink/?LinkID=613696) on OSX. Here's a basic walkthrough for configuring these.  
+For iOS, we will be taking advantage of an [Environment Variable Injector plugin](https://go.microsoft.com/fwlink/?LinkID=613700) and a [slave agent](https://go.microsoft.com/fwlink/?LinkID=613696) on OSX. Here's a basic walkthrough for configuring these.  
 
 1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
 
@@ -78,7 +78,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 3. Prep OSX for Use with a Slave Agent
 
-	1. First, if you have not already, [install the Java SE JDK](http://go.microsoft.com/fwlink/?LinkID=613705) on your OSX build server as the agent will use it. (The JRE alone is not sufficient.)
+	1. First, if you have not already, [install the Java SE JDK](https://go.microsoft.com/fwlink/?LinkID=613705) on your OSX build server as the agent will use it. (The JRE alone is not sufficient.)
 
 	2. Next we need to enable SSH. On your OSX Machine:
 
@@ -92,7 +92,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 4. Configure an OSX Slave Agent
 
-	Next we need to setup our OSX Slave agent. The following is a brief summary. See [here](http://go.microsoft.com/fwlink/?LinkID=613696) for detailed instructions.
+	Next we need to setup our OSX Slave agent. The following is a brief summary. See [here](https://go.microsoft.com/fwlink/?LinkID=613696) for detailed instructions.
 
    1. Go to the Jenkins Dashboard again
 
@@ -127,7 +127,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
       ![Slave Agent Label Config](media/jenkins/jenkins-5.png)
 
 ## Environment Variables
-Next you will need to set the following environment variables if they have not already been configured in your build server environment. These can either be set as system variables on your build server, by checking the "Environment variables" option when [managing your build nodes](http://go.microsoft.com/fwlink/?LinkID=613696), or using the [Environment Variable Injector plugin](http://go.microsoft.com/fwlink/?LinkID=613700) and checking the "Inject environment variables to the build process" option in your project build config.
+Next you will need to set the following environment variables if they have not already been configured in your build server environment. These can either be set as system variables on your build server, by checking the "Environment variables" option when [managing your build nodes](https://go.microsoft.com/fwlink/?LinkID=613696), or using the [Environment Variable Injector plugin](https://go.microsoft.com/fwlink/?LinkID=613700) and checking the "Inject environment variables to the build process" option in your project build config.
 
 <style>
     table, th, td {
@@ -173,7 +173,7 @@ Next you will need to set the following environment variables if they have not a
 <tr>
 <td align="left"><strong>CORDOVA_CACHE</strong></td>
 <td align="left">Optional</td>
-<td align="left">Overrides the default location used by the <a href="http://go.microsoft.com/fwlink/?LinkID=533736">sample build script</a> to cache installs of multiple versions of Cordova.</td>
+<td align="left">Overrides the default location used by the <a href="https://go.microsoft.com/fwlink/?LinkID=533736">sample build script</a> to cache installs of multiple versions of Cordova.</td>
 <td align="left">If not specified, uses %APPDATA%\cordova-cache on Windows and ~/.cordova-cache on OSX</td>
 </tr>
 </tbody></table>
@@ -181,19 +181,19 @@ Next you will need to set the following environment variables if they have not a
 
 ## Project Setup & Configuring Jenkins to Build Your Project
 ### Adding Gulp to Your Project
-Using Gulp in a team environment is fairly straight forward as you can see in the detailed [Gulp tutorial](http://go.microsoft.com/fwlink/?LinkID=533742). However, to streamline setup, follow these steps:
+Using Gulp in a team environment is fairly straight forward as you can see in the detailed [Gulp tutorial](https://go.microsoft.com/fwlink/?LinkID=533742). However, to streamline setup, follow these steps:
 
-1.  Take the sample "gulpfile.js" and "package.json" file from the "samples/gulp" folder [from this GitHub repo](http://go.microsoft.com/fwlink/?LinkID=533736) and place them in the root of your project
+1.  Take the sample "gulpfile.js" and "package.json" file from the "samples/gulp" folder [from this GitHub repo](https://go.microsoft.com/fwlink/?LinkID=533736) and place them in the root of your project
 
 2.  Check these two files into source control with your project
 
-From here you can modify gulpfile.js and add other gulp plugins. The [Gulp tutorial](http://go.microsoft.com/fwlink/?LinkID=533742) provides additional detail on what the gulpfile does and how to wire Gulp tasks as "hooks" into Cordova build events.
+From here you can modify gulpfile.js and add other gulp plugins. The [Gulp tutorial](https://go.microsoft.com/fwlink/?LinkID=533742) provides additional detail on what the gulpfile does and how to wire Gulp tasks as "hooks" into Cordova build events.
 
 ### Project Build Settings
 We'll assume for the purposes of this tutorial that we want to build our Cordova app for Android, iOS, and Windows. The Windows Cordova platform can only be built on Windows and iOS can only be built on OSX. As a result, we'll need the ability to be able to queue a build that can target one of these two operating systems. To keep things simple, we will create a separate "Freestyle" project build configs for Windows and iOS. A more complex configuration can be achieved through a "Multi-configuration project" but the different filesystems and conventions between Windows and OSX can get out of hand quickly.
 
 #### Windows Project Build Settings
-Detailed instructions on configuring projects in Jenkins can be found [here](http://go.microsoft.com/fwlink/?LinkID=613701), but here is a walkthrough of the settings needed to build your project:
+Detailed instructions on configuring projects in Jenkins can be found [here](https://go.microsoft.com/fwlink/?LinkID=613701), but here is a walkthrough of the settings needed to build your project:
 
 1. Open the Jenkins Dashboard in a web browser (typically at http://localhost:8080/ if running locally)
 
@@ -236,7 +236,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### OSX Project Build Settings
-The OSX version of the build is similar but adds one additional requirement: Unlocking the keychain. For iOS to build, you will need to [configure your signing certificates on the OSX machine](http://go.microsoft.com/fwlink/?LinkID=613702) as you would normally using with user Jenkins uses to start up the slave agent via SSH. Since the agent does not run interactively, you will then need to unlock the keychain for Jenkins to access the signing certificates. Here is a walkthrough of how to make this happen:
+The OSX version of the build is similar but adds one additional requirement: Unlocking the keychain. For iOS to build, you will need to [configure your signing certificates on the OSX machine](https://go.microsoft.com/fwlink/?LinkID=613702) as you would normally using with user Jenkins uses to start up the slave agent via SSH. Since the agent does not run interactively, you will then need to unlock the keychain for Jenkins to access the signing certificates. Here is a walkthrough of how to make this happen:
 
 1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
 
@@ -282,5 +282,5 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 * [Read tutorials and learn about tips, tricks, and known issues](../index.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
-* [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
+* [Visit our site https://aka.ms/cordova](https://aka.ms/cordova)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)

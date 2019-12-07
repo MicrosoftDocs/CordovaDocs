@@ -14,7 +14,7 @@ Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14
 The most common way to get this update will be the Notification Icon in VS and the Tools & Extensions Updates,
 however from this update we are offering also a standalone installer that you can find here:
 
-[Visual Studio Tools for Apache Cordova Update 5 Download](http://go.microsoft.com/fwlink/?LinkId=715516)
+[Visual Studio Tools for Apache Cordova Update 5 Download](https://go.microsoft.com/fwlink/?LinkId=715516)
 
 Please note that this installer will require you to have already installed a previously version of VS TACO.
 

@@ -264,7 +264,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Android, Windows, WP8, can be built on a Windows build server while a Mac can be used as a build server for iOS. 
                   <ol>
                     <li>
-                      TFS 2015 - See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>
+                      TFS 2015 - See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>
                     </li>
                     <li>
                       TFS 2013 - See <a href="../build-deploy/tfs2013.md">Using Tools for Apache Cordova with TFS 2013</a>
@@ -280,7 +280,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Yes</p>
                 </td>
                 <td>
-                  <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a> for instructions.</p>
+                  <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a> for instructions.</p>
                 </td>
               </tr>
               <tr>
@@ -291,7 +291,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Yes</p>
                 </td>
                 <td>
-                  <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>.</p>
+                  <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>.</p>
                 </td>
               </tr>
               <tr>
@@ -302,7 +302,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Yes</p>
                 </td>
                 <td>
-                  <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=613703" target="_blank">Using Tools for Apache Cordova with the Jenkins CI System</a> for instructions.</p>
+                  <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=613703" target="_blank">Using Tools for Apache Cordova with the Jenkins CI System</a> for instructions.</p>
                 </td>
               </tr>
               <tr>
@@ -328,10 +328,10 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>
                   <ol>
                     <li>
-                      TFS 2015 / VS Team Services - Select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>.
+                      TFS 2015 / VS Team Services - Select "Continous Integration" under the "Triggers" tab of our Build Definition. See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Using Tools for Apache Cordova Apps with VS Team Services and TFS 2015</a>.
                     </li>
                     <li>
-                      TFS 2013 - See <a href="http://go.microsoft.com/fwlink/?LinkID=691211">Specify Build Triggers and Reasons</a> in TFS 2013 documentation.
+                      TFS 2013 - See <a href="https://go.microsoft.com/fwlink/?LinkID=691211">Specify Build Triggers and Reasons</a> in TFS 2013 documentation.
                     </li>
                   </ol>
                 </td>

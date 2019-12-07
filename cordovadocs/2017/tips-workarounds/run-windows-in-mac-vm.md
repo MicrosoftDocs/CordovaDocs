@@ -19,9 +19,9 @@ This article shows how you can build hybrid apps using Apache Cordova in Visual 
 
  - [Xcode on OS X](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
  - [Node JS on OS X](http://nodejs.org/)
- - [Windows 7 or 8+](http://windows.microsoft.com/en-us/windows/downloads)
+ - [Windows 7 or 8+](https://windows.microsoft.com/windows/downloads)
  - [Parallels on OS X](http://www.parallels.com/) or a similar virtual machine solution
- - [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://visualstudio.microsoft.com/vs/features/cordova/) installed
+ - [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://visualstudio.microsoft.com/vs/features/cordova/) installed
 
 Any Mac that can run Mavericks or Yosemite should work with Parallels and Visual Studio, such as a 2013 MacBook Pro.
 
@@ -41,7 +41,7 @@ In the environment we tested, we gave the VM 2 CPUS and 3 GB RAM with 8 GB RAM o
 ## Set up Node.js with remotebuild
 Once you’ve got Parallels up and running, you’re ready to set up your Mac. First you need to install Node.js on OS X. Follow the directions at [the NodeJS web site](http://nodejs.org/) to install it.
 
-Once Node.js is installed, get the [remotebuild](http://go.microsoft.com/fwlink/?LinkId=618169) agent. The remotebuild agent allows Visual Studio to communicate with OS X and use your Mac as a build service. You can install the remotebuild agent by opening the Terminal App on your Mac and typing the following command:
+Once Node.js is installed, get the [remotebuild](https://go.microsoft.com/fwlink/?LinkId=618169) agent. The remotebuild agent allows Visual Studio to communicate with OS X and use your Mac as a build service. You can install the remotebuild agent by opening the Terminal App on your Mac and typing the following command:
 
     sudo npm install -g remotebuild
 

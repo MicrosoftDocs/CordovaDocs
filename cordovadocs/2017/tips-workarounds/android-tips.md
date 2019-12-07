@@ -49,7 +49,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
     Run the SDK Manager as an Administrator if you are having trouble installing components.
 
-6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](http://go.microsoft.com/fwlink/?LinkID=396873), try again.
+6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](https://go.microsoft.com/fwlink/?LinkID=396873), try again.
 
 <a name="haxm"></a>
 ## Resolve issues with the HAXM driver

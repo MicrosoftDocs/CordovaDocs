@@ -8,7 +8,7 @@ ms.author: jomatthi
 
 # Video Walkthrough: Interoperate with third-party tools
 
-Apache Cordova projects that you create using many third party tools are compatible with Visual Studio 2015, including projects that you create using command line interfaces (CLIs) such as Cordova and Ionic. In this video walkthrough, we show you how to use Visual Studio 2015 with a project that you create using the Ionic CLI. This article matches the steps of the Cordova [Video tutorial](http://go.microsoft.com/fwlink/p/?LinkID=534728) on interoperability.
+Apache Cordova projects that you create using many third party tools are compatible with Visual Studio 2015, including projects that you create using command line interfaces (CLIs) such as Cordova and Ionic. In this video walkthrough, we show you how to use Visual Studio 2015 with a project that you create using the Ionic CLI. This article matches the steps of the Cordova [Video tutorial](https://go.microsoft.com/fwlink/p/?LinkID=534728) on interoperability.
 
 ## Prerequisites
 

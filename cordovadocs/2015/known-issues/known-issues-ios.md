@@ -93,7 +93,7 @@ VS 2015 RTM (no Tools for Apache Cordova updates) and remotebuild agent version 
 
 ## <strong>404 error when using vs-mda-remote with VS 2015 RTM or later</strong>
 
-VS 2015 RTM and later versions a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
+VS 2015 RTM and later versions a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](https://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ## <strong>iOS Simulator does not work when using the remotebuild agent and VS 2015 RTM</strong>
 *Note: This has been resolved in the latest version of remotebuild. Install the latest version to avoid this problem.*

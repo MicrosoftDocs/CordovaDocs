@@ -81,7 +81,7 @@ See the **[Active Directory Quick Start for Cordova](https://azure.microsoft.com
 
 While the quick start uses Azure AD, the plugin also works with **ADFS v3** and up by simply changing the authority and redirect URIs to the appropriate ones for your ADFS installation.
 
-The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./transmit-data-securely.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
+The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./transmit-data-securely.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/library/azure/hh974476.aspx) and [O365](https://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
 
 <!--
 ###ADAL and Azure Mobile Apps or Azure App Service

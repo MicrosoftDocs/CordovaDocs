@@ -17,7 +17,7 @@ ms.author: "rmpablos"
 
 You can get this update following this link
 
-[http://go.microsoft.com/fwlink/?LinkId=787068](http://go.microsoft.com/fwlink/?LinkId=787068)
+[https://go.microsoft.com/fwlink/?LinkId=787068](https://go.microsoft.com/fwlink/?LinkId=787068)
 
 Or wait until you  receive a notification in Visual Studio.
 
