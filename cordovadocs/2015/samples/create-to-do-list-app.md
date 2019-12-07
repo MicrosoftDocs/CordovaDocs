@@ -16,7 +16,7 @@ For an overview of tasks required to build a Cordova app, see [Create Your First
 
 The complete todo list sample app can be downloaded here:
 
-* [AngularJS sample](http://go.microsoft.com/fwlink/p/?LinkID=398516)
+* [AngularJS sample](https://go.microsoft.com/fwlink/p/?LinkID=398516)
 
 ## Pre-requisites
 
@@ -29,7 +29,7 @@ If want to skip right to the complete sample and run it, get it by downloading t
 A few things to know before you run the app:
 
 * By default, the sample will use HTML5 Web storage (local storage) for todo list items.
-* To store todo list items on Azure (optional), you need to [set up a SQL database](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) using the Azure portal. When you have set up the Azure database, update the AngularJS ToDo List app:
+* To store todo list items on Azure (optional), you need to [set up a SQL database](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) using the Azure portal. When you have set up the Azure database, update the AngularJS ToDo List app:
 
     1. In azureStorage.js, include the Azure Mobile Apps URL where instructed by code comments.
     2.  In index.html, update the following URL in the Content-Security-Policy `<meta>` element to match your Mobile Apps URL: http://youraddress.azurewebsites.net
@@ -303,7 +303,7 @@ In this section, you’ll register AngularJS app modules to help separate applic
 
 ## <a id="DataModel"></a>Add the data model
 
-The data model is represented by the `xPlat.services` module, which you’ll implement in the files in the services folder. This code includes a service that provides local storage of todo list items using HTML5 Web Storage (localStorage.js). In this initial implementation, the app also provides placeholder code for Bing Maps services, which can be implemented fully later on. The [complete sample app](http://go.microsoft.com/fwlink/?LinkID=398516) also uses Azure to store data.
+The data model is represented by the `xPlat.services` module, which you’ll implement in the files in the services folder. This code includes a service that provides local storage of todo list items using HTML5 Web Storage (localStorage.js). In this initial implementation, the app also provides placeholder code for Bing Maps services, which can be implemented fully later on. The [complete sample app](https://go.microsoft.com/fwlink/?LinkID=398516) also uses Azure to store data.
 
 ### To add code for the data model
 
@@ -639,7 +639,7 @@ In this section, you’ll add additional service modules to support features suc
         function Maps($rootScope, $q, $window, $resource, cordova) {
             var BING_MAPS_API_KEY = 'API-KEY-GOES-HERE'; // TODO: Add your Bing Maps API key
             if (BING_MAPS_API_KEY === 'API-KEY-GOES-HERE') {
-                console.warn("A Bing Maps API key was not provided, skipping the API call. Get an API key at https://msdn.microsoft.com/en-us/library/ff428642.aspx");
+                console.warn("A Bing Maps API key was not provided, skipping the API call. Get an API key at https://msdn.microsoft.com/library/ff428642.aspx");
             }
             this.url = 'http://dev.virtualearth.net/REST/v1/Locations/:latitude,:longitude?key=' + BING_MAPS_API_KEY;
 
@@ -740,7 +740,7 @@ Now, you can add new todo list items by typing text and pressing Enter (Ripple) 
 
 ## <a id="BingMaps"></a>Add Bing Maps services (optional)
 
-The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes a Bing Maps service to associate your current address with each todo list item.
+The [complete sample](https://go.microsoft.com/fwlink/p/?LinkID=398516) includes a Bing Maps service to associate your current address with each todo list item.
 
 >**Tip**: If you are more interested in setting up Azure Mobile Apps, you can skip these steps and go to the next section.
 
@@ -760,13 +760,13 @@ The [complete sample](http://go.microsoft.com/fwlink/p/?LinkID=398516) includes 
 
 ## <a id="Azure"></a>Add Azure Mobile Apps (optional)
 
-The complete sample includes additional code to store and retrieve todo list items using Azure Mobile Apps. This code is implemented as an additional service (named azureStorage) in azureStorage.js. You can obtain this code from the [complete sample app](http://go.microsoft.com/fwlink/p/?LinkID=398516), or you can follow the instructions here to add the service.
+The complete sample includes additional code to store and retrieve todo list items using Azure Mobile Apps. This code is implemented as an additional service (named azureStorage) in azureStorage.js. You can obtain this code from the [complete sample app](https://go.microsoft.com/fwlink/p/?LinkID=398516), or you can follow the instructions here to add the service.
 
 ### To add Azure Mobile Apps
 
-1. If you don’t already have one, create a [Microsoft Azure account](http://azure.microsoft.com/pricing/free-trial/).
+1. If you don’t already have one, create a [Microsoft Azure account](https://azure.microsoft.com/pricing/free-trial/).
 
-2. On the Azure portal, [set up a SQL database](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) using a free trial version of Azure.
+2. On the Azure portal, [set up a SQL database](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) using a free trial version of Azure.
 
 3. Add required plugins to the project using the configuration designer. To do this, take these steps.
 
@@ -961,4 +961,4 @@ The complete sample includes additional code to store and retrieve todo list ite
 
 6. Press F5 to re-run the app. Now, todo list items will be stored in Azure.
 
-![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/node-js/)
+![Download the tools](media/create-to-do-list-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/node-js/)

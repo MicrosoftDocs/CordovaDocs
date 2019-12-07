@@ -43,7 +43,7 @@ To complete this tutorial, you will need to install the following software compo
 +	Visual Studio Tools for Apache Cordova (installed via the Visual Studio installer)
 +	Visual Studio Web Development workload (installed via the Visual Studio installer)
 
-You'll also need an active subscription on the [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/).
+You'll also need an active subscription on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/).
 
 ## Create the Web Application
 
@@ -224,7 +224,7 @@ In this section, you'll update the Cordova application so it pulls its content f
 
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
-5.	In the project's `www\index.html` file's `<head>` section, replace the existing [Content-Security-Policy](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following:
+5.	In the project's `www\index.html` file's `<head>` section, replace the existing [Content-Security-Policy](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following:
 
     ```HTML
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://YOUR-HOSTED-WEB-APP-URL https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">

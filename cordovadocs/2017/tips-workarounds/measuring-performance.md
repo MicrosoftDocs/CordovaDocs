@@ -10,7 +10,6 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
-ms.author: "adamre"
 ---
 
 # Measure the performance of a Cordova app
@@ -123,7 +122,7 @@ The following image shows a sample report that was created from the diagnostic t
 
 ![diagnostic tool in VS for CPU usage and HTML UI responsiveness](media/measure-performance/diagnostics-vs.png)
 
-For more on Visual Studio�s developer tools, visit  [http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx](http://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx).
+For more on Visual Studio�s developer tools, visit  [https://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx](https://blogs.msdn.com/b/visualstudioalm/archive/2013/07/12/performance-and-diagnostics-hub-in-visual-studio-2013.aspx).
 
 ### A Word of caution
 

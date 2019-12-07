@@ -6,36 +6,36 @@ ms.author: jomatthi
 ---
 
 # Get started with continous integration (CI)
-With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite team / continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.
+With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite team / continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.
 
 ## Visual Studio Team Services and Team Foundation Services 2015 quick start
-Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managaging certificates for iOS! Simply install the **[Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691188)** and add a Cordova Build task to your build definition. 
+Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managaging certificates for iOS! Simply install the **[Visual Studio Team Services Extension for Cordova](https://go.microsoft.com/fwlink/?LinkID=691188)** and add a Cordova Build task to your build definition. 
 
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" /></td>
 <td><strong>Visual Studio Team Services Extension for Cordova</strong><br />
 <i>Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps.</i><br />
-<a href="http://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
+<a href="https://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
 </td>
 </tr></table>
 
 
-See the quick start on the [extension](http://go.microsoft.com/fwlink/?LinkID=691188) page along with the detailed [Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](http://go.microsoft.com/fwlink/?LinkID=691186) tutorial.
+See the quick start on the [extension](https://go.microsoft.com/fwlink/?LinkID=691188) page along with the detailed [Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](https://go.microsoft.com/fwlink/?LinkID=691186) tutorial.
 
 ## Gulp build quick start
-If you would prefer not to use the extension or are not using VS Team Services or TFS, you can get your project running in nearly any CI system quickly using the [taco-team-build node module](http://go.microsoft.com/fwlink/?LinkID=533736) and Gulp. Note that the method described here can be used with Jenkins, as an alternative for VS Team Services or TFS 2015, and others but will **not** work with TFS 2013. See [Tutorials on Specific CI Systems](#ci) for details.
+If you would prefer not to use the extension or are not using VS Team Services or TFS, you can get your project running in nearly any CI system quickly using the [taco-team-build node module](https://go.microsoft.com/fwlink/?LinkID=533736) and Gulp. Note that the method described here can be used with Jenkins, as an alternative for VS Team Services or TFS 2015, and others but will **not** work with TFS 2013. See [Tutorials on Specific CI Systems](#ci) for details.
 
 To get going quickly, follow these steps:
 
 1. **Install dependencies:** First, either install Visual Studio with the Tools for Apache Cordova option on your build server or simply install the pre-requisites for the platforms you are targeting separately. In brief:
     * Visual Studio itself is **only** required if you are building for **Windows or Windows Phone**.
-    * Install [Node.js](http://go.microsoft.com/fwlink/?LinkID=396867) and you'll also need to install the [Git command line tools](http://go.microsoft.com/fwlink/?LinkID=396870) on Windows. Note that the default option for Git's install does not place the tools in the path. Select option to run the tools from the command prompt.
-    * **Android** requires the [Java](http://go.microsoft.com/fwlink/?LinkID=396871), [Ant](http://go.microsoft.com/fwlink/?LinkID=396869) (Cordova < 5.0.0 only), and the [Android SDK](http://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed (usually API 21 or 22). Add environment variables for ANDROID_HOME pointing to your Android SDK install, ANT_HOME to your Ant install, and JAVA_HOME to your Java install. Add %ANT_HOME%\bin to your path.
-    * **iOS** requires Xcode (from the Mac app store) and [Node.js](http://go.microsoft.com/fwlink/?LinkID=396867)
-    * See the [General CI tutorial](ci-guide.md#depends) or [Install Dependencies Manually](https://msdn.microsoft.com/en-us/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
+    * Install [Node.js](https://go.microsoft.com/fwlink/?LinkID=396867) and you'll also need to install the [Git command line tools](https://go.microsoft.com/fwlink/?LinkID=396870) on Windows. Note that the default option for Git's install does not place the tools in the path. Select option to run the tools from the command prompt.
+    * **Android** requires the [Java](https://go.microsoft.com/fwlink/?LinkID=396871), [Ant](https://go.microsoft.com/fwlink/?LinkID=396869) (Cordova < 5.0.0 only), and the [Android SDK](https://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed (usually API 21 or 22). Add environment variables for ANDROID_HOME pointing to your Android SDK install, ANT_HOME to your Ant install, and JAVA_HOME to your Java install. Add %ANT_HOME%\bin to your path.
+    * **iOS** requires Xcode (from the Mac app store) and [Node.js](https://go.microsoft.com/fwlink/?LinkID=396867)
+    * See the [General CI tutorial](ci-guide.md#depends) or [Install Dependencies Manually](https://msdn.microsoft.com/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
 
-2. **Update package.json in your project:** Add these lines to a package.json file in your project. Use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a package.json file in the root of your project.
+2. **Update package.json in your project:** Add these lines to a package.json file in your project. Use [this version](https://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a package.json file in the root of your project.
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
@@ -47,7 +47,7 @@ To get going quickly, follow these steps:
     }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-3. **Add a gulpfile to your project:** Add [this Gulp file](http://go.microsoft.com/fwlink/?LinkID=691922) to the root of your project.
+3. **Add a gulpfile to your project:** Add [this Gulp file](https://go.microsoft.com/fwlink/?LinkID=691922) to the root of your project.
 
 	![gulpfile.js in project](media/tutorial-team-build-readme/quick-1.png)
 
@@ -85,7 +85,7 @@ That's it!
 <a name="ci"></a>
 For additional detail on configuring specific build systems, see the following detailed tutorials:
 
-*  **[Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](http://go.microsoft.com/fwlink/?LinkID=691186)**
+*  **[Build Apache Cordova apps with Visual Studio Team Services or Team Foundation Services 2015](https://go.microsoft.com/fwlink/?LinkID=691186)**
 *  **[Use the Visual Studio Tools for Apache Cordova with Team Foundation Services 2013](./tfs2013.md)**
 *  **[Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](./jenkins.md)**
 
@@ -98,5 +98,5 @@ The following articles also provide some additional details and troubleshooting 
 * [Read tutorials and learn about tips, tricks, and known issues](../index.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
-* [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
+* [Visit our site https://aka.ms/cordova](https://aka.ms/cordova)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)

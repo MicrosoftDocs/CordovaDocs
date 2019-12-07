@@ -76,7 +76,7 @@ import * as Application from './application';
 declare var require: (modules: string[], ready: Function, errback: Function) => void;
 
 // Try and load platform-specific code from the /merges folder.
-// More info at https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/take-further/add-platform-specific-content?view=toolsforcordova-2017#Content.
+// More info at https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/take-further/add-platform-specific-content?view=toolsforcordova-2017#Content.
 require(["./platformOverrides"],
     () => Application.initialize(),
     () => Application.initialize());
@@ -86,7 +86,7 @@ The `application.ts` file contains the standard, boilerplate bootstrap code foun
 
 ```typescript
 // For an introduction to the Blank template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkID=397705
+// https://go.microsoft.com/fwlink/?LinkID=397705
 // To debug code on page load in cordova-simulate or on Android devices/emulators: launch your app, set breakpoints,
 // and then run "window.location.reload()" in the JavaScript Console.
 "use strict";

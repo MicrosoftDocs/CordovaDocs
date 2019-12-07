@@ -15,6 +15,7 @@ Onsen UI is a front-end UI framework for developing cross-platform mobile apps u
 Onsen UI is fully independent of frameworks - you can easily plug these components into any project, regardless of JavaScript framework. For more info, see  [Onsen UI 2.0](https://onsen.io/v2/docs/js.html).
 
 ## Get the Onsen UI templates
+
 You can install the Onsen UI starter templates in Visual Studio and use them to start building an app.
 
 1. If you haven't already, [install Visual Studio 2015](https://visualstudio.microsoft.com/).
@@ -29,7 +30,7 @@ You can install the Onsen UI starter templates in Visual Studio and use them to 
 
     Or, do it in Visual Studio, by selecting **Tools**, **Extensions** and **Updates**. In the **Extensions and Updates** dialog box, select **Online**. In the search box, type **Onsen UI**.
 
-    ![Onsen UI Extenstions and Updates](media/vs-taco-2015-tutorial-onsen/image06.png)
+    ![Onsen UI Extensions and Updates](media/vs-taco-2015-tutorial-onsen/image06.png)
 
 3. Choose **Download** to download and install them. When you are asked for permission to install the templates, give your permission.
 
@@ -55,14 +56,14 @@ You can install the Onsen UI starter templates in Visual Studio and use them to 
 
     ![Onsen UI Android Debug Target](media/vs-taco-2015-tutorial-onsen/image05.png)
 
-    You can configure a Google Android emulator in [AVD Manager](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017).
+    You can configure a Google Android emulator in [AVD Manager](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017).
 
 3. Press F5, and the app should load correctly.
 
     ![Onsen UI Android App](media/vs-taco-2015-tutorial-onsen/image00.png)
 
 ## Get your app running on iOS
-You can run initially on the Ripple Emulator after selecting iOS as a debug target, but for detailed info on setting up the remotebuild agent for iOS, see [this topic](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017).
+You can run initially on the Ripple Emulator after selecting iOS as a debug target, but for detailed info on setting up the remotebuild agent for iOS, see [this topic](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017).
 
 The Onsen UI starter templates run correctly on iOS when the remotebuild agent is running on a Mac (or using an extension like [Monaca for Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/21a7a495-5a24-4eab-a519-2f6e6d176049)), and when Visual Studio is configured to connect to it). Please note that the complete steps are outside the scope here.
 
@@ -89,8 +90,6 @@ You can debug your Onsen UI app direct on the Windows 10 device.
 2. Choose a Windows deployment target **Device**.
 
 3. Press F5 to run your app.
-
-
 
 ## Use TypeScript in an Onsen UI app
 
@@ -129,7 +128,7 @@ Onsen UI templates are intended to run on Windows 10 machines. Please upgrade yo
 
 ### Unhandled exception running on Windows?
 
-Windows apps are more strict about the security when running as a HTML5 apps. Onsen UI includes the shim to support compatibility, but you cannot use **document.write()** or access to **innerHTML**. Please read [an article that describes HTML, CSS, and JavaScript features and differences](https://msdn.microsoft.com/en-us/library/windows/apps/hh465380.aspx) for more details.
+Windows apps are more strict about the security when running as a HTML5 apps. Onsen UI includes the shim to support compatibility, but you cannot use **document.write()** or access to **innerHTML**. Please read [an article that describes HTML, CSS, and JavaScript features and differences](https://msdn.microsoft.com/library/windows/apps/hh465380.aspx) for more details.
 
 ### appxrecipe file missing
 
@@ -155,9 +154,9 @@ You may need to re-enter your credentials. If the notifications indicate that yo
 
 ### Visual Studio Emulator for Android won't run?
 
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
+The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/library/mt228282).
 
 ### Other issues?
 

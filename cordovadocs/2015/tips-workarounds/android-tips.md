@@ -41,16 +41,16 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
      For additional ADB commands, see [this article](http://www.androidcentral.com/android-201-10-basic-terminal-commands-you-should-know).
 
-5. Make sure that you have the [required SDK components installed](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty).
+5. Make sure that you have the [required SDK components installed](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty).
 
     Run the SDK Manager as an Administrator if you are having trouble installing components.
 
-6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](http://go.microsoft.com/fwlink/?LinkID=396873), try again.
+6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](https://go.microsoft.com/fwlink/?LinkID=396873), try again.
 
 <a name="haxm"></a>
 ## Resolve issues with the HAXM driver
 
-The HAXM driver is used to improve the performance of the Google Android Emulator. Conflicts with other technology that uses virtualization, such as Hyper-V, Avast, and Windows 10 Device Guard may prevent the HAXM driver from installing or working correctly. You cannot run the HAXM driver on a virtual machine. If you want to install the HAXM driver, see [this article](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017#HAXM).
+The HAXM driver is used to improve the performance of the Google Android Emulator. Conflicts with other technology that uses virtualization, such as Hyper-V, Avast, and Windows 10 Device Guard may prevent the HAXM driver from installing or working correctly. You cannot run the HAXM driver on a virtual machine. If you want to install the HAXM driver, see [this article](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017#HAXM).
 
 The issue may appear as an HAXM installation error or as an error indicating that you need to enable VT-x in the BIOS.
 
@@ -62,7 +62,7 @@ To fix the issue:
 
       HAXM is not compatible with Device Guard. If DeviceGuard is enabled, then you may be running on a domain-joined machine and DeviceGuard has been configured by the owning organization. We recommend you try to use a non-domain machine with HAXM instead.
 
-      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
+      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
 
 2. Disable Hyper-V.
 

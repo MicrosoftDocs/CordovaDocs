@@ -84,7 +84,7 @@ When using Cordova 5+, you will need to install a whitelist plugin to enable acc
 
 The **access** element from previous versions of Cordova returns but only controls where your app can make XHR requests or access other external content from a web page for Android and iOS. It no longer controls whether you can navigate to a different domain (such as hosted content). A new **allow-navigation** element has been added that then enables you to specify where the app can navigate instead. Finally, a new **allow-intent** element has been introduced specifically designed to control Android intents.
 
-The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
+The base Visual Studio and [Cordova CLI](https://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
 
 ```
 <access origin="*" />
@@ -121,7 +121,7 @@ window.open("http://www.bing.com", "_self");
 ## Use "Local Mode" for Windows 10
 Windows 10 support in the Cordova Windows platform resolves many of the differences that existed between the Windows 8.0/8.1 platform and Android and iOS. In addition, it includes a "local mode" that improves security. The mode only allows navigation to pages hosed within the app, disables inline script, and only allows JavaScript and CSS references from within the app.
 
-One often missed feature that the Windows platform for Cordova has is the ability to call any JavaScript enabled [Windows API](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) from your Cordova app without a plugin. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec. Putting the app in "local mode" reduces risk given the number of APIs your app has access to by enforcing a base set of CSP rules at a OS level rather than relying exclusively on a CSP meta tag. The store submission process for the Windows Store does reject apps using certain "capabilities" when running in the Cordova default "remote mode" (though none of these capabilities are used in core Cordova plugins). These restrictions are lifted completely when running in local mode allowing you full access to Windows APIs.
+One often missed feature that the Windows platform for Cordova has is the ability to call any JavaScript enabled [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377.aspx) from your Cordova app without a plugin. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec. Putting the app in "local mode" reduces risk given the number of APIs your app has access to by enforcing a base set of CSP rules at a OS level rather than relying exclusively on a CSP meta tag. The store submission process for the Windows Store does reject apps using certain "capabilities" when running in the Cordova default "remote mode" (though none of these capabilities are used in core Cordova plugins). These restrictions are lifted completely when running in local mode allowing you full access to Windows APIs.
 
 Enabling it is simple. Edit config.xml either in your favorite text editor like VS Code or by right-clicking and selecting View Source in Visual Studio and add the following elements:
 
@@ -159,7 +159,7 @@ Intune provides two solutions for enabling its MAM features for Android and iOS 
     cordova plugin add cordova-plugin-ms-intune-mam --save
     ```
 
-See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/en-us/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/en-us/library/dn878028.aspx) versions of the tools for more information.
+See **[Intune's Cordova documentation](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)** for more information or if you would prefer to use the app wrapping tool, see Intune's documentation on the [Android](https://technet.microsoft.com/library/mt147413.aspx) and [iOS](https://technet.microsoft.com/library/dn878028.aspx) versions of the tools for more information.
 
 ## Additional Security Topics
 - [Encrypt your local app data](data-encryption.md)

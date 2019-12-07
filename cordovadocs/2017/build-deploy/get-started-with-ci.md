@@ -13,7 +13,7 @@ ms.author: jowargo
 
 # Get Started with Continuous Integration (CI)
 
-Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO).
+Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO).
 
 ## Visual Studio Team Services
 
@@ -21,18 +21,18 @@ Development organizations using Visual Studio Team Services (VSTS) can add Cordo
 
 <table style="width: 100%; border-style: none;"><tr>
 <td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="Apache Cordova logo" /></td>
-<td><strong><a href="http://go.microsoft.com/fwlink/?LinkID=691188">Cordova Build</a></strong><br />
+<td><strong><a href="https://go.microsoft.com/fwlink/?LinkID=691188">Cordova Build</a></strong><br />
 <a href="https://marketplace.visualstudio.com/search?term=publisher%3A%22Visual%20Studio%20Client%20Tools%22&target=VSTS">Visual Studio Client Tools</a><br />
 <i>Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps.</i><br />
-<a href="http://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
+<a href="https://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
 </td>
 </tr></table>
 
-See the quick start on the [extension](http://go.microsoft.com/fwlink/?LinkID=691188) page along with the detailed [Build Apache Cordova apps with Visual Studio Team Services](http://go.microsoft.com/fwlink/?LinkID=691186) tutorial.
+See the quick start on the [extension](https://go.microsoft.com/fwlink/?LinkID=691188) page along with the detailed [Build Apache Cordova apps with Visual Studio Team Services](https://go.microsoft.com/fwlink/?LinkID=691186) tutorial.
 
 ## Gulp
 
-If you would prefer not to use the extension or are not using VSTS, you can get your project running in nearly any CI system quickly using the [taco-team-build node module](http://go.microsoft.com/fwlink/?LinkID=533736) and Gulp. Note that the method described here can be used with Jenkins, as an alternative for VSTS, and others; see [Tutorials on Specific CI Systems](#ci) for details.
+If you would prefer not to use the extension or are not using VSTS, you can get your project running in nearly any CI system quickly using the [taco-team-build node module](https://go.microsoft.com/fwlink/?LinkID=533736) and Gulp. Note that the method described here can be used with Jenkins, as an alternative for VSTS, and others; see [Tutorials on Specific CI Systems](#ci) for details.
 
 To use Gulp with your Cordova projects, follow these steps:
 
@@ -42,14 +42,14 @@ To use Gulp with your Cordova projects, follow these steps:
    + Install [Node.js](http://nodejs.org) and you'll also need to install the [Git command line tools](https://git-scm.com/) on Windows.
      > [!NOTE]
      > The default option for the Git installation does not add Git to the system `PATH` environment variable. To fix this, select the option to run the tools from the command prompt, this will add the Git installation folder to the system `PATH`.
-   + **Android** requires the [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and the [Android SDK](http://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed. Add environment variables for `ANDROID_HOME` pointing to your Android SDK installation folder, and `JAVA_HOME` to your Java install.
+   + **Android** requires the [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and the [Android SDK](https://go.microsoft.com/fwlink/?LinkID=533747) with the correct API level installed. Add environment variables for `ANDROID_HOME` pointing to your Android SDK installation folder, and `JAVA_HOME` to your Java install.
    + **iOS** requires Xcode (from the Mac app store) and [Node.js](http://nodejs.org)
-   + See the [General CI tutorial](ci-guide.md) or [Install Dependencies Manually](https://msdn.microsoft.com/en-us/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
+   + See the [General CI tutorial](ci-guide.md) or [Install Dependencies Manually](https://msdn.microsoft.com/library/dn771551.aspx) in MSDN for some information on what to install for a given platform.
 
 2. **Add or Update the `package.json` in your Cordova project:** Add the following development dependencies to your Cordova project's `package.json` file.
 
    > [!NOTE]
-   > You can use [this version](http://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a `package.json` file in the root of your project.
+   > You can use [this version](https://go.microsoft.com/fwlink/?LinkID=691923) if you do not yet have a `package.json` file in the root of your project.
 
    ```JavaScript
    {
@@ -61,7 +61,7 @@ To use Gulp with your Cordova projects, follow these steps:
    }
    ```
 
-3. **Add a `gulpfile.js` to your project:** Add [this Gulp file](http://go.microsoft.com/fwlink/?LinkID=691922) to the root of your project.
+3. **Add a `gulpfile.js` to your project:** Add [this Gulp file](https://go.microsoft.com/fwlink/?LinkID=691922) to the root of your project.
 
    ![gulpfile.js in project](media/get-started-with-ci/quick-1.png)
 
@@ -99,7 +99,7 @@ That's it!
 
 For additional information on how to configure specific build systems, see the following tutorials:
 
-+	**[Build Apache Cordova Apps](http://go.microsoft.com/fwlink/?LinkID=691186)**
++	**[Build Apache Cordova Apps](https://go.microsoft.com/fwlink/?LinkID=691186)**
 +	**[Use the Visual Studio Tools for Apache Cordova with Team Foundation Services 2015](tfs2015.md)**
 +	**[Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system](jenkins.md)**
 

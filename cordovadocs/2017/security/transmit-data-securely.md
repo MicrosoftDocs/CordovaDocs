@@ -13,12 +13,12 @@ For the most part you should apply the same [best practices to your code as you 
 ## SSL and Auth Tokens
 General web best practices apply to Cordova based development including an obvious but sometimes skipped recommendation: **Always use SSL**. While this seems obvious for calls you make that contained sensitive data, it is also important for **any service call that is authenticated** since you will need to pass authentication information like access tokens across in your calls. This is even more important for Cordova since native client authentication [bearer tokens](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer-19.html) often last longer than web based ones. The core assumption is that you are persisting these auth tokens in a secure way when using native API generally not available to the web (such as via library like ADAL that does it for you).
 
-A second related recommendation is to authenticate and authorize all calls using a user login driven authentication token rather than user name and password or an app-level token. The challenges with user name and password are obvious as the information must be passed in clear text. App level authentication or secrets can be acceptable some scenarios, but the downside with this approach is that changing the app authentication will require an app update to accomplish. [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can help with situations where you must use an app or service level authentication token / secret / certificate by hiding these values behind a service that is itself authenticated. That said, often it is best to keep these types of service calls behind an app specific service layer that is authenticated against a user rather than having an app call them directly.
+A second related recommendation is to authenticate and authorize all calls using a user login driven authentication token rather than user name and password or an app-level token. The challenges with user name and password are obvious as the information must be passed in clear text. App level authentication or secrets can be acceptable some scenarios, but the downside with this approach is that changing the app authentication will require an app update to accomplish. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) can help with situations where you must use an app or service level authentication token / secret / certificate by hiding these values behind a service that is itself authenticated. That said, often it is best to keep these types of service calls behind an app specific service layer that is authenticated against a user rather than having an app call them directly.
 
 ### Use Azure App Service to streamline service auth
-Mobile Backend as a Service (MBaaS) solutions can help you get up and running quickly with an authenticated service that can resolve the above challenges. [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is specifically designed for this purpose and you can integrate with it easily using the [Azure Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/) Cordova plugin. See [the Cordova authentication article](./authentication.md) for information on adding the plugin to your app.
+Mobile Backend as a Service (MBaaS) solutions can help you get up and running quickly with an authenticated service that can resolve the above challenges. [Azure App Service](https://azure.microsoft.com/services/app-service/) is specifically designed for this purpose and you can integrate with it easily using the [Azure Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/) Cordova plugin. See [the Cordova authentication article](./authentication.md) for information on adding the plugin to your app.
 
-From there, you can then either simply enable Azure Authentication for the entire App Service endpoint via the Azure portal or [add auth into specific services or tables](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/) to lock down access while still using the streamlined client library for features like Easy Tables.
+From there, you can then either simply enable Azure Authentication for the entire App Service endpoint via the Azure portal or [add auth into specific services or tables](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started-users/) to lock down access while still using the streamlined client library for features like Easy Tables.
 
 ![Azure Mobile Apps Easy Tables](media/cordova-security-data/auth-easy-tables.png)
 
@@ -31,7 +31,7 @@ See the next section for information on passing authorization tokens across to c
 <!--
 Note that if you would prefer to use the [Active Directory Authentication Library (ADAL) plugin](https://www.npmjs.com/package/cordova-plugin-ms-adal) to authenticate users in your app with Azure Active Directory or Active Directory Federation Services (ADFS) v3 and up, you can still pass the token you get from ADAL into the Mobile Apps client for interacting with the server.
 
-First, carefully follow all setup steps under **[(Optional) Configure a native client application](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/)** in the Azure App Service AD auth article. You can then login using the auth token from ADAL as follows:
+First, carefully follow all setup steps under **[(Optional) Configure a native client application](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/)** in the Azure App Service AD auth article. You can then login using the auth token from ADAL as follows:
 
 ```javascript
 var client = new WindowsAzure.MobileServiceClient(appUrl);
@@ -43,7 +43,7 @@ client.login("aad", {"access_token": tokenFromADAL})
 
 ```
 -->
-See [Azure Mobile Apps](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-value-prop/), [Azure App Service Auth](https://azure.microsoft.com/en-us/documentation/articles/app-service-api-authentication/), and [the Cordova authentication article](./authentication.md) for additional details.
+See [Azure Mobile Apps](https://azure.microsoft.com/documentation/articles/app-service-mobile-value-prop/), [Azure App Service Auth](https://azure.microsoft.com/documentation/articles/app-service-api-authentication/), and [the Cordova authentication article](./authentication.md) for additional details.
 
 ### Pass auth tokens in request headers when using REST APIs directly
 Cordova apps can call JSON and REST based services without client libraries can quite easily thanks to JSON.parse(). When passing auth tokens in XHR calls to REST APIs, most implmentations use a request header rather than something like a query string that can show up in server logs.
@@ -91,7 +91,7 @@ client.login("aad")
     });
 ```
 
-Note that not all services expect auth tokens to be passed as a X-ZUMO-AUTH header value. The [Azure Active Directory Quick Start](https://azure.microsoft.com/en-us/documentation/articles/active-directory-devquickstarts-cordova/) has code that demonstrates calling the Azure AD Graph REST API directly using an AD token from the [ADAL Cordova plugin](https://www.npmjs.com/package/cordova-plugin-ms-adal) as the auth [bearer token](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer-19.html).
+Note that not all services expect auth tokens to be passed as a X-ZUMO-AUTH header value. The [Azure Active Directory Quick Start](https://azure.microsoft.com/documentation/articles/active-directory-devquickstarts-cordova/) has code that demonstrates calling the Azure AD Graph REST API directly using an AD token from the [ADAL Cordova plugin](https://www.npmjs.com/package/cordova-plugin-ms-adal) as the auth [bearer token](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer-19.html).
 
 Here's a simplified code example that runs against the publicly available AD Graph REST API:
 
@@ -121,7 +121,7 @@ function get10UsersFromADGraph(adTenantId, adalToken, callback) {
 }
 ```
 
-This general approach can be reused for services across Azure and O365 services but there are variations from service to service. See documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) service documentation for additional details on token passing to downstream services.
+This general approach can be reused for services across Azure and O365 services but there are variations from service to service. See documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/library/azure/hh974476.aspx) and [O365](https://dev.office.com/getting-started/office365apis) service documentation for additional details on token passing to downstream services.
 
 ## Certificate Pinning
 Another trick used in high security situations is something called [certificate pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning). The idea here is you can significantly reduce the chances of a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) by "pinning" the allowed public certificates accepted by your app when making the connection to highly trusted, official certificate authorities (like Verisign, Geotrust, GoDaddy) that you are actually using. The end result is that someone trying to execute a man in the middle attack would need a valid SSL certificate from that specific authority to trick your app into connecting to it.
@@ -204,12 +204,12 @@ Here's a quick start:
 ## Consider Resource Access Controls via MDM
 When building an internal facing app, Mobile Device Management (MDM) and Mobile Application management (MAM) solutions like [Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) can help you restrict access to services and network resources by enforcing data access controls for enrolled devices. Features include:
 
-- Allowing you to require VPN or secure Wifi access to connect to key services by helping you [manage device profiles](https://technet.microsoft.com/en-us/library/dn997277.aspx).
-- [Blocking apps from running](https://technet.microsoft.com/en-us/library/mt627829.aspx) on rooted or jailbroken devices.
+- Allowing you to require VPN or secure Wifi access to connect to key services by helping you [manage device profiles](https://technet.microsoft.com/library/dn997277.aspx).
+- [Blocking apps from running](https://technet.microsoft.com/library/mt627829.aspx) on rooted or jailbroken devices.
 
 If you have apps that can access particularly sensitive internal data, you will want to consider using a solution line [Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) or Airwatch to manage your devices.
 
-Note that the Intune MAM features mentioned previously can also force authentication at an app level even if the app itself does not require authentication as a part of Intune's Mobile Application management (MAM) features. This allows administrators to add an additional validation in place before entering an app that may be accessing data.  In addition, products like [Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management) particularly in combination with [Azure AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) can also be used to ensure that only authorized users can access sensitive data. See the article on [preventing, detecting, and remediating security issues](./detect-security-threats.md) for more details.
+Note that the Intune MAM features mentioned previously can also force authentication at an app level even if the app itself does not require authentication as a part of Intune's Mobile Application management (MAM) features. This allows administrators to add an additional validation in place before entering an app that may be accessing data.  In addition, products like [Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management) particularly in combination with [Azure AD Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) can also be used to ensure that only authorized users can access sensitive data. See the article on [preventing, detecting, and remediating security issues](./detect-security-threats.md) for more details.
 
 ## Additional Security Topics
 - [Learn about Cordova platform and app security features](./best-practices.md)

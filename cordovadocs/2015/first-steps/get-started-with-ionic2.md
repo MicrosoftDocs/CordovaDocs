@@ -16,14 +16,14 @@ ms.author: jomatthi
 
 To manage, code, run and debug Ionic 2 applications using Visual Studio, you must install the following:
 
-+ [Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794)
-+ [Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/first-steps/installation?view=toolsforcordova-2017)
++ [Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794)
++ [Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/installation?view=toolsforcordova-2017)
 + Visual Studio Ionic 2 Templates (described below)
 + Ionic Template dependencies (described below)
 
 ## Installing the Ionic 2 templates <a name="getTemplates"></a>
 
-1. If you haven't already, [install Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794).
+1. If you haven't already, [install Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794).
 
     Under the covers, Ionic apps are Apache Cordova apps, you'll need a functional Cordova development environment before you can use with Ionic.
 
@@ -916,15 +916,13 @@ A few errors are fairly common in the starter templates when debugging in Visual
 
 [Did you receive an error messaging indicating that the `appxrecipe` file is missing?](#appxrecipe)
 
-[Did you receive an error message saying that the Content Security Policy is missing?](#scp)
+[Did you receive an error message saying that the Content Security Policy is missing?](#csp)
 
 [Did you receive a certificate error on Windows?](#certificate)
 
 [Visual Studio Emulator for Android won't run?](#vsAndroidEmu)
 
 [Having trouble hitting breakpoints in your .ts files?](#breakpoints)
-
-[Other issues?](#other)
 
 ---
 
@@ -1006,7 +1004,7 @@ so that it looks like this:
 
 ### <a id="unhandled"></a> Did you receive an 'Unhandled exception' running on Windows?
 
-If you see the following unhandled exception when targeting Win/WinPhone 8.1, follow the [earlier steps](#configWindows) to call platformOverrides.js to fix this issue.
+If you see the following unhandled exception when targeting Win/WinPhone 8.1, follow the steps to call platformOverrides.js to fix this issue.
 
 ![unhandled exception](media/vs-taco-2015-tutorial-ionic2/figure-19.png)
 
@@ -1034,9 +1032,9 @@ You may need to re-enter your credentials. If the notifications indicate that yo
 
 ### <a id="vsAndroidEmu"></a> Visual Studio Emulator for Android won't run?
 
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
+The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in the Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/library/mt228282).
 
 ### <a name="breakpoints"></a> Having trouble hitting breakpoints in your .ts files?
 

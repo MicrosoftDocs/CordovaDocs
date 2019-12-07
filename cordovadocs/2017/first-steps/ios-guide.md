@@ -617,7 +617,7 @@ This is a known issue with Apache Cordova 6.3.1 and for the Visual Studio tools 
 
 The project's `build.json` file should look something like the following:
 
-```
+```json
 {
   "ios": {
     "debug": {
@@ -633,9 +633,11 @@ The project's `build.json` file should look something like the following:
 
 To simplify the process, [Darryl Pogue](https://dpogue.ca/articles/cordova-xcode8.html) published a [sample hook](https://gist.github.com/dpogue/186b6c1827363c48d644b0d59e91bc28) that makes the required changes to the project's `build.xconfig` file based on the `build.json` example shown above. To use this hook, copy the sample `xcode8.js` file to your project's `hooks` folder, and then modify the project's `config.xml` to execute it before the compilation step using the following code:
 
-```<platform name="ios">
+```xml
+<platform name="ios">
   <hook type="before_compile" src="hooks/xcode8.js" />
-</platform>```
+</platform>
+```
 
 #### Creating a Distribution Build
 
@@ -662,6 +664,6 @@ brew update && brew upgrade libimobiledevice --HEAD && brew upgrade ios-webkit-d
 
 Try these things:
 
-* Review [iOS and OSX Tips and Workarounds](../tips-workarounds/ios-tips.md).
+- Review [iOS and OSX Tips and Workarounds](../tips-workarounds/ios-tips.md).
 
 [Go back up](#errors)

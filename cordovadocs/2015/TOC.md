@@ -29,7 +29,7 @@
 ## [Authenticate users](security/authentication.md)
 ## [Access data and send notifications](take-further/add-azure-mobile-app.md)
 # Add Analytics
-## [Add engagement analytics](https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-cordova-get-started/)
+## [Add engagement analytics](https://azure.microsoft.com/documentation/articles/mobile-engagement-cordova-get-started/)
 ## [Add crash analytics](take-further/add-analytics.md)
 # Tailor to a platform
 ## [Add platform-specific content](take-further/configure-app.md)

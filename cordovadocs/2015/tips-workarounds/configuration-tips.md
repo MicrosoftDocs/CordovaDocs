@@ -8,7 +8,7 @@ ms.author: jomatthi
 ---
 
 # Configure the Visual Studio Tools for Apache Cordova
-You can download Visual Studio from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
+You can download Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.
 
 * If you choose not to install one or more dependencies with Visual Studio Tools for Apache Cordova, you may need to [install the dependencies manually](#ThirdParty).
 
@@ -44,14 +44,14 @@ You can install the dependencies in any order, except for Java. You must install
 
 * [Google Chrome](https://www.google.com/intl/en/chrome/browser/index.html)
 
-* [Git Command Line Tools](http://go.microsoft.com/fwlink/?LinkID=396870)
+* [Git Command Line Tools](https://go.microsoft.com/fwlink/?LinkID=396870)
 
     When you install Git command line tools, select the option that adds Git to your command prompt path.
 
     >**Caution:**
   Git command line tools 1.9.5 are installed by default. Unexpected failures may occur if you install a version prior to 1.9.0.
 
-* [Apache Ant](http://go.microsoft.com/fwlink/?LinkID=396869)
+* [Apache Ant](https://go.microsoft.com/fwlink/?LinkID=396869)
 
   * Download and extract Ant to a location like C:/ant-1.x.x
 
@@ -61,7 +61,7 @@ You can install the dependencies in any order, except for Java. You must install
 
     >**Note:**
     If you need to set this environment variable manually, see [Override system environment variables](#env-var).
-* [32-bit Oracle Java 7](http://go.microsoft.com/fwlink/?LinkID=396871)
+* [32-bit Oracle Java 7](https://go.microsoft.com/fwlink/?LinkID=396871)
 
   * Set the JAVA_HOME environment variable to C:/Program Files/Java/jdk1.7.0_55
 
@@ -71,7 +71,7 @@ You can install the dependencies in any order, except for Java. You must install
 
     >**Note:**
     If you need to set this environment variable manually, see [Override system environment variables](#env-var).
-* [Android SDK](http://go.microsoft.com/fwlink/?LinkID=396873) with the following SDK packages:
+* [Android SDK](https://go.microsoft.com/fwlink/?LinkID=396873) with the following SDK packages:
 
   * Android SDK Tools (latest version) * Android SDK Platform-tools (latest version)
 
@@ -117,11 +117,11 @@ You can install the dependencies in any order, except for Java. You must install
 
   * Google APIs (ARM System Image)
 
-  * Apple iTunes ([x86](http://go.microsoft.com/fwlink/?LinkID=397715), [x64](http://go.microsoft.com/fwlink/?LinkID=397313))
+  * Apple iTunes ([x86](https://go.microsoft.com/fwlink/?LinkID=397715), [x64](https://go.microsoft.com/fwlink/?LinkID=397313))
 
   * WebSocket4Net (required if you’re developing your app on Windows 7)
 
-    1. Download WebSocket4Net(0.9).Binaries.zip from [CodePlex](http://go.microsoft.com/fwlink/?LinkID=403031).
+    1. Download WebSocket4Net(0.9).Binaries.zip from [CodePlex](https://go.microsoft.com/fwlink/?LinkID=403031).
     2. Unzip the binaries and then unblock net45\Release\WebSocket4Net.dll. To unblock the DLL, open the file Properties for the DLL and choose Unblock in the General tab (at the bottom of the dialog box).
     3. After you unblock the DLL, copy net45\Release\WebSocket4Net.dll into the %ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\WebClient\Diagnostics\ToolWindows folder on your computer.
 

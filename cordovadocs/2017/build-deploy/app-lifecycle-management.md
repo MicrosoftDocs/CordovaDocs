@@ -246,7 +246,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
             </td>
             <td>
                 <p>Android, Windows, WP8, can be built on a Windows build server while a Mac can be used as a build server for
-                    iOS. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a></p>
+                    iOS. See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a></p>
             </td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a> for instructions.</p>
+                <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a> for instructions.</p>
             </td>
         </tr>
         <tr>
@@ -268,7 +268,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
+                <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
             </td>
         </tr>
         <tr>
@@ -279,7 +279,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>See <a href="http://go.microsoft.com/fwlink/?LinkID=613703" target="_blank">Using Tools for Apache Cordova with the Jenkins CI System</a>                    for instructions.</p>
+                <p>See <a href="https://go.microsoft.com/fwlink/?LinkID=613703" target="_blank">Using Tools for Apache Cordova with the Jenkins CI System</a>                    for instructions.</p>
             </td>
         </tr>
         <tr>
@@ -303,7 +303,7 @@ The table below identifies the Visual Studio ALM features you can utilize with a
                 <p>Yes</p>
             </td>
             <td>
-                <p>For VSTS, select &quot;Continous Integration&quot; under the &quot;Triggers&quot; tab of our Build Definition. See <a href="http://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
+                <p>For VSTS, select &quot;Continous Integration&quot; under the &quot;Triggers&quot; tab of our Build Definition. See <a href="https://go.microsoft.com/fwlink/?LinkID=691186">Build Apache Cordova Apps</a>.</p>
             </td>
         </tr>
         <tr>

@@ -66,7 +66,7 @@ The following table provides specific information for each platform.
         </tr>
         <tr>
             <td>iOS</td>
-            <td style="text-align:left">Place a custom <a href="http://go.microsoft.com/fwlink/?LinkID=532829">build-debug.xcconfig</a> or <a href="http://go.microsoft.com/fwlink/?LinkID=532830">build-release.xcconfig</a> file in res/native/ios/cordova to override signing identities and other <a href="http://go.microsoft.com/fwlink/?LinkID=532831">build settings</a> for these configurations. <br><br>Place a custom <a href="http://go.microsoft.com/fwlink/?LinkID=532832">Info.plist</a> file in the res/native/ios/config.xml display name folder to override settings like splashscreens or icons. <br>The Info.plist filename must be renamed as follows: config.xml display name-Info.plist to update <a href="http://go.microsoft.com/fwlink/?LinkID=532834">iOS framework keys</a>. You can find a sample version of these and other files in the <a href="http://go.microsoft.com/fwlink/?LinkID=532835">cordova-ios</a> GitHub repository, or when using the remote agent under the ~/remote-builds/build number/cordovaApp folder on your Mac.</td>
+            <td style="text-align:left">Place a custom <a href="https://go.microsoft.com/fwlink/?LinkID=532829">build-debug.xcconfig</a> or <a href="https://go.microsoft.com/fwlink/?LinkID=532830">build-release.xcconfig</a> file in res/native/ios/cordova to override signing identities and other <a href="https://go.microsoft.com/fwlink/?LinkID=532831">build settings</a> for these configurations. <br><br>Place a custom <a href="https://go.microsoft.com/fwlink/?LinkID=532832">Info.plist</a> file in the res/native/ios/config.xml display name folder to override settings like splashscreens or icons. <br>The Info.plist filename must be renamed as follows: config.xml display name-Info.plist to update <a href="https://go.microsoft.com/fwlink/?LinkID=532834">iOS framework keys</a>. You can find a sample version of these and other files in the <a href="https://go.microsoft.com/fwlink/?LinkID=532835">cordova-ios</a> GitHub repository, or when using the remote agent under the ~/remote-builds/build number/cordovaApp folder on your Mac.</td>
         </tr>
         <tr>
             <td>Windows</td>
@@ -80,4 +80,4 @@ The following table provides specific information for each platform.
 </table>
 
 
-![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)
+![Download the tools](media/configure-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://visualstudio.microsoft.com/vs/features/cordova/)

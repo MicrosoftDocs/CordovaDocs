@@ -8,21 +8,21 @@ ms.author: jomatthi
 
 # Cordova whitelist and Content Security Policy guide
 
-One of the more confusing changes about [Apache Cordova 5](http://go.microsoft.com/fwlink/?LinkID=617659) that have continued on in Cordova 6 is that the updated version of the Android platform and iOS now follow a different, but more powerful security model designed to provide developers with the tools needed to prevent cross-site scripting attacks among other issues. A critical aspect of this security model is that **absolutely no network access of any kind is allowed without the installation of a Cordova plugin**.
+One of the more confusing changes about [Apache Cordova 5](https://go.microsoft.com/fwlink/?LinkID=617659) that have continued on in Cordova 6 is that the updated version of the Android platform and iOS now follow a different, but more powerful security model designed to provide developers with the tools needed to prevent cross-site scripting attacks among other issues. A critical aspect of this security model is that **absolutely no network access of any kind is allowed without the installation of a Cordova plugin**.
 
 ## Cordova Whitelists
-The new [Cordova Whitelist plugin (cordova-plugin-whitelist)](http://go.microsoft.com/fwlink/?LinkID=617668) is the recommended base security plugin to use for managing network security access. Historically there was one **access** element in config.xml used to control all access to network resources. For example, adding the following to config.xml resulted in the app not only being able to make XHR calls, access images, or reference remote scripts but also allowed Cordova to navigate to any URI.
+The new [Cordova Whitelist plugin (cordova-plugin-whitelist)](https://go.microsoft.com/fwlink/?LinkID=617668) is the recommended base security plugin to use for managing network security access. Historically there was one **access** element in config.xml used to control all access to network resources. For example, adding the following to config.xml resulted in the app not only being able to make XHR calls, access images, or reference remote scripts but also allowed Cordova to navigate to any URI.
 
 ```
 <access origin="*" />
 ```
 
-The problem with this model is you might want to be able to make an XHR to a service like Azure Mobile Apps without actually allowing your app to navigate to an Azure web page in the same domain. The reason this is a concern is that this remote web page is then given access to all Cordova and plugin APIs. Further, for Android, the access element has been overloaded to control "intents" in the wake of a discovered [security issue in Cordova 3.5.0 and below](http://go.microsoft.com/fwlink/?LinkID=617669) which has led to a syntax that strayed away from the original [W3C Widget spec](http://go.microsoft.com/fwlink/?LinkID=617670) that config.xml's structure is based on. Some restructuring and improvements were therefore appropriate for the Cordova 5.0.0 release.
+The problem with this model is you might want to be able to make an XHR to a service like Azure Mobile Apps without actually allowing your app to navigate to an Azure web page in the same domain. The reason this is a concern is that this remote web page is then given access to all Cordova and plugin APIs. Further, for Android, the access element has been overloaded to control "intents" in the wake of a discovered [security issue in Cordova 3.5.0 and below](https://go.microsoft.com/fwlink/?LinkID=617669) which has led to a syntax that strayed away from the original [W3C Widget spec](https://go.microsoft.com/fwlink/?LinkID=617670) that config.xml's structure is based on. Some restructuring and improvements were therefore appropriate for the Cordova 5.0.0 release.
 
 ### cordova-plugin-whitelist
 As a result, the new whitelist plugin actually introduces three separate elements designed to enable more discrete control. The **access** element returns but only controls where your app can make XHR requests or access other external content from a web page for Android and iOS. It no longer controls whether you can navigate to a different domain. A new **allow-navigation** element has been added that then enables you to specify where the app can navigate instead. Finally, a new **allow-intent** element has been introduced specifically designed to control Android intents.
 
-The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
+The base Visual Studio and [Cordova CLI](https://aka.ms/cordova-cli) template (via the cordova create command) has a config.xml file in it that is designed to allow the app to make external requests anywhere, allows a specific subset of intents, and prevents the WebView in the Cordova app to navigate anywhere other than local content.
 
 ```
 <access origin="*" />
@@ -34,13 +34,13 @@ The base Visual Studio and [Cordova CLI](http://aka.ms/cordova-cli) template (vi
 <allow-intent href="geo:*" />
 ```
 
-If we wanted to add the ability for the root WebView to navigate to www.microsoft.com, we can add this XML element:
+If we wanted to add the ability for the root WebView to navigate to `www.microsoft.com`, we can add this XML element:
 
 ```
-<allow-navigation href="http://www.microsoft.com" />
+<allow-navigation href="https://www.microsoft.com" />
 ```
 
-> <strong>Note</strong>: If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the <strong>[InAppBrowser plugin](http://go.microsoft.com/fwlink/?LinkID=617694)</strong> without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
+> <strong>Note</strong>: If you simply wanted to display `www.microsoft.com` without giving it access to Cordova or plugin APIs, you can use the <strong>[InAppBrowser plugin](https://go.microsoft.com/fwlink/?LinkID=617694)</strong> without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
 
 There is still some variation in behavior by platform for these whitelist features based on the concerns and capabilities of the underlying native technology.
 
@@ -53,7 +53,7 @@ There is still some variation in behavior by platform for these whitelist featur
 Both the default Cordova CLI template and Visual Studio's blank template use this feature to install the Whitelist plugin automatically on first build.
 
 ## The W3C Content Security Policy (CSP)
-A topic of frequent conversation for security focused developers on the web is the [W3C Content Security Policy (CSP)](http://go.microsoft.com/fwlink/?LinkID=617696) feature that is available in Chrome, Safari, and Internet Explorer Edge. CSP support is available natively to Cordova apps targeting iOS, Windows 10 and up, and Android 4.4 and up. **However, you can get support back to Android 4.0 by using something called the Crosswalk WebView.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.
+A topic of frequent conversation for security focused developers on the web is the [W3C Content Security Policy (CSP)](https://go.microsoft.com/fwlink/?LinkID=617696) feature that is available in Chrome, Safari, and Internet Explorer Edge. CSP support is available natively to Cordova apps targeting iOS, Windows 10 and up, and Android 4.4 and up. **However, you can get support back to Android 4.0 by using something called the Crosswalk WebView.** See [improving Android browser consistency and features with the Crosswalk WebView](../take-further/using-crosswalk.md) for information adding Crosswalk to your project.
 
 ### The CSP in Cordova
 CSP support is a native browser capability that allows you to control exactly what content your app can access and at a very granular level. In fact, when using the CSP, you can generally keep the access origin to "*" as you'll be able to more tightly control security using the policy.
@@ -68,7 +68,7 @@ You will need to include a tag like this on each page you navigate to at the top
 
 The only problem with the CSP is this: It's pretty confusing to read at first and its defaults can cause some behaviors web devs are not at all used to working around.
 
-You can find a [great tutorial on using the CSP in detail here](http://go.microsoft.com/fwlink/?LinkID=617697), but here are some common "gotchas" for those new to the concepts:
+You can find a [great tutorial on using the CSP in detail here](https://go.microsoft.com/fwlink/?LinkID=617697), but here are some common "gotchas" for those new to the concepts:
 
 1. By default, applying a CSP **disables both eval() and inline script** while the CSP in the **Cordova CLI template (cordova create command) disables inline but allows eval()**.
 	- Disabling both eval and inline script means no script tags with JavaScript in it, no "on" event handler attributes on HTML elements, no eval(), no new Function(), etc. Disabling these features effectively makes it impossible to do cross-site scripting because there is no way to inject JavaScript anywhere that does not originate from a file. If you're property managing your whitelists, you're very secure.

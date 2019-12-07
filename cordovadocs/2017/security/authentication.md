@@ -11,7 +11,7 @@ Security is a very broad topic that covers a number of different aspects of an a
 A critical task for application security is authenticating and authorizing users accessing your app and its associated local or remote data. In this article we'll touch on some options that can help get you get auth up and running.
 
 ## Azure App Service Auth and Azure Mobile Apps
-[Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is a suite of services designed to help you build great web and mobile apps. [Azure Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/) are mobile integrated client apps that take advantage of features within the broader Azure App Service including Web Apps and API Apps along with some additional useful features and client libraries.
+[Azure App Service](https://azure.microsoft.com/services/app-service/) is a suite of services designed to help you build great web and mobile apps. [Azure Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/) are mobile integrated client apps that take advantage of features within the broader Azure App Service including Web Apps and API Apps along with some additional useful features and client libraries.
 
 A core first step in accessing all of these great services, however, is authorizing users both to access the app for the app to then access data in the cloud. Fortunately, the Cordova plugin for Azure Mobile Apps has an unified authentication interface that currently supports authenticating against Azure Active Directory, Facebook, Google, Twitter, and Microsoft accounts. The unified interface means that you're abstracted from downstream changes and can expect additional provider options and features in the future to streamline things even more.
 
@@ -27,7 +27,7 @@ You can add the Azure Mobile Apps plugin your app as follows:
     cordova plugin add cordova-plugin-ms-azure-mobile-apps --save
     ```
 
-Note that you can also get basic information about the user logged in by making a REST call to the **/.auth/me** service endpoint and passing the appropriate auth token. See the **[Azure Mobile Apps authentication documentation](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/)** and the article on **[securely transmitting data](./transmit-data-securely.md)** for additional details on token passing.
+Note that you can also get basic information about the user logged in by making a REST call to the **/.auth/me** service endpoint and passing the appropriate auth token. See the **[Azure Mobile Apps authentication documentation](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started-users/)** and the article on **[securely transmitting data](./transmit-data-securely.md)** for additional details on token passing.
 
 ### Try the Azure connected services sample app
 
@@ -41,16 +41,16 @@ Then follow these steps:
 
     > [!Video https://www.youtube.com/embed/oKWEXU8i5oc]
 
-    For documentation that shows similar steps, see the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/). You can skip the section on downloading the client app.
+    For documentation that shows similar steps, see the [Getting Started Tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/). You can skip the section on downloading the client app.
 
     > [!NOTE]
-    > You can follow steps described in the [Getting Started Tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started/) to download the Azure sample, but if you use the getting started sample instead of the Azure connected services sample, you must take extra steps to add required plugins, to add login code, and to update the Cordova version in your app.
+    > You can follow steps described in the [Getting Started Tutorial](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/) to download the Azure sample, but if you use the getting started sample instead of the Azure connected services sample, you must take extra steps to add required plugins, to add login code, and to update the Cordova version in your app.
 
 3. Watch this video to add authentication to the Azure connected services sample. The video shows adding authentication with Twitter, but steps are similar for other services as well.
 
     > [!Video https://www.youtube.com/embed/PTrxocL2lQg]
 
-    To follow similar steps in the tutorial, see [How to: Authenticate users](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-cordova-get-started-users/)
+    To follow similar steps in the tutorial, see [How to: Authenticate users](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started-users/)
 
 4. Update code in the login callback function.
 
@@ -77,11 +77,11 @@ Adding the plugin is easy.
     cordova plugin add cordova-plugin-ms-adal --save
     ```
 
-See the **[Active Directory Quick Start for Cordova](https://azure.microsoft.com/en-us/documentation/articles/active-directory-devquickstarts-cordova/)** for additional details on setup. You can also read [this blog post](http://www.cloudidentity.com/blog/2015/04/06/adal-plugin-for-apache-cordova-deep-dive/) on some of the internals and the advantages it provides over other methods.
+See the **[Active Directory Quick Start for Cordova](https://azure.microsoft.com/documentation/articles/active-directory-devquickstarts-cordova/)** for additional details on setup. You can also read [this blog post](http://www.cloudidentity.com/blog/2015/04/06/adal-plugin-for-apache-cordova-deep-dive/) on some of the internals and the advantages it provides over other methods.
 
 While the quick start uses Azure AD, the plugin also works with **ADFS v3** and up by simply changing the authority and redirect URIs to the appropriate ones for your ADFS installation.
 
-The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./transmit-data-securely.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx) and [O365](http://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
+The quick start also has code that demonstrates calling the [Azure AD Graph REST API](https://msdn.microsoft.com/library/azure/hh974476.aspx) directly using an AD token from the plugin. This approach can be reused across Azure services and O365 services. See the article on [securely transmitting data](./transmit-data-securely.md) along with documentation on [Azure JSON based REST APIs](https://msdn.microsoft.com/library/azure/hh974476.aspx) and [O365](https://dev.office.com/getting-started/office365apis) for additional details on token passing to downstream services.
 
 <!--
 ###ADAL and Azure Mobile Apps or Azure App Service
@@ -89,7 +89,7 @@ Note that if you would prefer to use the ADAL plugin to authenticate users in yo
 
 ![Azure Mobile App Auth](media/cordova-security-auth/adal-and-mobile-apps.png)
 
-First, carefully follow all setup steps under **[(Optional) Configure a native client application](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/)** in the Azure App Service AD auth article. You can then login to Azure Mobile Apps using the auth token from ADAL as follows:
+First, carefully follow all setup steps under **[(Optional) Configure a native client application](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/)** in the Azure App Service AD auth article. You can then login to Azure Mobile Apps using the auth token from ADAL as follows:
 
 ```javascript
 var client = new WindowsAzure.MobileServiceClient(appUrl);

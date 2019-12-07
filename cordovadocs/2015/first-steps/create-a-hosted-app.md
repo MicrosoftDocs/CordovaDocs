@@ -30,7 +30,7 @@ Here is a quick look at the architecture of a hosted app showing the server on t
 
 ## Get set up
 
-1. If you haven't already, [Install Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=533794) with Visual Studio Tools for Apache Cordova.
+1. If you haven't already, [Install Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=533794) with Visual Studio Tools for Apache Cordova.
 
     > **Important**: When you install Visual Studio, make sure you include the optional components, **HTML/JavaScript (Apache Cordova)** under Cross-Platform Mobile Development.
 
@@ -66,7 +66,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
 5. Before you run the app, first identify one or more emulators or devices for initial testing of the Hosted App sample based on your dev environment.
 
-   * If you are running Windows 10 on a machine that supports [Hyper-V](https://msdn.microsoft.com/en-us/library/mt228280.aspx) (no VM support), you can plan to test on the Visual Studio Emulator for Android. This is a fast, full-featured emulator. (Running on a VM is not supported.)
+   * If you are running Windows 10 on a machine that supports [Hyper-V](https://msdn.microsoft.com/library/mt228280.aspx) (no VM support), you can plan to test on the Visual Studio Emulator for Android. This is a fast, full-featured emulator. (Running on a VM is not supported.)
 
    * If you are running Windows 10, you can plan to test on the Windows Phone 10 emulator or your Windows 10 device. If your device has a webcam, you can use it later in the tutorial!
 
@@ -177,7 +177,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
-4. In index.html, replace the default [Content-Security-Policy](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following `<meta>` element.
+4. In index.html, replace the default [Content-Security-Policy](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp) (CSP) `<meta>` element with the following `<meta>` element.
 
     ```
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb-starter.azurewebsites.net https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
@@ -458,7 +458,7 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 
 2. Choose your preferred emulator to run the app.
 
-    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
+    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android?view=toolsforcordova-2017), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
 
 3. Press F5 to run the app.
 
@@ -532,9 +532,9 @@ You can get the CSS to create a nice Splash screen from the [complete sample](ht
 
 ### <a id="vsAndroidEmu"></a> Visual Studio Emulator for Android won't run?
 
-The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/en-us/library/mt228282.aspx#NoStart2).
+The VS Emulator for Android requires Hyper-V and is not supported when running on a VM. For more info, see [this information](https://msdn.microsoft.com/library/mt228282.aspx#NoStart2).
 
-If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/en-us/library/mt228282).
+If you have previously run the VS Emulator for Android successfully but now the emulator won't run, try deleting the emulator VM instance in Hyper-V Manager. For more info, see [Troubleshooting](https://msdn.microsoft.com/library/mt228282).
 
 ## Appendix: Publish the Web site
 

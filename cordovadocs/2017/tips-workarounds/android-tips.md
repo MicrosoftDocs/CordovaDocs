@@ -1,7 +1,6 @@
 ---
 title: "Android tips and workarounds"
 description: "Tips and workarounds for building Windows apps using Visual Studio Tools for Apache Cordova."
-author: "kirupa"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -50,7 +49,7 @@ Try these steps if you have trouble building and deploying to Android emulators 
 
     Run the SDK Manager as an Administrator if you are having trouble installing components.
 
-6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](http://go.microsoft.com/fwlink/?LinkID=396873), try again.
+6. If there appears to be a problem with the Android SDK, you may need to re-install it. Before re-installing, delete the /User/username/.android and the /User/username/.gradle folder to make sure you get a fresh copy of the SDK. After [installing the SDK](https://go.microsoft.com/fwlink/?LinkID=396873), try again.
 
 <a name="haxm"></a>
 ## Resolve issues with the HAXM driver
@@ -67,7 +66,7 @@ To fix the issue:
 
       HAXM is not compatible with Device Guard. If DeviceGuard is enabled, then you may be running on a domain-joined machine and DeviceGuard has been configured by the owning organization. We recommend you try to use a non-domain machine with HAXM instead.
 
-      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
+      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
 
 2. Disable Hyper-V.
 

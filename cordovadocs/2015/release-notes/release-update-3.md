@@ -1,18 +1,15 @@
-<properties pageTitle="Release Notes for Update 3"
-  description="Release notes for Update 3 of Visual Studio 2015 Tools for Apache Cordova"
-  services=""
-  documentationCenter=""
-  authors="Jordan" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="10/09/2015"
-     ms.author="jomatthi"/>
+---
+title: "Release Notes for Update 3"
+description: "Release notes for Update 3 of Visual Studio 2015 Tools for Apache Cordova"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.devlang: "javascript"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.date: "10/09/2015"
+---
 
-# <strong>Update 3 - Visual Studio Tools for Apache Cordova</strong>
+# Update 3 - Visual Studio Tools for Apache Cordova
+
 Update 3 of the Visual Studio Tools for Apache Cordova, includes the following changes:
 
 * **Addresses a blocking issue when trying to use the Tools for Apache Cordova along with the ASP.NET 5 Beta 7 releas.**
@@ -54,4 +51,3 @@ Update 3 of the Visual Studio Tools for Apache Cordova, includes the following c
 * **Supported localization of an unlocalized Help link in config.xml**
 * **When installing Visual Studio Tools for Apache Cordova, the latest version of Windows Tools is also selected**
 * **On build, the vs:packageOutputPath setting in config.xml is now cleared so that absolute paths are not checked into source control**
- 

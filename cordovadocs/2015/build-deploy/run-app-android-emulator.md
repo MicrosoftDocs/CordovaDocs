@@ -12,13 +12,13 @@ There are many options for running your apps built using Visual Studio Tools for
 
 ## Visual Studio Emulator for Android
 
-Here’s how to run your app on the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/). For system requirements, see [System Requirements for the Visual Studio Emulator for Android](https://msdn.microsoft.com/en-us/library/mt228280.aspx).
+Here’s how to run your app on the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/). For system requirements, see [System Requirements for the Visual Studio Emulator for Android](https://msdn.microsoft.com/library/mt228280.aspx).
 
 >**Important**: The Visual Studio Emulator for Android is only available in Visual Studio 2015.
 
 ### To run your app on the emulator
 
-1. Make sure that Hyper-V is enabled on your PC. Your PC must meet the [system requirements](https://msdn.microsoft.com/en-us/library/mt228280.aspx) for the Visual Studio Emulator for Android.
+1. Make sure that Hyper-V is enabled on your PC. Your PC must meet the [system requirements](https://msdn.microsoft.com/library/mt228280.aspx) for the Visual Studio Emulator for Android.
 
     >**Important**: The emulator is not supported in a virtualized environment.
 
@@ -217,7 +217,7 @@ Before you can use Visual Studio to run your app on a connected Android device, 
 
 7. When prompted, choose **Allow USB Debugging**.
 
-![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](http://aka.ms/mchm38) or [learn more](https://isualstudio.microsoft.com/vs/features/cordova/)
+![Download the tools](media/deploy-and-run-app/IC795792.png) [Get the Visual Studio Tools for Apache Cordova](https://aka.ms/mchm38) or [learn more](https://isualstudio.microsoft.com/vs/features/cordova/)
 
 ## See Also
 

@@ -1,20 +1,16 @@
-<properties pageTitle="Release Notes for Update 4"
-  description="Release notes for Update 4 of Visual Studio 2015 Tools for Apache Cordova"
-  services=""
-  documentationCenter=""
-  authors="Linda" />
-  <tags ms.technology="cordova" ms.prod="visual-studio-dev14"
-     ms.service="na"
-     ms.devlang="javascript"
-     ms.topic="article"
-     ms.tgt_pltfrm="mobile-multiple"
-     ms.workload="na"
-     ms.date="10/26/2015"
-     ms.author="lizhong"/>
+---
+title: "Release Notes for Update 4"
+description: "Release notes for Update 4 of Visual Studio 2015 Tools for Apache Cordova"
+ms.technology: "cordova"
+ms.prod: "visual-studio-dev14"
+ms.devlang: "javascript"
+ms.tgt_pltfrm: "mobile-multiple"
+ms.date: "10/26/2015"
+---
 
-# <strong>Update 4 - Visual Studio Tools for Apache Cordova</strong>
+# Update 4 - Visual Studio Tools for Apache Cordova
 
-## Feature updates:
+## Feature updates
 
 **Chain Android SDK v23 into VS TACO feed**
 
@@ -24,7 +20,7 @@ The newest version of Android SDK is automatically included with a VS TACo insta
 
 **Plugin Installation Log**
 
-When a developer installs a plugin using the config designer in Visual Studio, a log window is opened with the log messages from Cordova. This should help developers with plugin installation debugging. 
+When a developer installs a plugin using the config designer in Visual Studio, a log window is opened with the log messages from Cordova. This should help developers with plugin installation debugging.
 
 ---------------------------
 
@@ -34,7 +30,7 @@ We added the inlineSources property to the project templates’ tsconfig.json fi
 
 ---------------------------
 
-## Bug fixes:
+## Bug fixes
 
 **Launching the Chrome Dev tools when VS is attached no longer closes Chrome**
 
@@ -46,7 +42,7 @@ Fix: Instead of listening for the “disconnect” event, VS listens for the Chr
 **Can now “Drag and drop” Toolbox items on to HTML**
 
 Bug: After opening an HTML file, when you try to drag a tool from the Toolbox onto the file, the "no smoking" cursor remains and the drop doesn't work.
-Fix: The tool is applied to the HTML file. 
+Fix: The tool is applied to the HTML file.
 
 ---------------------------
 
@@ -89,4 +85,3 @@ Fix: Debugger can now handle this.
 
 Bug: Attaching an Android device while VS is running generates an error message about adb not "ACK"ing comes up, and no deployment occurs
 Fix: Deployment now occurs.
-

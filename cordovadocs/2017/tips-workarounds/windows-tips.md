@@ -1,7 +1,6 @@
 ---
 title: "Windows tips and workarounds"
 description: "Tips and workarounds for building Windows apps using Visual Studio Tools for Apache Cordova."
-author: "kirupa"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -9,7 +8,6 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "05/15/2016"
-ms.author: "kirupac"
 ---
 
 # Windows tips and workarounds

@@ -1,7 +1,6 @@
 ---
 title: "Cordova performance tips"
 description: "Cordova performance tips"
-author: "kirupa"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
@@ -9,7 +8,6 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
-ms.author: "kirupac"
 ---
 
 # Cordova performance tips
@@ -255,7 +253,7 @@ Between the web code and native code is the Cordova runtime JavaScript and nativ
 [perf_android]:       http://developer.android.com/training/articles/perf-tips.html
 [perf_blackberry]:    https://developer.blackberry.com/native/documentation/best_practices/performance/performance.html
 [perf_tizen]:         https://developer.tizen.org/documentation/guides/web-application/w3chtml5supplementary-features/performance-and-optimization
-[perf_winjs]:         https://msdn.microsoft.com/en-us/magazine/dn574803.aspx
+[perf_winjs]:         https://msdn.microsoft.com/magazine/dn574803.aspx
 [perf_ios]:           https://developer.apple.com/library/mac/documentation/Performance/Conceptual/PerformanceOverview/BasicTips/BasicTips.html
 
 [perf_chrome]:  http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/

@@ -30,16 +30,16 @@ In some cases, when you uninstall VS2013 or a previous version (RC) of VS2015, a
 4. Launch Visual Studio again.
 
 ----------
-**vs-ms-remote reports a 404 error when using VS 2015 RTM or later:** VS 2015 RTM and later versions use a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
+**vs-ms-remote reports a 404 error when using VS 2015 RTM or later:** VS 2015 RTM and later versions use a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](https://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ----------
-**iOS Simulator does not work when using the remotebuild agent and VS 2015 RTM:** You need to install version 3.1.1 of the ios-sim node module. Run "npm install -g ios-sim@3.1.1" from the Terminal app in OSX to install it. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
+**iOS Simulator does not work when using the remotebuild agent and VS 2015 RTM:** You need to install version 3.1.1 of the ios-sim node module. Run "npm install -g ios-sim@3.1.1" from the Terminal app in OSX to install it. See [remotebuild installation instructions](https://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ----------
-**iPhone 4S Simulator appears when selecting iPad or other device when using the remotebuild agent and VS 2015 RTM:** You need to install version 3.1.1 of the ios-sim node module. Run "npm install -g ios-sim@3.1.1" from the Terminal app in OSX to install. See [remotebuild installation instructions ](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
+**iPhone 4S Simulator appears when selecting iPad or other device when using the remotebuild agent and VS 2015 RTM:** You need to install version 3.1.1 of the ios-sim node module. Run "npm install -g ios-sim@3.1.1" from the Terminal app in OSX to install. See [remotebuild installation instructions ](https://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ----------
-**Existing vs-mda-remote settings in Visual Studio do not work with the remotebuild agent:** You will need to generate and use a new PIN when setting up Visual Studio to connect to the remotebuild agent for the first time. If you are not using secure mode, turn secure mode on and then off again to cause VS to re-initalize. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
+**Existing vs-mda-remote settings in Visual Studio do not work with the remotebuild agent:** You will need to generate and use a new PIN when setting up Visual Studio to connect to the remotebuild agent for the first time. If you are not using secure mode, turn secure mode on and then off again to cause VS to re-initalize. See [remotebuild installation instructions](https://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ----------
 **Configuration Designer (config.xml) Does Not Show Updated Plugin IDs with Cordova 5.0.0+:** A significant change occurred with Cordova 5.0.0+ that also altered the IDs of many core Cordova plugins. The Visual Studio 2015 config designer uses the old IDs (ex: org.apache.cordova.camera not cordova-plugin-camera) with Cordova 4.3.1 and below since this version of the Cordova < 5.0.0 do not support npm.
@@ -87,4 +87,4 @@ Remove these files from source control if you are not checking in the "platforms
 
 ## Visual Studio 2015 CTP6
 ----------
-**Ant uninstalled when upgrading from CTP5 to CTP6:** When you upgrade from VS2015 CTP5 to CTP6, Apache Ant gets uninstalled. The workaround is to reinstall Ant. You can find manual instructions for installing and configuring Ant at [this location](https://msdn.microsoft.com/en-us/library/dn757054.aspx#InstallTools).
+**Ant uninstalled when upgrading from CTP5 to CTP6:** When you upgrade from VS2015 CTP5 to CTP6, Apache Ant gets uninstalled. The workaround is to reinstall Ant. You can find manual instructions for installing and configuring Ant at [this location](https://msdn.microsoft.com/library/dn757054.aspx#InstallTools).

@@ -17,7 +17,7 @@ The process of building apps typically involves many repetitive tasks such as co
 
 The central tool for build automation is a flexible **task runner** that be configured to run interdependent tasks sequentially, feeding the results of one task into another, and to run independent tasks in parallel.
 
-[Gulp](http://go.microsoft.com/fwlink/?LinkID=533803) is a popular JavaScript-based task runner with a **large** number of [useful plugins](http://go.microsoft.com/fwlink/?LinkID=533790) that control a wide range of common tasks. These means you can define tasks (using JavaScript) and automate just about any process you need. Gulp also includes a built-in file system watcher that can automatically run tasks when watched files change. And because Gulp is built on NodeJS like the [Apache Cordova Command-line Interface](http://go.microsoft.com/fwlink/?LinkID=533773) (CLI), the two are compatible.
+[Gulp](https://go.microsoft.com/fwlink/?LinkID=533803) is a popular JavaScript-based task runner with a **large** number of [useful plugins](https://go.microsoft.com/fwlink/?LinkID=533790) that control a wide range of common tasks. These means you can define tasks (using JavaScript) and automate just about any process you need. Gulp also includes a built-in file system watcher that can automatically run tasks when watched files change. And because Gulp is built on NodeJS like the [Apache Cordova Command-line Interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI), the two are compatible.
 
 In this tutorial we will cover a few ways Gulp can be used with Cordova:
 
@@ -50,7 +50,7 @@ In this example we'll start a Gulp task in Visual Studio whenever a project is b
 
     This installs the Gulp command-line interface (CLI) which is used by the `gulp` command you'll learn about soon.
 
-2.  If your project already has a [`package.json`](http://go.microsoft.com/fwlink/?LinkID=533781) file in the Cordova project's root folder (the one with the project's `config.xml` file and `www` folder), skip this step.
+2.  If your project already has a [`package.json`](https://go.microsoft.com/fwlink/?LinkID=533781) file in the Cordova project's root folder (the one with the project's `config.xml` file and `www` folder), skip this step.
 
     In the command prompt, navigate to your Cordova project's root folder, and execute the following command:
 
@@ -105,7 +105,7 @@ In this example we'll start a Gulp task in Visual Studio whenever a project is b
 
 ### <a Name="install-plugins"></a> Install Gulp Plugins
 
-Gulp can't do much without plugins to control individual tasks. For this exercise we'll install the [`gulp-uglify`](http://go.microsoft.com/fwlink/?LinkID=533793) and [gulp-concat](https://www.npmjs.com/package/gulp-concat) plugins. The same steps apply to any other Gulp plugins like the [TypeScript](http://go.microsoft.com/fwlink/?LinkID=533748), [LESS](http://go.microsoft.com/fwlink/?LinkID=533791), and [SASS](http://go.microsoft.com/fwlink/?LinkID=533792) plugins.
+Gulp can't do much without plugins to control individual tasks. For this exercise we'll install the [`gulp-uglify`](https://go.microsoft.com/fwlink/?LinkID=533793) and [gulp-concat](https://www.npmjs.com/package/gulp-concat) plugins. The same steps apply to any other Gulp plugins like the [TypeScript](https://go.microsoft.com/fwlink/?LinkID=533748), [LESS](https://go.microsoft.com/fwlink/?LinkID=533791), and [SASS](https://go.microsoft.com/fwlink/?LinkID=533792) plugins.
 
 In a Windows **Command Prompt**, navigate to your Cordova project's root folder (the one with the project's `config.xml` file and `www` folder) and execute the following command:
 
@@ -230,7 +230,7 @@ By default, bindings in the Task Runner Explorer work only inside of Visual Stud
 gulp combine-and-uglify
 ```
 
-That said, it is possible to assign bindings in Visual Studio and have them apply to builds initiated from the command-line or in a continuous integration environment. This is done with a Cordova [hook](http://go.microsoft.com/fwlink/?LinkID=533744) as described in [Add a pre-built Cordova hook to your project](https://github.com/Microsoft/cordova-docs/tree/master/articles/tutorial-gulp/hook-task-runner-binding). Modify this example code to suit your particular project needs.
+That said, it is possible to assign bindings in Visual Studio and have them apply to builds initiated from the command-line or in a continuous integration environment. This is done with a Cordova [hook](https://go.microsoft.com/fwlink/?LinkID=533744) as described in [Add a pre-built Cordova hook to your project](https://github.com/Microsoft/cordova-docs/tree/master/articles/tutorial-gulp/hook-task-runner-binding). Modify this example code to suit your particular project needs.
 
 ## <a name="build"></a> Use Gulp to Build an App
 
@@ -292,7 +292,7 @@ If you're creating an automated build script, you can find a more complete list 
 
 ### <a name="ts"></a> Build a TypeScript Project
 
-If you're using **TypeScript** in your Cordova app project, you can use the Gulp [gulp-typescript](http://go.microsoft.com/fwlink/?LinkID=533748) plugin to compile TypeScript as part of an automated build. Refer back to the [Install plugins](#install-plugins) section for the ways to do this;
+If you're using **TypeScript** in your Cordova app project, you can use the Gulp [gulp-typescript](https://go.microsoft.com/fwlink/?LinkID=533748) plugin to compile TypeScript as part of an automated build. Refer back to the [Install plugins](#install-plugins) section for the ways to do this;
 `"gulp-typescript": "^3.1.4"` is the dependency that should be listed in the project's `package.json` file.
 
 The `gulp-typescript` plugin requires the `typescript` module, so to install both and update the project's `package.json` file to include the development dependencies, open a Windows **Command Window**, navigate to your Cordova project's root folder, and execute the following command:
