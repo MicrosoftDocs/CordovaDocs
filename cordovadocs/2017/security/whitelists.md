@@ -35,14 +35,14 @@ The base Visual Studio and [Cordova CLI](https://aka.ms/cordova-cli) template (v
 <allow-intent href="geo:*" />
 ```
 
-If we wanted to add the ability for the root WebView to navigate to www.microsoft.com, we can add this XML element:
+If we wanted to add the ability for the root WebView to navigate to `www.microsoft.com`, we can add this XML element:
 
 ```xml
 <allow-navigation href="https://www.microsoft.com" />
 ```
 
 > [!NOTE]
-> If you simply wanted to display www.microsoft.com without giving it access to Cordova or plugin APIs, you can use the <strong>[InAppBrowser plugin](https://go.microsoft.com/fwlink/?LinkID=617694)</strong> without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
+> If you simply wanted to display `www.microsoft.com` without giving it access to Cordova or plugin APIs, you can use the <strong>[InAppBrowser plugin](https://go.microsoft.com/fwlink/?LinkID=617694)</strong> without adding the allow-navigation element to your config.xml file. InAppBrowser allows navigation to any URI and a small subset of intents. It is intended for use in situations where you want to include content from an untrusted source.
 
 There is still some variation in behavior by platform for these whitelist features based on the concerns and capabilities of the underlying native technology.
 

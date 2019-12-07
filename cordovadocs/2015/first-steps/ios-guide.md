@@ -34,16 +34,16 @@ Let's help you set things up.
 
 4. Open a Terminal app, and type this command.
 
-    ```
-     xcode-select -–install
+    ```Terminal
+    xcode-select -–install
     ```
 
     This installs the Xcode command-line tools.
 
 4. In the Terminal app, type this command.
 
-    ```
-     sudo npm install -g remotebuild
+    ```Terminal
+    sudo npm install -g remotebuild
     ```
 
     This installs the *remote agent*. It's a secure build server that you run on your Mac. You'll connect to it from your Windows computer so that you can build, run, and debug iOS apps in Visual Studio.
@@ -60,8 +60,8 @@ Your build payload is encrypted and that protects your intellectual property fro
 
 To start the remote agent in secure mode, type this command.
 
-```
- remotebuild
+```Terminal
+remotebuild
 ```
 
 The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, port number, and security pin appear in the Terminal app.
@@ -78,12 +78,12 @@ Often times when folks have trouble connecting to their remote agent, they'll st
 
 Start the remote agent without secure mode only if you are comfortable with the trade-offs between risk and convenience.
 
-For example, if your Mac is publically accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. That said, if your Mac is accessible to only you, it's easier and less error prone to run your remote agent without secure mode.
+For example, if your Mac is publicly accessible over the internet and has access to sensitive materials, you'll probably want to run your remote agent in secure mode. If you don't, anyone could build an app against your remote agent, and that app could run malicious code. That said, if your Mac is accessible to only you, it's easier and less error prone to run your remote agent without secure mode.
 
 To start the remote agent **without** secure mode, type this command
 
-```
- remotebuild --secure false
+```Terminal
+remotebuild --secure false
 ```
 
 The agent installs [Homebrew](http://brew.sh/), and then starts. The host name, and port number appear in the Terminal app.
@@ -378,7 +378,7 @@ Need more detail? See any of these articles on the Apple Developer website:
 
 * [Starting your app on the device](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/LaunchingYourApponDevices/LaunchingYourApponDevices.html#//apple_ref/doc/uid/TP40013839-CH34-SW1).
 
-### <a id="#team-profile"></a>Option 3: Use your team's provisioning profile
+### <a id="team-profile"></a>Option 3: Use your team's provisioning profile
 
 If your team shares a provisioning profile, all you have to do is register your device with the profile and then download and install that profile onto your device.
 
@@ -738,7 +738,7 @@ If you've resolved this problem another way, please share it in a comment.
 
 [Go back up](#errors)
 
-### <a id="no-provision"</a>You've been told that no provisioning profiles were found
+### <a id="no-provision"></a>You've been told that no provisioning profiles were found
 
 Most likely, Xcode hasn't yet registered your device or requested your development certificate. You can make these things happen by creating a project in Xcode, and then choosing the **Fix Issue** button in the general settings page of your new project.
 
@@ -746,7 +746,7 @@ For steps, see the [Option 2: Use your free Apple ID](#apple-id) section of this
 
 >**Important**: At step 7, in the team pop-up menu, make sure to choose your team or individual name that is associated with your provisioning profile. Choose your Apple ID only if you chose to use your free Apple ID to create the provisioning profile.
 
-### <a id="cli"</a>Did you receive any other type of build error
+### <a id="cli"></a>Did you receive any other type of build error
 
 Under the covers, Visual Studio Tools for Apache Cordova uses the Cordova SDK to manage interactions with mobile device SDKs and other tools. Therefore, when you see build errors that aren't covered elsewhere in this guide, chances are that the errors are coming from external tools used by Visual Studio. When this happens, general purpose Cordova best practices, tips and tricks apply. Refer to the [Apache Cordova documentation](http://cordova.apache.org/docs/en/latest/) or existing [Apache Cordova](http://stackoverflow.com/questions/tagged/cordova) or [Visual Studio Tolls for Apache Cordova](http://stackoverflow.com/questions/tagged/visual-studio-cordova) questions on Stack Overflow for help from other people who have solved similar issues.
 
@@ -774,7 +774,7 @@ This is a known issue with Apache Cordova 6.3.1 and for the Visual Studio tools 
 
 The project's `build.json` file should look something like the following:
 
-```
+```hson
 {
   "ios": {
     "debug": {
@@ -790,9 +790,11 @@ The project's `build.json` file should look something like the following:
 
 To simplify the process, [Darryl Pogue](https://dpogue.ca/articles/cordova-xcode8.html) published a [sample hook](https://gist.github.com/dpogue/186b6c1827363c48d644b0d59e91bc28) that makes the required changes to the project's `build.xconfig` file based on the `build.json` example shown above. To use this hook, copy the sample `xcode8.js` file to your project's `hooks` folder, and then modify the project's `config.xml` to execute it before the compilation step using the following code:
 
-```<platform name="ios">
+```XML
+<platform name="ios">
   <hook type="before_compile" src="hooks/xcode8.js" />
-</platform>```
+</platform>
+```
 
 #### Creating a Distribution Build
 
@@ -824,5 +826,3 @@ Try these things:
 * Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova) or start a discussion at the bottom of this topic.
 
 [Go back up](#errors)
-
-

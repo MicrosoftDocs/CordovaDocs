@@ -5,7 +5,7 @@ ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
 ---
 
-# <strong>General Known Issues</strong>
+# General Known Issues
 
 > **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 
@@ -20,7 +20,7 @@ If you use Cordova 5.3.3 or below with Node.js 5.0.0, you will see a build that 
 
 Cordova 5.3.3 and below does not support Node.js 5.0.0 or above. Either use Node.js 4.1.2 with Cordova 5.3.3 or Node.js 0.12.x with Cordova < 5.3.3. A planned update to Cordova (version > 5.3.3) will support Node.js 5.0.0+.
 
-See [Safely update Node.js](../change-cordova-version/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](../change-cordova-version/change-cli-version.md)
+See [Safely update Node.js](../change-cordova-version/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](../change-cordova-version/change-cli-version.md).
 
 ## <strong>Build hangs or does not execute when building for iOS with Cordova < 5.3.3 and Node.js 4.0.0+</strong>
 
@@ -28,7 +28,7 @@ If you use Cordova < 5.3.3 or below with Node.js 4.x.x on your Mac, you will see
 
 Cordova 5.3.3 is the first version of Cordova that supports Node.js 4.x.x. Upgrade to Cordova 5.3.3 or higher or downgrade Node.js to 0.12.x if you need to use an earlier version of Cordova.  Note that 5.3.3 does not support Node.js 5.0.0+ so you will need to use a later version if you intend to use Node.js 5.0.0 or later.
 
-See [Safely update Node.js](../change-cordova-version/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](#change-cli-version.md)
+See [Safely update Node.js](../change-cordova-version/change-node-version.md) and [Change the CLI version of your Visual Studio Tools for Apache Cordova project](../change-cordova-version/change-cli-version.md).
 
 ## <strong>Missing Platform Dropdown</strong>
 
@@ -115,9 +115,9 @@ This is a known issue that is being actively worked on. This problem does not oc
 
 ## <strong>Missing Intellisense</strong>
 
-* No IntelliSense is provided for Cordova plugins in JavaScript files in Apache Cordova projects. As a workaround, developers can enable IntelliSense for Cordova plugins by explicitly adding “/// &lt;reference group="Implicit (Multi-Device Apps)” /&gt;” to the JavaScript file.
+- No IntelliSense is provided for Cordova plugins in JavaScript files in Apache Cordova projects. As a workaround, developers can enable IntelliSense for Cordova plugins by explicitly adding “/// &lt;reference group="Implicit (Multi-Device Apps)” /&gt;” to the JavaScript file.
 
-* No IntelliSense is provided within JavaScript files for other JavaScript files that are included using a script tag in a referring HTML page. As a workaround, developers can enable IntelliSense for other referenced JavaScript files by explicitly adding “/// &lt;reference path=”referencedFile.js” /&gt;” to the JavaScript file.
+- No IntelliSense is provided within JavaScript files for other JavaScript files that are included using a script tag in a referring HTML page. As a workaround, developers can enable IntelliSense for other referenced JavaScript files by explicitly adding “/// &lt;reference path=”referencedFile.js” /&gt;” to the JavaScript file.
 
 ## <strong>"res" folder contents cannot be referenced from web content</strong>
 

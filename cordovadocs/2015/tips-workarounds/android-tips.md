@@ -62,7 +62,7 @@ To fix the issue:
 
       HAXM is not compatible with Device Guard. If DeviceGuard is enabled, then you may be running on a domain-joined machine and DeviceGuard has been configured by the owning organization. We recommend you try to use a non-domain machine with HAXM instead.
 
-      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
+      If you need to disable Device Guard, see [this article](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard#remove-credential-guard).
 
 2. Disable Hyper-V.
 
