@@ -164,7 +164,7 @@ In this section, you'll update the Cordova application so it pulls its content f
     var app = {
         // Application Constructor
         initialize: function() {
-        this.bindEvents();
+            this.bindEvents();
         },
         bindEvents: function() {
             document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -178,7 +178,7 @@ In this section, you'll update the Cordova application so it pulls its content f
             bkpLink.setAttribute("href", targetUrl);
             bkpLink.text = targetUrl;
             window.location.replace(targetUrl);
-    },
+        },
         // Note: This code is taken from the Cordova CLI template.
         receivedEvent: function(id) {
             var parentElement = document.getElementById(id);
