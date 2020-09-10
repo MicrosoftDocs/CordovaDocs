@@ -1,5 +1,6 @@
 ---
 title: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
+titleSuffix: ""
 description: "Jenkins is a hugely popular CI server with a large install base so using it to build your Cordova project may be the way to go if you already have it installed and running in your environment. Fortunately Tools for Apache Cordova is designed to work with a number of different team build systems since the projects it creates are standard"
 author: "johnwargo"
 ms.technology: "cordova"
