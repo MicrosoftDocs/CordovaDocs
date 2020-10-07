@@ -1,5 +1,6 @@
 ---
 title: "Debug your app built with Visual Studio Tools for Apache Cordova"
+titleSuffix: ""
 description: "Debugging your app built with Visual Studio Tools for Apache Cordova (TACO)."
 services: "na"
 author: "Chuxel"
