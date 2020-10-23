@@ -227,6 +227,9 @@ Provides access to the device’s Contacts database.
 
 <hr />
 
+<!-- *** 
+cordova-plugin-whitelist is the name of the underlying plugin - might be incorrect to change this term, even though it's sensitive, until the underlying product is updated
+*** -->
 ## Whitelist: Restrict your app's access to external domains
 
 <button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/index.html';">Readme</button>
