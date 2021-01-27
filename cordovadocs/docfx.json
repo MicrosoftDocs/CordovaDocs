@@ -78,34 +78,6 @@
     },
     "markdownEngineName": "markdig",
     "rules": {
-     "sensitive-language": {
-        "exclude": [
-          "2015/access-device-capabilities/use-cordova-plugins.md",
-          "2015/change-cordova-version/tutorial-cordova-5-readme.md",
-          "2015/first-steps/create-a-hosted-app.md",
-          "2015/first-steps/get-started-first-mobile-app.md",
-          "2015/first-steps/get-started-with-ionic2.md",
-          "2015/first-steps/getting-started-with-ionic.md",
-          "2015/first-steps/getting-started-with-onsen2.md",
-          "2015/known-issues/known-issues-cordova5.md",
-          "2015/release-notes/release-update-5.md",
-          "2015/security/best-practices.md",
-          "2015/security/whitelists.md",
-          "2015/tips-workarounds/general-tips.md",
-          "2015/tips-workarounds/windows-tips.md",
-          "2015/TOC.md",
-          "2017/build-deploy/ci-guide.md",
-          "2017/first-steps/build-your-first-app.md",
-          "2017/first-steps/get-started-with-ionic2.md",
-          "2017/security/best-practices.md",
-          "2017/security/whitelists.md",
-          "2017/take-further/core-plugins.md",
-          "2017/tips-workarounds/general-tips.md",
-          "2017/tips-workarounds/run-web-app-in-cordova.md",
-          "2017/tips-workarounds/windows-tips.md",
-          "2017/TOC.md"
-        ]
-      },
       "sensitive-language-ma": {
         "exclude": [
           "2015/access-device-capabilities/use-cordova-plugins.md",
