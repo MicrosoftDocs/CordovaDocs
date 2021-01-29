@@ -45,7 +45,7 @@ We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?
 
    4. Check "Install" checkbox and click "Install without restart"
 
-      ![NodeJS Plugin](media/jenkins/jenkins-0.png)
+      ![NodeJS Plugin-1](media/jenkins/jenkins-0.png)
 
 4. Configure the NodeJS Plugin
    1. Go to the Jenkins Dashboard again (click on "Jenkins" in the upper left hand corner)
@@ -56,7 +56,7 @@ We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?
 
    4. Click "Save"
 
-      ![NodeJS Plugin](media/jenkins/jenkins-0-1.png)
+      ![NodeJS Plugin-2](media/jenkins/jenkins-0-1.png)
 
 ### Additional Setup for iOS Builds
 For iOS, we will be taking advantage of an [Environment Variable Injector plugin](https://go.microsoft.com/fwlink/?LinkID=613700) and an [agent](https://go.microsoft.com/fwlink/?LinkID=613696) on OSX. Here's a basic walkthrough for configuring these.  
@@ -106,7 +106,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
    6. Click "Save" when done.
 
-      ![Agent Config](media/jenkins/jenkins-3.png)
+      ![Agent Config-1](media/jenkins/jenkins-3.png)
 
       Jenkins will now use SSH to start up the agent on OSX as needed.
 
@@ -120,7 +120,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
    3. Click on the Configure Icon for one of your Windows nodes like "master"
 
-      ![Agent Config](media/jenkins/jenkins-4.png)
+      ![Agent Config-2](media/jenkins/jenkins-4.png)
 
    4. Enter a label of "cordova" and "windows" and click "Save."
 
@@ -225,7 +225,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 
 7. Finally, under "Post-build Actions," add an "Archive Artifacts" action with a "Files to archive" pattern of "&#42;/bin/&#42;&#42;/&#42;"
 
-	![Build script](media/jenkins/jenkins-8.png)
+	![Build script-1](media/jenkins/jenkins-8.png)
 
 8. Click "Save" and then "Build Now" to verify everything is working!
 
@@ -244,7 +244,7 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 
 3. Enter a name for your project, select "Copy existing item," enter the name of your Windows build and click OK.
 
-	![Build script](media/jenkins/jenkins-9.png)
+	![Build script-2](media/jenkins/jenkins-9.png)
 
 4. Check "Restrict where this project can be run" and enter a label expression of "**cordova && ios**". This will prevent the build from attempting to run on any Linux agents you may have configured or OSX machines without Cordova's dependencies installed.
 
@@ -254,7 +254,7 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 	3. Give it a name of **KEYCHAIN_PWD** and enter the password of the user Jenkins uses to start up the OSX agent via SSH.
 	4. Update the "Installation" for "Provide Node & npm bin/ folder to PATH" and to the **OSX install location**.
 
-	![Build script](media/jenkins/jenkins-10.png)
+	![Build script-3](media/jenkins/jenkins-10.png)
 
 6.  Delete the existing "Execute Windows batch command" build step
 
@@ -271,7 +271,7 @@ The OSX version of the build is similar but adds one additional requirement: Unl
 
 	This will install any dependencies in package.json including Gulp itself, unlock the keychain using the password you set in the KEYCHAIN_PWD environment variable, and then execute the Gulp build.
 
-	![Build script](media/jenkins/jenkins-11.png)
+	![Build script-4](media/jenkins/jenkins-11.png)
 
 8. Click "Save" and then "Build Now" to verify everything is working!
 
