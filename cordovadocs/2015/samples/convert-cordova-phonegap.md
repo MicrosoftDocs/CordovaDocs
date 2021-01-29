@@ -84,7 +84,7 @@ If you want specific splash-screens for the Android platform, the following entr
 For more information on specifying splash screen elements in config.xml, see this [article](http://docs.build.phonegap.com/en_US/configuring_icons_and_splash.md.html#Icons%20and%20Splash%20Screens).
 
 ### Plugins
-To extend access to native platform features exposed by the PhoneGap native-app container, PhoneGap Build supports a white-listed selection of PhoneGap Plugins. For the list of supported plugins, see [Plugins](https://build.phonegap.com/plugins). If you include any plugins that aren't in Adobe's white-list, the build will fail. To import a plugin into your PhoneGap Build project, you will need to add the correct **gap:plugin** element to config.xml. If you omit the version attribute for plugin, the app will always build using the latest version of the plugin.
+To extend access to native platform features exposed by the PhoneGap native-app container, PhoneGap Build supports an allowlisted selection of PhoneGap Plugins. For the list of supported plugins, see [Plugins](https://build.phonegap.com/plugins). If you include any plugins that aren't in Adobe's allowlist, the build will fail. To import a plugin into your PhoneGap Build project, you will need to add the correct **gap:plugin** element to config.xml. If you omit the version attribute for plugin, the app will always build using the latest version of the plugin.
 
 Here is the most simplistic way of using a versioned plugin:
 
