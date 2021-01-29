@@ -44,13 +44,13 @@ Before you run your app on the Google Android emulator in Visual Studio, use the
 
 2. In the AVD Manager, choose **Create**.
 
-    ![Creating an Android emulator](media/run-app-android-emulator/IC741800.png)
+    ![Creating an Android emulator-1](media/run-app-android-emulator/IC741800.png)
 
 3. Configure the properties for the new emulator. The required properties are **AVD Name**, **Device**, **Target**, **CPU/ABI**, and **Skin**. **Target** represents an installed version of the Android SDK version (API set). Set this property to a value such as API Level 22.
 
     >**Tip**: You may need to install more Android images using the Android SDK Manager. If you have trouble installing components, run the SDK Manager as an Administrator.
 
-    ![Creating an Android emulator](media/run-app-android-emulator/create-new-virtual-device.png)
+    ![Creating an Android emulator-2](media/run-app-android-emulator/create-new-virtual-device.png)
 
     If you already installed the high-performance HAXM driver described in the [next section](#HAXM) and chose an Intel CPU, select the **Use Host GPU** check box in Emulation Options (not shown for ARM).
 

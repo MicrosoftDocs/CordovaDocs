@@ -39,7 +39,7 @@ There's a lot of files in your project. Don't worry too much about understanding
 
 You'll find these files in the root of your project.
 
-![root files](media/get-started-first-mobile-app/root-files.png)
+![root files-1](media/get-started-first-mobile-app/root-files.png)
 
 This table gives you the basic idea of how you might use each one.
 <style>
@@ -103,7 +103,7 @@ For example, any content in the `merges\android` folder is copied to the Android
 
 To help deliver a consistent web application experience in Cordova apps, the default project created by Visual Studio Tools for Apache Cordova includes `platformOverrides.js` files for Android (in `merges\android\scripts\platformOverrides.js`) and Windows (in `merges\windows\scripts\platformOverrides.js`) along with a platform-specific JavaScript library. On Android, it adds a polyfill for `bind()` on older Android devices, and on Windows it adds Microsoft's safeHTML polyfill library. The `merges\ios` folder doesn't include a `platformOverrides.js` file, so there's no platform-specific override, iOS applications get the generic version of the file located in `www\scripts\platformOverriders.js`.
 
-![root files](media/get-started-first-mobile-app/platform-overrides.png)
+![root files-2](media/get-started-first-mobile-app/platform-overrides.png)
 
 For additional information on how merges works, see [Using merges to Customize Each Platform](https://cordova.apache.org/docs/en/latest/guide/cli/#using-merges-to-customize-each-platform) in the Cordova documentation.
 
@@ -119,13 +119,13 @@ Apache Cordova uses the contents of the `res` folder to store non-web applicatio
 
 1. On the Standard toolbar, choose the **Ripple – Nexus (Galaxy)** button.
 
-    ![Ripple Emulator](media/get-started-first-mobile-app/ripple-start.png)
+    ![Ripple Emulator-1](media/get-started-first-mobile-app/ripple-start.png)
 
     Visual Studio will build the application, then open a browser window running the application in the Apache Ripple simulator. New projects use the default Cordova template, so, since we've not added any code to the application, it will simply display the Cordova logo and a notification that the device is ready.
 
     > **NOTE:** There will already be some errors on the JavaScript console, such as failure to load favicon.ico, ripple.js and ajax-loader.gif. But these are not necessary to continue developing in Ripple.
 
-    ![Ripple Emulator](media/get-started-first-mobile-app/blank-app.png)
+    ![Ripple Emulator-2](media/get-started-first-mobile-app/blank-app.png)
 
     [Apache Ripple](../build-deploy/run-app-ripple-simulator.md) is a free mobile simulator. If you haven’t used it before, try a few things while you have it open. For example, change the device orientation or the platform and see how your app appears. Apache Ripple is probably the easiest way to see the effect of your changes as you develop.
 
@@ -173,13 +173,13 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 1. Choose **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**, and add the **jQuery** NuGet package to your solution.
 
-    ![JQuery Package](media/get-started-first-mobile-app/nuget-jquery.png)
+    ![JQuery Package-1](media/get-started-first-mobile-app/nuget-jquery.png)
 
     >**Note**: Because versions constantly change, the next few images will use `x.x.x` in place of version numbers.
 
 2. Add the **jQuery.Mobile** NuGet package to your solution.
 
-    ![JQuery Package](media/get-started-first-mobile-app/nuget-jquery-mobile.png)
+    ![JQuery Package-2](media/get-started-first-mobile-app/nuget-jquery-mobile.png)
 
      NuGet adds files to the **Scripts** folder of your project, but that's not really where we need them so we'll have to fix that.
 
@@ -362,13 +362,13 @@ Now we'll add the `getWeather` function that we're using to handle button's `cli
 
 1. In **Solution Explorer**, locate the `www\scripts` folder.
 
-    ![Scripts Folder](media/get-started-first-mobile-app/scripts.png)
+    ![Scripts Folder-1](media/get-started-first-mobile-app/scripts.png)
 
 2. Right-click the `scripts` folder, and then choose **Add** -> **New JavaScript file**.
 
 3. Name the file `weather.js`, and then choose the **Add** button.
 
-    ![Scripts Folder](media/get-started-first-mobile-app/add-weather-js-file.png)
+    ![Scripts Folder-2](media/get-started-first-mobile-app/add-weather-js-file.png)
 
 4. Open the `www\scripts\weather.js` file and add the following function. Replace `Your_Key_Here` with the key that you got from [OpenWeatherMap](https://home.openweathermap.org/).
 

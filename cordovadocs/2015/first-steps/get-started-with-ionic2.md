@@ -49,7 +49,7 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
 2. Check the new Ionic project's readme file for any additional tools that must be installed to use the template.
 
-   ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-05.png)
+   ![Dependencies node-1](media/vs-taco-2015-tutorial-ionic2/figure-05.png)
 
    At the time of this writing, you'll need to install the following Visual Studio extensions:
 
@@ -65,11 +65,11 @@ To manage, code, run and debug Ionic 2 applications using Visual Studio, you mus
 
    To check progress, open **Solution Explorer** and look for the **Dependencies** node. You should see **Restoring...**, if you don't, right-click on the Dependencies node in Solution Manager then select **Restore Packages**.
 
-   ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-06.png)
+   ![Dependencies node-2](media/vs-taco-2015-tutorial-ionic2/figure-06.png)
 
    > **Note:** After Visual Studio finishes installing dependencies, the Dependencies node may show **not installed**. This is a known issue; the Ionic project will be OK at this point.
    >
-   > ![Dependencies node](media/vs-taco-2015-tutorial-ionic2/figure-07.png)
+   > ![Dependencies node-3](media/vs-taco-2015-tutorial-ionic2/figure-07.png)
 
    You can monitor the package installation process through Visual Studio's Output window. Open the **View** menu, then select **Output** or use the keyboard shortcut **Ctrl-W** + **O**:
 
@@ -484,7 +484,7 @@ In this section, we'll add code the Weather Provider to connect with the externa
 
 Run the application in the Ripple Emulator or on a physical device connected to the computer. If you run the app in the Ripple Emulator, you'll need to tweak the simulated device's coordinates using the Geolocation panel. When the application loads, you should see the current weather data for the current location as shown in the figure below:
 
-![Weather App: Current Weather conditions](media/vs-taco-2015-tutorial-ionic2/figure-13.png)
+![Weather App: Current Weather conditions-1](media/vs-taco-2015-tutorial-ionic2/figure-13.png)
 
 It's not the complete app UI, but at least you can see the weather results. In the next section, we'll add the Zip Code Search box so you can get weather data for a specific location.
 
@@ -544,7 +544,7 @@ It's useful to have weather data for the current location, but what if you're tr
 
 When you run the application, you should now see a search field at the top of the page. Enter a US Zip Code and tap the button to get weather data for the specified location.
 
-![Weather App: Current Weather conditions](media/vs-taco-2015-tutorial-ionic2/figure-14.png)
+![Weather App: Current Weather conditions-2](media/vs-taco-2015-tutorial-ionic2/figure-14.png)
 
 ### Adding a Weather Forecast Page
 
@@ -742,11 +742,11 @@ The weather API the app uses has an API for retrieving forecast data, so lets di
 
 At this point, if you run the application, you should see the following:
 
-![Finished Weather application](media/vs-taco-2015-tutorial-ionic2/figure-01.png)
+![Finished Weather application-1](media/vs-taco-2015-tutorial-ionic2/figure-01.png)
 
 Tap the forecast tab, and you'll see the list of forecast periods shown in the following figure:
 
-![Finished Weather application](media/vs-taco-2015-tutorial-ionic2/figure-15.png)
+![Finished Weather application-2](media/vs-taco-2015-tutorial-ionic2/figure-15.png)
 
 When you tap on a forecast item, nothing happens. That's because we need a page to display the data, and you haven't added one yet.
 
