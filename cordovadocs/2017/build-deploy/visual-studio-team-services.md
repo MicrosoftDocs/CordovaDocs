@@ -2,7 +2,6 @@
 title: "Use Apache Cordova with Visual Studio Team Services"
 description: "Use Visual Studio Tools for Apache Cordova with Visual Studio Team Services"
 author: "johnwargo"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
