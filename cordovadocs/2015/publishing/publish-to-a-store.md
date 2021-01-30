@@ -285,7 +285,7 @@ Need more detail? See [Creating provisioning profiles using Member Center](https
 
 The general settings of your app appear in the **Common** page of the configuration designer.
 
-![configuration-settings-android](media/tutorial-package-publish-readme/configuration-settings-android.png)
+![Android configuration settings](media/tutorial-package-publish-readme/configuration-settings-android.png)
 
 * The **Display Name** is the name that appears in the app store.
 

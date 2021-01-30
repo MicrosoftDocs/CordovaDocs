@@ -143,7 +143,7 @@ Apache Cordova uses the contents of the `res` folder to store non-web applicatio
 
     Then, choose an emulator.
 
-    ![Emulators](media/get-started-first-mobile-app/emulators.png)
+    ![Choose an emulator](media/get-started-first-mobile-app/emulators.png)
 
     Run your app in any of these emulators if you want, but don't use any of the iOS emulators yet because you'll need a Macintosh system to use them, and setting up the connection between Visual Studio and the Mac is beyond the scope of this guide.
 

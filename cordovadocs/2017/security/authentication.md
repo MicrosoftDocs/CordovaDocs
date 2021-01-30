@@ -66,7 +66,7 @@ Active Directory (AD) provides an industry leading identity server both in the c
 
 For Cordova this functionality is provided via the ADAL plugin which can be used both with AAD and on-premises ADFS v3 and up. Note that the ADAL plugin is activley maintained but currently in **preview.** It uses the Android, iOS, and .NET ADAL native libraries under the covers and therefore persists auth tokens in a secure cache that you can then query to pass to downstream services.
 
-![ADAL](media/cordova-security-auth/adal.png)
+![ADAL plugin](media/cordova-security-auth/adal.png)
 
 Adding the plugin is easy.
 
