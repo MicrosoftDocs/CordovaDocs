@@ -4,12 +4,12 @@ description: "Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
 ms.technology: "cordova"
-ms.prod: "visual-studio-dev15"
+ms.prod: "visual-studio-dev14"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Visual Studio Tools 2015 for Apache Cordova

@@ -4,13 +4,12 @@ title: "Visual Studio Tools 2017 for Apache Cordova"
 description: "Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Learn about mobile development with JavaScript in Visual Studio 2017

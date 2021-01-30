@@ -2,13 +2,12 @@
 title: "Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)"
 description: "Jenkins is a hugely popular CI server with a large install base so using it to build your Cordova project may be the way to go if you already have it installed and running in your environment. Fortunately Tools for Apache Cordova is designed to work with a number of different team build systems since the projects it creates are standard"
 author: "johnwargo"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/12/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Using Jenkins with Visual Studio Tools for Apache Cordova (TACO)
@@ -55,7 +54,7 @@ We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?
 
    4. Check the **Install** checkbox, and then click **Install without restart**.
 
-      ![NodeJS Plugin](media/jenkins/jenkins-01.png)
+      ![NodeJS Plugin-1](media/jenkins/jenkins-01.png)
 
 4. Configure the NodeJS Plugin
 
@@ -70,7 +69,7 @@ We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?
 
    4. Click **Save**.
 
-      ![NodeJS Plugin](media/jenkins/jenkins-02.png)
+      ![NodeJS Plugin-2](media/jenkins/jenkins-02.png)
 
 ### Additional Setup for iOS Builds
 
@@ -122,7 +121,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
    6. Click the **Save** button when done.
 
-      ![Agent Config](media/jenkins/jenkins-05.png)
+      ![Agent Config-1](media/jenkins/jenkins-05.png)
 
       Jenkins will now use SSH to start up the agent on macOS as needed.
 
@@ -136,7 +135,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
    3. Click the **Configure** Icon for one of your Windows nodes like **master**
 
-      ![Agent Config](media/jenkins/jenkins-06.png)
+      ![Agent Config-2](media/jenkins/jenkins-06.png)
 
    4. Enter a label of `cordova` and `windows` and click **Save**.
 
@@ -239,7 +238,7 @@ Detailed instructions on configuring projects in Jenkins can be found [here](htt
 
 7. Finally, under **Post-build Actions**, add an **Archive Artifacts** action with a **Files to archive** pattern of `*/bin/**/*`:
 
-	![Build script](media/jenkins/jenkins-10.png)
+	![Build script-1](media/jenkins/jenkins-10.png)
 
 8. Click **Save** and then **Build Now** to verify everything is working.
 
@@ -253,7 +252,7 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 3. Enter a name for your project, select **Copy existing item**, enter the **Name** of your Windows build and click **OK**.
 
-	![Build script](media/jenkins/jenkins-11.png)
+	![Build script-2](media/jenkins/jenkins-11.png)
 
 4. Check **Restrict where this project can be run** and enter a label expression of `cordova && ios`. This will prevent the build from attempting to run on any Linux agents you may have configured or macOS machines without the necessary Cordova dependencies installed.
 
@@ -267,7 +266,7 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 	4. Update the **Installation** for **Provide Node & npm bin/ folder to PATH** and to the **macOS install location**.
 
-	![Build script](media/jenkins/jenkins-12.png)
+	![Build script-3](media/jenkins/jenkins-12.png)
 
 6.  Delete the existing **Execute Windows batch command** build step.
 
@@ -284,7 +283,7 @@ The macOS version of the build is similar but adds one additional requirement: U
 
 	This will install any dependencies in the project's `package.json` including Gulp itself, unlock the keychain using the password you set in the `KEYCHAIN_PWD` environment variable, and then execute the Gulp build.
 
-	![Build script](media/jenkins/jenkins-13.png)
+	![Build script-4](media/jenkins/jenkins-13.png)
 
 8. Click **Save**, and then **Build Now** to verify everything is working.
 

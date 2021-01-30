@@ -1,7 +1,6 @@
 ---
 title: "Samples & Examples"
 description: "Apache Cordova Samples we made and examples we like"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"

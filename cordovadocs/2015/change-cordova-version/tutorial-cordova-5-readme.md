@@ -20,7 +20,7 @@ You can update your project to use Cordova 5 or 6 by following these steps:
 
 3. Change the version number to 5.1.1 or higher and save config.xml.
 
-	![Select Cordova Version](media/tutorial-cordova-5-readme/cordova-5-0.png)
+	![Select Cordova Version-1](media/tutorial-cordova-5-readme/cordova-5-0.png)
 
     When you build, this will **automatically remove any existing contents in the platforms folder in the filesystem**. If you have opted to customize the native project, you should consider migrating your custom assets to the **res/native** folder (ex: res/native/android) which will automatically add the files to the project before preparing the Cordova project to build.
 
@@ -217,7 +217,7 @@ You can follow these steps to use Cordova Windows 10 with Visual Studio:
 
 5. Change the **Windows Target Version** to **Windows 10.0**.
 
-    ![Select Cordova Version](media/tutorial-cordova-5-readme/cordova-5-8.png)
+    ![Select Cordova Version-2](media/tutorial-cordova-5-readme/cordova-5-8.png)
 
 That's it! Cordova will switch from a Windows 8.1 project to a new Universal App project and take care of the rest! Just use the **Debug** dropdown list to deploy to a Windows 10 device, use your Windows 10 PC, or use a Windows 10 emulator.
 
@@ -233,9 +233,9 @@ A significant change to be aware of is that the IDs used to refer to many Cordov
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](https://go.microsoft.com/fwlink/?LinkID=617672) in version 0.3.6 of the plugin to [cordova-plugin-camera](https://go.microsoft.com/fwlink/?LinkID=617673) in versions 1.0.0 and higher.
 
-![Custom Local Plugin](media/tutorial-cordova-5-readme/cordova-5-4.png)
+![Custom Local Plugin-1](media/tutorial-cordova-5-readme/cordova-5-4.png)
 
-![Custom Local Plugin](media/tutorial-cordova-5-readme/cordova-5-5.png)
+![Custom Local Plugin-2](media/tutorial-cordova-5-readme/cordova-5-5.png)
 
 You can find running list of [old verses new plugin IDs in this location](https://go.microsoft.com/fwlink/?LinkID=617674).
 

@@ -3,13 +3,12 @@ title: "Run Your App Using Cordova Simulate"
 description: "Using a web browser to simulate mobile apps in Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "johnwargo"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/04/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Run Your App Using Cordova Simulate
@@ -105,14 +104,14 @@ The sections that follow describe the function of each Plugin Controls pane.
 
 The Accelerometer plugin control enables developers to adjust the orientation of the simulated device in a three-dimensional space. The values for `x`, `y`, and `z`, representing the accelerometer values on the x, y, and z axis respectively, are passed to the [**Cordova Device Motion**](https://github.com/apache/cordova-plugin-device-motion) plugin in the application. Changes made in this pane are immediately passed to the corresponding plugin API.
 
-![Cordova Simulate: Accelerometer pane](media/vs-taco-2017-cordova-simulate/figure-06.png)
+![Cordova Simulate: Accelerometer pane-1](media/vs-taco-2017-cordova-simulate/figure-06.png)
 
 > [!NOTE]
 > The values: *alpha*, *beta*, and *gamma* represent the rotation of the device. They are not supported by the Cordova Device Motion plugin API, but are used to calculate acceleration values.
 
 To change the device orientation, position your mouse over the device image in the pane, hold down the primary mouse button, then move the mouse around to adjust the device's orientation. The image of the device will update to reflect its current orientation.
 
-![Cordova Simulate: Accelerometer pane](media/vs-taco-2017-cordova-simulate/figure-07.png)
+![Cordova Simulate: Accelerometer pane-2](media/vs-taco-2017-cordova-simulate/figure-07.png)
 
 The simulator includes recorded data representing a simple shake gesture; press the **Play** button to trigger the gesture on the simulated device.
 

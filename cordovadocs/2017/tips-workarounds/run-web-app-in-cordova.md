@@ -3,14 +3,13 @@ title: "Run Your Hosted Web App in an Apache Cordova App"
 description: "Run Your Hosted Web App in an Apache Cordova App"
 services: "na"
 author: "mikejo5000"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "01/27/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Run Your Hosted Web App in an Apache Cordova App
@@ -63,15 +62,15 @@ You'll also need an active subscription on the [Microsoft Azure App Service](htt
 
 2.	Open the solution (`CordovaHostedWebAppSample.sln`) in Visual Studio.
 
-	![Visual Studio Solution Explorer](media/run-web-app-in-cordova/figure-03.png)
+	![Visual Studio Solution Explorer-1](media/run-web-app-in-cordova/figure-03.png)
 
 3.	Run the application to validate that everything loaded properly and to see the web application in all of its glory. To do this, click the **Google Chrome** button in the Visual Studio Standard Toolbar:
 
-	![Visual Studio Solution Explorer](media/run-web-app-in-cordova/figure-04.png)
+	![Visual Studio Solution Explorer-2](media/run-web-app-in-cordova/figure-04.png)
 
 	A Chrome browser window will open and display the completed web application:
 
-	![Visual Studio Solution Explorer](media/run-web-app-in-cordova/figure-05.png)
+	![Visual Studio Solution Explorer-3](media/run-web-app-in-cordova/figure-05.png)
 
 ## Publish the Web Site to the Microsoft Azure App Service
 
@@ -87,14 +86,14 @@ Now that you have a functional web application, lets publish it to the Microsoft
 
 4.	In the **Create App Service** window, populate the dialog with the appropriate settings for your application. Give your app a **Web App Name**, select or create your **Subscription**, **Resource Group** and **App Service Plan** as needed. When you're done, click the **Create** button to create the cloud app.
 
-    ![Select a Publish Target](media/run-web-app-in-cordova/figure-07.png)
+    ![Select a Publish Target-1](media/run-web-app-in-cordova/figure-07.png)
 
 	> [!NOTE]
 	> Visual Studio will generate a unique value for the **Web App Name** field, you'll want to change this value to something more easily remembered, or at least something relevant to the application. This value must be unique across all web apps hosted by the Microsoft Azure App Service, so you will have to think carefully of the name you pick. Add your company name or your name to the app name to help ensure uniqueness.
 
 5.	In the **Publish** dialog that appears, you will need to change the **Site URL** from an `http://` to an `https://` connection. This is required for iOS support for the application; which you won't be using test right now, but may be useful later.
 
-	![Select a Publish Target](media/run-web-app-in-cordova/figure-08.png)
+	![Select a Publish Target-2](media/run-web-app-in-cordova/figure-08.png)
 
 	To make this change, click the **Settings** link to the right of the **Site URL**. In the dialog that appears, look for the **Destination URL** field, and change the `http://` to `https://`, then click the **Validate Connection** button to make sure your change worked. Click the **Save** button to save your changes and return to the **Publish** page.
 
@@ -104,7 +103,7 @@ Now that you have a functional web application, lets publish it to the Microsoft
 
 	When the publish process completes, Visual Studio will open the default browser and connect to the published web site. You should see a page similar to the one shown in the following figure:
 
-	![Visual Studio Solution Explorer](media/run-web-app-in-cordova/figure-05.png)
+	![Visual Studio Solution Explorer-4](media/run-web-app-in-cordova/figure-05.png)
 
 ## Add a Cordova Project to the Solution
 
@@ -122,7 +121,7 @@ Now that you have the web application project opened, published, and you've veri
 
     Visual Studio will create the Cordova project, add it to the solution, then display it in Solution Explorer:
 
-    ![Visual Studio Solution Explorer](media/run-web-app-in-cordova/figure-12.png)
+    ![Visual Studio Solution Explorer-5](media/run-web-app-in-cordova/figure-12.png)
 
 3.	In Solution Explorer, right-click the new Cordova project and choose **Set as StartUp Project**.
 
@@ -239,7 +238,7 @@ In this section, you'll update the Cordova application so it pulls its content f
 
 7.	Press **F5** to launch the app in the browser. When the page loads, the default Cordova app page will appear, but at the top you'll see the text **Verifying connectivity..** followed by the remote server URL. Once the app connects to the remote server and requests the page, the Cordova app's content disappears, replaced by the remote web application:
 
-    ![Run the Hosted Web App](media/run-web-app-in-cordova/figure-15.png)
+    ![Run the Hosted Web App-1](media/run-web-app-in-cordova/figure-15.png)
 
     If everything looks good, you have your hosted app working! Congratulations! However, you still need to do a few more things to enable support for Cordova plugins in the hosted web application.
 
@@ -345,7 +344,7 @@ In order for the web app to leverage the Cordova container's native capabilities
 
 8.	Run the updated application by pressing the **F5** key. If you run the web app in the browser, you'll see the same page you saw earlier. Then you run the Cordova application on a device or in an emulator or simulator, you'll see a different page, the one shown in the following figure:
 
-	![Run the Hosted Web App](media/run-web-app-in-cordova/figure-16.png)
+	![Run the Hosted Web App-2](media/run-web-app-in-cordova/figure-16.png)
 
 ## Add Camera Functionality to the Cordova App
 
@@ -361,7 +360,7 @@ Cordova plugins give Cordova applications access to device-side capabilities suc
 
 3.	For the web application to run plugin code, the platform's `cordova.js` as well as any of the plugin's JavaScript code must be copied from the CordovaHostedApp-Client project's platforms folders (`android` and `ios`) to platform-specific folders in the CordovaHostedWeb project's `cordovadist` folder.
 
-	![Plugin files in the ASP.NET project](media/run-web-app-in-cordova/figure-18.png)
+	![Plugin files in the ASP.NET project-1](media/run-web-app-in-cordova/figure-18.png)
 
 	You can find these files in the \platforms folder after building your CordovaHostedApp project for a particular platform like Android. For example, the Android files are in \platforms\android\assets\www.
 
@@ -373,7 +372,7 @@ Cordova plugins give Cordova applications access to device-side capabilities suc
 
 	Visual Studio will copy the Cordova source files to the web application project's `cordovadist` folder:
 
-	![Plugin files in the ASP.NET project](media/run-web-app-in-cordova/figure-19.png)
+	![Plugin files in the ASP.NET project-2](media/run-web-app-in-cordova/figure-19.png)
 
 ## Configure the Web site to run the Camera plugin code
 

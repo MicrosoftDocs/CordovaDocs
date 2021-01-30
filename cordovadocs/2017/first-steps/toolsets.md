@@ -3,13 +3,12 @@ title: "Visual Studio Tools for Apache Cordova: Toolsets"
 description: "Using Toolsets in Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "johnwargo"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/04/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Visual Studio Tools for Apache Cordova: Toolsets

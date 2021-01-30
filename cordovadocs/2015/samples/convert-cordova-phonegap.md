@@ -16,7 +16,7 @@ One of the main differences between a Visual Studio Project and the PhoneGap pro
 ## Create a new Cordova project using Visual Studio
 To create application packages, the cloud-based PhoneGap Build only requires the web-assets of your application, which are limited to your HTML, CSS, images, .js files, and similar files. PhoneGap Build will probably fail to compile your application if native files are uploaded (.h, .m, .java, etc.). Because the project structure created by Visual Studio matches the Cordova project structure, the www folder of your project now hosts all the web assets required by your application.
 
-  ![image](media/convert_cordova_phonegap/IC796772.png)
+  ![image-1](media/convert_cordova_phonegap/IC796772.png)
 
 Once you have created a Visual Studio project, you can move your web assets into a PhoneGap Build project. We recommend that you create a new folder (outside your Visual Studio project location) to host your PhoneGap project, and then copy the www folder to this new location.
 
@@ -25,7 +25,7 @@ When structuring the PhoneGap project, make sure that config.xml and index.html 
 
 Once you copy over all the files and folders, the PhoneGap Build project should look like this:
 
-  ![image](media/convert_cordova_phonegap/IC795800.png)
+  ![image-2](media/convert_cordova_phonegap/IC795800.png)
 
 Because your application may contain files or folders not required in your final packaged application (such as unused splash screens, bower packages, grunt artifacts, un-compiled less files, etc.), PhoneGap Build supports a special file called **.pgbomit**.
 
@@ -33,7 +33,7 @@ Because your application may contain files or folders not required in your final
 
 The following illustration shows the **.pgbomit** file in the www/res folder:
 
-  ![image](media/convert_cordova_phonegap/IC795811.png)
+  ![image-3](media/convert_cordova_phonegap/IC795811.png)
 
 Since PhoneGap Build doesn’t support the merges folder of the Cordova CLI project by default, you will need to copy platform-specific contents from the merges folder of your Cordova CLI project into the www folder of the PhoneGap Build project.
 
@@ -105,23 +105,23 @@ For more information on modifying plugins, see this [article](http://docs.build.
 ## Upload your project to PhoneGap
 Once you have completed all the required modifications, you can upload your application to the PhoneGap build service. First, create an account for the PhoneGap build service. Then, log onto your account at https://build.phonegap.com/apps to submit your app. You can submit your application either from a GIT repo or you can upload a local ZIP file. In this example, we are going to upload a local ZIP file which contains the zipped www folder. After you upload the ZIP, you will see that your app is ready to build.
 
-  ![image](media/convert_cordova_phonegap/IC795812.png)
+  ![image-4](media/convert_cordova_phonegap/IC795812.png)
 
 When you click the Ready to Build button, the PhoneGap build service will start building for the platforms that you've defined in config.xml. Since we haven’t defined any particular platform, the service will build for all the three platforms (iOS, Android, and Windows). After the build completes, you will see the results of the build.
 
-  ![image](media/convert_cordova_phonegap/IC795813.png)
+  ![image-5](media/convert_cordova_phonegap/IC795813.png)
 
 ## Code sign and provision your app
 Because we are using a cloud build service, we will have to set up the code signing and provisioning certificates to support building signed release/distribution packages. For iOS, you can provide the code signing certificate and the mobile provisioning profile here:
 
-  ![image](media/convert_cordova_phonegap/IC795814.png)
+  ![image-6](media/convert_cordova_phonegap/IC795814.png)
 
 To build a release APK package for Android that is ready for store submission, PhoneGap build service allows you to provide key-store information and the corresponding passwords here:
 
-  ![image](media/convert_cordova_phonegap/IC795815.png)
+  ![image-7](media/convert_cordova_phonegap/IC795815.png)
 
 For Android, we will use an existing key-store that we have created earlier (or you can create a new one using this [guide](http://developer.android.com/tools/publishing/app-signing.html)) and then rebuild the application. Now, the build service creates a fully signed release package that can either be downloaded for publishing to the store or installed on a tethered device.
 
-  ![image](media/convert_cordova_phonegap/IC795813.png)
+  ![image-8](media/convert_cordova_phonegap/IC795813.png)
 
 We hope this article helps you to convert your Visual Studio Cordova project into a PhoneGap Build project and to quickly build your apps for iOS, Android, or Windows using the PhoneGap build service.
