@@ -7,7 +7,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/12/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Automate Cordova Project Tasks Using Gulp

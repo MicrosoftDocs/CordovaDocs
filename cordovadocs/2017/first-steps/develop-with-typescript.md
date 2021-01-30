@@ -8,7 +8,7 @@ ms.devlang: "typescript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/15/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Using TypeScript in a Cordova project

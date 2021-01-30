@@ -7,7 +7,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/31/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Package Your Cordova App for Publishing to an App Store

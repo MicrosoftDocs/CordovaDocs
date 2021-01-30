@@ -9,7 +9,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Learn about mobile development with JavaScript in Visual Studio 2017

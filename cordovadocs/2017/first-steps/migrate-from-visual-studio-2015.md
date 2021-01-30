@@ -8,7 +8,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/10/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Migrate a Cordova project to Visual Studio 2017

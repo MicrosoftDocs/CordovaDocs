@@ -7,7 +7,7 @@ ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/10/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Get Started with Continuous Integration (CI)
