@@ -37,12 +37,12 @@ Try these steps.
 
 2. Check your Visual Studio notifications (upper right) to see if you need any updates to Visual Studio or to Visual Studio Tools for Apache Cordova. Install any updates and retry.
 
-    ![Visual Studio notifications](media/general-tips/vs-notifications.png)
+    ![Visual Studio notifications-1](media/general-tips/vs-notifications.png)
 
 3. In Visual Studio, run the Dependency Checker by choosing **Tools**, **Options**, **Tools for Apache Cordova**, and selecting **Run Dependency Checker**. Investigate any resulting messages.
 4. Check the Output window and the Error List window for build error information and guidance.
 
-    ![Visual Studio notifications](media/general-tips/output-window.png)
+    ![Visual Studio notifications-2](media/general-tips/output-window.png)
 
     If you're not sure what to do next, see the next section on resolving general build and deployment errors.
 
@@ -178,7 +178,7 @@ https://github.com/wildabeast/BarcodeScanner
 
 5. Add the plugin to your project from this local location by using the **Local** option in the **Custom** tab of the config.xml designer.
 
-	![Custom Local Plugin](media/general-tips/git-local-1.png)
+	![Custom Local Plugin-1](media/general-tips/git-local-1.png)
 
 <a name="plugin-npm"></a>
 ## Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
@@ -191,9 +191,9 @@ A significant change tied to this switch over and the release of Cordova 5.0.0 t
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](http://plugins.cordova.io/#/package/org.apache.cordova.camera) in version 0.3.6 of the plugin to [cordova-plugin-camera](https://www.npmjs.com/package/cordova-plugin-camera) in versions 1.0.0 and higher geared for Cordova 5.0.0 and up.
 
-![Custom Local Plugin](media/general-tips/cordova-5-4.png)
+![Custom Local Plugin-2](media/general-tips/cordova-5-4.png)
 
-![Custom Local Plugin](media/general-tips/cordova-5-5.png)
+![Custom Local Plugin-3](media/general-tips/cordova-5-5.png)
 
 You can find running list of [old verses new plugin IDs in this location](https://github.com/stevengill/cordova-registry-mapper/blob/master/index.js).
 

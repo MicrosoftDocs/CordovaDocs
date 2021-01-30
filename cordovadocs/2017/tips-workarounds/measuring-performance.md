@@ -74,11 +74,11 @@ When the tools open, select **Timelines** and then choose the **Record** button.
 
 The following image shows the Layout and Rendering profiler in the Safari tools.
 
-![layout and rendering profiler](media/measure-performance/layout-rendering-profiler.png)
+![layout and rendering profiler-1](media/measure-performance/layout-rendering-profiler.png)
 
 The following image shows the JavaScript execution profiler in the Safari tools.
 
-![layout and rendering profiler](media/measure-performance/execution-profiler.png)
+![layout and rendering profiler-2](media/measure-performance/execution-profiler.png)
 
 To read more about Safari's Web Inspector tools, visit [https://developer.apple.com/safari/tools/](https://developer.apple.com/safari/tools/).
 

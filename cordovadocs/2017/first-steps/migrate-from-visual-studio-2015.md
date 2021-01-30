@@ -25,11 +25,11 @@ Once the migration is complete, you'll need to clean up some legacy configuratio
 
 1.	In the target platform list, select **Configuration Manager...**.
 
-	![Select the source project](media/vs-taco-2017-migration/figure-01.png)
+	![Select the source project-1](media/vs-taco-2017-migration/figure-01.png)
 
 2.	In the **Configuration Manager** dialog, select the **Active solution platform** drop-down, then choose **<Edit...>**.
 
-	![Select the source project](media/vs-taco-2017-migration/figure-02.png)
+	![Select the source project-2](media/vs-taco-2017-migration/figure-02.png)
 
 3.	Finally, in the **Edit Solution Platforms** dialog, remove the following legacy **Windows** options that appear in the list:
 
@@ -39,7 +39,7 @@ Once the migration is complete, you'll need to clean up some legacy configuratio
 
 	To do this, for each target, select the item in the list, then click the **Remove** button.
 
-	![Select the source project](media/vs-taco-2017-migration/figure-03.png)
+	![Select the source project-3](media/vs-taco-2017-migration/figure-03.png)
 
 4.	Click the **Close** button (twice) when finished.
 
@@ -53,11 +53,11 @@ To avoid creating an incompatibility between Visual Studio's default Cordova too
 
 In the following example, the project was recently migrated and is therefore set to use the system's global Cordova SDK.
 
-![Select the source project](media/vs-taco-2017-migration/figure-04.png)
+![Select the source project-4](media/vs-taco-2017-migration/figure-04.png)
 
 Click the drop-down arrow on the **Toolset Name** field and select one of the installed toolsets as shown in the following figure.
 
-![Select the source project](media/vs-taco-2017-migration/figure-05.png)
+![Select the source project-5](media/vs-taco-2017-migration/figure-05.png)
 
 Press **Ctrl**-**S** to save your changes, then close the configuration editor and you're ready to go.
 

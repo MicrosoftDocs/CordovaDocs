@@ -166,15 +166,15 @@ The final step involves creating a **Release** build of the Cordova Application.
 
 1.	On the Standard toolbar, choose the **Android** platform.
 
-    ![Platform selector](media/publish-to-a-store/figure-04.png)
+    ![Platform selector-1](media/publish-to-a-store/figure-04.png)
 
 2.	Choose the **Release** build configuration.
 
-    ![Release Build Configuration](media/publish-to-a-store/figure-05.png)
+    ![Release Build Configuration-1](media/publish-to-a-store/figure-05.png)
 
 3.	Choose one of the Android emulators or a physical device.
 
-    ![Target selector](media/publish-to-a-store/figure-06.png)
+    ![Target selector-1](media/publish-to-a-store/figure-06.png)
 
     > [!NOTE]
     > **Do not select** one of the **Simulate in Browser** options, they don't generate a native application binary. Choose only an **Android emulator** or **Device**.
@@ -319,15 +319,15 @@ At this point, you're all ready to build the app to generate the package that yo
 
 2.	With the Cordova project open in Visual Studio, on the Standard toolbar, choose the **iOS** platform.
 
-    ![Platform selector](media/publish-to-a-store/figure-11.png)
+    ![Platform selector-2](media/publish-to-a-store/figure-11.png)
 
 3.	Choose the **Release** build configuration.
 
-    ![Release Build Configuration](media/publish-to-a-store/figure-12.png)
+    ![Release Build Configuration-2](media/publish-to-a-store/figure-12.png)
 
 4. For execution target, select **Remote Device**.
 
-    ![Target selector](media/publish-to-a-store/figure-13.png)
+    ![Target selector-2](media/publish-to-a-store/figure-13.png)
 
 5. On the **Build** menu, choose **Build Solution**.
 

@@ -202,7 +202,7 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 
     If the server is not running in secure mode, set the value in the **Secure mode** field to **False**, and leave the **Security PIN** field blank.
 
-	![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-12.png)
+	![Settings for non-secure mode-1](media/vs-taco-2017-ios-guide/figure-12.png)
 
 6.	Click the **OK** button to close the Options dialog.
 
@@ -210,7 +210,7 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 
 	If Visual Studio cannot connect to the `remotebuild` server using the settings you provided, you'll see an error similar to the following:
 
-	![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-13.png)
+	![Settings for non-secure mode-2](media/vs-taco-2017-ios-guide/figure-13.png)
 
 	Verify the connectivity settings for the server, update the values in the dialog and try again until it works.
 
@@ -232,7 +232,7 @@ When developing an app using Visual Studio Tools for Apache Cordova today, you h
 
 2.	Next, select one of the **iOS simulators** from the target list.
 
-	![Target selector](media/vs-taco-2017-ios-guide/figure-15.png)
+	![Target selector-1](media/vs-taco-2017-ios-guide/figure-15.png)
 
 3.	Click the **Run** button or press the **F5** key to start the app.
 
@@ -284,11 +284,11 @@ You'll need an Apple [**Provisioning Profile**](https://help.apple.com/developer
 
 3.	Next, select **Remote Device** from the target list.
 
-	![Target selector](media/vs-taco-2017-ios-guide/figure-18.png)
+	![Target selector-2](media/vs-taco-2017-ios-guide/figure-18.png)
 
 4.	Click the **Run** button or press the **F5** key to start the app.
 
-	![Target selector](media/vs-taco-2017-ios-guide/figure-19.png)
+	![Target selector-3](media/vs-taco-2017-ios-guide/figure-19.png)
 
      At this point, Visual Studio prepares your app, then sends instructions to the remotebuild server running on the Mac to create a local Cordova project, populate the app with the content from the Visual Studio project, builds the app, then deploys the app in the connected device. As the process progresses, the server will update the console with status messages.
 
@@ -371,11 +371,11 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 
 11.	Choose **Local Device**.
 
-	![Target selector](media/vs-taco-2017-ios-guide/figure-21.png)
+	![Target selector-4](media/vs-taco-2017-ios-guide/figure-21.png)
 
 12.	Click the **Run** button or press the **F5** key to start the app.
 
-	![Target selector](media/vs-taco-2017-ios-guide/figure-22.png)
+	![Target selector-5](media/vs-taco-2017-ios-guide/figure-22.png)
 
      At this point, Visual Studio prepares your app, then sends instructions to the remotebuild server running on the Mac to create a local Cordova project, populate the app with the content from the Visual Studio project, builds the app, then deploys the app in the connected device. As the process progresses, the server will update the console with status messages.
 
@@ -477,7 +477,7 @@ If you're using secure mode, set the **Secure mode** field to **True**, and then
 
 If you're not using secure mode, set the **Secure mode** field to **False**, and then leave the **Security PIN** field blank.
 
-![Settings for non-secure mode](media/vs-taco-2017-ios-guide/figure-12.png)
+![Settings for non-secure mode-3](media/vs-taco-2017-ios-guide/figure-12.png)
 
 Choose the **OK** button to close this dialog box.
 
