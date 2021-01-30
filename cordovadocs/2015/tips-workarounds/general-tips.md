@@ -19,7 +19,7 @@ The second layer is at the backend level. Web services implement Cross-Origin Re
 
 If your app is attempting to pull data from an [Azure Mobile Apps backend](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/), Azure has a custom interface to manage exceptions to their default CORS policy.
 
-![CORS](media/tips-and-workarounds-general-readme/cors.png)
+![CORS policy](media/tips-and-workarounds-general-readme/cors.png)
 
 <a name="firsttime"></a>
 ## Resolve build and deployment errors when you build for the first time

@@ -143,7 +143,7 @@ Apache Cordova uses the contents of the `res` folder to store non-web applicatio
 
     Then, choose an emulator.
 
-    ![Emulators](media/get-started-first-mobile-app/emulators.png)
+    ![Choose an emulator](media/get-started-first-mobile-app/emulators.png)
 
     Run your app in any of these emulators if you want, but don't use any of the iOS emulators yet because you'll need a Macintosh system to use them, and setting up the connection between Visual Studio and the Mac is beyond the scope of this guide.
 
@@ -157,7 +157,7 @@ You can modify it by using a designer, so you don't need to edit the XML directl
 
 To open the designer, double click the `config.xml` file in your project.
 
-![Configuration Designer](media/get-started-first-mobile-app/settings.png)
+![Configuration Designer-1](media/get-started-first-mobile-app/settings.png)
 
 ## <a id="build-something"></a>Start Small: Build a basic app
 
@@ -185,13 +185,13 @@ Let's add the JQuery and JQuery Mobile NuGet packages to the project.
 
 3. Drag the newly installed script files from the project's `Scripts` folder to the `www\scripts` folder.
 
-    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-scripts.png)
+    ![Drag Files-1](media/get-started-first-mobile-app/drag-files-to-scripts.png)
 
     Now they're in the correct location. But we still have a little work to do here. Nuget also adds CSS files to the `Content` folder so we'll have to fix that too.
 
 4. Drag all of the `.css` files and the `images` folder from the project's `Content` folder to `www\css` folder.
 
-    ![Drag Files](media/get-started-first-mobile-app/drag-files-to-css.png)
+    ![Drag Files-2](media/get-started-first-mobile-app/drag-files-to-css.png)
 
 3. Add this script reference to the `<body>` tag of your [index.html](#tour-project) file (at the bottom of the body section, where the other JavaScript references are located):
 
@@ -514,7 +514,7 @@ Most likely you'll want your app to do more than just show web pages on a mobile
 
 You can find some of the more commonly used plugins in the **Core** page of the app's [configuration designer](#settings).
 
-![Configuration Designer](media/get-started-first-mobile-app/core-plugins.png)
+![Configuration Designer-2](media/get-started-first-mobile-app/core-plugins.png)
 
 Use the **Custom** page to add plugins that are not one of the [core plugins](../access-device-capabilities/use-cordova-plugins.md). These could be standard Cordova plugins available on npm (Cordova 5.x or greater), or plugins that you or a colleague create for some specific purpose and then save to your local drive or to a GitHub repository.  [This document](../access-device-capabilities/manage-plugins.md) explains how to add a custom plugin.
 
