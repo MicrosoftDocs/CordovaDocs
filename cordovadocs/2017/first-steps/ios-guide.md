@@ -88,11 +88,11 @@ Let's take a look at the process.
 
 When the server loads the first time, it prompts you to allow Microsoft to collect usage information in order to help improve the quality of Microsoft's products:
 
-![Initial remotebuild configuration - step 1](media/vs-taco-2017-ios-guide/figure-02.png)
+![Initial remotebuild configuration in secure mode - step 1](media/vs-taco-2017-ios-guide/figure-02.png)
 
 Next, it prompts you to approve installation of some dependencies it needs to do its work:
 
-![Initial remotebuild configuration - step 2](media/vs-taco-2017-ios-guide/figure-03.png)
+![Initial remotebuild configuration in secure mode - step 2](media/vs-taco-2017-ios-guide/figure-03.png)
 
 Specifically, the module installs installs the [Homebrew](http://brew.sh/) package manager, and then some dependent Mac OS applications:
 
@@ -105,11 +105,11 @@ Specifically, the module installs installs the [Homebrew](http://brew.sh/) packa
 
 Finally, the server process will launch and display the host name, port, and security PIN. You'll need those values to configure Visual Studio so it can connect to the server. **The PIN is only valid for 10 minutes**, so you'll want to complete the Visual Studio configuration right away; refer to [*Connect Visual Studio to the remotebuild Agent*](#visual-studio-configuration) for details.
 
-![Initial remotebuild configuration - complete](media/vs-taco-2017-ios-guide/figure-04.png)
+![Initial remotebuild configuration in secure mode - complete](media/vs-taco-2017-ios-guide/figure-04.png)
 
 After you complete the initial setup, subsequent launches of remotebuild will launch the server process and display a simple status message. At this point the server is ready to accept requests from Visual Studio.
 
-![remotebuild server process](media/vs-taco-2017-ios-guide/figure-05.png)
+![remotebuild server process in secure mode](media/vs-taco-2017-ios-guide/figure-05.png)
 
 ### <a id="insecure-mode"></a> Option 2: Start the remotebuild Server in Non-Secure Mode
 
