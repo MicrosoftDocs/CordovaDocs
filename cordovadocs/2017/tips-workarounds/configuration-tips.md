@@ -170,7 +170,9 @@ When you [start the agent](../first-steps/ios-guide.md#running-remotebuild) the 
 
 3. From the Terminal app on your Mac, type:
 
-        remotebuild certificates generate
+   ```console
+   remotebuild certificates generate
+   ```
 
     > [!NOTE]
     > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md).
@@ -185,7 +187,9 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 2. From the Terminal app on your Mac, type:
 
-        remotebuild certificates reset --hostname=my.hostname.com
+   ```console
+   remotebuild certificates reset --hostname=my.hostname.com
+   ```
 
     > [!NOTE]
     > If you are running an older version of the agent, the preceding command is not supported. Make sure that you update the remotebuild agent by [re-installing](../first-steps/ios-guide.md).
@@ -194,9 +198,11 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 4. From the Terminal app on your Mac, type:
 
-        remotebuild certificates generate --hostname=my.hostname.com
+   ```console
+   remotebuild certificates generate --hostname=my.hostname.com
+   ```
 
-    –hostname is optional. If omitted, the agent will attempt to determine the hostname automatically.
+   –hostname is optional. If omitted, the agent will attempt to determine the hostname automatically.
 
 5. Follow instructions to [start the agent](../first-steps/ios-guide.md) on your Mac and configure the agent in Visual Studio.
 
@@ -211,33 +217,45 @@ Many options have changed between vs-mda-remote and remotebuild.
 
 * To see a complete list of agent commands, type:
 
-        remotebuild --help
+   ```console
+   remotebuild --help
+   ```
 
-    To see the full list of supported options, type `remotebuild --help <*command*>`. For example, to see options for the certificates parameter, type:
+   To see the full list of supported options, type `remotebuild --help <*command*>`. For example, to see options for the certificates parameter, type:
 
-        remotebuild --help certificates
+   ```console
+   remotebuild --help certificates
+   ```
 
 * To disable secure mode and enable simple HTTP based connections, type:
 
-        remotebuild –-secure=false
+   ```console
+   remotebuild –-secure=false
+   ```
 
-    When you use this option, leave the PIN field blank and make sure to set Secure Mode to False when configuring the agent in Visual Studio.
+   When you use this option, leave the PIN field blank and make sure to set Secure Mode to False when configuring the agent in Visual Studio.
 
 * To specify a location for remote agent files, type:
 
-        remotebuild --serverDir <directory>
+   ```console
+   remotebuild --serverDir <directory>
+   ```
 
-    where _<directory\>_ is a location on your Mac where log files, builds, and server certificates will be placed. For example, the location could be /Users/username/builds. (Builds will be organized by build number in this location.)
+   where _<directory\>_ is a location on your Mac where log files, builds, and server certificates will be placed. For example, the location could be /Users/username/builds. (Builds will be organized by build number in this location.)
 
 * To use a background process to capture _stdout_ and _stderr_ to a file (server.log), type:
 
-        remotebuild > server.log 2>&1 &
+   ```console
+   remotebuild > server.log 2>&1 &
+   ```
 
 The server.log file might assist in troubleshooting build issues.
 
 * To run the agent by using a configuration file instead of command-line parameters, type:
 
-        remotebuild --config <path-to-config-file>
+   ```console
+   remotebuild --config <path-to-config-file>
+   ```
 
 The configuration file must be in JSON format. The startup options and their values must not include dashes. To see a documented configuration file, look at the remotebuild/examples/exampleConfig.json folder in the remote agent installation directory, although you must remove the comments in the file that you use for your configuration. An example of a path you might use when running this command is _/Users/<username\>/myConfig.json_. The default path where the agent looks for a configuration file is ~/.taco_home/RemoteBuild.config.\
 
@@ -250,7 +268,9 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
 
 * From the second Terminal app window on your Mac, type:
 
-       remotebuild test <same-options-as-first-agent>
+   ```console
+   remotebuild test <same-options-as-first-agent>
+   ```
 
     > [!CRITICAL]
     > This command will fail if the agent is not running in a second window, or if the two instances are not using the same configuration options.
@@ -259,15 +279,21 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
 
 * If you started the server on a port other than 3000, use the following command instead to initiate a test build:
 
-        remotebuild test –-server http://localhost:<portNumber>
+   ```console
+   remotebuild test –-server http://localhost:<portNumber>
+   ```
 
 * To verify that your developer signing identity is set up correctly for device builds (using the Debug and Release configurations in Visual Studio), type:
 
-        remotebuild test --device
+   ```console
+   remotebuild test --device
+   ```
 
 * To verify that your distribution signing identity is set up correctly for device builds (using the Debug configuration in Visual Studio), type:
 
-        remotebuild test --device
+   ```console
+   remotebuild test --device
+   ```
 
 For more information about app provisioning and certificate signing identities, see [Package Your App Built with Visual Studio Tools for Apache Cordova](../publishing/publish-to-a-store.md).
 
@@ -293,7 +319,10 @@ For more information about app provisioning and certificate signing identities, 
 
 2. Open a command line and type the following command:
 
-        npm install -g <path-to-vs-tac>
+   ```console
+   npm install -g <path-to-vs-tac>
+   ```
+
    The default path to vs-tac is C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\ApacheCordovaTools\packages\vs-tac
 
 3. Re-open Visual Studio.
@@ -303,6 +332,7 @@ For more information about app provisioning and certificate signing identities, 
 5. Delete the platforms/*platform* folder, like platforms/android, and then rebuild your project.
 
 ## Configure tools to work with a proxy
+
 If you are using Visual Studio behind a proxy, such as a corporate firewall, you may need to configure proxy settings for the npm package manager and for git before you can use Visual Studio Tools for Apache Cordova.
 
 > [!CRITICAL]
@@ -314,17 +344,26 @@ If you are using Visual Studio behind a proxy, such as a corporate firewall, you
 
 2. Open a Visual Studio developer command window (Ctrl + Alt + A) and type the following command.
 
-        npm -g uninstall vs-tac
+   ```console
+   npm -g uninstall vs-tac
+   ```
 
 3. Open %AppData%\npm\node_modules and verify that the vs-tac folder has been removed.
 
 4. In the Visual Studio developer command window, type the following command.
 
-        npm config set proxy <proxy-port>
+   ```console
+   npm config set proxy <proxy-port>
+   ```
+
    where *proxy-port* is the proxy address and port number, such as http://proxy.mycompany.com:80/.
+
 5. Then type this command:
 
-        npm config set https-proxy <proxy-port>
+   ```console
+   npm config set https-proxy <proxy-port>
+   ```
+
    where proxy-port might be a value such as http://proxy.mycompany.com:80/
 
 6. Open Visual Studio.
@@ -332,16 +371,23 @@ If you are using Visual Studio behind a proxy, such as a corporate firewall, you
 7. Open your Apache Cordova solution and rebuild your project.
 
 ### <a name="Proxy"></a>To configure proxy settings for git
+
 1. Close Visual Studio.
 
 2. Open a Visual Studio developer command window (Ctrl + Alt + A) and type the following command.
 
-        git config --global http.proxy http://<username>:<password>@<proxy-port>
+   ```console
+   git config --global http.proxy http://<username>:<password>@<proxy-port>
+   ```
+
    where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80.
 
 3. Type this command:
 
-        git config --global https.proxy http://<username>:<password>@<proxy-port>
+   ```console
+   git config --global https.proxy http://<username>:<password>@<proxy-port>
+   ```
+
    where *username* and *password* are your proxy username and password; *proxy-port* might be a value such as proxy.mycompany.com:80
 
 4. Open Visual Studio.

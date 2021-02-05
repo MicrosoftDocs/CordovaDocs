@@ -24,19 +24,19 @@ Because you’re already a JavaScript developer, we’ll stick with JavaScript f
 
 To install Jasmine:
 
-```cli
+```console
 npm install –g jasmine
 ```
 
 And Mocha:
 
-```cli
+```console
 npm install –g mocha
 ```
 
 Also install the Chai assertion library, which will work with both (Mocha doesn’t have an assertion library built in, like Jasmine does):
 
-```cli
+```console
 npm install chai    #Install in your test folder
 ```
 
@@ -191,7 +191,7 @@ Here are the points of interest in this code, as indicated by the notes:
 With all this, we can now run the test using Jasmine or Mocha, both of which launch the app via Appium (as we’ve been doing), and report any test failures. As the test runs, you’ll see UI interactions happening in the emulator or device, with various console output in the Appium window. Reports from the test framework appear in the command window where you start the test.
 For Jasmine, start the test as follows:
 
-```cli
+```console
 jasmine test05.js
 ```
 
@@ -231,7 +231,7 @@ Finished in 15.012 seconds
 
 Running the test in Mocha is just as simple:
 
-```cli
+```console
 mocha test05.js
 ```
 
@@ -445,7 +445,7 @@ it ('displays either weather data or an error message on startup', function (don
 
 These same couple of lines also are in the ZIP code test, of course, which you can find in **[test06.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test06.js)** and run as follows:
 
-```cli
+```console
 mocha test06.js
 ```
 

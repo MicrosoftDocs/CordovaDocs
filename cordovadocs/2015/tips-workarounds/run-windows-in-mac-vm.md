@@ -37,7 +37,7 @@ Once you’ve got Parallels up and running, you’re ready to set up your Mac. F
 
 Once Node.js is installed, get the [remotebuild](https://go.microsoft.com/fwlink/?LinkId=618169) agent. The remotebuild agent allows Visual Studio to communicate with OS X and use your Mac as a build service. You can install the remotebuild agent by opening the Terminal App on your Mac and typing the following command:
 
-```cli
+```console
 sudo npm install -g remotebuild
 ```
 
@@ -48,7 +48,7 @@ The preceding command installs the remotebuild agent for all users of Node.js on
 
 Make sure you have Parallels running. With remotebuild installed, start the agent by typing the following command in the Terminal App.
 
-```cli
+```console
 remotebuild
 ```
 
@@ -67,7 +67,7 @@ You’ll need to use the PIN when you configure the agent in Visual Studio. The 
 ## Get the IP address on your Mac
 With Parallels running, the most reliable way to connect from Parallels to the Mac side is to use one of the VNIC IP addresses because it generally won’t change between restarts. You can get these IP addresses by going to Terminal App and typing the following command:
 
-```cli
+```console
 ifconfig
 ```
 
@@ -109,7 +109,7 @@ Now you have a working hybrid mobile app development environment for iOS using V
 
 In later development sessions following a shutdown, you will need to restart remotebuild. As described previously, just open the Terminal App in OS X and type the following on the command line:
 
-```cli
+```console
 remotebuild
 ```
 

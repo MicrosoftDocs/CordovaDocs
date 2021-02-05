@@ -90,7 +90,7 @@ appDriver.init(config.android19Hybrid)
 
 Run test02.js in node:
 
-```cli
+```console
 node test02.js
 ```
 
@@ -155,7 +155,7 @@ Yiewd, https://github.com/jlipps/yiewd, is a wrapper for **wd** that takes advan
 
 Start by adding **yiewd** to your project with npm:
 
-```cli
+```console
 npm install yiewd
 ```
 

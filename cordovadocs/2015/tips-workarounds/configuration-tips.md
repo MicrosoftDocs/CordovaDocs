@@ -168,7 +168,7 @@ When you [start the agent](../first-steps/ios-guide.md#remoteAgent) the first ti
 
 2. From the Terminal app on your Mac, type:
 
-   ```cli
+   ```console
    remotebuild certificates generate
    ```
 
@@ -186,7 +186,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 2. From the Terminal app on your Mac, type:
 
-   ```cli
+   ```console
    remotebuild certificates reset --hostname=my.hostname.com
    ```
 
@@ -196,7 +196,7 @@ For security purposes, the server certificates that pair Visual Studio with the 
 
 4. From the Terminal app on your Mac, type:
 
-   ```cli
+   ```console
    remotebuild certificates generate --hostname=my.hostname.com  
    ```
 
@@ -215,19 +215,19 @@ Many options have changed between vs-mda-remote and remotebuild.
 
 * To see a complete list of agent commands, type:
 
-   ```cli
+   ```console
    remotebuild --help
    ```
 
    To see the full list of supported options, type `remotebuild --help <*command*>`. For example, to see options for the certificates parameter, type:
 
-   ```cli
+   ```console
    remotebuild --help certificates
    ```
 
 * To disable secure mode and enable simple HTTP based connections, type:
 
-   ```cli
+   ```console
    remotebuild –-secure=false
    ```
 
@@ -235,7 +235,7 @@ Many options have changed between vs-mda-remote and remotebuild.
 
 * To specify a location for remote agent files, type:
 
-   ```cli
+   ```console
    remotebuild --serverDir <directory>
    ```
 
@@ -243,7 +243,7 @@ Many options have changed between vs-mda-remote and remotebuild.
 
 * To use a background process to capture _stdout_ and _stderr_ to a file (server.log), type:
 
-   ```cli
+   ```console
    remotebuild > server.log 2>&1 &
    ```
 
@@ -251,7 +251,7 @@ The server.log file might assist in troubleshooting build issues.
 
 * To run the agent by using a configuration file instead of command-line parameters, type:
 
-   ```cli
+   ```console
    remotebuild --config <path-to-config-file>
    ```
 
@@ -267,7 +267,7 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
 
 * From the second Terminal app window on your Mac, type:
 
-   ```cli
+   ```console
    remotebuild test <same-options-as-first-agent>
    ```
 
@@ -278,19 +278,19 @@ This command will fail if the agent is not running in a second window, or if the
 
 * If you started the server on a port other than 3000, use the following command instead to initiate a test build:
 
-   ```cli
+   ```console
    remotebuild test –-server http://localhost:<portNumber>
    ```
 
 * To verify that your developer signing identity is set up correctly for device builds (using the Debug and Release configurations in Visual Studio), type:
 
-   ```cli
+   ```console
    remotebuild test --device
    ```
 
 * To verify that your distribution signing identity is set up correctly for device builds (using the Debug configuration in Visual Studio), type:
 
-   ```cli
+   ```console
    remotebuild test --device
    ```
 
@@ -327,7 +327,7 @@ If you have no errors, you do not need to re-install vs-tac. If you still have t
 
 2. Open a command line and type the following command:
 
-   ```cli
+   ```console
    npm install -g <path-to-vs-tac>
    ```
 
@@ -354,7 +354,7 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 
 2. Open a Visual Studio developer command window (Ctrl + Alt + A) and type the following command.
 
-   ```cli
+   ```console
    npm -g uninstall vs-tac
    ```
 
@@ -362,7 +362,7 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 
 4. In the Visual Studio developer command window, type the following command.
 
-   ```cli
+   ```console
    npm config set proxy <proxy-port>
    ```
 
@@ -370,7 +370,7 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 
 5. Then type this command:
 
-   ```cli
+   ```console
    npm config set https-proxy <proxy-port>
    ```
 
@@ -386,7 +386,7 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 
 2. Open a Visual Studio developer command window (Ctrl + Alt + A) and type the following command.
 
-   ```cli
+   ```console
    git config --global http.proxy http://<username>:<password>@<proxy-port>
    ```
 
@@ -394,7 +394,7 @@ Using npm proxy settings with recent versions of Node.js can cause Cordova to fa
 
 3. Type this command:
 
-   ```cli
+   ```console
    git config --global https.proxy http://<username>:<password>@<proxy-port>
    ```
 
