@@ -458,7 +458,7 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 
 2. Choose your preferred emulator to run the app.
 
-    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/build-deploy/run-app-android-emulator?view=toolsforcordova-2015&preserve-view=true), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
+    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/build-deploy/run-app-android-emulator?view=toolsforcordova-2015&preserve-view=true), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
 
 3. Press F5 to run the app.
 
