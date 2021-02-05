@@ -14,7 +14,7 @@ ms.author: "mikejo"
 
 When you create app using Visual Studio Tools for Apache Cordova, you have many options for emulating and deploying your app on iOS:
 
-*   [Simulate in a browser](simulate-in-browser.md), which provides basic validation of layout and CSS. (This does not require installation of the remote agent for iOS.)
+*   [Simulate in a browser](../first-steps/simulate-in-browser.md), which provides basic validation of layout and CSS. (This does not require installation of the remote agent for iOS.)
 
 *   [iOS Simulator](#iOSSimulator), which requires installation and configuration of the [remote agent](../first-steps/ios-guide.md) when running from Visual Studio.
 

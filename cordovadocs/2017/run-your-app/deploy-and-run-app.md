@@ -37,7 +37,7 @@ When building for Windows/Windows Phone 8.1 and 10, Cordova generates a Windows 
 
 ## Cordova Simulate
 
-To make the web browser development as fast as possible, the CLI is used to generate the needed plugin code, but otherwise, Visual Studio provides the web content directly (instead of providing content from the generated native project). When you run the app, the browser simulator is initialized, and Chrome is started. All Chrome settings are stored locally to your Visual Studio instance so that your normal browser experience is not affected. For more information, see [how to simulate your app in a browser](simulate-in-browser.md).
+To make the web browser development as fast as possible, the CLI is used to generate the needed plugin code, but otherwise, Visual Studio provides the web content directly (instead of providing content from the generated native project). When you run the app, the browser simulator is initialized, and Chrome is started. All Chrome settings are stored locally to your Visual Studio instance so that your normal browser experience is not affected. For more information, see [how to simulate your app in a browser](../first-steps/simulate-in-browser.md).
 
 ## See Also
 

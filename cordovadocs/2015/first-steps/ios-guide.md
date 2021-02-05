@@ -730,7 +730,7 @@ Alternatively, start the remotebuild agent on a different port. (Try using port 
 
 This can happen if your project uses a version of the Cordova Command Line Interface (CLI) that is lower than ```4.3```.
 
-To fix this problem, update the [CLI version of your project](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015#how-to-update-the-cli-version-of-your-project).
+To fix this problem, update the [CLI version of your project](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015#how-to-update-the-cli-version-of-your-project&preserve-view=true).
 
 Still not working? Reach out to us [here](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
 

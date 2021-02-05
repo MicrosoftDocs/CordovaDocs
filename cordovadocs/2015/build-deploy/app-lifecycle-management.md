@@ -198,7 +198,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -353,7 +352,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -366,7 +364,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -379,7 +376,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -392,7 +388,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -404,7 +399,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Yes, with third-party frameworks</p>
                 </td>
                 <td>
-                  <p>See <a href="../test/unit-test-01-primer.md">Author and run tests</a>.</p>                  
+                  <p>See <a href="../debug-test/unit-test-primer.md">Author and run tests</a>.</p>                  
                 </td>
               </tr>
               <tr>
@@ -420,7 +415,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -482,7 +476,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>On Windows, Cordova apps run as native Windows apps so all tools are available. These tools are not available when running the app on other platforms.</p>
                 </td>
               </tr>
-
               <tr>
                 <td rowspan="3">
                   <p>
@@ -501,7 +494,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
@@ -514,7 +506,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>
