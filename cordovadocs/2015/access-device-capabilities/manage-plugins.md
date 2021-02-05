@@ -78,7 +78,9 @@ Occasionally you might need to install a specific version of a Cordova plugin th
 
 3. Add the following element to config.xml under the root widget element:
 
-        <vs:plugin name="org-apache-cordova-pluginname" version="0.1.1" />
+   ```xml
+   <vs:plugin name="org-apache-cordova-pluginname" version="0.1.1" />
+   ```
 
 4. Replace ```org-apache-cordova-pluginname``` with the correct ID, and replace ```0.1.1``` with the correct version. The plugin will be installed the next time that you build the app.
 
@@ -88,15 +90,19 @@ You can add plugins using a Git URI or the local filesystem by using the **Custo
 
 Specify parameters by adding some additional XML elements in the **Config.xml** file of your project. For example, to configure the Facebook plugin, you can edit the following parameters in **config.xml**.
 
-    <vs:plugin name="com-phonegap-plugins-facebookconnect" version="0.8.1">
-          <param name="APP_ID" value="12345678" />
-          <param name="APP_NAME" value="My Facebook App" />
-    </vs:plugin>
+```xml
+<vs:plugin name="com-phonegap-plugins-facebookconnect" version="0.8.1">
+        <param name="APP_ID" value="12345678" />
+        <param name="APP_NAME" value="My Facebook App" />
+</vs:plugin>
+```
 
 This has the same result as running the following command from the command line (if you were not using Visual Studio):
 
-    cordova plugin add https://github/com/Wizcorp/phonegap-facebook-plugin.git
-       --variable APP_ID="12345678" –variable APP_NAME="My Facebook App"
+```cli
+cordova plugin add https://github/com/Wizcorp/phonegap-facebook-plugin.git
+ --variable APP_ID="12345678" –variable APP_NAME="My Facebook App"
+```
 
 >**Important:**
 Cordova 4.3.1 and previous versions have a set of known issues that can prevent plugins with parameters from working properly. We recommend using Cordova 5.1.1 or later when using plugins that require parameters.
