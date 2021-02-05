@@ -68,29 +68,31 @@ When running all these tests, take a moment to observe that they do run fairly q
 With this option, tests are written by stringing together a whole series of method calls with dot operators. To enable it, you must first obtain the driver object with *wd.promiseChainRemote* rather than *wd.Remote*:
 
 ```javascript
-	var appDriver = wd.promiseChainRemote({
-		hostname: 'localhost',
-		port: 4723,
-	});
+var appDriver = wd.promiseChainRemote({
+	hostname: 'localhost',
+	port: 4723,
+});
 ```
 
 You then make the same call to *init* with your configuration unchanged, and then tack on as many additional method calls as needed. The code example below, which you can find in **[test02.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test02.js)**, locates the ZIP code entry field (using the id attributes from the HTML), enters a value, taps the Find Weather button, waits five seconds, and then stops the app (as you’d normally do when tests are complete). Included in this are a few *sleep* calls to pause the test when appropriate, such as waiting a few seconds at the beginning to let the Cordova app initialize itself:
 
 ```JavaScript
-	appDriver.init(config.android19Hybrid)
-	    .sleep(3000)                         // Wait 3 seconds for the app to fully start
-	    .elementById('zip-code-input')       // Locate the text entry field
-	    .clear()                             // Clear its contents
-	    .sendKeys("95959")                   // Enter a value
-	    .elementById('get-weather-btn')      // Locate the Find Weather button
-	    .click()                             // Tap it
-	    .sleep(5000)                         // Wait 5 seconds
-	    .quit();                             // Stop the app instead of waiting for a timeout
+appDriver.init(config.android19Hybrid)
+	.sleep(3000)                         // Wait 3 seconds for the app to fully start
+	.elementById('zip-code-input')       // Locate the text entry field
+	.clear()                             // Clear its contents
+	.sendKeys("95959")                   // Enter a value
+	.elementById('get-weather-btn')      // Locate the Find Weather button
+	.click()                             // Tap it
+	.sleep(5000)                         // Wait 5 seconds
+	.quit();                             // Stop the app instead of waiting for a timeout
 ```
 
 Run test02.js in node:
 
-	node test02.js
+```cli
+node test02.js
+```
 
 You should see the app start, a pause, then “95959” is entered into the ZIP code field, the button is tapped, and then some results appear in the output. Click on the image below to see a video of what the process looks like:
 
@@ -110,34 +112,34 @@ More on debugging can be found in the [Debugging UI tests](debugging-ui-tests.md
 To expand the promise chain you can use *.then* chaining on the promises involved, as shown in the **[test03.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test03.js)** file:
 
 ```javascript
-	var txtZip; //Intermediate to use in multiple callbacks
+var txtZip; //Intermediate to use in multiple callbacks
 
-	appDriver.init(config.android19Hybrid)
-	    .then(function () {
-	        // Wait 3 seconds for the app to fully start
-	        return appDriver.sleep(3000);
-	    }).then(function () {
-	        // Locate the text entry field
-	        return appDriver.elementById('zip-code-input');
-	    }).then(function (e) {
-	        txtZip = e;
-	        // Clear contents
-	        return txtZip.clear();
-	    }).then(function () {
-	        // Enter a value
-	        return txtZip.sendKeys("95959");
-	    }).then(function () {
-	        // Locate the Find Weather button
-	        return appDriver.elementById('get-weather-btn');
-	    }).then(function (btnGetWeather) {
-	        // Tap the button
-	        return btnGetWeather.click();
-	    }).then(function () {
-	        // Wait five seconds
-	        return appDriver.sleep(5000);
-	    }).fin(function () {  //.fin means "finally" for the end of the chain
-	        appDriver.quit()
-	    }).done();
+appDriver.init(config.android19Hybrid)
+	.then(function () {
+		// Wait 3 seconds for the app to fully start
+		return appDriver.sleep(3000);
+	}).then(function () {
+		// Locate the text entry field
+		return appDriver.elementById('zip-code-input');
+	}).then(function (e) {
+		txtZip = e;
+		// Clear contents
+		return txtZip.clear();
+	}).then(function () {
+		// Enter a value
+		return txtZip.sendKeys("95959");
+	}).then(function () {
+		// Locate the Find Weather button
+		return appDriver.elementById('get-weather-btn');
+	}).then(function (btnGetWeather) {
+		// Tap the button
+		return btnGetWeather.click();
+	}).then(function () {
+		// Wait five seconds
+		return appDriver.sleep(5000);
+	}).fin(function () {  //.fin means "finally" for the end of the chain
+		appDriver.quit()
+	}).done();
 ```
 
 This code is functionally equivalent to what’s in test02.js, and again calls *wd.promiseChainRemote* to retrieve *appDriver*. In the chain, each *.then* takes a callback function as an argument, and that function receives an argument appropriate to the return value of the previous callback in the chain, such as an element from *elementById*. To make all this work, ensure that each callback includes *return* on the next call in the sequence.
@@ -155,39 +157,41 @@ Yiewd, https://github.com/jlipps/yiewd, is a wrapper for **wd** that takes advan
 
 Start by adding **yiewd** to your project with npm:
 
-	npm install yiewd
+```cli
+npm install yiewd
+```
 
 Then use **yiewd** to create the *wd* instance (instead of calling *wd.remote* or *wd.promiseChainRemote*):
 
 ```javascript
-	var yiewd = require("yiewd");
+var yiewd = require("yiewd");
 
-	var appDriver = yiewd.remote({
-		hostname: 'localhost',
-		port: 4723,
-	});
+var appDriver = yiewd.remote({
+	hostname: 'localhost',
+	port: 4723,
+});
 ```
 
 The resulting test code is then very clean, as seen in **[test04.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test04.js)**, where every call to the **wd** API must be preceded by *yield*:
 
 ```javascript
-	appDriver.run(function*() {
-	    // 'this' is appDriver
-	    var session = yield this.init(config.android19Hybrid);
-	    yield this.sleep(3000);
+appDriver.run(function*() {
+	// 'this' is appDriver
+	var session = yield this.init(config.android19Hybrid);
+	yield this.sleep(3000);
 
-	    var txtZip = yield this.elementById('zip-code-input');
-	    yield txtZip.clear();
-	    yield txtZip.sendKeys("95959");
+	var txtZip = yield this.elementById('zip-code-input');
+	yield txtZip.clear();
+	yield txtZip.sendKeys("95959");
 
-	    var btnGetWeather = yield this.elementById('get-weather-btn');
-	    yield btnGetWeather.click();
+	var btnGetWeather = yield this.elementById('get-weather-btn');
+	yield btnGetWeather.click();
 
-	    yield this.sleep(5000);
+	yield this.sleep(5000);
 
-	    // OK to omit yield on the last call
-	    this.quit();
-	});
+	// OK to omit yield on the last call
+	this.quit();
+});
 ```
 
 As you can see, using **yiewd** produces test code that’s almost as clean as implicit chaining, yet has discrete method calls and explicit variables that allow for easy debugging and intermediate computations. For this reason, we’ll be using **yiewd** in all the examples that follow.

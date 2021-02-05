@@ -24,15 +24,21 @@ Because you’re already a JavaScript developer, we’ll stick with JavaScript f
 
 To install Jasmine:
 
-	npm install –g jasmine
+```cli
+npm install –g jasmine
+```
 
 And Mocha:
 
-	npm install –g mocha
+```cli
+npm install –g mocha
+```
 
 Also install the Chai assertion library, which will work with both (Mocha doesn’t have an assertion library built in, like Jasmine does):
 
-	npm install chai    #Install in your test folder
+```cli
+npm install chai    #Install in your test folder
+```
 
 Another option here is to use [Protractor]( http://angular.github.io/protractor/#/), a test runner built on WebDriver and Jasmine that originates with AngularJS, like the Karma test runner. It has certain advantages, especially for apps that use Angular or Ionic, along with a few differences (see sidebar below).
 
@@ -53,14 +59,14 @@ In this test we don’t need to assert visibility of any children of *weather-da
 To check the visibility of *weather-data* and *error-msg*, we need only add a little bit to the UI sequence we had before (the *expect().to.equal* methods are from Chai as we’ll see momentarily):
 
 ```JavaScript
-	var elemData = yield this.elementById('weather-data');
-	var elemErr = yield this.elementById('error-msg');
+var elemData = yield this.elementById('weather-data');
+var elemErr = yield this.elementById('error-msg');
 
-	var visData = yield elemData.isDisplayed();
-	var visErr = yield elemErr.isDisplayed();
+var visData = yield elemData.isDisplayed();
+var visErr = yield elemErr.isDisplayed();
 
-	var eitherVisible = (visData && !visErr) || (!visData && visErr);
-	expect(eitherVisible).toBe(true)
+var eitherVisible = (visData && !visErr) || (!visData && visErr);
+expect(eitherVisible).toBe(true)
 ```
 
 It’s very important here to remember that every interaction with the app through the **wd** API happens asynchronously, hence the many uses of *yield*. In this test code, too, the “element” variables are **wd** objects with async methods, not HTML elements with properties, so to check visibility we call the async *isDisplayed* API rather than looking at an HTML property. (This can be tricky to discover; again, refer to the **wd** sources like [element-commands.js](https://github.com/admc/wd/blob/master/lib/element-commands.js) for documentation on the APIs.)
@@ -68,180 +74,194 @@ It’s very important here to remember that every interaction with the app throu
 To complete the test, we need to wrap the UI sequence with the appropriate Mocha/Jasmine framework constructs: a call to *describe* to create the container for the test, followed by an *it* call with the UI sequence and assertions. You can find all this in **[test05.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test05.js)**, which is shown below—with lengthy comments omitted because we’ll talk about those details after the code:
 
 ```javascript
-	var yiewd = require("yiewd");
+var yiewd = require("yiewd");
 
-	// [Note 1]
-	var chai = require("chai");
-	var expect = chai.expect;
+// [Note 1]
+var chai = require("chai");
+var expect = chai.expect;
 
-	// [Note 2]
-	var debugging = false;
+// [Note 2]
+var debugging = false;
 
-	var timeouts = {
-	  appium: debugging ? 60 : 10,              // Timeout before Appium stops the app
-	  framework: 1000 * (debugging ? 600 : 30), // Timeout for completing each test
-	};
+var timeouts = {
+	appium: debugging ? 60 : 10,              // Timeout before Appium stops the app
+	framework: 1000 * (debugging ? 600 : 30), // Timeout for completing each test
+};
 
-	// [Note 3]
-	// Object to store the names of the frameworks once
-	var frameworks = {
-	  "mocha" : "mocha",
-	  "jasmine" : "jasmine"
-	};
+// [Note 3]
+// Object to store the names of the frameworks once
+var frameworks = {
+	"mocha" : "mocha",
+	"jasmine" : "jasmine"
+};
 
-	// Set this variable according to the framework you're using
-	var framework = frameworks.mocha;
-	//var framework = frameworks.jasmine;
+// Set this variable according to the framework you're using
+var framework = frameworks.mocha;
+//var framework = frameworks.jasmine;
 
-	// [Note 4]
-	var config = {};
+// [Note 4]
+var config = {};
 
-	config.android19Hybrid = {
-	  automationName: 'Appium',
-	  browserName: '',
-	  platformName: 'Android',
-	  platformVersion: 19,    // API level integer, or a version string like '4.4.2'
-	  autoWebview: true,
-	  deviceName: 'any value; Appium uses the first device from *adb devices*',
-	  app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk",
-	  newCommandTimeout: timeouts.appium,
-	};
+config.android19Hybrid = {
+	automationName: 'Appium',
+	browserName: '',
+	platformName: 'Android',
+	platformVersion: 19,    // API level integer, or a version string like '4.4.2'
+	autoWebview: true,
+	deviceName: 'any value; Appium uses the first device from *adb devices*',
+	app: "D:\\g\\cordova-samples\\weather-app\\WeatherApp\\bin\\Android\\Debug\\android-debug.apk",
+	newCommandTimeout: timeouts.appium,
+};
 
-	var appDriver  = yiewd.remote({
-	    hostname: 'localhost',
-	    port: 4723,
-	  });
-
-	// [Note 5]
-	describe ("Find weather page", function () {
-	  // [Note 2 again]
-	  // Set the timeout in the framework
-	  switch (framework) {
-	    case frameworks.mocha:
-	      this.timeout(timeouts.framework)
-	      break;
-
-	    case frameworks.jasmine:
-	      jasmine.DEFAULT_TIMEOUT_INTERVAL = timeouts.framework;
-	      break;
-	  }
-
-	  // [Notes 6, 7]
-	  it ('displays either weather data or an error message', function (done) {
-	    appDriver.run(function* () {
-	      // 'this' is appDriver
-	      var session = yield this.init(config.android19Hybrid);
-	      yield this.sleep(3000);
-
-	      var txtZip = yield this.elementById('zip-code-input');
-	      yield txtZip.clear();
-	      yield txtZip.sendKeys("95959");
-
-	      var btnGetWeather = yield this.elementById('get-weather-btn');
-	      yield btnGetWeather.click();
-
-	      // [Note 8]
-	      yield this.sleep(3000);
-
-	      var elemData = yield this.elementById('weather-data');
-	      var elemErr = yield this.elementById('error-msg');
-
-	      var visData = yield elemData.isDisplayed();
-	      var visErr = yield elemErr.isDisplayed();
-	      var eitherVisible = (visData && !visErr) || (!visData && visErr);
-
-	      expect(eitherVisible).to.equal(true);
-
-	      // Tell the framework that we're done with the async series
-	      done();
-	    });
-
-	  });
+var appDriver  = yiewd.remote({
+	hostname: 'localhost',
+	port: 4723,
 	});
+
+// [Note 5]
+describe ("Find weather page", function () {
+	// [Note 2 again]
+	// Set the timeout in the framework
+	switch (framework) {
+	case frameworks.mocha:
+		this.timeout(timeouts.framework)
+		break;
+
+	case frameworks.jasmine:
+		jasmine.DEFAULT_TIMEOUT_INTERVAL = timeouts.framework;
+		break;
+	}
+
+	// [Notes 6, 7]
+	it ('displays either weather data or an error message', function (done) {
+	appDriver.run(function* () {
+		// 'this' is appDriver
+		var session = yield this.init(config.android19Hybrid);
+		yield this.sleep(3000);
+
+		var txtZip = yield this.elementById('zip-code-input');
+		yield txtZip.clear();
+		yield txtZip.sendKeys("95959");
+
+		var btnGetWeather = yield this.elementById('get-weather-btn');
+		yield btnGetWeather.click();
+
+		// [Note 8]
+		yield this.sleep(3000);
+
+		var elemData = yield this.elementById('weather-data');
+		var elemErr = yield this.elementById('error-msg');
+
+		var visData = yield elemData.isDisplayed();
+		var visErr = yield elemErr.isDisplayed();
+		var eitherVisible = (visData && !visErr) || (!visData && visErr);
+
+		expect(eitherVisible).to.equal(true);
+
+		// Tell the framework that we're done with the async series
+		done();
+	});
+
+	});
+});
 ```
 
 Here are the points of interest in this code, as indicated by the notes:
 
-1.	Here we bring in the Chai assertion library and make a variable to use *expect* syntax. You can also use *should* or *assert* syntax, see [http://chaijs.com/](http://chaijs.com/).
+1. Here we bring in the Chai assertion library and make a variable to use *expect* syntax. You can also use *should* or *assert* syntax, see [http://chaijs.com/](http://chaijs.com/).
 
-2.	Appium's default timeout is 60 seconds, which is appropriate for debugging but somewhat too long when you want to run straight through tests, make changes, and run tests again. For faster iterations, it’s helpful to shorten that timeout and have Appium close the app quickly using the **newCommandTimeout** capability. Be careful to not make this too short, though, or else Appium might close the app while the test is starting up!
+2. Appium's default timeout is 60 seconds, which is appropriate for debugging but somewhat too long when you want to run straight through tests, make changes, and run tests again. For faster iterations, it’s helpful to shorten that timeout and have Appium close the app quickly using the **newCommandTimeout** capability. Be careful to not make this too short, though, or else Appium might close the app while the test is starting up!
 
-	- Mocha’s/Jasmine's default timeouts for tests are 2/5 seconds, respectively, which is much too short for a UI test that starts the app and does any kind of asynchronous work. You'll need to set it to something like 15 or 30 seconds for running tests straight through. When debugging, you'll need to set it to something much longer, like 5 minutes, so you have time to examine variables and such. See [Mocha timeouts]( http://mochajs.org/#timeouts) and Jasmine’s [*DEFAULT_TIMEOUT_INTERVAL* property]( http://jasmine.github.io/2.0/introduction.html#section-Asynchronous_Support).
+   - Mocha’s/Jasmine's default timeouts for tests are 2/5 seconds, respectively, which is much too short for a UI test that starts the app and does any kind of asynchronous work. You'll need to set it to something like 15 or 30 seconds for running tests straight through. When debugging, you'll need to set it to something much longer, like 5 minutes, so you have time to examine variables and such. See [Mocha timeouts]( http://mochajs.org/#timeouts) and Jasmine’s [*DEFAULT_TIMEOUT_INTERVAL* property]( http://jasmine.github.io/2.0/introduction.html#section-Asynchronous_Support).
 
-	- This bit of code with the *debugging* variable makes it convenient to switch between sets of timeouts. The timeouts themselves are set later through the *switch* statement inside *it*.
+   - This bit of code with the *debugging* variable makes it convenient to switch between sets of timeouts. The timeouts themselves are set later through the *switch* statement inside *it*.
 
 3. This bit of code to select a framework is just here to keep the string names in one place.
 
-4.	You could put all the configuration in a separate file and add a *require* call to bring it in, which can make it easy to switch between different settings. For examples, see [https://github.com/appium/sample-code/blob/master/sample-code/examples/node]( https://github.com/appium/sample-code/blob/master/sample-code/examples/node) and the helper/appium-servers.js file. Note that the path to the app package here is specific to your development machine.
+4. You could put all the configuration in a separate file and add a *require* call to bring it in, which can make it easy to switch between different settings. For examples, see [https://github.com/appium/sample-code/blob/master/sample-code/examples/node]( https://github.com/appium/sample-code/blob/master/sample-code/examples/node) and the helper/appium-servers.js file. Note that the path to the app package here is specific to your development machine.
 
-5.	The *describe* method creates a container for multiple tests. Its first argument is generally the description of what’s being tested (a noun, in other words); the second argument is the callback that does the work.
+5. The *describe* method creates a container for multiple tests. Its first argument is generally the description of what’s being tested (a noun, in other words); the second argument is the callback that does the work.
 
-6.	The *it* method defines one test. Its first argument is the description of the test, typically starting with a verb. In Jasmine’s reports, this text is appended to the string given to *describe*; in this code, the report would read “Find weather page displays either weather data or an error message.”
+6. The *it* method defines one test. Its first argument is the description of the test, typically starting with a verb. In Jasmine’s reports, this text is appended to the string given to *describe*; in this code, the report would read “Find weather page displays either weather data or an error message.”
 
-7.	The second argument to *it* is the callback to perform the test. Because we’re doing asynchronous calls within the test, we must define an argument for this callback named *done* and call that function to inform Jasmine when the test is complete.
+7. The second argument to *it* is the callback to perform the test. Because we’re doing asynchronous calls within the test, we must define an argument for this callback named *done* and call that function to inform Jasmine when the test is complete.
 
-8.	The click on the Find Weather button generates an HTTP request, so we want to wait long enough for that request to complete before checking for the UI state change. If you set an explicit timeout for HTTP requests in the app, it'd be appropriate to use that value here. In this case, three seconds is a reasonable number as WeatherApp just uses jQuery’s *ajax* API to make the request, and its timeout depends on the underlying platform.
+8. The click on the Find Weather button generates an HTTP request, so we want to wait long enough for that request to complete before checking for the UI state change. If you set an explicit timeout for HTTP requests in the app, it'd be appropriate to use that value here. In this case, three seconds is a reasonable number as WeatherApp just uses jQuery’s *ajax* API to make the request, and its timeout depends on the underlying platform.
 
 With all this, we can now run the test using Jasmine or Mocha, both of which launch the app via Appium (as we’ve been doing), and report any test failures. As the test runs, you’ll see UI interactions happening in the emulator or device, with various console output in the Appium window. Reports from the test framework appear in the command window where you start the test.
 For Jasmine, start the test as follows:
 
-	jasmine test05.js
+```cli
+jasmine test05.js
+```
 
 If the test passes, you’ll see only a little output (and notice that it took 21 seconds to run the test, which is why we needed to set a longer timeout):
 
-	Started
-	.
+```output
+Started
+.
 
-	1 spec, 0 failures
-	Finished in 21.087 seconds
+1 spec, 0 failures
+Finished in 21.087 seconds
+```
 
 If you want to test the error condition, disable networking on the device or emulator and run the test again. It should succeed with the same report as before.
 
 To see a failure report, change the assertion in [**test05.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test05.js) to expect visibility of either control to be false:
 
-	expect(eitherVisible).to.equal(false);
+```javascript
+expect(eitherVisible).to.equal(false);
+```
 
 Here’s the output in that case:
 
-	Started
-	F
+```output
+Started
+F
 
-	Failures:
-	1) Find weather page displays either weather data or an error message
-	  Message:
-	    Expected true to be false.
-	    [stack trace omitted]
+Failures:
+1) Find weather page displays either weather data or an error message
+	Message:
+	Expected true to be false.
+	[stack trace omitted]
 
-	1 spec, 1 failure
-	Finished in 15.012 seconds
+1 spec, 1 failure
+Finished in 15.012 seconds
+```
 
 Running the test in Mocha is just as simple:
 
-	mocha test05.js
+```cli
+mocha test05.js
+```
 
 A passing report is a little more verbose than Jasmine (and took a little over 15 seconds in this case):
 
-	Find weather page
-	  √ displays either weather data or an error message (15124ms)
+```output
+Find weather page
+	√ displays either weather data or an error message (15124ms)
 
-	1 passing (15s)
+1 passing (15s)
+```
 
 A failing report (if we again change the assertion), looks like this:
 
-	Find weather page
-	  1) displays either weather data or an error message
+```output
+Find weather page
+	1) displays either weather data or an error message
 
-	0 passing (13s)
-	1 failing
+0 passing (13s)
+1 failing
 
-	1) Find weather page displays either weather data or an error message:
-	    Uncaught AssertionError: expected true to equal false
-	    + expected - actual
+1) Find weather page displays either weather data or an error message:
+	Uncaught AssertionError: expected true to equal false
+	+ expected - actual
 
-	    -true
-	    +false
+	-true
+	+false
 
-	    at [stack trace omitted]
+	at [stack trace omitted]
+```
 
 Again, you can choose either framework as you prefer. The tests we’ll write will work with either one.
 
@@ -377,154 +397,158 @@ This is where “hooks” in the test frameworks come into play, which are speci
 In our test code with WeatherApp, the <em>before</em> hook is a perfect place to all <em>appDriver.init</em> to launch the app. Note that in this code we are using the yiewd form of <em>function</em><em>, *appDriver.run</em>, and <em>yield</em>:
 
 ```JavaScript
-	before(function (done) {
-	  appDriver.run(function *() {
-	    var session = yield this.init(config.android19Hybrid);
-	    yield this.sleep(3000);
-	    done();
-	  });
+before(function (done) {
+	appDriver.run(function *() {
+	var session = yield this.init(config.android19Hybrid);
+	yield this.sleep(3000);
+	done();
 	});
-	Similarly, here’s an *after* implementation that shuts the app down after all the tests have finished:
-	after(function (done) {
-	  appDriver.run(function *() {
-	    console.log("entering after");
-	    yield appDriver.quit();
-	    done();
-	  });
+});
+Similarly, here’s an *after* implementation that shuts the app down after all the tests have finished:
+after(function (done) {
+	appDriver.run(function *() {
+	console.log("entering after");
+	yield appDriver.quit();
+	done();
 	});
+});
 ```
 
 To refactor code that you want to use from multiple tests, be sure to use *function** in the declaration and *yield* in the body as before. For example, in WeatherApp we have two tests (startup and entering a valid ZIP code) that need to check mutually-exclusive visibility of the *weather-data* and *error-msg* elements. We can thus pull this code out separately as follows:
 
 ```JavaScript
-	function* checkDataErrVisibility(appSession) {
-	    var elemData = yield appSession.elementById('weather-data');
-	    var elemErr = yield appSession.elementById('error-msg');
+function* checkDataErrVisibility(appSession) {
+	var elemData = yield appSession.elementById('weather-data');
+	var elemErr = yield appSession.elementById('error-msg');
 
-	    // Do an XOR on element visibility. isDisplayed is an API from wd, see
-	    // https://github.com/admc/wd/blob/master/lib/element-commands.js. Remember
-	    // that even this API is async, so use yield to retrieve the values.
-	    var visData = yield elemData.isDisplayed();
-	    var visErr = yield elemErr.isDisplayed();
-	    var eitherVisible = (visData && !visErr) || (!visData && visErr);
-	    return eitherVisible;
-	}
+	// Do an XOR on element visibility. isDisplayed is an API from wd, see
+	// https://github.com/admc/wd/blob/master/lib/element-commands.js. Remember
+	// that even this API is async, so use yield to retrieve the values.
+	var visData = yield elemData.isDisplayed();
+	var visErr = yield elemErr.isDisplayed();
+	var eitherVisible = (visData && !visErr) || (!visData && visErr);
+	return eitherVisible;
+}
 ```
 
 Because this is declared using <em>function</em><em>, we have to use *yield</em> when calling it. For example, with this and the <em>before</em> hook in place, the startup test for element visibility is simple:
 
 ```JavaScript
-	it ('displays either weather data or an error message on startup', function (done) {
-	  appDriver.run(function* () {
-	    var eitherVisible = yield checkDataErrVisibility(this);
-	    expect(eitherVisible).to.equal(true);
-	    done();
-	  });
+it ('displays either weather data or an error message on startup', function (done) {
+	appDriver.run(function* () {
+	var eitherVisible = yield checkDataErrVisibility(this);
+	expect(eitherVisible).to.equal(true);
+	done();
 	});
+});
 ```
 
 These same couple of lines also are in the ZIP code test, of course, which you can find in **[test06.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test06.js)** and run as follows:
 
-	mocha test06.js
+```cli
+mocha test06.js
+```
 
 At this point, it’s instructive to change the conditions of the test by disabling the device’s network (either in the emulator or a real device). This will cause error messages to appear, and the tests should still pass.
 
 Now let’s write the remaining tests that we listed in the previous section, namely those that check for behaviors related to the text entry and Get Weather controls. This code is in **[test07.js](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js)**:
 
 ```JavaScript
-	it ('displays either weather data or an error message on startup', function (done) {
-	  appDriver.run(function* () {
-	    var eitherVisible = yield checkDataErrVisibility(this);
-	    expect(eitherVisible).to.equal(true);
-	    done();
-	  });
+it ('displays either weather data or an error message on startup', function (done) {
+	appDriver.run(function* () {
+	var eitherVisible = yield checkDataErrVisibility(this);
+	expect(eitherVisible).to.equal(true);
+	done();
 	});
+});
 
-	it ('disallows non-numerical characters in ZIP code field', function (done) {
-	  appDriver.run(function* () {
-	    var txtZip = yield this.elementById('zip-code-input');
-	    yield txtZip.clear();
-	    yield txtZip.sendKeys("abced98");
-	    var zipText = yield txtZip.text();
-	    expect(zipText).to.equal("98");
-	    done();
-	  });
+it ('disallows non-numerical characters in ZIP code field', function (done) {
+	appDriver.run(function* () {
+	var txtZip = yield this.elementById('zip-code-input');
+	yield txtZip.clear();
+	yield txtZip.sendKeys("abced98");
+	var zipText = yield txtZip.text();
+	expect(zipText).to.equal("98");
+	done();
 	});
+});
 
-	it ('disallows more than five characters in ZIP code field', function (done) {
-	  appDriver.run(function* () {
-	    var txtZip = yield this.elementById('zip-code-input');
-	    yield txtZip.clear();
-	    yield txtZip.sendKeys("987654321");
-	    var zipText = yield txtZip.text();
-	    expect(zipText).to.equal("98765");
-	    done();
-	  });
+it ('disallows more than five characters in ZIP code field', function (done) {
+	appDriver.run(function* () {
+	var txtZip = yield this.elementById('zip-code-input');
+	yield txtZip.clear();
+	yield txtZip.sendKeys("987654321");
+	var zipText = yield txtZip.text();
+	expect(zipText).to.equal("98765");
+	done();
 	});
+});
 
-	it ('disables the Get Weather button if the ZIP code field contains fewer than five digits', function (done) {
-	  appDriver.run(function* () {
-	    var txtZip = yield this.elementById('zip-code-input');
-	    yield txtZip.clear();
-	    yield txtZip.sendKeys("987");
+it ('disables the Get Weather button if the ZIP code field contains fewer than five digits', function (done) {
+	appDriver.run(function* () {
+	var txtZip = yield this.elementById('zip-code-input');
+	yield txtZip.clear();
+	yield txtZip.sendKeys("987");
 
-	    var enabled = yield isGetWeatherEnabled(this);
-	    expect(enabled).to.equal(false);
+	var enabled = yield isGetWeatherEnabled(this);
+	expect(enabled).to.equal(false);
 
-	    done();
-	  });
+	done();
 	});
+});
 
-	it ('enables the Get Weather button if the ZIP code field contains five digits', function (done) {
-	  appDriver.run(function* () {
-	    var txtZip = yield this.elementById('zip-code-input');
-	    yield txtZip.clear();
-	    yield txtZip.sendKeys("98765");
+it ('enables the Get Weather button if the ZIP code field contains five digits', function (done) {
+	appDriver.run(function* () {
+	var txtZip = yield this.elementById('zip-code-input');
+	yield txtZip.clear();
+	yield txtZip.sendKeys("98765");
 
-	    var enabled = yield isGetWeatherEnabled(this);
-	    expect(enabled).to.equal(true);
+	var enabled = yield isGetWeatherEnabled(this);
+	expect(enabled).to.equal(true);
 
-	    done();
-	  });
+	done();
 	});
+});
 ```
 
 We expect that the first three of these tests will fail because the app as yet doesn’t prevent non-numerical input nor does it check for longer entry strings. The fourth test will pass, though, because the button is always enabled. Here’s the mocha output (stack traces omitted):
 
-	D:\tests\Appium>mocha test07.js
+```output
+D:\tests\Appium>mocha test07.js
 
-	  Find weather page
-	    √ displays either weather data or an error message on startup (967ms)
-	    1) disallows non-numerical characters in ZIP code field
-	    2) disallows more than five characters in ZIP code field
-	    3) disables the Get Weather button if the ZIP code field contains fewer than five digits
-	    √ enables the Get Weather button if the ZIP code field contains five digits (1771ms)
-	    √ displays either weather data or an error message on Get Weather press with valid ZIp code (5348ms)
+	Find weather page
+	√ displays either weather data or an error message on startup (967ms)
+	1) disallows non-numerical characters in ZIP code field
+	2) disallows more than five characters in ZIP code field
+	3) disables the Get Weather button if the ZIP code field contains fewer than five digits
+	√ enables the Get Weather button if the ZIP code field contains five digits (1771ms)
+	√ displays either weather data or an error message on Get Weather press with valid ZIp code (5348ms)
 
 
-	  3 passing (43s)
-	  3 failing
+	3 passing (43s)
+	3 failing
 
-	  1) Find weather page disallows non-numerical characters in ZIP code field:
+	1) Find weather page disallows non-numerical characters in ZIP code field:
 
-	      Uncaught AssertionError: expected '' to equal '98'
-	      + expected - actual
-	      +98
+		Uncaught AssertionError: expected '' to equal '98'
+		+ expected - actual
+		+98
 
-	  2) Find weather page disallows more than five characters in ZIP code field:
+	2) Find weather page disallows more than five characters in ZIP code field:
 
-	      Uncaught AssertionError: expected '' to equal '98765'
-	      + expected - actual
+		Uncaught AssertionError: expected '' to equal '98765'
+		+ expected - actual
 
-	      +98765
+		+98765
 
-	  3) Find weather page disables the Get Weather button if the ZIP code field contains fewer than five digits:
+	3) Find weather page disables the Get Weather button if the ZIP code field contains fewer than five digits:
 
-	      Uncaught AssertionError: expected true to equal false
-	      + expected - actual
+		Uncaught AssertionError: expected true to equal false
+		+ expected - actual
 
-	      -true
-	      +false
+		-true
+		+false
+```
 
 With these results we can take the test-driven development approach and write code in the app to pass one or more additional tests. To limit the ZIP code entry to at most five digits, we add *type=”number”* and *maxlength=”5”* attributes to the *zip-code-input* element in index.html:
 
@@ -535,37 +559,37 @@ With these results we can take the test-driven development approach and write co
 However, this doesn’t appear entirely reliable on all platforms. So we can also implement that behavior in a *keypress* handler (index.js):
 
 ```JavaScript
-	//Accept only digits (and special characters)
-	$('#zip-code-input').keypress(function (e) {
-	    var charCode = (e.which) ? e.which : e.keyCode
-	    var isDigit = (charCode >= 48 && charCode <= 57);
+//Accept only digits (and special characters)
+$('#zip-code-input').keypress(function (e) {
+	var charCode = (e.which) ? e.which : e.keyCode
+	var isDigit = (charCode >= 48 && charCode <= 57);
 
-	    if (charCode > 31 && !isDigit)
-	        return false;
+	if (charCode > 31 && !isDigit)
+		return false;
 
-	    if (isDigit) {
-	        var text = $('#zip-code-input')[0].value;
-	        return (text.length < 5);
-	    }
+	if (isDigit) {
+		var text = $('#zip-code-input')[0].value;
+		return (text.length < 5);
+	}
 
-	    return true;
-	});
+	return true;
+});
 ```
 
 To enable/disable the Get Weather button, we need to initially disable the button in HTML:
 
 ```html
-	<button id="get-weather-btn" data-role="button" data-icon="search" disabled >Find Weather</button>
+<button id="get-weather-btn" data-role="button" data-icon="search" disabled >Find Weather</button>
 ```
 
 And then check the length of the ZIP code value in its *change* event:
 
 ```JavaScript
-	//Whenever a key is released, check for enabling/disabling the button
-	$('#zip-code-input').keyup(function (e) {
-	    var text = $('#zip-code-input')[0].value;
-	    $('#get-weather-btn').prop('disabled', !(text.length == 5));
-	});
+//Whenever a key is released, check for enabling/disabling the button
+$('#zip-code-input').keyup(function (e) {
+	var text = $('#zip-code-input')[0].value;
+	$('#get-weather-btn').prop('disabled', !(text.length == 5));
+});
 ```
 
 Running *mocha test07.js* again shows that we now pass those tests.
@@ -574,37 +598,37 @@ Running *mocha test07.js* again shows that we now pass those tests.
 
 The [Node.js Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/) can be used as a test runner for Mocha, with direct integration into Visual Studio’s Test Explorer:
 
-1.	Install any edition of Visual Studio 2015 (Community, Professional, or Enterprise) along with the [Node.js Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/). You can install the latter using **Tools > Extensions and Updates**, then click **Online** on the left, search for Node.js, and install the tools (you’ll be prompted to restart Visual Studio in the process):
+1. Install any edition of Visual Studio 2015 (Community, Professional, or Enterprise) along with the [Node.js Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/). You can install the latter using **Tools > Extensions and Updates**, then click **Online** on the left, search for Node.js, and install the tools (you’ll be prompted to restart Visual Studio in the process):
 
-	![Installing the Node.js Tools for Visual Studio](media/designing/02-node-tools-install.png)
+   ![Installing the Node.js Tools for Visual Studio](media/designing/02-node-tools-install.png)
 
-2.	Create a stub host project using **File > New Project**, search on “Node.js,” and select “Blank Node.js Console Application (JavaScript).” You won’t actually be running this application itself. We’re simply using it as a shell in which to run tests using Mocha and see the results in Test Explorer. The real app is, of course, identified by the app package we specify in the Appium configuration and has a separate project of its own.
+2. Create a stub host project using **File > New Project**, search on “Node.js,” and select “Blank Node.js Console Application (JavaScript).” You won’t actually be running this application itself. We’re simply using it as a shell in which to run tests using Mocha and see the results in Test Explorer. The real app is, of course, identified by the app package we specify in the Appium configuration and has a separate project of its own.
 
-3.	To run Mocha tests, it’s necessary to have Mocha installed locally (see [Test Explorer in the Node.js tools documentation](https://github.com/Microsoft/nodejstools/wiki/Test-Explorer)). This is easily accomplished by adding Mocha and the other packages we need to the *devdependencies* section of package.json as below, then running *npm install* in the project folder.
+3. To run Mocha tests, it’s necessary to have Mocha installed locally (see [Test Explorer in the Node.js tools documentation](https://github.com/Microsoft/nodejstools/wiki/Test-Explorer)). This is easily accomplished by adding Mocha and the other packages we need to the *devdependencies* section of package.json as below, then running *npm install* in the project folder.
 
 ```json
-	"devDependencies": {
-	  "wd": "^0.4.0",
-	  "mocha": "^2.5.3",
-	  "chai": "^3.5.0",
-	  "expect.js": "^0.3.1",
-	  "yiewd": "^0.6.0"
-	}
+"devDependencies": {
+	"wd": "^0.4.0",
+	"mocha": "^2.5.3",
+	"chai": "^3.5.0",
+	"expect.js": "^0.3.1",
+	"yiewd": "^0.6.0"
+}
 ```
 
-4.	Select **Project > Add Existing Item…** and navigate to your test file, such as [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js) that we used in the previous section.
+4. Select **Project > Add Existing Item…** and navigate to your test file, such as [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js) that we used in the previous section.
 
-5.	Click the test file in Solution Explorer and set the **Test Framework** in the **Properties** pane to Mocha:
+5. Click the test file in Solution Explorer and set the **Test Framework** in the **Properties** pane to Mocha:
 
-	![Setting the test framework option in Visual Studio](media/designing/03-node-tools-framework.png)
+   ![Setting the test framework option in Visual Studio](media/designing/03-node-tools-framework.png)
 
-6.	Open the Test Explorer window using **Test > Windows > Test Explorer**, and you should see all the tests that Visual Studio finds in the test file. If you don’t see the tests automatically, select **Build > Build Solution**.
+6. Open the Test Explorer window using **Test > Windows > Test Explorer**, and you should see all the tests that Visual Studio finds in the test file. If you don’t see the tests automatically, select **Build > Build Solution**.
 
-	![The list of discovered tests shown in Test Explorer](media/designing/04-node-tools-test-list.png)
+   ![The list of discovered tests shown in Test Explorer](media/designing/04-node-tools-test-list.png)
 
-7.	Assuming that the Appium server is running in a command windows, click **Run All** in Test Explorer to run the tests, or select and run an individual test. The results then appear in Test Explorer directly:
+7. Assuming that the Appium server is running in a command windows, click **Run All** in Test Explorer to run the tests, or select and run an individual test. The results then appear in Test Explorer directly:
 
-	![Test results in Test Explorer](media/designing/05-node-tools-test-results.png)
+   ![Test results in Test Explorer](media/designing/05-node-tools-test-results.png)
 
 > [!NOTE]
 > The Node.js tools at present will reload the test file for each test it runs. In the example of [**test07.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test07.js), this means that all the setup code to initialize Appium and launch the app will be run for each test, and the app will shut down after each one as well. This is of little consequence if you need to relaunch the app for certain tests to begin with, but can make running other groups of tests slower.
