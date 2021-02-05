@@ -399,7 +399,7 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                   <p>Yes, with third-party frameworks</p>
                 </td>
                 <td>
-                  <p>See <a href="../test/unit-test-01-primer.md">Author and run tests</a>.</p>                  
+                  <p>See <a href="../debug-test/unit-test-primer.md">Author and run tests</a>.</p>                  
                 </td>
               </tr>
               <tr>
