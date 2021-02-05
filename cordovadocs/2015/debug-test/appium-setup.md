@@ -15,13 +15,13 @@ Because our focus in this documentation is using Appium for test automation, weâ
 
 Open a command prompt and install Appium globally via **npm**, as is common with development tools. This installs quite a few dependencies and might take a while depending on your Internet connection:
 
-```cli
+```console
 npm install -g appium
 ```
 
 The [Appium page on npmjs.org]( https://www.npmjs.com/package/appium) recommends also installing and running **appium-doctor** to check dependencies and environment variables:
 
-```cli
+```console
 npm install -g appium-doctor
 appium-doctor --android  #Works on any Android-capable dev machine
 appium-doctor --ios      #Works only on a Mac, of course
@@ -46,7 +46,7 @@ info AppiumDoctor
 
 Once Appium is installed, open a new command prompt and start the server as below (with Appium installed globally as in the previous section, you can be in any folder):
 
-```cli
+```console
 appium
 ```
 
@@ -61,7 +61,7 @@ In any case, once the server is started youâ€™ll see output like the following, 
 
 If you want to have the server listen to requests on a different port, such as localhost:4723, simply add a few arguments:
 
-```cli
+```console
 appium --address 127.0.0.1 --port 4732
 ```
 
@@ -113,7 +113,7 @@ appDriver.init(config.android19Hybrid);
 
 With the Appium server running in a separate command window, run this code now to see Appium in action:
 
-```cli
+```console
 node test01.js
 ```
 

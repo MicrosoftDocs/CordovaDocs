@@ -57,13 +57,13 @@ Then check that you have the necessary environment variables set as described in
 
 Make sure you have a current version of Node.js installed—we’ll need it for certain features in our test code. The easiest way is to just use the following command from a command prompt:
 
-```cli
+```console
 npm install –g node
 ```
 
 You can check the version as follows:
 
-```cli
+```console
 node –version
 ```
 
@@ -95,7 +95,7 @@ The test code we’ll eventually write uses the Appium WebDriver client library 
 
 At a command prompt, create a folder for your tests (this can be anywhere), switch to that folder, and run the following command:
 
-```cli
+```console
 npm install wd
 ```
 
@@ -119,7 +119,7 @@ for (var property in appDriver.defaultCapabilities) {
 
 Then run it with Node.js:
 
-```cli
+```console
 node test00.js
 ```
 

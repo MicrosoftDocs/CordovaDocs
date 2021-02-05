@@ -52,19 +52,19 @@ See [tips and workarounds](../tips-workarounds/general-tips.md) for information 
 
 Ex:
 
-```cli
+```console
 cordova build android -- --ant
 ```
 
 You can also set an environment variable to keep this preference around for a command line session.
 
-```cli
+```console
 set ANDROID_BUILD=ant
 ```
 
 Finally, if you are still seeing build errors, you may want to opt to remove and re-add the android platform after switching build systems.
 
-```cli
+```console
 cordova platform remove android
 cordova platform add android
 ```
@@ -73,7 +73,7 @@ cordova platform add android
 
 **Visual Studio 2015 RC cannot build an Android app with the Crosswalk plugin:** The Crosswalk Cordova plugin requires that Gradle be used to build Android to build but VS 2015 RC uses Ant. To build a project that uses the Crosswalk plug-in, you will need to build using the command line:
 
-```cli
+```console
 npm install -g cordova
 cordova platform remove android
 cordova platform add android
@@ -83,13 +83,13 @@ cordova build android
 
 or
 
-```cli
+```console
 cordova run android
 ```
 
 or
 
-```cli
+```console
 cordova emulate android
 ```
 

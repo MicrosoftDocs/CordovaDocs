@@ -42,7 +42,9 @@ Once you’ve got Parallels up and running, you’re ready to set up your Mac. F
 
 Once Node.js is installed, get the [remotebuild](https://go.microsoft.com/fwlink/?LinkId=618169) agent. The remotebuild agent allows Visual Studio to communicate with OS X and use your Mac as a build service. You can install the remotebuild agent by opening the Terminal App on your Mac and typing the following command:
 
-    sudo npm install -g remotebuild
+```console
+sudo npm install -g remotebuild
+```
 
 The preceding command installs the remotebuild agent for all users of Node.js on your Mac, as well as the taco-remote module for building Cordova projects. If you don't want to allow others to use the remotebuild agent, you can drop the –g flag from the command to install the agent for the current user.
 
@@ -51,7 +53,9 @@ The preceding command installs the remotebuild agent for all users of Node.js on
 
 Make sure you have Parallels running. With remotebuild installed, start the agent by typing the following command in the Terminal App.
 
-    remotebuild
+```console
+remotebuild
+```
 
 > [!NOTE]
 > By default, your iOS builds will show up in ~/.taco_home/remote-builds/taco-remote/builds.
@@ -69,7 +73,9 @@ You’ll need to use the PIN when you configure the agent in Visual Studio. The 
 ## Get the IP address on your Mac
 With Parallels running, the most reliable way to connect from Parallels to the Mac side is to use one of the VNIC IP addresses because it generally won’t change between restarts. You can get these IP addresses by going to Terminal App and typing the following command:
 
-    ifconfig
+```console
+ifconfig
+```
 
 The results should look similar to the following:
 
@@ -110,7 +116,9 @@ Now you have a working hybrid mobile app development environment for iOS using V
 
 In later development sessions following a shutdown, you will need to restart remotebuild. As described previously, just open the Terminal App in OS X and type the following on the command line:
 
-    remotebuild
+```console
+remotebuild
+```
 
 
 With that, good luck, and happy travels developing your next mobile app!
