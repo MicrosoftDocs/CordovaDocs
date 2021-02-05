@@ -50,7 +50,7 @@ When using version 0.2.8 or higher of vs-mda-remote, you should add the followin
 
 Alternatively, you can install version 0.2.7 instead by using the following command:
 
-```cli
+```console
 npm install -g vs-mda-remote@0.2.7
 ```
 

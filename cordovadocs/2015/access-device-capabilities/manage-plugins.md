@@ -99,7 +99,7 @@ Specify parameters by adding some additional XML elements in the **Config.xml** 
 
 This has the same result as running the following command from the command line (if you were not using Visual Studio):
 
-```cli
+```console
 cordova plugin add https://github/com/Wizcorp/phonegap-facebook-plugin.git
  --variable APP_ID="12345678" –variable APP_NAME="My Facebook App"
 ```
