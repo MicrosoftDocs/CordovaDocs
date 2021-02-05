@@ -22,7 +22,9 @@ To get started with MacInCloud, first set up either an account or a trial versio
 
 If you chose a MacInCloud plan with a dedicated server, you may have sudo (Administrator) access. With sudo access, just follow the same instructions used to [install the remote agent](../first-steps/ios-guide.md) on an on-premise Mac. If you are using a managed server plan, you will not have sudo access. However, it is worth noting that remotebuild is probably already installed on the machine that you have access to. You can validate this by attempting to start up the agent. In the Terminal App, type:
 
-     remotebuild
+```console
+remotebuild
+```
 
 If it is not installed, contact MacInCloud support and ask them to install it on your behalf.
 
@@ -38,7 +40,7 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 2. In the Terminal app on your MacInCloud server, try to open the file in Xcode by executing the following command.
 
-    ```
+    ```console
     open -a Xcode ~/.taco_home/RemoteBuild.config
     ```
 
@@ -46,7 +48,7 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 3. If the previous command tells you the file does not exist, run the following commands in the Terminal app.
 
-    ```
+    ```console
     mkdir ~/.taco_home
     echo "" >> ~/.taco_home/RemoteBuild.config
     open –a Xcode ~/.taco_home/RemoteBuild.confg
@@ -56,7 +58,7 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 4. Once RemoteBuild.config is open, verify that, at minimum, the following content is present in the file:
 
-    ```
+    ```json
     {
         "hostname":" myhostname.macincloud.com"
     }
@@ -66,14 +68,14 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 5. After you verify the configuration, type the following command in the Terminal App on your Mac, substituting the MacInCloud host name for `your_hostname` in the command:
 
-   ```
+   ```console
    remotebuild certificates reset --hostname=your_hostname
    remotebuild certificates generate   
    ```
  
    Or
 
-   ```
+   ```console
    remotebuild saveconfig --hostname=your_hostname
    remotebuild certificates reset
    remotebuild certificates generate
@@ -87,7 +89,7 @@ With one exception, you can use the same process to configure Visual Studio for 
 
 6. If it is not already running, start the agent in the Terminal App on your Mac by typing:
 
-    ```
+    ```console
     remotebuild
     ```
 
@@ -107,20 +109,20 @@ Instead of overriding the host name, you may instead use the IP address of your 
 
 1. In the Terminal App on your Mac, type the following command (make sure you include a space before the final quotation mark, as shown).
 
-    ```
+    ```console
     ifconfig | grep "inet "
     ```
 
 2. Two IP addresses are displayed. In the steps that follow, you will need the IP address that is not the loopback address (127.0.0.1). For example, if typing the preceding command resulted in the following output, you will need 192.168.0.100.
 
-    ```
+    ```output
     inet 127.0.0.1 netmask 0xff000000
     inet 192.168.0.100 netmask oxffffff00 broadcast 192.168.0.1
     ```
 
 3. If it is not already running, start the agent in the Terminal App on your MacInCloud server by typing the following command.
 
-    ```
+    ```console
     remotebuild
     ```
 
@@ -130,7 +132,7 @@ Instead of overriding the host name, you may instead use the IP address of your 
 
 4. If you do not see this information, type the following to generate a new PIN:
 
-    ```
+    ```console
     remotebuild certificates generate
     ```
 

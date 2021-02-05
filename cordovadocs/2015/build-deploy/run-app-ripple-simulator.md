@@ -1,5 +1,5 @@
 ---
-title: "Cordova build process in Visual Studio | Cordova"
+title: "Run app in Apache Ripple simulator | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "06/06/2016"
