@@ -24,8 +24,8 @@ Install this plugin to resolve ITMS-90474, ITMS-90475 in Cordova 5.3.3 and below
 
 To resolve ITMS-90339 with Cordova 5.3.3 and below you will need to do the following:
 
-1.	Grab the build.xcconfig from [the 3.9.x branch of the cordova-ios repo](https://raw.githubusercontent.com/apache/cordova-ios/3.9.x/bin/templates/scripts/cordova/build.xcconfig) and place this under res/native/ios/cordova
-2.	Now remove this line:
+1. Grab the build.xcconfig from [the 3.9.x branch of the cordova-ios repo](https://raw.githubusercontent.com/apache/cordova-ios/3.9.x/bin/templates/scripts/cordova/build.xcconfig) and place this under res/native/ios/cordova
+2. Now remove this line:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 CODE_SIGN_RESOURCE_RULES_PATH = $(SDKROOT)/ResourceRules.plist
@@ -113,7 +113,9 @@ You will need to generate and use a new PIN when setting up Visual Studio to con
 
 This error can occur if your ~/.npm folder or some of its contents were created while running as an administrator (sudo). To resolve, run the following command after installing the latest version of the [remotebuild](https://www.npmjs.com/package/remotebuild) or [vs-mda-remote](https://www.npmjs.com/package/vs-mda-remote) packages. This command ensures that your user has permissions to the contents of the npm package cache in your home directory when using older versions of Node.js and npm. Newer versions of Node.js and npm will do this for you automatically.
 
-    sudo chown -R `whoami` ~/.npm
+```cli
+sudo chown -R `whoami` ~/.npm
+```
 
 ## <strong>Slow first build</strong>
 The first build using the remote iOS build agent for a given version of Cordova will be slower than subsequent builds as the remote agent must first dynamically acquire Cordova on OSX.
@@ -158,6 +160,8 @@ If a plugin is added to your project, built for iOS, and then removed from the p
 ## <strong>Failed to launch application on iOS remote build machine</strong>
 Sometimes, you would see following output in the Visual Studio error pane:
 
-    Http 404: Unable to launch app
+```output
+Http 404: Unable to launch app
+```
 
  In some cases, this *may* occur if the app id in the widget element of config.xml (e.g. io.cordova.helloworld) has any non-ascii characters in it, or contains the substring '.app'. This is a known imitation of the iOS platform. To resolve this issue, you should modify the application id not to contain .app in the value or have ascii characters as the app id.

@@ -88,26 +88,28 @@ N/A
 
 Sauce Labs generally has the best support for Appium across the board (Sauce Labs is a backer of Appium), including the ability to specify your Sauce Labs username and access key directly in the Appium configuration alongside your desired platform and device values. For example, here is a configuration object for running tests on an Android Emulator on Sauce Labs:
 
-	var config = {};
+```javascript
+var config = {};
 
-	config.android19Hybrid = {
-	    automationName: 'Appium',
-	    appiumVersion: '1.3',
-	    browserName: '',
-	    platformName: 'Android',
-	    platformVersion: '4.4.2',
-	    autoWebview: true,
-	    deviceName: 'Android Emulator',
-	    app: "sauce-storage:weather-android-debug.apk",
-	    newCommandTimeout: timeouts.appium,
-	};
+config.android19Hybrid = {
+	automationName: 'Appium',
+	appiumVersion: '1.3',
+	browserName: '',
+	platformName: 'Android',
+	platformVersion: '4.4.2',
+	autoWebview: true,
+	deviceName: 'Android Emulator',
+	app: "sauce-storage:weather-android-debug.apk",
+	newCommandTimeout: timeouts.appium,
+};
 
-	var appDriver = yiewd.remote({
-	    hostname: 'ondemand.saucelabs.com',
-	    port: 80,
-	    username: '<YOUR_USERNAME_HERE>',
-	    password: '<YOUR_ACCESSKEY_HERE>'
-	});
+var appDriver = yiewd.remote({
+	hostname: 'ondemand.saucelabs.com',
+	port: 80,
+	username: '<YOUR_USERNAME_HERE>',
+	password: '<YOUR_ACCESSKEY_HERE>'
+});
+```
 
 Notice that the device name is specific, and that *app* must be either a publically-accessible URL or point to a package you’ve uploaded to [Sauce Labs’ temporary storage](https://wiki.saucelabs.com/display/DOCS/Uploading+Mobile+Applications+to+Sauce+Storage+for+Testing) (such as *sauce-storage:weather-android-debug.apk* shown here). You’ll need to replace the app value with a reference to your own app, of course, and you'll need to set the user name and access key for your own account with Sauce Labs.
 

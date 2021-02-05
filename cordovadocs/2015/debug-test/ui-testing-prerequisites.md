@@ -57,11 +57,15 @@ Then check that you have the necessary environment variables set as described in
 
 Make sure you have a current version of Node.js installed—we’ll need it for certain features in our test code. The easiest way is to just use the following command from a command prompt:
 
-    npm install –g node
+```cli
+npm install –g node
+```
 
 You can check the version as follows:
 
-    node –version
+```cli
+node –version
+```
 
 Version 4.4.3 is suitable for this tutorial.
 
@@ -69,11 +73,11 @@ Version 4.4.3 is suitable for this tutorial.
 
 To learn how to write and run UI tests for Apache Cordova apps, we need an app to test. For this we’ll use the simple WeatherApp sample from [https://github.com/Microsoft/cordova-samples/tree/master/weather-app](https://github.com/Microsoft/cordova-samples/tree/master/weather-app):
 
-1.	Download the ZIP of the samples from [https://github.com/Microsoft/cordova-samples](https://github.com/Microsoft/cordova-samples) or clone the repository locally.
+1. Download the ZIP of the samples from [https://github.com/Microsoft/cordova-samples](https://github.com/Microsoft/cordova-samples) or clone the repository locally.
 
-2.	Open weather-app/WeatherApp.sln in Visual Studio.
+2. Open weather-app/WeatherApp.sln in Visual Studio.
 
-3.	To run the app you’ll need a free API key from [http://openweathermap.org/](http://openweathermap.org/). Specific instructions for this can be found on [Getting Started With Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017), which is the walkthrough for building the app.
+3. To run the app you’ll need a free API key from [http://openweathermap.org/](http://openweathermap.org/). Specific instructions for this can be found on [Getting Started With Visual Studio Tools For Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017), which is the walkthrough for building the app.
 
 4. Open weather.js and paste your API key as the value for the *OpenWeatherAppKey* variable.
 
@@ -85,41 +89,48 @@ To learn how to write and run UI tests for Apache Cordova apps, we need an app t
 
 > **Note**: if you're using Visual Studio in a virtual machine and cannot run the Visual Studio Emulator for Android, Appium will also work with the Google Android Emulator or any other Android Emulator. See [](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) for information on other emulators. As we'll see, Appium always connects to the first device that's returned from the *abd devices* command; where there is anything specific you might need to adjust, though, we'll point that out.
 
-
 ## Verify WebDriver operation
 
 The test code we’ll eventually write uses the Appium WebDriver client library for Node.js, known as **[wd](https://github.com/admc/wd)**. In this section, we’ll write some simple code to make sure we have this library installed correctly.
 
 At a command prompt, create a folder for your tests (this can be anywhere), switch to that folder, and run the following command:
 
-    npm install wd
+```cli
+npm install wd
+```
 
 Next, let’s create an initial test file to verify that **wd** is available. Create a file named [**test00.js**](https://github.com/Microsoft/cordova-samples/blob/master/ui-testing/test00.js) (because it’s not much of a test!) with the following contents:
 
-    var wd = require("wd");
-    var appDriver = wd.remote({
-        hostname: '127.0.0.1',
-        port: 4723,
-    })
+```javascript
+var wd = require("wd");
+var appDriver = wd.remote({
+    hostname: '127.0.0.1',
+    port: 4723,
+})
 
-    // Some debug output to show default configurations
-    console.log("appDriver.configUrl.host: " + appDriver.configUrl.host);
+// Some debug output to show default configurations
+console.log("appDriver.configUrl.host: " + appDriver.configUrl.host);
 
-    for (var property in appDriver.defaultCapabilities) {
-        console.log("appDriver.defaultCapabilities." + property + ": " +
-            appDriver.defaultCapabilities[property]);
-    }
+for (var property in appDriver.defaultCapabilities) {
+    console.log("appDriver.defaultCapabilities." + property + ": " +
+        appDriver.defaultCapabilities[property]);
+}
+```
 
 Then run it with Node.js:
 
-    node test00.js
+```cli
+node test00.js
+```
 
 Even though we haven’t set up and started the Appium server yet, the **wd** library will nevertheless initialize an object to manage the connection and set some default “capabilities” as shown in the output below. Note that the code specifies 127.0.0.1:4723 specifically because that’s a common default for using Appium on Windows:
 
-    appDriver.configUrl.host: 127.0.0.1:4723
-    appDriver.defaultCapabilities.browserName: firefox
-    appDriver.defaultCapabilities.version:
-    appDriver.defaultCapabilities.javascriptEnabled: true
-    appDriver.defaultCapabilities.platform: ANY
+```output
+appDriver.configUrl.host: 127.0.0.1:4723
+appDriver.defaultCapabilities.browserName: firefox
+appDriver.defaultCapabilities.version:
+appDriver.defaultCapabilities.javascriptEnabled: true
+appDriver.defaultCapabilities.platform: ANY
+```
 
 These capabilities contain a variety of values that describe a specific testing environment. As you can imagine, using a Firefox browser on an unspecified platform probably won’t cut it for Cordova apps. We’ll see how to do this shortly, but first we need to get the Appium server going as described in the next section.
