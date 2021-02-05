@@ -11,11 +11,11 @@ ms.author: jomatthi
 
 This article shows how you can build hybrid apps using Apache Cordova in Visual Studio and deploy them to iOS using Parallels. By using [Parallels](http://www.parallels.com/), you can develop Cordova apps using only a Mac. To accomplish this, you’ll need the following:
 
- - [Xcode on OS X](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
- - [Node JS on OS X](http://nodejs.org/)
- - [Windows 7 or 8+](https://windows.microsoft.com/windows/downloads)
- - [Parallels on OS X](http://www.parallels.com/) or a similar virtual machine solution
- - [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://visualstudio.microsoft.com/vs/features/cordova/) installed
+- [Xcode on OS X](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+- [Node JS on OS X](http://nodejs.org/)
+- [Windows 7 or 8+](https://windows.microsoft.com/windows/downloads)
+- [Parallels on OS X](http://www.parallels.com/) or a similar virtual machine solution
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) with [Visual Studio Tools for Apache Cordova](https://visualstudio.microsoft.com/vs/features/cordova/) installed
 
 Any Mac that can run Mavericks or Yosemite should work with Parallels and Visual Studio, such as a 2013 MacBook Pro.
 
@@ -37,7 +37,9 @@ Once you’ve got Parallels up and running, you’re ready to set up your Mac. F
 
 Once Node.js is installed, get the [remotebuild](https://go.microsoft.com/fwlink/?LinkId=618169) agent. The remotebuild agent allows Visual Studio to communicate with OS X and use your Mac as a build service. You can install the remotebuild agent by opening the Terminal App on your Mac and typing the following command:
 
-    sudo npm install -g remotebuild
+```cli
+sudo npm install -g remotebuild
+```
 
 The preceding command installs the remotebuild agent for all users of Node.js on your Mac, as well as the taco-remote module for building Cordova projects. If you don't want to allow others to use the remotebuild agent, you can drop the –g flag from the command to install the agent for the current user.
 
@@ -46,7 +48,9 @@ The preceding command installs the remotebuild agent for all users of Node.js on
 
 Make sure you have Parallels running. With remotebuild installed, start the agent by typing the following command in the Terminal App.
 
-    remotebuild
+```cli
+remotebuild
+```
 
 >**Note**: By default, your iOS builds will show up in ~/.taco_home/remote-builds/taco-remote/builds.
 
@@ -63,7 +67,9 @@ You’ll need to use the PIN when you configure the agent in Visual Studio. The 
 ## Get the IP address on your Mac
 With Parallels running, the most reliable way to connect from Parallels to the Mac side is to use one of the VNIC IP addresses because it generally won’t change between restarts. You can get these IP addresses by going to Terminal App and typing the following command:
 
-    ifconfig
+```cli
+ifconfig
+```
 
 The results should look similar to the following:
 
@@ -74,11 +80,11 @@ Either of the VNIC IP addresses will work. With remotebuild running and a VNIC I
 ## Configure Visual Studio to use remotebuild
 With Visual Studio open in Parallels, choose **Tools**, then **Options**. Open **Tools for Apache Cordova**, and then choose **Remote Agent Configuration**. Make the following changes to the remote agent settings.
 
- - Set **Enable remote iOS processing** to **True**.
- - Set **Host** to one of the vnic IP addresses your obtained previously.
- - Use the default **Port** setting of 3000.
- - Set **Secure Mode** to **True**.
- - Set **Security PIN** to the PIN displayed when you first ran remotebuild.
+- Set **Enable remote iOS processing** to **True**.
+- Set **Host** to one of the vnic IP addresses your obtained previously.
+- Use the default **Port** setting of 3000.
+- Set **Secure Mode** to **True**.
+- Set **Security PIN** to the PIN displayed when you first ran remotebuild.
 
 ![Configure Visual Studio](media/run-windows-in-mac-vm/configure-vs.png)
 
@@ -103,7 +109,8 @@ Now you have a working hybrid mobile app development environment for iOS using V
 
 In later development sessions following a shutdown, you will need to restart remotebuild. As described previously, just open the Terminal App in OS X and type the following on the command line:
 
-    remotebuild
-
+```cli
+remotebuild
+```
 
 With that, good luck, and happy travels developing your next mobile app!
