@@ -19,7 +19,6 @@
 
 # Run on Different Platforms
 ## [Building Cordova apps](run-your-app/deploy-and-run-app.md)
-## [Use a browser for rapid testing](run-your-app/simulate-in-browser.md)
 ## [Build on Android](run-your-app/run-app-android.md)
 ## [Build on iOS](run-your-app/run-app-ios.md)
 ## [Build on Windows](run-your-app/run-app-windows.md)

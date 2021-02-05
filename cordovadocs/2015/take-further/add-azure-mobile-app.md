@@ -116,9 +116,9 @@ Follow the steps in [Test push notifications in your Android app](https://azure.
 
 To test push notifications in your iOS app:
 
-1. If you haven't already, go through the steps in the [iOS Setup Guide](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017) to install and run the remotebuild agent.
+1. If you haven't already, go through the steps in the [iOS Setup Guide](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017&preserve-view=true) to install and run the remotebuild agent.
 
-    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017).
+    Make sure you can build the app for iOS. The steps in the setup guide are required to build for iOS from Visual Studio. If you do not have a Mac, you can build for iOS using the remotebuild agent on a service like MacInCloud. For more info, see [Run your iOS app in the cloud](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017&preserve-view=true).
 
 2. Follow the steps in [Test push notifications in your iOS app](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started-push/#optional-configure-and-run-on-ios)
 

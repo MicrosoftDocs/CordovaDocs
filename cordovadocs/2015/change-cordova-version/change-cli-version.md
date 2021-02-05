@@ -79,7 +79,7 @@ Have a quick look at this table. It presents each action, its impact, and what y
 
 ## <a id="node-compat"></a>Step 3: Consider how this change will impact Node.js
 
-Cordova uses [Node.js](http://nodejs.org/) to perform automation tasks. You installed it when you first setup the tools for Apache Cordova. [Visual Studio Taco Update 8](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015) ensures that Cordova uses a compatible version of node.js.
+Cordova uses [Node.js](http://nodejs.org/) to perform automation tasks. You installed it when you first setup the tools for Apache Cordova. [Visual Studio Taco Update 8](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015&preserve-view=true) ensures that Cordova uses a compatible version of node.js.
 
 If you haven't installed the update, and you plan to change your project's CLI version, make sure that you use a compatible version of Node.js. This table shows what versions you'll need. You'll still encounter the occasional bug, but by using these combinations, you'll receive the fewest numbers of them.
 
