@@ -59,7 +59,7 @@ Here are some of the more common issues that you might see on Windows.
 
     ![unhandled exception](media/tips-and-workarounds-windows-readme/unhandled-exception.png)
 
-    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/getting-started-with-ionic?view=toolsforcordova-2015) to call platformOverrides.js to fix this issue.
+    If you see same exception when targeting Win/WinPhone 8.1, follow the [steps here](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/getting-started-with-ionic?view=toolsforcordova-2015&preserve-view=true) to call platformOverrides.js to fix this issue.
 
 * WWAHost runtime error?
 

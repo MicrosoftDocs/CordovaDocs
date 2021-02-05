@@ -27,7 +27,7 @@ Or, skip the hassle and VS-ify your project from this handy npm package created 
 
 The [Angular JS To-Do List sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) is your standard todo list app--so you can add tasks, check them off, and remove them. It features data persistence (both through local storage and through the Azure Mobile Apps plugin) and optionally consumes the Bing Maps service.
 
-We have also written [a guide to walk you through building the sample](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/samples/create-to-do-list-app?view=toolsforcordova-2015). Feel free to download the [sample off Github](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) and play around.
+We have also written [a guide to walk you through building the sample](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/samples/create-to-do-list-app?view=toolsforcordova-2015&preserve-view=true). Feel free to download the [sample off Github](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) and play around.
 
 ### Cordova Plugins Sampler
 
