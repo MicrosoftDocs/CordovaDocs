@@ -1,7 +1,6 @@
 ---
 title: "iOS and OSX Tips and Workarounds"
 description: "Tips and workarounds for building iOS apps using Visual Studio Tools for Apache Cordova."
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"

@@ -26,7 +26,7 @@ Create a package for each platform that you want to target. Then you can publish
 
 The general settings of your app appear in the **Common** page of the configuration designer.
 
-![configuration-settings-android](media/tutorial-package-publish-readme/configuration-settings-android.png)
+![Android configuration settings](media/tutorial-package-publish-readme/configuration-settings-android.png)
 
 * The **Display Name** is the name that appears in the app store.
 
@@ -42,7 +42,7 @@ The purpose of most other settings clear from the title, but you can find more i
 
 Android-specific settings appear in the **Android** tab of the configuration designer.
 
-![configuration-settings-android-specific](media/tutorial-package-publish-readme/configuration-settings-android-specific.png)
+![Android-specific configuration settings](media/tutorial-package-publish-readme/configuration-settings-android-specific.png)
 
 You can read about each option in the [preference](http://cordova.apache.org/docs/en/latest/config_ref/index.html#preference) section of the config.xml reference topic.
 
@@ -121,7 +121,7 @@ You can also find it in the ```taco.json``` file at the root of your project.
 
 1. In **Solution Explorer**, expand the project folder. Then expand **res**->**native**->**android** and choose the **ant.properties** file.
 
-    ![Android: Build assets](media/tutorial-package-publish-readme/android_assets.png)
+    ![Android: Build assets-1](media/tutorial-package-publish-readme/android_assets.png)
 
     The **ant.properties** file opens in the code editor.
 
@@ -140,7 +140,7 @@ You can also find it in the ```taco.json``` file at the root of your project.
 
 1. In **Solution Explorer**, expand the project folder, and then choose the **build.json** file. If that file is missing from your project, your project was created with an earlier version of Cordova and you should create that file manually (and populate it with content in step 2).
 
-    ![Android: Build assets](media/tutorial-package-publish-readme/android_assets_cordova5.png)
+    ![Android: Build assets-2](media/tutorial-package-publish-readme/android_assets_cordova5.png)
 
     The **build.json** file appears in the code editor.
 
@@ -164,15 +164,15 @@ You can also find it in the ```taco.json``` file at the root of your project.
 
 1. On the Standard toolbar, choose the **Android** platform.
 
-    ![Platform selector](media/tutorial-package-publish-readme/android-platform.png)
+    ![Platform selector-1](media/tutorial-package-publish-readme/android-platform.png)
 
 2. Choose the **Release** build configuration.
 
-    ![Release Build Configuration](media/tutorial-package-publish-readme/release-configuration-android.png)
+    ![Release Build Configuration-1](media/tutorial-package-publish-readme/release-configuration-android.png)
 
 3. Choose one of the Android emulators.
 
-    ![Target selector](media/tutorial-package-publish-readme/android-emulator.png).
+    ![Target selector-1](media/tutorial-package-publish-readme/android-emulator.png).
 
     >**Important**: Don't choose any of the Ripple simulators. Choose only an Android emulator or the Device.
 
@@ -285,7 +285,7 @@ Need more detail? See [Creating provisioning profiles using Member Center](https
 
 The general settings of your app appear in the **Common** page of the configuration designer.
 
-![configuration-settings-android](media/tutorial-package-publish-readme/configuration-settings-android.png)
+![Android configuration settings](media/tutorial-package-publish-readme/configuration-settings-android.png)
 
 * The **Display Name** is the name that appears in the app store.
 
@@ -307,7 +307,7 @@ The purpose of most other settings clear from the title, but you can find more i
 
 iOS-specific settings appear in the **iOS** tab of the configuration designer.
 
-![configuration-settings-ios-specific](media/tutorial-package-publish-readme/configuration-settings-ios-specific.png)
+![configuration-settings-ios-specific-1](media/tutorial-package-publish-readme/configuration-settings-ios-specific.png)
 
 You can read about each option in the [preference](http://cordova.apache.org/docs/en/latest/config_ref/index.html#preference) section of the config.xml reference topic.
 
@@ -323,15 +323,15 @@ Build your app to generate the package that you will submit to the store.
 
 3. On the Standard toolbar, choose the **iOS** platform.
 
-    ![Platform selector](media/tutorial-package-publish-readme/ios-platform.png)
+    ![Platform selector-2](media/tutorial-package-publish-readme/ios-platform.png)
 
 4. Choose **Remote Device**.
 
-    ![Target selector](media/tutorial-package-publish-readme/remote-device.png).
+    ![Target selector-2](media/tutorial-package-publish-readme/remote-device.png).
 
 5. Choose the **Release** build configuration.
 
-    ![Release Build Configuration](media/tutorial-package-publish-readme/release-configuration.png)
+    ![Release Build Configuration-2](media/tutorial-package-publish-readme/release-configuration.png)
 
 6. On the **Build** menu, choose **Build Solution**.
 
@@ -375,7 +375,7 @@ To learn more about Windows package and Windows device compatibility, see [OS ve
 
 The general settings of your app appear in the **Common** page of the configuration designer.
 
-![Configuration Settings Windows Platform](media/tutorial-package-publish-readme/configuration-settings-android.png)
+![Configuration Settings Windows Platform-1](media/tutorial-package-publish-readme/configuration-settings-android.png)
 
 * The **Display Name** is the name that appears in the app store.
 
@@ -391,7 +391,7 @@ The purpose of most other settings clear from the title, but you can find more i
 
 Windows-specific settings appear in the **Windows** tab of the configuration designer.
 
-![configuration-settings-ios-specific](media/tutorial-package-publish-readme/configuration-settings-windows.png)
+![configuration-settings-ios-specific-2](media/tutorial-package-publish-readme/configuration-settings-windows.png)
 
 You might have noticed that the this page shares three of the same field names as the **Common** page (**Display Name**, **Package Name**, and **Version**).
 
@@ -415,11 +415,11 @@ Which version of Windows does your app target? Choose a section:
 
 1. In the Standard Toolbar, choose **Windows-ARM**.
 
-    ![Windows ARM](media/tutorial-package-publish-readme/windows-arm-platform.png)
+    ![Windows ARM-1](media/tutorial-package-publish-readme/windows-arm-platform.png)
 
 2. In the **Windows** page of the configuration designer, choose **Windows 10** from the **Windows Target Version** dropdown list.
 
-    ![Configuration Settings Windows Platform](media/tutorial-package-publish-readme/configuration-settings-windows-10.png).
+    ![Configuration Settings Windows Platform-2](media/tutorial-package-publish-readme/configuration-settings-windows-10.png).
 
 3. Choose **Project**->**Store**->**Create App Packages** to start the packaging wizard.
 
@@ -438,11 +438,11 @@ Which version of Windows does your app target? Choose a section:
 
 1. In the Standard Toolbar, choose **Windows Phone (Universal)**.
 
-    ![Windows ARM](media/tutorial-package-publish-readme/windows-universal-platform.png)
+    ![Windows ARM-2](media/tutorial-package-publish-readme/windows-universal-platform.png)
 
 2. In the **Windows** page of the configuration designer, choose **Windows 10** from the **Windows Target Version** dropdown list.
 
-    ![Configuration Settings Windows Platform](media/tutorial-package-publish-readme/configuration-settings-windows-8.png).
+    ![Configuration Settings Windows Platform-3](media/tutorial-package-publish-readme/configuration-settings-windows-8.png).
 
 3. Choose **Project**->**Store**->**Create App Packages** to start the packaging wizard.
 
@@ -464,7 +464,7 @@ Which version of Windows does your app target? Choose a section:
 
 2. Choose **Windows Phone 8**.
 
-    ![Windows ARM](media/tutorial-package-publish-readme/windows-8-platform.png)
+    ![Windows ARM-3](media/tutorial-package-publish-readme/windows-8-platform.png)
 
 3. Choose **Build**->**Build Solution** to build your package.
 
@@ -480,7 +480,7 @@ Which version of Windows does your app target? Choose a section:
 
 2. In the **Windows** page of the configuration designer, choose **Windows 10** or **Windows 8.1** from the **Windows Target Version** dropdown list.
 
-    ![Configuration Settings Windows Platform](media/tutorial-package-publish-readme/configuration-settings-windows-either.png).
+    ![Configuration Settings Windows Platform-4](media/tutorial-package-publish-readme/configuration-settings-windows-either.png).
 
 3. Choose **Project**->**Store**->**Create App Packages** to start the packaging wizard.
 

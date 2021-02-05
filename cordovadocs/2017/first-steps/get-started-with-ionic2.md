@@ -2,20 +2,19 @@
 title: "Getting started with Ionic 2 apps in Visual Studio 2017"
 description: "Getting started with Ionic 2 apps in Visual Studio 2017"
 author: "johnwargo"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/16/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Getting started with Ionic 2 apps in Visual Studio 2017
 
 [Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using [Apache Cordova](http://cordova.io). The Ionic Framework gives Cordova applications a native look and feel, and automatically adjusts that look across platforms. You can use Visual Studio 2017 and Visual Studio Tools for Apache Cordova (TACO) to easily create and debug cross-platform Ionic apps. The [Getting Started With Visual Studio Tools For Apache Cordova](build-your-first-app.md) guide showed how to create a simple Weather app using the Ionic Framework. In this article, you'll learn how to configure a Visual Studio 2017 development environment for Ionic 2, and create the Ionic 2 version of the Weather App shown below:
 
-![Finished Weather application](media/vs-taco-tutorial-ionic2/figure-01.png)
+![Finished Weather application-1](media/vs-taco-tutorial-ionic2/figure-01.png)
 
 ## Requirements
 
@@ -456,7 +455,7 @@ Run the application in browser, an emulator, simulator or on a physical device c
 
 When you allow access (don't tap **deny**, as you won't be able to do much with the app if you do), you should see the current weather data for the current location as shown in the figure below:
 
-![Weather App: Current Weather conditions](media/vs-taco-tutorial-ionic2/figure-14.png)
+![Weather App: Current Weather conditions-1](media/vs-taco-tutorial-ionic2/figure-14.png)
 
 It's not the complete app UI, but at least you can see the weather results. In the next section, we'll add the Zip Code Search box so you can get weather data for a specific location.
 
@@ -518,7 +517,7 @@ It's useful to have weather data for the current location, but what if you're tr
 
 When you run the application, you should now see a search field at the top of the page. Enter a US Zip Code and tap the button to get weather data for the specified location.
 
-![Weather App: Current Weather conditions](media/vs-taco-tutorial-ionic2/figure-15.png)
+![Weather App: Current Weather conditions-2](media/vs-taco-tutorial-ionic2/figure-15.png)
 
 ### Adding a Weather Forecast Page
 
@@ -716,11 +715,11 @@ The weather API the app uses has an API for retrieving forecast data, so lets di
 
 At this point, if you run the application, you should see the following:
 
-![Finished Weather application](media/vs-taco-tutorial-ionic2/figure-01.png)
+![Finished Weather application-2](media/vs-taco-tutorial-ionic2/figure-01.png)
 
 Tap the forecast tab, and you'll see the list of forecast periods shown in the following figure:
 
-![Finished Weather application](media/vs-taco-tutorial-ionic2/figure-16.png)
+![Finished Weather application-3](media/vs-taco-tutorial-ionic2/figure-16.png)
 
 When you tap on a forecast item, nothing happens (for now); that's because we need a page to display the data, and you haven't added one yet.
 

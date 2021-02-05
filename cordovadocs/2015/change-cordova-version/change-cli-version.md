@@ -16,7 +16,7 @@ This topic helps you decide whether to update the CLI version and how to do it s
 
 The CLI version number appears in the **Platforms** page of the configuration designer.
 
-![CLI version](media/change-cli-version/cli-version.png)
+![CLI version-1](media/change-cli-version/cli-version.png)
 
 You can also find it in the ```taco.json``` file at the root of your project.
 
@@ -116,17 +116,17 @@ If you haven't installed the update, and you plan to change your project's CLI v
 
     The following image shows this folder.
 
-    ![CLI version](media/change-cli-version/platforms.png)
+    ![CLI version-2](media/change-cli-version/platforms.png)
 
     If you didn't directly edit these files outside of Visual Studio, you can move to the next step.
 
 2. In **Solution Explorer**, double-click the **config.xml** file to open the configuration designer.
 
-    ![CLI version](media/change-cli-version/config-xml.png)
+    ![CLI version-3](media/change-cli-version/config-xml.png)
 
 3. In the configuration designer, choose the **Platforms** tab, and then, in the **Cordova CLI** drop-down list, choose the version of the Cordova CLI that you want to use.
 
-    ![CLI version](media/change-cli-version/config-designer.png)
+    ![CLI version-4](media/change-cli-version/config-designer.png)
 
 4. In Visual Studio, choose **Build**->**Rebuild Solution**.
 

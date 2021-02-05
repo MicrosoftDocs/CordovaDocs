@@ -50,13 +50,13 @@ If you don't want to use version ```5.3.3``` or later of the Cordova CLI, instal
 
 4. Choose the ```../``` link.
 
-    ![Other versions link](media/change-node-version/other-versions-list.png)
+    ![Other versions link-1](media/change-node-version/other-versions-list.png)
 
 5. In the index of folders, open the folder for the most recent minor version of the the **v0.12.x**.
 
     The following image shows that the most recent minor version is **v0.12.9**
 
-    ![Other versions link](media/change-node-version/supported-version.png)
+    ![Other versions link-2](media/change-node-version/supported-version.png)
 
 6. Choose the right installer file.
 

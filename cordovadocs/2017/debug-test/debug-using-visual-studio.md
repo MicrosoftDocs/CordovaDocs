@@ -1,9 +1,9 @@
 ---
 title: "Debug your app built with Visual Studio Tools for Apache Cordova"
+titleSuffix: ""
 description: "Debugging your app built with Visual Studio Tools for Apache Cordova (TACO)."
 services: "na"
 author: "Chuxel"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
@@ -26,9 +26,9 @@ See these [troubleshooting tips](../tips-workarounds/general-tips.md).
 
 To use Visual Studio to debug your Cordova apps, you must:
 
-1.  [Install Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=397606) with Visual Studio Tools for Apache Cordova.
+1. [Install Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=397606) with Visual Studio Tools for Apache Cordova.
 
-2.  If you want to follow the steps in this tutorial, download the [AngularJS ToDoList sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs), unzip it, and open the solution (.sln file) in Visual Studio.
+2. If you want to follow the steps in this tutorial, download the [AngularJS ToDoList sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs), unzip it, and open the solution (.sln file) in Visual Studio.
 
     You don't need the AngularJS sample to debug, of course, but we are using it in the first example.
 

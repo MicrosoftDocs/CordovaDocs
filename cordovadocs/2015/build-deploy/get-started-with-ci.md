@@ -77,7 +77,7 @@ To get going quickly, follow these steps:
 
 6. **Configure CI:** Next, configure your Team / CI server to fetch your project and execute the exact same commands mentioned above from the root of your Cordova project after fetching the source code. You can find detailed instructions for certain CI systems [below](#ci).
 
-7. **Windows & OSX Build Agents:** Finally, configure an build agent / slave on both Windows and OSX so you can build for any platform. See the tutorials below for some specifics on how to configure your CI system.
+7. **Windows & OSX Build Agents:** Finally, configure an build agent on both Windows and OSX so you can build for any platform. See the tutorials below for some specifics on how to configure your CI system.
 
 That's it!
 

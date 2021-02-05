@@ -71,14 +71,14 @@ If you want to manually migrate the old project, take the following steps.
 	 * config.xml
 8. Copy all other files and folders, including index.html, into the new `www` folder.
 
-    ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/vs-2015-project-structure.png)
+    ![Updated VS 2015 project-1](media/vs-taco-2015-migrate-to-vs2015/vs-2015-project-structure.png)
 
     > **Note** If you're using TypeScript, you'll need to add a tsconfig.json to your project folder and define config settings for your project. See the [Configuring TypeScript](../first-steps/develop-with-typescript.md) section for details.
 9. Open the `.jsproj` file in Visual Studio 2015.
 
    Here is what this example project looks like in Solution Explorer.
 
-   ![Updated VS 2015 project](media/vs-taco-2015-migrate-to-vs2015/solution-explorer.png)
+   ![Updated VS 2015 project-2](media/vs-taco-2015-migrate-to-vs2015/solution-explorer.png)
 
    Now you can build and run your application by pressing F5 with the desired platform and device selected.
 

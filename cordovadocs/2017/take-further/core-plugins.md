@@ -3,7 +3,6 @@ title: "Visual Studio Core Plugins"
 description: "Using plugins to build Apache Cordova apps in Visual Studio."
 services: "na"
 author: "jmatthiesen"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
@@ -32,7 +31,7 @@ Detect, connect, and interact with freeway monitors, cars, laptops, phones, TV s
 
 Check out the [Quick Guide](https://www.npmjs.com/package/cordova-plugin-bluetoothle#sample-discover-and-interact-with-bluetooth-le-devices) and see how easy it is to discover devices, connect to a them, view device signal strength, supported services, battery level and more.
 
-![scan-for-devices](media/use-cordova-plugins/bluetoothle-app-scan.png)
+![Scan for devices](media/use-cordova-plugins/bluetoothle-app-scan.png)
 
 [ [Go back up](#top) ]
 
@@ -48,7 +47,7 @@ Help users find things near them such as Groupon deals, houses for sale, movies 
 
 Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-geolocation/blob/master/README.md#sample-get-the-weather-find-stores-and-see-photos-of-things-nearby-with-geolocation) for a cookbook of tasks. You'll get the weather, find your location on a map, see shops nearby, and look at pictures of things around you.
 
-![scan-for-devices](media/use-cordova-plugins/geolocation-sample.png)
+![Geolocation sample](media/use-cordova-plugins/geolocation-sample.png)
 
 [ [Go back up](#top) ]
 
@@ -65,7 +64,7 @@ Show helpful articles, videos, and web resources inside of your app. Users view 
 Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-inappbrowser/blob/master/README.md#sample-show-help-pages-with-an-inappbrowser) to show an article, a video, and a search page. You'll even handle errors, and inject a custom script and style.
 
 
-![scan-for-devices](media/use-cordova-plugins/inappbrowser-sample.png)
+![InAppBrowser sample](media/use-cordova-plugins/inappbrowser-sample.png)
 
 [ [Go back up](#top) ]
 
@@ -81,7 +80,7 @@ Take pictures, allow the user to choose a file on the device, get thumbnails, an
 
 Check out the [Quick Guide](https://github.com/apache/cordova-plugin-camera#sample) to learn how use the Camera app and file picker.
 
-![scan-for-devices](media/use-cordova-plugins/camera-sample.png)
+![Camera sample](media/use-cordova-plugins/camera-sample.png)
 
 [ [Go back up](#top) ]
 
@@ -97,7 +96,7 @@ Create, read, write to, and display files on your device. Create directories. Wo
 
 Check out the [Quick Guide](https://github.com/apache/cordova-plugin-file#sample) to learn how to work with files on your device.
 
-![scan-for-devices](media/use-cordova-plugins/file-sample.png)
+![File sample](media/use-cordova-plugins/file-sample.png)
 
 [ [Go back up](#top) ]
 
@@ -113,7 +112,7 @@ Upload and download different file types such as text files and binary files, re
 
 Check out the [Quick Guide](https://github.com/apache/cordova-plugin-file-transfer#sample) to learn how to upload and download files.
 
-![scan-for-devices](media/use-cordova-plugins/file-transfer-sample.png)
+![File transfer sample](media/use-cordova-plugins/file-transfer-sample.png)
 
 [ [Go back up](#top) ]
 

@@ -3,13 +3,12 @@ title: "Using TypeScript in a Cordova Project"
 description: "Using TypeScript in an Apache Cordova project"
 services: "na"
 author: "jmatthiesen"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "typescript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/15/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Using TypeScript in a Cordova project
@@ -40,7 +39,7 @@ In the next section, you'll learn about the differences between a typical Cordov
 
 A Cordova application project in Visual Studio mimics the project folder structure of a typical Cordova application. The Cordova web application files are found in the project's `www` folder, where you'll find the project's `index.html` file and folders for the project's JavaScript files (`scripts`), CSS files (`css`) and images (`images`).
 
-![TypeScript Project Solution Explorer](media/vs-taco-tutorial-typescript/figure-02.png)
+![TypeScript Project Solution Explorer-1](media/vs-taco-tutorial-typescript/figure-02.png)
 
 TypeScript supports modules, so when you start to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app's code using modules. There are many module managers available for web applications, the choice of which is a source of much emotional discussion within the developer community. We're not going to address that topic here; for detailed information on modules and module loaders, see the [modules page](http://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook.
 
@@ -118,7 +117,7 @@ function onResume(): void {
 
 When you build this project, to run the application in the browser, an emulator, simulator or physical device, the project's TypeScript source code is compiled into a JavaScript and JavaScript Source Map files  in the `www\scripts` folder. The project's `application.ts` and `startup.ts` files are compiled into corresponding `application.js` and `startup.js` files. To facilitate JavaScript debugging, JavaScript Source Map files `application.js.map` and `startup.js.map` are created during compilation as well.
 
-![TypeScript Project Solution Explorer](media/vs-taco-tutorial-typescript/figure-03.png)
+![TypeScript Project Solution Explorer-2](media/vs-taco-tutorial-typescript/figure-03.png)
 
 All of the files in the project's `www` folder are included in the Cordova application, so now the application has everything it needs to run.
 
@@ -145,7 +144,7 @@ The last file unique to a TypeScript project is `tsconfig.json`, it's the config
 
 TypeScript files can be added to any Cordova project using the TypeScript item template. Right-click on your project's `scripts` folder, then select **Add** -> **New JavaScript File**. In the list of templates, select **TypeScript File**, give the file a name, and then click the **Add** button to create the file.
 
-![TypeScript Project Solution Explorer](media/vs-taco-tutorial-typescript/figure-04.png)
+![TypeScript Project Solution Explorer-3](media/vs-taco-tutorial-typescript/figure-04.png)
 
 ## <a name="samples"></a>Get the Sample Applications
 

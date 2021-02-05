@@ -19,7 +19,7 @@ The second layer is at the backend level. Web services implement Cross-Origin Re
 
 If your app is attempting to pull data from an [Azure Mobile Apps backend](https://azure.microsoft.com/documentation/articles/app-service-mobile-cordova-get-started/), Azure has a custom interface to manage exceptions to their default CORS policy.
 
-![CORS](media/tips-and-workarounds-general-readme/cors.png)
+![CORS policy](media/tips-and-workarounds-general-readme/cors.png)
 
 <a name="firsttime"></a>
 ## Resolve build and deployment errors when you build for the first time
@@ -34,12 +34,12 @@ Try these steps.
 
 2. Check your Visual Studio notifications (upper right) to see if you need any updates to Visual Studio or to Visual Studio Tools for Apache Cordova. Install any updates and retry.
 
-    ![Visual Studio notifications](media/tips-and-workarounds-general-readme/vs-notifications.png)
+    ![Visual Studio notifications-1](media/tips-and-workarounds-general-readme/vs-notifications.png)
 
 3. In Visual Studio, run the Dependency Checker by choosing **Tools**, **Options**, **Tools for Apache Cordova**, and selecting **Run Dependency Checker**. Investigate any resulting messages.
 4. Check the Output window and the Error List window for build error information and guidance.
 
-    ![Visual Studio notifications](media/tips-and-workarounds-general-readme/output-window.png)
+    ![Visual Studio notifications-2](media/tips-and-workarounds-general-readme/output-window.png)
 
     If you're not sure what to do next, see the next section on resolving general build and deployment errors.
 
@@ -190,7 +190,7 @@ https://github.com/wildabeast/BarcodeScanner
 
 5. Add the plugin to your project from this local location by using the **Local** option in the **Custom** tab of the config.xml designer.
 
-	![Custom Local Plugin](media/tips-and-workarounds-general-readme/git-local-1.png)
+	![Custom Local Plugin-1](media/tips-and-workarounds-general-readme/git-local-1.png)
 
 <a name="plugin-npm"></a>
 ## Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
@@ -203,9 +203,9 @@ A significant change tied to this switch over and the release of Cordova 5.0.0 t
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](http://plugins.cordova.io/#/package/org.apache.cordova.camera) in version 0.3.6 of the plugin to [cordova-plugin-camera](https://www.npmjs.com/package/cordova-plugin-camera) in versions 1.0.0 and higher geared for Cordova 5.0.0 and up.
 
-![Custom Local Plugin](media/tips-and-workarounds-general-readme/cordova-5-4.png)
+![Custom Local Plugin-2](media/tips-and-workarounds-general-readme/cordova-5-4.png)
 
-![Custom Local Plugin](media/tips-and-workarounds-general-readme/cordova-5-5.png)
+![Custom Local Plugin-3](media/tips-and-workarounds-general-readme/cordova-5-5.png)
 
 You can find running list of [old verses new plugin IDs in this location](https://github.com/stevengill/cordova-registry-mapper/blob/master/index.js).
 

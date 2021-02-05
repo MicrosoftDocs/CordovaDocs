@@ -3,13 +3,12 @@ title: "Getting Started with Visual Studio Tools for Apache Cordova"
 description: "Getting Started with Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "04/13/2016"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Getting Started With Visual Studio Tools For Apache Cordova
@@ -49,7 +48,7 @@ Before we start coding the application, lets take a look at the project structur
 
 The following figure shows the project folder structure and files for the newly created Apache Cordova project. The sections that follow will describe the folders and files included in the project.
 
-![Visual Studio Cordova Project Structure](media/vs-taco-2017-first-app/figure-04.png)
+![Visual Studio Cordova Project Structure-1](media/vs-taco-2017-first-app/figure-04.png)
 
 ### <a id="www"></a>www Folder
 
@@ -69,7 +68,7 @@ For example, any content in the `merges\android` folder is copied to the Android
 
 To help deliver a consistent web application experience in Cordova apps, the default project created by Visual Studio Tools for Apache Cordova includes `platformOverrides.js` files for Android (in `merges\android\scripts\platformOverrides.js`) and Windows (in `merges\windows\scripts\platformOverrides.js`) along with a platform-specific JavaScript library. On Android, it adds a polyfill for `bind()` on older Android devices, and on Windows it adds Microsoft's safeHTML polyfill library. The `merges/ios` folder doesn't include a `platformOverrides.js` file, so there's no platform-specific override, iOS applications get the generic version of the file located in `www/scripts/platformOverriders.js`.
 
-![Visual Studio Cordova Project Structure](media/vs-taco-2017-first-app/figure-05.png)
+![Visual Studio Cordova Project Structure-2](media/vs-taco-2017-first-app/figure-05.png)
 
 For additional information on how merges works, see [Using merges to Customize Each Platform](https://cordova.apache.org/docs/en/latest/guide/cli/#using-merges-to-customize-each-platform) in the Cordova documentation.
 
@@ -103,11 +102,11 @@ The default Cordova project includes a simple application user interface and log
 
 2.	Visual Studio exposes a set of panels you can use to manipulate options within the simulator. Switch back to Visual Studio and you'll see that it opened the **DOM Explorer** for you. Use the DOM explorer like you would other web development tools, navigating through the DOM hierarchy looking for specific elements, changing attributes, and poking and prodding at the app as it runs.
 
-	![Cordova Simulate Options](media/vs-taco-2017-first-app/figure-08.png)
+	![Cordova Simulate Options-1](media/vs-taco-2017-first-app/figure-08.png)
 
 	Use the Plugin Controls window to simulate settings in the Cordova plugins added to the project. By default Visual Studio shows settings for the Geolocation and Device plugins, plus provides an interface you can use to fire certain events as the application runs. As you add additional Cordova plugins to your project, additional panes will appear in the Plugin Controls page for you to use.
 
-	![Cordova Simulate Options](media/vs-taco-2017-first-app/figure-09.png)
+	![Cordova Simulate Options-2](media/vs-taco-2017-first-app/figure-09.png)
 
 3. Stop the Cordova Simulate debug session by clicking the **Stop** button in the Standard Toolbar.
 
@@ -529,11 +528,11 @@ Most likely you'll want your app to do more than just show web pages on a mobile
 
 The Visual Studio [Configuration Editor](#settings) Plugin tab provides an interface that enables you to add and remove plugins from a Cordova application project. The **Core** tab lists the core Cordova plugins, plugins published and maintained by the Cordova development team. The green checkboxes shown in the figure indicate installed plugins. The **Installed** tab lists only the plugins that are installed in the application.
 
-![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-27.png)
+![Configuration Editor: Plugins-1](media/vs-taco-2017-first-app/figure-27.png)
 
 Use the **Custom** page to add plugins that are not one of the Cordova [core plugins](../take-further/core-plugins.md). Usually these are plugins created by you or a third-party. [This document](../take-further/using-plugins.md#Custom) explains how to add a custom plugin to your project.
 
-![Configuration Editor: Plugins](media/vs-taco-2017-first-app/figure-28.png)
+![Configuration Editor: Plugins-2](media/vs-taco-2017-first-app/figure-28.png)
 
 If you need to use a specific version of a plugin, you can add a plugin by editing the `config.xml` file directly.
 
@@ -633,7 +632,7 @@ The code that you used to get the device's location works pretty well across all
 
 4.	Right-click on the `scripts` folder, and then choose **paste**. You'll now have a copy of `weather.js` in `merges\android\scripts` folder.
 
-	![Platform-Specific Javascript File](media/vs-taco-2017-first-app/figure-33.png)
+	![Platform-Specific Javascript File-1](media/vs-taco-2017-first-app/figure-33.png)
 
 5.	In the `weather.js` file (located in the `merges\android\scripts` folder), add the following code to the `showWeatherData` function.
 
@@ -643,7 +642,7 @@ The code that you used to get the device's location works pretty well across all
 
 6.	Run your app using an Android target in Cordova Simulate. The app will display **Android Weather** in the title bar because the `weather.js` file in the `merges\android\scripts` folder replaced the `weather.js` file in the `www\scripts` folder for the Android version of the application.
 
-    ![Platform-Specific Javascript File](media/vs-taco-2017-first-app/figure-34.png)
+    ![Platform-Specific Javascript File-2](media/vs-taco-2017-first-app/figure-34.png)
 
     Making a copy of a file this large to change one line of code is an extreme example, but you can begin to imagine the possibilities, and you can always refactor your code in ways that leverage the `merges` folder more efficiently.
 

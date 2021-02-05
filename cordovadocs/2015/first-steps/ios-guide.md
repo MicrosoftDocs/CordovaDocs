@@ -132,7 +132,7 @@ You'll use those pieces of information in the next section.
 
 2. Choose **iPhone 5** simulator.
 
-    ![Target selector](media/vs-taco-2015-ios-guide/ios-simulator.png)
+    ![Target selector-1](media/vs-taco-2015-ios-guide/ios-simulator.png)
 
 3. Press the F5 key to start the app.
 
@@ -246,7 +246,7 @@ Need more detail? see [Registering App IDs](https://developer.apple.com/library/
 
 2. Choose the **+** button.
 
-    ![Add button](media/vs-taco-2015-ios-guide/add-device.png)
+    ![Add button-1](media/vs-taco-2015-ios-guide/add-device.png)
 
 3. In the [Registering a New Device or Multiple Devices](https://developer.apple.com/account/ios/device/deviceCreate.action) page, provide the name and *UDID* of the device, and then choose the **Continue** button.
 
@@ -264,7 +264,7 @@ Need more detail? See [Registering Devices Using Member Center](https://develope
 
 3. In the [Provisioning Profiles](https://developer.apple.com/account/ios/profile/profileLanding.action) page, choose the **+** button.
 
-    ![Add button](media/vs-taco-2015-ios-guide/new-profile.png)
+    ![Add button-2](media/vs-taco-2015-ios-guide/new-profile.png)
 
 4. In the [What type of provisioning profile do you need?](https://developer.apple.com/account/ios/profile/profileCreate.action) page, choose the **iOS App Development** option, and then choose the **Continue** button.
 
@@ -464,7 +464,7 @@ After you've confirmed that your profile administrator has added the UDID of you
 
 3. Choose **Remote Device**.
 
-    ![Target selector](media/vs-taco-2015-ios-guide/remote-device.png)
+    ![Target selector-2](media/vs-taco-2015-ios-guide/remote-device.png)
 
 4. Press the F5 key to start your app.
 
@@ -510,7 +510,7 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 
 1. In a **File Explorer** window, log into the IP address of the mac.
 
-    ![log-into-mac-from-windows](media/vs-taco-2015-ios-guide/log-into-mac-from-windows.png).
+    ![Log into Mac from Windows](media/vs-taco-2015-ios-guide/log-into-mac-from-windows.png).
 
     The first time you attempt to open files on your mac, you'll be prompted for a username and password. Enter the username and password of the account that you turned on Windows File Sharing for.
 
@@ -546,7 +546,7 @@ To do this, you'll need a provisioning profile that you create by using an Apple
 
 10. Choose **Local Device**.
 
-    ![Target selector](media/vs-taco-2015-ios-guide/local-device.png)
+    ![Target selector-3](media/vs-taco-2015-ios-guide/local-device.png)
 
 11. Press the F5 key to start your app.
 

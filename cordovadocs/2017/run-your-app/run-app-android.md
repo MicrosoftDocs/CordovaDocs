@@ -3,13 +3,12 @@ title: "Run Your Apache Cordova App on Android"
 description: "Building Apache Cordova apps for Android devices."
 services: "na"
 author: "mikejo5000"
-ms.technology: "cordova"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/27/2017"
-ms.author: jowargo
+ms.author: mikejo
 ---
 
 # Run Your Apache Cordova App on Android
@@ -76,11 +75,11 @@ To run your Android app on an Android device in Visual Studio, complete the foll
 
 4.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
-	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
+	![Visual Studio Standard Toolbar-1](media/vs-taco-run-android/figure-04.png)
 
 	Visual Studio will build the Android version of the Cordova application (using the Cordova CLI and Android SDK), then deploy the app to the connected device and launch it. Next, Visual Studio opens the DOM Explorer to enable you to interact with the application as it runs.
 
-	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-05.png)
+	![Visual Studio Standard Toolbar-2](media/vs-taco-run-android/figure-05.png)
 
 ## <a id="google-android-emulator"></a> Run on the Google Android Emulator
 
@@ -92,11 +91,11 @@ When you installed TACO, you had an option to install the Google Android Emulato
 
 If you did not enable the highlighted options, close Visual Studio, launch the **Visual Studio Installer** and modify the installation to include these options. You can tell whether the emulators are installed or not by opening Visual Studio's debug target list, if you see **Install Android build tools...** in the list, instead of some Android emulators, then you need to complete the installation.
 
-![Visual Studio: Install Android Emulators](media/vs-taco-run-android/figure-07.png)
+![Visual Studio: Install Android Emulators-1](media/vs-taco-run-android/figure-07.png)
 
 Select the installation option in the drop-down, then click the button (shown below) to begin the installation.
 
-![Visual Studio: Install Android Emulators](media/vs-taco-run-android/figure-08.png)
+![Visual Studio: Install Android Emulators-2](media/vs-taco-run-android/figure-08.png)
 
 Android emulators are defined using the Android Virtual Device (AVD) Manager, you can learn how to create and manage Android virtual devices [here](https://developer.android.com/studio/run/managing-avds.html). The Visual Studio TACO installation process creates several virtual devices for you automatically during installation; you can confirm this using the Android SDK's **AVD Manager** application:
 
@@ -104,7 +103,7 @@ Android emulators are defined using the Android Virtual Device (AVD) Manager, yo
 
 As you can see, Visual Studio creates two phone and two tablet emulator configurations. The difference is in the processor architecture selected for the emulator. The **Intel emulators** launch fairly quickly and perform better than the **ARM emulators**. Unfortunately, the Intel emulators require a specific hardware configuration that we'll discuss in a minute. For that reason, you'll see these emulators represented in Visual Studio through the following menu:
 
-![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-10.png)
+![Visual Studio Standard Toolbar-3](media/vs-taco-run-android/figure-10.png)
 
 When you select one of these emulator options, Visual Studio will launch the right emulator configuration based on your system's hardware configuration. If your system supports the Intel emulators, those emulators will be used by default. If not, Visual Studio will automatically fallback to using the ARM emulators instead.
 
@@ -114,7 +113,7 @@ You can configure Visual Studio's behavior here. In Visual Studio, select **Tool
 
 To run your Apache Cordova application on an Android Emulator: in the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to one of the **Google Emulator** options as shown in the following figure. Click the **Google Emulator** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
-![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-12.png)
+![Visual Studio Standard Toolbar-4](media/vs-taco-run-android/figure-12.png)
 
 ### <a id="HAXM"></a> Configuring Your System to Use HAXM
 
@@ -186,7 +185,7 @@ To run your app on the Genymotion emulator, complete the following steps:
 
 3.	In the Visual Studio **Standard** toolbar, set the release type to **Debug**, the target OS to **Android**, and the debug target to **Device** as shown in the following figure. Click the **Device** button, or press **F5** to build and launch the application, and then begin a debugging session with the application.
 
-	![Visual Studio Standard Toolbar](media/vs-taco-run-android/figure-04.png)
+	![Visual Studio Standard Toolbar-5](media/vs-taco-run-android/figure-04.png)
 
 ## See Also
 

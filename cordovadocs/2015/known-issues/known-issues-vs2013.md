@@ -50,7 +50,9 @@ When using version 0.2.8 or higher of vs-mda-remote, you should add the followin
 
 Alternatively, you can install version 0.2.7 instead by using the following command:
 
-    npm install -g vs-mda-remote@0.2.7
+```cli
+npm install -g vs-mda-remote@0.2.7
+```
 
 ## <strong>Incorrect Application Id & Publisher Name after creating app packages</strong>
 

@@ -80,19 +80,19 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
      If you can run on the VS Emulator for Android on Windows 10, choose **Android**, then **VS Emulator 5" Lollipop (5.0) XXHDPI Phone** from the device list.
 
-    ![Run the default Blank App template](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-android.png)
+    ![Run the default Blank App template-1](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-android.png)
 
     If you are running on Windows 10, choose **Windows - x64** or **Windows - x86** as the target, and then choose **Local Machine** from the device list on the right.
 
     If you are running initially on Ripple, choose **Android,** then **Ripple - Nexus (Galaxy)** from the device list. See the illustration below.
 
-    ![Run the default Blank App template](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-ripple.png)
+    ![Run the default Blank App template-2](media/vs-taco-2015-create-a-hosted-app/hosted-app-select-ripple.png)
 
 7. Press F5 to start the app.
 
      When the app loads, it displays a "Hello, your application is ready" message. (The first build always takes longer.)
 
-    ![Run the default Blank App template](media/vs-taco-2015-create-a-hosted-app/hosted-app-run-blank.png)
+    ![Run the default Blank App template-3](media/vs-taco-2015-create-a-hosted-app/hosted-app-run-blank.png)
 
      The app that loads at this point is a standard Cordova client app running in a native WebView. Next, we will add code to turn this into a hosted app that runs on a server.
 
@@ -189,7 +189,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     When the emulator starts, you will see the hosted app load!
 
-    ![Run the Hosted Web App](media/vs-taco-2015-create-a-hosted-app/hosted-app-android-emu.png)
+    ![Run the Hosted Web App-1](media/vs-taco-2015-create-a-hosted-app/hosted-app-android-emu.png)
 
     If everything looks good, you already have your hosted app working! Congratulations on a great start! However, you need to do a few more things to enable support for device plugins.
 
@@ -197,7 +197,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     Here is what the app looks like running on Windows 10.
 
-    ![Run the Hosted Web App](media/vs-taco-2015-create-a-hosted-app/hosted-app-windows.png)
+    ![Run the Hosted Web App-2](media/vs-taco-2015-create-a-hosted-app/hosted-app-windows.png)
 
     >**Note**: The complete sample has CSS code to make the splash page that you first see look really good. We will skip that for now.
 
@@ -548,13 +548,13 @@ This section includes information on how to republish the CordovaHostedWeb ASP.N
 
 3. In the Publish Web dialog box, choose **Microsoft Azure Web Apps**.
 
-    ![Select a Publish Target](media/vs-taco-2015-create-a-hosted-app/hosted-app-publish-select-target.png)
+    ![Select a Publish Target-1](media/vs-taco-2015-create-a-hosted-app/hosted-app-publish-select-target.png)
 
     Visual Studio opens the Azure Web App Settings page. For this tutorial, the Azure settings aren't important, but by completing the dialog box, you can use the **Publish** feature in VS for Web sites.
 
 5. In the Configure Microsoft Azure Web App dialog box, enter your Microsoft Account credentials if you are asked for them.
 
-    ![Select a Publish Target](media/vs-taco-2015-create-a-hosted-app/hosted-app-publish-new.png)
+    ![Select a Publish Target-2](media/vs-taco-2015-create-a-hosted-app/hosted-app-publish-new.png)
 
 6. Click **New**.
 

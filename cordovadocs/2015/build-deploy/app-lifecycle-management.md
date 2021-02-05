@@ -182,7 +182,6 @@ The table below identifies which Visual Studio ALM features you can expect to wo
                 </td>
                 <td>
                   <p>
-
                   </p>
                 </td>
               </tr>

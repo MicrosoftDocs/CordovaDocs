@@ -24,11 +24,15 @@ To follow the steps in this tutorial, you must:
 
 1. Open a command line and switch to the folder where you will create the Ionic app using the CLI, such as Desktop.
 
-        cd Desktop
+    ```cli
+    cd Desktop
+    ```
 
 2. Type the following command to create a new Ionic project using the Slide starter template:
 
-        ionic start MyIonicApp slide
+    ```cli
+    ionic start MyIonicApp slide
+    ```
 
     Ionic creates the project. In File Explorer, you can find the new project, MyIonicApp, in the location that you created it.
 
@@ -54,7 +58,9 @@ To follow the steps in this tutorial, you must:
 
 9. Type the following command:
 
-       ionic platform add android
+    ```cli
+    ionic platform add android
+    ```
 
     Ionic adds a platforms folder and populates the project with any other required files for Android.
 
