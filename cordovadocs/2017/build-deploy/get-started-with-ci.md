@@ -90,7 +90,7 @@ To use Gulp with your Cordova projects, follow these steps:
 
 6. **Configure CI:** Configure your Team/CI server to fetch your Cordova project and execute the same commands mentioned above from the root of your Cordova project. You can find detailed instructions for certain CI systems [below](#ci).
 
-7. **Windows & OSX Build Agents:** Finally, configure an build agent on both Windows and OSX so you can build for any platform. See the tutorials below for some specifics on how to configure your CI system.
+7. **Windows & OSX Build Agents:** Finally, configure a build agent / subordinate on both Windows and OSX so you can build for any platform. See the tutorials below for some specifics on how to configure your CI system.
 
 That's it!
 
