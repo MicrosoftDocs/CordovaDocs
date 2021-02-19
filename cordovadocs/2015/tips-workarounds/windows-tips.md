@@ -1,11 +1,11 @@
----
+--- 
 title: "Windows tips and workarounds"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "05/15/2016"
 ms.author: jomatthi
----
+--- 
 
 # Windows tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform.

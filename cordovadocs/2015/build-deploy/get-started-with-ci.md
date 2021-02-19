@@ -1,9 +1,9 @@
----
+--- 
 title: "Get Started with Continous Integration (CI)"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Get started with continous integration (CI)
 With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite team / continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard [Apache Cordova Command Line Interface](https://go.microsoft.com/fwlink/?LinkID=533773) (CLI) projects.

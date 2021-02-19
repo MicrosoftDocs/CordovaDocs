@@ -1,4 +1,4 @@
----
+--- 
 title: "Cordova build process in Visual Studio"
 description: "The Apache Cordova build process in Visual Studio."
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "09/10/2015"
 ms.author: "mikejo"
----
+--- 
 
 # Cordova build process in Visual Studio
 

@@ -1,4 +1,4 @@
----
+--- 
 title: "Manage plugins for apps built with Apache Cordova"
 description: "Manage plugins for apps built with Visual Studio Tools for Apache Cordova"
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Manage plugins for apps built with Visual Studio Tools for Apache Cordova
 

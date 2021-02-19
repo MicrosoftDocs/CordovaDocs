@@ -1,11 +1,11 @@
----
+--- 
 title: "Configure the Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Configure the Visual Studio Tools for Apache Cordova
 You can download Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=517106). Once you have [installed the tools](../first-steps/installation.md), refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.

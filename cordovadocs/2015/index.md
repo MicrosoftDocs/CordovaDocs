@@ -1,4 +1,4 @@
----
+--- 
 title: "Visual Studio Tools for Apache Cordova"
 description: "Visual Studio Tools for Apache Cordova"
 services: "na"
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
 ms.author: mikejo
----
+--- 
 
 # Visual Studio Tools 2015 for Apache Cordova
 

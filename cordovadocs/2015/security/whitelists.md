@@ -1,9 +1,9 @@
----
+--- 
 title: "Cordova whitelist and Content Security Policy guide"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 
 # Cordova whitelist and Content Security Policy guide

@@ -1,9 +1,9 @@
----
+--- 
 title: "Using mocks"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Using mocks for platform APIs, plugins, and other external dependencies
 

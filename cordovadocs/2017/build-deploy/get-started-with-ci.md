@@ -1,4 +1,4 @@
----
+--- 
 title: "Get Started with Continuous Integration (CI)"
 description: "Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps."
 author: "johnwargo"
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/10/2017"
 ms.author: mikejo
----
+--- 
 
 # Get Started with Continuous Integration (CI)
 

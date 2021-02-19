@@ -1,9 +1,9 @@
----
+--- 
 title: "Appium setup"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Appium setup
 

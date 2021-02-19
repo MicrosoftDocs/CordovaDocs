@@ -1,10 +1,10 @@
----
+--- 
 title: "Change the CLI version of your Visual Studio Tools for Apache Cordova project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "12/03/2015"
 ms.author: jomatthi
----
+--- 
 
 # Change the CLI version of your Visual Studio Tools for Apache Cordova project
 

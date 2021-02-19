@@ -1,4 +1,4 @@
----
+--- 
 title: "Release Notes for Update 3"
 description: "Release notes for Update 3 of Visual Studio 2015 Tools for Apache Cordova"
 ms.technology: "cordova"
@@ -6,7 +6,7 @@ ms.prod: "visual-studio-dev14"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.date: "10/09/2015"
----
+--- 
 
 # Update 3 - Visual Studio Tools for Apache Cordova
 

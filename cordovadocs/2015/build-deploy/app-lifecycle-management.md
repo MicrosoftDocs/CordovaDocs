@@ -1,10 +1,10 @@
----
+--- 
 title: "Application Lifecycle Management (ALM) with Apache Cordova Apps | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/11/2015"
 ms.author: jomatthi
----
+--- 
 
 # Application Lifecycle Management (ALM) with Apache Cordova Apps
 

@@ -1,4 +1,4 @@
----
+--- 
 title: "Debug your app built with Visual Studio Tools for Apache Cordova"
 titleSuffix: ""
 description: "Debugging your app built with Visual Studio Tools for Apache Cordova (TACO)."
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "07/25/2016"
 ms.author: "clantz"
----
+--- 
 
 # Debug your app built with Visual Studio Tools for Apache Cordova
 

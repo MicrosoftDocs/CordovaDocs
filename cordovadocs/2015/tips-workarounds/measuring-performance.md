@@ -1,11 +1,11 @@
----
+--- 
 title: "Measure the performance of a Cordova app"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
 ms.author: jomatthi
----
+--- 
 
 # Measure the performance of a Cordova app
 

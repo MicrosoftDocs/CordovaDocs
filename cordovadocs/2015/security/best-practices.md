@@ -1,9 +1,9 @@
----
+--- 
 title: "Understand Cordova platform security"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 
 # Cordova platform security features

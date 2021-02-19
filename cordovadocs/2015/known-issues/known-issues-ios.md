@@ -1,10 +1,10 @@
----
+--- 
 title: "Known Issues - iOS"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # <strong>Known Issues - iOS</strong>
 
@@ -12,7 +12,7 @@ ms.author: jomatthi
 
 This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to iOS devices or simulators.
 
-----------
+--- --- --- -
 ## <strong>ITMS-90474, ITMS-90475, and/or ITMS-90339 errors when submitting to the Apple App Store</strong>
 When attempting to submit a Cordova app to the App Store created using Xcode 7 with Cordova 5.3.3 and below, you may encounter three errors: ITMS-90474, ITMS-90475, and ITMS-90339. These errors have to do with changes in store acceptance criteria by Apple.  There are two steps to resolve them.
 
