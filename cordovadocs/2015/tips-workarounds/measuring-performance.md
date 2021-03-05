@@ -1,11 +1,12 @@
----
+--- 
+description: "We researched what makes a Cordova app appear fast and fluid, a large part of which was running performance experiments to see how certain app patterns perform."
 title: "Measure the performance of a Cordova app"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
 ms.author: jomatthi
----
+--- 
 
 # Measure the performance of a Cordova app
 

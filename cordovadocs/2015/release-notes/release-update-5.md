@@ -1,10 +1,11 @@
----
+--- 
+description: "Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14.060106.1."
 title: "Release Notes for Update 5"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "12/14/2014"
 ms.author: jomatthi
----
+--- 
 
 # Update 5 - Visual Studio Tools for Apache Cordova
 

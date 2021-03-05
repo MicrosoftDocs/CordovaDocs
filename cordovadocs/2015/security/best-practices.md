@@ -1,9 +1,10 @@
----
+--- 
+description: "This document outlines some of the security features that exist in Cordova and some general best practices for improving the overall security of your app beyond what you may typically think about for web apps."
 title: "Understand Cordova platform security"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 
 # Cordova platform security features

@@ -1,4 +1,4 @@
----
+--- 
 title: "Build and simulate a Cordova iOS app in the cloud"
 description: "Build and simulate a Cordova iOS app in the cloud"
 services: "na"
@@ -10,7 +10,7 @@ ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: "clantz"
----
+--- 
 
 # Build and simulate a Cordova iOS app in the cloud
 

@@ -1,4 +1,4 @@
----
+--- 
 title: "Release Notes for Update 8"
 description: "Release notes for Update 8 of Visual Studio 2015 Tools for Apache Cordova"
 ms.technology: "cordova"
@@ -6,7 +6,7 @@ ms.prod: "visual-studio-dev14"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.date: "03/08/2016"
----
+--- 
 
 # Update 8 - Visual Studio Tools for Apache Cordova
 

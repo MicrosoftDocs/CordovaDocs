@@ -1,4 +1,4 @@
----
+--- 
 title: "Measure the performance of a Cordova app"
 description: "Measure the performance of a Cordova app"
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
----
+--- 
 
 # Measure the performance of a Cordova app
 

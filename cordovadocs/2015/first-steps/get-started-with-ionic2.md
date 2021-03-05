@@ -1,10 +1,11 @@
----
+--- 
+description: "[Ionic) is a popular front-end JavaScript framework for developing cross-platform mobile apps using Apache Cordova(http://cordova.io)."
 title: "Getting started with Ionic 2 apps in Visual Studio"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "01/16/2017"
 ms.author: jomatthi
----
+--- 
 
 # Get started with Ionic 2 apps in Visual Studio <a name="video"></a>
 
@@ -924,7 +925,7 @@ A few errors are fairly common in the starter templates when debugging in Visual
 
 [Having trouble hitting breakpoints in your .ts files?](#breakpoints)
 
----
+--- 
 
 ### <a id="no-templates"></a>I installed the Ionic templates, but they don't appear as an option in Visual Studio
 

@@ -1,4 +1,4 @@
----
+--- 
 title: "Getting Started with Visual Studio Tools for Apache Cordova"
 description: "Getting Started with Visual Studio Tools for Apache Cordova"
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "04/13/2016"
 ms.author: mikejo
----
+--- 
 
 # Getting Started With Visual Studio Tools For Apache Cordova
 

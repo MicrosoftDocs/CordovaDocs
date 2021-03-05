@@ -1,9 +1,10 @@
----
+--- 
+description: "Quickly remediate security issues using CodePush and Intune."
 title: "Quickly remediate security issues using CodePush and Intune"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Quickly remediate security issues using CodePush and Intune
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions and even the most carefully crafted app can have unexpected security gaps. When you do identify a threat or security issue in an app that has been released, fixing it quickly can be critical particularly if you need to adhere to strict compliance rules in a regulated industry. 

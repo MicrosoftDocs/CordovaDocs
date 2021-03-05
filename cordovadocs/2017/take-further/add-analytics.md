@@ -1,4 +1,4 @@
----
+--- 
 title: "Add Analytics to your Cordova app"
 description: "Add Analytics to your Cordova app"
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/26/2016"
 ms.author: "sureshja"
----
+--- 
 
 # Add Crash Analytics to your Cordova app
 

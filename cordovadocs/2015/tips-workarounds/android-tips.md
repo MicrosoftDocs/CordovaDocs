@@ -1,11 +1,12 @@
----
+--- 
+description: "This document covers tips, tricks, and known workarounds for problems with the Cordova Android platform."
 title: "Android tips and workarounds"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "08/21/2016"
 ms.author: jomatthi
----
+--- 
 
 # Android tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Android platform.

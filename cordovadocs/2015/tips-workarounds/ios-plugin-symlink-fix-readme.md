@@ -1,11 +1,12 @@
----
+--- 
+description: "Learn more about Cordova plugin Symlink fix for iOS plugins with custom frameworks."
 title: "Cordova plugin Symlink fix for iOS plugins with custom frameworks"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Cordova plugin Symlink fix for iOS plugins with custom frameworks
 

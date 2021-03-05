@@ -1,4 +1,4 @@
----
+--- 
 title: "Package Your Cordova App for Publishing to an App Store"
 description: "Tutorial: How to create an Android, iOS, and Windows package for deployment to an app store."
 author: "johnwargo"
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/31/2017"
 ms.author: mikejo
----
+--- 
 
 # Package Your Cordova App for Publishing to an App Store
 

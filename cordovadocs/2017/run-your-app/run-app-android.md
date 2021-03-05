@@ -1,4 +1,4 @@
----
+--- 
 title: "Run Your Apache Cordova App on Android"
 description: "Building Apache Cordova apps for Android devices."
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "01/27/2017"
 ms.author: mikejo
----
+--- 
 
 # Run Your Apache Cordova App on Android
 

@@ -1,9 +1,9 @@
----
+--- 
 title: "Using mocks"
 description: "Using mocks in JavaScript unit tests."
 author: "kraigb"
 ms.author: "kraigb"
----
+--- 
 
 # Using mocks for platform APIs, plugins, and other external dependencies
 

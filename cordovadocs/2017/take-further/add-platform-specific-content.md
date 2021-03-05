@@ -1,4 +1,4 @@
----
+--- 
 title: "Add platform-specific content to your Cordova project"
 description: "Adding platform specific content (such as images, icons) to an Apache Cordova app."
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "11/12/2015"
 ms.author: jomatthi
----
+--- 
 
 # Add platform-specific content to your Cordova project
 

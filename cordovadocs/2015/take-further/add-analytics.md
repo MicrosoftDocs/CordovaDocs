@@ -1,10 +1,11 @@
----
+--- 
+description: "Learn more about adding Crash Analytics to your Cordova app."
 title: "Add Analytics to your Cordova app | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "01/26/2016"
 ms.author: jomatthi
----
+--- 
    
 # Add Crash Analytics to your Cordova app
 

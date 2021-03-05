@@ -1,4 +1,4 @@
----
+--- 
 title: "Build a Cordova app for iOS by using Parallels"
 description: "Build a Cordova app for iOS by using Parallels"
 services: "na"
@@ -10,7 +10,7 @@ ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "09/11/2015"
 ms.author: "clantz"
----
+--- 
 
 # Build a Cordova app for iOS by using Parallels
 

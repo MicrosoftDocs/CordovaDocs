@@ -1,4 +1,4 @@
----
+--- 
 title: "Run your Apache Cordova app on Windows"
 description: "Building Apache Cordova apps for Windows devices."
 services: "na"
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "09/10/2015"
 ms.author: "mikejo"
----
+--- 
 
 # Run your Apache Cordova app on Windows
 
