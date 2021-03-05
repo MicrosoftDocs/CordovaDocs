@@ -82,7 +82,6 @@ When you execute these commands, the Cordova CLI adds entries to the `config.xml
     </platform>
     <engine name="android" spec="~6.1.2" />
     <engine name="windows" spec="~4.4.3" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-console" spec="~1.0.5" />
     <plugin name="cordova-plugin-device" spec="~1.1.4" />
     <plugin name="cordova-plugin-notification" spec="~1.3.1" />
