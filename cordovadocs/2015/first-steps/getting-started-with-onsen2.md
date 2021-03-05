@@ -1,4 +1,5 @@
 --- 
+description: "Onsen UI is a front-end UI framework for developing cross-platform mobile apps using Apache Cordova and PhoneGap."
 title: "Getting started with Onsen apps in Visual Studio"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

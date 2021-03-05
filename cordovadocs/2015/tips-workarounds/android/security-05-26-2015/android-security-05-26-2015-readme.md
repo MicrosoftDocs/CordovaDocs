@@ -1,4 +1,5 @@
 --- 
+description: "Recently Trend Micro uncovered a security flaw in the Cordova Android platform that affects all versions of Cordova."
 title: "May 26th, 2015 Android Cordova Platform Security Issue"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

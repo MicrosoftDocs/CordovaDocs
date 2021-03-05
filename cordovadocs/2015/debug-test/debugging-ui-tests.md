@@ -1,4 +1,5 @@
 --- 
+description: "Because the UI tests we’ve seen are written in code, the tests themselves might contain errors that could lead to false test results."
 title: "Debugging UI tests"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

@@ -1,4 +1,5 @@
 --- 
+description: "Developing apps for modern platforms involves many more activities than just writing code."
 title: "Application Lifecycle Management (ALM) with Apache Cordova Apps | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

@@ -1,4 +1,5 @@
 --- 
+description: "Unit testing in an Apache Cordova app means writing tests that exercise the app’s JavaScript code, but this happens outside the context of the running app and outside the context of any given mobile platform."
 title: "Unit testing environments for JavaScript"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

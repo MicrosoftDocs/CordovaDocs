@@ -1,4 +1,5 @@
 --- 
+description: "The process of building apps typically involves many repetitive tasks such as compilation, unit testing, UI testing, packaging, deployment, or simply copying files around."
 title: "Use gulp to automate tasks in a Cordova project"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

@@ -1,4 +1,5 @@
 --- 
+description: "You can update your project to use new versions of the Cordova Command-Line Interface (CLI)."
 title: "Change the CLI version of your Visual Studio Tools for Apache Cordova project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

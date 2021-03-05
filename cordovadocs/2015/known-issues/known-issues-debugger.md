@@ -1,4 +1,5 @@
 --- 
+description: "This article covers known issues and limitations related to Visual Studio Debugger in Visual Studio Tools for Apache Cordova 2015."
 title: "VS Debugger Known Issues and Limitations"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

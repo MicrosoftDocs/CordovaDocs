@@ -1,4 +1,5 @@
 --- 
+description: "Cordova uses Node.js to perform automation tasks."
 title: "Safely update Node.js (Visual Studio Tools for Apache Cordova) | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

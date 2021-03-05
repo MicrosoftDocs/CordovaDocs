@@ -1,4 +1,5 @@
 --- 
+description: "As a mobile developer, you’re probably already acutely aware of the need to test your app on many different devices."
 title: "Testing on device farms"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

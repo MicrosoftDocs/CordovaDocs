@@ -1,4 +1,5 @@
 --- 
+description: "NuGet is the package manager for the Microsoft development platform."
 title: "Add packages to your Cordova project with the Nuget Package Manager"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

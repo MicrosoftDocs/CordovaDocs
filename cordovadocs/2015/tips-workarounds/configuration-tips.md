@@ -1,4 +1,5 @@
 --- 
+description: "Refer to this topic for additional ways to quickly configure, update, or customize the tools for your environment.."
 title: "Configure the Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

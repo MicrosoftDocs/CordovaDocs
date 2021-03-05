@@ -1,4 +1,5 @@
 --- 
+description: "Understanding the performance costs of Cordova will help you as you evaluate the platform, and plan ahead as you develop for it."
 title: "Evaluate the performance costs of a Cordova app"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

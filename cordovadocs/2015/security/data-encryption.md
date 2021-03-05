@@ -1,4 +1,5 @@
 --- 
+description: "Storing data locally is relatively straight forward with Cordova but securing it can be a bit more difficult."
 title: "Securing Cordova app data using encryption and Intune"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

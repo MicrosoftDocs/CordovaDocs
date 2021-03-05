@@ -1,4 +1,5 @@
 --- 
+description: "When you create an app by using Visual Studio Tools for Apache Cordova, Visual Studio calls the Apache Cordova Command Line Interface (CLI) to build your app for the specified device or emulator."
 title: "Access a native Cordova project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

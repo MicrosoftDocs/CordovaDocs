@@ -1,4 +1,5 @@
 --- 
+description: "Use Visual Studio Tools for Apache Cordova to build mobile apps using web technologies (HTML, CSS, JavaScript) that run on Android, iOS, and Windows devices."
 title: "Get started with Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

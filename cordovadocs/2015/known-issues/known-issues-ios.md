@@ -1,4 +1,5 @@
 --- 
+description: "This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to iOS devices or simulators."
 title: "Known Issues - iOS"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

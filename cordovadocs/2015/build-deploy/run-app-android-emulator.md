@@ -1,4 +1,5 @@
 --- 
+description: "There are many options for running your apps built using Visual Studio Tools for Apache Cordova on Android."
 title: "Run your Apache Cordova app on Android | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

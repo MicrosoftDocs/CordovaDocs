@@ -1,4 +1,5 @@
 --- 
+description: "There are two ways to install and run an Appium server, via npm on the command line, and by downloading and installing the Appium GUI tool."
 title: "Appium setup"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

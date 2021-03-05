@@ -1,4 +1,5 @@
 --- 
+description: "For this section you’ll need to have the Visual Studio Tools for Apache Cordova installed."
 title: "Using the Chutzpah test runner"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

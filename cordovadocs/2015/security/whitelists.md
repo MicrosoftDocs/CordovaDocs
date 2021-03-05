@@ -1,4 +1,5 @@
 --- 
+description: "One of the more confusing changes about Apache Cordova 5) that have continued on in Cordova 6 is that the updated version of the Android platform and iOS now follow a different, but more powerful security model designed to provide developers with the tools needed to prevent cross-site scripting attacks among other issues."
 title: "Cordova whitelist and Content Security Policy guide"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
