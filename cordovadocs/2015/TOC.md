@@ -54,7 +54,7 @@
 ## [Use mocks](debug-test/unit-test-mocking.md)
 # Author & run UI tests
 ## [UI testing with Appium](debug-test/ui-testing-with-appium.md)
-## [Prequisites](debug-test/ui-testing-prerequisites.md)
+## [Prerequisites](debug-test/ui-testing-prerequisites.md)
 ## [Appium setup](debug-test/appium-setup.md)
 ## [Run UI sequences](debug-test/appium-ui-sequences.md)
 ## [Design and write UI tests](debug-test/designing-ui-tests.md)
