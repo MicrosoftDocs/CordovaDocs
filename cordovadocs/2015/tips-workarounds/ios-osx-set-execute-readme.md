@@ -1,4 +1,5 @@
 --- 
+description: "Learn more about workarounds for the problem with the missing execute bit for builds on OSX after checking in platforms folder from Windows"
 title: "Workaround for Missing Execute Bit for Builds on OSX After Checking in Platforms Folder from Windows"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

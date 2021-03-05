@@ -1,4 +1,5 @@
 --- 
+description: "Learn more about the Visual Studio Tools for Apache Cordova with the Jenkins CI system."
 title: "Use the Visual Studio Tools for Apache Cordova with the Jenkins CI system"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
