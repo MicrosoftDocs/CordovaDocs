@@ -1,4 +1,4 @@
----
+--- 
 title: "Android tips and workarounds"
 description: "Tips and workarounds for building Android apps using Visual Studio Tools for Apache Cordova."
 ms.prod: "visual-studio-dev15"
@@ -8,7 +8,7 @@ ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "08/21/2016"
 ms.author: "mikejo"
----
+--- 
 
 # Android tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Android platform.

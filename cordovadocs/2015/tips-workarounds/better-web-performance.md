@@ -1,11 +1,12 @@
----
+--- 
+description: "When you build a Cordova app, you'll write the User Interface (UI) and the majority of the application’s logic by using web technologies."
 title: "Optimize the performance of a Cordova app"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
 ms.author: jomatthi
----
+--- 
 
 # Optimize the performance of a Cordova app
 

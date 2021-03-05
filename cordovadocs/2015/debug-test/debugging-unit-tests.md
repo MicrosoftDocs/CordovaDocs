@@ -1,9 +1,10 @@
----
+--- 
+description: "One of the most significant benefits to unit testing inside Visual Studio is the ability to debug your code during a test, and to debug the tests themselves."
 title: "Debugging unit tests"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Debugging unit tests
 One of the most significant benefits to unit testing inside Visual Studio is the ability to debug your code during a test, and to debug the tests themselves. Unit tests are code, after all, and that code is prone to its own bugs.

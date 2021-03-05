@@ -1,4 +1,4 @@
----
+--- 
 title: "Samples & Examples"
 description: "Apache Cordova Samples we made and examples we like"
 ms.prod: "visual-studio-dev15"
@@ -7,7 +7,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "sample"
 ms.date: "05/02/2016"
----
+--- 
 
 # Favorite Samples & Examples
 

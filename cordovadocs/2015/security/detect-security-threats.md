@@ -1,9 +1,10 @@
----
+--- 
+description: "Static and dynamic code analysis tools can also help you identify problems and before you release your app."
 title: "Detect security issues using Intune, Active Directory, and Azure"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Detect potential security threats 
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions and even the most carefully crafted app can have unexpected security gaps. Preventing security issues really comes down to following guidence to reduce risk and using tools that help you identify problems before your app has even shipped. 

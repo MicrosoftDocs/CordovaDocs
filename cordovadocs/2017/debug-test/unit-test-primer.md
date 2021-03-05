@@ -1,9 +1,9 @@
----
+--- 
 title: "Primer on unit testing and continuous integration"
 description: "Primer on unit testing and continuous integration"
 author: "kraigb"
 ms.author: "kraigb"
----
+--- 
 
 # A primer on unit testing and continuous integration
 Great apps—like great artists, actors, and athletes—are great performers. To validate and continually improve their performances, human beings undergo extensive training, practice, rehearsals, and after-the-fact reviews. In software development we achieve the same ends through many levels of rigorous testing across the entire application lifecycle.

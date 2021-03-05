@@ -1,4 +1,4 @@
----
+--- 
 title: "Windows tips and workarounds"
 description: "Tips and workarounds for building Windows apps using Visual Studio Tools for Apache Cordova."
 ms.prod: "visual-studio-dev15"
@@ -7,7 +7,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.topic: "troubleshooting"
 ms.date: "05/15/2016"
----
+--- 
 
 # Windows tips and workarounds
 This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform.

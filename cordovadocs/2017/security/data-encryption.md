@@ -1,9 +1,9 @@
----
+--- 
 title: "Securing Cordova app data using encryption and Intune"
 description: "Secure Cordova local app data using encryption and the Intune MAM App SDK."
 author: "Chuxel"
 ms.author: "clantz"
----
+--- 
 
 # Encrypt your local app data
 Security is a very broad topic that covers a number of different aspects of an app's lifecycle. Securing an app often represents a number of tradeoffs and key decisions. Like the web, Cordova is a very open platform and as a result it does not force you down a specific path that will always guarantee a secure app. Instead provides a set of tools that you can use to lock down your app as appropriate.

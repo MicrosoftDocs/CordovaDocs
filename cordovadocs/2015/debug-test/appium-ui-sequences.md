@@ -1,9 +1,10 @@
----
+--- 
+description: "The WeatherApp sample contains a simple UI with an input field for a ZIP code and a button to go retrieve weather data for that location."
 title: "Running UI sequences"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Running UI sequences
 

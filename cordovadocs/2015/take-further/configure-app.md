@@ -1,10 +1,11 @@
----
+--- 
+description: "Tailor your app to specific platforms with images, functions, styles, and configuration files."
 title: "Configure your app built with Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "11/12/2015"
 ms.author: jomatthi
----
+--- 
 
 
 # Add platform-specific content to your Cordova project

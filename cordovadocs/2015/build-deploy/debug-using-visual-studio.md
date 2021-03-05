@@ -1,10 +1,11 @@
----
+--- 
+description: "Visual Studio brings a seamless and common tooling experience for developing Cordova apps across app types and device platforms."
 title: "Debug your app built with Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "07/25/2016"
 ms.author: jomatthi
----
+--- 
 
 # Debug your app built with Visual Studio Tools for Apache Cordova
 

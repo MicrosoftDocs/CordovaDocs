@@ -1,9 +1,9 @@
----
+--- 
 title: "Debugging unit tests"
 description: "Debugging JavaScript unit tests built using Jasmine and Karma."
 author: "kraigb"
 ms.author: "kraigb"
----
+--- 
 
 # Debugging unit tests
 One of the most significant benefits to unit testing inside Visual Studio is the ability to debug your code during a test, and to debug the tests themselves. Unit tests are code, after all, and that code is prone to its own bugs.

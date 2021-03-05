@@ -1,9 +1,10 @@
----
+--- 
+description: "An exciting new development in the Cordova Android platform in Cordova 5 and up is the support for what are called pluggable WebViews. What this feature allows you to do is swap out the built in Android WebView with a completely different WebView implementation."
 title: "Improving Android browser consistency and features with the Crosswalk WebView"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
----
+--- 
 
 # Improving Android browser consistency and features with the Crosswalk WebView
 An exciting new development in the Cordova Android platform in Cordova 5 and up is the support for what are called "pluggable WebViews." What this feature allows you to do is swap out the built in Android WebView with a completely different WebView implementation. This is a significant improvement because the Android browser and thus the WebView is locked at a specific version without the ability to update unless you update the version of the OS on the device. This has changed in the Android OS as of 5.0, but unlike iOS or Windows where devices can opt to upgrade and developers need only concern themselves with a few major versions of the browser, older Android devices are locked at a particular sub-revision of Android (and thus the browser) with no ability to upgrade the device in many cases. The end result has been a vast array of small differences between Android devices.

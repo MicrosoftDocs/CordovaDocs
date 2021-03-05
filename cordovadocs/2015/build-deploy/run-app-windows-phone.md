@@ -1,10 +1,11 @@
----
+--- 
+description: "Learn more about running your Apache Cordova app on Windows Phone."
 title: "Run your Apache Cordova app on Windows Phone | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Run your Apache Cordova app on Windows Phone
 

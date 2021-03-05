@@ -1,10 +1,11 @@
----
+--- 
+description: "Learn more about running your Apache Cordova app on iOS."
 title: "Run your Apache Cordova app on iOS | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "05/05/2016"
 ms.author: jomatthi
----
+--- 
 
 
 # Run your Apache Cordova app on iOS

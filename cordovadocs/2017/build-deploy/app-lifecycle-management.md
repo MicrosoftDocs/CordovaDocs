@@ -1,4 +1,4 @@
----
+--- 
 assetid: B6275B52-4C94-40EA-BBD6-B0CD415F2CA2
 title: "Application Lifecycle Management (ALM) with Apache Cordova Apps"
 titleSuffix: ""
@@ -11,7 +11,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "02/12/2017"
 ms.author: mikejo
----
+--- 
 
 # Application Lifecycle Management (ALM) with Apache Cordova Apps
 

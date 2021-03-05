@@ -1,10 +1,11 @@
----
+--- 
+description: "Learn more about Visual Studio core plugins."
 title: "Visual Studio Core Plugins | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "08/04/2016"
 ms.author: jomatthi
----
+--- 
 
 # <a id="top"></a>Visual Studio Core Plugins
 

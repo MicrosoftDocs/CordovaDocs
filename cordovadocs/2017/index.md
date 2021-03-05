@@ -1,4 +1,4 @@
----
+--- 
 ms.assetid: 8F2727FA-5961-4357-B733-F7C8F8CEBFF0
 title: "Visual Studio Tools 2017 for Apache Cordova"
 description: "Visual Studio Tools for Apache Cordova"
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
 ms.date: "10/31/2016"
 ms.author: mikejo
----
+--- 
 
 # Learn about mobile development with JavaScript in Visual Studio 2017
 

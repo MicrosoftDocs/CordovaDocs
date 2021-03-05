@@ -1,10 +1,11 @@
----
+--- 
+description: "The Cordova Command Line Interface (CLI) does most of the heavy lifting for Visual Studio when you build and run a Cordova app."
 title: "Cordova build process in Visual Studio | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Cordova build process in Visual Studio
 

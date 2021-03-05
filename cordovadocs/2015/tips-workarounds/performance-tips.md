@@ -1,11 +1,12 @@
----
+--- 
+description: "Cordova apps are web apps that run inside of native apps by using native web view UI components."
 title: "Cordova performance tips"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: jomatthi
----
+--- 
 
 # Cordova performance tips
 
