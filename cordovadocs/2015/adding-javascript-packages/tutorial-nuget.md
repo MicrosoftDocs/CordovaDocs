@@ -1,12 +1,12 @@
 --- 
 description: "NuGet is the package manager for the Microsoft development platform."
-title: "Add packages to your Cordova project with the Nuget Package Manager"
+title: "Add packages to your Cordova project with the NuGet Package Manager"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
 ms.author: jomatthi
 --- 
 
-# Add packages to your Cordova project with the Nuget Package Manager
+# Add packages to your Cordova project with the NuGet Package Manager
 
 [NuGet](https://www.nuget.org/) is the package manager for the Microsoft development platform. It has client tools to produce and consume packages and a gallery where all the packages are hosted. In addition to popular .NET packages, it also hosts many popular JavaSript frameworks that have typically been used in ASP.NET applications.
 
