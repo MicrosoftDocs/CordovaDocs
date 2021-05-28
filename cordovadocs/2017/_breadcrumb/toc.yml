@@ -2,19 +2,23 @@
   tocHref: /
   topicHref: /
   items:
-  - name: Visual Studio
-    tocHref: /visualstudio/
-    topicHref: /visualstudio
+  - name: Previous Versions
+    tocHref: /previous-versions/
+    topicHref: /previous-versions/
     items:
-    - name: Documentation
-      tocHref: /visualstudio/ide/
-      topicHref: /visualstudio/ide
+    - name: Visual Studio
+      tocHref: /previous-versions/visualstudio/
+      topicHref: /previous-versions/visualstudio
       items:
-      - name: Cross Platform
-        tocHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio/
-        topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
+      - name: Documentation
+        tocHref: /previous-versions/visualstudio/ide/
+        topicHref: /previous-versions/visualstudio/ide
         items:
-        - name: Tools for Apache Cordova
-          tocHref: /visualstudio/cross-platform/tools-for-cordova/ 
-          topicHref: /visualstudio/cross-platform/tools-for-cordova
+        - name: Cross Platform
+          tocHref: /previous-versions/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio/
+          topicHref: /previous-versions/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
+          items:
+          - name: Tools for Apache Cordova
+            tocHref: /previous-versions/visualstudio/cross-platform/tools-for-cordova/ 
+            topicHref: /previous-versions/visualstudio/cross-platform/tools-for-cordova
       
