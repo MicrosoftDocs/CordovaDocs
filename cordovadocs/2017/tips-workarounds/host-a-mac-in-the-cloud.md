@@ -1,6 +1,6 @@
 --- 
 title: "Build and simulate a Cordova iOS app in the cloud"
-description: "Build and simulate a Cordova iOS app in the cloud"
+description: " Build and simulate a Cordova iOS app in the cloud"
 services: "na"
 author: "Chuxel"
 ms.prod: "visual-studio-dev15"

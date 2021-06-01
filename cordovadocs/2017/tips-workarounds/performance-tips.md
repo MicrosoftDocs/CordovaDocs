@@ -1,6 +1,6 @@
 --- 
 title: "Cordova performance tips"
-description: "Cordova performance tips"
+description: " Cordova performance tips"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"

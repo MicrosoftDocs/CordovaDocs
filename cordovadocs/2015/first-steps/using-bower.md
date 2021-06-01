@@ -1,5 +1,5 @@
 --- 
-description: "While working on your Cordova project, you might want download and use a JavaScript or CSS framework that was built by someone else."
+description: " While working on your Cordova project, you might want download and use a JavaScript or CSS framework that was built by someone else."
 title: "Add packages to your Cordova project with the Bower Package Manager"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

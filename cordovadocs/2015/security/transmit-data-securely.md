@@ -1,5 +1,5 @@
 --- 
-description: "This document outlines some of the security features that exist in Cordova, community plugins, and related Microsoft products for transmitting data securely."
+description: " This document outlines some of the security features that exist in Cordova, community plugins, and related Microsoft products for transmitting data securely."
 title: "Securely transmit data"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

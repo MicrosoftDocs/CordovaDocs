@@ -1,6 +1,6 @@
 --- 
 title: "Build a Cordova app for iOS by using Parallels"
-description: "Build a Cordova app for iOS by using Parallels"
+description: " Build a Cordova app for iOS by using Parallels"
 services: "na"
 author: "Chuxel"
 ms.prod: "visual-studio-dev15"

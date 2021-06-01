@@ -1,6 +1,6 @@
 --- 
 title: "Release Notes for Update 8"
-description: "Release notes for Update 8 of Visual Studio 2015 Tools for Apache Cordova"
+description: " Release notes for Update 8 of Visual Studio 2015 Tools for Apache Cordova"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev14"
 ms.devlang: "javascript"

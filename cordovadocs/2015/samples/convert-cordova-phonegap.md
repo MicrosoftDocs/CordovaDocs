@@ -1,5 +1,5 @@
 --- 
-description: "PhoneGap is an open source framework for quickly building cross-platform mobile apps using HTML5, JavaScript and CSS."
+description: " PhoneGap is an open source framework for quickly building cross-platform mobile apps using HTML5, JavaScript and CSS."
 title: "Convert a Cordova project to a PhoneGap project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

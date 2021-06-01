@@ -1,6 +1,6 @@
 --- 
 title: "Access a native Cordova project"
-description: "Working with the native mobile project created by Visual Studio Tools for Apache Cordova."
+description: " Working with the native mobile project created by Visual Studio Tools for Apache Cordova."
 services: "na"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev15"

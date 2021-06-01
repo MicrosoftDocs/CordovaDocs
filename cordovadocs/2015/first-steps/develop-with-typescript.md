@@ -1,5 +1,5 @@
 --- 
-description: "TypeScript is a programming language that is a superset of JavaScript - offering classes, modules, and interfaces."
+description: " TypeScript is a programming language that is a superset of JavaScript - offering classes, modules, and interfaces."
 title: "Use TypeScript in a Cordova project"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

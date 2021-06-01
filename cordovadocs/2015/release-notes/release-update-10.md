@@ -1,6 +1,6 @@
 --- 
 title: "Release Notes for Update 10"
-description: "Release notes for Update 10 of Visual Studio 2015 Tools for Apache Cordova"
+description: " Release notes for Update 10 of Visual Studio 2015 Tools for Apache Cordova"
 authors: "rido-min"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev14"

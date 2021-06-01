@@ -1,6 +1,6 @@
 --- 
 title: "Cordova build process in Visual Studio"
-description: "The Apache Cordova build process in Visual Studio."
+description: " The Apache Cordova build process in Visual Studio."
 services: "na"
 author: "Mikejo5000"
 ms.prod: "visual-studio-dev15"

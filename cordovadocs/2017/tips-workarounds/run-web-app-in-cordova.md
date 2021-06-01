@@ -1,6 +1,6 @@
 --- 
 title: "Run Your Hosted Web App in an Apache Cordova App"
-description: "Run Your Hosted Web App in an Apache Cordova App"
+description: " Run Your Hosted Web App in an Apache Cordova App"
 services: "na"
 author: "mikejo5000"
 ms.prod: "visual-studio-dev15"

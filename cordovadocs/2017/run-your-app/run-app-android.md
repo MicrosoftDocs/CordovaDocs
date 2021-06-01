@@ -1,6 +1,6 @@
 --- 
 title: "Run Your Apache Cordova App on Android"
-description: "Building Apache Cordova apps for Android devices."
+description: " Building Apache Cordova apps for Android devices."
 services: "na"
 author: "mikejo5000"
 ms.prod: "visual-studio-dev15"

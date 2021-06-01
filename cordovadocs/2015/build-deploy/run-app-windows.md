@@ -1,5 +1,5 @@
 --- 
-description: "Learn more about running your Apache Cordova app on Windows."
+description: " Learn more about running your Apache Cordova app on Windows."
 title: "Run your Apache Cordova app on Windows | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

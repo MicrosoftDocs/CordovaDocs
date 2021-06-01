@@ -1,6 +1,6 @@
 --- 
 title: "Securely transmit data"
-description: "Securely transmit Cordova app data using SSL and certificate pinning. Use the Intune MAM App SDK, Azure Mobile Apps, and the Azure App Service to speed up your workflow."
+description: " Securely transmit Cordova app data using SSL and certificate pinning. Use the Intune MAM App SDK, Azure Mobile Apps, and the Azure App Service to speed up your workflow."
 author: "Chuxel"
 ms.author: "clantz"
 --- 

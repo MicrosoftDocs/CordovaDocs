@@ -1,5 +1,5 @@
 --- 
-description: "Unit testing executes code in a runtime that’s separate from the runtime in which the app will eventually run on a mobile platform."
+description: " Unit testing executes code in a runtime that’s separate from the runtime in which the app will eventually run on a mobile platform."
 title: "Using mocks"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

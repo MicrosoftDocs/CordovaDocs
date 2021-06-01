@@ -1,6 +1,6 @@
 --- 
 title: "Cordova whitelist and Content Security Policy guide"
-description: "Cordova whitelist and Content Security Policy guide"
+description: " Cordova whitelist and Content Security Policy guide"
 author: "Chuxel"
 ms.author: "clantz"
 --- 

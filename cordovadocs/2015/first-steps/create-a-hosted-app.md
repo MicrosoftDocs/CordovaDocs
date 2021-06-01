@@ -1,5 +1,5 @@
 --- 
-description: "Web developers can use Cordova to leverage existing web assets, get a web-based app uploaded to an app store, and get access to device features like the camera."
+description: " Web developers can use Cordova to leverage existing web assets, get a web-based app uploaded to an app store, and get access to device features like the camera."
 title: "Create a Hosted App | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 --- 
-description: "In this tutorial, you’ll learn how to create a task list sample app using AngularJS (AngularJSToDo)."
+description: " In this tutorial, you’ll learn how to create a task list sample app using AngularJS (AngularJSToDo)."
 title: "Create the ToDoList sample app | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

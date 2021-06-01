@@ -1,6 +1,6 @@
 --- 
 title: "Visual Studio Tools for Apache Cordova"
-description: "Visual Studio Tools for Apache Cordova"
+description: " Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
 ms.technology: "cordova"

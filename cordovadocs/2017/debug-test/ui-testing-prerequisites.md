@@ -1,6 +1,6 @@
 --- 
 title: "UI Testing Prerequisites"
-description: "Prerequisites for building UI tests for Apache Cordova apps, using Appium."
+description: " Prerequisites for building UI tests for Apache Cordova apps, using Appium."
 author: "kraigb"
 ms.author: "kraigb"
 --- 

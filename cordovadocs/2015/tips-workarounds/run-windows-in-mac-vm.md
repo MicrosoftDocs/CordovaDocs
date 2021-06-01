@@ -1,5 +1,5 @@
 --- 
-description: "This article shows how you can build hybrid apps using Apache Cordova in Visual Studio and deploy them to iOS using Parallels."
+description: " This article shows how you can build hybrid apps using Apache Cordova in Visual Studio and deploy them to iOS using Parallels."
 title: "Build a Cordova app for iOS by using Parallels | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

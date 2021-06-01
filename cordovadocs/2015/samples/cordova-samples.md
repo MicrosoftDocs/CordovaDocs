@@ -1,5 +1,5 @@
 --- 
-description: "Learn more about Apache Tools for Cordova by using favorite samples and examples."
+description: " Learn more about Apache Tools for Cordova by using favorite samples and examples."
 title: "Samples & Examples"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

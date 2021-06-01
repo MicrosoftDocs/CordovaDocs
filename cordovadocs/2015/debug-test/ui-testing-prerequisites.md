@@ -1,5 +1,5 @@
 --- 
-description: "Learn more about prerequisites for the UI testing tutorial."
+description: " Learn more about prerequisites for the UI testing tutorial."
 title: "UI Testing Prerequisites"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

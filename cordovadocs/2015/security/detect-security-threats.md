@@ -1,5 +1,5 @@
 --- 
-description: "Static and dynamic code analysis tools can also help you identify problems and before you release your app."
+description: " Static and dynamic code analysis tools can also help you identify problems and before you release your app."
 title: "Detect security issues using Intune, Active Directory, and Azure"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

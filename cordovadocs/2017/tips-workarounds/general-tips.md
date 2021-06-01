@@ -1,6 +1,6 @@
 --- 
 title: "General Cordova tips and workarounds"
-description: "Tips and workarounds for building Cordova apps using Visual Studio Tools for Apache Cordova."
+description: " Tips and workarounds for building Cordova apps using Visual Studio Tools for Apache Cordova."
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"

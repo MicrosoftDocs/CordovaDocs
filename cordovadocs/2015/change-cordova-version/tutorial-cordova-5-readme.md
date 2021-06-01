@@ -1,5 +1,5 @@
 --- 
-description: "The Tools for Apache Cordova RTM have been tested with both Cordova 4.3.1 and Cordova 5.1.1 with subsequent updates being tested against more recent versions of Cordova including 6.0.0."
+description: " The Tools for Apache Cordova RTM have been tested with both Cordova 4.3.1 and Cordova 5.1.1 with subsequent updates being tested against more recent versions of Cordova including 6.0.0."
 title: "Major Changes in Apache Cordova 5 & 6"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

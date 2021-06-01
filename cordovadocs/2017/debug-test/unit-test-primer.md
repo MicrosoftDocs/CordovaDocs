@@ -1,6 +1,6 @@
 --- 
 title: "Primer on unit testing and continuous integration"
-description: "Primer on unit testing and continuous integration"
+description: " Primer on unit testing and continuous integration"
 author: "kraigb"
 ms.author: "kraigb"
 --- 
@@ -43,7 +43,7 @@ A unit test, then, is a *separate* piece of code that makes a direct call to thi
 
 ```javascript
 	[Test name="doAdditionOperation test 1"
-description: "Adding 2 + 3 expecting 5"]
+description: " Adding 2 + 3 expecting 5"]
     {
 	    var expected = 5;
         var actual = doAdditionOperation(2, 3);

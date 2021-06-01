@@ -1,6 +1,6 @@
 --- 
 title: "Unit testing environments for JavaScript"
-description: "Unit testing environments for JavaScript"
+description: " Unit testing environments for JavaScript"
 author: "kraigb"
 ms.author: "kraigb"
 --- 

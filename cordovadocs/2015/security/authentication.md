@@ -1,5 +1,5 @@
 --- 
-description: "A critical task for application security is authenticating and authorizing users accessing your app and its associated local or remote data."
+description: " A critical task for application security is authenticating and authorizing users accessing your app and its associated local or remote data."
 title: "Authenticating users with Azure Mobile Apps or ADAL"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

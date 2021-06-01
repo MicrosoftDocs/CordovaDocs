@@ -1,6 +1,6 @@
 --- 
 title: "Release Notes for Update 9"
-description: "Release notes for Update 9 of Visual Studio 2015 Tools for Apache Cordova"
+description: " Release notes for Update 9 of Visual Studio 2015 Tools for Apache Cordova"
 author: "rido-min"
 ms.technology: "cordova"
 ms.prod: "visual-studio-dev14"

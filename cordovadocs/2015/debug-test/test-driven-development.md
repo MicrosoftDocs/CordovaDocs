@@ -1,5 +1,5 @@
 --- 
-description: "The previous topics in this section verified the mechanics of identifying and running a single test."
+description: " The previous topics in this section verified the mechanics of identifying and running a single test."
 title: "Improving tests/test-driven development"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 --- 
-description: "This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying using Apache Cordova 5.0.0+."
+description: " This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying using Apache Cordova 5.0.0+."
 title: "Apache Cordova 5.x.x Related Known Issues"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

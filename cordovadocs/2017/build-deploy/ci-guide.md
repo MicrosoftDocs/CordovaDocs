@@ -1,6 +1,6 @@
 --- 
 title: "Continuous Integration for Apache Cordova Apps"
-description: "Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard Apache Cordova command line interface (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO)."
+description: " Visual Studio developers have a number of options for how you can integrate Cordova apps with your favorite continuous integration (CI) server thanks to the fact that projects created in Visual Studio are standard Apache Cordova command line interface (CLI) projects. Any build tools that work with Cordova application projects should work just fine with projects created with Visual Studio Tools for Apache Cordova (TACO)."
 author: "johnwargo"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"

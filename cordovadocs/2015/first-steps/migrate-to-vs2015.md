@@ -1,5 +1,5 @@
 --- 
-description: "The project structure in Visual Studio 2015 mirrors the project structure of Apache Cordova apps that you create using the Cordova command-line interface (CLI)."
+description: " The project structure in Visual Studio 2015 mirrors the project structure of Apache Cordova apps that you create using the Cordova command-line interface (CLI)."
 title: "Migrate a Cordova project to Visual Studio 2015 | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

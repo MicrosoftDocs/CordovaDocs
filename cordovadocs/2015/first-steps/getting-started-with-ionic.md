@@ -1,5 +1,5 @@
 --- 
-description: "Ionic is a popular front-end JavaScript framework for developing cross-platform mobile apps using Cordova."
+description: " Ionic is a popular front-end JavaScript framework for developing cross-platform mobile apps using Cordova."
 title: "Getting started with Ionic apps | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

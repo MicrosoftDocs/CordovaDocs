@@ -1,6 +1,6 @@
 --- 
 title: "Package Your Cordova App for Publishing to an App Store"
-description: "Tutorial: How to create an Android, iOS, and Windows package for deployment to an app store."
+description: " Tutorial: How to create an Android, iOS, and Windows package for deployment to an app store."
 author: "johnwargo"
 ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"

@@ -1,5 +1,5 @@
 --- 
-description: "This article covers general known issues related to Visual Studio Tools for Apache Cordova."
+description: " This article covers general known issues related to Visual Studio Tools for Apache Cordova."
 title: "General Known Issues"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

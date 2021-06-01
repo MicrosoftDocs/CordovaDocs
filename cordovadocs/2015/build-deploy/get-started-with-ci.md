@@ -1,5 +1,5 @@
 --- 
-description: "With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite CI server thanks to the fact that projects created in Visual Studio are standard Apache Cordova CLI projects."
+description: " With the release of Visual Studio 2015, you now have a number of options for how you can integrate Cordova apps with your favorite CI server thanks to the fact that projects created in Visual Studio are standard Apache Cordova CLI projects."
 title: "Get Started with Continous Integration (CI)"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

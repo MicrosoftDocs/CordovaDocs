@@ -1,6 +1,6 @@
 --- 
 title: "Run your Apache Cordova app on iOS"
-description: "Building Apache Cordova apps for iOS devices."
+description: " Building Apache Cordova apps for iOS devices."
 services: "na"
 author: "Mikejo5000"
 ms.prod: "visual-studio-dev15"

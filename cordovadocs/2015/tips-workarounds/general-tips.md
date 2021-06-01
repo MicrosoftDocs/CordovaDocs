@@ -1,5 +1,5 @@
 --- 
-description: "This document covers tips, tricks, and known workarounds for general issues with Cordova or Tools for Apache Cordova."
+description: " This document covers tips, tricks, and known workarounds for general issues with Cordova or Tools for Apache Cordova."
 title: "General Cordova tips and workarounds"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

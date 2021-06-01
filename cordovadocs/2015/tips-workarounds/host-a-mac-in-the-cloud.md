@@ -1,5 +1,5 @@
 --- 
-description: "Visual Studio Tools for Apache Cordova allow you to build cross-platform, multi-device hybrid apps using Apache Cordova)."
+description: " Visual Studio Tools for Apache Cordova allow you to build cross-platform, multi-device hybrid apps using Apache Cordova)."
 title: "Build and simulate a Cordova iOS app in the cloud | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

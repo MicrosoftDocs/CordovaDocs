@@ -1,5 +1,5 @@
 --- 
-description: "UI testing is a core complement to unit testing (and also to integration testing, which is essentially unit testing across larger components in an app’s source code)."
+description: " UI testing is a core complement to unit testing (and also to integration testing, which is essentially unit testing across larger components in an app’s source code)."
 title: "UI Testing for Apache Cordova Apps with Appium"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

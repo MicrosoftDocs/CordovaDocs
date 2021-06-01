@@ -1,6 +1,6 @@
 --- 
 title: " Quickly remediate security issues using CodePush and Intune"
-description: "Quickly fix and remediate security policy and compliance violations using CodePush and Intune MDM."
+description: " Quickly fix and remediate security policy and compliance violations using CodePush and Intune MDM."
 author: "Chuxel"
 ms.author: "clantz"
 --- 

@@ -1,7 +1,7 @@
 --- 
 ms.assetid: 8F2727FA-5961-4357-B733-F7C8F8CEBFF0
 title: "Visual Studio Tools 2017 for Apache Cordova"
-description: "Visual Studio Tools for Apache Cordova"
+description: " Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev15"

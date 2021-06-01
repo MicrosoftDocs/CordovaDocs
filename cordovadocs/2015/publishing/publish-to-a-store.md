@@ -1,5 +1,5 @@
 --- 
-description: "Create a package for each platform that you want to target."
+description: " Create a package for each platform that you want to target."
 title: "Package your Cordova app so that you can publish it"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

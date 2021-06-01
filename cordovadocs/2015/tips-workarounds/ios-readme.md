@@ -1,5 +1,5 @@
 --- 
-description: "Learn more about iOS and OSX Tips and Workarounds."
+description: " Learn more about iOS and OSX Tips and Workarounds."
 title: "iOS and OSX Tips and Workarounds | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

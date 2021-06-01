@@ -1,6 +1,6 @@
 --- 
 title: "Add Azure App Service Mobile App"
-description: "Access Data in your Apache Cordova app"
+description: " Access Data in your Apache Cordova app"
 services: "na"
 author: "mikejo5000"
 ms.prod: "visual-studio-dev15"

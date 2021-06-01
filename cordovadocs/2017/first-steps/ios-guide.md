@@ -1,6 +1,6 @@
 --- 
 title: "Visual Studio Tools for Apache Cordova: iOS Guide"
-description: "Using the Visual Studio Tools for Apache Cordova to build iOS apps."
+description: " Using the Visual Studio Tools for Apache Cordova to build iOS apps."
 services: "na"
 author: "johnwargo"
 ms.prod: "visual-studio-dev15"

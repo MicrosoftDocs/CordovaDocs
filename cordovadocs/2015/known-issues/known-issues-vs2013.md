@@ -1,5 +1,5 @@
 --- 
-description: "This article covers known issues specific to Visual Studio Tools for Apache Cordova CTP3/3.1 and Visual Studio 2013."
+description: " This article covers known issues specific to Visual Studio Tools for Apache Cordova CTP3/3.1 and Visual Studio 2013."
 title: "Known Issues - CTP 3/3.1 for Visual Studio 2013"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

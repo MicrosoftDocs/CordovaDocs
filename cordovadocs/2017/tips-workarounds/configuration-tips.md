@@ -1,6 +1,6 @@
 --- 
 title: "Configure the Visual Studio Tools for Apache Cordova"
-description: "Configure the Visual Studio Tools for Apache Cordova"
+description: " Configure the Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev15"

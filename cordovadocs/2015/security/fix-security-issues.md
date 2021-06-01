@@ -1,5 +1,5 @@
 --- 
-description: "Quickly remediate security issues using CodePush and Intune."
+description: " Quickly remediate security issues using CodePush and Intune."
 title: "Quickly remediate security issues using CodePush and Intune"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

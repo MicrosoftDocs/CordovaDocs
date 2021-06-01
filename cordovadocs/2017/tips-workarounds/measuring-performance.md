@@ -1,6 +1,6 @@
 --- 
 title: "Measure the performance of a Cordova app"
-description: "Measure the performance of a Cordova app"
+description: " Measure the performance of a Cordova app"
 services: "na"
 author: "AdamTReineke"
 ms.prod: "visual-studio-dev15"

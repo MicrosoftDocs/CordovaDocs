@@ -1,5 +1,5 @@
 --- 
-description: "If you want to build an iOS version of your app, you'll need a Mac to do it."
+description: " If you want to build an iOS version of your app, you'll need a Mac to do it."
 title: "Setup guide: Target iOS mobile devices in a Visual Studio Tools for Apache Cordova project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

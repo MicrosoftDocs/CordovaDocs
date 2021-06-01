@@ -1,5 +1,5 @@
 --- 
-description: "Great apps—like great artists, actors, and athletes—are great performers."
+description: " Great apps—like great artists, actors, and athletes—are great performers."
 title: "Primer on unit testing and continuous integration"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

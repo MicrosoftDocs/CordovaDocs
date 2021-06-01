@@ -1,6 +1,6 @@
 --- 
 title: "Run Your App Using Cordova Simulate"
-description: "Using a web browser to simulate mobile apps in Visual Studio Tools for Apache Cordova"
+description: " Using a web browser to simulate mobile apps in Visual Studio Tools for Apache Cordova"
 services: "na"
 author: "johnwargo"
 ms.prod: "visual-studio-dev15"

@@ -1,5 +1,5 @@
 --- 
-description: "This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform."
+description: " This document covers tips, tricks, and known workarounds for problems with the Cordova Windows and Windows Phone platform."
 title: "Windows tips and workarounds"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

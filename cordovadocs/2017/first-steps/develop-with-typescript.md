@@ -1,6 +1,6 @@
 --- 
 title: "Using TypeScript in a Cordova Project"
-description: "Using TypeScript in an Apache Cordova project"
+description: " Using TypeScript in an Apache Cordova project"
 services: "na"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev15"

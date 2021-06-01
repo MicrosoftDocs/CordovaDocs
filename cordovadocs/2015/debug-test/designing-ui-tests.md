@@ -1,5 +1,5 @@
 --- 
-description: "In the previous section we learned the fundamentals of running a UI sequence with Appium."
+description: " In the previous section we learned the fundamentals of running a UI sequence with Appium."
 title: "Designing and writing UI tests"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"

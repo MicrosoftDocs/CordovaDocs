@@ -1,6 +1,6 @@
 --- 
 title: "Visual Studio Core Plugins"
-description: "Using plugins to build Apache Cordova apps in Visual Studio."
+description: " Using plugins to build Apache Cordova apps in Visual Studio."
 services: "na"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev15"
