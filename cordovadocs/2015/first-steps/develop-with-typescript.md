@@ -7,7 +7,7 @@ ms.author: jomatthi
 --- 
 
 # Use TypeScript in a Cordova project
-[TypeScript](http://www.typescriptlang.org) is a programming language that is a superset of JavaScript - offering classes, modules, and interfaces. You can use these features while developing your Cordova app and TypeScript will compile into simple JavaScript that will be deployed as part of your app.
+[TypeScript](https://www.typescriptlang.org) is a programming language that is a superset of JavaScript - offering classes, modules, and interfaces. You can use these features while developing your Cordova app and TypeScript will compile into simple JavaScript that will be deployed as part of your app.
 
 The Visual Studio Tools for Apache Cordova provide templates to help you get started with TypeScript and the TypeScript editor in Visual Studio.
 
@@ -29,7 +29,7 @@ To use the Blank App TypeScript template.
 
     In the scripts folder you see typings, index.ts, and tsconfig.json files. These files are used by TypeScript:
 
-    * typings - a collection of [typing definition files](http://www.typescriptlang.org/Handbook#writing-dts-files) that define the APIs for common Cordova plugins.
+    * typings - a collection of [typing definition files](https://www.typescriptlang.org/Handbook#writing-dts-files) that define the APIs for common Cordova plugins.
     * index.ts - a TypeScript file. In this project, index.ts is the default file.
     * tsconfig.json - a configuration file that you can use to customize the TypeScript build options. [Learn more about tsconfig.json](https://github.com/microsoft/typescript/wiki/tsconfig.json) on the TypeScript project site.
 
@@ -92,7 +92,7 @@ To customize the compiler settings for TypeScript in your projects:
 By default, Visual Studio is building TypeScript files for you using the MSBuild build system behind the scenes. If you want to build your project outside of Visual Studio (in a Terminal on Mac OS X, for example), then we recommend using a JavaScript task runner, such as [Gulp](http://www.gulpjs.com). To learn more, [see our Gulp tutorial](../build-deploy/using-gulp-build-tasks.md).
 
 ## Get started with TypeScript modules
-When you begin to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app. For most apps, you will want to use modules as a way to organize your app components and gain benefits such as easier maintenance. TypeScript supports both *internal* and *external* modules. Internal modules (now called namespaces) are not used as much now that a lot of tools provide TypeScript support. We recommend using external modules, which are EcmaScript 6 compliant. For more info, see the [module section](http://www.typescriptlang.org/Handbook#modules) in the TypeScript Handbook.
+When you begin to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app. For most apps, you will want to use modules as a way to organize your app components and gain benefits such as easier maintenance. TypeScript supports both *internal* and *external* modules. Internal modules (now called namespaces) are not used as much now that a lot of tools provide TypeScript support. We recommend using external modules, which are EcmaScript 6 compliant. For more info, see the [module section](https://www.typescriptlang.org/Handbook#modules) in the TypeScript Handbook.
 
 When you use external modules, you also need to use a module loader. AMD and CommonJs are two of the main specifications for module loaders (there are others, too, like UMD). To choose a module loader, consider these points:
 
@@ -153,7 +153,7 @@ In a Cordova app that uses CommonJs, you also need a bundling tool like Browseri
 
 ### <a name="samples"></a>Get the samples
 
-The starter samples extend the [Greeter tutorial](http://www.typescriptlang.org/Tutorial) from the TypeScript handbook and include some basic plugin code that supports Geolocation. The two samples are complete Visual Studio projects.
+The starter samples extend the [Greeter tutorial](https://www.typescriptlang.org/Tutorial) from the TypeScript handbook and include some basic plugin code that supports Geolocation. The two samples are complete Visual Studio projects.
 
   * [AMD and RequireJS sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-amd)
   * [CommonJs and Browserify sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-commonjs)
@@ -271,7 +271,7 @@ Most likely, this is caused by a problem in your sourceMaps. When running your a
 ## <a name="learnMore"></a>Where can I learn more about using TypeScript with Cordova?
 Here are a few links to help you learn more about working with TypeScript:
 
-* [The TypeScript language website](http://www.typescriptlang.org)
+* [The TypeScript language website](https://www.typescriptlang.org)
 * [Configuring TypeScript compilation using tsconfig.json](https://github.com/microsoft/typescript/wiki/tsconfig.json)
 
 To learn more about using TypeScript with Cordova, see our [sample TODO app, using WinJS](https://github.com/Microsoft/cordova-samples/tree/master/todo-winjs).

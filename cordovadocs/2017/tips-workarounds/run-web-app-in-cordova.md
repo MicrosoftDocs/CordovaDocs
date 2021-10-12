@@ -466,7 +466,7 @@ You may want to investigate options to find an approach that works best for you.
 +	Add offline support:
 	+	For caching pages, implement a [service worker](https://www.npmjs.com/package/cordova-plugin-service-worker) or use HTML5 [AppCache](http://stackoverflow.com/questions/15870163/html5-android-phonegap-web-app-not-working-offline-with-cache-manifest). With AppCache, it can be a challenge to debug the required manifest.
     +	For [offline data](http://cordova.apache.org/docs/en/latest/cordova/storage/storage.html) in Cordova, use local storage, IndexedDB, or WebSQL (WebSQL is a deprecated standard).
-+	Take a look at [Manifold.js](http://manifoldjs.com/). You give it a Web site URL, and it gives you a hosted mobile app.
++	Take a look at [Manifold.js](https://manifoldjs.com/). You give it a Web site URL, and it gives you a hosted mobile app.
 
 **Create a Cordova app by refactoring the front end code on your Web site**
 

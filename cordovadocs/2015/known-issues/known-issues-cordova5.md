@@ -9,7 +9,7 @@ ms.author: jomatthi
 
 # <strong>Apache Cordova 5.x.x Related Known Issues</strong>
 
-> **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
+> **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](https://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 This article covers known issues related to Visual Studio Tools for Apache Cordova 2015 when building or deploying using Apache Cordova 5.0.0+.
 
 In general we recommend **using Cordova 5.1.1 or above** instead of 5.0.0 because there are a number of issues including a security issue in Cordova 5.0.0.

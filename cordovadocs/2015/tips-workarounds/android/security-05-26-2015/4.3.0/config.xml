@@ -3,7 +3,7 @@
   Copyright (c) Microsoft. All rights reserved.  
   Licensed under the MIT license. See LICENSE file in the project root for full license information.
 -->
- <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myappcc708f78314949579dc28908b805f1a3" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+ <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="https://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myappcc708f78314949579dc28908b805f1a3" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
   <engine name="android" version="3.7.2" />
   <name>BlankCordovaApp1</name>
   <description>A blank project that uses Apache Cordova to help you build an app that targets multiple mobile platforms: Android, iOS, Windows, and Windows Phone.</description>
