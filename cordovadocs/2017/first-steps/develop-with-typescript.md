@@ -13,7 +13,7 @@ ms.author: mikejo
 
 # Using TypeScript in a Cordova project
 
-[**TypeScript**](http://www.typescriptlang.org) is an open source programming language created and maintained by Microsoft. TypeScript offers support for the latest and evolving JavaScript features, including those from ECMAScript 2015 like classes and modules. It also supports future language proposals, like async functions and decorators, to help build robust components. These features are available at development time for high-confidence app development, but are compiled into simple JavaScript that targets current mobile devices and browsers.
+[**TypeScript**](https://www.typescriptlang.org) is an open source programming language created and maintained by Microsoft. TypeScript offers support for the latest and evolving JavaScript features, including those from ECMAScript 2015 like classes and modules. It also supports future language proposals, like async functions and decorators, to help build robust components. These features are available at development time for high-confidence app development, but are compiled into simple JavaScript that targets current mobile devices and browsers.
 
 TypeScript editing capabilities are built in to Visual Studio, and Visual Studio Tools for Apache Cordova includes special templates you can use to create Cordova applications using TypeScript. During the build process, Visual Studio automatically compiles your application's TypeScript code into JavaScript before packaging the application's files into the Apache Cordova native application container. In this guide, you'll learn how to use TypeScript for your Apache Cordova applications using Visual Studio Tools for Apache Cordova (TACO).
 
@@ -41,7 +41,7 @@ A Cordova application project in Visual Studio mimics the project folder structu
 
 ![TypeScript Project Solution Explorer-1](media/vs-taco-tutorial-typescript/figure-02.png)
 
-TypeScript supports modules, so when you start to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app's code using modules. There are many module managers available for web applications, the choice of which is a source of much emotional discussion within the developer community. We're not going to address that topic here; for detailed information on modules and module loaders, see the [modules page](http://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook.
+TypeScript supports modules, so when you start to work on a Cordova app with TypeScript, one of the first decisions to make is how to structure your app's code using modules. There are many module managers available for web applications, the choice of which is a source of much emotional discussion within the developer community. We're not going to address that topic here; for detailed information on modules and module loaders, see the [modules page](https://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript Handbook.
 
 The default TypeScript template in TACO uses the popular [RequireJS](http://requirejs.org/) module manager. So, when you look at the TypeScript project's `index.html` file, you'll see the same file you'll find in the standard Cordova project, with the addition of the following lines:
 
@@ -61,7 +61,7 @@ If you look in the project's `www\scripts` folder, you won't find any JavaScript
 
 Looking in the project's `scripts` folder, you should see the following folder and files:
 
-+ `typings` (folder) - Contains a collection of [typing definition files](http://www.typescriptlang.org/Handbook#writing-dts-files) that describe API interfaces for common Cordova plugins.
++ `typings` (folder) - Contains a collection of [typing definition files](https://www.typescriptlang.org/Handbook#writing-dts-files) that describe API interfaces for common Cordova plugins.
 + `startup.ts` - The application's main TypeScript file.
 + `application.ts` - A TypeScript file loaded by `startup.ts`.
 
@@ -121,7 +121,7 @@ When you build this project, to run the application in the browser, an emulator,
 
 All of the files in the project's `www` folder are included in the Cordova application, so now the application has everything it needs to run.
 
-The last file unique to a TypeScript project is `tsconfig.json`, it's the configuration file used to customize the TypeScript compiler. [Learn more about tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html) on the TypeScript project site. The file configures how the TypeScript compiler will work when you build your app. By default, the compiler outputs JavaScript files to `www\scripts` and targets ECMAScript 5 (`target:"es5"`). Change the values in this file to change compiler behavior.
+The last file unique to a TypeScript project is `tsconfig.json`, it's the configuration file used to customize the TypeScript compiler. [Learn more about tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) on the TypeScript project site. The file configures how the TypeScript compiler will work when you build your app. By default, the compiler outputs JavaScript files to `www\scripts` and targets ECMAScript 5 (`target:"es5"`). Change the values in this file to change compiler behavior.
 
 ```json
 {
@@ -148,7 +148,7 @@ TypeScript files can be added to any Cordova project using the TypeScript item t
 
 ## <a name="samples"></a>Get the Sample Applications
 
-The starter samples extend the [Greeter tutorial](http://www.typescriptlang.org/Tutorial) from the TypeScript handbook and include some basic plugin code that supports Geolocation. The two samples are complete Visual Studio projects.
+The starter samples extend the [Greeter tutorial](https://www.typescriptlang.org/Tutorial) from the TypeScript handbook and include some basic plugin code that supports Geolocation. The two samples are complete Visual Studio projects.
 
   * [AMD and RequireJS sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-amd)
   * [CommonJs and Browserify sample](https://github.com/Microsoft/cordova-samples/tree/master/typescript-commonjs)
@@ -157,5 +157,5 @@ The starter samples extend the [Greeter tutorial](http://www.typescriptlang.org/
 
 Here are a few links to help you learn more about working with TypeScript:
 
-* [The TypeScript language website](http://www.typescriptlang.org)
+* [The TypeScript language website](https://www.typescriptlang.org)
 * [Configuring TypeScript compilation using tsconfig.json](https://github.com/microsoft/typescript/wiki/tsconfig.json)

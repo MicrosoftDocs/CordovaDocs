@@ -74,7 +74,7 @@
 ## [Measure performance](tips-workarounds/measuring-performance.md)
 # Package & publish
 ## [Publish to a store](publishing/publish-to-a-store.md)
-## [Push instant code updates](http://microsoft.github.io/code-push/docs/cordova.html)
+## [Push instant code updates](https://microsoft.github.io/code-push/docs/cordova.html)
 # Change your Cordova version
 ## [Change your project's CLI version](change-cordova-version/change-cli-version.md)
 ## [Safely update Node.js](change-cordova-version/change-node-version.md)
@@ -97,8 +97,8 @@
 ## [Update 10](release-notes/release-update-10.md)
 ## [Update 9](release-notes/release-update-9.md)
 ## [Update 8](release-notes/release-update-8.md)
-## [Update 7](http://microsoft.github.io/vstacoblog/2016/03/01/announcing-update-7.html)
-## [Update 6](http://microsoft.github.io/vstacoblog/2016/02/04/announcing-update-6.html)
+## [Update 7](https://microsoft.github.io/vstacoblog/2016/03/01/announcing-update-7.html)
+## [Update 6](https://microsoft.github.io/vstacoblog/2016/02/04/announcing-update-6.html)
 ## [Update 5](release-notes/release-update-5.md)
 ## [Update 4](release-notes/release-update-4.md)
 ## [Update 3](release-notes/release-update-3.md)

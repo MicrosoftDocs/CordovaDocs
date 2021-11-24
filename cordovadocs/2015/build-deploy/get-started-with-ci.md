@@ -97,7 +97,7 @@ The following articles also provide some additional details and troubleshooting 
 
 ## More Information
 * [Read tutorials and learn about tips, tricks, and known issues](../index.md)
-* [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
+* [Download samples from our Cordova Samples repository](https://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site https://aka.ms/cordova](https://aka.ms/cordova)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
