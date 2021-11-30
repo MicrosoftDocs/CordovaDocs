@@ -42,7 +42,7 @@ Please refer to the [Azure Mobile Engagement documentation](https://azure.micros
 - **Hockey App**
 This plugin provides client-side integration for the [HockeyApp](https://www.hockeyapp.net) service, allowing you to easily add crash reporting, beta distribution and user metrics to your Cordova app(s).
 - **CodePush**
-This plugin provides client-side integration for the [CodePush](http://microsoft.github.io/code-push) service, allowing you to easily add a dynamic update experience to your Cordova app(s).
+This plugin provides client-side integration for the [CodePush](https://microsoft.github.io/code-push) service, allowing you to easily add a dynamic update experience to your Cordova app(s).
 - **SQLite storage**
 This plugin enable the use of SQLite for local storage (available to cordova 6.0.0 and above)
 
@@ -64,7 +64,7 @@ As usual, we have some bug fixes in this release. Here are the highlights:
 
 ### Win10 store packaging: missing .appxupload file
 
-We commented this issue in [this post](http://microsoft.github.io/vstacoblog/2016/05/06/windows-store-packaging.html) we have reviewd the bug, and now the .appxupload is working as it should
+We commented this issue in [this post](https://microsoft.github.io/vstacoblog/2016/05/06/windows-store-packaging.html) we have reviewd the bug, and now the .appxupload is working as it should
 
 ### Some plugins cannot be added by ID
 

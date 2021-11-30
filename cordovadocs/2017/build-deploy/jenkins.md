@@ -43,7 +43,7 @@ We're going to use the [Jenkins NodeJS Plugin](https://go.microsoft.com/fwlink/?
 
 1. Start up Jenkins CI. If you installed it as a service on Windows, it is likely already running.
 
-2. Open the **Jenkins Dashboard** in a web browser (typically at `http://localhost:8080/` if running locally)
+2. Open the **Jenkins Dashboard** in a web browser (typically at `https://localhost:8080/` if running locally)
 
 3. Install the NodeJS Plugin
 
@@ -209,7 +209,7 @@ We'll assume for the purposes of this tutorial that we want to build our Cordova
 
 Detailed instructions on configuring projects in Jenkins can be found [here](https://go.microsoft.com/fwlink/?LinkID=613701), but here is a walkthrough of the settings needed to build your project:
 
-1. Open the **Jenkins Dashboard** in a web browser (typically located at `http://localhost:8080/` if running locally)
+1. Open the **Jenkins Dashboard** in a web browser (typically located at `https://localhost:8080/` if running locally)
 
 2. Click **New Item**.
 

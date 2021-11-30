@@ -44,7 +44,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
 
 		```xml
-		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="https://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:
@@ -237,7 +237,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
 
 		```xml
-		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="https://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:
@@ -365,7 +365,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 	+ **Package Name**: the unique identifier for this application. Developers typically populate this field with a combination of the developer's company domain in [**reverse domain name notation**](https://en.wikipedia.org/wiki/Reverse_domain_name_notation) plus the short name for the application. The value you provide here is added to the `widget` element's `id` attribute as shown in the following example"
 
 		```xml
-		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+		<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="https://schemas.microsoft.com/appx/2014/htmlapps" id="com.company.weatherapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
 		```
 
 	+ **Domain Access**: Manages a list of domains that the application can access; the values you enter here are added as `access` elements to the `config.xml` as shown in the following example:

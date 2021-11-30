@@ -9,7 +9,7 @@ ms.author: jomatthi
 
 # Update 5 - Visual Studio Tools for Apache Cordova
 
-Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14.060106.1. [Read more on our developer blog.](http://microsoft.github.io/vstacoblog/2016/01/13/annoucing-update-5.html)
+Update 5 corresponds to Visual Studio Tools for Apache Cordova version number 14.060106.1. [Read more on our developer blog.](https://microsoft.github.io/vstacoblog/2016/01/13/annoucing-update-5.html)
 
 ## Setup Instructions
 The most common way to get this update will be the Notification Icon in VS and the Tools & Extensions Updates,

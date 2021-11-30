@@ -119,7 +119,7 @@ If you must include content from an external source that you do not have complet
 You can now open pages not in the allow-navigation whitelist in a sandboxed webview using the simple window.open command.
 
 ```javascript
-window.open("http://www.bing.com", "_self");
+window.open("https://www.bing.com", "_self");
 ```
 
 ## Use "Local Mode" for Windows 10

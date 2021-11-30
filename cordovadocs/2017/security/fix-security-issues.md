@@ -11,11 +11,11 @@ Security is a very broad topic that covers a number of different aspects of an a
 ## CodePush
 One of the more frustrating aspects of mobile apps particularly for those that come from a web based background is that there are delays associated with getting app updates in the hands of customers. These can be driven by either app store submission delays which can be up to 10 days for iOS or simply the fact that not every user actually updates their apps when prompted.
 
-**[CodePush](http://microsoft.github.io/code-push/)** is service that is designed to resolve this problem for Android and iOS based devices. The service allows you to update local static content (HTML, CSS, images) and JavaScript code in your app without an app store submission. The service supports both Cordova and React Native based apps through the use of a plugin.  You can even wire it into continuous delivery flows via a [Visual Studio Team Services extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.code-push).
+**[CodePush](https://microsoft.github.io/code-push/)** is service that is designed to resolve this problem for Android and iOS based devices. The service allows you to update local static content (HTML, CSS, images) and JavaScript code in your app without an app store submission. The service supports both Cordova and React Native based apps through the use of a plugin.  You can even wire it into continuous delivery flows via a [Visual Studio Team Services extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.code-push).
 
 In the context of security this is extremly useful for quickly remediating security vulnerabilities. Using the service you can force updates to end users (or prompt if you prefer) and ensure everyone is on the same version of the code with the fix applied. Any fixes you can do in JavaScript code can then be deployed without an app store submission which can drop a 10 day turnaround for iOS to minutes!
 
-See the **[CodePush Getting Started Guide](http://microsoft.github.io/code-push/docs/getting-started.html)** for information on getting up and running.
+See the **[CodePush Getting Started Guide](https://microsoft.github.io/code-push/docs/getting-started.html)** for information on getting up and running.
 
 ## Use an internal app store
 Internal facing mobile apps are becoming increasingly common and some organizations opt to deploy these to public app stores. The challenge with this approach is that updates to the native app container are then subject to app store turnaround times (though CodePush can help remediate concerns with static and JavaScript content).

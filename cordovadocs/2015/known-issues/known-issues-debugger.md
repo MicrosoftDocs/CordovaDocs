@@ -9,13 +9,13 @@ ms.author: jomatthi
 
 # <strong>VS Debugger Known Issues and Limitations</strong>
 
-> **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](http://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
+> **Important**: We no longer maintain this article but if you’re stuck, ask us a question on [Stack using the tag ‘visual-studio-cordova'](http://stackoverflow.com/questions/tagged/visual-studio-cordova). Also, subscribe to our [developer blog](https://microsoft.github.io/vstacoblog/). We regularly post issues and workarounds.
 
 This article covers known issues and limitations related to Visual Studio Debugger in Visual Studio Tools for Apache Cordova 2015.
 
 ## <strong>No debugger support for Windows Phone 8 (WP8)</strong>
 
-There is currently no Visual Studio debugger support for Windows Phone 8. Developers can use the Weinre (Web Inspector Remote) project as described in this [blog post](http://msopentech.com/blog/2013/05/31/now-on-ie-and-firefox-debug-your-mobile-html5-page-remotely-with-weinre-web-inspector-remote/) from MS OpenTech as an alternative.
+There is currently no Visual Studio debugger support for Windows Phone 8. Developers can use the Weinre (Web Inspector Remote) project as described in this [blog post](https://msopentech.com/blog/2013/05/31/now-on-ie-and-firefox-debug-your-mobile-html5-page-remotely-with-weinre-web-inspector-remote/) from MS OpenTech as an alternative.
 
 ## <strong>Debugger does not stop at breakpoints when the app is initially starting</strong>
 

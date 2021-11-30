@@ -9,7 +9,7 @@ We are but one part of the larger Cordova community, and that commitment to the 
 Try building your [first cross-platform mobile app](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017/) in Visual Studio, give back to the next set of new users in [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova), or contribute to our documentation here on GitHub and share the Cordova glory! 
 
 ## More Information
-* [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
+* [Download samples from our Cordova Samples repository](https://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
 * [Email us your questions](mailto:/vscordovatools@microsoft.com)

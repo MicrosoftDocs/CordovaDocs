@@ -280,7 +280,7 @@ Once you have [installed the agent](../first-steps/ios-guide.md), you can verify
 * If you started the server on a port other than 3000, use the following command instead to initiate a test build:
 
    ```console
-   remotebuild test –-server http://localhost:<portNumber>
+   remotebuild test –-server https://localhost:<portNumber>
    ```
 
 * To verify that your developer signing identity is set up correctly for device builds (using the Debug and Release configurations in Visual Studio), type:
