@@ -14,7 +14,7 @@ Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation 
 
 
 <table border="1"><tr>
-<td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="cordova logo"/></td>
+<td><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="cordova logo"/></td>
 <td><strong>Visual Studio Team Services Extension for Cordova</strong><br />
 <i>Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps.</i><br />
 <a href="https://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>
