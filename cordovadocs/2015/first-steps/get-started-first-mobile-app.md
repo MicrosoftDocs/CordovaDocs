@@ -43,16 +43,8 @@ You'll find these files in the root of your project.
 ![root files-1](media/get-started-first-mobile-app/root-files.png)
 
 This table gives you the basic idea of how you might use each one.
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+
+<table border="1">
 <tr>
   <th>
     <p><strong>File</strong></p>

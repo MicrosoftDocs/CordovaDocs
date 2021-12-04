@@ -380,7 +380,7 @@ The starter ASP.NET project (CordovHostedWeb) already has the plugin code. Now, 
 
 1. In the CordovaHostedWeb project, open Views/Cordova/Index.cshtml.
 
-2. Find the `btn-lrg` <anchor> element and change the display text to **Take Picture**.
+2. Find the `btn-lrg` &lt;anchor&gt; element and change the display text to **Take Picture**.
 
     When updated, this line of HTML should look like this:
 
@@ -455,7 +455,7 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 
      In the CordovaHostedWeb project:
 
-   * In Views/Cordova/index.cshtml, update the CSP <meta> element with the new URL.
+   * In Views/Cordova/index.cshtml, update the CSP &lt;meta&gt; element with the new URL.
 
 2. Choose your preferred emulator to run the app.
 

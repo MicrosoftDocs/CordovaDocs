@@ -39,38 +39,29 @@ Have a quick look at this table. It presents each action, its impact, and what y
 
 > **Note**: This table uses the term *existing* to refer to plugins that exist in your project when you decide to update your project's CLI version and the term *new* to refer to plugins that you add to your project after you update your project's CLI version.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
     <thead>
         <tr>
             <th>Action</th>
-            <th style="text-align:left">Impact on plugins</th>
-            <th style="text-align:left">What you can do</th>
+            <th>Impact on plugins</th>
+            <th>What you can do</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Use the most recent version of the CLI</td>
-            <td style="text-align:left">Existing plugins might not work as expected if they&#39;re tied to an older version of each Cordova platform.</td>
-            <td style="text-align:left">Remove those plugins from your project.  Then, add the most recent version of those plugins to your project.</td>
+            <td>Existing plugins might not work as expected if they&#39;re tied to an older version of each Cordova platform.</td>
+            <td>Remove those plugins from your project.  Then, add the most recent version of those plugins to your project.</td>
         </tr>
         <tr>
             <td>Continue using the same version of the CLI</td>
-            <td style="text-align:left">New plugins might not work as expected unless you explicitly add an older version of the plugin. </td>
-            <td style="text-align:left">If no breaking changes were introduced in newer versions of each Cordova platform then plugins might work as expected.<br><br>If things don&#39;t quite work right in code that use those plugins, just add older versions of plugins to your project. </td>
+            <td>New plugins might not work as expected unless you explicitly add an older version of the plugin. </td>
+            <td>If no breaking changes were introduced in newer versions of each Cordova platform then plugins might work as expected.<br><br>If things don&#39;t quite work right in code that use those plugins, just add older versions of plugins to your project. </td>
         </tr>
         <tr>
             <td>Use an older version of the CLI</td>
-            <td style="text-align:left">All plugins (new or existing) might not work as expected.<br><br></td>
-            <td style="text-align:left">Remove existing plugins from your project and then add an older version of each plugin to your project.
+            <td>All plugins (new or existing) might not work as expected.<br><br></td>
+            <td>Remove existing plugins from your project and then add an older version of each plugin to your project.
             <br><br>If you want to add a new plugin, add older version of those plugins as well. </td>
         </tr>
     </tbody>
@@ -90,21 +81,21 @@ If you haven't installed the update, and you plan to change your project's CLI v
     <thead>
         <tr>
             <th>CLI version</th>
-            <th style="text-align:left">Node.js version</th>
+            <th>Node.js version</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><strong>5.4.1</strong> and later</td>
-            <td style="text-align:left"><strong>5.x</strong>, <strong>4.x</strong>, or <strong>0.12.x</strong></td>
+            <td><strong>5.x</strong>, <strong>4.x</strong>, or <strong>0.12.x</strong></td>
         </tr>
         <tr>
             <td><strong>5.3.3</strong> and later</td>
-            <td style="text-align:left"><strong>4.x</strong>, or <strong>0.12.x</strong></td>
+            <td><strong>4.x</strong>, or <strong>0.12.x</strong></td>
         </tr>
         <tr>
             <td>Earlier than <strong>5.3.3</strong></td>
-            <td style="text-align:left"><strong>0.12.x</strong></td>
+            <td><strong>0.12.x</strong></td>
         </tr>
     </tbody>
 </table>
