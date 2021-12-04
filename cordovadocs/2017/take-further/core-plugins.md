@@ -326,7 +326,7 @@ Use the Crosswalk WebView instead of the system WebView, get some new capabiliti
 
 ## CodePush: Update your apps on-the-fly
 
-<button class="plugin-button-readme">[Readme]('https://www.npmjs.com/package/cordova-plugin-code-push)</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-code-push)</button>
 <br />
 
 Push updated HTML, CSS, JavaScript, and resource files to your published Cordova apps.
