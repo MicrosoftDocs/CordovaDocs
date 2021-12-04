@@ -19,8 +19,8 @@ Feel free to download the [sample off Ryan's Github](https://github.com/ryanjsal
 
 ## Bluetooth LE : Discover and interact with devices
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-bluetoothle';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-bluetoothle#sample-discover-and-interact-with-bluetooth-le-devices';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/)</button>
+<button class="plugin-button-guide">[Quick Guide](https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/)</button>
 <br />
 
 Detect, connect, and interact with freeway monitors, cars, laptops, phones, TV set top-boxes and more. Notify users as they approach a restaurant that serves their favorite dish or a great promotion at a shop nearby.
@@ -31,12 +31,12 @@ Check out the [Quick Guide](https://www.npmjs.com/package/cordova-plugin-bluetoo
 
 [ [Go back up](#top) ]
 
-<hr style="height:2px;" />
+<hr />
 
 ## Geolocation: Connect users with things around them
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/index.html';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/index.html#sample:-get-the-weather-find-stores-and-see-photos-of-things-nearby-with-geolocation';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/index.html)</button>
+<button class="plugin-button-guide">[Quick Guide](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/index.html#sample:-get-the-weather-find-stores-and-see-photos-of-things-nearby-with-geolocation)</button>
 <br />
 
 Help users find things near them such as Groupon deals, houses for sale, movies playing, sports and entertainment events and more.
@@ -51,8 +51,8 @@ Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-geolocati
 
 ## InAppBrowser: Show web pages and videos within your app
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-inappbrowser';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://github.com/normesta/cordova-plugin-inappbrowser/blob/master/README.md#sample-show-help-pages-with-an-inappbrowser';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-inappbrowser)</button>
+<button class="plugin-button-guide">[Quick Guide](https://github.com/normesta/cordova-plugin-inappbrowser/blob/master/README.md#sample-show-help-pages-with-an-inappbrowser)</button>
 <br />
 
 Show helpful articles, videos, and web resources inside of your app. Users view documents without leaving your app.    
@@ -68,8 +68,8 @@ Check out the [Quick Guide](https://github.com/normesta/cordova-plugin-inappbrow
 
 ## Camera: Use the device's Camera or file picker in your app
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html#sample">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)</button>
+<button class="plugin-button-guide">[Quick Guide](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html#sample)</button>
 <br />
 
 Take pictures, allow the user to choose a file on the device, get thumbnails, and display the pictures or images in your app.
@@ -84,8 +84,8 @@ Check out the [Quick Guide](https://github.com/apache/cordova-plugin-camera#samp
 
 ## File: Create and manipulate files and directories on your device
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-file';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://github.com/apache/cordova-plugin-file#sample';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-file)</button>
+<button class="plugin-button-guide">[Quick Guide](https://github.com/apache/cordova-plugin-file#sample)</button>
 <br />
 
 Create, read, write to, and display files on your device. Create directories. Work with different file types such as text files and binary files.
@@ -100,8 +100,8 @@ Check out the [Quick Guide](https://github.com/apache/cordova-plugin-file#sample
 
 ## File Transfer: Upload and download files to and from your device
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-file-transfer';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://github.com/apache/cordova-plugin-file-transfer#sample';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-file-transfer)</button>
+<button class="plugin-button-guide">[Quick Guide](https://github.com/apache/cordova-plugin-file-transfer#sample)</button>
 <br />
 
 Upload and download different file types such as text files and binary files, read the files, and display image files.
@@ -116,9 +116,8 @@ Check out the [Quick Guide](https://github.com/apache/cordova-plugin-file-transf
 
 ## SQLite Storage: Use offline data storage
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-sqlite-storage';">Readme</button>
-<br />
-<button class="plugin-button-guide" onclick="window.location='https://github.com/litehelpers/Cordova-sqlite-storage#sample';">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-sqlite-storage)</button>
+<button class="plugin-button-guide">[Quick Guide](https://github.com/litehelpers/Cordova-sqlite-storage#sample)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -127,8 +126,8 @@ Check out the [Quick Guide](https://github.com/apache/cordova-plugin-file-transf
 
 ## Network Information: Respond to network status changes
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/index.html';">Readme</button>
-<button class="plugin-button-guide" onclick="window.location='https://github.com/apache/cordova-plugin-network-information#sample">Quick Guide</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/index.html)</button>
+<button class="plugin-button-guide">[Quick Guide](https://github.com/apache/cordova-plugin-network-information#sample)</button>
 <br />
 
 Use the online and offline events and get your network connection status.
@@ -139,7 +138,7 @@ Use the online and offline events and get your network connection status.
 
 ## Splashscreen: Display or hide a splash screen
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -148,8 +147,9 @@ Use the online and offline events and get your network connection status.
 
 ## Vibration: Make the users phone vibrate
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/index.html)</button>
 <br />
+
 
 [ [Go back up](#top) ]
 
@@ -157,7 +157,7 @@ Use the online and offline events and get your network connection status.
 
 ## Battery status: Monitor the available power of a device
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-battery-status/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-battery-status/index.html)</button>
 <br />
 
 Handle events that are raised when the user battery charge percentage changes or when they plug or unplug their phone from a power outlet.
@@ -168,8 +168,9 @@ Handle events that are raised when the user battery charge percentage changes or
 
 ## Notification: Notify users or prompt them to make a decision
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/index.html)</button>
 <br />
+
 
 Show dialog boxes that give users information or ask them to make a decision.
 
@@ -179,7 +180,7 @@ Show dialog boxes that give users information or ask them to make a decision.
 
 ## Console: Get reliable console output
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-console/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-console/index.html)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -188,8 +189,9 @@ Show dialog boxes that give users information or ask them to make a decision.
 
 ## Device: Get information about the user's device
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device/index.html)</button>
 <br />
+
 
 Get the model, platform, uuid, version, manufacturer, and serial number of the user's device.
 
@@ -199,8 +201,9 @@ Get the model, platform, uuid, version, manufacturer, and serial number of the u
 
 ## Media: Play audio files
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media/index.html)</button>
 <br />
+
 
 [ [Go back up](#top) ]
 
@@ -208,7 +211,7 @@ Get the model, platform, uuid, version, manufacturer, and serial number of the u
 
 ## Capture: Record audio, record video, or take pictures
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media-capture/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media-capture/index.html)</button>
 <br />
 
 Get access to the device’s audio, image, and video capture capabilities.
@@ -219,8 +222,9 @@ Get access to the device’s audio, image, and video capture capabilities.
 
 ## Contacts: Find, create, and update contacts
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-contacts/index.html)</button>
 <br />
+
 
 Provides access to the device’s Contacts database.
 
@@ -233,7 +237,7 @@ cordova-plugin-whitelist is the name of the underlying plugin - might be incorre
 *** -->
 ## Whitelist: Restrict your app's access to external domains
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/index.html)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -242,7 +246,7 @@ cordova-plugin-whitelist is the name of the underlying plugin - might be incorre
 
 ## Device Motion: Use the device accelerometer
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device-motion/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device-motion/index.html)</button>
 <br />
 
 Detect changes in movement relative to the device’s orientation.
@@ -253,7 +257,7 @@ Detect changes in movement relative to the device’s orientation.
 
 ## Device Orientation: Use the device compass
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device-orientation/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device-orientation/index.html)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -262,7 +266,7 @@ Detect changes in movement relative to the device’s orientation.
 
 ## StatusBar: Show or hide the device StatusBar
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/index.html)</button>
 <br />
 
 Show or hide the StatusBar and change a few customizable properties.
@@ -273,8 +277,9 @@ Show or hide the StatusBar and change a few customizable properties.
 
 ## ADAL for Cordova: Authenticate your apps
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-ms-adal';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-ms-adal)</button>
 <br />
+
 
 Use Active Directory Authentication Library (ADAL) plugin to authenticate your apps.
 
@@ -284,7 +289,7 @@ Use Active Directory Authentication Library (ADAL) plugin to authenticate your a
 
 ## Azure Mobile Apps: Add a cloud-based back end
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-ms-azure-mobile-apps';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-ms-azure-mobile-apps)</button>
 <br />
 
 Add Azure cloud-based structured storage, user authentication, and push notifications to your apps.
@@ -295,7 +300,7 @@ Add Azure cloud-based structured storage, user authentication, and push notifica
 
 ## HockeyApp: Add crash reporting, beta distribution, and user metrics to your app.
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-hockeyapp';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-hockeyapp)</button>
 <br />
 
 [ [Go back up](#top) ]
@@ -304,7 +309,7 @@ Add Azure cloud-based structured storage, user authentication, and push notifica
 
 ## Globalization: Get information about the user’s locale and time zone
 
-<button class="plugin-button-readme" onclick="window.location='https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-globalization/index.html';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-globalization/index.html)</button>
 <br />
 
 Perform operations that are specific to that locale and time zone.
@@ -315,7 +320,7 @@ Perform operations that are specific to that locale and time zone.
 
 ## CrossWalk Webview Engine: get the same WebView for different Android versions
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-crosswalk-webview';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-crosswalk-webview)</button>
 <br />
 
 Use the Crosswalk WebView instead of the system WebView, get some new capabilities and performance benefits.
@@ -326,7 +331,7 @@ Use the Crosswalk WebView instead of the system WebView, get some new capabiliti
 
 ## CodePush: Update your apps on-the-fly
 
-<button class="plugin-button-readme" onclick="window.location='https://www.npmjs.com/package/cordova-plugin-code-push';">Readme</button>
+<button class="plugin-button-readme">[Readme](https://www.npmjs.com/package/cordova-plugin-code-push)</button>
 <br />
 
 Push updated HTML, CSS, JavaScript, and resource files to your published Cordova apps.
