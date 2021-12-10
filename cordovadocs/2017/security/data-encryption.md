@@ -84,16 +84,7 @@ crypto.subtle.generateKey(cryptoSubtleAlgo, true, ["encrypt", "decrypt"])
 ## Consider community plugins
 In addition to the above base capabilities there are a number of community plugins that can be used to encrypt data locally. Microsoft does not directly support these plugins, so security focused organizations should be sure to run a static and or dynamic code analysis tool on the resulting project code (including these plugins) during any planned security audits. However, Intel maintains one of these plugins and the plugin author of cordova-sqlite-storage offers support contracts for those that are interested.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table><thead>
+<table border="1"><thead>
 <tr>
 <td align="left"><strong>Topic</strong></td>
 <td align="left"><strong>Plugin</strong></td>
@@ -169,7 +160,7 @@ Other versions:
 
 Intune provides two solutions for enabling its MAM features for Android and iOS devices: an app wrapping tool and an SDK. Both can be used on an Android or iOS app to light up certain capabilities like limiting cut-copy-paste while the app is running, forcing a PIN, or forcing encryption. The Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates as of May 1, 2018. Any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality with respect to Intune policy and management. Intune plans to continue supporting apps built with Cordova. However, to continue to function with Intune policy and management, we recommend that you use the Intune App Wrapping Tool to wrap the apps for each respective platform. After wrapping, you can deploy your application to your end users through Intune as per normal. 
 
-See **[Microsoft Intune App Wrapping Tool documentation](https://docs.microsoft.com/intune/apps-prepare-mobile-application-management)** for more information.
+See **[Microsoft Intune App Wrapping Tool documentation](/intune/apps-prepare-mobile-application-management)** for more information.
 
 ## Consider native Windows APIs for Windows
 One often missed feature that the Windows platform for Cordova has is the ability to call **any** JavaScript enabled [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377.aspx) from your Cordova app **without a plugin**. Many plugins for the Windows platforms are simple JavaScript adapters to conform to the plugin interface spec.

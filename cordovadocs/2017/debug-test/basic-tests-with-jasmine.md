@@ -77,16 +77,7 @@ With the unit and unit test in hand, we now need a test runner that knows how to
 2.	Open a command prompt and navigate to the folder you created for this exercise.
 3.	Run the following commands:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <tr>
 <td>Command</td><td>Purpose</td>
 </tr>

@@ -46,16 +46,7 @@ If you've already installed Visual Studio, just modify it to include the tools.
 
 Visual Studio installs these third-party components. You'll need them to use Apache Cordova, and to target the Android platform.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 
 <tbody>
     <tr>

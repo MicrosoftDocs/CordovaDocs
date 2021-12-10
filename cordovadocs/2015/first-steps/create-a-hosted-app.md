@@ -178,7 +178,7 @@ The starter solution includes an ASP.NET MVC site (the CordovaHostedWeb project)
 
     The most important thing here is that you create the anchor link that is used in the redirect script you created in the previous step.
 
-4. In index.html, replace the default [Content-Security-Policy](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017#the-w3c-content-security-policy-csp&preserve-view=true) (CSP) `<meta>` element with the following `<meta>` element.
+4. In index.html, replace the default [Content-Security-Policy](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true) (CSP) `<meta>` element with the following `<meta>` element.
 
     ```
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://cordovahostedweb-starter.azurewebsites.net https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
@@ -380,7 +380,7 @@ The starter ASP.NET project (CordovHostedWeb) already has the plugin code. Now, 
 
 1. In the CordovaHostedWeb project, open Views/Cordova/Index.cshtml.
 
-2. Find the `btn-lrg` <anchor> element and change the display text to **Take Picture**.
+2. Find the `btn-lrg` &lt;anchor&gt; element and change the display text to **Take Picture**.
 
     When updated, this line of HTML should look like this:
 
@@ -455,11 +455,11 @@ To save time and steps, instead of republishing the CordovaHostedWeb project to 
 
      In the CordovaHostedWeb project:
 
-   * In Views/Cordova/index.cshtml, update the CSP <meta> element with the new URL.
+   * In Views/Cordova/index.cshtml, update the CSP &lt;meta&gt; element with the new URL.
 
 2. Choose your preferred emulator to run the app.
 
-    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/build-deploy/run-app-android-emulator?view=toolsforcordova-2015&preserve-view=true), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
+    > **Note**: Ripple doesn't support the Camera plugin, so you can't run successfully on Ripple at this point. To see the Camera in action, [upgrade to a full-featured emulator](/visualstudio/cross-platform/tools-for-cordova/build-deploy/run-app-android-emulator?view=toolsforcordova-2015&preserve-view=true), such as the VS Emulator for Android, the Google Android Emulator, GenyMotion, or you can run against an actual device.
 
 3. Press F5 to run the app.
 

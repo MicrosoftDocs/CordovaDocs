@@ -25,16 +25,7 @@ The **wd** library is found in its entirety on [https://github.com/admc/wd](http
 
 One thing you’ll discover is that **wd** lacks an API reference; you primarily look at the examples as well as the source code in [https://github.com/admc/wd/tree/master/lib]( https://github.com/admc/wd/tree/master/lib) for the details you need. The source code, specifically, has documentation in comments on each function. Here’s a brief rundown of what you’ll find in the different files of that repository; some of the most common methods are in bold:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <thead>
 <tr><td>File</td><td>Description</td><td>Key APIs</td></tr>
 </thead>

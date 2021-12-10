@@ -74,7 +74,7 @@ If you want specific icons for the Android platform, the following entries show 
 For more information on specifying icon elements in config.xml, read this [article](http://docs.build.phonegap.com/en_US/configuring_icons_and_splash.md.html#Icons%20and%20Splash%20Screens).
 
 ## Splash screens
-You can have zero or more splash screen elements present in config.xml. The splash screen element can have src, gap:platform, width and height attributes, just like the <icon> element. Like icon files, save the splash screen files as PNG images. Unless you specify otherwise in config.xml, each platform will use the default splash.png file during compilation. If you do not supply the gap:platform attribute, the default image will be copied to all platforms, increasing the size of each application package.
+You can have zero or more splash screen elements present in config.xml. The splash screen element can have src, gap:platform, width and height attributes, just like the &lt;icon&gt; element. Like icon files, save the splash screen files as PNG images. Unless you specify otherwise in config.xml, each platform will use the default splash.png file during compilation. If you do not supply the gap:platform attribute, the default image will be copied to all platforms, increasing the size of each application package.
 
 The default splash screen must be named splash.png and must reside in the root of your application folder:
 

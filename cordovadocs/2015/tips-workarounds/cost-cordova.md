@@ -20,16 +20,7 @@ The first impression you get to make is when a user launches your app for the fi
 
 We don’t know the complexity of your app, but we experimented with launch times for a very basic "Hello World" app that updated some text on page when the “deviceready” event fires. For the timings in the table below, we used a camera to measure the time from when the touch was visually registered until we could see the text update. Additionally, we define “cold” as launching the app immediately after a reboot (when assets should be completely cleared from RAM) and “warm” as launching the app right after we close it (when maybe the operating system hasn’t really cleaned everything up yet).
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <tbody><tr>
   <th>
     <p><strong>Platform</strong></p>
