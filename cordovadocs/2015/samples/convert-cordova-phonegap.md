@@ -3,7 +3,6 @@ description: "PhoneGap is an open source framework for quickly building cross-pl
 title: "Convert a Cordova project to a PhoneGap project | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "sample"
 ms.date: "09/11/2015"
 ms.author: jomatthi
 --- 

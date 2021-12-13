@@ -3,7 +3,6 @@ description: "Understanding the performance costs of Cordova will help you as yo
 title: "Evaluate the performance costs of a Cordova app"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "troubleshooting"
 ms.date: "10/08/2015"
 ms.author: jomatthi
 --- 

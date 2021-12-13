@@ -3,7 +3,6 @@ description: "Refer to this topic for additional ways to quickly configure, upda
 title: "Configure the Visual Studio Tools for Apache Cordova | Cordova"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: jomatthi
 --- 
