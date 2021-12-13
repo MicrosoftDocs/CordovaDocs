@@ -3,7 +3,6 @@ description: "Learn more about Apache Tools for Cordova by using favorite sample
 title: "Samples & Examples"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "sample"
 ms.date: "01/16/2017"
 ms.author: jomatthi
 --- 

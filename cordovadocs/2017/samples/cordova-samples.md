@@ -5,7 +5,6 @@ ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
-ms.topic: "sample"
 ms.date: "05/02/2016"
 --- 
 
