@@ -23,16 +23,7 @@ First make sure the Android SDK for API level 19 is installed, because it’s th
 
 Then check that you have the necessary environment variables set as described in the following table.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <thead>
 <tr>
 <td>Variable</td><td>Location/Description</td>

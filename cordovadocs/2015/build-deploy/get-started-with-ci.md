@@ -13,8 +13,8 @@ With the release of Visual Studio 2015, you now have a number of options for how
 Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can take advantage of a pre-built Cordova tasks that add additional features to streamline setup like managaging certificates for iOS! Simply install the **[Visual Studio Team Services Extension for Cordova](https://go.microsoft.com/fwlink/?LinkID=691188)** and add a Cordova Build task to your build definition. 
 
 
-<table style="width: 100%; border-style: none;"><tr>
-<td style="width: 140px; text-align: center;"><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="cordova logo"/></td>
+<table border="1"><tr>
+<td><img src="https://raw.githubusercontent.com/Microsoft/vsts-cordova-tasks/master/docs/media/misc/cordova_logo_white_purple.png" alt="cordova logo"/></td>
 <td><strong>Visual Studio Team Services Extension for Cordova</strong><br />
 <i>Streamline CI setup for your Apache Cordova, PhoneGap, Ionic, or Cordova CLI compatible app using a set of useful pre-defined build steps.</i><br />
 <a href="https://go.microsoft.com/fwlink/?LinkID=691188">Install now!</a>

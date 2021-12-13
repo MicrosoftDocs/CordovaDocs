@@ -21,16 +21,7 @@ Visual Studio and Visual Studio Team Services (VSTS) provide a variety of DevOps
 
 The table below identifies the Visual Studio ALM features you can utilize with an Apache Cordova project, and which ones have limitations. Refer to the linked documentation for details on the features themselves.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
     <tbody>
         <tr>
             <th>

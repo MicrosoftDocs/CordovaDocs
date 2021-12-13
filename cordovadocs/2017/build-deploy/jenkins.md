@@ -146,16 +146,7 @@ For iOS, we will be taking advantage of an [Environment Variable Injector plugin
 
 Next you will need to set the following environment variables if they have not already been configured in your build server environment. These can either be set as system variables on your build server, by checking the "Environment variables" option when [managing your build nodes](https://go.microsoft.com/fwlink/?LinkID=613696), or using the [Environment Variable Injector plugin](https://go.microsoft.com/fwlink/?LinkID=613700) and checking the **Inject environment variables to the build process** option in your project build configuration.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table><thead>
+<table border="1"><thead>
 <tr>
 <td align="left"><strong>Variable</strong></td>
 <td align="left"><strong>Required For</strong></td>

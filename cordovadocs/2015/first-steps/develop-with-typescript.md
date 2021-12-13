@@ -106,16 +106,7 @@ With AMD, you can use RequireJS as your module loader. It provides asynchronous 
 
 In a Cordova app that uses CommonJs, you also need a bundling tool like Browserify or Webpack. A bundling tool packages your source code in a single output JavaScript file that can be referenced from your HTML, which is a requirement. Browserify and Webpack make it possible to use CommonJs in a client-side browser-based scenario (like Cordova). We will provide you with an example using Browserify.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 
 <tbody>
     <tr>

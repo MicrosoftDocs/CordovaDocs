@@ -44,7 +44,7 @@ Another option here is to use [Protractor]( http://angular.github.io/protractor/
 
 Also note that we aren’t able to use a test runner like Chutzpah that’s integrated with Visual Studio’s Test Explorer because by bringing libraries like **yiewd** and **Chai** we create a dependency on Node.js. That said, you can still run tests using Visual Studio’s Task Runner, and you can use Visual Studio or Visual Studio Code to debug your tests as covered in “Debugging UI tests.”
 
-> **Protractor notes**: With Protractor, you launch it with a separate Karma-like configuration file that specifies the Appium capabilities along with the names of the test files, so you don’t need the capabilities and the *appDriver.init* call in those test files themselves. The [WebDriver API that’s built into Protractor]( http://angular.github.io/protractor/#/api) is also a little different from **wd**—for example, the *elementById* API we’ve been using becomes *element.findElement(By.id(‘<id>’))* in Protractor.
+> **Protractor notes**: With Protractor, you launch it with a separate Karma-like configuration file that specifies the Appium capabilities along with the names of the test files, so you don’t need the capabilities and the *appDriver.init* call in those test files themselves. The [WebDriver API that’s built into Protractor]( http://angular.github.io/protractor/#/api) is also a little different from **wd**—for example, the *elementById* API we’ve been using becomes *element.findElement(By.id(‘&lt;id&gt;’))* in Protractor.
 > If you’re using Angular or Ionic, Protractor also provides an API with helper methods for automating a page using locator strategies, along with the ability to drive UI with injected JavaScript. Both are helpful, for example, when you have an element in a template without an ID and need to target that element based on some other heuristic.
 
 ## Create a first test
@@ -270,16 +270,7 @@ Now that we understand the mechanics of writing a single UI test, we’re ready 
 
 For this it’s helpful to do a side-by-side comparison with unit testing:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <thead>
 <tr>
 <td>Characteristic</td><td>Unit Testing</td><td>UI Testing</td>
@@ -363,16 +354,7 @@ When you have multiple tests in the same file (that is, in the same test group),
 
 This is where “hooks” in the test frameworks come into play, which are specially-named functions in which you can supply any code you want to execute at certain times:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <thead>
 <tr>
 <td>Mocha hook</td><td>Jasmine hook</td><td>Description</td>

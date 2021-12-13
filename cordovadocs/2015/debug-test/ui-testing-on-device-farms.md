@@ -12,16 +12,7 @@ As a mobile developer, you’re probably already acutely aware of the need to te
 
 For this reason, several companies have created device farms to manage thousands of individual devices, which you then access through a web portal and through programmatic APIs. Here are a few of the most popular ones:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <thead>
 <tr>
 Name	Devices/Platforms	Appium Support	Notes

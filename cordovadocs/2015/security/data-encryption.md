@@ -84,16 +84,7 @@ crypto.subtle.generateKey(cryptoSubtleAlgo, true, ["encrypt", "decrypt"])
 ## Consider community plugins
 In addition to the above base capabilities there are a number of community plugins that can be used to encrypt data locally. Microsoft does not directly support these plugins, so security focused organizations should be sure to run a static and or dynamic code analysis tool on the resulting project code (including these plugins) during any planned security audits. However, Intel maintains one of these plugins and the plugin author of cordova-sqlite-storage offers support contracts for those that are interested.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table><thead>
+<table border="1"><thead>
 <tr>
 <td align="left"><strong>Topic</strong></td>
 <td align="left"><strong>Plugin</strong></td>

@@ -120,16 +120,7 @@ To use Visual Studio to debug your Cordova apps, you must:
 
 Visual Studio debugger and diagnostic capabilities and their platform-specific differences, are shown in the following table.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 	<thead>
 		<tr>
 			<th>Device or operating system</th>

@@ -16,16 +16,7 @@ We researched what makes a Cordova app appear fast and fluid, a large part of wh
 
 The methods described below have strengths that are exposed for specific use cases. This table should help guide you.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <tbody><tr>
   <th>
     <p><strong>Which tool</strong></p>

@@ -60,9 +60,9 @@ Note that you will want to remove this custom build.xcconfig file if you upgrade
 
 ## <strong>Building for iOS hangs when Node.js v4.0+ is installed with Cordova < 5.3.3</strong>
 There is a [known compatibility issue](https://issues.apache.org/jira/browse/CB-9297) with Node.js v4 in Cordova v5.3.1 and earlier. If you have installed Node.js v4 on your build Mac, and then installed Cordova and the remotebuild agent, iOS builds can fail in the following situations:
-* The <name> element in config.xml has been changed (for example, you’re changing the name of your app).
-* A <deployment-target> element is defined in config.xml (set when using the Deployment Target dropdown in the Config file UI in Visual Studio).
-* A <target-device> element is defined in config.xml (set when using the Target iOS Version field in the Config file UI in Visual Studio).
+* The &lt;name&gt; element in config.xml has been changed (for example, you’re changing the name of your app).
+* A &lt;deployment-target&gt; element is defined in config.xml (set when using the Deployment Target dropdown in the Config file UI in Visual Studio).
+* A &lt;target-device&gt; element is defined in config.xml (set when using the Target iOS Version field in the Config file UI in Visual Studio).
 
 We recommend that you do not use Node.js v4 on Macs running remotebuild unless you upgrade your projects to Cordova 5.3.3 or later.
 

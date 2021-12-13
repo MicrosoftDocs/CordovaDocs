@@ -10,16 +10,7 @@ Unit testing in an Apache Cordova app means writing tests that exercise the appâ
 
 A unit testing environment consists of the three components: the runtime, a test framework, and a test runner:
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-    }
-</style>
-<table>
+<table border="1">
 <tr>
 <td>Component</td><td>Description</td><td>Examples for JavaScript&gt;
 </tr>
