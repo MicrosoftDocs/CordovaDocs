@@ -3,7 +3,6 @@ description: "Learn more about workarounds for the problem with the missing exec
 title: "Workaround for Missing Execute Bit for Builds on OSX After Checking in Platforms Folder from Windows"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "troubleshooting"
 ms.date: "09/10/2015"
 ms.author: jomatthi
 --- 

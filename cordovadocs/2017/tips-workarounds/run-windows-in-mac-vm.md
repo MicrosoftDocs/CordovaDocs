@@ -7,7 +7,6 @@ ms.prod: "visual-studio-dev15"
 ms.devlang: "javascript"
 ms.tgt_pltfrm: "mobile-multiple"
 ms.workload: "na"
-ms.topic: "troubleshooting"
 ms.date: "09/11/2015"
 ms.author: "clantz"
 --- 
