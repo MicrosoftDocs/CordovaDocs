@@ -3,7 +3,6 @@ description: "This document covers tips, tricks, and known workarounds for probl
 title: "Android tips and workarounds"
 author: "jmatthiesen"
 ms.prod: "visual-studio-dev14"
-ms.topic: "troubleshooting"
 ms.date: "08/21/2016"
 ms.author: jomatthi
 --- 
