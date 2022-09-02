@@ -466,8 +466,8 @@ If you have errors running the Blank App template (rather than just the Ionic st
 
 1. In Visual Studio, go to **Tools**, **Options**, **Tools for Apache Cordova** and run the Dependency Checker.
 
-    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty&preserve-view=true) to install API19 and API22.
+    If the Dependency Checker finds any issues for a platform that you're targeting, you will need to fix them. If you need to install the Android SDK, use the [Android SDK Manager](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#ThirdParty&preserve-view=true) to install API19 and API22.
 
 2. If you see an error message in the Output window in Visual Studio, use any links provided to try to resolve the issue.
 
-3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#vstac&preserve-view=true). Otherwise or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).
+3. If that doesn't resolve issues, follow instructions to [clear the Cordova cache](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/configuration-tips?view=toolsforcordova-2017#vstac&preserve-view=true). Otherwise or post questions on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova).

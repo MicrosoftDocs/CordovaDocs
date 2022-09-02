@@ -1,6 +1,6 @@
 # Visual Studio Tools for Apache Cordova
 
-This repository contains a set of documents and tutorials for the **[Visual Studio Tools for Apache Cordova](https://aka.ms/cordova).** The documentation is hosted on **[docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)**, and any content changes in the current repository will be updated there as well.
+This repository contains a set of documents and tutorials for the **[Visual Studio Tools for Apache Cordova](https://aka.ms/cordova).** The documentation is hosted at **[Visual Studio Tools for Apache Cordova documentation](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)**, and any content changes in the current repository will be updated there as well.
 
 ## We aren't in it alone. 
 
