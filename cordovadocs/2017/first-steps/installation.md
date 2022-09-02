@@ -19,7 +19,7 @@ This guide covers the required steps to install Visual Studio Tools for Apache C
 
 ## System Requirements
 
-Start by ensuring your development system meets the [Visual Studio 2017 Product Family System Requirements](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs). Apache Cordova app development adds the following system requirements:
+Start by ensuring your development system meets the [Visual Studio 2017 Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs). Apache Cordova app development adds the following system requirements:
 
 + To test and debug Cordova apps using [Cordova Simulate](simulate-in-browser.md) requires installation of the [Google Chrome Browser](https://www.google.com/chrome/).
 + To test and debug Android apps using the higher-performance emulator (Android Emulator 2.0), you must disable Hyper-V, and install Intel's Hardware Accelerated Execution Manager (HAXM). HAXM is installed automatically when you install an Intel-based Android emulator through the Android SDK Manager.
