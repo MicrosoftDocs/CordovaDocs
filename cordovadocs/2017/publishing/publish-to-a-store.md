@@ -260,7 +260,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 
     ![Cordova Project Configuration: iOS](media/publish-to-a-store/figure-09.png)
 
-3.	Even though Xcode manages provisioning and signing, you won't be opening Xcode to configure it for your project, this is all handled behind the scenes by Visual Studio TACO. Instead, you'll configure your **iOS Developer credentials** using the Cordova project's `build.json` file. During the build process, the Cordova CLI (invoked by Visual Studio TACO) copies settings for the iOS build from the `build.json` file to the Xcode project's configuration. Next, the `remotebuild` process (described in detail in the TACO [iOS Setup Guide](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017&preserve-view=true) executes the Xcode command-line tools to build and sign the app using the settings you provided.
+3.	Even though Xcode manages provisioning and signing, you won't be opening Xcode to configure it for your project, this is all handled behind the scenes by Visual Studio TACO. Instead, you'll configure your **iOS Developer credentials** using the Cordova project's `build.json` file. During the build process, the Cordova CLI (invoked by Visual Studio TACO) copies settings for the iOS build from the `build.json` file to the Xcode project's configuration. Next, the `remotebuild` process (described in detail in the TACO [iOS Setup Guide](/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017&preserve-view=true) executes the Xcode command-line tools to build and sign the app using the settings you provided.
 
 	To configure the iOS build process, you only need one piece of information, the Team ID for your Apple Developer program account. Open your browser of choice and navigate to [https://developer.apple.com/account](https://developer.apple.com/account). After you've authenticated to the site, open the **Membership** page shown in the following figure. Note the Team ID from the page (it will be a series of letters and numbers, **not** `MyTeamID` as shown in the figure).
 
@@ -314,7 +314,7 @@ As you prepare to publish your shiny new Cordova application, start in the appli
 
 At this point, you're all ready to build the app to generate the package that you will submit to the app store for distribution.
 
-1. On your Macintosh system, make sure that the remote agent is running. Refer to the TACO [iOS Setup Guide](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017&preserve-view=true) for details.
+1. On your Macintosh system, make sure that the remote agent is running. Refer to the TACO [iOS Setup Guide](/visualstudio/cross-platform/tools-for-cordova/first-steps/ios-guide?view=toolsforcordova-2017&preserve-view=true) for details.
 
 2.	With the Cordova project open in Visual Studio, on the Standard toolbar, choose the **iOS** platform.
 
