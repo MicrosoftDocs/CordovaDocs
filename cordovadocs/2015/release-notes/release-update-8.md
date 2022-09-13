@@ -10,7 +10,7 @@ ms.date: "03/08/2016"
 
 # Update 8 - Visual Studio Tools for Apache Cordova
 
-[Visual Studio TACO Update 8](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015&preserve-view=true) corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60321.1 and is included with Visual Studio 2015 Update 2.
+[Visual Studio TACO Update 8](/visualstudio/cross-platform/tools-for-cordova/release-notes/release-update-8?view=toolsforcordova-2015&preserve-view=true) corresponds to Visual Studio Tools for Apache Cordova version number 14.0.60321.1 and is included with Visual Studio 2015 Update 2.
 
 ## Setup Instructions
 
@@ -36,7 +36,7 @@ The Cordova Plugin Registry, or CPR, is now offline. This means projects targeti
 
 This transition was [announced](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) a long time ago - almost a year at this point - but was only just recently taken down.
 
-If you are running into this issue, the workarounds are to either [upgrade to a newer CLI version](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015&preserve-view=true) or [add a plugin through the custom tab](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/take-further/using-plugins?view=toolsforcordova-2017#Custom&preserve-view=true).
+If you are running into this issue, the workarounds are to either [upgrade to a newer CLI version](/visualstudio/cross-platform/tools-for-cordova/change-cordova-version/change-cli-version?view=toolsforcordova-2015&preserve-view=true) or [add a plugin through the custom tab](/visualstudio/cross-platform/tools-for-cordova/take-further/using-plugins?view=toolsforcordova-2017#Custom&preserve-view=true).
 
 ![TACO Options Updated](media/release-update-8/npm-sandboxing-options.png)
 
