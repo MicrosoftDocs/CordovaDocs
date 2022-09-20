@@ -1,12 +1,12 @@
 # Visual Studio Tools for Apache Cordova
 
-This repository contains a set of documents and tutorials for the **[Visual Studio Tools for Apache Cordova](https://aka.ms/cordova).** The documentation is hosted at **[Visual Studio Tools for Apache Cordova documentation](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)**, and any content changes in the current repository will be updated there as well.
+This repository contains a set of documents and tutorials for the **[Visual Studio Tools for Apache Cordova](https://aka.ms/cordova).** The documentation is hosted at **[Visual Studio Tools for Apache Cordova documentation](https://learn.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)**, and any content changes in the current repository will be updated there as well.
 
 ## We aren't in it alone. 
 
 We are but one part of the larger Cordova community, and that commitment to the community comes through the products we build and the documentation we upkeep. 
 
-Try building your [first cross-platform mobile app](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017/) in Visual Studio, give back to the next set of new users in [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova), or contribute to our documentation here on GitHub and share the Cordova glory! 
+Try building your [first cross-platform mobile app](https://learn.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017/) in Visual Studio, give back to the next set of new users in [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova), or contribute to our documentation here on GitHub and share the Cordova glory! 
 
 ## More Information
 * [Download samples from our Cordova Samples repository](https://github.com/Microsoft/cordova-samples)

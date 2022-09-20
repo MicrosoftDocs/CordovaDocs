@@ -75,7 +75,7 @@ import * as Application from './application';
 declare var require: (modules: string[], ready: Function, errback: Function) => void;
 
 // Try and load platform-specific code from the /merges folder.
-// More info at https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/take-further/add-platform-specific-content?view=toolsforcordova-2017#Content.
+// More info at https://learn.microsoft.com/visualstudio/cross-platform/tools-for-cordova/take-further/add-platform-specific-content?view=toolsforcordova-2017#Content.
 require(["./platformOverrides"],
     () => Application.initialize(),
     () => Application.initialize());
