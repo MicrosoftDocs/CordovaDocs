@@ -38,7 +38,7 @@ The core plugin list has been updated to include the following plugins:
  This plugin allows a developer to easily build in data protection features into their app. You will find that you can enable SDK features without changing your app’s behavior. Once you've built the plugin into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune supporting a variety of features that enable data protection
 - **Azure Mobile Engagement**
  This plugin integrates the Azure Mobile Engagement (AZME) SDK into your Cordova Application. It supports both reporting and push features. 
-Please refer to the [Azure Mobile Engagement documentation](https://azure.microsoft.com/documentation/services/mobile-engagement/) for more information about the various AZME concepts.
+Please refer to the [Azure Mobile Engagement documentation](/azure/mobile-engagement/) for more information about the various AZME concepts.
 - **Hockey App**
 This plugin provides client-side integration for the [HockeyApp](https://www.hockeyapp.net) service, allowing you to easily add crash reporting, beta distribution and user metrics to your Cordova app(s).
 - **CodePush**
